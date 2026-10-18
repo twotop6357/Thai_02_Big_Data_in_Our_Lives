@@ -1,5 +1,9 @@
 # Unity Startup Template 사용 가이드
 
+## 이 프로젝트의 개발 지침
+
+Codex와 Claude는 작업 전 [AGENTS.md](AGENTS.md), [개발 기준](docs/DEVELOPMENT_GUIDELINES.md), [최신 인수인계](docs/agents/HANDOFF.md)를 읽습니다. Claude의 진입 안내는 [CLAUDE.md](CLAUDE.md)입니다. 치명적 문제는 [TroubleShooting](docs/TroubleShooting.md)에 문제·원인·해결법을 기록합니다. 아래 템플릿 사용 가이드보다 현재 프로젝트의 공통 지침과 사용자 요청을 우선합니다.
+
 전시·키오스크용 Unity 프로젝트를 시작하는 개인 템플릿입니다.
 
 ## 새 프로젝트 시작
