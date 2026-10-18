@@ -1,0 +1,7 @@
+{
+  "name": "Exhibition.Input",
+  "rootNamespace": "Exhibition.Input",
+  "references": [],
+  "autoReferenced": true,
+  "noEngineReferences": true
+}

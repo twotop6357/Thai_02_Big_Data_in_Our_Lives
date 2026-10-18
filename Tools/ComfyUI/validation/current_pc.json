@@ -1,0 +1,176 @@
+{
+  "measured_device": [
+    "cuda:0 NVIDIA GeForce RTX 5070 Ti Laptop GPU : cudaMallocAsync"
+  ],
+  "target_device": "RTX 3060 12GB",
+  "target_device_match": false,
+  "comfyui_version": "0.37.0",
+  "pytorch_version": "2.12.1+cu130",
+  "checkpoint": "sd_xl_base_1.0.safetensors",
+  "sampling": {
+    "steps": 16,
+    "cfg": 6.0,
+    "sampler": "dpmpp_2m",
+    "scheduler": "karras"
+  },
+  "internal_resolution": [
+    768,
+    768
+  ],
+  "output_resolution": [
+    480,
+    480
+  ],
+  "profile": "balanced",
+  "target_seconds": 20,
+  "warmup": [
+    {
+      "prompt_id": "30cedf89-1833-4c73-bd5d-8e186781e619",
+      "selection": {
+        "group": "student",
+        "product": "bag",
+        "color1": "blue",
+        "color2": "white",
+        "profile": "balanced",
+        "seed": 7042026,
+        "width": 480,
+        "height": 480,
+        "positive_prompt": "(isolated inventory item illustration:1.3), product only, no humans, (one backpack:1.3), (blue fabric body:1.15), (white straps and zipper trim:1.15), practical campus design, premium Japanese mobile RPG equipment icon, polished 2D digital painting, delicate clean linework, soft cel shading, carefully painted material highlights, rich subtle color gradients, elegant detailed item design, three-quarter view, full object centered with generous empty margins, simple pale background"
+      },
+      "seconds_request_to_png": 7.193,
+      "width": 480,
+      "height": 480,
+      "local_image": "warmup_00.png",
+      "server_image": {
+        "filename": "product_00038_.png",
+        "subfolder": "Thai02",
+        "type": "output"
+      }
+    }
+  ],
+  "runs": [
+    {
+      "prompt_id": "9a446279-addd-467c-903a-de9132542e0f",
+      "selection": {
+        "group": "student",
+        "product": "bag",
+        "color1": "blue",
+        "color2": "white",
+        "profile": "balanced",
+        "seed": 7042027,
+        "width": 480,
+        "height": 480,
+        "positive_prompt": "(isolated inventory item illustration:1.3), product only, no humans, (one backpack:1.3), (blue fabric body:1.15), (white straps and zipper trim:1.15), practical campus design, premium Japanese mobile RPG equipment icon, polished 2D digital painting, delicate clean linework, soft cel shading, carefully painted material highlights, rich subtle color gradients, elegant detailed item design, three-quarter view, full object centered with generous empty margins, simple pale background"
+      },
+      "seconds_request_to_png": 6.533,
+      "width": 480,
+      "height": 480,
+      "local_image": "run_01.png",
+      "server_image": {
+        "filename": "product_00039_.png",
+        "subfolder": "Thai02",
+        "type": "output"
+      },
+      "visual_review": {
+        "status": "Partial pass",
+        "reviewer": "Codex",
+        "note": "Single illustrated backpack; unrequested brown straps and cream rather than pure white accents."
+      }
+    },
+    {
+      "prompt_id": "d44f5ab9-7f76-447d-9260-ff1ee3e38912",
+      "selection": {
+        "group": "child",
+        "product": "sunglasses",
+        "color1": "red",
+        "color2": "yellow",
+        "profile": "balanced",
+        "seed": 7042028,
+        "width": 480,
+        "height": 480,
+        "positive_prompt": "(isolated inventory item illustration:1.3), product only, no humans, (one single pair of sunglasses:1.4), (red frame:1.15), (yellow tinted lenses:1.15), playful rounded design with simple details, premium Japanese mobile RPG equipment icon, polished 2D digital painting, delicate clean linework, soft cel shading, carefully painted material highlights, rich subtle color gradients, elegant detailed item design, three-quarter view, full object centered with generous empty margins, simple pale background"
+      },
+      "seconds_request_to_png": 6.867,
+      "width": 480,
+      "height": 480,
+      "local_image": "run_02.png",
+      "server_image": {
+        "filename": "product_00040_.png",
+        "subfolder": "Thai02",
+        "type": "output"
+      },
+      "visual_review": {
+        "status": "Partial pass",
+        "reviewer": "Codex",
+        "note": "Single sunglasses illustration; yellow lenses also contain dark reflections."
+      }
+    },
+    {
+      "prompt_id": "82a77439-d890-4d05-b6bc-d60deabf3881",
+      "selection": {
+        "group": "working_adult",
+        "product": "bag",
+        "color1": "black",
+        "color2": "blue",
+        "profile": "balanced",
+        "seed": 7042029,
+        "width": 480,
+        "height": 480,
+        "positive_prompt": "(isolated inventory item illustration:1.3), product only, no humans, (one backpack:1.3), (black fabric body:1.15), (blue straps and zipper trim:1.15), understated modern everyday design, premium Japanese mobile RPG equipment icon, polished 2D digital painting, delicate clean linework, soft cel shading, carefully painted material highlights, rich subtle color gradients, elegant detailed item design, three-quarter view, full object centered with generous empty margins, simple pale background"
+      },
+      "seconds_request_to_png": 6.703,
+      "width": 480,
+      "height": 480,
+      "local_image": "run_03.png",
+      "server_image": {
+        "filename": "product_00041_.png",
+        "subfolder": "Thai02",
+        "type": "output"
+      },
+      "visual_review": {
+        "status": "Fail",
+        "reviewer": "Codex",
+        "note": "Object and colors present, but rendering looks closer to a 3D product render."
+      }
+    },
+    {
+      "prompt_id": "546d53d3-e336-4f50-86b4-00a948c68b8e",
+      "selection": {
+        "group": "senior",
+        "product": "sunglasses",
+        "color1": "brown",
+        "color2": "green",
+        "profile": "balanced",
+        "seed": 7042030,
+        "width": 480,
+        "height": 480,
+        "positive_prompt": "(isolated inventory item illustration:1.3), product only, no humans, (one single pair of sunglasses:1.4), (brown frame:1.15), (green tinted lenses:1.15), lightweight simple design with easy-to-use details, premium Japanese mobile RPG equipment icon, polished 2D digital painting, delicate clean linework, soft cel shading, carefully painted material highlights, rich subtle color gradients, elegant detailed item design, three-quarter view, full object centered with generous empty margins, simple pale background"
+      },
+      "seconds_request_to_png": 6.967,
+      "width": 480,
+      "height": 480,
+      "local_image": "run_04.png",
+      "server_image": {
+        "filename": "product_00042_.png",
+        "subfolder": "Thai02",
+        "type": "output"
+      },
+      "visual_review": {
+        "status": "Fail",
+        "reviewer": "Codex",
+        "note": "Unwanted person wearing glasses; does not satisfy product-only composition."
+      }
+    }
+  ],
+  "summary": {
+    "count": 4,
+    "median_seconds": 6.785,
+    "p95_seconds": 6.967,
+    "max_seconds": 6.967,
+    "meets_20s_on_measured_device": true,
+    "target_gpu_acceptance_verified": false
+  },
+  "visual_acceptance_verified": false,
+  "style_target": "Subculture mobile RPG inventory item illustration, soft painted shading and material highlights.",
+  "measurement_note": "Four warm runs on RTX 5070 Ti Laptop, not RTX 3060. Timing success does not imply visual acceptance."
+}

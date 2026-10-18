@@ -1,0 +1,84 @@
+{
+  "style_prefix": "(isolated inventory item illustration:1.3), product only, no humans",
+  "style": "premium Japanese mobile RPG equipment icon, polished 2D digital painting, delicate clean linework, soft cel shading, carefully painted material highlights, rich subtle color gradients, elegant detailed item design, three-quarter view, full object centered with generous empty margins, simple pale background",
+  "negative": "(person:1.5), (1girl:1.5), (1boy:1.5), human, face, head, hands, character, wearing, portrait, photograph, photorealistic, realistic textures, close-up, cropped, collection, collage, comparison, grid, (multiple products:1.4), (two pairs:1.4), (three pairs:1.4), stacked products, text, logo, watermark, thick black outlines, flat vector art, clipart, simple cartoon, low detail, 3d render, UI border, icon frame, game screenshot",
+  "groups": {
+    "student": {
+      "label": "학생 / Student",
+      "prompt": "practical campus design"
+    },
+    "child": {
+      "label": "어린이 / Child",
+      "prompt": "playful rounded design with simple details"
+    },
+    "working_adult": {
+      "label": "직장인 / Working adult",
+      "prompt": "understated modern everyday design"
+    },
+    "senior": {
+      "label": "노인 / Senior",
+      "prompt": "lightweight simple design with easy-to-use details"
+    }
+  },
+  "products": {
+    "bag": {
+      "prompt": "(one backpack:1.3)",
+      "primary": "({color1} fabric body:1.15)",
+      "secondary": "({color2} straps and zipper trim:1.15)"
+    },
+    "sunglasses": {
+      "prompt": "(one single pair of sunglasses:1.4)",
+      "primary": "({color1} frame:1.15)",
+      "secondary": "({color2} tinted lenses:1.15)"
+    },
+    "cap": {
+      "prompt": "a single baseball cap",
+      "primary": "{color1} fabric crown",
+      "secondary": "{color2} brim"
+    },
+    "sneakers": {
+      "prompt": "a single sneaker shoe",
+      "primary": "{color1} upper",
+      "secondary": "{color2} sole and laces"
+    },
+    "watch": {
+      "prompt": "a single wristwatch",
+      "primary": "{color1} strap",
+      "secondary": "{color2} case and dial"
+    }
+  },
+  "colors": [
+    "red",
+    "orange",
+    "yellow",
+    "green",
+    "blue",
+    "purple",
+    "pink",
+    "white",
+    "black",
+    "gray",
+    "brown",
+    "cyan"
+  ],
+  "profiles": {
+    "balanced": {
+      "steps": 16,
+      "cfg": 6.0,
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras"
+    },
+    "fast": {
+      "steps": 12,
+      "cfg": 5.5,
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras"
+    },
+    "quality": {
+      "steps": 20,
+      "cfg": 6.0,
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras"
+    }
+  }
+}

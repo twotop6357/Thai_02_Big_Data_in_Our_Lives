@@ -1,0 +1,7 @@
+{
+  "name": "Exhibition.Input.Tests",
+  "references": ["Exhibition.Input"],
+  "includePlatforms": ["Editor"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "autoReferenced": false
+}

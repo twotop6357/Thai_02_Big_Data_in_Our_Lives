@@ -1,0 +1,6 @@
+__pycache__/
+generated/
+results/
+*.partial
+*.safetensors
+references/

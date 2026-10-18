@@ -25,8 +25,9 @@
 
 ## 3. Unity 운영상 필수 조건
 
+- 프로그램의 `Debug.Log`·`LogWarning`·`LogError`·`LogFormat` 및 프로젝트 로거 메시지는 선택 언어와 관계없이 **영문**으로 작성한다. Game 진입 성공 시 Thai/English 언어명과 th/en 코드를 한 번 기록한다. UI 번역·주석·개발 문서 언어와는 별개다. 외부 패키지의 비영문 메시지는 PackageCache를 직접 수정하지 말고 프로젝트 확장/호환 계층에서 처리한다. 예외의 원본 스택·진단 정보를 삭제하거나 숨기지 않는다.
 - 기준 Unity **2022.3.62f3**, 주 대상 Windows. 현재 빌드 씬 및 Company Name·Product Name·Application Identifier를 확인한다. 배포 식별자는 사용자와 프로젝트 요구사항에 맞춰 결정한다.
-- `GameManager.ReturnToFirstScreen()`의 현재 구현은 현재 씬 재로드다. 첫 씬 이동이라고 가정하지 않는다. 실제 콘텐츠 흐름에 맞춰 복귀·미디어 중단·비동기 취소·입력 및 선택 초기화·타이머 복구를 구현한다.
+- `GameManager.ReturnToFirstScreen()`은 `0_Idle`로 복귀한다(FLOW-001에서 템플릿의 현재 씬 재로드를 교체). 복귀·미디어 중단·세션 비동기 취소·입력 및 선택 초기화·타이머 복구를 보존한다. 콘텐츠 작업은 세션/화면 수명 취소 토큰에 연결한다. 버튼 입력과 언어 상태 사용법은 [BUTTON_INPUT](docs/BUTTON_INPUT.md)을 따른다.
 - 수동 복귀에서만 해당 경로가 `MoveIdleEvent`를 발행한다. 무입력 복귀의 `move_idle_timeout`은 공통 API 매니저가 기록하므로 공통 복귀 함수에서 무조건 발행하지 않는다.
 - 영상 감상 중 `InactivityTimer.Pause()`를 사용하면 종료·실패·취소·복귀에서 재개 책임을 확인한다. 외부 센서 입력이 타이머를 실제로 갱신하는지도 검증한다.
 - 설정은 비동기로 로드된다. `GameManager.OnSettingsLoaded()` 또는 `AppSettingsProvider`를 사용하고 `Awake()`에서 준비를 가정하지 않는다. 설정 누락·문법 오류 시 90초 무입력 복귀 대체 설정이 적용됨을 고려한다.

@@ -1,0 +1,11 @@
+{
+  "group": "student",
+  "product": "bag",
+  "color1": "blue",
+  "color2": "white",
+  "profile": "balanced",
+  "seed": 7042026,
+  "width": 480,
+  "height": 480,
+  "positive_prompt": "(isolated inventory item illustration:1.3), product only, no humans, (one backpack:1.3), (blue fabric body:1.15), (white straps and zipper trim:1.15), practical campus design, premium Japanese mobile RPG equipment icon, polished 2D digital painting, delicate clean linework, soft cel shading, carefully painted material highlights, rich subtle color gradients, elegant detailed item design, three-quarter view, full object centered with generous empty margins, simple pale background"
+}

@@ -1,6 +1,19 @@
 # Changelog
 관람객·운영자 경험에 영향을 주는 변경 사항을 기록합니다. 형식은 [Keep a Changelog](https://keepachangelog.com/ko/1.1.0/)를 따릅니다.
 
+## [2026-10-18]
+
+### Added
+- Game 씬 진입 성공 시 선택 언어 Thai/English와 언어 코드를 영문 Debug 로그로 기록. Reporter의 기존 한글 경고는 프로젝트 호환 핸들러로 영문화.
+- Idle에서 버튼 한 번은 태국어, 빠른 두 번은 영어로 선택하여 Game 씬에 진입. 임시 버튼은 키보드 숫자 1이며 Idle의 ButtonInputSimulator 컴포넌트에서 켜고 끌 수 있음.
+- Settings.json의 `buttonDoublePressIntervalSeconds`로 이중 입력 간격 조정(기본 0.4초).
+- Idle 외 모든 활성 씬에서 버튼을 연속 5초 누르면 Idle로 복귀하며 세션 언어·작업 취소 토큰·무입력 타이머 상태를 초기화. 수동 복귀 로그는 1회 발행.
+
+### Changed
+- 현재 프로젝트 Settings에서 무입력 복귀를 30초로 활성화하고 창 항상 위를 활성화.
+- 첫 화면 복귀를 현재 씬 재로드에서 `0_Idle` 이동으로 변경하고 `1_Game`을 빌드 씬에 등록.
+- Idle의 언어 안내를 길게 누르기에서 빠른 두 번 누르기로 변경. 언어 상태 선택을 제공하며 Game UI 번역은 후속 작업.
+
 ## [2026-10-16]
 
 ### Added
