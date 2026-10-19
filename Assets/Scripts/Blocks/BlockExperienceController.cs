@@ -89,6 +89,7 @@ namespace Exhibition.Blocks
                 if (enableEditorKeyboard) { Cursor.visible = true; Cursor.lockState = CursorLockMode.None; }
 #endif
                 Status = "Place four blocks. Keys: 2 Group / 3 Product / 4 Color1 / 5 Color2.";
+                Debug.Log("[BlockExperience] Block configuration loaded. Language: " + Language + ".", this);
             }
             catch (OperationCanceledException) { }
             catch (Exception ex) { Fail("Block initialization failed", ex); }
@@ -129,6 +130,8 @@ namespace Exhibition.Blocks
             RefreshLabels();
             _timer?.ResetTimer();
             Status = _selection.Complete ? "Four blocks recognized. Ready to generate." : "Waiting for four blocks.";
+            Debug.Log("[BlockExperience] " + (kind == "block_removed" ? "Block removed" : "Block recognized") +
+                ". Slot: " + slot + "; ID: " + id + "; complete: " + _selection.Complete + ".", this);
             WriteEventAsync(kind, new JObject { ["slot"] = slot.ToString(), ["block_id"] = id,
                 ["revision"] = _selection.Revision, ["selection"] = Snapshot() }).Forget();
         }
@@ -177,6 +180,7 @@ namespace Exhibition.Blocks
             {
                 ClearImage();
                 Status = "Preparing image generation...";
+                Debug.Log("[BlockExperience] Image generation started. Request: " + requestId + ".", this);
                 _timer?.Pause();
                 _pausedTimer = true;
                 var prompt = _selection.CreatePrompt(_catalog, UnityEngine.Random.Range(0, _catalog.equipmentVariants.Length));
@@ -208,6 +212,7 @@ namespace Exhibition.Blocks
                 if (string.IsNullOrEmpty(promptId)) throw new InvalidOperationException("ComfyUI rejected the workflow.");
                 await journal.AppendAsync("generation_queued", new JObject { ["request_id"] = requestId, ["prompt_id"] = promptId });
                 Status = "Generating image...";
+                Debug.Log("[BlockExperience] Image generation queued. Prompt: " + promptId + ".", this);
                 var file = await client.WaitForImage(promptId, token);
                 pendingTexture = await client.Download(file, token);
                 await journal.AppendAsync("generation_completed", new JObject {
@@ -215,7 +220,11 @@ namespace Exhibition.Blocks
                     ["width"] = pendingTexture.width, ["height"] = pendingTexture.height
                 });
                 token.ThrowIfCancellationRequested();
-                if (!this || !isActiveAndEnabled || revision != _selection.Revision) return;
+                if (!this || !isActiveAndEnabled || revision != _selection.Revision)
+                {
+                    Debug.Log("[BlockExperience] Generated image discarded because the screen or selection changed. Request: " + requestId + ".");
+                    return;
+                }
                 _generatedTexture = pendingTexture;
                 pendingTexture = null;
                 _generatedSprite = Sprite.Create(_generatedTexture, new Rect(0, 0, 480, 480), new Vector2(.5f, .5f));
@@ -229,6 +238,9 @@ namespace Exhibition.Blocks
             }
             catch (OperationCanceledException)
             {
+                Debug.Log(screenToken.IsCancellationRequested
+                    ? "[BlockExperience] Image generation cancelled by screen exit. Request: " + requestId + "."
+                    : "[BlockExperience] Image generation cancelled or timed out. Request: " + requestId + ".");
                 if (this && isActiveAndEnabled && revision == _selection.Revision)
                     Status = screenToken.IsCancellationRequested ? "Generation cancelled." : "Generation cancelled or timed out. Try again.";
                 await WriteEventAsync("generation_cancelled", new JObject { ["request_id"] = requestId,
@@ -294,6 +306,7 @@ namespace Exhibition.Blocks
             ClearImage();
             if (_pausedTimer) { _timer?.Resume(); _pausedTimer = false; }
             WriteEventAsync("session_ended", new JObject()).Forget();
+            Debug.Log("[BlockExperience] Block session ended.", this);
 #if UNITY_EDITOR
             if (enableEditorKeyboard) { Cursor.visible = _oldCursorVisible; Cursor.lockState = _oldCursorLock; }
 #endif

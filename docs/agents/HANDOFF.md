@@ -4,8 +4,8 @@
 
 ## 현재 상태
 
-- 마지막 갱신: 2026-10-19 (Asia/Seoul), Codex, COMMIT-002.
-- 현재 작업: COMMIT-002 — 사용자 요청으로 BLOCK-001/RETENTION-001/RESULT-001 및 관련 사용자 UI·폰트·SO 변경을 이 기록을 포함한 로컬 커밋에 저장. 아래 미커밋 표기는 당시 작업 시점이며 실제 해시는 git log -1로 확인. 생성 전 안내/로드 후 이미지 활성화 및 기존 보관 한도 유지.
+- 마지막 갱신: 2026-10-19 (Asia/Seoul), Claude, LOG-002.
+- 현재 작업: LOG-002 완료, 이 기록을 포함한 로컬 커밋으로 저장(해시는 git log -1) — 주요 분기 영문 Debug.Log 추가(동작 변경 없음). 직전: COMMIT-002 — 사용자 요청으로 BLOCK-001/RETENTION-001/RESULT-001 및 관련 사용자 UI·폰트·SO 변경을 이 기록을 포함한 로컬 커밋에 저장. 아래 미커밋 표기는 당시 작업 시점이며 실제 해시는 git log -1로 확인. 생성 전 안내/로드 후 이미지 활성화 및 기존 보관 한도 유지.
 - AI 구성: SDXL Base 1.0 / 내부 768 / 출력 480 / 16 steps / dpmpp_2m karras. 실제 측정 장비는 RTX 5070 Ti Laptop 12GB. RTX 3060 20초 충족 미검증.
 - 최신 작업: ResultImage/TextGroup 씬 참조 재연결, 초기/대기/실패/취소/비활성화 안내 상태 처리. 실제480 이미지 수신/할당 후 활성화, 첫 활성 Canvas 렌더에서 빈 이미지/안내 중복 표시0회 확인.
 - 현재 브랜치: `main`. FLOW-001/LOG-001/AI-001 및 사용자 씬·폰트·설정 변경은 COMMIT-001 기록을 포함한 커밋에 함께 저장. 실제 해시는 git log -1로 확인한다. 아래 미커밋 표기는 당시 작업 시점의 기록이다.
@@ -16,6 +16,7 @@
 
 | 작업 ID | 담당 | 상태 | 수정 범위 | 다음 담당 / 행동 |
 |---|---|---|---|---|
+| LOG-002 | Claude | 완료 | GameManager, KeyboardButtonSimulator, GameLifetimeScope, BlockExperienceController, ComfyImageClient, GeneratedImageRetention의 Debug.Log 추가만, HANDOFF | 소유권 해제; 로컬 커밋 완료(push 없음); Unity 에디터 컴파일·Play 로그 확인 필요 |
 | COMMIT-002 | Codex | 완료 | BLOCK/RETENTION/RESULT의 소스·씬·설정·테스트·문서·검증 JSON, 관련 사용자 폰트/SO | 로컬 커밋만 수행; 파일 소유권 해제; 해시는 git log -1 |
 | RESULT-001 | Codex | 완료 | BlockExperienceController, Game ResultImage/TextGroup 참조/초기 상태, BLOCK_SIMULATOR/CHANGELOG/HANDOFF, validation/result_ui.json | 소유권 해제; main/50cbe9b 및 기존 미커밋 보존; 실제 생성·취소·실패 UI 검증 |
 | RETENTION-001 | Codex | 완료 | 이미지 정리 정책/루트 서비스·테스트, GameLifetimeScope, BlockExperienceController/ComfyUISettings, BLOCK_SIMULATOR/HANDOFF/CHANGELOG, validation/retention.json | 소유권 해제; main/50cbe9b 및 BLOCK-001 미커밋 기반; 설정 기본1000장/512MiB 복구 확인 |
@@ -65,6 +66,16 @@ FLOW-001 시작 시 사용자 변경: `_TempFont.asset`, `0_Idle.unity` UI, `Set
 ```
 
 ## 최신 작업 기록
+
+### [2026-10-19 / Asia/Seoul] LOG-002 · Claude → 다음 작업자 · 완료
+
+- 요청: 프로그램 주요 분기별 Debug.Log 추가. 영문, 기존 `"[Tag] Sentence.", this` 형식 준수.
+- 기준/범위: main/6e1a923, 시작 시 미커밋 소스 변경 없음(.vscode/.slnx 로컬 파일만). 로그 문장 추가만 수행, 동작·씬·설정·패키지 변경 없음. 사용자 요청으로 이 기록을 포함해 로컬 커밋, push 없음.
+- 추가 위치: GameManager(버튼 입력 준비/간격, 무입력 복귀, 수동 복귀 요청, 씬 전환 시작·취소, Idle 복귀 완료; 기존 Game 진입 언어 로그는 1회 유지), KeyboardButtonSimulator(등록/중복 파괴), GameLifetimeScope(Retention 컴포넌트 추가 시), BlockExperienceController(설정 로드, 블록 인식/제거, 생성 시작/대기열/선택 변경으로 폐기/취소·타임아웃, 세션 종료), ComfyImageClient(history 재시도 경고), GeneratedImageRetention(시작 한도, 출력 폴더 해석 — 같은 경로 반복 기록 방지). 모두 이벤트성 1회 로그이며 매 프레임 로그 없음. API 키·개인정보 미기록.
+- 검증(Claude): Unity MCP 도구가 이 세션에 로드되지 않아 에디터 컴파일은 미수행. 대신 스크래치 폴더에 Assembly-CSharp.csproj 복사본(기존 생성본에 Blocks/ScriptableObjects 스크립트 누락 → 추가)을 만들어 dotnet 10 build: 오류 0, 프로젝트 스크립트 경고 0. Play 실행·실제 로그 출력 확인은 미수행.
+- 위험: GameManager 간격 로그의 double 표기는 시스템 문화권 서식을 따름. 루트 Assembly-CSharp.csproj가 오래되어 IDE에서 Blocks가 보이지 않을 수 있음(Unity가 재생성).
+- 다음 행동: Unity 에디터 컴파일 확인 후 Idle→Game→생성→복귀 Play로 콘솔 로그 확인. 파일 소유권 해제.
+- 장애: 이번 작업에서 발견 없음.
 
 ### [2026-10-19 / Asia/Seoul] COMMIT-002 · Codex → 다음 작업자 · 완료
 

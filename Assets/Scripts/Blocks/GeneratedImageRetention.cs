@@ -15,7 +15,7 @@ namespace Exhibition.Blocks
         private readonly SemaphoreSlim _gate = new SemaphoreSlim(1, 1);
         private CancellationTokenSource _lifetime;
         private ComfyBlockSettings _settings;
-        private string _outputDirectory, _configError, _activeRequest, _lastWarning;
+        private string _outputDirectory, _configError, _activeRequest, _lastWarning, _loggedDirectory;
         private bool _configured;
         public string OutputDirectory => _outputDirectory;
         public string LastStatus { get; private set; } = "Image retention is initializing.";
@@ -44,6 +44,8 @@ namespace Exhibition.Blocks
                 _settings = JsonUtility.FromJson<ComfyBlockSettings>(await ComfyImageClient.LoadText("ComfyUISettings.json", token));
                 _settings.Validate();
                 _configured = true;
+                Debug.Log("[ImageRetention] Started. Limits: " + _settings.maxGeneratedImages + " image(s), " +
+                    _settings.maxGeneratedImageMegabytes + " MiB.", this);
             }
             catch (OperationCanceledException) { return; }
             catch (Exception ex) { _configError = ex.Message; Warn(ex.Message); return; }
@@ -96,7 +98,16 @@ namespace Exhibition.Blocks
             await _gate.WaitAsync(token);
             try
             {
-                string root = _outputDirectory ?? await ResolveOutputDirectory(token);
+                string root = _outputDirectory;
+                if (root == null)
+                {
+                    root = await ResolveOutputDirectory(token);
+                    if (_loggedDirectory != root)
+                    {
+                        _loggedDirectory = root;
+                        Debug.Log("[ImageRetention] Output directory resolved: " + root, this);
+                    }
+                }
                 int count = _settings.maxGeneratedImages;
                 long bytes = _settings.maxGeneratedImageMegabytes * 1024L * 1024L;
                 var grace = TimeSpan.FromSeconds(_settings.imageWriteGraceSeconds);

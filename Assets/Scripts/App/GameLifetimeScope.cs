@@ -1,4 +1,5 @@
 using Core;
+using UnityEngine;
 using VContainer;
 using VContainer.Unity;
 using HuliacDev.App;
@@ -30,7 +31,10 @@ namespace App
             builder.RegisterBuildCallback(resolver => {
                 var manager = resolver.Resolve<GameManager>();
                 if (!manager.GetComponent<GeneratedImageRetention>())
+                {
                     manager.gameObject.AddComponent<GeneratedImageRetention>();
+                    Debug.Log("[GameLifetimeScope] Added GeneratedImageRetention to GameManager.", manager);
+                }
             });
         }
     }

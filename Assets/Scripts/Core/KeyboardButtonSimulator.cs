@@ -25,11 +25,13 @@ namespace Core
             }
             if (!_manager.RegisterKeyboardSimulator(this))
             {
+                Debug.Log("[KeyboardButtonSimulator] Another simulator is already registered. Destroying duplicate.", this);
                 Destroy(gameObject);
                 return;
             }
             _registered = true;
             DontDestroyOnLoad(gameObject);
+            Debug.Log("[KeyboardButtonSimulator] Registered. Key 1 simulates the exhibition button.", this);
         }
 
         private void OnEnable() => _waitForRelease = true;

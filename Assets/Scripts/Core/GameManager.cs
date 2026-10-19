@@ -97,6 +97,7 @@ namespace Core
         protected virtual void ReturnToFirstScreen()
         {
             if (_isIdle || IsTransitioning) return;
+            Debug.Log("[GameManager] Inactivity timeout. Returning to Idle.", this);
             BeginTransition(idleScenePath, false, SessionLanguage.Thai);
         }
 
@@ -127,6 +128,7 @@ namespace Core
                     : ButtonInputSettings.DefaultDoublePressIntervalSeconds;
                 _gesture.Reset();
                 _inputReady = true;
+                Debug.Log($"[GameManager] Button input ready. Double-press interval: {_gesture.DoublePressIntervalSeconds} seconds.", this);
             }
             catch (OperationCanceledException) { }
         }
@@ -179,6 +181,7 @@ namespace Core
         public void ReturnToIdleManually()
         {
             if (_isIdle || IsTransitioning) return;
+            Debug.Log("[GameManager] Manual return to Idle requested.", this);
             BeginTransition(idleScenePath, true, SessionLanguage.Thai);
         }
 
@@ -192,6 +195,7 @@ namespace Core
             }
             IsTransitioning = true;
             _gesture.Reset();
+            Debug.Log($"[GameManager] Scene transition started: {scenePath}", this);
             TransitionAsync(scenePath, manualReturn, language).Forget();
         }
 
@@ -229,8 +233,9 @@ namespace Core
                         ? "[GameManager] Game started. Language: Thai (th)."
                         : "[GameManager] Game started. Language: English (en).", this);
                 }
+                else Debug.Log("[GameManager] Returned to Idle. Session cleared.", this);
             }
-            catch (OperationCanceledException) { }
+            catch (OperationCanceledException) { Debug.Log($"[GameManager] Scene transition cancelled: {scenePath}", this); }
             catch (Exception exception)
             {
                 Debug.LogException(exception, this);

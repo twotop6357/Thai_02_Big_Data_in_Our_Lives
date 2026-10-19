@@ -79,7 +79,10 @@ namespace Exhibition.Blocks
                 try { return await Json("/history/" + Uri.EscapeDataString(id), null, token); }
                 catch (UnityWebRequestException ex) when (attempt < 2 &&
                     (ex.ResponseCode == 0 || ex.ResponseCode >= 500))
-                { await UniTask.Delay(500 * (attempt + 1), ignoreTimeScale: true, cancellationToken: token); }
+                {
+                    Debug.LogWarning("[ComfyImageClient] History request failed (" + ex.ResponseCode + "). Retry " + (attempt + 1) + " of 2.");
+                    await UniTask.Delay(500 * (attempt + 1), ignoreTimeScale: true, cancellationToken: token);
+                }
             }
         }
 
