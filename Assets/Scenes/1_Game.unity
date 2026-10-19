@@ -427,6 +427,7 @@ MonoBehaviour:
   color2Text: {fileID: 1688185419}
   resultImage: {fileID: 1900506867}
   resultTextGroup: {fileID: 1603436275}
+  pressButtonText: {fileID: 1213941107}
   enableEditorKeyboard: 1
 --- !u!4 &401640617
 Transform:
@@ -1459,7 +1460,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1213941108
 RectTransform:
   m_ObjectHideFlags: 0

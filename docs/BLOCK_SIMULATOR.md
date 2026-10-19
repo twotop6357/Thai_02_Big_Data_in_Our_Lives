@@ -16,6 +16,8 @@ Unity 2022.3.62f3의 `1_Game` 씬에 `BlockExperience` 오브젝트를 연결했
 3. 인식된 슬롯의 키를 다시 누르면 인식이 해제되고 텍스트가 `—`로 바뀐다. 이후 한 번 더 누르면 목록이 열린다. 목록만 열린 상태에서 같은 키를 다시 누르면 닫힌다.
 4. 네 슬롯을 모두 채우면 임시 UI의 **Generate image**를 누른다. **Cancel generation**으로 취소할 수 있다. 자동 연속 생성·선택 도중 latent 이어 그리기는 구현하지 않았다.
 5. 생성 전·생성 중에는 `RecommendedProductImageBox/TextGroup`을 표시하고 `ResultImage`는 비활성화한다. 다운로드한 480×480 이미지를 `ResultImage`에 먼저 할당한 다음 활성화하고 TextGroup을 숨긴다. 선택 변경·재생성·취소·실패·컴포넌트 종료 시에는 안내 상태를 유지/복구하고 이전 이미지 자원을 해제한다.
+6. Game의 `PressButtonText`는 이미지가 표시될 때까지 비활성화된다. 이미지가 표시되면 활성화되고, 이때 버튼(임시 숫자 1)을 **짧게 눌렀다 떼면** `2_Result`로 이동해 `ResultPanel/AdImageBox/ResultImage`에 같은 이미지를 표시한다. 5초 이상 누르면 기존처럼 Idle로 복귀한다. 선택 변경·재생성 시작 시 텍스트를 다시 숨기고 이동 대상 이미지도 해제한다.
+7. 생성 이미지는 GameManager가 소유해 Game→Result 이동 동안 유지하며 Idle 복귀·새 Game 세션 시작·앱 종료 시 해제한다. Result 이동은 같은 방문 세션(언어·세션 토큰)을 유지한다. 언어 선택 없이 Game 씬에서 바로 Play하면 이미지를 넘기지 않으므로 텍스트가 표시되지 않고 Result로 이동하지 않는다. Idle에서 시작한다.
 
 임시 키·선택창·생성 버튼은 `UNITY_EDITOR`에서만 표시/처리한다. `BlockExperienceController`의 Enable Editor Keyboard로 끌 수 있다. 에디터 마우스 선택을 위해 커서를 표시하며 컴포넌트가 비활성화되면 이전 커서 상태로 되돌린다. 실제 RFID/배포용 생성 트리거는 추후 어댑터가 같은 컴포넌트의 `RecognizeBlock(slot,id)`, `RemoveBlock(slot)`, `GenerateImage()`를 Unity 메인 스레드에서 호출하도록 연결한다.
 

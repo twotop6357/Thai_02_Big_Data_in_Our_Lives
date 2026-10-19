@@ -18,6 +18,8 @@ namespace Exhibition.Blocks
         [SerializeField] private TMP_Text groupText, productText, color1Text, color2Text;
         [SerializeField] private Image resultImage;
         [SerializeField] private GameObject resultTextGroup;
+        [Tooltip("Shown only while a generated image is ready to open in the Result scene.")]
+        [SerializeField] private GameObject pressButtonText;
         [SerializeField] private bool enableEditorKeyboard = true;
 
         private readonly BlockSelection _selection = new BlockSelection();
@@ -30,7 +32,7 @@ namespace Exhibition.Blocks
         private GeneratedImageRetention _retention;
         private CancellationTokenSource _screenCts, _requestCts;
         private Sprite _originalSprite, _generatedSprite;
-        private Texture2D _generatedTexture;
+        private Texture2D _generatedTexture, _handedOffTexture;
         private bool _ready, _pausedTimer;
         private int _popup = -1;
         private Vector2 _scroll;
@@ -70,8 +72,8 @@ namespace Exhibition.Blocks
                 _manager = FindFirstObjectByType<GameManager>();
                 _timer = FindFirstObjectByType<InactivityTimer>();
                 _retention = FindFirstObjectByType<GeneratedImageRetention>();
-                if (!groupText || !productText || !color1Text || !color2Text || !resultImage || !resultTextGroup)
-                    throw new InvalidOperationException("Assign all four OptionText fields, ResultImage and TextGroup.");
+                if (!groupText || !productText || !color1Text || !color2Text || !resultImage || !resultTextGroup || !pressButtonText)
+                    throw new InvalidOperationException("Assign all four OptionText fields, ResultImage, TextGroup and PressButtonText.");
                 _catalog = JsonUtility.FromJson<BlockCatalog>(await ComfyImageClient.LoadText("BlockCatalog.json", token));
                 _catalog.Validate();
                 _settings = JsonUtility.FromJson<ComfyBlockSettings>(await ComfyImageClient.LoadText("ComfyUISettings.json", token));
@@ -233,6 +235,13 @@ namespace Exhibition.Blocks
                 // Bind the fully downloaded image before enabling the view; never show an empty Image.
                 resultImage.gameObject.SetActive(true);
                 resultTextGroup.SetActive(false);
+                // The persistent manager owns the texture from here so the Result scene can show it.
+                if (_manager && _manager.SetResultTexture(_generatedTexture))
+                {
+                    _handedOffTexture = _generatedTexture;
+                    _generatedTexture = null;
+                    pressButtonText.SetActive(true);
+                }
                 Status = "Image ready. Change blocks or generate again.";
                 Debug.Log("[BlockExperience] Image generation completed.", this);
             }
@@ -279,8 +288,9 @@ namespace Exhibition.Blocks
             Debug.LogError("[BlockExperience] " + message + ": " + ex.Message, this);
         }
 
-        private void ClearImage()
+        private void ClearImage(bool releaseResult = true)
         {
+            if (pressButtonText) pressButtonText.SetActive(false);
             if (resultImage)
             {
                 resultImage.gameObject.SetActive(false);
@@ -289,8 +299,11 @@ namespace Exhibition.Blocks
             if (resultTextGroup) resultTextGroup.SetActive(true);
             if (_generatedSprite) Destroy(_generatedSprite);
             if (_generatedTexture) Destroy(_generatedTexture);
+            if (releaseResult && _handedOffTexture && _manager && _manager.ResultTexture == _handedOffTexture)
+                _manager.ClearResultTexture();
             _generatedSprite = null;
             _generatedTexture = null;
+            _handedOffTexture = null;
         }
 
         private void OnDisable()
@@ -303,7 +316,8 @@ namespace Exhibition.Blocks
             _screenCts = null;
             _selection.Clear();
             if (_catalog != null) RefreshLabels();
-            ClearImage();
+            // Keep the handed-off image while a scene transition (e.g. to Result) unloads this screen.
+            ClearImage(!(_manager && _manager.IsTransitioning));
             if (_pausedTimer) { _timer?.Resume(); _pausedTimer = false; }
             WriteEventAsync("session_ended", new JObject()).Forget();
             Debug.Log("[BlockExperience] Block session ended.", this);

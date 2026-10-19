@@ -24,6 +24,7 @@ namespace Core
     {
         [SerializeField] private string idleScenePath = "Assets/Scenes/0_Idle.unity";
         [SerializeField] private string gameScenePath = "Assets/Scenes/1_Game.unity";
+        [SerializeField] private string resultScenePath = "Assets/Scenes/2_Result.unity";
         [SerializeField] private SessionLanguage currentLanguage = SessionLanguage.Thai;
 
         private readonly ExhibitionButtonGesture _gesture = new ExhibitionButtonGesture();
@@ -37,6 +38,8 @@ namespace Core
         private bool _buttonPressed;
         private bool _isIdle;
         private bool _inputReady;
+        private bool _isGame;
+        private Texture2D _resultTexture;
 
         public SessionLanguage CurrentLanguage => currentLanguage;
         public string LanguageCode => currentLanguage == SessionLanguage.Thai ? "th" : "en";
@@ -44,6 +47,9 @@ namespace Core
         public bool IsTransitioning { get; private set; }
         public bool IsInputReady => _inputReady;
         public double DoublePressIntervalSeconds => _gesture.DoublePressIntervalSeconds;
+
+        /// <summary>Generated image owned by this manager until the session returns to Idle.</summary>
+        public Texture2D ResultTexture => _resultTexture;
 
         // Future API/video tasks must use this plus their own screen lifetime token.
         public CancellationToken SessionCancellationToken =>
@@ -74,6 +80,7 @@ namespace Core
             _inactivityTimeoutSubscription = _inactivityTimeoutSubscriber?.Subscribe(_ => ReturnToFirstScreen());
             SceneManager.activeSceneChanged += OnActiveSceneChanged;
             _isIdle = SceneManager.GetActiveScene().path == idleScenePath;
+            _isGame = SceneManager.GetActiveScene().path == gameScenePath;
             ResetButtonInput();
         }
 
@@ -104,6 +111,7 @@ namespace Core
         protected override void OnDestroy()
         {
             EndSession();
+            ClearResultTexture();
             base.OnDestroy();
         }
 
@@ -148,6 +156,13 @@ namespace Core
                 case ButtonGesture.ReturnToIdle:
                     ReturnToIdleManually();
                     break;
+                case ButtonGesture.ShortPress:
+                    if (_isGame && _resultTexture)
+                    {
+                        Debug.Log("[GameManager] Button pressed with a generated image. Moving to Result.", this);
+                        BeginTransition(resultScenePath, false, currentLanguage);
+                    }
+                    break;
             }
         }
 
@@ -156,6 +171,24 @@ namespace Core
         {
             _buttonPressed = pressed;
             if (pressed) _inactivityTimer?.ResetTimer();
+        }
+
+        /// <summary>
+        /// Takes ownership of a generated image for the Result scene. The previous image is destroyed.
+        /// Ignored outside an active Game session so a late result cannot leak into Idle.
+        /// </summary>
+        public bool SetResultTexture(Texture2D texture)
+        {
+            if (!texture || !HasLanguageSelection || !_isGame || IsTransitioning) return false;
+            if (_resultTexture && _resultTexture != texture) Destroy(_resultTexture);
+            _resultTexture = texture;
+            return true;
+        }
+
+        public void ClearResultTexture()
+        {
+            if (_resultTexture) Destroy(_resultTexture);
+            _resultTexture = null;
         }
 
         public void ResetButtonInput()
@@ -202,16 +235,19 @@ namespace Core
         private async UniTask TransitionAsync(string scenePath, bool manualReturn, SessionLanguage language)
         {
             bool returning = scenePath == idleScenePath;
+            // Game -> Result keeps the same visitor session, language and generated image.
+            bool continuing = scenePath == resultScenePath;
             try
             {
-                EndSession();
+                if (!continuing) EndSession();
                 if (returning)
                 {
                     StopSessionMedia();
                     ClearSelection();
                 }
-                else
+                else if (!continuing)
                 {
+                    ClearResultTexture();
                     currentLanguage = language;
                     HasLanguageSelection = true;
                     _sessionCts = new CancellationTokenSource();
@@ -227,7 +263,8 @@ namespace Core
                 }
                 // A scene load cannot be undone: do not clear the guard on UI cancellation.
                 await operation.ToUniTask(cancellationToken: this.GetCancellationTokenOnDestroy());
-                if (!returning)
+                if (continuing) Debug.Log("[GameManager] Result scene loaded.", this);
+                else if (!returning)
                 {
                     Debug.Log(language == SessionLanguage.Thai
                         ? "[GameManager] Game started. Language: Thai (th)."
@@ -239,7 +276,7 @@ namespace Core
             catch (Exception exception)
             {
                 Debug.LogException(exception, this);
-                if (!returning)
+                if (!returning && !continuing)
                 {
                     EndSession();
                     ClearSelection();
@@ -259,11 +296,13 @@ namespace Core
         private void OnActiveSceneChanged(Scene previous, Scene next)
         {
             _isIdle = next.path == idleScenePath;
+            _isGame = next.path == gameScenePath;
             _gesture.Reset();
             if (_isIdle)
             {
                 EndSession();
                 ClearSelection();
+                ClearResultTexture();
                 _inactivityTimer?.Resume();
             }
         }

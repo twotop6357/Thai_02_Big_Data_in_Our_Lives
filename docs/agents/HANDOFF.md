@@ -4,8 +4,8 @@
 
 ## 현재 상태
 
-- 마지막 갱신: 2026-10-19 (Asia/Seoul), Claude, LOG-002.
-- 현재 작업: LOG-002 완료, 이 기록을 포함한 로컬 커밋으로 저장(해시는 git log -1) — 주요 분기 영문 Debug.Log 추가(동작 변경 없음). 직전: COMMIT-002 — 사용자 요청으로 BLOCK-001/RETENTION-001/RESULT-001 및 관련 사용자 UI·폰트·SO 변경을 이 기록을 포함한 로컬 커밋에 저장. 아래 미커밋 표기는 당시 작업 시점이며 실제 해시는 git log -1로 확인. 생성 전 안내/로드 후 이미지 활성화 및 기존 보관 한도 유지.
+- 마지막 갱신: 2026-10-19 (Asia/Seoul), Claude, RESULTSCENE-001.
+- 현재 작업: RESULTSCENE-001 완료(코드·씬·빌드 설정 연결, EditMode 33/33, 실제 생성 Play 검증, 이 기록을 포함해 로컬 커밋). 이전: LOG-002 완료, 이 기록을 포함한 로컬 커밋으로 저장(해시는 git log -1) — 주요 분기 영문 Debug.Log 추가(동작 변경 없음). 직전: COMMIT-002 — 사용자 요청으로 BLOCK-001/RETENTION-001/RESULT-001 및 관련 사용자 UI·폰트·SO 변경을 이 기록을 포함한 로컬 커밋에 저장. 아래 미커밋 표기는 당시 작업 시점이며 실제 해시는 git log -1로 확인. 생성 전 안내/로드 후 이미지 활성화 및 기존 보관 한도 유지.
 - AI 구성: SDXL Base 1.0 / 내부 768 / 출력 480 / 16 steps / dpmpp_2m karras. 실제 측정 장비는 RTX 5070 Ti Laptop 12GB. RTX 3060 20초 충족 미검증.
 - 최신 작업: ResultImage/TextGroup 씬 참조 재연결, 초기/대기/실패/취소/비활성화 안내 상태 처리. 실제480 이미지 수신/할당 후 활성화, 첫 활성 Canvas 렌더에서 빈 이미지/안내 중복 표시0회 확인.
 - 현재 브랜치: `main`. FLOW-001/LOG-001/AI-001 및 사용자 씬·폰트·설정 변경은 COMMIT-001 기록을 포함한 커밋에 함께 저장. 실제 해시는 git log -1로 확인한다. 아래 미커밋 표기는 당시 작업 시점의 기록이다.
@@ -16,6 +16,7 @@
 
 | 작업 ID | 담당 | 상태 | 수정 범위 | 다음 담당 / 행동 |
 |---|---|---|---|---|
+| RESULTSCENE-001 | Claude | 완료 | ExhibitionButtonGesture(+테스트), GameManager, BlockExperienceController, 신규 Assets/Scripts/Result, 1_Game PressButtonText 참조/초기 상태, 2_Result 표시 컴포넌트, EditorBuildSettings, BUTTON_INPUT/BLOCK_SIMULATOR/CHANGELOG/HANDOFF | 소유권 해제; main/9d45652 기준 로컬 커밋(git log -1); 2_Result는 사용자 미추적 씬에 컴포넌트만 추가; AssetKits 미수정 |
 | LOG-002 | Claude | 완료 | GameManager, KeyboardButtonSimulator, GameLifetimeScope, BlockExperienceController, ComfyImageClient, GeneratedImageRetention의 Debug.Log 추가만, HANDOFF | 소유권 해제; 로컬 커밋 완료(push 없음); Unity 에디터 컴파일·Play 로그 확인 필요 |
 | COMMIT-002 | Codex | 완료 | BLOCK/RETENTION/RESULT의 소스·씬·설정·테스트·문서·검증 JSON, 관련 사용자 폰트/SO | 로컬 커밋만 수행; 파일 소유권 해제; 해시는 git log -1 |
 | RESULT-001 | Codex | 완료 | BlockExperienceController, Game ResultImage/TextGroup 참조/초기 상태, BLOCK_SIMULATOR/CHANGELOG/HANDOFF, validation/result_ui.json | 소유권 해제; main/50cbe9b 및 기존 미커밋 보존; 실제 생성·취소·실패 UI 검증 |
@@ -66,6 +67,24 @@ FLOW-001 시작 시 사용자 변경: `_TempFont.asset`, `0_Idle.unity` UI, `Set
 ```
 
 ## 최신 작업 기록
+
+### [2026-10-19 / Asia/Seoul] RESULTSCENE-001(씬 연결·검증) · Claude → 다음 작업자 · 완료
+
+- 기준: main/9d45652 + 아래 기록의 미커밋 코드. Unity MCP 재연결 후 컴파일 오류0 확인.
+- 씬(Unity SerializedObject로 저장): 1_Game `BlockExperienceController.pressButtonText`←`Canvas/ProductChoicePanel/PressButtonText`, 해당 오브젝트 초기 비활성(diff 2줄). 2_Result `Canvas/ResultPanel`에 ResultImagePresenter 추가, `resultImage`←`ResultPanel/AdImageBox/ResultImage`(실제 계층; 문서 경로도 정정). EditorBuildSettings에 2_Result(index 2) 추가. 사용자 레이아웃·텍스트·AssetKits 미수정.
+- 검증(Claude/Unity2022.3.62f3 Editor): EditMode 33/33 PASS(job efe2f53a1dd64013a5fa9c090103c92c, ShortPress 3건 포함). Play: Idle에서 GameManager.SetButtonPressed로 단일 입력→Game(Thai) 진입, 4블록(student/bags/blue/white) 인식 시 PressButtonText off, GenerateImage→실제 localhost ComfyUI 480×480 수신 후 PressButtonText on·ResultTexture 이전. 약 3초 짧은 누름→2_Result, 세션/Thai 유지, ResultImage sprite가 같은 텍스처 사용·활성, GameManager 1개. 5초 유지→Idle, 세션 해제, ResultTexture null, 480 텍스처 잔존 0개. Console error0(MCP 중복명령 억제 경고만). Play 종료, Game 씬 열림.
+- 검증 방법 주의: 키보드 시뮬레이터가 매 프레임/포커스 이벤트로 버튼 상태를 덮어써 테스트 중 Play 런타임에서만 비활성화(씬 변경 없음). 실제 숫자1 물리 키 입력은 미수행.
+- 미검증: Result에서 30초 무입력 복귀(같은 Idle 진입 해제 경로), 생성 중 짧은 누름, Windows Player, 실제 RFID/버튼 하드웨어.
+- 종료: 파일 소유권 해제. 사용자 요청으로 이 기록을 포함해 로컬 커밋(해시는 git log -1, push 없음). 미추적 AssetKits(ParticleImage)·.vscode·slnx는 2_Result가 참조하지 않아 제외·보존. 장애: 발견 없음.
+
+### [2026-10-19 / Asia/Seoul] RESULTSCENE-001 · Claude → Claude(MCP 재시작 후) · 인계 대기
+
+- 요청: Game에서 이미지 생성 전 PressButtonText 비활성화, 표시 후 버튼(숫자1) 입력 시 2_Result로 이동해 ResultPanel/ResultImage에 그 이미지 출력.
+- 기준/보존: main/9d45652. 사용자 미추적 `Assets/Scenes/2_Result.unity`(+meta), `Assets/AssetKits/` 보존·미수정. 미커밋.
+- 결정: 5초 유지 복귀와 충돌하지 않도록 비Idle 씬 입력에 `ButtonGesture.ShortPress`(5초 전 놓을 때 1회) 추가. GameManager가 생성 Texture2D를 소유(SetResultTexture/ClearResultTexture), Game→Result는 세션·언어·토큰 유지(EndSession 생략), Idle 복귀·새 Game 세션·OnDestroy에서 해제. BlockExperienceController는 이미지 표시 후 소유권 이전 성공 시에만 PressButtonText 활성화, 선택변경/재생성 시 숨김+해제, 씬 전환 중 비활성화에서는 이전 이미지 유지. 신규 `Assets/Scripts/Result/ResultImagePresenter.cs`(Sprite만 생성·해제, 텍스처는 매니저 소유). 언어 선택 없이 Game 직접 Play 시에는 이전하지 않음.
+- 검증(Claude): 스크래치 csproj(dotnet 10)로 Assembly-CSharp+Blocks+Result 컴파일 오류0, Exhibition.Input 오류0. ShortPress EditMode 테스트 3건 추가했으나 Unity Test Runner 미실행. Play/씬 검증 미수행.
+- 남은 작업(씬, Unity MCP 필요): 1) 1_Game `BlockExperienceController.pressButtonText`←PressButtonText 연결 및 PressButtonText 초기 비활성. 2) 2_Result ResultPanel에 ResultImagePresenter 추가, resultImage←ResultPanel/ResultImage. 3) EditorBuildSettings에 2_Result 추가. 이후 EditMode 테스트·Idle→Game→생성→짧은누름→Result→5초/무입력 복귀 Play 검증.
+- 장애: 발견 없음.
 
 ### [2026-10-19 / Asia/Seoul] LOG-002 · Claude → 다음 작업자 · 완료
 

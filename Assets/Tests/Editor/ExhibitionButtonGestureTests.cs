@@ -84,4 +84,29 @@ public class ExhibitionButtonGestureTests
         Assert.AreEqual(ButtonGesture.None, _button.Tick(false, true, 0.5));
         Assert.AreEqual(ButtonGesture.SelectEnglish, _button.Tick(true, true, 0.8));
     }
+
+    [Test]
+    public void ShortPressOutsideIdleFiresOnReleaseOnce()
+    {
+        Assert.AreEqual(ButtonGesture.None, _button.Tick(true, false, 0));
+        Assert.AreEqual(ButtonGesture.None, _button.Tick(true, false, 1));
+        Assert.AreEqual(ButtonGesture.ShortPress, _button.Tick(false, false, 1.2));
+        Assert.AreEqual(ButtonGesture.None, _button.Tick(false, false, 2));
+    }
+
+    [Test]
+    public void CompletedReturnHoldDoesNotAlsoFireShortPress()
+    {
+        _button.Tick(true, false, 0);
+        Assert.AreEqual(ButtonGesture.ReturnToIdle, _button.Tick(true, false, 5));
+        Assert.AreEqual(ButtonGesture.None, _button.Tick(false, false, 5.1));
+    }
+
+    [Test]
+    public void ReleaseCarriedOverFromIdleIsNotShortPress()
+    {
+        _button.Tick(true, true, 0);
+        Assert.AreEqual(ButtonGesture.SelectThai, _button.Tick(true, true, 0.5));
+        Assert.AreEqual(ButtonGesture.None, _button.Tick(false, false, 1));
+    }
 }

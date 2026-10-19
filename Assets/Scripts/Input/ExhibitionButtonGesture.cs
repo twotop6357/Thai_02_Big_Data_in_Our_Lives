@@ -1,6 +1,6 @@
 namespace Exhibition.Input
 {
-    public enum ButtonGesture { None, SelectThai, SelectEnglish, ReturnToIdle }
+    public enum ButtonGesture { None, SelectThai, SelectEnglish, ReturnToIdle, ShortPress }
 
     /// <summary>Allocation-free state machine. Time is supplied in unscaled seconds.</summary>
     public sealed class ExhibitionButtonGesture
@@ -51,7 +51,15 @@ namespace Exhibition.Input
                 }
                 return ButtonGesture.None;
             }
-            if (!pressed) _holding = false;
+            if (!pressed)
+            {
+                // Released before the return hold completed: a short press outside Idle.
+                if (_holding)
+                {
+                    _holding = false;
+                    return ButtonGesture.ShortPress;
+                }
+            }
             else if (pressedThisTick)
             {
                 _holding = true;
