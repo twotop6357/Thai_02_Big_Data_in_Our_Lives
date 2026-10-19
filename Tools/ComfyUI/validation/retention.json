@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-19",
+  "unity": "2022.3.62f3",
+  "editmode": {
+    "passed": 30,
+    "failed": 0,
+    "job_id": "f399ba50cea041de9da5fadb2c7a3183"
+  },
+  "defaults": {
+    "max_images": 1000,
+    "max_mib": 512,
+    "interval_seconds": 30,
+    "write_grace_seconds": 60
+  },
+  "verified": [
+    "oldest-first count and byte limits",
+    "recent files and active request protection",
+    "locked file failure and continuation",
+    "foreign and nested files excluded",
+    "cancellation before deletion",
+    "invalid roots and drive-relative paths rejected",
+    "forward-slash absolute Windows path accepted",
+    "junction rejected and target sentinel preserved",
+    "live root-service sweep restores both limits; foreign file preserved",
+    "ComfyUI output auto-discovered from localhost argv",
+    "actual Unity image generation succeeds with capacity check",
+    "natural 30-second cleanup while Idle: isolated fixture 3 owned files to newest 1; foreign file preserved; service count 1"
+  ],
+  "periodic_idle_verified": true,
+  "unverified": [
+    "Windows Player",
+    "remote shared output directory",
+    "long-duration disk usage",
+    "disk full / access control failure on deployed PC"
+  ],
+  "temporary_fixture_cleanup": "A tool command to remove the isolated test junction was rejected by automatic approval review as blocked by policy. It was left in ignored results; no alternative deletion was attempted.",
+  "live_sweep": {
+    "deleted_files": 1,
+    "remaining_files": 2,
+    "remaining_bytes": 1000000,
+    "foreign_preserved": true
+  },
+  "periodic_idle": {
+    "owned_before": 3,
+    "owned_after": 1,
+    "foreign_preserved": true,
+    "manual_sweep_called": false
+  }
+}

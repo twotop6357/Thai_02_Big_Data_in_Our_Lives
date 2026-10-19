@@ -4,18 +4,22 @@
 
 ## 현재 상태
 
-- 마지막 갱신: 2026-10-18 (Asia/Seoul), Codex, COMMIT-001.
-- 현재 작업: AI-001 인계 대기 — ComfyUI 실행 가능한 기본 워크플로 작성. 서브컬처 모바일게임 아이템 화풍의 일관성 및 대상 GPU 검수는 미완료.
+- 마지막 갱신: 2026-10-19 (Asia/Seoul), Codex, COMMIT-002.
+- 현재 작업: COMMIT-002 — 사용자 요청으로 BLOCK-001/RETENTION-001/RESULT-001 및 관련 사용자 UI·폰트·SO 변경을 이 기록을 포함한 로컬 커밋에 저장. 아래 미커밋 표기는 당시 작업 시점이며 실제 해시는 git log -1로 확인. 생성 전 안내/로드 후 이미지 활성화 및 기존 보관 한도 유지.
 - AI 구성: SDXL Base 1.0 / 내부 768 / 출력 480 / 16 steps / dpmpp_2m karras. 실제 측정 장비는 RTX 5070 Ti Laptop 12GB. RTX 3060 20초 충족 미검증.
-- 최신 작업: 4입력 프롬프트 매핑, 표준 노드 UI/API JSON, 모델 해시 확인 도구, 측정 도구와 실제 4회 결과를 저장. 이미지 품질 실패도 validation에 함께 기록. Unity 생성 API/실시간 프리뷰 연결은 구현하지 않음.
+- 최신 작업: ResultImage/TextGroup 씬 참조 재연결, 초기/대기/실패/취소/비활성화 안내 상태 처리. 실제480 이미지 수신/할당 후 활성화, 첫 활성 Canvas 렌더에서 빈 이미지/안내 중복 표시0회 확인.
 - 현재 브랜치: `main`. FLOW-001/LOG-001/AI-001 및 사용자 씬·폰트·설정 변경은 COMMIT-001 기록을 포함한 커밋에 함께 저장. 실제 해시는 git log -1로 확인한다. 아래 미커밋 표기는 당시 작업 시점의 기록이다.
-- 다음 행동: Idle에서 Play해 버튼 동작을 확인할 수 있다. 후속 UI 지역화는 GameManager.CurrentLanguage/LanguageCode에 연결하고 태국어 문구·폰트를 준비한다. Windows Player·실제 Arduino·장시간 검증은 남아 있다.
+- 다음 행동: Idle 또는 Game에서 Play, 숫자2/3/4/5로 선택 후 Generate image. 실제 RFID/배포용 트리거·태국어 UI 번역·대상 PC/장시간 검수는 후속. 상세는 docs/BLOCK_SIMULATOR.md. 에디터는 Play 종료, Game 씬을 열어 둠.
 - 미해결 치명적 장애: 이번 세션에서 발견한 항목 없음. 런타임 검증으로 장애 부재를 확인한 뜻은 아니다. [TroubleShooting](../TroubleShooting.md) 참조.
 
 ## 진행 중 작업 / 파일 소유권
 
 | 작업 ID | 담당 | 상태 | 수정 범위 | 다음 담당 / 행동 |
 |---|---|---|---|---|
+| COMMIT-002 | Codex | 완료 | BLOCK/RETENTION/RESULT의 소스·씬·설정·테스트·문서·검증 JSON, 관련 사용자 폰트/SO | 로컬 커밋만 수행; 파일 소유권 해제; 해시는 git log -1 |
+| RESULT-001 | Codex | 완료 | BlockExperienceController, Game ResultImage/TextGroup 참조/초기 상태, BLOCK_SIMULATOR/CHANGELOG/HANDOFF, validation/result_ui.json | 소유권 해제; main/50cbe9b 및 기존 미커밋 보존; 실제 생성·취소·실패 UI 검증 |
+| RETENTION-001 | Codex | 완료 | 이미지 정리 정책/루트 서비스·테스트, GameLifetimeScope, BlockExperienceController/ComfyUISettings, BLOCK_SIMULATOR/HANDOFF/CHANGELOG, validation/retention.json | 소유권 해제; main/50cbe9b 및 BLOCK-001 미커밋 기반; 설정 기본1000장/512MiB 복구 확인 |
+| BLOCK-001 | Codex | 완료 | Assets/Scripts/Blocks 및 메타, StreamingAssets/BlockGeneration, Tests/Blocks, Game 씬 추가 연결, 검증 JSON, BLOCK_SIMULATOR/COMFYUI_SETUP/CHANGELOG/HANDOFF | 소유권 해제; main/50cbe9b 기준 미커밋; 실제 RFID·Player·전체 물품 품질 후속 |
 | AI-001 | Codex | 인계 대기 | Tools/ComfyUI, docs/COMFYUI_SETUP.md, HANDOFF | 소유권 해제; 화풍 승인·품질 안정화 및 3060 실측 필요; 미커밋 |
 | LOG-001 | Codex | 완료 | GameManager.cs, EnglishDebugLogHandler.cs 및 메타, AGENTS.md, docs/BUTTON_INPUT.md, CHANGELOG.md, HANDOFF | 소유권 해제; 미커밋 |
 | FLOW-001 | Codex | 완료 | GameManager, 신규 Input/설정/시뮬레이터 스크립트 및 메타·테스트, 0_Idle, Settings.json, EditorBuildSettings, AGENTS, CHANGELOG, docs/BUTTON_INPUT.md, HANDOFF | 파일 소유권 해제; 미커밋 |
@@ -61,6 +65,48 @@ FLOW-001 시작 시 사용자 변경: `_TempFont.asset`, `0_Idle.unity` UI, `Set
 ```
 
 ## 최신 작업 기록
+
+### [2026-10-19 / Asia/Seoul] COMMIT-002 · Codex → 다음 작업자 · 완료
+
+- 요청: 작업 내용 커밋. 기준 main/50cbe9b, 실제 origin이 현재 프로젝트 저장소임을 확인. BLOCK-001/RETENTION-001/RESULT-001과 관련 Game 씬·폰트·ScriptableObject 변경을 함께 저장. 원격 push 요청 없음.
+- 포함: Assets의 블록/ComfyUI/JSONL/이미지 보관 정책·루트 등록·결과표시와 테스트/메타, StreamingAssets 카탈로그·API 그래프·설정, 사용자 Game UI·폰트·GameSceneTitleTextSO, CHANGELOG/운영 문서/HANDOFF, Tools/ComfyUI/validation의 block_runtime/result_ui/retention JSON.
+- 제외: .vscode 및 자동생성 slnx, ignored 생성물·모델·캐시·임시fixture/junction. 파일을 삭제하지 않고 로컬 보존. 이전 자동검토 차단된 테스트junction도 이 범위에 남아 있으므로 무분별한 재귀 정리를 하지 말 것.
+- 검증: 커밋 직전 관련 Asset 메타 짝과 설정/검증 JSON 파싱 확인. Unity30개 테스트 및 실제 생성/정리/결과UI 검증은 각 작업의 실제 기록이며 이번 커밋 준비에서 재실행하지 않음. WindowsPlayer/실제RFID/RTX3060/장시간 미검증 유지. 사용자 변경을 일괄 포맷하지 않음.
+- 종료: 이 기록을 포함한 커밋 해시는 git log -1로 확인. 커밋 후 상태 확인, 파일 소유권 해제. 새 치명적 장애 없음.
+
+### [2026-10-19 / Asia/Seoul] RESULT-001 · Codex → 다음 작업자 · 완료
+
+- 요청: RecommendedProductImageBox 내부 ResultImage에 생성물을 표시. 생성 전 TextGroup, 완료 후 먼저 이미지 로드/할당한 다음 ResultImage 활성화.
+- 기준/보존: main/50cbe9b + 기존 미커밋. 새 사용자 Game UI 구조(TextGroup/ResultImage 형제·ResultImage 비활성)와 폰트 변경 확인·보존. 원본/패키지/이미지 저장방식 변경 없음. 커밋/push 없음.
+- 변경: BlockExperienceController.resultImage를 부모 박스 Image에서 자식 ResultImage Image로 재연결하고 resultTextGroup 직렬화 참조 추가. OnEnable/ClearImage에서 ResultImage Off/TextGroup On, 완료 경로는 다운로드·Sprite생성·Image할당·preserveAspect 후 ResultImage On/TextGroup Off. 기존 취소/선택 변경/비활성화 자원 해제 보존. Game 씬은 Unity SerializedObject로 참조 및 초기 상태만 저장, 사용자 레이아웃/텍스트는 수정하지 않음. BLOCK_SIMULATOR/CHANGELOG 갱신.
+- 검증(Codex/Unity2022.3.62f3): 컴파일error0. 초기/생성중 image=false/text=true. 실제ComfyUI 480이미지 수신 후 child ResultImage sprite할당/image=true/text=false, 부모박스 Image에는 sprite없음 유지. Canvas.willRenderCanvases 관찰에서 첫 활성 렌더의 sprite누락/안내중복0회. 컴포넌트Off/On 시 sprite해제·안내복구. localhost 닫힌포트의 의도적연결실패 및 즉시취소에서 image=false/text=true, 취소 후타이머재개 확인. 저장설정 서버주소는 변경하지 않았고 Play 종료 시 런타임 변경 소멸.
+- 증거: Tools/ComfyUI/validation/result_ui.json. 이번 단순 UI 변경용 테스트를 새로 작성하지 않았으며 이전30개 테스트 통과는 RETENTION-001의 별도 기록. 실제물리클릭/WindowsPlayer/장시간은 미검증. 의도적연결실패 로그1회 외 새제품오류 없음. 새 치명적 장애 없음.
+- 종료: Game 씬 저장 및 Play 종료. RESULT-001 파일 소유권 해제, 미커밋. 향후 생성결과 표시참조는 부모박스가 아니라 자식ResultImage를 사용.
+
+### [2026-10-19 / Asia/Seoul] RETENTION-001 · Codex → 다음 작업자 · 완료
+
+- 요청: 생성 이미지 누적 방지를 위한 프로젝트별 개수/총용량 제한·오래된 파일 자동 삭제. 작업 중 사용자가 이미지 저장 이유를 질문하여 표준 SaveImage→/view 전달 방식 때문이며 AI 생성에 영구저장이 필수는 아니라고 설명. 현재 보관 한도 방식을 유지하며 표시 후 즉시 삭제 방식은 별도 후속 변경.
+- 기준/범위: main/50cbe9b + BLOCK-001 등 기존 미커밋 보존. GeneratedImageRetentionPolicy(Data)·GeneratedImageRetention(root)·검증 테스트 및 메타 신규, GameLifetimeScope build callback, BlockExperienceController 제출 전 검사, ComfyUISettings, 운영 문서/CHANGELOG/검증 JSON/HANDOFF. 패키지/원본/서버 설치 변경·커밋·push 없음.
+- 기본: 최대1000장 및512MiB, 시작/30초 주기/새 생성 전 정리. LastWriteTimeUtc 오래된 순서. 최근60초 및 활성 요청 보호, 보호/권한 문제로 한도 복구 불가하면 새 제출 거부. 앱 종료 뒤 서버에서 생성된 파일은 다음 앱 시작 때 처리. 강제 디스크 quota/서버 상주 프로세스가 아님.
+- 경계: ComfyUI output/Thai02 바로 아래 blocks_<32자리소문자GUID>_<숫자>_.png만 삭제. 하위/다른 이름/확장자/모델/JSONL/기존product_*.png 제외. 절대 경로/정확한 하위 경로 검사, junction/symlink 경로 및 파일 거부. loopback system_stats.argv --output-directory 자동탐색; 원격/인자 누락은 comfyOutputDirectory 공유 경로 명시 필요. 설정 변경 후 재시작.
+- 검증(Codex): Unity2022.3.62f3 최종 EditMode30/30 PASS(job f399ba50cea041de9da5fadb2c7a3183). 개수/용량/양한도, 오래된 순, 최근/활성 보호, 잠긴 파일 실패 후 다른 파일 삭제, 범위 밖/하위 보존, 취소, 잘못된 경로·한도, 파일명 검사. 수동 경로 보호 시험에서 / 구분자 절대경로의 오거부를 발견해 정규화 수정 및 테스트 추가 후 전체 재통과.
+- 실제 실행: root 서비스1개, 실제 Comfy output 자동탐색. 격리fixture3개×500000bytes에서1개 삭제/2개1000000bytes 보관, foreign 보존. 실제 Unity→ComfyUI 이미지480 생성 성공. Idle 상태에서 수동Sweep 없이30초 자연 주기로 격리fixture3개→최신1개, foreign 보존. fixture 설정은 유지보수 gate를 잡고 변경/복구했으며 마지막에 실제output·1000장/512MiB 복구 확인. 실제 서버의 기존 결과는 한도 미만이므로 정리 테스트는 모두 격리fixture로 수행.
+- junction 검증: ignored results/retention_fixture/out/Thai02를 같은 테스트영역 outside에 연결한 junction으로 만들고 정책의 삭제 거부·대상 sentinel 보존 확인. 테스트 후 Remove-Item으로 해당 junction만 정리하려던 도구 호출은 자동 승인 검토가 blocked by policy로 거부(추가 이유 제공 없음). 다른 삭제 방법을 시도하지 않고 ignored 결과에 그대로 남김. 재귀 도구로 무작정 정리하지 말 것.
+- 증거/종료: Tools/ComfyUI/validation/retention.json. 최종 Console error0(MCP 중복명령 억제 경고만), 메타/설정/diff 검사. Play 종료·Game 씬 열림. 미검증: Windows Player/원격공유/배포 권한·디스크가득참/장시간. 새 치명적 장애 없음. 파일 소유권 해제, 미커밋.
+
+### [2026-10-19 / Asia/Seoul] BLOCK-001 · Codex → 다음 작업자 · 완료
+
+- 요청: RFID 준비 전 숫자2/3/4/5로 Group/Product/Color1/Color2를 인식/해제하고 기존 OptionText에 표시. 4그룹·12제품·6색, Equipment는 화면에는 이름만, 내부 robots/keyboards/laptops 중 하나로 이미지 생성. 선택·프롬프트를 분석용 데이터로 저장하고 이미지 생성 연결.
+- 기준: main / 50cbe9b. 작업 전부터 Game 씬 수정(140줄), 신규 ScriptableObjects 및 GameSceneTitleTextSO 등이 있었으며 그대로 보존. 씬은 열린 에디터에서 기존 구조를 읽고 BlockExperience 오브젝트 및 필드 연결만 추가. 추가 패키지 업데이트 없음. 커밋/push 없음.
+- 변경: Assets/Scripts/Blocks의 순수 선택/카탈로그 데이터(별도 asmdef), BlockExperienceController, BlockJournal, ComfyImageClient 및 메타. StreamingAssets/BlockGeneration의 카탈로그·별도 서버 설정·API 그래프, Tests/Blocks 6개, Game 연결, docs/BLOCK_SIMULATOR.md, COMFYUI_SETUP의 후속 구현 링크, CHANGELOG, validation/block_runtime.json.
+- 동작: Editor 전용 키/임시 목록·Generate/Cancel. 네 슬롯 완성 시 명시적으로 Generate. Equipment는 요청마다 내부 분기를 선택해 원본 선택과 함께 기록. API는 공개 RecognizeBlock/RemoveBlock/GenerateImage로 미래 RFID 연결 가능. UI 표시는 지정된 영문명; 태국어 번역은 별도. 그룹 전체 변경 시 옵션을 자동 삭제하지 않으며 각 슬롯 독립.
+- 데이터: persistentDataPath/BlockData/blocks_*.jsonl에 익명 세션·선택/해제·정확한 양/음 프롬프트·장비분기·seed·전체 모델/샘플링 그래프를 저장한 후 서버 제출. 서버 오프라인에도 생성 요청 조건 저장. 쓰기 실패면 제출 중단. 파일4MiB/최대30개 순환, 쓰기대기128개 제한, 작업 스레드 직렬 기록. 서버 PNG 보존은 ComfyUI에서 별도 관리. 대규모 데이터 플랫폼을 구축한 것으로 해석하지 말 것.
+- 실패/수명: 요청15초·전체180초(실제 시간), history GET만 상한2회 재시도, POST 자동재시도 없음. 바쁜 큐는 제출 전 안내. 생성 중 타이머Pause 및 모든 종료Resume. 선택 변경·세션/씬/컴포넌트 종료에서 수신 취소/늦은 결과 차단, Sprite/Texture 해제, 재진입 초기화. 자신의 pending만 삭제하고 전역interrupt를 쓰지 않으므로 실행 중 서버 생성은 남을 수 있음.
+- 실제 검증(Codex/Unity2022.3.62f3): EditMode 신규6+기존9=15/15 PASS, job fd002d92a2a44c018330d2660d82d238. 1728선택 조합의 프롬프트 색상 부위·장비3분기·해제·리셋·잘못된ID/중복 인식 검증. 직접 Game 실행 및 실제 Thai 세션 진입에서 컴포넌트 준비 확인. Input System 가상 Digit2~5 전달과 Update 경로로 해제 확인, 슬롯 팝업 재열기/기존 OptionText 연결·Equipment 라벨 확인. popup 및 이미지 UI 스크린샷 시각 확인. 실제 물리 마우스 클릭 자동화는 미수행이며 선택 API/클릭 핸들러 공통 경로로 검증.
+- 실제 서버: localhost8188 ComfyUI, RTX5070Ti Laptop12GB에서 Unity로 가방/Equipment(robots) 두 요청 완료 및480PNG 표시. 요청 기록→완료 기록12.144초/6.544초(모델 온도·환경이 달라 성능 보증 아님). 색 변경 중 취소→오래된 이미지 없음/타이머재개, localhost 닫힌포트로 연결 실패→오류1회/복구 후 재시도, 컴포넌트Off/On 초기화, Idle복귀/재진입, 실제Thai세션 요청중 Idle복귀에서 controller0/타이머정상 확인. 초기Cursor가 루트Start에서 숨겨져 준비 완료 후 재표시하도록 수정하고 재실행에서 true 확인. 최종 컴파일/Console error0; MCP 재연결 중복명령 억제 경고만 있음.
+- 증거: Tools/ComfyUI/validation/block_runtime.json. 전체 로컬 이벤트는 persistentDataPath/BlockData, 캡처는 ignored Tools/ComfyUI/results/block_runtime. 원본 사용자 데이터/모델 가중치를 저장소에 넣지 않음.
+- 미검증/위험: Windows Player, 실제RFID, 전체12제품·모든색의 시각 품질, RTX3060 20초, 프로파일러/GC·장시간, 파일권한/디스크부족/보존한도 도달 실험, 전체180초 타임아웃 대기는 미수행. 정지 이미지까지만 연결; 영상·생성 중 이미지 스트리밍·연속latent 전환 미구현. 기존 SDXL의 인물·복수 물품·화풍편차 한계 유지. 강제종료 시 JSONL 마지막줄 손상/종료이벤트 누락 가능하므로 완전한 줄 단위 수집 필요.
+- 종료: 에디터 Play 종료, Game 씬 열림. 신규 메타/참조·설정 JSON·영문 로그·문서 링크 확인. 사용자 기존 SO/씬 변경 및 로컬 IDE 파일 보존. 치명적 장애 신규 발견 없음, 파일 소유권 해제. 실제RFID 어댑터·배포검수는 후속.
 
 ### [2026-10-18 / Asia/Seoul] COMMIT-001 · Codex → 다음 작업자 · 완료
 

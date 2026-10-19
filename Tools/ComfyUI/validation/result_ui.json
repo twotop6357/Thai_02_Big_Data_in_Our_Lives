@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-19",
+  "unity": "2022.3.62f3",
+  "target": "RecommendedProductImageBox/ResultImage",
+  "placeholder": "RecommendedProductImageBox/TextGroup",
+  "verified": [
+    "initial Image inactive / TextGroup active",
+    "actual generated 480x480 sprite assigned to ResultImage",
+    "completed Image active / TextGroup inactive",
+    "first active canvas render had a sprite and hidden TextGroup; violations 0",
+    "parent box Image sprite unaffected",
+    "component disable clears generated sprite and restores TextGroup",
+    "server connection failure leaves TextGroup visible and ResultImage hidden",
+    "cancelled generation leaves TextGroup visible, ResultImage hidden, inactivity timer resumed"
+  ],
+  "render_order_violations": 0,
+  "not_verified": [
+    "Windows Player",
+    "long-duration repeated generations"
+  ],
+  "notes": "Compilation console had no errors. One expected error log was produced by the deliberate closed-port connection failure test; saved server settings were not changed."
+}

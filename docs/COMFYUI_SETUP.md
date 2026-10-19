@@ -90,7 +90,7 @@ python Tools/ComfyUI/build_workflow.py --group child --product sunglasses --colo
 - 실행마다 node 5 `seed`를 바꾸면 새 이미지가 생성된다. 동일 옵션·시드를 재요청하면 ComfyUI 캐시가 적용될 수 있다.
 - node 5에 steps/CFG/sampler/scheduler, node 4에 내부 해상도, node 8에 최종 출력 크기가 있다.
 - WebSocket 연결의 client_id와 `/prompt` 요청의 client_id를 맞추고 prompt_id로 현재 요청을 구분한다. 초기화 상태·무입력 타이머·복귀 취소는 기존 GameManager 세션 수명에 연결한다.
-- API 주소는 템플릿 운영 로그용 Settings.apiUrl과 분리한다. 이번 작업은 워크플로/도구 구성이며 Unity의 실제 생성 요청·미리보기 수신 기능은 추가하지 않았다.
+- API 주소는 템플릿 운영 로그용 Settings.apiUrl과 분리한다. AI-001은 워크플로/도구 구성까지만 수행했다. 후속 BLOCK-001에서 Unity 블록 선택→실제 생성 요청→최종 이미지 표시·JSONL 기록을 연결했다. 현재 런타임 목록·사용법은 [BLOCK_SIMULATOR](BLOCK_SIMULATOR.md)를 따른다. 중간 미리보기 수신은 아직 구현하지 않았다.
 
 ```json
 {

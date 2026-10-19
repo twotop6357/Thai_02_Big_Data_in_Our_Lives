@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-19",
+  "unity": "2022.3.62f3",
+  "gpu": "RTX 5070 Ti Laptop 12GB",
+  "target_3060_verified": false,
+  "editmode_tests": {
+    "passed": 15,
+    "failed": 0,
+    "job_id": "fd002d92a2a44c018330d2660d82d238"
+  },
+  "live_generations": [
+    {
+      "product": "bags",
+      "resolved_product": "bags",
+      "seconds_request_record_to_completed_record": 12.144,
+      "size": [
+        480,
+        480
+      ]
+    },
+    {
+      "product": "equipment",
+      "resolved_product": "robots",
+      "seconds_request_record_to_completed_record": 6.544,
+      "size": [
+        480,
+        480
+      ]
+    }
+  ],
+  "checks": [
+    "OptionText mapping",
+    "Digit2/3/4/5 virtual keyboard input",
+    "same key removal and popup reopening",
+    "equipment label hides variants",
+    "changing a block cancels receive and rejects old result",
+    "connection failure restores timer and retry is possible",
+    "JSONL request graph and result correlation",
+    "component disable clears labels, image and selection; re-enable starts empty",
+    "cursor visible after first initialization",
+    "Idle return destroys scene controller and restores timer",
+    "Thai session re-entry creates an empty ready controller",
+    "session return cancels in-flight request",
+    "runtime image and product popup screenshots visually inspected"
+  ],
+  "not_verified": [
+    "Windows Player",
+    "physical RFID",
+    "long run / GC Profiler",
+    "all product visual quality",
+    "intermediate image preview"
+  ],
+  "final_compile_errors": 0,
+  "evidence_screenshots_local_ignored": [
+    "Tools/ComfyUI/results/block_runtime/game.png",
+    "Tools/ComfyUI/results/block_runtime/popup.png"
+  ],
+  "test_notes": "Virtual keyboard events and direct selection APIs used. Mouse click handlers share RecognizeBlock; physical mouse clicking and RFID hardware not exercised. One expected connection-error log was observed in deliberate failure test; final compilation/runtime console contained no errors."
+}

@@ -1,0 +1,12 @@
+{
+  "serverUrl": "http://127.0.0.1:8188",
+  "requestTimeoutSeconds": 15,
+  "generationTimeoutSeconds": 180,
+  "maxJournalFiles": 30,
+  "maxJournalMegabytes": 4,
+  "comfyOutputDirectory": "",
+  "maxGeneratedImages": 1000,
+  "maxGeneratedImageMegabytes": 512,
+  "imageCleanupIntervalSeconds": 30,
+  "imageWriteGraceSeconds": 60
+}

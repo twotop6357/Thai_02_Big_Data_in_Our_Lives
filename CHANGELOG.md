@@ -1,6 +1,15 @@
 # Changelog
 관람객·운영자 경험에 영향을 주는 변경 사항을 기록합니다. 형식은 [Keep a Changelog](https://keepachangelog.com/ko/1.1.0/)를 따릅니다.
 
+## [2026-10-19]
+
+### Added
+- 생성 결과를 RecommendedProductImageBox/ResultImage에 로드한 뒤 활성화하고 TextGroup을 숨김. 초기/생성중/실패/취소 상태에는 안내 TextGroup 표시.
+- 이 프로젝트의 생성 PNG를 최대1,000장/512MiB로 순환 보관. 앱 실행 중 Idle에서도30초마다 오래된 파일을 정리하며, 최근60초·현재 요청 파일은 보호. 삭제 범위/권한 문제로 한도를 복구할 수 없으면 추가 생성을 막고 안내. ComfyUISettings에서 한도·경로·주기를 변경 가능.
+- Game 씬의 에디터 블록 시뮬레이터: 숫자 2/3/4/5로 Group/Product/Color1/Color2 목록 표시, 클릭 인식 및 같은 키로 해제. 기존 OptionText에 선택값 표시.
+- 네 선택값에서 Equipment 내부 분기·프롬프트를 만들고 ComfyUI에 제출, 480×480 결과 표시. 선택 변경/화면 종료 취소, 무입력 타이머 Pause/Resume 및 실패 후 재시도 제공.
+- 익명 세션·선택/해제·전체 생성 프롬프트/그래프·결과를 크기가 제한된 로컬 JSONL로 기록. 제품/색상 목록·생성 서버 설정을 StreamingAssets에 분리.
+
 ## [2026-10-18]
 
 ### Added

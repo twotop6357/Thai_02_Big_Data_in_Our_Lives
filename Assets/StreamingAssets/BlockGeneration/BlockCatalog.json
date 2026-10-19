@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "stylePrefix": "(isolated inventory item illustration:1.3), product only, no humans",
+  "styleSuffix": "premium Japanese mobile RPG equipment icon, polished 2D digital painting, delicate clean linework, soft cel shading, carefully painted material highlights, rich subtle color gradients, elegant detailed item design, three-quarter view, full object centered with generous empty margins, simple pale background",
+  "negativePrompt": "(person:1.5), (1girl:1.5), (1boy:1.5), human, face, head, hands, character, wearing, portrait, photograph, photorealistic, realistic textures, close-up, cropped, collection, collage, comparison, grid, (multiple products:1.4), (two pairs:1.4), (three pairs:1.4), stacked products, text, logo, watermark, thick black outlines, flat vector art, clipart, simple cartoon, low detail, 3d render, UI border, icon frame, game screenshot",
+  "groups": [
+    {
+      "id": "child",
+      "label": "Child",
+      "prompt": "playful rounded design with simple details"
+    },
+    {
+      "id": "student",
+      "label": "Student",
+      "prompt": "practical campus design"
+    },
+    {
+      "id": "working_adult",
+      "label": "Working Adult",
+      "prompt": "understated modern everyday design"
+    },
+    {
+      "id": "senior",
+      "label": "Senior",
+      "prompt": "lightweight simple design with easy-to-use details"
+    }
+  ],
+  "products": [
+    {
+      "id": "bags",
+      "label": "Bags",
+      "prompt": "one backpack",
+      "primaryPart": "fabric body",
+      "secondaryPart": "straps and zipper trim"
+    },
+    {
+      "id": "shoes",
+      "label": "Shoes",
+      "prompt": "one pair of shoes",
+      "primaryPart": "uppers",
+      "secondaryPart": "soles and laces"
+    },
+    {
+      "id": "hats",
+      "label": "Hats",
+      "prompt": "one hat",
+      "primaryPart": "crown",
+      "secondaryPart": "brim"
+    },
+    {
+      "id": "sunglasses",
+      "label": "Sunglasses",
+      "prompt": "one single pair of sunglasses",
+      "primaryPart": "frame",
+      "secondaryPart": "tinted lenses"
+    },
+    {
+      "id": "headphones",
+      "label": "Headphones",
+      "prompt": "one pair of headphones",
+      "primaryPart": "ear cups",
+      "secondaryPart": "headband"
+    },
+    {
+      "id": "tops",
+      "label": "Tops",
+      "prompt": "one shirt laid flat",
+      "primaryPart": "main fabric",
+      "secondaryPart": "collar and sleeve trim"
+    },
+    {
+      "id": "bicycles",
+      "label": "Bicycles",
+      "prompt": "one bicycle",
+      "primaryPart": "frame",
+      "secondaryPart": "wheel rims and handlebar grips"
+    },
+    {
+      "id": "tumblers",
+      "label": "Tumblers",
+      "prompt": "one drinking tumbler",
+      "primaryPart": "body",
+      "secondaryPart": "lid"
+    },
+    {
+      "id": "wristwatches",
+      "label": "Wristwatches",
+      "prompt": "one wristwatch",
+      "primaryPart": "strap",
+      "secondaryPart": "case and dial"
+    },
+    {
+      "id": "phone_cases",
+      "label": "Phone Cases",
+      "prompt": "one empty phone case",
+      "primaryPart": "body",
+      "secondaryPart": "edge trim"
+    },
+    {
+      "id": "umbrellas",
+      "label": "Umbrellas",
+      "prompt": "one umbrella",
+      "primaryPart": "canopy",
+      "secondaryPart": "handle and edge trim"
+    },
+    {
+      "id": "equipment",
+      "label": "Equipment",
+      "prompt": "one robot",
+      "primaryPart": "body",
+      "secondaryPart": "detail accents"
+    }
+  ],
+  "colors": [
+    {
+      "id": "black",
+      "label": "Black",
+      "prompt": "black"
+    },
+    {
+      "id": "white",
+      "label": "White",
+      "prompt": "white"
+    },
+    {
+      "id": "blue",
+      "label": "Blue",
+      "prompt": "blue"
+    },
+    {
+      "id": "red",
+      "label": "Red",
+      "prompt": "red"
+    },
+    {
+      "id": "green",
+      "label": "Green",
+      "prompt": "green"
+    },
+    {
+      "id": "yellow",
+      "label": "Yellow",
+      "prompt": "yellow"
+    }
+  ],
+  "equipmentVariants": [
+    {
+      "id": "robots",
+      "label": "Robots",
+      "prompt": "one robot"
+    },
+    {
+      "id": "keyboards",
+      "label": "Keyboards",
+      "prompt": "one computer keyboard"
+    },
+    {
+      "id": "laptops",
+      "label": "Laptops",
+      "prompt": "one laptop computer"
+    }
+  ]
+}
