@@ -4,8 +4,8 @@
 
 ## 현재 상태
 
-- 마지막 갱신: 2026-10-19 (Asia/Seoul), Claude, RESULTSCENE-001.
-- 현재 작업: RESULTSCENE-001 완료(코드·씬·빌드 설정 연결, EditMode 33/33, 실제 생성 Play 검증, 이 기록을 포함해 로컬 커밋). 이전: LOG-002 완료, 이 기록을 포함한 로컬 커밋으로 저장(해시는 git log -1) — 주요 분기 영문 Debug.Log 추가(동작 변경 없음). 직전: COMMIT-002 — 사용자 요청으로 BLOCK-001/RETENTION-001/RESULT-001 및 관련 사용자 UI·폰트·SO 변경을 이 기록을 포함한 로컬 커밋에 저장. 아래 미커밋 표기는 당시 작업 시점이며 실제 해시는 git log -1로 확인. 생성 전 안내/로드 후 이미지 활성화 및 기존 보관 한도 유지.
+- 마지막 갱신: 2026-10-19 (Asia/Seoul), Claude, COMFYLAUNCH-001.
+- 현재 작업: COMFYLAUNCH-001 완료(앱 시작 시 ComfyUI 검사·자동 실행, Idle ComfyUIStatusText, 이 기록을 포함해 로컬 커밋). 직전: RESULTSCENE-001 완료(코드·씬·빌드 설정 연결, EditMode 33/33, 실제 생성 Play 검증, 이 기록을 포함해 로컬 커밋). 이전: LOG-002 완료, 이 기록을 포함한 로컬 커밋으로 저장(해시는 git log -1) — 주요 분기 영문 Debug.Log 추가(동작 변경 없음). 직전: COMMIT-002 — 사용자 요청으로 BLOCK-001/RETENTION-001/RESULT-001 및 관련 사용자 UI·폰트·SO 변경을 이 기록을 포함한 로컬 커밋에 저장. 아래 미커밋 표기는 당시 작업 시점이며 실제 해시는 git log -1로 확인. 생성 전 안내/로드 후 이미지 활성화 및 기존 보관 한도 유지.
 - AI 구성: SDXL Base 1.0 / 내부 768 / 출력 480 / 16 steps / dpmpp_2m karras. 실제 측정 장비는 RTX 5070 Ti Laptop 12GB. RTX 3060 20초 충족 미검증.
 - 최신 작업: ResultImage/TextGroup 씬 참조 재연결, 초기/대기/실패/취소/비활성화 안내 상태 처리. 실제480 이미지 수신/할당 후 활성화, 첫 활성 Canvas 렌더에서 빈 이미지/안내 중복 표시0회 확인.
 - 현재 브랜치: `main`. FLOW-001/LOG-001/AI-001 및 사용자 씬·폰트·설정 변경은 COMMIT-001 기록을 포함한 커밋에 함께 저장. 실제 해시는 git log -1로 확인한다. 아래 미커밋 표기는 당시 작업 시점의 기록이다.
@@ -16,6 +16,7 @@
 
 | 작업 ID | 담당 | 상태 | 수정 범위 | 다음 담당 / 행동 |
 |---|---|---|---|---|
+| COMFYLAUNCH-001 | Claude | 완료 | 신규 Blocks/ComfyServerLauncher·ComfyStatusPresenter(+메타), ComfyImageClient 설정 필드, GameLifetimeScope, StreamingAssets ComfyUISettings.json, 0_Idle ComfyUIStatusText 연결(사용자 미커밋 Idle 변경 보존), COMFYUI_SETUP/CHANGELOG/HANDOFF | 소유권 해제; main/ceef831 기준 로컬 커밋(git log -1); Windows Player 빌드에서 실제 자동 실행 확인 필요 |
 | RESULTSCENE-001 | Claude | 완료 | ExhibitionButtonGesture(+테스트), GameManager, BlockExperienceController, 신규 Assets/Scripts/Result, 1_Game PressButtonText 참조/초기 상태, 2_Result 표시 컴포넌트, EditorBuildSettings, BUTTON_INPUT/BLOCK_SIMULATOR/CHANGELOG/HANDOFF | 소유권 해제; main/9d45652 기준 로컬 커밋(git log -1); 2_Result는 사용자 미추적 씬에 컴포넌트만 추가; AssetKits 미수정 |
 | LOG-002 | Claude | 완료 | GameManager, KeyboardButtonSimulator, GameLifetimeScope, BlockExperienceController, ComfyImageClient, GeneratedImageRetention의 Debug.Log 추가만, HANDOFF | 소유권 해제; 로컬 커밋 완료(push 없음); Unity 에디터 컴파일·Play 로그 확인 필요 |
 | COMMIT-002 | Codex | 완료 | BLOCK/RETENTION/RESULT의 소스·씬·설정·테스트·문서·검증 JSON, 관련 사용자 폰트/SO | 로컬 커밋만 수행; 파일 소유권 해제; 해시는 git log -1 |
@@ -67,6 +68,15 @@ FLOW-001 시작 시 사용자 변경: `_TempFont.asset`, `0_Idle.unity` UI, `Set
 ```
 
 ## 최신 작업 기록
+
+### [2026-10-19 / Asia/Seoul] COMFYLAUNCH-001 · Claude → 다음 작업자 · 완료
+
+- 요청: 빌드본 실행 시 ComfyUI 실행 여부 검사, 꺼져 있으면 실행. Idle `ComfyUIStatusText`에 상태 표시. 사용자 결정: Python 서버 직접 실행, 앱 종료 시 서버 유지, 실행 후 작동까지 로딩 중에만 표시·완료 시 비활성화.
+- 기준/보존: main/ceef831. 작업 전 사용자 미커밋 0_Idle 변경(ComfyUIStatusText 추가 등) 보존, IdlePanel에 컴포넌트 1개만 추가. AssetKits·.vscode·slnx 미수정. 미커밋.
+- 변경: 신규 `Blocks/ComfyServerLauncher`(루트 GameManager에 GameLifetimeScope build callback으로 추가, 앱 실행당 1회 /system_stats 3초 probe → 없으면 Process.Start UseShellExecute=false/CreateNoWindow → 2초 간격 probe, 프로세스 조기 종료/시간 초과 시 Unavailable, 이후 10초 probe만, 재실행 없음, 종료 시 핸들만 Dispose). 응답 JSON에 `system` 키가 있어야 준비로 판단. 신규 `Blocks/ComfyStatusPresenter`(IdlePanel, Starting/Unavailable에서만 텍스트 표시, 문구는 직렬화 필드). `ComfyBlockSettings`에 autoLaunchServer/launchServerInEditor(false)/serverExecutable/serverArguments/serverWorkingDirectory/serverStartupTimeoutSeconds 및 별도 ValidateLaunch(loopback 필수). ComfyUISettings.json에 이 PC Comfy Desktop 설치 기준 `%LOCALAPPDATA%` 값(models/input/output은 ComfyUI-Shared 직접 지정, Desktop 진단 프로필 yaml·manager/telemetry 플래그 미사용). COMFYUI_SETUP 자동 실행 절, CHANGELOG.
+- 검증(Claude/Unity2022.3.62f3 Editor): 컴파일 오류0, EditMode 33/33(job 5da1413be6614c339ccf0ce3938621e8). Play① 기존 8188 실행 중: Ready, 텍스트 비활성, launcher 1개. ② 기존 서버를 끄지 않도록 임시로 serverUrl/--port 8189·launchServerInEditor=true: Checking(텍스트 숨김)→프로세스 시작·"Starting..." 표시→약12초 후 Ready·텍스트 비활성. Play 종료 후 해당 서버 200 응답 유지, MainWindowHandle 0(창 없음). 확인 후 이 테스트 8189 프로세스 2개만 종료. ③ 8189·에디터 기본값: Unavailable·"not available" 표시·경고 1회. 설정 파일은 백업본으로 원복(8189 잔존0), 기존 8188 서버 계속 정상.
+- 미검증/위험: Windows Player 빌드에서의 실제 자동 실행·권한·다른 계정/PC 경로, 첫 생성 시 모델 로딩 시간(서버 준비는 모델 로딩 전 시점), 실행 중 서버 종료 감시(요구 범위 밖, 1회 검사), Desktop 앱과 동시 실행 시 포트 충돌(응답하는 서버가 있으면 Ready 처리). 직접 실행 서버의 user/custom_nodes는 설치본 기본 폴더 사용.
+- 종료: 파일 소유권 해제, Play 종료, Idle 씬 열림. 사용자 요청으로 사용자 Idle 변경(ComfyUIStatusText)과 함께 이 기록을 포함해 로컬 커밋(해시는 git log -1, push 없음). AssetKits·.vscode·slnx 제외. 장애: 발견 없음.
 
 ### [2026-10-19 / Asia/Seoul] RESULTSCENE-001(씬 연결·검증) · Claude → 다음 작업자 · 완료
 

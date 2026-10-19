@@ -21,6 +21,23 @@ namespace Exhibition.Blocks
         public int maxGeneratedImageMegabytes = 512;
         public int imageCleanupIntervalSeconds = 30;
         public int imageWriteGraceSeconds = 60;
+        // Local server auto launch. Paths and arguments expand %ENV% variables.
+        public bool autoLaunchServer = true;
+        public bool launchServerInEditor;
+        public string serverExecutable = "";
+        public string serverArguments = "";
+        public string serverWorkingDirectory = "";
+        public int serverStartupTimeoutSeconds = 180;
+
+        public void ValidateLaunch()
+        {
+            if (string.IsNullOrWhiteSpace(serverExecutable) ||
+                serverStartupTimeoutSeconds < 10 || serverStartupTimeoutSeconds > 900)
+                throw new ArgumentException("Set serverExecutable and a 10-900 second serverStartupTimeoutSeconds.");
+            // A remote server cannot be started from this PC.
+            if (!new Uri(serverUrl).IsLoopback)
+                throw new ArgumentException("Auto launch requires a loopback serverUrl.");
+        }
 
         public void Validate()
         {

@@ -4,6 +4,7 @@
 ## [2026-10-19]
 
 ### Added
+- 앱 시작 시 로컬 ComfyUI(serverUrl의 /system_stats)를 검사하고, 꺼져 있으면 Comfy Desktop 설치본의 Python 서버를 창 없이 실행. Idle의 `ComfyUIStatusText`는 실행 후 준비될 때까지와 실행 불가 시에만 표시하고 준비되면 숨김. 앱 종료 시 서버는 유지. 실행 파일·인자·제한 시간은 ComfyUISettings에서 변경(`%LOCALAPPDATA%` 등 환경 변수 사용 가능), 에디터에서는 기본적으로 실행하지 않음.
 - Game에서 생성 이미지가 표시된 뒤에만 `PressButtonText`를 표시. 이때 버튼(임시 숫자 1)을 짧게 눌렀다 떼면 `2_Result`로 이동해 ResultPanel/AdImageBox/ResultImage에 같은 이미지를 표시. 5초 유지 Idle 복귀는 유지.
 - 생성 결과를 RecommendedProductImageBox/ResultImage에 로드한 뒤 활성화하고 TextGroup을 숨김. 초기/생성중/실패/취소 상태에는 안내 TextGroup 표시.
 - 이 프로젝트의 생성 PNG를 최대1,000장/512MiB로 순환 보관. 앱 실행 중 Idle에서도30초마다 오래된 파일을 정리하며, 최근60초·현재 요청 파일은 보호. 삭제 범위/권한 문제로 한도를 복구할 수 없으면 추가 생성을 막고 안내. ComfyUISettings에서 한도·경로·주기를 변경 가능.

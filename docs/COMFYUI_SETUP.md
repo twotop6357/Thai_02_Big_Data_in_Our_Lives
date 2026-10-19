@@ -101,6 +101,24 @@ python Tools/ComfyUI/build_workflow.py --group child --product sunglasses --colo
 
 ComfyUI가 제공하는 latent preview를 켜면 생성 중 이미지를 받을 수 있다. 선택지가 바뀔 때 현재 latent를 이어서 바꾸는 기능은 이 워크플로에 없다. 현재 구성은 선택값 한 묶음마다 새 생성을 수행한다. 프리뷰가 필요하면 ComfyUI의 Preview Method를 Latent2RGB로 시작하고 실제 생성 중 이미지 수신·부하를 별도 검증한다.
 
+## 자동 실행(Unity 앱)
+
+Unity 앱은 시작 시 1회 `serverUrl`의 `/system_stats`를 검사한다. 응답이 없으면 `ComfyUISettings.json`의 실행 값으로 서버를 **창 없이** 실행하고, 응답할 때까지 2초 간격으로 확인한다. 앱이 직접 실행한 서버도 앱 종료 시 끄지 않는다(모델을 메모리에 유지). 이미 실행 중인 ComfyUI(Comfy Desktop 포함)는 건드리지 않는다.
+
+| 필드 | 기본값 | 의미 |
+|---|---|---|
+| `autoLaunchServer` | true | 꺼져 있을 때 자동 실행 |
+| `launchServerInEditor` | false | 에디터 Play에서도 실행할지 여부. 기본은 빌드본에서만 실행 |
+| `serverExecutable` | `%LOCALAPPDATA%\Comfy-Desktop\ComfyUI-Installs\ComfyUI\ComfyUI\.venv\Scripts\python.exe` | 실행 파일 |
+| `serverArguments` | `-s ComfyUI\main.py --listen 127.0.0.1 --port 8188 --disable-auto-launch --models-directory/--input-directory/--output-directory <ComfyUI-Shared>` | 인자. 포트는 `serverUrl`과 같아야 함 |
+| `serverWorkingDirectory` | `%LOCALAPPDATA%\Comfy-Desktop\ComfyUI-Installs\ComfyUI` | 작업 폴더 |
+| `serverStartupTimeoutSeconds` | 180 | 준비 대기 상한(10~900) |
+
+- 경로·인자의 `%ENV%`는 실행 PC 계정 기준으로 확장한다. 다른 설치 방식(포터블 등)은 세 값을 그 PC에 맞게 바꾼다. 자동 실행은 loopback `serverUrl`에서만 동작한다.
+- 모델·입출력 폴더는 Comfy Desktop 공유 폴더를 직접 지정하므로 Desktop의 진단 프로필 yaml에 의존하지 않는다. Desktop 관리자/텔레메트리 플래그는 넘기지 않는다.
+- Idle의 `ComfyUIStatusText`(부모 IdlePanel의 `ComfyStatusPresenter`)는 실행 후 준비 전(Starting)과 실행 불가(설정 오류·프로세스 조기 종료·시간 초과·에디터에서 실행 생략) 때만 표시하고 준비되면 숨긴다. 실행 불가 후에도 10초마다 확인해 운영자가 수동으로 켜면 숨긴다. 재실행은 하지 않는다. 문구는 컴포넌트에서 변경한다.
+- 실행 중 서버가 나중에 꺼지는 경우는 감시하지 않는다(앱 시작 시 1회).
+
 ## 모델 설치·검증
 
 현재 PC의 Comfy Desktop 공유 models/checkpoints에 SDXL Base가 이미 있었고, 공식 파일 SHA-256과 일치함을 확인했다. 다른 PC에는 `model.json`의 고정 revision·파일명·SHA-256을 사용한다.

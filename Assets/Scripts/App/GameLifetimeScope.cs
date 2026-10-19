@@ -35,6 +35,11 @@ namespace App
                     manager.gameObject.AddComponent<GeneratedImageRetention>();
                     Debug.Log("[GameLifetimeScope] Added GeneratedImageRetention to GameManager.", manager);
                 }
+                if (!manager.GetComponent<ComfyServerLauncher>())
+                {
+                    manager.gameObject.AddComponent<ComfyServerLauncher>();
+                    Debug.Log("[GameLifetimeScope] Added ComfyServerLauncher to GameManager.", manager);
+                }
             });
         }
     }
