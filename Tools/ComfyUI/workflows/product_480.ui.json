@@ -1,11 +1,11 @@
 {
-  "last_node_id": 18,
-  "last_link_id": 19,
+  "last_node_id": 26,
+  "last_link_id": 29,
   "nodes": [
     {
       "id": 1,
       "type": "CheckpointLoaderSimple",
-      "title": "SDXL Base 1.0 / no refiner",
+      "title": "Animagine XL 4.0 Opt",
       "pos": [
         750,
         620
@@ -38,7 +38,8 @@
           "name": "VAE",
           "type": "VAE",
           "links": [
-            9
+            9,
+            29
           ]
         }
       ],
@@ -46,7 +47,7 @@
         "Node name for S&R": "CheckpointLoaderSimple"
       },
       "widgets_values": [
-        "sd_xl_base_1.0.safetensors"
+        "animagine-xl-4.0-opt.safetensors"
       ]
     },
     {
@@ -84,7 +85,7 @@
           "name": "CONDITIONING",
           "type": "CONDITIONING",
           "links": [
-            5
+            25
           ]
         }
       ],
@@ -122,7 +123,7 @@
           "name": "CONDITIONING",
           "type": "CONDITIONING",
           "links": [
-            6
+            26
           ]
         }
       ],
@@ -130,13 +131,13 @@
         "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
-        "(person:1.5), (1girl:1.5), (1boy:1.5), human, face, head, hands, character, wearing, portrait, photograph, photorealistic, realistic textures, close-up, cropped, collection, collage, comparison, grid, (multiple products:1.4), (two pairs:1.4), (three pairs:1.4), stacked products, text, logo, watermark, thick black outlines, flat vector art, clipart, simple cartoon, low detail, 3d render, UI border, icon frame, game screenshot"
+        "worst quality, bad quality, low quality, lowres, blurry, unfinished, rough sketch, noisy, jpeg artifacts, text, logo, watermark, signature, human, person, 1girl, 1boy, woman, man, child, human face, human head, human hands, human arms, human legs, human feet, fingers, skin, portrait, wearing, holding, mannequin, model wearing product, multiple objects, duplicate, duplicates, collection, collage, grid, contact sheet, multiple views, comparison, exploded view, spare parts, extra accessories, cropped, cut off, out of frame, distorted geometry, malformed, flat vector art, thick black outlines, photograph, photorealistic, close-up, extreme close-up, macro, zoomed in, cropped object, partial object, object extending beyond the frame"
       ]
     },
     {
       "id": 4,
       "type": "EmptyLatentImage",
-      "title": "768 x 768 internal / batch 1",
+      "title": "1024 x 1024 internal / batch 1",
       "pos": [
         1120,
         620
@@ -162,15 +163,15 @@
         "Node name for S&R": "EmptyLatentImage"
       },
       "widgets_values": [
-        768,
-        768,
+        1024,
+        1024,
         1
       ]
     },
     {
       "id": 5,
       "type": "KSampler",
-      "title": "balanced / 16 steps",
+      "title": "quality / 28 steps",
       "pos": [
         1320,
         0
@@ -219,10 +220,10 @@
       "widgets_values": [
         7042026,
         "fixed",
-        16,
-        6.0,
-        "dpmpp_2m",
-        "karras",
+        28,
+        5.0,
+        "euler_ancestral",
+        "normal",
         1.0
       ]
     },
@@ -258,7 +259,8 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            11
+            21,
+            23
           ]
         }
       ],
@@ -270,9 +272,9 @@
     {
       "id": 7,
       "type": "SaveImage",
-      "title": "Final 480 x 480 PNG",
+      "title": "Final 480 x 480 RGBA PNG",
       "pos": [
-        2450,
+        3590,
         0
       ],
       "size": [
@@ -306,9 +308,9 @@
     {
       "id": 8,
       "type": "ImageScale",
-      "title": "Downsample to 480 x 480",
+      "title": "Downsample RGBA to 480 x 480",
       "pos": [
-        2070,
+        3210,
         0
       ],
       "size": [
@@ -373,13 +375,13 @@
         "Node name for S&R": "PrimitiveString"
       },
       "widgets_values": [
-        "practical campus design"
+        "practical casual design with sporty details"
       ]
     },
     {
       "id": 11,
       "type": "PrimitiveString",
-      "title": "INPUT 2 / product: bag",
+      "title": "INPUT 2 / product: bags",
       "pos": [
         -900,
         170
@@ -405,7 +407,7 @@
         "Node name for S&R": "PrimitiveString"
       },
       "widgets_values": [
-        "(one backpack:1.3)"
+        "a single backpack, one bag only, closed main compartment, structured front pocket, two attached padded shoulder straps, woven canvas texture, reinforced stitching, metal zipper teeth, small fastened buckles"
       ]
     },
     {
@@ -663,7 +665,7 @@
         "Node name for S&R": "StringConcatenate"
       },
       "widgets_values": [
-        "(isolated inventory item illustration:1.3), product only, no humans",
+        "no humans, still life, object focus, (full shot:1.3), (entire object:1.3), (wide shot:1.15), isolated object",
         "",
         ", "
       ]
@@ -707,8 +709,294 @@
       },
       "widgets_values": [
         "",
-        "premium Japanese mobile RPG equipment icon, polished 2D digital painting, delicate clean linework, soft cel shading, carefully painted material highlights, rich subtle color gradients, elegant detailed item design, three-quarter view, full object centered with generous empty margins, simple pale background",
+        "detailed Japanese game item illustration, precise clean linework, soft painted shading, carefully rendered material texture, crisp edges, complete object fully in frame, centered composition, generous empty margin, plain white background, masterpiece, high score, great score, absurdres, rating:general",
         ", "
+      ]
+    },
+    {
+      "id": 20,
+      "type": "LoadBackgroundRemovalModel",
+      "title": "BiRefNet foreground segmentation",
+      "pos": [
+        1690,
+        350
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "bg_model",
+          "type": "BACKGROUND_REMOVAL",
+          "links": [
+            20
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadBackgroundRemovalModel"
+      },
+      "widgets_values": [
+        "birefnet.safetensors"
+      ]
+    },
+    {
+      "id": 21,
+      "type": "RemoveBackground",
+      "title": "Foreground mask at native resolution",
+      "pos": [
+        2070,
+        350
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "bg_removal_model",
+          "type": "BACKGROUND_REMOVAL",
+          "link": 20
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 21
+        }
+      ],
+      "outputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": [
+            22
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "RemoveBackground"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 22,
+      "type": "InvertMask",
+      "title": "Foreground to Comfy alpha convention",
+      "pos": [
+        2450,
+        350
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 22
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            24
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "InvertMask"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 23,
+      "type": "JoinImageWithAlpha",
+      "title": "Apply actual alpha (not painted transparency)",
+      "pos": [
+        2830,
+        0
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 23
+        },
+        {
+          "name": "alpha",
+          "type": "MASK",
+          "link": 24
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            11
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JoinImageWithAlpha"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 24,
+      "type": "LoadImage",
+      "title": "Single product structure guide",
+      "pos": [
+        750,
+        950
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            28
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "Thai02Quality/guide_bags.png"
+      ]
+    },
+    {
+      "id": 25,
+      "type": "ControlNetLoader",
+      "title": "SDXL Canny structure control",
+      "pos": [
+        1120,
+        950
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CONTROL_NET",
+          "type": "CONTROL_NET",
+          "links": [
+            27
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ControlNetLoader"
+      },
+      "widgets_values": [
+        "control-lora-canny-rank256.safetensors"
+      ]
+    },
+    {
+      "id": 26,
+      "type": "ControlNetApplyAdvanced",
+      "title": "Keep one complete product",
+      "pos": [
+        1120,
+        310
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 25
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 26
+        },
+        {
+          "name": "control_net",
+          "type": "CONTROL_NET",
+          "link": 27
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 28
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 29
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            5
+          ]
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [
+            6
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ControlNetApplyAdvanced"
+      },
+      "widgets_values": [
+        1.4,
+        0.0,
+        1.0
       ]
     }
   ],
@@ -747,7 +1035,7 @@
     ],
     [
       5,
-      2,
+      26,
       0,
       5,
       1,
@@ -755,8 +1043,8 @@
     ],
     [
       6,
-      3,
-      0,
+      26,
+      1,
       5,
       2,
       "CONDITIONING"
@@ -795,7 +1083,7 @@
     ],
     [
       11,
-      6,
+      23,
       0,
       8,
       0,
@@ -864,6 +1152,86 @@
       18,
       0,
       "STRING"
+    ],
+    [
+      20,
+      20,
+      0,
+      21,
+      0,
+      "BACKGROUND_REMOVAL"
+    ],
+    [
+      21,
+      6,
+      0,
+      21,
+      1,
+      "IMAGE"
+    ],
+    [
+      22,
+      21,
+      0,
+      22,
+      0,
+      "MASK"
+    ],
+    [
+      23,
+      6,
+      0,
+      23,
+      0,
+      "IMAGE"
+    ],
+    [
+      24,
+      22,
+      0,
+      23,
+      1,
+      "MASK"
+    ],
+    [
+      25,
+      2,
+      0,
+      26,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      26,
+      3,
+      0,
+      26,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      27,
+      25,
+      0,
+      26,
+      2,
+      "CONTROL_NET"
+    ],
+    [
+      28,
+      24,
+      0,
+      26,
+      3,
+      "IMAGE"
+    ],
+    [
+      29,
+      1,
+      2,
+      26,
+      4,
+      "VAE"
     ]
   ],
   "groups": [],
@@ -872,14 +1240,16 @@
     "project": "Thai_02_Big_Data_in_Our_Lives",
     "selection": {
       "group": "student",
-      "product": "bag",
+      "product": "bags",
       "color1": "blue",
       "color2": "white",
-      "profile": "balanced",
+      "profile": "quality",
       "seed": 7042026,
       "width": 480,
       "height": 480,
-      "positive_prompt": "(isolated inventory item illustration:1.3), product only, no humans, (one backpack:1.3), (blue fabric body:1.15), (white straps and zipper trim:1.15), practical campus design, premium Japanese mobile RPG equipment icon, polished 2D digital painting, delicate clean linework, soft cel shading, carefully painted material highlights, rich subtle color gradients, elegant detailed item design, three-quarter view, full object centered with generous empty margins, simple pale background"
+      "resolved_product": "bags",
+      "alpha": true,
+      "positive_prompt": "no humans, still life, object focus, (full shot:1.3), (entire object:1.3), (wide shot:1.15), isolated object, a single backpack, one bag only, closed main compartment, structured front pocket, two attached padded shoulder straps, woven canvas texture, reinforced stitching, metal zipper teeth, small fastened buckles, (blue fabric body:1.15), (white straps and zipper trim:1.15), practical casual design with sporty details, detailed Japanese game item illustration, precise clean linework, soft painted shading, carefully rendered material texture, crisp edges, complete object fully in frame, centered composition, generous empty margin, plain white background, masterpiece, high score, great score, absurdres, rating:general"
     }
   },
   "version": 0.4

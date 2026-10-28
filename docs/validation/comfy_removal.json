@@ -1,0 +1,42 @@
+{
+  "retired_main_types_absent": true,
+  "retired_policy_type_absent": true,
+  "retired_status_hidden": true,
+  "game_language": "th",
+  "group_popup_open": true,
+  "repeat_key_removes": true,
+  "option_labels": [
+    "Student",
+    "Bags",
+    "Blue",
+    "White"
+  ],
+  "generation_not_configured": true,
+  "stale_result_rejected": true,
+  "current_result_accepted": true,
+  "manager_owns_texture": true,
+  "result_bound_and_visible": true,
+  "result_same_texture": true,
+  "idle_releases_texture": true,
+  "second_session_language": "en",
+  "selection_change_releases_three_results": true,
+  "journal_session": "75353f6330d5469fa5526af99de9a0ae",
+  "disabled_screen_rejects_result": true,
+  "reenable_clears_selection": true,
+  "environment": "Unity 2022.3.62f3 Windows Editor",
+  "test_job": "4375718327e848b3b2b74a7dddede1e1",
+  "editmode_passed": 19,
+  "test_images": "Synthetic 32x16 / 16x16 textures, no AI service used",
+  "windows_player_verified": false,
+  "physical_keyboard_or_rfid_verified": false,
+  "journal_event_counts": {
+    "block_recognized": 6,
+    "block_removed": 3,
+    "session_ended": 1,
+    "session_started": 1
+  },
+  "no_generation_events": true,
+  "compile_errors": 0,
+  "play_errors": 0,
+  "existing_play_exit_log": "[ApiManagerBase] apiUrl is not set; skipping exit log."
+}

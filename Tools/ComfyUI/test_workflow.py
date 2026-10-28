@@ -31,7 +31,7 @@ class WorkflowTests(unittest.TestCase):
             self.assertIn(link, nodes[origin]["outputs"][source_slot]["links"])
             self.assertEqual(nodes[target]["inputs"][target_slot]["link"], link)
             self.assertEqual(nodes[origin]["outputs"][source_slot]["type"], kind)
-        self.assertEqual(api["4"]["inputs"]["width"], 768)
+        self.assertEqual(api["4"]["inputs"]["width"], 1024)
         self.assertEqual(api["8"]["inputs"]["width"], 480)
         self.assertEqual(api["7"]["inputs"]["images"], ["8", 0])
 
@@ -42,11 +42,26 @@ class WorkflowTests(unittest.TestCase):
                 build(**inputs)
 
     def test_profiles_and_fixed_seed(self):
-        for profile, steps in (("fast", 12), ("balanced", 16), ("quality", 20)):
+        for profile, steps in (("fast", 20), ("balanced", 24), ("quality", 28)):
             api, _, _ = build(profile=profile, seed=123)
             self.assertEqual(api["5"]["inputs"]["steps"], steps)
             self.assertEqual(api["5"]["inputs"]["seed"], 123)
             self.assertEqual(api["4"]["inputs"]["batch_size"], 1)
+
+    def test_structure_and_alpha_are_connected_to_final_output(self):
+        from pathlib import Path
+        for product in read_json("presets.json")["products"]:
+            for seed in range(3):
+                api, _, selection = build(product=product, seed=seed)
+                guide = api["24"]["inputs"]["image"]
+                self.assertEqual(guide, f"Thai02Quality/guide_{selection['resolved_product']}.png")
+                self.assertTrue((Path(__file__).resolve().parents[2] / "Assets/StreamingAssets/BlockGeneration/ControlGuides" / Path(guide).name).is_file())
+                self.assertEqual(api["5"]["inputs"]["positive"], ["26", 0])
+                self.assertEqual(api["5"]["inputs"]["negative"], ["26", 1])
+                self.assertEqual(api["21"]["inputs"]["image"], ["6", 0])
+                self.assertEqual(api["22"]["inputs"]["mask"], ["21", 0])
+                self.assertEqual(api["23"]["inputs"]["alpha"], ["22", 0])
+                self.assertEqual(api["8"]["inputs"]["image"], ["23", 0])
 
 
 if __name__ == "__main__":

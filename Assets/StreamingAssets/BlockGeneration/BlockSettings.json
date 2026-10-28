@@ -1,0 +1,4 @@
+{
+  "maxJournalFiles": 30,
+  "maxJournalMegabytes": 4
+}

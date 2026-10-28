@@ -1,0 +1,11 @@
+{
+  "name": "BiRefNet (ComfyUI background removal)",
+  "filename": "birefnet.safetensors",
+  "repository": "Comfy-Org/BiRefNet",
+  "revision": "25511f8787e51912e1480706b4e47b8f467fbf72",
+  "url": "https://huggingface.co/Comfy-Org/BiRefNet/resolve/25511f8787e51912e1480706b4e47b8f467fbf72/background_removal/birefnet.safetensors",
+  "bytes": 444473596,
+  "sha256": "9ab37426bf4de0567af6b5d21b16151357149139362e6e8992021b8ce356a154",
+  "model_card": "https://huggingface.co/ZhengPeng7/BiRefNet",
+  "license_note": "BiRefNet MIT; preserve model/source license and notices."
+}

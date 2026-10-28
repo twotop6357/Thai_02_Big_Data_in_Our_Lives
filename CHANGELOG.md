@@ -1,7 +1,27 @@
 # Changelog
 관람객·운영자 경험에 영향을 주는 변경 사항을 기록합니다. 형식은 [Keep a Changelog](https://keepachangelog.com/ko/1.1.0/)를 따릅니다.
 
+## [2026-10-28]
+
+### Added
+- ComfyUI 없이 나잇대·물품별 흰 선화 PNG에 선택한 두 색상을 입히는 로컬 색칠 기능. 검정 외곽선·회색 명암·원본 투명도를 보존하고 네 블록 인식/변경 시 자동 갱신. 두 색상 영역은 별도 마스크 PNG로 지정하며 BlockColoring.json에서 원본·영역·RGB를 교체할 수 있음.
+- 4개 나잇대 × 12개 물품의 교체 가능한 기하학 선화 샘플48종 및 제작 도구·검증·[색칠 운영 문서](docs/COLORING.md). 전시용 최종 삽화 교체 필요.
+
+### Changed
+- 기존 GenerateImage 진입점을 로컬 색칠/재시도로 연결. 선택 변경·취소·화면/세션 종료 시 작업 취소 및 오래된 결과 거부, Game→Result 동일 텍스처 전달·Idle 해제. Equipment 외형도 나잇대 설정에 고정하여 색상 변경 시 유지. 이미지 자동 저장/서버 호출 없음.
+
+## [2026-10-22]
+
+### Removed
+- ComfyUI 자동 실행/상태 검사, 이미지 생성·다운로드·가이드 업로드 및 서버 출력 이미지 자동 정리를 앱에서 제거. Idle 서버 상태 컴포넌트·에디터 Generate/Cancel 버튼을 제거하고 전용 설정/워크플로/가이드를 실행 대상 밖 Tools에 보관. 외부 설치본·모델·기존 생성물은 유지.
+
+### Changed
+- 블록 선택/선택 기록은 독립 BlockSettings.json으로 동작. 새 이미지 생성 서비스는 미설정 상태이며 기존 GenerateImage 진입점은 요청을 보내지 않고 안내만 표시. 실제 이미지를 전달할 서비스 독립 결과 표시 연결점과 Game→Result→Idle 자원 해제 흐름은 유지.
+
 ## [2026-10-19]
+
+### Changed
+- 이미지 생성을 품질 우선 Animagine XL4.0 Opt / 내부1024·28steps로 변경. 제품별 단일 구조 가이드와 인체·복수물품 억제 프롬프트를 추가하고 BiRefNet으로 배경을 실제 알파 투명 처리(출력480 RGBA). 가이드 자동 업로드·RGBA 수신 검사 추가. 기존보다 생성 시간이 늘어나며 RTX3060 20초 목표는 미검증.
 
 ### Added
 - 앱 시작 시 로컬 ComfyUI(serverUrl의 /system_stats)를 검사하고, 꺼져 있으면 Comfy Desktop 설치본의 Python 서버를 창 없이 실행. Idle의 `ComfyUIStatusText`는 실행 후 준비될 때까지와 실행 불가 시에만 표시하고 준비되면 숨김. 앱 종료 시 서버는 유지. 실행 파일·인자·제한 시간은 ComfyUISettings에서 변경(`%LOCALAPPDATA%` 등 환경 변수 사용 가능), 에디터에서는 기본적으로 실행하지 않음.

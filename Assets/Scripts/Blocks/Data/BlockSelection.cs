@@ -7,7 +7,7 @@ namespace Exhibition.Blocks
     [Serializable]
     public sealed class BlockOption
     {
-        public string id, label, prompt, primaryPart, secondaryPart;
+        public string id, label, prompt, primaryPart, secondaryPart, negativePrompt;
     }
 
     [Serializable]
@@ -90,7 +90,8 @@ namespace Exhibition.Blocks
                 audienceFragment = group.prompt, productFragment = subject,
                 primaryFragment = primary, secondaryFragment = secondary,
                 positive = string.Join(", ", catalog.stylePrefix, subject, primary, secondary, group.prompt, catalog.styleSuffix),
-                negative = catalog.negativePrompt
+                negative = string.IsNullOrWhiteSpace(product.negativePrompt) ? catalog.negativePrompt :
+                    catalog.negativePrompt + ", " + product.negativePrompt
             };
         }
     }

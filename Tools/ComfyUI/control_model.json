@@ -1,0 +1,12 @@
+{
+  "name": "SDXL Canny Control-LoRA rank 256",
+  "filename": "control-lora-canny-rank256.safetensors",
+  "repository": "stabilityai/control-lora",
+  "revision": "75590eb0e7868d3d0f1581b5126d487b33c7fdb4",
+  "bytes": 774450192,
+  "sha256": "21f79f7368eff07f57bcd507ca91c0fc89070d7da182960ff24ed1d58310c3a7",
+  "model_card": "https://huggingface.co/stabilityai/control-lora",
+  "license_note": "Stability AI Control-LoRA Community License Agreement; preserve required license/notices. Additional commercial terms apply above 1 million monthly active users; see pinned LICENSE.MD.",
+  "url": "https://huggingface.co/stabilityai/control-lora/resolve/75590eb0e7868d3d0f1581b5126d487b33c7fdb4/control-LoRAs-rank256/control-lora-canny-rank256.safetensors",
+  "license_url": "https://huggingface.co/stabilityai/control-lora/blob/75590eb0e7868d3d0f1581b5126d487b33c7fdb4/LICENSE.MD"
+}

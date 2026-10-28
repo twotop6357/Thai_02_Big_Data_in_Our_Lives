@@ -1,11 +1,13 @@
 {
   "group": "student",
-  "product": "bag",
+  "product": "bags",
   "color1": "blue",
   "color2": "white",
-  "profile": "balanced",
+  "profile": "quality",
   "seed": 7042026,
   "width": 480,
   "height": 480,
-  "positive_prompt": "(isolated inventory item illustration:1.3), product only, no humans, (one backpack:1.3), (blue fabric body:1.15), (white straps and zipper trim:1.15), practical campus design, premium Japanese mobile RPG equipment icon, polished 2D digital painting, delicate clean linework, soft cel shading, carefully painted material highlights, rich subtle color gradients, elegant detailed item design, three-quarter view, full object centered with generous empty margins, simple pale background"
+  "resolved_product": "bags",
+  "alpha": true,
+  "positive_prompt": "no humans, still life, object focus, (full shot:1.3), (entire object:1.3), (wide shot:1.15), isolated object, a single backpack, one bag only, closed main compartment, structured front pocket, two attached padded shoulder straps, woven canvas texture, reinforced stitching, metal zipper teeth, small fastened buckles, (blue fabric body:1.15), (white straps and zipper trim:1.15), practical casual design with sporty details, detailed Japanese game item illustration, precise clean linework, soft painted shading, carefully rendered material texture, crisp edges, complete object fully in frame, centered composition, generous empty margin, plain white background, masterpiece, high score, great score, absurdres, rating:general"
 }

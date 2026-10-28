@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 276303163}
   - component: {fileID: 276303162}
   m_Layer: 5
-  m_Name: ComfyUIStatusText
+  m_Name: ImageGenerationStatusText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8b93b5b8ea58e6d4f9a7216e87bc6bb1, type: 2}
   m_sharedMaterial: {fileID: 2919184130312502615, guid: 8b93b5b8ea58e6d4f9a7216e87bc6bb1,
@@ -856,7 +856,6 @@ GameObject:
   - component: {fileID: 1762718226}
   - component: {fileID: 1762718228}
   - component: {fileID: 1762718227}
-  - component: {fileID: 1762718229}
   m_Layer: 5
   m_Name: IdlePanel
   m_TagString: Untagged
@@ -926,21 +925,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762718225}
   m_CullTransparentMesh: 1
---- !u!114 &1762718229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1762718225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d124fbb0b735eef46af124c49eb473ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  statusText: {fileID: 276303162}
-  startingMessage: Starting the AI image server...
-  unavailableMessage: The AI image server is not available.
 --- !u!1 &1968037295
 GameObject:
   m_ObjectHideFlags: 0

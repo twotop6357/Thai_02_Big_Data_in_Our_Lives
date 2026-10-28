@@ -25,6 +25,18 @@ public sealed class BlockSelectionTests
             Array.ConvertAll(_catalog.colors, c => c.id));
     }
 
+    [Test] public void JournalSettingsHaveNoGenerationServerDependency()
+    {
+        var settings = JsonUtility.FromJson<BlockSettings>(File.ReadAllText(Path.Combine(Application.streamingAssetsPath,
+            "BlockGeneration/BlockSettings.json")));
+        Assert.DoesNotThrow(settings.Validate);
+        settings.maxJournalFiles = 1;
+        Assert.Throws<ArgumentException>(settings.Validate);
+        settings.maxJournalFiles = 30;
+        settings.maxJournalMegabytes = 0;
+        Assert.Throws<ArgumentException>(settings.Validate);
+    }
+
     private BlockSelection Complete(string product = "bags")
     {
         var selection = new BlockSelection();
@@ -92,6 +104,8 @@ public sealed class BlockSelectionTests
             var prompt = selection.CreatePrompt(_catalog, 0);
             StringAssert.Contains(first.prompt + " " + product.primaryPart, prompt.primaryFragment);
             StringAssert.Contains(second.prompt + " " + product.secondaryPart, prompt.secondaryFragment);
+            StringAssert.Contains(_catalog.negativePrompt, prompt.negative);
+            if (!string.IsNullOrWhiteSpace(product.negativePrompt)) StringAssert.Contains(product.negativePrompt, prompt.negative);
         }
         selection.Clear();
         Assert.IsFalse(selection.Complete);

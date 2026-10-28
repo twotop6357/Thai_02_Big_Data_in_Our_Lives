@@ -53,8 +53,8 @@ def run(server, group, product, color1, color2, profile, seed, timeout, image_pa
     image = generated[0]
     png = http(server, "/view?" + urllib.parse.urlencode(image), binary=True)
     elapsed = time.perf_counter() - started
-    if png[:8] != b"\x89PNG\r\n\x1a\n" or len(png) < 24:
-        raise RuntimeError("Expected a PNG output.")
+    if png[:8] != b"\x89PNG\r\n\x1a\n" or len(png) < 26 or png[24:26] != bytes([8, 6]):
+        raise RuntimeError("Expected an 8-bit RGBA PNG output.")
     width, height = struct.unpack(">II", png[16:24])
     if (width, height) != (480, 480):
         raise RuntimeError(f"Unexpected image size: {width}x{height}.")
@@ -70,7 +70,7 @@ def main():
     parser.add_argument("--server", default="http://127.0.0.1:8188")
     parser.add_argument("--runs", type=int, default=4)
     parser.add_argument("--warmup", type=int, default=1)
-    parser.add_argument("--profile", choices=["balanced", "fast", "quality"], default="balanced")
+    parser.add_argument("--profile", choices=["balanced", "fast", "quality"], default="quality")
     parser.add_argument("--timeout", type=float, default=180)
     parser.add_argument("--output-dir", type=Path, default=Path(__file__).parent / "results")
     args = parser.parse_args()
@@ -87,10 +87,10 @@ def main():
               "pytorch_version": stats.get("system", {}).get("pytorch_version"),
               "checkpoint": read_json("model.json")["filename"],
               "sampling": read_json("presets.json")["profiles"][args.profile],
-              "internal_resolution": [768, 768], "output_resolution": [480, 480],
+              "internal_resolution": read_json("model.json")["internal_resolution"], "output_resolution": [480, 480],
               "profile": args.profile, "target_seconds": 20, "warmup": [], "runs": []}
     cases = [("student", "bag", "blue", "white"), ("child", "sunglasses", "red", "yellow"),
-             ("working_adult", "bag", "black", "blue"), ("senior", "sunglasses", "brown", "green")]
+             ("working_adult", "bag", "black", "blue"), ("senior", "sunglasses", "white", "green")]
     args.output_dir.mkdir(parents=True, exist_ok=True)
     for i in range(args.warmup + args.runs):
         is_warmup = i < args.warmup

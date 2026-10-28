@@ -2,10 +2,10 @@
   "1": {
     "class_type": "CheckpointLoaderSimple",
     "inputs": {
-      "ckpt_name": "sd_xl_base_1.0.safetensors"
+      "ckpt_name": "animagine-xl-4.0-opt.safetensors"
     },
     "_meta": {
-      "title": "SDXL Base 1.0 / no refiner"
+      "title": "Animagine XL 4.0 Opt"
     }
   },
   "2": {
@@ -27,7 +27,7 @@
   "3": {
     "class_type": "CLIPTextEncode",
     "inputs": {
-      "text": "(person:1.5), (1girl:1.5), (1boy:1.5), human, face, head, hands, character, wearing, portrait, photograph, photorealistic, realistic textures, close-up, cropped, collection, collage, comparison, grid, (multiple products:1.4), (two pairs:1.4), (three pairs:1.4), stacked products, text, logo, watermark, thick black outlines, flat vector art, clipart, simple cartoon, low detail, 3d render, UI border, icon frame, game screenshot",
+      "text": "worst quality, bad quality, low quality, lowres, blurry, unfinished, rough sketch, noisy, jpeg artifacts, text, logo, watermark, signature, human, person, 1girl, 1boy, woman, man, child, human face, human head, human hands, human arms, human legs, human feet, fingers, skin, portrait, wearing, holding, mannequin, model wearing product, multiple objects, duplicate, duplicates, collection, collage, grid, contact sheet, multiple views, comparison, exploded view, spare parts, extra accessories, cropped, cut off, out of frame, distorted geometry, malformed, flat vector art, thick black outlines, photograph, photorealistic, close-up, extreme close-up, macro, zoomed in, cropped object, partial object, object extending beyond the frame",
       "clip": [
         "1",
         1
@@ -40,12 +40,12 @@
   "4": {
     "class_type": "EmptyLatentImage",
     "inputs": {
-      "width": 768,
-      "height": 768,
+      "width": 1024,
+      "height": 1024,
       "batch_size": 1
     },
     "_meta": {
-      "title": "768 x 768 internal / batch 1"
+      "title": "1024 x 1024 internal / batch 1"
     }
   },
   "5": {
@@ -56,26 +56,26 @@
         0
       ],
       "positive": [
-        "2",
+        "26",
         0
       ],
       "negative": [
-        "3",
-        0
+        "26",
+        1
       ],
       "latent_image": [
         "4",
         0
       ],
       "seed": 7042026,
-      "steps": 16,
-      "cfg": 6.0,
-      "sampler_name": "dpmpp_2m",
-      "scheduler": "karras",
+      "steps": 28,
+      "cfg": 5.0,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "normal",
       "denoise": 1.0
     },
     "_meta": {
-      "title": "balanced / 16 steps"
+      "title": "quality / 28 steps"
     }
   },
   "6": {
@@ -104,14 +104,14 @@
       "filename_prefix": "Thai02/product"
     },
     "_meta": {
-      "title": "Final 480 x 480 PNG"
+      "title": "Final 480 x 480 RGBA PNG"
     }
   },
   "8": {
     "class_type": "ImageScale",
     "inputs": {
       "image": [
-        "6",
+        "23",
         0
       ],
       "upscale_method": "area",
@@ -120,13 +120,13 @@
       "crop": "disabled"
     },
     "_meta": {
-      "title": "Downsample to 480 x 480"
+      "title": "Downsample RGBA to 480 x 480"
     }
   },
   "10": {
     "class_type": "PrimitiveString",
     "inputs": {
-      "value": "practical campus design"
+      "value": "practical casual design with sporty details"
     },
     "_meta": {
       "title": "INPUT 1 / audience: student"
@@ -135,10 +135,10 @@
   "11": {
     "class_type": "PrimitiveString",
     "inputs": {
-      "value": "(one backpack:1.3)"
+      "value": "a single backpack, one bag only, closed main compartment, structured front pocket, two attached padded shoulder straps, woven canvas texture, reinforced stitching, metal zipper teeth, small fastened buckles"
     },
     "_meta": {
-      "title": "INPUT 2 / product: bag"
+      "title": "INPUT 2 / product: bags"
     }
   },
   "12": {
@@ -213,7 +213,7 @@
   "17": {
     "class_type": "StringConcatenate",
     "inputs": {
-      "string_a": "(isolated inventory item illustration:1.3), product only, no humans",
+      "string_a": "no humans, still life, object focus, (full shot:1.3), (entire object:1.3), (wide shot:1.15), isolated object",
       "string_b": [
         "16",
         0
@@ -231,11 +231,113 @@
         "17",
         0
       ],
-      "string_b": "premium Japanese mobile RPG equipment icon, polished 2D digital painting, delicate clean linework, soft cel shading, carefully painted material highlights, rich subtle color gradients, elegant detailed item design, three-quarter view, full object centered with generous empty margins, simple pale background",
+      "string_b": "detailed Japanese game item illustration, precise clean linework, soft painted shading, carefully rendered material texture, crisp edges, complete object fully in frame, centered composition, generous empty margin, plain white background, masterpiece, high score, great score, absurdres, rating:general",
       "delimiter": ", "
     },
     "_meta": {
       "title": "Fixed product composition"
+    }
+  },
+  "20": {
+    "class_type": "LoadBackgroundRemovalModel",
+    "inputs": {
+      "bg_removal_name": "birefnet.safetensors"
+    },
+    "_meta": {
+      "title": "BiRefNet foreground segmentation"
+    }
+  },
+  "21": {
+    "class_type": "RemoveBackground",
+    "inputs": {
+      "bg_removal_model": [
+        "20",
+        0
+      ],
+      "image": [
+        "6",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Foreground mask at native resolution"
+    }
+  },
+  "22": {
+    "class_type": "InvertMask",
+    "inputs": {
+      "mask": [
+        "21",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Foreground to Comfy alpha convention"
+    }
+  },
+  "23": {
+    "class_type": "JoinImageWithAlpha",
+    "inputs": {
+      "image": [
+        "6",
+        0
+      ],
+      "alpha": [
+        "22",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Apply actual alpha (not painted transparency)"
+    }
+  },
+  "24": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "Thai02Quality/guide_bags.png"
+    },
+    "_meta": {
+      "title": "Single product structure guide"
+    }
+  },
+  "25": {
+    "class_type": "ControlNetLoader",
+    "inputs": {
+      "control_net_name": "control-lora-canny-rank256.safetensors"
+    },
+    "_meta": {
+      "title": "SDXL Canny structure control"
+    }
+  },
+  "26": {
+    "class_type": "ControlNetApplyAdvanced",
+    "inputs": {
+      "positive": [
+        "2",
+        0
+      ],
+      "negative": [
+        "3",
+        0
+      ],
+      "control_net": [
+        "25",
+        0
+      ],
+      "image": [
+        "24",
+        0
+      ],
+      "vae": [
+        "1",
+        2
+      ],
+      "strength": 1.4,
+      "start_percent": 0.0,
+      "end_percent": 1.0
+    },
+    "_meta": {
+      "title": "Keep one complete product"
     }
   }
 }

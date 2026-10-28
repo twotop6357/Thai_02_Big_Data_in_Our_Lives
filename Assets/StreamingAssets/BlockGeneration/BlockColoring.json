@@ -1,0 +1,367 @@
+{
+  "schemaVersion": 1,
+  "colors": [
+    {
+      "id": "black",
+      "hex": "#000000"
+    },
+    {
+      "id": "white",
+      "hex": "#FFFFFF"
+    },
+    {
+      "id": "blue",
+      "hex": "#2068E8"
+    },
+    {
+      "id": "red",
+      "hex": "#E83030"
+    },
+    {
+      "id": "green",
+      "hex": "#27AD55"
+    },
+    {
+      "id": "yellow",
+      "hex": "#FFD52A"
+    }
+  ],
+  "templates": [
+    {
+      "groupId": "child",
+      "productId": "bags",
+      "resolvedProductId": "bags",
+      "baseImage": "Coloring/Samples/child_bags_base.png",
+      "maskImage": "Coloring/Samples/child_bags_mask.png"
+    },
+    {
+      "groupId": "child",
+      "productId": "shoes",
+      "resolvedProductId": "shoes",
+      "baseImage": "Coloring/Samples/child_shoes_base.png",
+      "maskImage": "Coloring/Samples/child_shoes_mask.png"
+    },
+    {
+      "groupId": "child",
+      "productId": "hats",
+      "resolvedProductId": "hats",
+      "baseImage": "Coloring/Samples/child_hats_base.png",
+      "maskImage": "Coloring/Samples/child_hats_mask.png"
+    },
+    {
+      "groupId": "child",
+      "productId": "sunglasses",
+      "resolvedProductId": "sunglasses",
+      "baseImage": "Coloring/Samples/child_sunglasses_base.png",
+      "maskImage": "Coloring/Samples/child_sunglasses_mask.png"
+    },
+    {
+      "groupId": "child",
+      "productId": "headphones",
+      "resolvedProductId": "headphones",
+      "baseImage": "Coloring/Samples/child_headphones_base.png",
+      "maskImage": "Coloring/Samples/child_headphones_mask.png"
+    },
+    {
+      "groupId": "child",
+      "productId": "tops",
+      "resolvedProductId": "tops",
+      "baseImage": "Coloring/Samples/child_tops_base.png",
+      "maskImage": "Coloring/Samples/child_tops_mask.png"
+    },
+    {
+      "groupId": "child",
+      "productId": "bicycles",
+      "resolvedProductId": "bicycles",
+      "baseImage": "Coloring/Samples/child_bicycles_base.png",
+      "maskImage": "Coloring/Samples/child_bicycles_mask.png"
+    },
+    {
+      "groupId": "child",
+      "productId": "tumblers",
+      "resolvedProductId": "tumblers",
+      "baseImage": "Coloring/Samples/child_tumblers_base.png",
+      "maskImage": "Coloring/Samples/child_tumblers_mask.png"
+    },
+    {
+      "groupId": "child",
+      "productId": "wristwatches",
+      "resolvedProductId": "wristwatches",
+      "baseImage": "Coloring/Samples/child_wristwatches_base.png",
+      "maskImage": "Coloring/Samples/child_wristwatches_mask.png"
+    },
+    {
+      "groupId": "child",
+      "productId": "phone_cases",
+      "resolvedProductId": "phone_cases",
+      "baseImage": "Coloring/Samples/child_phone_cases_base.png",
+      "maskImage": "Coloring/Samples/child_phone_cases_mask.png"
+    },
+    {
+      "groupId": "child",
+      "productId": "umbrellas",
+      "resolvedProductId": "umbrellas",
+      "baseImage": "Coloring/Samples/child_umbrellas_base.png",
+      "maskImage": "Coloring/Samples/child_umbrellas_mask.png"
+    },
+    {
+      "groupId": "child",
+      "productId": "equipment",
+      "resolvedProductId": "robots",
+      "baseImage": "Coloring/Samples/child_robots_base.png",
+      "maskImage": "Coloring/Samples/child_robots_mask.png"
+    },
+    {
+      "groupId": "student",
+      "productId": "bags",
+      "resolvedProductId": "bags",
+      "baseImage": "Coloring/Samples/student_bags_base.png",
+      "maskImage": "Coloring/Samples/student_bags_mask.png"
+    },
+    {
+      "groupId": "student",
+      "productId": "shoes",
+      "resolvedProductId": "shoes",
+      "baseImage": "Coloring/Samples/student_shoes_base.png",
+      "maskImage": "Coloring/Samples/student_shoes_mask.png"
+    },
+    {
+      "groupId": "student",
+      "productId": "hats",
+      "resolvedProductId": "hats",
+      "baseImage": "Coloring/Samples/student_hats_base.png",
+      "maskImage": "Coloring/Samples/student_hats_mask.png"
+    },
+    {
+      "groupId": "student",
+      "productId": "sunglasses",
+      "resolvedProductId": "sunglasses",
+      "baseImage": "Coloring/Samples/student_sunglasses_base.png",
+      "maskImage": "Coloring/Samples/student_sunglasses_mask.png"
+    },
+    {
+      "groupId": "student",
+      "productId": "headphones",
+      "resolvedProductId": "headphones",
+      "baseImage": "Coloring/Samples/student_headphones_base.png",
+      "maskImage": "Coloring/Samples/student_headphones_mask.png"
+    },
+    {
+      "groupId": "student",
+      "productId": "tops",
+      "resolvedProductId": "tops",
+      "baseImage": "Coloring/Samples/student_tops_base.png",
+      "maskImage": "Coloring/Samples/student_tops_mask.png"
+    },
+    {
+      "groupId": "student",
+      "productId": "bicycles",
+      "resolvedProductId": "bicycles",
+      "baseImage": "Coloring/Samples/student_bicycles_base.png",
+      "maskImage": "Coloring/Samples/student_bicycles_mask.png"
+    },
+    {
+      "groupId": "student",
+      "productId": "tumblers",
+      "resolvedProductId": "tumblers",
+      "baseImage": "Coloring/Samples/student_tumblers_base.png",
+      "maskImage": "Coloring/Samples/student_tumblers_mask.png"
+    },
+    {
+      "groupId": "student",
+      "productId": "wristwatches",
+      "resolvedProductId": "wristwatches",
+      "baseImage": "Coloring/Samples/student_wristwatches_base.png",
+      "maskImage": "Coloring/Samples/student_wristwatches_mask.png"
+    },
+    {
+      "groupId": "student",
+      "productId": "phone_cases",
+      "resolvedProductId": "phone_cases",
+      "baseImage": "Coloring/Samples/student_phone_cases_base.png",
+      "maskImage": "Coloring/Samples/student_phone_cases_mask.png"
+    },
+    {
+      "groupId": "student",
+      "productId": "umbrellas",
+      "resolvedProductId": "umbrellas",
+      "baseImage": "Coloring/Samples/student_umbrellas_base.png",
+      "maskImage": "Coloring/Samples/student_umbrellas_mask.png"
+    },
+    {
+      "groupId": "student",
+      "productId": "equipment",
+      "resolvedProductId": "laptops",
+      "baseImage": "Coloring/Samples/student_laptops_base.png",
+      "maskImage": "Coloring/Samples/student_laptops_mask.png"
+    },
+    {
+      "groupId": "working_adult",
+      "productId": "bags",
+      "resolvedProductId": "bags",
+      "baseImage": "Coloring/Samples/working_adult_bags_base.png",
+      "maskImage": "Coloring/Samples/working_adult_bags_mask.png"
+    },
+    {
+      "groupId": "working_adult",
+      "productId": "shoes",
+      "resolvedProductId": "shoes",
+      "baseImage": "Coloring/Samples/working_adult_shoes_base.png",
+      "maskImage": "Coloring/Samples/working_adult_shoes_mask.png"
+    },
+    {
+      "groupId": "working_adult",
+      "productId": "hats",
+      "resolvedProductId": "hats",
+      "baseImage": "Coloring/Samples/working_adult_hats_base.png",
+      "maskImage": "Coloring/Samples/working_adult_hats_mask.png"
+    },
+    {
+      "groupId": "working_adult",
+      "productId": "sunglasses",
+      "resolvedProductId": "sunglasses",
+      "baseImage": "Coloring/Samples/working_adult_sunglasses_base.png",
+      "maskImage": "Coloring/Samples/working_adult_sunglasses_mask.png"
+    },
+    {
+      "groupId": "working_adult",
+      "productId": "headphones",
+      "resolvedProductId": "headphones",
+      "baseImage": "Coloring/Samples/working_adult_headphones_base.png",
+      "maskImage": "Coloring/Samples/working_adult_headphones_mask.png"
+    },
+    {
+      "groupId": "working_adult",
+      "productId": "tops",
+      "resolvedProductId": "tops",
+      "baseImage": "Coloring/Samples/working_adult_tops_base.png",
+      "maskImage": "Coloring/Samples/working_adult_tops_mask.png"
+    },
+    {
+      "groupId": "working_adult",
+      "productId": "bicycles",
+      "resolvedProductId": "bicycles",
+      "baseImage": "Coloring/Samples/working_adult_bicycles_base.png",
+      "maskImage": "Coloring/Samples/working_adult_bicycles_mask.png"
+    },
+    {
+      "groupId": "working_adult",
+      "productId": "tumblers",
+      "resolvedProductId": "tumblers",
+      "baseImage": "Coloring/Samples/working_adult_tumblers_base.png",
+      "maskImage": "Coloring/Samples/working_adult_tumblers_mask.png"
+    },
+    {
+      "groupId": "working_adult",
+      "productId": "wristwatches",
+      "resolvedProductId": "wristwatches",
+      "baseImage": "Coloring/Samples/working_adult_wristwatches_base.png",
+      "maskImage": "Coloring/Samples/working_adult_wristwatches_mask.png"
+    },
+    {
+      "groupId": "working_adult",
+      "productId": "phone_cases",
+      "resolvedProductId": "phone_cases",
+      "baseImage": "Coloring/Samples/working_adult_phone_cases_base.png",
+      "maskImage": "Coloring/Samples/working_adult_phone_cases_mask.png"
+    },
+    {
+      "groupId": "working_adult",
+      "productId": "umbrellas",
+      "resolvedProductId": "umbrellas",
+      "baseImage": "Coloring/Samples/working_adult_umbrellas_base.png",
+      "maskImage": "Coloring/Samples/working_adult_umbrellas_mask.png"
+    },
+    {
+      "groupId": "working_adult",
+      "productId": "equipment",
+      "resolvedProductId": "keyboards",
+      "baseImage": "Coloring/Samples/working_adult_keyboards_base.png",
+      "maskImage": "Coloring/Samples/working_adult_keyboards_mask.png"
+    },
+    {
+      "groupId": "senior",
+      "productId": "bags",
+      "resolvedProductId": "bags",
+      "baseImage": "Coloring/Samples/senior_bags_base.png",
+      "maskImage": "Coloring/Samples/senior_bags_mask.png"
+    },
+    {
+      "groupId": "senior",
+      "productId": "shoes",
+      "resolvedProductId": "shoes",
+      "baseImage": "Coloring/Samples/senior_shoes_base.png",
+      "maskImage": "Coloring/Samples/senior_shoes_mask.png"
+    },
+    {
+      "groupId": "senior",
+      "productId": "hats",
+      "resolvedProductId": "hats",
+      "baseImage": "Coloring/Samples/senior_hats_base.png",
+      "maskImage": "Coloring/Samples/senior_hats_mask.png"
+    },
+    {
+      "groupId": "senior",
+      "productId": "sunglasses",
+      "resolvedProductId": "sunglasses",
+      "baseImage": "Coloring/Samples/senior_sunglasses_base.png",
+      "maskImage": "Coloring/Samples/senior_sunglasses_mask.png"
+    },
+    {
+      "groupId": "senior",
+      "productId": "headphones",
+      "resolvedProductId": "headphones",
+      "baseImage": "Coloring/Samples/senior_headphones_base.png",
+      "maskImage": "Coloring/Samples/senior_headphones_mask.png"
+    },
+    {
+      "groupId": "senior",
+      "productId": "tops",
+      "resolvedProductId": "tops",
+      "baseImage": "Coloring/Samples/senior_tops_base.png",
+      "maskImage": "Coloring/Samples/senior_tops_mask.png"
+    },
+    {
+      "groupId": "senior",
+      "productId": "bicycles",
+      "resolvedProductId": "bicycles",
+      "baseImage": "Coloring/Samples/senior_bicycles_base.png",
+      "maskImage": "Coloring/Samples/senior_bicycles_mask.png"
+    },
+    {
+      "groupId": "senior",
+      "productId": "tumblers",
+      "resolvedProductId": "tumblers",
+      "baseImage": "Coloring/Samples/senior_tumblers_base.png",
+      "maskImage": "Coloring/Samples/senior_tumblers_mask.png"
+    },
+    {
+      "groupId": "senior",
+      "productId": "wristwatches",
+      "resolvedProductId": "wristwatches",
+      "baseImage": "Coloring/Samples/senior_wristwatches_base.png",
+      "maskImage": "Coloring/Samples/senior_wristwatches_mask.png"
+    },
+    {
+      "groupId": "senior",
+      "productId": "phone_cases",
+      "resolvedProductId": "phone_cases",
+      "baseImage": "Coloring/Samples/senior_phone_cases_base.png",
+      "maskImage": "Coloring/Samples/senior_phone_cases_mask.png"
+    },
+    {
+      "groupId": "senior",
+      "productId": "umbrellas",
+      "resolvedProductId": "umbrellas",
+      "baseImage": "Coloring/Samples/senior_umbrellas_base.png",
+      "maskImage": "Coloring/Samples/senior_umbrellas_mask.png"
+    },
+    {
+      "groupId": "senior",
+      "productId": "equipment",
+      "resolvedProductId": "laptops",
+      "baseImage": "Coloring/Samples/senior_laptops_base.png",
+      "maskImage": "Coloring/Samples/senior_laptops_mask.png"
+    }
+  ]
+}

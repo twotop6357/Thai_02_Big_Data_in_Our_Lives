@@ -4,3 +4,4 @@ results/
 *.partial
 *.safetensors
 references/
+control_images/

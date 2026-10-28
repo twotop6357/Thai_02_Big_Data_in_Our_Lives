@@ -1,0 +1,23 @@
+{
+  "download": {
+    "width": 480,
+    "height": 480,
+    "format": "ARGB32",
+    "cornerAlpha": 0.0,
+    "centerAlpha": 0.996078432,
+    "guideVerified": true
+  },
+  "client": {
+    "missing_upload_then_verify": true,
+    "different_ref_rejected": true,
+    "rgb_rejected": true,
+    "cancelled": true,
+    "inflight_cancelled": true,
+    "offline_rejected": true
+  },
+  "environment": "Unity 2022.3.62f3 Editor",
+  "editmode_job": "32ffe3b849e546a2b2ffd6ac7a5a0143",
+  "editmode_passed": 33,
+  "final_editmode_job": "fc191e645ad1411cba05e0cd807f3948",
+  "final_editmode_passed": 33
+}

@@ -1,0 +1,6 @@
+﻿<Solution>
+  <Project Path="VFolders.csproj" />
+  <Project Path="DOTween.Modules.csproj" />
+  <Project Path="VHierarchy.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
+</Solution>

@@ -4,18 +4,22 @@
 
 ## 현재 상태
 
-- 마지막 갱신: 2026-10-19 (Asia/Seoul), Claude, COMFYLAUNCH-001.
-- 현재 작업: COMFYLAUNCH-001 완료(앱 시작 시 ComfyUI 검사·자동 실행, Idle ComfyUIStatusText, 이 기록을 포함해 로컬 커밋). 직전: RESULTSCENE-001 완료(코드·씬·빌드 설정 연결, EditMode 33/33, 실제 생성 Play 검증, 이 기록을 포함해 로컬 커밋). 이전: LOG-002 완료, 이 기록을 포함한 로컬 커밋으로 저장(해시는 git log -1) — 주요 분기 영문 Debug.Log 추가(동작 변경 없음). 직전: COMMIT-002 — 사용자 요청으로 BLOCK-001/RETENTION-001/RESULT-001 및 관련 사용자 UI·폰트·SO 변경을 이 기록을 포함한 로컬 커밋에 저장. 아래 미커밋 표기는 당시 작업 시점이며 실제 해시는 git log -1로 확인. 생성 전 안내/로드 후 이미지 활성화 및 기존 보관 한도 유지.
-- AI 구성: SDXL Base 1.0 / 내부 768 / 출력 480 / 16 steps / dpmpp_2m karras. 실제 측정 장비는 RTX 5070 Ti Laptop 12GB. RTX 3060 20초 충족 미검증.
-- 최신 작업: ResultImage/TextGroup 씬 참조 재연결, 초기/대기/실패/취소/비활성화 안내 상태 처리. 실제480 이미지 수신/할당 후 활성화, 첫 활성 Canvas 렌더에서 빈 이미지/안내 중복 표시0회 확인.
+- 마지막 갱신: 2026-10-28 (Asia/Seoul), Codex, COMMIT-003.
+- 현재 작업: 사용자 요청으로 COLOR-001/REMOVE-COMFY-001/QUALITY-001과 사용자 에셋·IDE 설정을 포함한 전체 현재 Git 변경을 COMMIT-003 로컬 커밋으로 저장. 해시는 이 기록을 포함한 git log -1에서 확인. 원격 push 없음. 외부 설치/모델/기존 생성물·서버 미수정.
+- 이미지 구성: BlockColoring.json에서 나잇대×물품 원본/마스크와6색 RGB 지정. 48쌍의 기하학 선화 샘플(전시용 최종 삽화 아님), 네 블록 완성 시 자동색칠/변경취소/재시도 및 Game→Result 연결. BlockSettings.json은 저널 한도용 유지. 과거 ComfyUI 검증은 보관 기록.
+- 최신 검증: Unity2022.3.62f3 컴파일error0, EditMode26/26 PASS, Play18개 확인 PASS(두 언어/자동색칠/연속변경/취소·재시도/누락파일 실패·복구/OffOn/Equipment/Result/Idle/자원해제/타이머). 누락파일 고의실패의 메시지+원본예외2건은 예상 진단. 실제 컬러 가방 UI와4연령 원본/합성 이미지 시각 확인. 증거 docs/validation/coloring_runtime.json·coloring_game.png·coloring_bags.png. Windows Player/실제키·RFID/장시간·Profiler는 미검증.
 - 현재 브랜치: `main`. FLOW-001/LOG-001/AI-001 및 사용자 씬·폰트·설정 변경은 COMMIT-001 기록을 포함한 커밋에 함께 저장. 실제 해시는 git log -1로 확인한다. 아래 미커밋 표기는 당시 작업 시점의 기록이다.
-- 다음 행동: Idle 또는 Game에서 Play, 숫자2/3/4/5로 선택 후 Generate image. 실제 RFID/배포용 트리거·태국어 UI 번역·대상 PC/장시간 검수는 후속. 상세는 docs/BLOCK_SIMULATOR.md. 에디터는 Play 종료, Game 씬을 열어 둠.
+- 다음 행동: 전시용 나잇대별 흰 선화+영역마스크로 샘플 교체 및 Windows 배포/실장비 검수. 숫자2/3/4/5 선택 완료 시 자동색칠. 상세 docs/COLORING.md 및 BLOCK_SIMULATOR.md. Play 종료·Idle 씬.
 - 미해결 치명적 장애: 이번 세션에서 발견한 항목 없음. 런타임 검증으로 장애 부재를 확인한 뜻은 아니다. [TroubleShooting](../TroubleShooting.md) 참조.
 
 ## 진행 중 작업 / 파일 소유권
 
 | 작업 ID | 담당 | 상태 | 수정 범위 | 다음 담당 / 행동 |
 |---|---|---|---|---|
+| COMMIT-003 | Codex | 완료 | 전체 현재 Git 변경(색칠/ComfyUI 제거·보관/사용자 AssetKits·IDE설정 포함), HANDOFF | main/092fb12 기준. 전체508경로 커밋. 소유권 해제. 해시는 git log -1, push 없음 |
+| COLOR-001 | Codex | 완료 | BlockExperienceController, 신규 Data/BlockColoringCatalog·BlockColorizer·LocalBlockColoring, Tests/Blocks 색칠 테스트, StreamingAssets/BlockGeneration/Coloring 원본·마스크·설정, Tools/Coloring 샘플 제작·실행검증, BLOCK_SIMULATOR·COLORING·CHANGELOG·검증/HANDOFF | main/092fb12 + REMOVE-COMFY-001 미커밋 기준. 담당/검증 Codex 단독. 26/26·Play18개 PASS. 소유권 해제, 미커밋. 전시용 삽화 교체/배포·장비 검수 후속 |
+| REMOVE-COMFY-001 | Codex | 완료 | GameLifetimeScope, BlockExperienceController/블록 설정 로더, Comfy 서비스/상태UI/보관정책 및 전용테스트·StreamingAssets의 Tools 아카이브, Idle 씬, 문서/검증/HANDOFF/CHANGELOG | main/092fb12 + QUALITY-001 미커밋 기준. 소유권 해제, 미커밋. 대체 백엔드 후속; 외부 설치/모델/생성물 미수정 |
+| QUALITY-001 | Codex | 완료 | 런타임/Tools ComfyUI 워크플로·카탈로그·모델/alpha 설정, 필요 시 Unity 수신 검사·테스트, 검증/운영 문서/HANDOFF/CHANGELOG | main/092fb12 기준 미커밋, 소유권 해제. AssetKits 및 Claude 후속 기능 보존. 3060/Player/장시간·잔여 품질 검수 후속 |
 | COMFYLAUNCH-001 | Claude | 완료 | 신규 Blocks/ComfyServerLauncher·ComfyStatusPresenter(+메타), ComfyImageClient 설정 필드, GameLifetimeScope, StreamingAssets ComfyUISettings.json, 0_Idle ComfyUIStatusText 연결(사용자 미커밋 Idle 변경 보존), COMFYUI_SETUP/CHANGELOG/HANDOFF | 소유권 해제; main/ceef831 기준 로컬 커밋(git log -1); Windows Player 빌드에서 실제 자동 실행 확인 필요 |
 | RESULTSCENE-001 | Claude | 완료 | ExhibitionButtonGesture(+테스트), GameManager, BlockExperienceController, 신규 Assets/Scripts/Result, 1_Game PressButtonText 참조/초기 상태, 2_Result 표시 컴포넌트, EditorBuildSettings, BUTTON_INPUT/BLOCK_SIMULATOR/CHANGELOG/HANDOFF | 소유권 해제; main/9d45652 기준 로컬 커밋(git log -1); 2_Result는 사용자 미추적 씬에 컴포넌트만 추가; AssetKits 미수정 |
 | LOG-002 | Claude | 완료 | GameManager, KeyboardButtonSimulator, GameLifetimeScope, BlockExperienceController, ComfyImageClient, GeneratedImageRetention의 Debug.Log 추가만, HANDOFF | 소유권 해제; 로컬 커밋 완료(push 없음); Unity 에디터 컴파일·Play 로그 확인 필요 |
@@ -68,6 +72,50 @@ FLOW-001 시작 시 사용자 변경: `_TempFont.asset`, `0_Idle.unity` UI, `Set
 ```
 
 ## 최신 작업 기록
+
+### [2026-10-28 / Asia/Seoul] COMMIT-003 · Codex → 다음 작업자 · 완료
+
+- 요청: 모든 변경사항 커밋. 기준 main/092fb12, origin 현재 프로젝트 확인. 담당/검증 Codex 단독. 이 기록을 포함한 로컬 커밋이며 해시는 git log -1로 확인, 원격 push 없음.
+- 범위: COLOR-001 로컬색칠/48쌍원본·마스크/테스트/도구·문서·검증, REMOVE-COMFY-001 제거/legacy_runtime 이동 및 QUALITY-001 Tools·검증 보관 변경, 기존 사용자 AssetKits(ParticleImage)·메타, Idle변경, .vscode3파일·slnx를 포함한508경로. 사용자의 명시적 '모든 변경사항' 요청에 따라 이전에 제외했던 IDE설정/자동생성slnx도 이번에 포함. ignored Library/Temp/모델·도구결과/빌드 등은 강제추가하지 않음.
+- 검증: stage507개 추가/수정·이동 대상의 에셋/메타 누락0, 341개 텍스트의 자격증명 패턴 검사 일치0, 신규50MiB초과파일0, staged LFS166개가 로컬객체의 크기·SHA256과 일치. 충돌파일/별도미등록변경 없음. staged diff/JSON 및 기존 runtime PASS증거 확인.
+- 형식: git diff --cached --check에서 기존 Unity생성 YAML/메타·서드파티 에셋의 공백 경고가 있음. 사용자/서드파티 원문 보존을 위해 일괄수정하지 않음.
+- 실행 검증: 직전 COLOR-001에서 수행한 Unity컴파일error0/EditMode26/26/Play18항목 PASS를 그대로 보존. 이번 커밋 준비에서 Unity·테스트를 다시 실행하지 않음. WindowsPlayer/실장비/장시간·Profiler/최종아트 검수 미완료 유지.
+- 종료: 소유권 해제. 새 치명적장애 발견 없음. 다음 작업은 최종원본·마스크 교체 및 배포검수.
+
+### [2026-10-28 / Asia/Seoul] COLOR-001 · Codex → 다음 작업자 · 완료
+
+- 요청: ComfyUI 대신 나잇대에 맞는 서로 다른 물품 외형의 흰 원본+검정 외곽선에 설정한 색상으로 색칠. 작업 중 기술 설명 요청에는 마스크 기반 픽셀 곱셈 합성으로 답변.
+- 기준: main/092fb12 + REMOVE-COMFY-001·QUALITY-001 미커밋 및 사용자 AssetKits/.vscode/slnx 보존. 시작 전/종료 전 HANDOFF와 git 상태 재확인, 다른 진행 소유권 없음. 기존 삭제·아카이브 변경을 되돌리지 않음. 커밋/push 없음. 담당/검증 Codex 단독, 교차 검증 없음.
+- 실제 설정: Unity2022.3.62f3, 빌드0_Idle/1_Game/2_Result, Company MyCompany / Product Unity-Startup-Template / Standalone com.Unity-Technologies.com.unity.template.urp-blank 유지. 패키지·ProjectSettings·씬 편집 없음. Shutdown 모든 요일 비활성 유지, 명령 실행 없음.
+- 코드: BlockColoringCatalog로 모든 연령×물품·RGB·중복/누락/상대경로 검증. BlockColorizer가 마스크 R/G 가중치로 원본RGB에 선택색 곱셈(검정선/회색명암/알파 보존, 원본배열 불변, 경계합256 반올림 허용/그 이상 중첩 거부). LocalBlockColoring은 로컬PNG 비동기로드/크기상한2048·16MiB/서로같은크기 확인, 배열계산만 worker, 취소 시에도 main으로 돌아와 Unity 텍스처 해제. 최종 텍스처 CPU사본은 업로드 후 해제.
+- 흐름: 네 블록 완성/변경 시 자동색칠, 반복인식 무시. 선택·화면·세션 취소 연결, revision/작업토큰으로 늦은결과 거부. GenerateImage/CancelGeneration 호환 진입점·Editor 재시도/취소 버튼. 화면 완성Texture는 기존 GameManager에 전달, Result에 유지/Idle·선택변경에서 해제. 타이머 Pause하지 않음. 원본예외 스택/inner exception 기록. 저널 coloring_completed에 선택/확정물품/두RGB/파일경로/크기, 이미지 디스크 자동저장 없음.
+- 에셋/문서: BlockColoring.json·Coloring/Samples 48쌍480RGBA+메타. Python/Pillow 자체도형 제작 도구 Tools/Coloring/build_samples.py 및 실행검증 verify_runtime.cs. Equipment는 연령별 고정매핑(Child robot/Student laptop/Adult keyboard/Senior laptop), 색 변경 시 유지. 샘플은 전시최종아트가 아니며 별도 Artwork 원본/마스크로 교체 가능. COLORING/BLOCK_SIMULATOR/CHANGELOG 갱신.
+- 검증(Codex): EditMode26/26 PASS(job0233b7d2f228425c98c97a043904209a), source/마스크의 두영역·선·알파·명암·흰/검정/같은색·경계·취소·오류설정 및48쌍 검증. 처음25/26에서 보간 경계R+G256을 발견해1byte 정규화 수정 후 전부통과. 최종컴파일error0. Play18항목 PASS를 최종 오류문맥 개선 후 재실행 확인: Thai/English 진입, 자동색칠, 반복인식,3회 연속변경 최신결과, 취소/재시도, 누락파일 실패/원본복구 재시도, 비활성중 취소·선택초기화/재활성, Equipment, 동일Texture Result→Idle 파괴, 타이머 unpaused, 생성중 세션복귀/늦은결과 없음.
+- 진단 구분: 실행검증 초기 버튼API에 키보드 어댑터가 간섭해 Game진입 timeout, 검증기에서 어댑터를 잠시 끄고 release프레임을 기다려 해소. 제품오류 아님. 고의누락파일 실패는 영문 메시지+원본예외2개가 정상 진단이며 복구 PASS. Play종료의 기존 apiUrl 미설정 메시지는 공통 서비스 기존 동작. 최종 실제 Game의 가방 빨강본체/파랑포켓·끈·검정선·PressButtonText 시각확인.
+- 증거: docs/validation/coloring_runtime.json, coloring_bags.png(상단원본/하단빨강·파랑, 좌→우4연령), coloring_game.png. 파일/메타짝·JSON·변경diff/문서링크 확인. 최종 Play 종료·Idle씬. 새 치명적장애 발견 없음, TroubleShooting 추가 없음.
+- 미검증/위험: WindowsPlayer 빌드/설치PC, 실제물리키/RFID, 전체48종 최종미술승인/모든1728색상조합 시각검수, 장시간메모리/Profiler·최대2048px 성능, 손상PNG·디스크권한 등의 실행오류 주입은 미수행. 누락파일실패/단위데이터오류를 손상PNG 배포검증으로 간주하지 않음. 최종 삽화와마스크 제작/배포검수 후속. 모든파일 소유권 해제, 미커밋.
+
+### [2026-10-22 / Asia/Seoul] REMOVE-COMFY-001 · Codex → 다음 작업자 · 완료
+
+- 요청: ComfyUI를 이용하던 기능을 교체할 예정이므로 프로젝트에서 사용하지 않도록 수정. 신규 서비스는 미지정.
+- 기준/보존: main/092fb12 + QUALITY-001 미커밋(이전 Codex 작업으로 확인). 원격 origin 현재 프로젝트 일치. 사용자 AssetKits/.vscode/slnx와 다른 씬 레이아웃 보존. 커밋/push 없음. Unity2022.3.62f3, 빌드0_Idle/1_Game/2_Result, Company/Product/Identifier 기존 일반값 유지.
+- 변경: GameLifetimeScope build callback의 Launcher/Retention 등록 제거(base.Configure·GameManager DI 유지). BlockExperienceController에서 Comfy 설정/클라이언트/그래프/네트워크·생성대기·Pause/Resume/이미지삭제 연결 제거. BlockSettings(Data+JSON+meta, 저널30개/4MiB)와 취소 가능한 로컬 파일 비동기 로더로 선택 초기화 분리. Generate/Cancel 임시 버튼 제거, GenerateImage는 기존 UnityEvent 호환 미설정 안내만 수행. 인체/제품 프롬프트 카탈로그·CreatePrompt/선택기록은 보존하고 Comfy 가이드 경로 필드만 제거.
+- 결과 연결: TryDisplayResult(Texture2D,int revision)에서 실제 크기 Sprite 할당 후 표시. 미완성/늦은/비활성·씬전환 결과 false(호출자 소유), 성공 true(컨트롤러/매니저 소유). 향후 생성기는 화면/세션 취소 책임을 별도 구현해야 함. 기존 Result 전달·수동/타임아웃 Idle 및 자원 해제 코드 유지.
+- 아카이브: ComfyImageClient/Launcher/StatusPresenter/GeneratedImageRetention/Policy와 메타, 전용 보관테스트15건, ComfyUISettings/API/ControlGuides14개+메타를 Tools/ComfyUI/legacy_runtime/Assets로 이동. 이전 미커밋 QUALITY-001 내용 보존 확인. Unity 컴파일/Player 배포 대상 밖. Idle Presenter를 Unity로 제거하고 상태텍스트는 비활성 ImageGenerationStatusText/빈 문구로 보존. Tools README/COMFYUI_SETUP에 보관 경고, BLOCK_SIMULATOR/CHANGELOG 갱신. 외부 설치본·모델·기존 파일·실행 중 서버를 호출/삭제/종료하지 않음. 이전 파일도 앱이 더 이상 자동 정리하지 않음.
+- 검증(Codex): Unity 컴파일error0, EditMode19/19 PASS(job4375718327e848b3b2b74a7dddede1e1). 활성 Scripts/Tests/StreamingAssets/Scenes/Prefabs에서 Comfy/retention/8188URL/workflow/controlImage 참조0, 컴파일된 전용타입 부재, 루트/Idle에서 서버컴포넌트/문구 없음. Play 두 세션에서 Thai/English 버튼 API 입력, 숫자키와 같은 ToggleSlot 팝업/재입력 제거·네 OptionText, 미설정 GenerateImage(이미지/진행상태 없음), 합성32×16/16×16 Texture로 현재 결과 수용·늦은/비활성 결과 거부, Game→Result 같은Texture→Idle 파괴, 선택변경3회 자원해제 및 Off/On 선택초기화 확인. Play중 Consoleerror0, 미설정 진입의 의도된 영문 경고1회. Play종료 후 기존 공통 ApiManagerBase의 apiUrl 미설정/exit로그 생략 메시지1(서버 요청 없음, 이번 변경 범위 밖). 실제 새 선택 JSONL에서 started/ended/recognized/removed 및 generation_* 없음 확인.
+- 증거: docs/validation/comfy_removal.json. 합성 텍스처 시험이며 AI 생성 성공을 뜻하지 않음. Play 종료·Idle 씬. 파일/메타 짝·diff 확인. 미검증: WindowsPlayer, 실제물리키/버튼/RFID, 새 생성기/네트워크·보관 정책, 장시간/Profiler. 기존 결과UI를 쓰는 새 생성 서비스 구현은 후속.
+- 종료: 파일 소유권 해제, 미커밋. 현재 동작은 블록 선택/데이터 기록까지만이며 새 이미지를 자동 생성하지 않음. 치명적 장애 발견 없음, TroubleShooting 추가 없음.
+
+### [2026-10-19 / Asia/Seoul] QUALITY-001 · Codex → 다음 작업자 · 완료
+
+- 요청: 세부 묘사/단일 물품·인체 배제 개선, 배경 실제 알파 투명 처리, 시간보다 품질 우선.
+- 기준/보존: main/092fb12. 작업 전 tracked 변경 없음. 사용자 AssetKits·.vscode·slnx 보존, 씬/ProjectSettings/패키지·Claude 자동실행/Result/보관 기능 미수정. 커밋/push 없음.
+- 변경: Animagine XL4.0 Opt 체크포인트(약6.94GB)·BiRefNet(기설치)·SDXL Canny Control-LoRA rank256(약.77GB)의 고정 revision/SHA 검증. 내부1024/28steps/CFG5/Euler ancestral normal→BiRefNet 전경→InvertMask→JoinImageWithAlpha→480 RGBA. Control1.4로 단일 제품 구조14개 제약. 그룹을 인물 이름 대신 디자인 특성으로 표현, 제품별 재질/구조·부정 프롬프트. Shoes는 신발1개. Tools와 런타임 카탈로그 공유, API/UI 재생성. 모델 weights는 저장소 밖 Comfy Shared/models에만 설치. 기존 모델/워크플로 보존, 커스텀노드/서버 재시작 없음.
+- Unity: BlockPrompt.controlImage/negativePrompt, BlockExperienceController가 선택 가이드 노드24에 주입하고 생성 전 로컬 StreamingAssets 가이드를 SHA 확인/404 시 업로드(타임아웃/취소/서로 다른 기존 내용 거부, POST 자동재시도 없음). Download는480 RGBA 헤더 검사. 기존 노드7 SaveImage 계약·결과 소유권·세션 취소·Pause/Resume·JSONL/보관 제한 유지. 생성완료 기록에 RGBA 포맷 추가. 새 가이드/메타14개, 설치/재생성 도구·모델 manifest·운영 문서/CHANGELOG/검증 자료 추가.
+- 검증(Codex): Python5개(1728입력 조합 포함) PASS. Unity2022.3.62f3 컴파일error0, 최종 EditMode33/33(job fc191e645ad1411cba05e0cd807f3948). RTX5070 Ti Laptop12GB / Comfy0.37.0 torch2.12.1+cu130, 최종 구조 제어14샘플31.392~44.854초(중앙38.059). 모두480RGBA·alpha0~255·네 모서리0. 각 샘플에서 단일 제품 구도/사람 신체 없음 관찰. 텀블러 캔 무늬는 프롬프트 수정 후 Unity 실생성43.169초 재검사. 실제 GPU readback 모서리0/중앙약.996, 격리fixture 업로드/기존확인/내용불일치·RGB거부/오프라인/사전·진행중 취소 통과. Game 표시→버튼API짧은입력→Result 동일texture→수동Idle 복귀 시texture파괴·언어해제 확인. Consoleerror0. Comfy 사용자 워크플로 Thai_02_product_480_quality_alpha.json 새 이름 저장·readback 일치.
+- 증거: Tools/ComfyUI/validation/quality의 gallery/원본RGBA/report.json/unity_client.json/unity_flow.json/runtime_prompt.json. 약한 Control.85·텍스트만 적용한 실패도 report 요약에 보존. 개별 원본 중간 실패는 ignored results에 보존. API quality_probe 결과는 유한한 개발 샘플로 운영 보관 prefix 대상 아님.
+- 미검증/위험: RTX3060 20초·WindowsPlayer·실제키/버튼/RFID·장시간/메모리Profiler·전색/전시드 품질. 일부 추가색/문양·자전거 페달/키보드키/로봇관절·휴대폰/노트북 그림자 유사 색면·얇은 선/렌즈 알파 편차. 완전한 인체/복수 생성 금지는 보장하지 않음. 고품질 대신 속도 절충을 되돌리지 않음. Control-LoRA는 별도 Community License(100만MAU 초과 추가 상업조건)이며 manifest/설치문서 링크 참조.
+- 종료: Play 종료·Idle 씬, 검증 fixture18188 종료, 실제8188 유지. 임시 런타임 타이머/시뮬레이터 상태는 Play 종료로 폐기. 파일 소유권 해제. 다음은 대상PC/배포 검수와 미술 승인. 새 치명적 장애 없음(TroubleShooting 추가 없음).
 
 ### [2026-10-19 / Asia/Seoul] COMFYLAUNCH-001 · Claude → 다음 작업자 · 완료
 

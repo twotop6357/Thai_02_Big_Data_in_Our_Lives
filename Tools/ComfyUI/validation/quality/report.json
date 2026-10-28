@@ -1,0 +1,5143 @@
+{
+  "environment": {
+    "gpu": "RTX 5070 Ti Laptop 12GB",
+    "comfyui": "0.37.0",
+    "torch": "2.12.1+cu130"
+  },
+  "configuration": {
+    "checkpoint": "animagine-xl-4.0-opt.safetensors",
+    "native": 1024,
+    "final": 480,
+    "steps": 28,
+    "cfg": 5,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "control_strength": 1.4,
+    "background": "BiRefNet RGBA"
+  },
+  "target_rtx3060_verified": false,
+  "windows_player_verified": false,
+  "all_seed_quality_guaranteed": false,
+  "samples": [
+    {
+      "product": "wristwatches",
+      "seconds": 31.884,
+      "seed": 85001,
+      "mode": "RGBA",
+      "size": [
+        480,
+        480
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.8378559027777778,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "prompt_id": "04c9de46-2bcd-48b3-9ef8-9bd54f8bb28c",
+      "image": "wristwatches.png",
+      "server_image": {
+        "filename": "quality_probe_00026_.png",
+        "subfolder": "Thai02",
+        "type": "output"
+      },
+      "api": {
+        "1": {
+          "class_type": "CheckpointLoaderSimple",
+          "inputs": {
+            "ckpt_name": "animagine-xl-4.0-opt.safetensors"
+          },
+          "_meta": {
+            "title": "SDXL Base 1.0 / no refiner"
+          }
+        },
+        "2": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": [
+              "18",
+              0
+            ],
+            "clip": [
+              "1",
+              1
+            ]
+          },
+          "_meta": {
+            "title": "Positive product conditioning"
+          }
+        },
+        "3": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "worst quality, bad quality, low quality, lowres, blurry, unfinished, rough sketch, noisy, jpeg artifacts, text, logo, watermark, signature, human, person, 1girl, 1boy, woman, man, child, human face, human head, human hands, human arms, human legs, human feet, fingers, skin, portrait, wearing, holding, mannequin, model wearing product, multiple objects, duplicate, duplicates, collection, collage, grid, contact sheet, multiple views, comparison, exploded view, spare parts, extra accessories, cropped, cut off, out of frame, distorted geometry, malformed, flat vector art, thick black outlines, photograph, photorealistic, close-up, extreme close-up, macro, zoomed in, cropped object, partial object, object extending beyond the frame, second watch, extra watch face, multiple watch dials, wall clock, watch collection",
+            "clip": [
+              "1",
+              1
+            ]
+          },
+          "_meta": {
+            "title": "Negative / exclude people and text"
+          }
+        },
+        "4": {
+          "class_type": "EmptyLatentImage",
+          "inputs": {
+            "width": 1024,
+            "height": 1024,
+            "batch_size": 1
+          },
+          "_meta": {
+            "title": "768 x 768 internal / batch 1"
+          }
+        },
+        "5": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "positive": [
+              "26",
+              0
+            ],
+            "negative": [
+              "26",
+              1
+            ],
+            "latent_image": [
+              "4",
+              0
+            ],
+            "seed": 85001,
+            "steps": 28,
+            "cfg": 5.0,
+            "sampler_name": "euler_ancestral",
+            "scheduler": "normal",
+            "denoise": 1.0
+          },
+          "_meta": {
+            "title": "balanced / 16 steps"
+          }
+        },
+        "6": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "5",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ]
+          },
+          "_meta": {
+            "title": "Decode final image"
+          }
+        },
+        "7": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "8",
+              0
+            ],
+            "filename_prefix": "Thai02/quality_probe"
+          },
+          "_meta": {
+            "title": "Final 480 x 480 PNG"
+          }
+        },
+        "8": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "23",
+              0
+            ],
+            "upscale_method": "area",
+            "width": 480,
+            "height": 480,
+            "crop": "disabled"
+          },
+          "_meta": {
+            "title": "Downsample to 480 x 480"
+          }
+        },
+        "10": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "playful rounded proportions and friendly simple shapes"
+          },
+          "_meta": {
+            "title": "INPUT 1 / audience: student"
+          }
+        },
+        "11": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "(wristwatch:1.3), a single compact wristwatch, one watch face only, plain round watch case attached to one smooth leather strap, clasp closed in one loop, small crown knob, flat hour markers, two clock hands, carefully machined bezel"
+          },
+          "_meta": {
+            "title": "INPUT 2 / product: bag"
+          }
+        },
+        "12": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "(blue strap:1.15)"
+          },
+          "_meta": {
+            "title": "INPUT 3 / primary: blue"
+          }
+        },
+        "13": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "(white case and dial:1.15)"
+          },
+          "_meta": {
+            "title": "INPUT 4 / accent: white"
+          }
+        },
+        "14": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "11",
+              0
+            ],
+            "string_b": [
+              "15",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product + colors"
+          }
+        },
+        "15": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "12",
+              0
+            ],
+            "string_b": [
+              "13",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product-specific color parts"
+          }
+        },
+        "16": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "14",
+              0
+            ],
+            "string_b": [
+              "10",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Combine four choices"
+          }
+        },
+        "17": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": "no humans, still life, object focus, (full shot:1.3), (entire object:1.3), (wide shot:1.15), isolated object",
+            "string_b": [
+              "16",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed mobile RPG item style"
+          }
+        },
+        "18": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "17",
+              0
+            ],
+            "string_b": "detailed Japanese game item illustration, precise clean linework, soft painted shading, carefully rendered material texture, crisp edges, complete object fully in frame, centered composition, generous empty margin, plain white background, masterpiece, high score, great score, absurdres, rating:general",
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed product composition"
+          }
+        },
+        "20": {
+          "class_type": "LoadBackgroundRemovalModel",
+          "inputs": {
+            "bg_removal_name": "birefnet.safetensors"
+          }
+        },
+        "21": {
+          "class_type": "RemoveBackground",
+          "inputs": {
+            "bg_removal_model": [
+              "20",
+              0
+            ],
+            "image": [
+              "6",
+              0
+            ]
+          }
+        },
+        "22": {
+          "class_type": "InvertMask",
+          "inputs": {
+            "mask": [
+              "21",
+              0
+            ]
+          }
+        },
+        "23": {
+          "class_type": "JoinImageWithAlpha",
+          "inputs": {
+            "image": [
+              "6",
+              0
+            ],
+            "alpha": [
+              "22",
+              0
+            ]
+          }
+        },
+        "24": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "Thai02Quality/guide_wristwatches.png"
+          }
+        },
+        "25": {
+          "class_type": "ControlNetLoader",
+          "inputs": {
+            "control_net_name": "control-lora-canny-rank256.safetensors"
+          }
+        },
+        "26": {
+          "class_type": "ControlNetApplyAdvanced",
+          "inputs": {
+            "positive": [
+              "2",
+              0
+            ],
+            "negative": [
+              "3",
+              0
+            ],
+            "control_net": [
+              "25",
+              0
+            ],
+            "image": [
+              "24",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ],
+            "strength": 1.4,
+            "start_percent": 0.0,
+            "end_percent": 1.0
+          }
+        }
+      },
+      "visual_observation": "Single complete wristwatch; strap loops open and dial is simple."
+    },
+    {
+      "product": "shoes",
+      "seconds": 41.727,
+      "seed": 85002,
+      "mode": "RGBA",
+      "size": [
+        480,
+        480
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.8919618055555556,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "prompt_id": "2e5e0763-d14b-42f1-92d7-88007af2c7df",
+      "image": "shoes.png",
+      "server_image": {
+        "filename": "quality_probe_00027_.png",
+        "subfolder": "Thai02",
+        "type": "output"
+      },
+      "api": {
+        "1": {
+          "class_type": "CheckpointLoaderSimple",
+          "inputs": {
+            "ckpt_name": "animagine-xl-4.0-opt.safetensors"
+          },
+          "_meta": {
+            "title": "SDXL Base 1.0 / no refiner"
+          }
+        },
+        "2": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": [
+              "18",
+              0
+            ],
+            "clip": [
+              "1",
+              1
+            ]
+          },
+          "_meta": {
+            "title": "Positive product conditioning"
+          }
+        },
+        "3": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "worst quality, bad quality, low quality, lowres, blurry, unfinished, rough sketch, noisy, jpeg artifacts, text, logo, watermark, signature, human, person, 1girl, 1boy, woman, man, child, human face, human head, human hands, human arms, human legs, human feet, fingers, skin, portrait, wearing, holding, mannequin, model wearing product, multiple objects, duplicate, duplicates, collection, collage, grid, contact sheet, multiple views, comparison, exploded view, spare parts, extra accessories, cropped, cut off, out of frame, distorted geometry, malformed, flat vector art, thick black outlines, photograph, photorealistic, close-up, extreme close-up, macro, zoomed in, cropped object, partial object, object extending beyond the frame",
+            "clip": [
+              "1",
+              1
+            ]
+          },
+          "_meta": {
+            "title": "Negative / exclude people and text"
+          }
+        },
+        "4": {
+          "class_type": "EmptyLatentImage",
+          "inputs": {
+            "width": 1024,
+            "height": 1024,
+            "batch_size": 1
+          },
+          "_meta": {
+            "title": "768 x 768 internal / batch 1"
+          }
+        },
+        "5": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "positive": [
+              "26",
+              0
+            ],
+            "negative": [
+              "26",
+              1
+            ],
+            "latent_image": [
+              "4",
+              0
+            ],
+            "seed": 85002,
+            "steps": 28,
+            "cfg": 5.0,
+            "sampler_name": "euler_ancestral",
+            "scheduler": "normal",
+            "denoise": 1.0
+          },
+          "_meta": {
+            "title": "balanced / 16 steps"
+          }
+        },
+        "6": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "5",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ]
+          },
+          "_meta": {
+            "title": "Decode final image"
+          }
+        },
+        "7": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "8",
+              0
+            ],
+            "filename_prefix": "Thai02/quality_probe"
+          },
+          "_meta": {
+            "title": "Final 480 x 480 PNG"
+          }
+        },
+        "8": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "23",
+              0
+            ],
+            "upscale_method": "area",
+            "width": 480,
+            "height": 480,
+            "crop": "disabled"
+          },
+          "_meta": {
+            "title": "Downsample to 480 x 480"
+          }
+        },
+        "10": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "practical casual design with sporty details"
+          },
+          "_meta": {
+            "title": "INPUT 1 / audience: student"
+          }
+        },
+        "11": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "a single sneaker, one shoe only, unworn shoe, detailed layered panels, woven textile upper, carefully tied shoelaces, stitched seams, molded rubber sole with tread"
+          },
+          "_meta": {
+            "title": "INPUT 2 / product: bag"
+          }
+        },
+        "12": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "(red uppers:1.15)"
+          },
+          "_meta": {
+            "title": "INPUT 3 / primary: blue"
+          }
+        },
+        "13": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "(black soles and laces:1.15)"
+          },
+          "_meta": {
+            "title": "INPUT 4 / accent: white"
+          }
+        },
+        "14": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "11",
+              0
+            ],
+            "string_b": [
+              "15",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product + colors"
+          }
+        },
+        "15": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "12",
+              0
+            ],
+            "string_b": [
+              "13",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product-specific color parts"
+          }
+        },
+        "16": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "14",
+              0
+            ],
+            "string_b": [
+              "10",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Combine four choices"
+          }
+        },
+        "17": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": "no humans, still life, object focus, (full shot:1.3), (entire object:1.3), (wide shot:1.15), isolated object",
+            "string_b": [
+              "16",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed mobile RPG item style"
+          }
+        },
+        "18": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "17",
+              0
+            ],
+            "string_b": "detailed Japanese game item illustration, precise clean linework, soft painted shading, carefully rendered material texture, crisp edges, complete object fully in frame, centered composition, generous empty margin, plain white background, masterpiece, high score, great score, absurdres, rating:general",
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed product composition"
+          }
+        },
+        "20": {
+          "class_type": "LoadBackgroundRemovalModel",
+          "inputs": {
+            "bg_removal_name": "birefnet.safetensors"
+          }
+        },
+        "21": {
+          "class_type": "RemoveBackground",
+          "inputs": {
+            "bg_removal_model": [
+              "20",
+              0
+            ],
+            "image": [
+              "6",
+              0
+            ]
+          }
+        },
+        "22": {
+          "class_type": "InvertMask",
+          "inputs": {
+            "mask": [
+              "21",
+              0
+            ]
+          }
+        },
+        "23": {
+          "class_type": "JoinImageWithAlpha",
+          "inputs": {
+            "image": [
+              "6",
+              0
+            ],
+            "alpha": [
+              "22",
+              0
+            ]
+          }
+        },
+        "24": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "Thai02Quality/guide_shoes.png"
+          }
+        },
+        "25": {
+          "class_type": "ControlNetLoader",
+          "inputs": {
+            "control_net_name": "control-lora-canny-rank256.safetensors"
+          }
+        },
+        "26": {
+          "class_type": "ControlNetApplyAdvanced",
+          "inputs": {
+            "positive": [
+              "2",
+              0
+            ],
+            "negative": [
+              "3",
+              0
+            ],
+            "control_net": [
+              "25",
+              0
+            ],
+            "image": [
+              "24",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ],
+            "strength": 1.4,
+            "start_percent": 0.0,
+            "end_percent": 1.0
+          }
+        }
+      },
+      "visual_observation": "One complete unworn shoe; no human foot."
+    },
+    {
+      "product": "headphones",
+      "seconds": 38.438,
+      "seed": 85003,
+      "mode": "RGBA",
+      "size": [
+        480,
+        480
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.8664236111111111,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "prompt_id": "e249dee7-6159-482f-9611-2635a2477fae",
+      "image": "headphones.png",
+      "server_image": {
+        "filename": "quality_probe_00028_.png",
+        "subfolder": "Thai02",
+        "type": "output"
+      },
+      "api": {
+        "1": {
+          "class_type": "CheckpointLoaderSimple",
+          "inputs": {
+            "ckpt_name": "animagine-xl-4.0-opt.safetensors"
+          },
+          "_meta": {
+            "title": "SDXL Base 1.0 / no refiner"
+          }
+        },
+        "2": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": [
+              "18",
+              0
+            ],
+            "clip": [
+              "1",
+              1
+            ]
+          },
+          "_meta": {
+            "title": "Positive product conditioning"
+          }
+        },
+        "3": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "worst quality, bad quality, low quality, lowres, blurry, unfinished, rough sketch, noisy, jpeg artifacts, text, logo, watermark, signature, human, person, 1girl, 1boy, woman, man, child, human face, human head, human hands, human arms, human legs, human feet, fingers, skin, portrait, wearing, holding, mannequin, model wearing product, multiple objects, duplicate, duplicates, collection, collage, grid, contact sheet, multiple views, comparison, exploded view, spare parts, extra accessories, cropped, cut off, out of frame, distorted geometry, malformed, flat vector art, thick black outlines, photograph, photorealistic, close-up, extreme close-up, macro, zoomed in, cropped object, partial object, object extending beyond the frame, wheel, tire, circular shield, circular disc, single earcup, earbuds, earplugs, earphones",
+            "clip": [
+              "1",
+              1
+            ]
+          },
+          "_meta": {
+            "title": "Negative / exclude people and text"
+          }
+        },
+        "4": {
+          "class_type": "EmptyLatentImage",
+          "inputs": {
+            "width": 1024,
+            "height": 1024,
+            "batch_size": 1
+          },
+          "_meta": {
+            "title": "768 x 768 internal / batch 1"
+          }
+        },
+        "5": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "positive": [
+              "26",
+              0
+            ],
+            "negative": [
+              "26",
+              1
+            ],
+            "latent_image": [
+              "4",
+              0
+            ],
+            "seed": 85003,
+            "steps": 28,
+            "cfg": 5.0,
+            "sampler_name": "euler_ancestral",
+            "scheduler": "normal",
+            "denoise": 1.0
+          },
+          "_meta": {
+            "title": "balanced / 16 steps"
+          }
+        },
+        "6": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "5",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ]
+          },
+          "_meta": {
+            "title": "Decode final image"
+          }
+        },
+        "7": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "8",
+              0
+            ],
+            "filename_prefix": "Thai02/quality_probe"
+          },
+          "_meta": {
+            "title": "Final 480 x 480 PNG"
+          }
+        },
+        "8": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "23",
+              0
+            ],
+            "upscale_method": "area",
+            "width": 480,
+            "height": 480,
+            "crop": "disabled"
+          },
+          "_meta": {
+            "title": "Downsample to 480 x 480"
+          }
+        },
+        "10": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "refined minimal design and premium finish"
+          },
+          "_meta": {
+            "title": "INPUT 1 / audience: student"
+          }
+        },
+        "11": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "(headphones:1.4), over-ear headphones, one complete connected pair of headphones, tall U-shaped padded headband, two oval earcups hanging from either end of the headband, both left and right ear cushions visible, sliding metal adjustment arms"
+          },
+          "_meta": {
+            "title": "INPUT 2 / product: bag"
+          }
+        },
+        "12": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "(blue ear cups:1.15)"
+          },
+          "_meta": {
+            "title": "INPUT 3 / primary: blue"
+          }
+        },
+        "13": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "(white headband:1.15)"
+          },
+          "_meta": {
+            "title": "INPUT 4 / accent: white"
+          }
+        },
+        "14": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "11",
+              0
+            ],
+            "string_b": [
+              "15",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product + colors"
+          }
+        },
+        "15": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "12",
+              0
+            ],
+            "string_b": [
+              "13",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product-specific color parts"
+          }
+        },
+        "16": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "14",
+              0
+            ],
+            "string_b": [
+              "10",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Combine four choices"
+          }
+        },
+        "17": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": "no humans, still life, object focus, (full shot:1.3), (entire object:1.3), (wide shot:1.15), isolated object",
+            "string_b": [
+              "16",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed mobile RPG item style"
+          }
+        },
+        "18": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "17",
+              0
+            ],
+            "string_b": "detailed Japanese game item illustration, precise clean linework, soft painted shading, carefully rendered material texture, crisp edges, complete object fully in frame, centered composition, generous empty margin, plain white background, masterpiece, high score, great score, absurdres, rating:general",
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed product composition"
+          }
+        },
+        "20": {
+          "class_type": "LoadBackgroundRemovalModel",
+          "inputs": {
+            "bg_removal_name": "birefnet.safetensors"
+          }
+        },
+        "21": {
+          "class_type": "RemoveBackground",
+          "inputs": {
+            "bg_removal_model": [
+              "20",
+              0
+            ],
+            "image": [
+              "6",
+              0
+            ]
+          }
+        },
+        "22": {
+          "class_type": "InvertMask",
+          "inputs": {
+            "mask": [
+              "21",
+              0
+            ]
+          }
+        },
+        "23": {
+          "class_type": "JoinImageWithAlpha",
+          "inputs": {
+            "image": [
+              "6",
+              0
+            ],
+            "alpha": [
+              "22",
+              0
+            ]
+          }
+        },
+        "24": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "Thai02Quality/guide_headphones.png"
+          }
+        },
+        "25": {
+          "class_type": "ControlNetLoader",
+          "inputs": {
+            "control_net_name": "control-lora-canny-rank256.safetensors"
+          }
+        },
+        "26": {
+          "class_type": "ControlNetApplyAdvanced",
+          "inputs": {
+            "positive": [
+              "2",
+              0
+            ],
+            "negative": [
+              "3",
+              0
+            ],
+            "control_net": [
+              "25",
+              0
+            ],
+            "image": [
+              "24",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ],
+            "strength": 1.4,
+            "start_percent": 0.0,
+            "end_percent": 1.0
+          }
+        }
+      },
+      "visual_observation": "One connected headset; thin attached wires remain."
+    },
+    {
+      "product": "bags",
+      "seconds": 31.511,
+      "seed": 86001,
+      "mode": "RGBA",
+      "size": [
+        480,
+        480
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.7045486111111111,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "prompt_id": "d5f84813-83f5-48f0-ba90-6ddf890686e4",
+      "image": "bags.png",
+      "server_image": {
+        "filename": "quality_probe_00029_.png",
+        "subfolder": "Thai02",
+        "type": "output"
+      },
+      "api": {
+        "1": {
+          "class_type": "CheckpointLoaderSimple",
+          "inputs": {
+            "ckpt_name": "animagine-xl-4.0-opt.safetensors"
+          },
+          "_meta": {
+            "title": "Animagine XL 4.0 Opt"
+          }
+        },
+        "2": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": [
+              "18",
+              0
+            ],
+            "clip": [
+              "1",
+              1
+            ]
+          },
+          "_meta": {
+            "title": "Positive product conditioning"
+          }
+        },
+        "3": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "worst quality, bad quality, low quality, lowres, blurry, unfinished, rough sketch, noisy, jpeg artifacts, text, logo, watermark, signature, human, person, 1girl, 1boy, woman, man, child, human face, human head, human hands, human arms, human legs, human feet, fingers, skin, portrait, wearing, holding, mannequin, model wearing product, multiple objects, duplicate, duplicates, collection, collage, grid, contact sheet, multiple views, comparison, exploded view, spare parts, extra accessories, cropped, cut off, out of frame, distorted geometry, malformed, flat vector art, thick black outlines, photograph, photorealistic, close-up, extreme close-up, macro, zoomed in, cropped object, partial object, object extending beyond the frame",
+            "clip": [
+              "1",
+              1
+            ]
+          },
+          "_meta": {
+            "title": "Negative / exclude people and text"
+          }
+        },
+        "4": {
+          "class_type": "EmptyLatentImage",
+          "inputs": {
+            "width": 1024,
+            "height": 1024,
+            "batch_size": 1
+          },
+          "_meta": {
+            "title": "1024 x 1024 internal / batch 1"
+          }
+        },
+        "5": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "positive": [
+              "26",
+              0
+            ],
+            "negative": [
+              "26",
+              1
+            ],
+            "latent_image": [
+              "4",
+              0
+            ],
+            "seed": 86001,
+            "steps": 28,
+            "cfg": 5.0,
+            "sampler_name": "euler_ancestral",
+            "scheduler": "normal",
+            "denoise": 1.0
+          },
+          "_meta": {
+            "title": "quality / 28 steps"
+          }
+        },
+        "6": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "5",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ]
+          },
+          "_meta": {
+            "title": "Decode final image"
+          }
+        },
+        "7": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "8",
+              0
+            ],
+            "filename_prefix": "Thai02/quality_probe"
+          },
+          "_meta": {
+            "title": "Final 480 x 480 RGBA PNG"
+          }
+        },
+        "8": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "23",
+              0
+            ],
+            "upscale_method": "area",
+            "width": 480,
+            "height": 480,
+            "crop": "disabled"
+          },
+          "_meta": {
+            "title": "Downsample RGBA to 480 x 480"
+          }
+        },
+        "10": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "playful rounded proportions and friendly simple shapes"
+          },
+          "_meta": {
+            "title": "INPUT 1 / audience: student"
+          }
+        },
+        "11": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "a single backpack, one bag only, closed main compartment, structured front pocket, two attached padded shoulder straps, woven canvas texture, reinforced stitching, metal zipper teeth, small fastened buckles"
+          },
+          "_meta": {
+            "title": "INPUT 2 / product: bags"
+          }
+        },
+        "12": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "(blue fabric body:1.15)"
+          },
+          "_meta": {
+            "title": "INPUT 3 / primary: blue"
+          }
+        },
+        "13": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "(white straps and zipper trim:1.15)"
+          },
+          "_meta": {
+            "title": "INPUT 4 / accent: white"
+          }
+        },
+        "14": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "11",
+              0
+            ],
+            "string_b": [
+              "15",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product + colors"
+          }
+        },
+        "15": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "12",
+              0
+            ],
+            "string_b": [
+              "13",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product-specific color parts"
+          }
+        },
+        "16": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "14",
+              0
+            ],
+            "string_b": [
+              "10",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Combine four choices"
+          }
+        },
+        "17": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": "no humans, still life, object focus, (full shot:1.3), (entire object:1.3), (wide shot:1.15), isolated object",
+            "string_b": [
+              "16",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed mobile RPG item style"
+          }
+        },
+        "18": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "17",
+              0
+            ],
+            "string_b": "detailed Japanese game item illustration, precise clean linework, soft painted shading, carefully rendered material texture, crisp edges, complete object fully in frame, centered composition, generous empty margin, plain white background, masterpiece, high score, great score, absurdres, rating:general",
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed product composition"
+          }
+        },
+        "20": {
+          "class_type": "LoadBackgroundRemovalModel",
+          "inputs": {
+            "bg_removal_name": "birefnet.safetensors"
+          }
+        },
+        "21": {
+          "class_type": "RemoveBackground",
+          "inputs": {
+            "bg_removal_model": [
+              "20",
+              0
+            ],
+            "image": [
+              "6",
+              0
+            ]
+          }
+        },
+        "22": {
+          "class_type": "InvertMask",
+          "inputs": {
+            "mask": [
+              "21",
+              0
+            ]
+          }
+        },
+        "23": {
+          "class_type": "JoinImageWithAlpha",
+          "inputs": {
+            "image": [
+              "6",
+              0
+            ],
+            "alpha": [
+              "22",
+              0
+            ]
+          }
+        },
+        "24": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "Thai02Quality/guide_bags.png"
+          }
+        },
+        "25": {
+          "class_type": "ControlNetLoader",
+          "inputs": {
+            "control_net_name": "control-lora-canny-rank256.safetensors"
+          }
+        },
+        "26": {
+          "class_type": "ControlNetApplyAdvanced",
+          "inputs": {
+            "positive": [
+              "2",
+              0
+            ],
+            "negative": [
+              "3",
+              0
+            ],
+            "control_net": [
+              "25",
+              0
+            ],
+            "image": [
+              "24",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ],
+            "strength": 1.4,
+            "start_percent": 0.0,
+            "end_percent": 1.0
+          }
+        }
+      },
+      "visual_observation": "One complete bag with seams; extra warm accent colors remain."
+    },
+    {
+      "product": "sunglasses",
+      "seconds": 34.488,
+      "seed": 86002,
+      "mode": "RGBA",
+      "size": [
+        480,
+        480
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.8580555555555556,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "prompt_id": "09cf9bb3-2d15-4da9-b85a-2e75a0801715",
+      "image": "sunglasses.png",
+      "server_image": {
+        "filename": "quality_probe_00030_.png",
+        "subfolder": "Thai02",
+        "type": "output"
+      },
+      "api": {
+        "1": {
+          "class_type": "CheckpointLoaderSimple",
+          "inputs": {
+            "ckpt_name": "animagine-xl-4.0-opt.safetensors"
+          },
+          "_meta": {
+            "title": "Animagine XL 4.0 Opt"
+          }
+        },
+        "2": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": [
+              "18",
+              0
+            ],
+            "clip": [
+              "1",
+              1
+            ]
+          },
+          "_meta": {
+            "title": "Positive product conditioning"
+          }
+        },
+        "3": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "worst quality, bad quality, low quality, lowres, blurry, unfinished, rough sketch, noisy, jpeg artifacts, text, logo, watermark, signature, human, person, 1girl, 1boy, woman, man, child, human face, human head, human hands, human arms, human legs, human feet, fingers, skin, portrait, wearing, holding, mannequin, model wearing product, multiple objects, duplicate, duplicates, collection, collage, grid, contact sheet, multiple views, comparison, exploded view, spare parts, extra accessories, cropped, cut off, out of frame, distorted geometry, malformed, flat vector art, thick black outlines, photograph, photorealistic, close-up, extreme close-up, macro, zoomed in, cropped object, partial object, object extending beyond the frame",
+            "clip": [
+              "1",
+              1
+            ]
+          },
+          "_meta": {
+            "title": "Negative / exclude people and text"
+          }
+        },
+        "4": {
+          "class_type": "EmptyLatentImage",
+          "inputs": {
+            "width": 1024,
+            "height": 1024,
+            "batch_size": 1
+          },
+          "_meta": {
+            "title": "1024 x 1024 internal / batch 1"
+          }
+        },
+        "5": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "positive": [
+              "26",
+              0
+            ],
+            "negative": [
+              "26",
+              1
+            ],
+            "latent_image": [
+              "4",
+              0
+            ],
+            "seed": 86002,
+            "steps": 28,
+            "cfg": 5.0,
+            "sampler_name": "euler_ancestral",
+            "scheduler": "normal",
+            "denoise": 1.0
+          },
+          "_meta": {
+            "title": "quality / 28 steps"
+          }
+        },
+        "6": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "5",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ]
+          },
+          "_meta": {
+            "title": "Decode final image"
+          }
+        },
+        "7": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "8",
+              0
+            ],
+            "filename_prefix": "Thai02/quality_probe"
+          },
+          "_meta": {
+            "title": "Final 480 x 480 RGBA PNG"
+          }
+        },
+        "8": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "23",
+              0
+            ],
+            "upscale_method": "area",
+            "width": 480,
+            "height": 480,
+            "crop": "disabled"
+          },
+          "_meta": {
+            "title": "Downsample RGBA to 480 x 480"
+          }
+        },
+        "10": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "practical casual design with sporty details"
+          },
+          "_meta": {
+            "title": "INPUT 1 / audience: student"
+          }
+        },
+        "11": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "a single pair of sunglasses, one complete eyewear frame only, two lenses connected by one bridge, two attached temples, neatly machined hinges, smooth polished frame, subtle lens reflections"
+          },
+          "_meta": {
+            "title": "INPUT 2 / product: bags"
+          }
+        },
+        "12": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "(red frame:1.15)"
+          },
+          "_meta": {
+            "title": "INPUT 3 / primary: blue"
+          }
+        },
+        "13": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "(black tinted lenses:1.15)"
+          },
+          "_meta": {
+            "title": "INPUT 4 / accent: white"
+          }
+        },
+        "14": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "11",
+              0
+            ],
+            "string_b": [
+              "15",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product + colors"
+          }
+        },
+        "15": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "12",
+              0
+            ],
+            "string_b": [
+              "13",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product-specific color parts"
+          }
+        },
+        "16": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "14",
+              0
+            ],
+            "string_b": [
+              "10",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Combine four choices"
+          }
+        },
+        "17": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": "no humans, still life, object focus, (full shot:1.3), (entire object:1.3), (wide shot:1.15), isolated object",
+            "string_b": [
+              "16",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed mobile RPG item style"
+          }
+        },
+        "18": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "17",
+              0
+            ],
+            "string_b": "detailed Japanese game item illustration, precise clean linework, soft painted shading, carefully rendered material texture, crisp edges, complete object fully in frame, centered composition, generous empty margin, plain white background, masterpiece, high score, great score, absurdres, rating:general",
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed product composition"
+          }
+        },
+        "20": {
+          "class_type": "LoadBackgroundRemovalModel",
+          "inputs": {
+            "bg_removal_name": "birefnet.safetensors"
+          }
+        },
+        "21": {
+          "class_type": "RemoveBackground",
+          "inputs": {
+            "bg_removal_model": [
+              "20",
+              0
+            ],
+            "image": [
+              "6",
+              0
+            ]
+          }
+        },
+        "22": {
+          "class_type": "InvertMask",
+          "inputs": {
+            "mask": [
+              "21",
+              0
+            ]
+          }
+        },
+        "23": {
+          "class_type": "JoinImageWithAlpha",
+          "inputs": {
+            "image": [
+              "6",
+              0
+            ],
+            "alpha": [
+              "22",
+              0
+            ]
+          }
+        },
+        "24": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "Thai02Quality/guide_sunglasses.png"
+          }
+        },
+        "25": {
+          "class_type": "ControlNetLoader",
+          "inputs": {
+            "control_net_name": "control-lora-canny-rank256.safetensors"
+          }
+        },
+        "26": {
+          "class_type": "ControlNetApplyAdvanced",
+          "inputs": {
+            "positive": [
+              "2",
+              0
+            ],
+            "negative": [
+              "3",
+              0
+            ],
+            "control_net": [
+              "25",
+              0
+            ],
+            "image": [
+              "24",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ],
+            "strength": 1.4,
+            "start_percent": 0.0,
+            "end_percent": 1.0
+          }
+        }
+      },
+      "visual_observation": "One eyewear frame; lens reflection included; check thin edges."
+    },
+    {
+      "product": "hats",
+      "seconds": 37.68,
+      "seed": 86003,
+      "mode": "RGBA",
+      "size": [
+        480,
+        480
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.8151432291666667,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "prompt_id": "3adb7d03-7eef-45e0-afc3-1e8034016f2f",
+      "image": "hats.png",
+      "server_image": {
+        "filename": "quality_probe_00031_.png",
+        "subfolder": "Thai02",
+        "type": "output"
+      },
+      "api": {
+        "1": {
+          "class_type": "CheckpointLoaderSimple",
+          "inputs": {
+            "ckpt_name": "animagine-xl-4.0-opt.safetensors"
+          },
+          "_meta": {
+            "title": "Animagine XL 4.0 Opt"
+          }
+        },
+        "2": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": [
+              "18",
+              0
+            ],
+            "clip": [
+              "1",
+              1
+            ]
+          },
+          "_meta": {
+            "title": "Positive product conditioning"
+          }
+        },
+        "3": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "worst quality, bad quality, low quality, lowres, blurry, unfinished, rough sketch, noisy, jpeg artifacts, text, logo, watermark, signature, human, person, 1girl, 1boy, woman, man, child, human face, human head, human hands, human arms, human legs, human feet, fingers, skin, portrait, wearing, holding, mannequin, model wearing product, multiple objects, duplicate, duplicates, collection, collage, grid, contact sheet, multiple views, comparison, exploded view, spare parts, extra accessories, cropped, cut off, out of frame, distorted geometry, malformed, flat vector art, thick black outlines, photograph, photorealistic, close-up, extreme close-up, macro, zoomed in, cropped object, partial object, object extending beyond the frame",
+            "clip": [
+              "1",
+              1
+            ]
+          },
+          "_meta": {
+            "title": "Negative / exclude people and text"
+          }
+        },
+        "4": {
+          "class_type": "EmptyLatentImage",
+          "inputs": {
+            "width": 1024,
+            "height": 1024,
+            "batch_size": 1
+          },
+          "_meta": {
+            "title": "1024 x 1024 internal / batch 1"
+          }
+        },
+        "5": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "positive": [
+              "26",
+              0
+            ],
+            "negative": [
+              "26",
+              1
+            ],
+            "latent_image": [
+              "4",
+              0
+            ],
+            "seed": 86003,
+            "steps": 28,
+            "cfg": 5.0,
+            "sampler_name": "euler_ancestral",
+            "scheduler": "normal",
+            "denoise": 1.0
+          },
+          "_meta": {
+            "title": "quality / 28 steps"
+          }
+        },
+        "6": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "5",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ]
+          },
+          "_meta": {
+            "title": "Decode final image"
+          }
+        },
+        "7": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "8",
+              0
+            ],
+            "filename_prefix": "Thai02/quality_probe"
+          },
+          "_meta": {
+            "title": "Final 480 x 480 RGBA PNG"
+          }
+        },
+        "8": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "23",
+              0
+            ],
+            "upscale_method": "area",
+            "width": 480,
+            "height": 480,
+            "crop": "disabled"
+          },
+          "_meta": {
+            "title": "Downsample RGBA to 480 x 480"
+          }
+        },
+        "10": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "refined minimal design and premium finish"
+          },
+          "_meta": {
+            "title": "INPUT 1 / audience: student"
+          }
+        },
+        "11": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "a single baseball cap, one empty cap only, structured six-panel crown, curved visor, fine woven fabric, stitched panel seams, small embroidered eyelets"
+          },
+          "_meta": {
+            "title": "INPUT 2 / product: bags"
+          }
+        },
+        "12": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "(blue crown:1.15)"
+          },
+          "_meta": {
+            "title": "INPUT 3 / primary: blue"
+          }
+        },
+        "13": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "(white brim:1.15)"
+          },
+          "_meta": {
+            "title": "INPUT 4 / accent: white"
+          }
+        },
+        "14": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "11",
+              0
+            ],
+            "string_b": [
+              "15",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product + colors"
+          }
+        },
+        "15": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "12",
+              0
+            ],
+            "string_b": [
+              "13",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product-specific color parts"
+          }
+        },
+        "16": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "14",
+              0
+            ],
+            "string_b": [
+              "10",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Combine four choices"
+          }
+        },
+        "17": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": "no humans, still life, object focus, (full shot:1.3), (entire object:1.3), (wide shot:1.15), isolated object",
+            "string_b": [
+              "16",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed mobile RPG item style"
+          }
+        },
+        "18": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "17",
+              0
+            ],
+            "string_b": "detailed Japanese game item illustration, precise clean linework, soft painted shading, carefully rendered material texture, crisp edges, complete object fully in frame, centered composition, generous empty margin, plain white background, masterpiece, high score, great score, absurdres, rating:general",
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed product composition"
+          }
+        },
+        "20": {
+          "class_type": "LoadBackgroundRemovalModel",
+          "inputs": {
+            "bg_removal_name": "birefnet.safetensors"
+          }
+        },
+        "21": {
+          "class_type": "RemoveBackground",
+          "inputs": {
+            "bg_removal_model": [
+              "20",
+              0
+            ],
+            "image": [
+              "6",
+              0
+            ]
+          }
+        },
+        "22": {
+          "class_type": "InvertMask",
+          "inputs": {
+            "mask": [
+              "21",
+              0
+            ]
+          }
+        },
+        "23": {
+          "class_type": "JoinImageWithAlpha",
+          "inputs": {
+            "image": [
+              "6",
+              0
+            ],
+            "alpha": [
+              "22",
+              0
+            ]
+          }
+        },
+        "24": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "Thai02Quality/guide_hats.png"
+          }
+        },
+        "25": {
+          "class_type": "ControlNetLoader",
+          "inputs": {
+            "control_net_name": "control-lora-canny-rank256.safetensors"
+          }
+        },
+        "26": {
+          "class_type": "ControlNetApplyAdvanced",
+          "inputs": {
+            "positive": [
+              "2",
+              0
+            ],
+            "negative": [
+              "3",
+              0
+            ],
+            "control_net": [
+              "25",
+              0
+            ],
+            "image": [
+              "24",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ],
+            "strength": 1.4,
+            "start_percent": 0.0,
+            "end_percent": 1.0
+          }
+        }
+      },
+      "visual_observation": "One empty cap; small decorative emblem remains."
+    },
+    {
+      "product": "tops",
+      "seconds": 43.423,
+      "seed": 86004,
+      "mode": "RGBA",
+      "size": [
+        480,
+        480
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.6884375,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "prompt_id": "a990ec4f-5b1d-4ee2-9849-0687bc843b8d",
+      "image": "tops.png",
+      "server_image": {
+        "filename": "quality_probe_00032_.png",
+        "subfolder": "Thai02",
+        "type": "output"
+      },
+      "api": {
+        "1": {
+          "class_type": "CheckpointLoaderSimple",
+          "inputs": {
+            "ckpt_name": "animagine-xl-4.0-opt.safetensors"
+          },
+          "_meta": {
+            "title": "Animagine XL 4.0 Opt"
+          }
+        },
+        "2": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": [
+              "18",
+              0
+            ],
+            "clip": [
+              "1",
+              1
+            ]
+          },
+          "_meta": {
+            "title": "Positive product conditioning"
+          }
+        },
+        "3": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "worst quality, bad quality, low quality, lowres, blurry, unfinished, rough sketch, noisy, jpeg artifacts, text, logo, watermark, signature, human, person, 1girl, 1boy, woman, man, child, human face, human head, human hands, human arms, human legs, human feet, fingers, skin, portrait, wearing, holding, mannequin, model wearing product, multiple objects, duplicate, duplicates, collection, collage, grid, contact sheet, multiple views, comparison, exploded view, spare parts, extra accessories, cropped, cut off, out of frame, distorted geometry, malformed, flat vector art, thick black outlines, photograph, photorealistic, close-up, extreme close-up, macro, zoomed in, cropped object, partial object, object extending beyond the frame",
+            "clip": [
+              "1",
+              1
+            ]
+          },
+          "_meta": {
+            "title": "Negative / exclude people and text"
+          }
+        },
+        "4": {
+          "class_type": "EmptyLatentImage",
+          "inputs": {
+            "width": 1024,
+            "height": 1024,
+            "batch_size": 1
+          },
+          "_meta": {
+            "title": "1024 x 1024 internal / batch 1"
+          }
+        },
+        "5": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "positive": [
+              "26",
+              0
+            ],
+            "negative": [
+              "26",
+              1
+            ],
+            "latent_image": [
+              "4",
+              0
+            ],
+            "seed": 86004,
+            "steps": 28,
+            "cfg": 5.0,
+            "sampler_name": "euler_ancestral",
+            "scheduler": "normal",
+            "denoise": 1.0
+          },
+          "_meta": {
+            "title": "quality / 28 steps"
+          }
+        },
+        "6": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "5",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ]
+          },
+          "_meta": {
+            "title": "Decode final image"
+          }
+        },
+        "7": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "8",
+              0
+            ],
+            "filename_prefix": "Thai02/quality_probe"
+          },
+          "_meta": {
+            "title": "Final 480 x 480 RGBA PNG"
+          }
+        },
+        "8": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "23",
+              0
+            ],
+            "upscale_method": "area",
+            "width": 480,
+            "height": 480,
+            "crop": "disabled"
+          },
+          "_meta": {
+            "title": "Downsample RGBA to 480 x 480"
+          }
+        },
+        "10": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "ergonomic design with clear simple controls"
+          },
+          "_meta": {
+            "title": "INPUT 1 / audience: student"
+          }
+        },
+        "11": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "a single unworn short sleeve shirt laid flat, one shirt only, empty garment, visible collar and sleeves, fine cotton weave, neat stitched hems, detailed fabric folds"
+          },
+          "_meta": {
+            "title": "INPUT 2 / product: bags"
+          }
+        },
+        "12": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "(red main fabric:1.15)"
+          },
+          "_meta": {
+            "title": "INPUT 3 / primary: blue"
+          }
+        },
+        "13": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "(black collar and sleeve trim:1.15)"
+          },
+          "_meta": {
+            "title": "INPUT 4 / accent: white"
+          }
+        },
+        "14": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "11",
+              0
+            ],
+            "string_b": [
+              "15",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product + colors"
+          }
+        },
+        "15": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "12",
+              0
+            ],
+            "string_b": [
+              "13",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product-specific color parts"
+          }
+        },
+        "16": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "14",
+              0
+            ],
+            "string_b": [
+              "10",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Combine four choices"
+          }
+        },
+        "17": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": "no humans, still life, object focus, (full shot:1.3), (entire object:1.3), (wide shot:1.15), isolated object",
+            "string_b": [
+              "16",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed mobile RPG item style"
+          }
+        },
+        "18": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "17",
+              0
+            ],
+            "string_b": "detailed Japanese game item illustration, precise clean linework, soft painted shading, carefully rendered material texture, crisp edges, complete object fully in frame, centered composition, generous empty margin, plain white background, masterpiece, high score, great score, absurdres, rating:general",
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed product composition"
+          }
+        },
+        "20": {
+          "class_type": "LoadBackgroundRemovalModel",
+          "inputs": {
+            "bg_removal_name": "birefnet.safetensors"
+          }
+        },
+        "21": {
+          "class_type": "RemoveBackground",
+          "inputs": {
+            "bg_removal_model": [
+              "20",
+              0
+            ],
+            "image": [
+              "6",
+              0
+            ]
+          }
+        },
+        "22": {
+          "class_type": "InvertMask",
+          "inputs": {
+            "mask": [
+              "21",
+              0
+            ]
+          }
+        },
+        "23": {
+          "class_type": "JoinImageWithAlpha",
+          "inputs": {
+            "image": [
+              "6",
+              0
+            ],
+            "alpha": [
+              "22",
+              0
+            ]
+          }
+        },
+        "24": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "Thai02Quality/guide_tops.png"
+          }
+        },
+        "25": {
+          "class_type": "ControlNetLoader",
+          "inputs": {
+            "control_net_name": "control-lora-canny-rank256.safetensors"
+          }
+        },
+        "26": {
+          "class_type": "ControlNetApplyAdvanced",
+          "inputs": {
+            "positive": [
+              "2",
+              0
+            ],
+            "negative": [
+              "3",
+              0
+            ],
+            "control_net": [
+              "25",
+              0
+            ],
+            "image": [
+              "24",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ],
+            "strength": 1.4,
+            "start_percent": 0.0,
+            "end_percent": 1.0
+          }
+        }
+      },
+      "visual_observation": "One empty shirt; no human torso."
+    },
+    {
+      "product": "bicycles",
+      "seconds": 33.836,
+      "seed": 86005,
+      "mode": "RGBA",
+      "size": [
+        480,
+        480
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.9328949652777778,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "prompt_id": "cd17ab78-25a4-42a3-9779-bf8939bf7e01",
+      "image": "bicycles.png",
+      "server_image": {
+        "filename": "quality_probe_00033_.png",
+        "subfolder": "Thai02",
+        "type": "output"
+      },
+      "api": {
+        "1": {
+          "class_type": "CheckpointLoaderSimple",
+          "inputs": {
+            "ckpt_name": "animagine-xl-4.0-opt.safetensors"
+          },
+          "_meta": {
+            "title": "Animagine XL 4.0 Opt"
+          }
+        },
+        "2": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": [
+              "18",
+              0
+            ],
+            "clip": [
+              "1",
+              1
+            ]
+          },
+          "_meta": {
+            "title": "Positive product conditioning"
+          }
+        },
+        "3": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "worst quality, bad quality, low quality, lowres, blurry, unfinished, rough sketch, noisy, jpeg artifacts, text, logo, watermark, signature, human, person, 1girl, 1boy, woman, man, child, human face, human head, human hands, human arms, human legs, human feet, fingers, skin, portrait, wearing, holding, mannequin, model wearing product, multiple objects, duplicate, duplicates, collection, collage, grid, contact sheet, multiple views, comparison, exploded view, spare parts, extra accessories, cropped, cut off, out of frame, distorted geometry, malformed, flat vector art, thick black outlines, photograph, photorealistic, close-up, extreme close-up, macro, zoomed in, cropped object, partial object, object extending beyond the frame",
+            "clip": [
+              "1",
+              1
+            ]
+          },
+          "_meta": {
+            "title": "Negative / exclude people and text"
+          }
+        },
+        "4": {
+          "class_type": "EmptyLatentImage",
+          "inputs": {
+            "width": 1024,
+            "height": 1024,
+            "batch_size": 1
+          },
+          "_meta": {
+            "title": "1024 x 1024 internal / batch 1"
+          }
+        },
+        "5": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "positive": [
+              "26",
+              0
+            ],
+            "negative": [
+              "26",
+              1
+            ],
+            "latent_image": [
+              "4",
+              0
+            ],
+            "seed": 86005,
+            "steps": 28,
+            "cfg": 5.0,
+            "sampler_name": "euler_ancestral",
+            "scheduler": "normal",
+            "denoise": 1.0
+          },
+          "_meta": {
+            "title": "quality / 28 steps"
+          }
+        },
+        "6": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "5",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ]
+          },
+          "_meta": {
+            "title": "Decode final image"
+          }
+        },
+        "7": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "8",
+              0
+            ],
+            "filename_prefix": "Thai02/quality_probe"
+          },
+          "_meta": {
+            "title": "Final 480 x 480 RGBA PNG"
+          }
+        },
+        "8": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "23",
+              0
+            ],
+            "upscale_method": "area",
+            "width": 480,
+            "height": 480,
+            "crop": "disabled"
+          },
+          "_meta": {
+            "title": "Downsample RGBA to 480 x 480"
+          }
+        },
+        "10": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "playful rounded proportions and friendly simple shapes"
+          },
+          "_meta": {
+            "title": "INPUT 1 / audience: student"
+          }
+        },
+        "11": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "a single complete bicycle, one bicycle only, side three-quarter view, two attached wheels, coherent metal frame, detailed spokes, chain drive, pedals and handlebars"
+          },
+          "_meta": {
+            "title": "INPUT 2 / product: bags"
+          }
+        },
+        "12": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "(blue frame:1.15)"
+          },
+          "_meta": {
+            "title": "INPUT 3 / primary: blue"
+          }
+        },
+        "13": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "(white wheel rims and handlebar grips:1.15)"
+          },
+          "_meta": {
+            "title": "INPUT 4 / accent: white"
+          }
+        },
+        "14": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "11",
+              0
+            ],
+            "string_b": [
+              "15",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product + colors"
+          }
+        },
+        "15": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "12",
+              0
+            ],
+            "string_b": [
+              "13",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product-specific color parts"
+          }
+        },
+        "16": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "14",
+              0
+            ],
+            "string_b": [
+              "10",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Combine four choices"
+          }
+        },
+        "17": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": "no humans, still life, object focus, (full shot:1.3), (entire object:1.3), (wide shot:1.15), isolated object",
+            "string_b": [
+              "16",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed mobile RPG item style"
+          }
+        },
+        "18": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "17",
+              0
+            ],
+            "string_b": "detailed Japanese game item illustration, precise clean linework, soft painted shading, carefully rendered material texture, crisp edges, complete object fully in frame, centered composition, generous empty margin, plain white background, masterpiece, high score, great score, absurdres, rating:general",
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed product composition"
+          }
+        },
+        "20": {
+          "class_type": "LoadBackgroundRemovalModel",
+          "inputs": {
+            "bg_removal_name": "birefnet.safetensors"
+          }
+        },
+        "21": {
+          "class_type": "RemoveBackground",
+          "inputs": {
+            "bg_removal_model": [
+              "20",
+              0
+            ],
+            "image": [
+              "6",
+              0
+            ]
+          }
+        },
+        "22": {
+          "class_type": "InvertMask",
+          "inputs": {
+            "mask": [
+              "21",
+              0
+            ]
+          }
+        },
+        "23": {
+          "class_type": "JoinImageWithAlpha",
+          "inputs": {
+            "image": [
+              "6",
+              0
+            ],
+            "alpha": [
+              "22",
+              0
+            ]
+          }
+        },
+        "24": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "Thai02Quality/guide_bicycles.png"
+          }
+        },
+        "25": {
+          "class_type": "ControlNetLoader",
+          "inputs": {
+            "control_net_name": "control-lora-canny-rank256.safetensors"
+          }
+        },
+        "26": {
+          "class_type": "ControlNetApplyAdvanced",
+          "inputs": {
+            "positive": [
+              "2",
+              0
+            ],
+            "negative": [
+              "3",
+              0
+            ],
+            "control_net": [
+              "25",
+              0
+            ],
+            "image": [
+              "24",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ],
+            "strength": 1.4,
+            "start_percent": 0.0,
+            "end_percent": 1.0
+          }
+        }
+      },
+      "visual_observation": "One bicycle; mechanical details such as pedals/spokes remain imperfect."
+    },
+    {
+      "product": "tumblers",
+      "seconds": 42.29,
+      "seed": 86006,
+      "mode": "RGBA",
+      "size": [
+        480,
+        480
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.8118967013888889,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "prompt_id": "78fa5f8f-5a89-4420-b512-dade96b9d811",
+      "image": "tumblers.png",
+      "server_image": {
+        "filename": "quality_probe_00034_.png",
+        "subfolder": "Thai02",
+        "type": "output"
+      },
+      "api": {
+        "1": {
+          "class_type": "CheckpointLoaderSimple",
+          "inputs": {
+            "ckpt_name": "animagine-xl-4.0-opt.safetensors"
+          },
+          "_meta": {
+            "title": "Animagine XL 4.0 Opt"
+          }
+        },
+        "2": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": [
+              "18",
+              0
+            ],
+            "clip": [
+              "1",
+              1
+            ]
+          },
+          "_meta": {
+            "title": "Positive product conditioning"
+          }
+        },
+        "3": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "worst quality, bad quality, low quality, lowres, blurry, unfinished, rough sketch, noisy, jpeg artifacts, text, logo, watermark, signature, human, person, 1girl, 1boy, woman, man, child, human face, human head, human hands, human arms, human legs, human feet, fingers, skin, portrait, wearing, holding, mannequin, model wearing product, multiple objects, duplicate, duplicates, collection, collage, grid, contact sheet, multiple views, comparison, exploded view, spare parts, extra accessories, cropped, cut off, out of frame, distorted geometry, malformed, flat vector art, thick black outlines, photograph, photorealistic, close-up, extreme close-up, macro, zoomed in, cropped object, partial object, object extending beyond the frame",
+            "clip": [
+              "1",
+              1
+            ]
+          },
+          "_meta": {
+            "title": "Negative / exclude people and text"
+          }
+        },
+        "4": {
+          "class_type": "EmptyLatentImage",
+          "inputs": {
+            "width": 1024,
+            "height": 1024,
+            "batch_size": 1
+          },
+          "_meta": {
+            "title": "1024 x 1024 internal / batch 1"
+          }
+        },
+        "5": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "positive": [
+              "26",
+              0
+            ],
+            "negative": [
+              "26",
+              1
+            ],
+            "latent_image": [
+              "4",
+              0
+            ],
+            "seed": 86006,
+            "steps": 28,
+            "cfg": 5.0,
+            "sampler_name": "euler_ancestral",
+            "scheduler": "normal",
+            "denoise": 1.0
+          },
+          "_meta": {
+            "title": "quality / 28 steps"
+          }
+        },
+        "6": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "5",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ]
+          },
+          "_meta": {
+            "title": "Decode final image"
+          }
+        },
+        "7": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "8",
+              0
+            ],
+            "filename_prefix": "Thai02/quality_probe"
+          },
+          "_meta": {
+            "title": "Final 480 x 480 RGBA PNG"
+          }
+        },
+        "8": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "23",
+              0
+            ],
+            "upscale_method": "area",
+            "width": 480,
+            "height": 480,
+            "crop": "disabled"
+          },
+          "_meta": {
+            "title": "Downsample RGBA to 480 x 480"
+          }
+        },
+        "10": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "practical casual design with sporty details"
+          },
+          "_meta": {
+            "title": "INPUT 1 / audience: student"
+          }
+        },
+        "11": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "a single insulated drinking tumbler, one tumbler only, closed attached lid, smooth cylindrical body, fine brushed metal texture, clean gasket seam, precise rim detail"
+          },
+          "_meta": {
+            "title": "INPUT 2 / product: bags"
+          }
+        },
+        "12": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "(red body:1.15)"
+          },
+          "_meta": {
+            "title": "INPUT 3 / primary: blue"
+          }
+        },
+        "13": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "(black lid:1.15)"
+          },
+          "_meta": {
+            "title": "INPUT 4 / accent: white"
+          }
+        },
+        "14": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "11",
+              0
+            ],
+            "string_b": [
+              "15",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product + colors"
+          }
+        },
+        "15": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "12",
+              0
+            ],
+            "string_b": [
+              "13",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product-specific color parts"
+          }
+        },
+        "16": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "14",
+              0
+            ],
+            "string_b": [
+              "10",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Combine four choices"
+          }
+        },
+        "17": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": "no humans, still life, object focus, (full shot:1.3), (entire object:1.3), (wide shot:1.15), isolated object",
+            "string_b": [
+              "16",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed mobile RPG item style"
+          }
+        },
+        "18": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "17",
+              0
+            ],
+            "string_b": "detailed Japanese game item illustration, precise clean linework, soft painted shading, carefully rendered material texture, crisp edges, complete object fully in frame, centered composition, generous empty margin, plain white background, masterpiece, high score, great score, absurdres, rating:general",
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed product composition"
+          }
+        },
+        "20": {
+          "class_type": "LoadBackgroundRemovalModel",
+          "inputs": {
+            "bg_removal_name": "birefnet.safetensors"
+          }
+        },
+        "21": {
+          "class_type": "RemoveBackground",
+          "inputs": {
+            "bg_removal_model": [
+              "20",
+              0
+            ],
+            "image": [
+              "6",
+              0
+            ]
+          }
+        },
+        "22": {
+          "class_type": "InvertMask",
+          "inputs": {
+            "mask": [
+              "21",
+              0
+            ]
+          }
+        },
+        "23": {
+          "class_type": "JoinImageWithAlpha",
+          "inputs": {
+            "image": [
+              "6",
+              0
+            ],
+            "alpha": [
+              "22",
+              0
+            ]
+          }
+        },
+        "24": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "Thai02Quality/guide_tumblers.png"
+          }
+        },
+        "25": {
+          "class_type": "ControlNetLoader",
+          "inputs": {
+            "control_net_name": "control-lora-canny-rank256.safetensors"
+          }
+        },
+        "26": {
+          "class_type": "ControlNetApplyAdvanced",
+          "inputs": {
+            "positive": [
+              "2",
+              0
+            ],
+            "negative": [
+              "3",
+              0
+            ],
+            "control_net": [
+              "25",
+              0
+            ],
+            "image": [
+              "24",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ],
+            "strength": 1.4,
+            "start_percent": 0.0,
+            "end_percent": 1.0
+          }
+        }
+      },
+      "visual_observation": "Single cylindrical object but can-like appearance; rejected, prompt refined and retested separately."
+    },
+    {
+      "product": "phone_cases",
+      "seconds": 42.57,
+      "seed": 86007,
+      "mode": "RGBA",
+      "size": [
+        480,
+        480
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.6885373263888889,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "prompt_id": "d4777cb0-e49e-47df-80e0-0b0780652f87",
+      "image": "phone_cases.png",
+      "server_image": {
+        "filename": "quality_probe_00035_.png",
+        "subfolder": "Thai02",
+        "type": "output"
+      },
+      "api": {
+        "1": {
+          "class_type": "CheckpointLoaderSimple",
+          "inputs": {
+            "ckpt_name": "animagine-xl-4.0-opt.safetensors"
+          },
+          "_meta": {
+            "title": "Animagine XL 4.0 Opt"
+          }
+        },
+        "2": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": [
+              "18",
+              0
+            ],
+            "clip": [
+              "1",
+              1
+            ]
+          },
+          "_meta": {
+            "title": "Positive product conditioning"
+          }
+        },
+        "3": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "worst quality, bad quality, low quality, lowres, blurry, unfinished, rough sketch, noisy, jpeg artifacts, text, logo, watermark, signature, human, person, 1girl, 1boy, woman, man, child, human face, human head, human hands, human arms, human legs, human feet, fingers, skin, portrait, wearing, holding, mannequin, model wearing product, multiple objects, duplicate, duplicates, collection, collage, grid, contact sheet, multiple views, comparison, exploded view, spare parts, extra accessories, cropped, cut off, out of frame, distorted geometry, malformed, flat vector art, thick black outlines, photograph, photorealistic, close-up, extreme close-up, macro, zoomed in, cropped object, partial object, object extending beyond the frame",
+            "clip": [
+              "1",
+              1
+            ]
+          },
+          "_meta": {
+            "title": "Negative / exclude people and text"
+          }
+        },
+        "4": {
+          "class_type": "EmptyLatentImage",
+          "inputs": {
+            "width": 1024,
+            "height": 1024,
+            "batch_size": 1
+          },
+          "_meta": {
+            "title": "1024 x 1024 internal / batch 1"
+          }
+        },
+        "5": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "positive": [
+              "26",
+              0
+            ],
+            "negative": [
+              "26",
+              1
+            ],
+            "latent_image": [
+              "4",
+              0
+            ],
+            "seed": 86007,
+            "steps": 28,
+            "cfg": 5.0,
+            "sampler_name": "euler_ancestral",
+            "scheduler": "normal",
+            "denoise": 1.0
+          },
+          "_meta": {
+            "title": "quality / 28 steps"
+          }
+        },
+        "6": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "5",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ]
+          },
+          "_meta": {
+            "title": "Decode final image"
+          }
+        },
+        "7": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "8",
+              0
+            ],
+            "filename_prefix": "Thai02/quality_probe"
+          },
+          "_meta": {
+            "title": "Final 480 x 480 RGBA PNG"
+          }
+        },
+        "8": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "23",
+              0
+            ],
+            "upscale_method": "area",
+            "width": 480,
+            "height": 480,
+            "crop": "disabled"
+          },
+          "_meta": {
+            "title": "Downsample RGBA to 480 x 480"
+          }
+        },
+        "10": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "refined minimal design and premium finish"
+          },
+          "_meta": {
+            "title": "INPUT 1 / audience: student"
+          }
+        },
+        "11": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "a single empty smartphone case, one case only, rear view, detailed camera cutouts, precise molded buttons and rounded protective rim, fine surface texture"
+          },
+          "_meta": {
+            "title": "INPUT 2 / product: bags"
+          }
+        },
+        "12": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "(blue body:1.15)"
+          },
+          "_meta": {
+            "title": "INPUT 3 / primary: blue"
+          }
+        },
+        "13": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "(white edge trim:1.15)"
+          },
+          "_meta": {
+            "title": "INPUT 4 / accent: white"
+          }
+        },
+        "14": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "11",
+              0
+            ],
+            "string_b": [
+              "15",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product + colors"
+          }
+        },
+        "15": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "12",
+              0
+            ],
+            "string_b": [
+              "13",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product-specific color parts"
+          }
+        },
+        "16": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "14",
+              0
+            ],
+            "string_b": [
+              "10",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Combine four choices"
+          }
+        },
+        "17": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": "no humans, still life, object focus, (full shot:1.3), (entire object:1.3), (wide shot:1.15), isolated object",
+            "string_b": [
+              "16",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed mobile RPG item style"
+          }
+        },
+        "18": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "17",
+              0
+            ],
+            "string_b": "detailed Japanese game item illustration, precise clean linework, soft painted shading, carefully rendered material texture, crisp edges, complete object fully in frame, centered composition, generous empty margin, plain white background, masterpiece, high score, great score, absurdres, rating:general",
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed product composition"
+          }
+        },
+        "20": {
+          "class_type": "LoadBackgroundRemovalModel",
+          "inputs": {
+            "bg_removal_name": "birefnet.safetensors"
+          }
+        },
+        "21": {
+          "class_type": "RemoveBackground",
+          "inputs": {
+            "bg_removal_model": [
+              "20",
+              0
+            ],
+            "image": [
+              "6",
+              0
+            ]
+          }
+        },
+        "22": {
+          "class_type": "InvertMask",
+          "inputs": {
+            "mask": [
+              "21",
+              0
+            ]
+          }
+        },
+        "23": {
+          "class_type": "JoinImageWithAlpha",
+          "inputs": {
+            "image": [
+              "6",
+              0
+            ],
+            "alpha": [
+              "22",
+              0
+            ]
+          }
+        },
+        "24": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "Thai02Quality/guide_phone_cases.png"
+          }
+        },
+        "25": {
+          "class_type": "ControlNetLoader",
+          "inputs": {
+            "control_net_name": "control-lora-canny-rank256.safetensors"
+          }
+        },
+        "26": {
+          "class_type": "ControlNetApplyAdvanced",
+          "inputs": {
+            "positive": [
+              "2",
+              0
+            ],
+            "negative": [
+              "3",
+              0
+            ],
+            "control_net": [
+              "25",
+              0
+            ],
+            "image": [
+              "24",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ],
+            "strength": 1.4,
+            "start_percent": 0.0,
+            "end_percent": 1.0
+          }
+        }
+      },
+      "visual_observation": "One case/phone-like silhouette; camera and colored panel."
+    },
+    {
+      "product": "umbrellas",
+      "seconds": 42.647,
+      "seed": 86008,
+      "mode": "RGBA",
+      "size": [
+        480,
+        480
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.8717100694444444,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "prompt_id": "ed728d02-90d1-4bb8-8bad-b8b2abe88001",
+      "image": "umbrellas.png",
+      "server_image": {
+        "filename": "quality_probe_00036_.png",
+        "subfolder": "Thai02",
+        "type": "output"
+      },
+      "api": {
+        "1": {
+          "class_type": "CheckpointLoaderSimple",
+          "inputs": {
+            "ckpt_name": "animagine-xl-4.0-opt.safetensors"
+          },
+          "_meta": {
+            "title": "Animagine XL 4.0 Opt"
+          }
+        },
+        "2": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": [
+              "18",
+              0
+            ],
+            "clip": [
+              "1",
+              1
+            ]
+          },
+          "_meta": {
+            "title": "Positive product conditioning"
+          }
+        },
+        "3": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "worst quality, bad quality, low quality, lowres, blurry, unfinished, rough sketch, noisy, jpeg artifacts, text, logo, watermark, signature, human, person, 1girl, 1boy, woman, man, child, human face, human head, human hands, human arms, human legs, human feet, fingers, skin, portrait, wearing, holding, mannequin, model wearing product, multiple objects, duplicate, duplicates, collection, collage, grid, contact sheet, multiple views, comparison, exploded view, spare parts, extra accessories, cropped, cut off, out of frame, distorted geometry, malformed, flat vector art, thick black outlines, photograph, photorealistic, close-up, extreme close-up, macro, zoomed in, cropped object, partial object, object extending beyond the frame",
+            "clip": [
+              "1",
+              1
+            ]
+          },
+          "_meta": {
+            "title": "Negative / exclude people and text"
+          }
+        },
+        "4": {
+          "class_type": "EmptyLatentImage",
+          "inputs": {
+            "width": 1024,
+            "height": 1024,
+            "batch_size": 1
+          },
+          "_meta": {
+            "title": "1024 x 1024 internal / batch 1"
+          }
+        },
+        "5": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "positive": [
+              "26",
+              0
+            ],
+            "negative": [
+              "26",
+              1
+            ],
+            "latent_image": [
+              "4",
+              0
+            ],
+            "seed": 86008,
+            "steps": 28,
+            "cfg": 5.0,
+            "sampler_name": "euler_ancestral",
+            "scheduler": "normal",
+            "denoise": 1.0
+          },
+          "_meta": {
+            "title": "quality / 28 steps"
+          }
+        },
+        "6": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "5",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ]
+          },
+          "_meta": {
+            "title": "Decode final image"
+          }
+        },
+        "7": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "8",
+              0
+            ],
+            "filename_prefix": "Thai02/quality_probe"
+          },
+          "_meta": {
+            "title": "Final 480 x 480 RGBA PNG"
+          }
+        },
+        "8": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "23",
+              0
+            ],
+            "upscale_method": "area",
+            "width": 480,
+            "height": 480,
+            "crop": "disabled"
+          },
+          "_meta": {
+            "title": "Downsample RGBA to 480 x 480"
+          }
+        },
+        "10": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "ergonomic design with clear simple controls"
+          },
+          "_meta": {
+            "title": "INPUT 1 / audience: student"
+          }
+        },
+        "11": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "a single open umbrella, one umbrella only, complete canopy and attached curved handle, coherent fabric panels, fine radial ribs, stitched canopy seams"
+          },
+          "_meta": {
+            "title": "INPUT 2 / product: bags"
+          }
+        },
+        "12": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "(red canopy:1.15)"
+          },
+          "_meta": {
+            "title": "INPUT 3 / primary: blue"
+          }
+        },
+        "13": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "(black handle and edge trim:1.15)"
+          },
+          "_meta": {
+            "title": "INPUT 4 / accent: white"
+          }
+        },
+        "14": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "11",
+              0
+            ],
+            "string_b": [
+              "15",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product + colors"
+          }
+        },
+        "15": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "12",
+              0
+            ],
+            "string_b": [
+              "13",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product-specific color parts"
+          }
+        },
+        "16": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "14",
+              0
+            ],
+            "string_b": [
+              "10",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Combine four choices"
+          }
+        },
+        "17": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": "no humans, still life, object focus, (full shot:1.3), (entire object:1.3), (wide shot:1.15), isolated object",
+            "string_b": [
+              "16",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed mobile RPG item style"
+          }
+        },
+        "18": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "17",
+              0
+            ],
+            "string_b": "detailed Japanese game item illustration, precise clean linework, soft painted shading, carefully rendered material texture, crisp edges, complete object fully in frame, centered composition, generous empty margin, plain white background, masterpiece, high score, great score, absurdres, rating:general",
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed product composition"
+          }
+        },
+        "20": {
+          "class_type": "LoadBackgroundRemovalModel",
+          "inputs": {
+            "bg_removal_name": "birefnet.safetensors"
+          }
+        },
+        "21": {
+          "class_type": "RemoveBackground",
+          "inputs": {
+            "bg_removal_model": [
+              "20",
+              0
+            ],
+            "image": [
+              "6",
+              0
+            ]
+          }
+        },
+        "22": {
+          "class_type": "InvertMask",
+          "inputs": {
+            "mask": [
+              "21",
+              0
+            ]
+          }
+        },
+        "23": {
+          "class_type": "JoinImageWithAlpha",
+          "inputs": {
+            "image": [
+              "6",
+              0
+            ],
+            "alpha": [
+              "22",
+              0
+            ]
+          }
+        },
+        "24": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "Thai02Quality/guide_umbrellas.png"
+          }
+        },
+        "25": {
+          "class_type": "ControlNetLoader",
+          "inputs": {
+            "control_net_name": "control-lora-canny-rank256.safetensors"
+          }
+        },
+        "26": {
+          "class_type": "ControlNetApplyAdvanced",
+          "inputs": {
+            "positive": [
+              "2",
+              0
+            ],
+            "negative": [
+              "3",
+              0
+            ],
+            "control_net": [
+              "25",
+              0
+            ],
+            "image": [
+              "24",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ],
+            "strength": 1.4,
+            "start_percent": 0.0,
+            "end_percent": 1.0
+          }
+        }
+      },
+      "visual_observation": "One open umbrella with hooked handle."
+    },
+    {
+      "product": "robots",
+      "seconds": 44.854,
+      "seed": 86009,
+      "mode": "RGBA",
+      "size": [
+        480,
+        480
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.7277170138888889,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "prompt_id": "4ea474fc-ee48-4171-bb39-f6bed9439381",
+      "image": "robots.png",
+      "server_image": {
+        "filename": "quality_probe_00037_.png",
+        "subfolder": "Thai02",
+        "type": "output"
+      },
+      "api": {
+        "1": {
+          "class_type": "CheckpointLoaderSimple",
+          "inputs": {
+            "ckpt_name": "animagine-xl-4.0-opt.safetensors"
+          },
+          "_meta": {
+            "title": "Animagine XL 4.0 Opt"
+          }
+        },
+        "2": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": [
+              "18",
+              0
+            ],
+            "clip": [
+              "1",
+              1
+            ]
+          },
+          "_meta": {
+            "title": "Positive product conditioning"
+          }
+        },
+        "3": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "worst quality, bad quality, low quality, lowres, blurry, unfinished, rough sketch, noisy, jpeg artifacts, text, logo, watermark, signature, human, person, 1girl, 1boy, woman, man, child, human face, human head, human hands, human arms, human legs, human feet, fingers, skin, portrait, wearing, holding, mannequin, model wearing product, multiple objects, duplicate, duplicates, collection, collage, grid, contact sheet, multiple views, comparison, exploded view, spare parts, extra accessories, cropped, cut off, out of frame, distorted geometry, malformed, flat vector art, thick black outlines, photograph, photorealistic, close-up, extreme close-up, macro, zoomed in, cropped object, partial object, object extending beyond the frame",
+            "clip": [
+              "1",
+              1
+            ]
+          },
+          "_meta": {
+            "title": "Negative / exclude people and text"
+          }
+        },
+        "4": {
+          "class_type": "EmptyLatentImage",
+          "inputs": {
+            "width": 1024,
+            "height": 1024,
+            "batch_size": 1
+          },
+          "_meta": {
+            "title": "1024 x 1024 internal / batch 1"
+          }
+        },
+        "5": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "positive": [
+              "26",
+              0
+            ],
+            "negative": [
+              "26",
+              1
+            ],
+            "latent_image": [
+              "4",
+              0
+            ],
+            "seed": 86009,
+            "steps": 28,
+            "cfg": 5.0,
+            "sampler_name": "euler_ancestral",
+            "scheduler": "normal",
+            "denoise": 1.0
+          },
+          "_meta": {
+            "title": "quality / 28 steps"
+          }
+        },
+        "6": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "5",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ]
+          },
+          "_meta": {
+            "title": "Decode final image"
+          }
+        },
+        "7": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "8",
+              0
+            ],
+            "filename_prefix": "Thai02/quality_probe"
+          },
+          "_meta": {
+            "title": "Final 480 x 480 RGBA PNG"
+          }
+        },
+        "8": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "23",
+              0
+            ],
+            "upscale_method": "area",
+            "width": 480,
+            "height": 480,
+            "crop": "disabled"
+          },
+          "_meta": {
+            "title": "Downsample RGBA to 480 x 480"
+          }
+        },
+        "10": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "playful rounded proportions and friendly simple shapes"
+          },
+          "_meta": {
+            "title": "INPUT 1 / audience: student"
+          }
+        },
+        "11": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "a single small toy robot, one robot only, coherent mechanical chassis, precise panels and joints, small machined screws, clean manufactured surfaces"
+          },
+          "_meta": {
+            "title": "INPUT 2 / product: bags"
+          }
+        },
+        "12": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "(blue body:1.15)"
+          },
+          "_meta": {
+            "title": "INPUT 3 / primary: blue"
+          }
+        },
+        "13": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "(white detail accents:1.15)"
+          },
+          "_meta": {
+            "title": "INPUT 4 / accent: white"
+          }
+        },
+        "14": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "11",
+              0
+            ],
+            "string_b": [
+              "15",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product + colors"
+          }
+        },
+        "15": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "12",
+              0
+            ],
+            "string_b": [
+              "13",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product-specific color parts"
+          }
+        },
+        "16": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "14",
+              0
+            ],
+            "string_b": [
+              "10",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Combine four choices"
+          }
+        },
+        "17": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": "no humans, still life, object focus, (full shot:1.3), (entire object:1.3), (wide shot:1.15), isolated object",
+            "string_b": [
+              "16",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed mobile RPG item style"
+          }
+        },
+        "18": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "17",
+              0
+            ],
+            "string_b": "detailed Japanese game item illustration, precise clean linework, soft painted shading, carefully rendered material texture, crisp edges, complete object fully in frame, centered composition, generous empty margin, plain white background, masterpiece, high score, great score, absurdres, rating:general",
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed product composition"
+          }
+        },
+        "20": {
+          "class_type": "LoadBackgroundRemovalModel",
+          "inputs": {
+            "bg_removal_name": "birefnet.safetensors"
+          }
+        },
+        "21": {
+          "class_type": "RemoveBackground",
+          "inputs": {
+            "bg_removal_model": [
+              "20",
+              0
+            ],
+            "image": [
+              "6",
+              0
+            ]
+          }
+        },
+        "22": {
+          "class_type": "InvertMask",
+          "inputs": {
+            "mask": [
+              "21",
+              0
+            ]
+          }
+        },
+        "23": {
+          "class_type": "JoinImageWithAlpha",
+          "inputs": {
+            "image": [
+              "6",
+              0
+            ],
+            "alpha": [
+              "22",
+              0
+            ]
+          }
+        },
+        "24": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "Thai02Quality/guide_robots.png"
+          }
+        },
+        "25": {
+          "class_type": "ControlNetLoader",
+          "inputs": {
+            "control_net_name": "control-lora-canny-rank256.safetensors"
+          }
+        },
+        "26": {
+          "class_type": "ControlNetApplyAdvanced",
+          "inputs": {
+            "positive": [
+              "2",
+              0
+            ],
+            "negative": [
+              "3",
+              0
+            ],
+            "control_net": [
+              "25",
+              0
+            ],
+            "image": [
+              "24",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ],
+            "strength": 1.4,
+            "start_percent": 0.0,
+            "end_percent": 1.0
+          }
+        }
+      },
+      "visual_observation": "One toy robot design; joints are stylized and simple."
+    },
+    {
+      "product": "keyboards",
+      "seconds": 31.392,
+      "seed": 86010,
+      "mode": "RGBA",
+      "size": [
+        480,
+        480
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.7143315972222222,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "prompt_id": "5ac73375-3edb-457e-96ef-444a061cd432",
+      "image": "keyboards.png",
+      "server_image": {
+        "filename": "quality_probe_00038_.png",
+        "subfolder": "Thai02",
+        "type": "output"
+      },
+      "api": {
+        "1": {
+          "class_type": "CheckpointLoaderSimple",
+          "inputs": {
+            "ckpt_name": "animagine-xl-4.0-opt.safetensors"
+          },
+          "_meta": {
+            "title": "Animagine XL 4.0 Opt"
+          }
+        },
+        "2": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": [
+              "18",
+              0
+            ],
+            "clip": [
+              "1",
+              1
+            ]
+          },
+          "_meta": {
+            "title": "Positive product conditioning"
+          }
+        },
+        "3": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "worst quality, bad quality, low quality, lowres, blurry, unfinished, rough sketch, noisy, jpeg artifacts, text, logo, watermark, signature, human, person, 1girl, 1boy, woman, man, child, human face, human head, human hands, human arms, human legs, human feet, fingers, skin, portrait, wearing, holding, mannequin, model wearing product, multiple objects, duplicate, duplicates, collection, collage, grid, contact sheet, multiple views, comparison, exploded view, spare parts, extra accessories, cropped, cut off, out of frame, distorted geometry, malformed, flat vector art, thick black outlines, photograph, photorealistic, close-up, extreme close-up, macro, zoomed in, cropped object, partial object, object extending beyond the frame",
+            "clip": [
+              "1",
+              1
+            ]
+          },
+          "_meta": {
+            "title": "Negative / exclude people and text"
+          }
+        },
+        "4": {
+          "class_type": "EmptyLatentImage",
+          "inputs": {
+            "width": 1024,
+            "height": 1024,
+            "batch_size": 1
+          },
+          "_meta": {
+            "title": "1024 x 1024 internal / batch 1"
+          }
+        },
+        "5": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "positive": [
+              "26",
+              0
+            ],
+            "negative": [
+              "26",
+              1
+            ],
+            "latent_image": [
+              "4",
+              0
+            ],
+            "seed": 86010,
+            "steps": 28,
+            "cfg": 5.0,
+            "sampler_name": "euler_ancestral",
+            "scheduler": "normal",
+            "denoise": 1.0
+          },
+          "_meta": {
+            "title": "quality / 28 steps"
+          }
+        },
+        "6": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "5",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ]
+          },
+          "_meta": {
+            "title": "Decode final image"
+          }
+        },
+        "7": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "8",
+              0
+            ],
+            "filename_prefix": "Thai02/quality_probe"
+          },
+          "_meta": {
+            "title": "Final 480 x 480 RGBA PNG"
+          }
+        },
+        "8": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "23",
+              0
+            ],
+            "upscale_method": "area",
+            "width": 480,
+            "height": 480,
+            "crop": "disabled"
+          },
+          "_meta": {
+            "title": "Downsample RGBA to 480 x 480"
+          }
+        },
+        "10": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "practical casual design with sporty details"
+          },
+          "_meta": {
+            "title": "INPUT 1 / audience: student"
+          }
+        },
+        "11": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "a single computer keyboard, one keyboard only, complete compact rectangular case, neatly aligned rows of individual keycaps, detailed molded key edges, premium mechanical construction"
+          },
+          "_meta": {
+            "title": "INPUT 2 / product: bags"
+          }
+        },
+        "12": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "(red body:1.15)"
+          },
+          "_meta": {
+            "title": "INPUT 3 / primary: blue"
+          }
+        },
+        "13": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "(black detail accents:1.15)"
+          },
+          "_meta": {
+            "title": "INPUT 4 / accent: white"
+          }
+        },
+        "14": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "11",
+              0
+            ],
+            "string_b": [
+              "15",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product + colors"
+          }
+        },
+        "15": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "12",
+              0
+            ],
+            "string_b": [
+              "13",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product-specific color parts"
+          }
+        },
+        "16": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "14",
+              0
+            ],
+            "string_b": [
+              "10",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Combine four choices"
+          }
+        },
+        "17": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": "no humans, still life, object focus, (full shot:1.3), (entire object:1.3), (wide shot:1.15), isolated object",
+            "string_b": [
+              "16",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed mobile RPG item style"
+          }
+        },
+        "18": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "17",
+              0
+            ],
+            "string_b": "detailed Japanese game item illustration, precise clean linework, soft painted shading, carefully rendered material texture, crisp edges, complete object fully in frame, centered composition, generous empty margin, plain white background, masterpiece, high score, great score, absurdres, rating:general",
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed product composition"
+          }
+        },
+        "20": {
+          "class_type": "LoadBackgroundRemovalModel",
+          "inputs": {
+            "bg_removal_name": "birefnet.safetensors"
+          }
+        },
+        "21": {
+          "class_type": "RemoveBackground",
+          "inputs": {
+            "bg_removal_model": [
+              "20",
+              0
+            ],
+            "image": [
+              "6",
+              0
+            ]
+          }
+        },
+        "22": {
+          "class_type": "InvertMask",
+          "inputs": {
+            "mask": [
+              "21",
+              0
+            ]
+          }
+        },
+        "23": {
+          "class_type": "JoinImageWithAlpha",
+          "inputs": {
+            "image": [
+              "6",
+              0
+            ],
+            "alpha": [
+              "22",
+              0
+            ]
+          }
+        },
+        "24": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "Thai02Quality/guide_keyboards.png"
+          }
+        },
+        "25": {
+          "class_type": "ControlNetLoader",
+          "inputs": {
+            "control_net_name": "control-lora-canny-rank256.safetensors"
+          }
+        },
+        "26": {
+          "class_type": "ControlNetApplyAdvanced",
+          "inputs": {
+            "positive": [
+              "2",
+              0
+            ],
+            "negative": [
+              "3",
+              0
+            ],
+            "control_net": [
+              "25",
+              0
+            ],
+            "image": [
+              "24",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ],
+            "strength": 1.4,
+            "start_percent": 0.0,
+            "end_percent": 1.0
+          }
+        }
+      },
+      "visual_observation": "One keyboard; blank keys and simplified geometry."
+    },
+    {
+      "product": "laptops",
+      "seconds": 34.32,
+      "seed": 86011,
+      "mode": "RGBA",
+      "size": [
+        480,
+        480
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.6547265625,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "prompt_id": "df58819f-716a-4817-bd3e-194e677c2c45",
+      "image": "laptops.png",
+      "server_image": {
+        "filename": "quality_probe_00039_.png",
+        "subfolder": "Thai02",
+        "type": "output"
+      },
+      "api": {
+        "1": {
+          "class_type": "CheckpointLoaderSimple",
+          "inputs": {
+            "ckpt_name": "animagine-xl-4.0-opt.safetensors"
+          },
+          "_meta": {
+            "title": "Animagine XL 4.0 Opt"
+          }
+        },
+        "2": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": [
+              "18",
+              0
+            ],
+            "clip": [
+              "1",
+              1
+            ]
+          },
+          "_meta": {
+            "title": "Positive product conditioning"
+          }
+        },
+        "3": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "worst quality, bad quality, low quality, lowres, blurry, unfinished, rough sketch, noisy, jpeg artifacts, text, logo, watermark, signature, human, person, 1girl, 1boy, woman, man, child, human face, human head, human hands, human arms, human legs, human feet, fingers, skin, portrait, wearing, holding, mannequin, model wearing product, multiple objects, duplicate, duplicates, collection, collage, grid, contact sheet, multiple views, comparison, exploded view, spare parts, extra accessories, cropped, cut off, out of frame, distorted geometry, malformed, flat vector art, thick black outlines, photograph, photorealistic, close-up, extreme close-up, macro, zoomed in, cropped object, partial object, object extending beyond the frame",
+            "clip": [
+              "1",
+              1
+            ]
+          },
+          "_meta": {
+            "title": "Negative / exclude people and text"
+          }
+        },
+        "4": {
+          "class_type": "EmptyLatentImage",
+          "inputs": {
+            "width": 1024,
+            "height": 1024,
+            "batch_size": 1
+          },
+          "_meta": {
+            "title": "1024 x 1024 internal / batch 1"
+          }
+        },
+        "5": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "positive": [
+              "26",
+              0
+            ],
+            "negative": [
+              "26",
+              1
+            ],
+            "latent_image": [
+              "4",
+              0
+            ],
+            "seed": 86011,
+            "steps": 28,
+            "cfg": 5.0,
+            "sampler_name": "euler_ancestral",
+            "scheduler": "normal",
+            "denoise": 1.0
+          },
+          "_meta": {
+            "title": "quality / 28 steps"
+          }
+        },
+        "6": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "5",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ]
+          },
+          "_meta": {
+            "title": "Decode final image"
+          }
+        },
+        "7": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "8",
+              0
+            ],
+            "filename_prefix": "Thai02/quality_probe"
+          },
+          "_meta": {
+            "title": "Final 480 x 480 RGBA PNG"
+          }
+        },
+        "8": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "23",
+              0
+            ],
+            "upscale_method": "area",
+            "width": 480,
+            "height": 480,
+            "crop": "disabled"
+          },
+          "_meta": {
+            "title": "Downsample RGBA to 480 x 480"
+          }
+        },
+        "10": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "refined minimal design and premium finish"
+          },
+          "_meta": {
+            "title": "INPUT 1 / audience: student"
+          }
+        },
+        "11": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "a single open laptop computer, one laptop only, connected screen and keyboard, coherent hinge, precise keyboard grid, brushed metal chassis, detailed ventilation slots"
+          },
+          "_meta": {
+            "title": "INPUT 2 / product: bags"
+          }
+        },
+        "12": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "(blue body:1.15)"
+          },
+          "_meta": {
+            "title": "INPUT 3 / primary: blue"
+          }
+        },
+        "13": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "(white detail accents:1.15)"
+          },
+          "_meta": {
+            "title": "INPUT 4 / accent: white"
+          }
+        },
+        "14": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "11",
+              0
+            ],
+            "string_b": [
+              "15",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product + colors"
+          }
+        },
+        "15": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "12",
+              0
+            ],
+            "string_b": [
+              "13",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product-specific color parts"
+          }
+        },
+        "16": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "14",
+              0
+            ],
+            "string_b": [
+              "10",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Combine four choices"
+          }
+        },
+        "17": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": "no humans, still life, object focus, (full shot:1.3), (entire object:1.3), (wide shot:1.15), isolated object",
+            "string_b": [
+              "16",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed mobile RPG item style"
+          }
+        },
+        "18": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "17",
+              0
+            ],
+            "string_b": "detailed Japanese game item illustration, precise clean linework, soft painted shading, carefully rendered material texture, crisp edges, complete object fully in frame, centered composition, generous empty margin, plain white background, masterpiece, high score, great score, absurdres, rating:general",
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed product composition"
+          }
+        },
+        "20": {
+          "class_type": "LoadBackgroundRemovalModel",
+          "inputs": {
+            "bg_removal_name": "birefnet.safetensors"
+          }
+        },
+        "21": {
+          "class_type": "RemoveBackground",
+          "inputs": {
+            "bg_removal_model": [
+              "20",
+              0
+            ],
+            "image": [
+              "6",
+              0
+            ]
+          }
+        },
+        "22": {
+          "class_type": "InvertMask",
+          "inputs": {
+            "mask": [
+              "21",
+              0
+            ]
+          }
+        },
+        "23": {
+          "class_type": "JoinImageWithAlpha",
+          "inputs": {
+            "image": [
+              "6",
+              0
+            ],
+            "alpha": [
+              "22",
+              0
+            ]
+          }
+        },
+        "24": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "Thai02Quality/guide_laptops.png"
+          }
+        },
+        "25": {
+          "class_type": "ControlNetLoader",
+          "inputs": {
+            "control_net_name": "control-lora-canny-rank256.safetensors"
+          }
+        },
+        "26": {
+          "class_type": "ControlNetApplyAdvanced",
+          "inputs": {
+            "positive": [
+              "2",
+              0
+            ],
+            "negative": [
+              "3",
+              0
+            ],
+            "control_net": [
+              "25",
+              0
+            ],
+            "image": [
+              "24",
+              0
+            ],
+            "vae": [
+              "1",
+              2
+            ],
+            "strength": 1.4,
+            "start_percent": 0.0,
+            "end_percent": 1.0
+          }
+        }
+      },
+      "visual_observation": "One open laptop, simplified keyboard; screen intentionally empty."
+    }
+  ],
+  "seconds_summary": {
+    "count": 14,
+    "min": 31.392,
+    "median": 38.059,
+    "max": 44.854,
+    "note": "Sequential direct API probes; not RTX3060, not a 20-run performance acceptance."
+  },
+  "experiments": [
+    {
+      "folder_local_ignored": "Tools\\ComfyUI\\results\\quality\\candidate",
+      "samples": [
+        {
+          "product": "bags",
+          "seconds": 24.469,
+          "seed": 81001,
+          "prompt_id": "9449f0b3-c4c6-4509-afd2-62c087f3a4bd"
+        },
+        {
+          "product": "sunglasses",
+          "seconds": 15.226,
+          "seed": 81002,
+          "prompt_id": "c78f42c6-93e1-4f15-85c7-8d5cd702bed4"
+        },
+        {
+          "product": "headphones",
+          "seconds": 18.178,
+          "seed": 81003,
+          "prompt_id": "c3702cb0-ed29-4ef0-a3d1-8ae9cc205339"
+        }
+      ]
+    },
+    {
+      "folder_local_ignored": "Tools\\ComfyUI\\results\\quality\\framing",
+      "samples": [
+        {
+          "product": "bags",
+          "seconds": 17.867,
+          "seed": 81001,
+          "prompt_id": "cd5be381-1b83-4aee-b059-8fa3a3a3659a"
+        },
+        {
+          "product": "sunglasses",
+          "seconds": 21.151,
+          "seed": 81002,
+          "prompt_id": "713b2ebe-d116-48e6-8536-fac513aa8914"
+        },
+        {
+          "product": "headphones",
+          "seconds": 21.214,
+          "seed": 81003,
+          "prompt_id": "8f38d05c-c183-44f8-bc69-c1a78e0a23d3"
+        }
+      ]
+    },
+    {
+      "folder_local_ignored": "Tools\\ComfyUI\\results\\quality\\products",
+      "samples": [
+        {
+          "product": "hats",
+          "seconds": 19.86,
+          "seed": 82001,
+          "prompt_id": "ddb54caf-e5f7-4c18-98fa-e43106f564fa"
+        },
+        {
+          "product": "tops",
+          "seconds": 21.142,
+          "seed": 82002,
+          "prompt_id": "9eee3346-8031-40a3-ba4f-bb4abfca4ca3"
+        },
+        {
+          "product": "bicycles",
+          "seconds": 21.55,
+          "seed": 82003,
+          "prompt_id": "6592ef82-a187-44e2-ab43-fa9bcd7874dd"
+        },
+        {
+          "product": "tumblers",
+          "seconds": 23.045,
+          "seed": 82004,
+          "prompt_id": "6eee94a0-79ff-451b-9f90-4b55fbc0bb6c"
+        },
+        {
+          "product": "wristwatches",
+          "seconds": 18.504,
+          "seed": 82005,
+          "prompt_id": "76387a83-452d-45e0-8d52-2b493a49b1b0"
+        },
+        {
+          "product": "phone_cases",
+          "seconds": 15.203,
+          "seed": 82006,
+          "prompt_id": "aa59bfac-a73a-4f0e-a675-51cfaf82355a"
+        },
+        {
+          "product": "umbrellas",
+          "seconds": 19.631,
+          "seed": 82007,
+          "prompt_id": "6af1a01b-098e-405c-b27e-7a0b4b1f6e80"
+        },
+        {
+          "product": "shoes",
+          "seconds": 21.634,
+          "seed": 82008,
+          "prompt_id": "403f2884-0a66-4de0-afff-790f99543cfa"
+        },
+        {
+          "product": "robots",
+          "seconds": 22.301,
+          "seed": 82009,
+          "prompt_id": "28ed3be5-f90b-4635-9b5d-14155f1fcaa9"
+        },
+        {
+          "product": "keyboards",
+          "seconds": 15.426,
+          "seed": 82010,
+          "prompt_id": "31d0c6b9-7c1a-48d1-a28f-f5e962692db2"
+        },
+        {
+          "product": "laptops",
+          "seconds": 15.477,
+          "seed": 82011,
+          "prompt_id": "00dcfe79-f92e-4324-8716-c853589acfb1"
+        }
+      ]
+    },
+    {
+      "folder_local_ignored": "Tools\\ComfyUI\\results\\quality\\refined",
+      "samples": [
+        {
+          "product": "headphones",
+          "seconds": 15.319,
+          "seed": 83001,
+          "prompt_id": "db9ea5da-2522-4112-a88c-51ee4c18e7b0"
+        },
+        {
+          "product": "wristwatches",
+          "seconds": 15.601,
+          "seed": 83002,
+          "prompt_id": "da140112-9a62-4761-85f4-8b4179187ea0"
+        }
+      ]
+    },
+    {
+      "folder_local_ignored": "Tools\\ComfyUI\\results\\quality\\controlled",
+      "samples": [
+        {
+          "product": "headphones",
+          "seconds": 27.876,
+          "seed": 84001,
+          "prompt_id": "90b4151b-f29d-466e-a0ab-890b0ae6fa98"
+        },
+        {
+          "product": "wristwatches",
+          "seconds": 26.071,
+          "seed": 84002,
+          "prompt_id": "a22f7385-a796-4cb2-a8fd-44a91aa933e4"
+        },
+        {
+          "product": "shoes",
+          "seconds": 32.288,
+          "seed": 84003,
+          "prompt_id": "ec541841-8821-48ee-b74b-e0eba0495804"
+        },
+        {
+          "product": "robots",
+          "seconds": 32.861,
+          "seed": 84004,
+          "prompt_id": "113b4d31-d44f-40b4-a278-7d567c10bcbd"
+        },
+        {
+          "product": "umbrellas",
+          "seconds": 33.103,
+          "seed": 84005,
+          "prompt_id": "56beb660-bcb8-4579-a3d8-f22520de9a44"
+        },
+        {
+          "product": "keyboards",
+          "seconds": 33.477,
+          "seed": 84006,
+          "prompt_id": "40985f69-b5cb-4ef0-8452-a3f4a85b9b89"
+        }
+      ]
+    }
+  ],
+  "unity_runtime_sample": {
+    "product": "tumblers",
+    "prompt_id": "e378e433-3dc7-41b9-906e-21237f4989b4",
+    "image": "tumblers_runtime.png",
+    "mode": "RGBA",
+    "size": [
+      480,
+      480
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "seconds": 43.169,
+    "observation": "Single metal insulated cylinder; can-style graphics removed, lid/thermal cup details still simple."
+  }
+}

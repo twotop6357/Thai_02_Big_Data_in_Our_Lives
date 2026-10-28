@@ -1,112 +1,115 @@
 {
   "schemaVersion": 1,
-  "stylePrefix": "(isolated inventory item illustration:1.3), product only, no humans",
-  "styleSuffix": "premium Japanese mobile RPG equipment icon, polished 2D digital painting, delicate clean linework, soft cel shading, carefully painted material highlights, rich subtle color gradients, elegant detailed item design, three-quarter view, full object centered with generous empty margins, simple pale background",
-  "negativePrompt": "(person:1.5), (1girl:1.5), (1boy:1.5), human, face, head, hands, character, wearing, portrait, photograph, photorealistic, realistic textures, close-up, cropped, collection, collage, comparison, grid, (multiple products:1.4), (two pairs:1.4), (three pairs:1.4), stacked products, text, logo, watermark, thick black outlines, flat vector art, clipart, simple cartoon, low detail, 3d render, UI border, icon frame, game screenshot",
+  "stylePrefix": "no humans, still life, object focus, (full shot:1.3), (entire object:1.3), (wide shot:1.15), isolated object",
+  "styleSuffix": "detailed Japanese game item illustration, precise clean linework, soft painted shading, carefully rendered material texture, crisp edges, complete object fully in frame, centered composition, generous empty margin, plain white background, masterpiece, high score, great score, absurdres, rating:general",
+  "negativePrompt": "worst quality, bad quality, low quality, lowres, blurry, unfinished, rough sketch, noisy, jpeg artifacts, text, logo, watermark, signature, human, person, 1girl, 1boy, woman, man, child, human face, human head, human hands, human arms, human legs, human feet, fingers, skin, portrait, wearing, holding, mannequin, model wearing product, multiple objects, duplicate, duplicates, collection, collage, grid, contact sheet, multiple views, comparison, exploded view, spare parts, extra accessories, cropped, cut off, out of frame, distorted geometry, malformed, flat vector art, thick black outlines, photograph, photorealistic, close-up, extreme close-up, macro, zoomed in, cropped object, partial object, object extending beyond the frame",
   "groups": [
     {
       "id": "child",
       "label": "Child",
-      "prompt": "playful rounded design with simple details"
+      "prompt": "playful rounded proportions and friendly simple shapes"
     },
     {
       "id": "student",
       "label": "Student",
-      "prompt": "practical campus design"
+      "prompt": "practical casual design with sporty details"
     },
     {
       "id": "working_adult",
       "label": "Working Adult",
-      "prompt": "understated modern everyday design"
+      "prompt": "refined minimal design and premium finish"
     },
     {
       "id": "senior",
       "label": "Senior",
-      "prompt": "lightweight simple design with easy-to-use details"
+      "prompt": "ergonomic design with clear simple controls"
     }
   ],
   "products": [
     {
       "id": "bags",
       "label": "Bags",
-      "prompt": "one backpack",
+      "prompt": "a single backpack, one bag only, closed main compartment, structured front pocket, two attached padded shoulder straps, woven canvas texture, reinforced stitching, metal zipper teeth, small fastened buckles",
       "primaryPart": "fabric body",
       "secondaryPart": "straps and zipper trim"
     },
     {
       "id": "shoes",
       "label": "Shoes",
-      "prompt": "one pair of shoes",
+      "prompt": "a single sneaker, one shoe only, unworn shoe, detailed layered panels, woven textile upper, carefully tied shoelaces, stitched seams, molded rubber sole with tread",
       "primaryPart": "uppers",
       "secondaryPart": "soles and laces"
     },
     {
       "id": "hats",
       "label": "Hats",
-      "prompt": "one hat",
+      "prompt": "a single baseball cap, one empty cap only, structured six-panel crown, curved visor, fine woven fabric, stitched panel seams, small embroidered eyelets",
       "primaryPart": "crown",
       "secondaryPart": "brim"
     },
     {
       "id": "sunglasses",
       "label": "Sunglasses",
-      "prompt": "one single pair of sunglasses",
+      "prompt": "a single pair of sunglasses, one complete eyewear frame only, two lenses connected by one bridge, two attached temples, neatly machined hinges, smooth polished frame, subtle lens reflections",
       "primaryPart": "frame",
       "secondaryPart": "tinted lenses"
     },
     {
       "id": "headphones",
       "label": "Headphones",
-      "prompt": "one pair of headphones",
+      "prompt": "(headphones:1.4), over-ear headphones, one complete connected pair of headphones, tall U-shaped padded headband, two oval earcups hanging from either end of the headband, both left and right ear cushions visible, sliding metal adjustment arms",
       "primaryPart": "ear cups",
-      "secondaryPart": "headband"
+      "secondaryPart": "headband",
+      "negativePrompt": "wheel, tire, circular shield, circular disc, single earcup, earbuds, earplugs, earphones"
     },
     {
       "id": "tops",
       "label": "Tops",
-      "prompt": "one shirt laid flat",
+      "prompt": "a single unworn short sleeve shirt laid flat, one shirt only, empty garment, visible collar and sleeves, fine cotton weave, neat stitched hems, detailed fabric folds",
       "primaryPart": "main fabric",
       "secondaryPart": "collar and sleeve trim"
     },
     {
       "id": "bicycles",
       "label": "Bicycles",
-      "prompt": "one bicycle",
+      "prompt": "a single complete bicycle, one bicycle only, side three-quarter view, two attached wheels, coherent metal frame, detailed spokes, chain drive, pedals and handlebars",
       "primaryPart": "frame",
       "secondaryPart": "wheel rims and handlebar grips"
     },
     {
       "id": "tumblers",
       "label": "Tumblers",
-      "prompt": "one drinking tumbler",
+      "prompt": "(travel mug:1.4), a single reusable vacuum-insulated travel cup, one closed screw-on drinking lid, cylindrical stainless steel body, narrow silicone grip band, substantial rounded base, powder coated metal, visible plastic lid seam, hinged sip opening",
       "primaryPart": "body",
-      "secondaryPart": "lid"
+      "secondaryPart": "lid",
+      "negativePrompt": "soda can, beverage can, aluminum can, beer can, open rim, uncovered cup, open container"
     },
     {
       "id": "wristwatches",
       "label": "Wristwatches",
-      "prompt": "one wristwatch",
+      "prompt": "(wristwatch:1.3), a single compact wristwatch, one watch face only, plain round watch case attached to one smooth leather strap, clasp closed in one loop, small crown knob, flat hour markers, two clock hands, carefully machined bezel",
       "primaryPart": "strap",
-      "secondaryPart": "case and dial"
+      "secondaryPart": "case and dial",
+      "negativePrompt": "second watch, extra watch face, multiple watch dials, wall clock, watch collection"
     },
     {
       "id": "phone_cases",
       "label": "Phone Cases",
-      "prompt": "one empty phone case",
+      "prompt": "a single empty smartphone case, one case only, rear view, detailed camera cutouts, precise molded buttons and rounded protective rim, fine surface texture",
       "primaryPart": "body",
       "secondaryPart": "edge trim"
     },
     {
       "id": "umbrellas",
       "label": "Umbrellas",
-      "prompt": "one umbrella",
+      "prompt": "a single open umbrella, one umbrella only, complete canopy and attached curved handle, coherent fabric panels, fine radial ribs, stitched canopy seams",
       "primaryPart": "canopy",
       "secondaryPart": "handle and edge trim"
     },
     {
       "id": "equipment",
       "label": "Equipment",
-      "prompt": "one robot",
+      "prompt": "a single small toy robot, one robot only, coherent mechanical chassis, precise panels and joints, small machined screws, clean manufactured surfaces",
       "primaryPart": "body",
       "secondaryPart": "detail accents"
     }
@@ -147,17 +150,17 @@
     {
       "id": "robots",
       "label": "Robots",
-      "prompt": "one robot"
+      "prompt": "a single small toy robot, one robot only, coherent mechanical chassis, precise panels and joints, small machined screws, clean manufactured surfaces"
     },
     {
       "id": "keyboards",
       "label": "Keyboards",
-      "prompt": "one computer keyboard"
+      "prompt": "a single computer keyboard, one keyboard only, complete compact rectangular case, neatly aligned rows of individual keycaps, detailed molded key edges, premium mechanical construction"
     },
     {
       "id": "laptops",
       "label": "Laptops",
-      "prompt": "one laptop computer"
+      "prompt": "a single open laptop computer, one laptop only, connected screen and keyboard, coherent hinge, precise keyboard grid, brushed metal chassis, detailed ventilation slots"
     }
   ]
 }

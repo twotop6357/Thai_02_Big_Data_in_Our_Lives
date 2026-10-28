@@ -1,16 +1,24 @@
 {
-  "name": "Stable Diffusion XL Base 1.0 (no refiner)",
-  "filename": "sd_xl_base_1.0.safetensors",
-  "repository": "stabilityai/stable-diffusion-xl-base-1.0",
-  "revision": "462165984030d82259a11f4367a4eed129e94a7b",
-  "url": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/462165984030d82259a11f4367a4eed129e94a7b/sd_xl_base_1.0.safetensors",
-  "sha256": "31e35c80fc4829d14f90153f4c74cd59c90b779f6afe05a74cd6120b893f7e5b",
-  "bytes": 6938078334,
-  "model_card": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0",
-  "license_note": "CreativeML Open RAIL++-M. Preserve the model license and notices when distributing model weights.",
-  "internal_resolution": [768, 768],
+  "name": "Animagine XL 4.0 Opt",
+  "filename": "animagine-xl-4.0-opt.safetensors",
+  "repository": "cagliostrolab/animagine-xl-4.0",
+  "revision": "2b7c1b397761bf5bd3cc42e5b39ec99314a75a96",
+  "sha256": "6327eca98bfb6538dd7a4edce22484a1bbc57a8cff6b11d075d40da1afb847ac",
+  "bytes": 6938350040,
+  "model_card": "https://huggingface.co/cagliostrolab/animagine-xl-4.0",
+  "license_note": "CreativeML Open RAIL++-M; preserve model license and notices.",
+  "url": "https://huggingface.co/cagliostrolab/animagine-xl-4.0/resolve/2b7c1b397761bf5bd3cc42e5b39ec99314a75a96/animagine-xl-4.0-opt.safetensors",
+  "internal_resolution": [
+    1024,
+    1024
+  ],
   "target_gpu": "NVIDIA GeForce RTX 3060 12GB",
-  "target_output": [480, 480],
+  "target_output": [
+    480,
+    480
+  ],
   "target_warm_latency_seconds": 20,
-  "target_gpu_timing_verified": false
+  "target_gpu_timing_verified": false,
+  "alpha": true,
+  "quality_priority": true
 }

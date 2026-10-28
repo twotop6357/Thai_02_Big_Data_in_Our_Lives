@@ -1,0 +1,11 @@
+{
+  "seconds": 43.16922219999992,
+  "status": "Image ready. Change blocks or generate again.",
+  "texture_owned_by_manager": true,
+  "game_image_bound_before_visible": true,
+  "result_scene": "2_Result",
+  "result_uses_same_texture": true,
+  "idle_scene": "0_Idle",
+  "texture_released": true,
+  "language_reset": true
+}
