@@ -1,24 +1,33 @@
 {
-  "name": "Animagine XL 4.0 Opt",
-  "filename": "animagine-xl-4.0-opt.safetensors",
-  "repository": "cagliostrolab/animagine-xl-4.0",
-  "revision": "2b7c1b397761bf5bd3cc42e5b39ec99314a75a96",
-  "sha256": "6327eca98bfb6538dd7a4edce22484a1bbc57a8cff6b11d075d40da1afb847ac",
-  "bytes": 6938350040,
-  "model_card": "https://huggingface.co/cagliostrolab/animagine-xl-4.0",
-  "license_note": "CreativeML Open RAIL++-M; preserve model license and notices.",
-  "url": "https://huggingface.co/cagliostrolab/animagine-xl-4.0/resolve/2b7c1b397761bf5bd3cc42e5b39ec99314a75a96/animagine-xl-4.0-opt.safetensors",
+  "name": "FLUX.2 Klein 4B FP8 / reference illustration",
+  "filename": "flux-2-klein-4b-fp8.safetensors",
+  "repository": "black-forest-labs/FLUX.2-klein-4b-fp8",
+  "revision": "5b4408e59397a4a37ccb46afe426d8ed86379441",
+  "url": "https://huggingface.co/black-forest-labs/FLUX.2-klein-4b-fp8/resolve/5b4408e59397a4a37ccb46afe426d8ed86379441/flux-2-klein-4b-fp8.safetensors",
+  "bytes": 4070624520,
+  "sha256": "97ed34fe0567e436200f2faee3939b88f2b5d99f8af2a4dc16532c4245c0ccb6",
+  "license_note": "Apache-2.0; preserve source license and notices.",
+  "model_card": "https://huggingface.co/black-forest-labs/FLUX.2-klein-4b-fp8",
+  "active_mode": "reference_illustration",
   "internal_resolution": [
-    1024,
-    1024
+    640,
+    640
   ],
   "target_gpu": "NVIDIA GeForce RTX 3060 12GB",
   "target_output": [
     480,
     480
   ],
-  "target_warm_latency_seconds": 20,
+  "target_warm_latency_seconds": 15,
   "target_gpu_timing_verified": false,
   "alpha": true,
-  "quality_priority": true
+  "style_reference": {
+    "filename": "style_user_fa1ec41434dabe24.png",
+    "subfolder": "Thai02Style3",
+    "sha256": "fa1ec41434dabe2468cf621dfe471f734c884bb8ae5bbf01b8e72c74dc544b39",
+    "width": 384,
+    "height": 304,
+    "source": "User-supplied cute sneaker illustration; art style only, not object geometry.",
+    "grayscale": true
+  }
 }

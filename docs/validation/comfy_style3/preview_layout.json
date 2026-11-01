@@ -1,0 +1,242 @@
+[
+  {
+    "image": "bags_child_green_white_1211301.png",
+    "selection": {
+      "group": "child",
+      "product": "bags",
+      "color1": "green",
+      "color2": "white",
+      "primary_hex": "#B7DBA9",
+      "secondary_hex": "#FFFFFF",
+      "profile": "quality",
+      "seed": 1211301,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "bags",
+      "alpha": true,
+      "positive_prompt": "one small bear-shaped kindergarten backpack with rounded bear ears and a front pocket. Main color #B7DBA9 (light pastel green) on backpack body. Accent color #FFFFFF (white) on bear ears and front pocket. playful rounded design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+    },
+    "box": [
+      18,
+      112,
+      362,
+      508
+    ]
+  },
+  {
+    "image": "shoes_student_blue_white_1211312.png",
+    "selection": {
+      "group": "student",
+      "product": "shoes",
+      "color1": "blue",
+      "color2": "white",
+      "primary_hex": "#5FB0E3",
+      "secondary_hex": "#FFFFFF",
+      "profile": "quality",
+      "seed": 1211312,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "shoes",
+      "alpha": true,
+      "positive_prompt": "one high-top canvas sneaker with laces, natural three-quarter view. Main color #5FB0E3 (light blue) on canvas upper. Accent color #FFFFFF (white) on ankle panels and sole. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+    },
+    "box": [
+      374,
+      112,
+      718,
+      508
+    ]
+  },
+  {
+    "image": "hats_senior_red_blue_1211233.png",
+    "selection": {
+      "group": "senior",
+      "product": "hats",
+      "color1": "red",
+      "color2": "blue",
+      "primary_hex": "#EC6868",
+      "secondary_hex": "#5FB0E3",
+      "profile": "quality",
+      "seed": 1211233,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "hats",
+      "alpha": true,
+      "positive_prompt": "one classic fedora hat with a pinched crown, ribbon band and brim. Main color #EC6868 (soft red) on crown and brim. Accent color #5FB0E3 (light blue) on ribbon band. simple ergonomic design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+    },
+    "box": [
+      730,
+      112,
+      1074,
+      508
+    ]
+  },
+  {
+    "image": "sunglasses_child_black_yellow_1211304.png",
+    "selection": {
+      "group": "child",
+      "product": "sunglasses",
+      "color1": "black",
+      "color2": "yellow",
+      "primary_hex": "#171619",
+      "secondary_hex": "#F6EEA2",
+      "profile": "quality",
+      "seed": 1211304,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "sunglasses",
+      "alpha": true,
+      "positive_prompt": "heart-shaped sunglasses, one pair of heart-shaped frames. Main color #171619 (near-black) on heart-shaped frame. Accent color #F6EEA2 (pale pastel yellow) on solid tinted lenses. playful rounded design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+    },
+    "box": [
+      1086,
+      112,
+      1430,
+      508
+    ]
+  },
+  {
+    "image": "headphones_student_red_green_1211315.png",
+    "selection": {
+      "group": "student",
+      "product": "headphones",
+      "color1": "red",
+      "color2": "green",
+      "primary_hex": "#EC6868",
+      "secondary_hex": "#B7DBA9",
+      "profile": "quality",
+      "seed": 1211315,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "headphones",
+      "alpha": true,
+      "positive_prompt": "one gaming headset with large earcups and a short boom microphone. Main color #EC6868 (soft red) on earcups. Accent color #B7DBA9 (light pastel green) on headband and microphone. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+    },
+    "box": [
+      1442,
+      112,
+      1786,
+      508
+    ]
+  },
+  {
+    "image": "tops_senior_blue_white_1211336.png",
+    "selection": {
+      "group": "senior",
+      "product": "tops",
+      "color1": "blue",
+      "color2": "white",
+      "primary_hex": "#5FB0E3",
+      "secondary_hex": "#FFFFFF",
+      "profile": "quality",
+      "seed": 1211336,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "tops",
+      "alpha": true,
+      "positive_prompt": "one V-neck cardigan with buttons and pockets, complete garment, centered. Main color #5FB0E3 (light blue) on body. Accent color #FFFFFF (white) on sleeves and ribbed edges. simple ergonomic design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+    },
+    "box": [
+      18,
+      528,
+      362,
+      924
+    ]
+  },
+  {
+    "image": "bicycles_student_yellow_black_1211317.png",
+    "selection": {
+      "group": "student",
+      "product": "bicycles",
+      "color1": "yellow",
+      "color2": "black",
+      "primary_hex": "#F6EEA2",
+      "secondary_hex": "#171619",
+      "profile": "quality",
+      "seed": 1211317,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "bicycles",
+      "alpha": true,
+      "positive_prompt": "one road bicycle with drop handlebars and thin tires, both wheels visible, centered. Main color #F6EEA2 (pale pastel yellow) on frame. Accent color #171619 (near-black) on wheel rims and handlebars. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+    },
+    "box": [
+      374,
+      528,
+      718,
+      924
+    ]
+  },
+  {
+    "image": "tumblers_working_adult_black_yellow_1211328.png",
+    "selection": {
+      "group": "working_adult",
+      "product": "tumblers",
+      "color1": "black",
+      "color2": "yellow",
+      "primary_hex": "#171619",
+      "secondary_hex": "#F6EEA2",
+      "profile": "quality",
+      "seed": 1211328,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "tumblers",
+      "alpha": true,
+      "positive_prompt": "one tapered travel coffee mug with a handle and flip-top lid. Main color #171619 (near-black) on body. Accent color #F6EEA2 (pale pastel yellow) on handle and lid. refined minimal design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+    },
+    "box": [
+      730,
+      528,
+      1074,
+      924
+    ]
+  },
+  {
+    "image": "wristwatches_student_red_blue_1211219.png",
+    "selection": {
+      "group": "student",
+      "product": "wristwatches",
+      "color1": "red",
+      "color2": "blue",
+      "primary_hex": "#EC6868",
+      "secondary_hex": "#5FB0E3",
+      "profile": "quality",
+      "seed": 1211219,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "wristwatches",
+      "alpha": true,
+      "positive_prompt": "one rectangular sports wristwatch with a chunky rubber band, a simple analog dial with two clear hands and four round hour markers, complete watch with both band ends. Main color #EC6868 (soft red) on plastic strap. Accent color #5FB0E3 (light blue) on rectangular case and dial. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+    },
+    "box": [
+      1086,
+      528,
+      1430,
+      924
+    ]
+  },
+  {
+    "image": "umbrellas_child_black_yellow_1211310.png",
+    "selection": {
+      "group": "child",
+      "product": "umbrellas",
+      "color1": "black",
+      "color2": "yellow",
+      "primary_hex": "#171619",
+      "secondary_hex": "#F6EEA2",
+      "profile": "quality",
+      "seed": 1211310,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "umbrellas",
+      "alpha": true,
+      "positive_prompt": "one small open dome umbrella with a scalloped edge and short curved handle. Main color #171619 (near-black) on dome canopy. Accent color #F6EEA2 (pale pastel yellow) on scalloped trim and handle. playful rounded design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+    },
+    "box": [
+      1442,
+      528,
+      1786,
+      924
+    ]
+  }
+]

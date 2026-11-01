@@ -1,0 +1,30 @@
+[
+  {
+    "file": "shoes_996531.png",
+    "center": [
+      239.5,
+      240.0
+    ],
+    "bounds": [
+      41,
+      80,
+      438,
+      400
+    ],
+    "transparent_pixels": 144962
+  },
+  {
+    "file": "shoes_996532.png",
+    "center": [
+      239.5,
+      240.0
+    ],
+    "bounds": [
+      53,
+      83,
+      426,
+      397
+    ],
+    "transparent_pixels": 163600
+  }
+]

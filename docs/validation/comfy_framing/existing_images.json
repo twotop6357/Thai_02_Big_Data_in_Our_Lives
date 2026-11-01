@@ -1,0 +1,28 @@
+[
+  {
+    "file": "docs/validation/comfy_restore/generated_product.png",
+    "center": [
+      240.0,
+      240.0
+    ],
+    "bounds": [
+      27,
+      109,
+      453,
+      371
+    ]
+  },
+  {
+    "file": "docs/validation/comfy_restore/style_clean_trial.png",
+    "center": [
+      240.0,
+      240.0
+    ],
+    "bounds": [
+      24,
+      66,
+      456,
+      414
+    ]
+  }
+]

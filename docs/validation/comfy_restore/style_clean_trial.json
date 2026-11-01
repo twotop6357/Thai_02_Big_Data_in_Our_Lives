@@ -1,0 +1,33 @@
+{
+  "prompt_id": "bb00b751-e697-4561-a89e-cee0c58718c9",
+  "selection": {
+    "group": "student",
+    "product": "shoes",
+    "color1": "red",
+    "color2": "blue",
+    "primary_hex": "#EC6868",
+    "secondary_hex": "#5FB0E3",
+    "profile": "quality",
+    "seed": 87653,
+    "width": 480,
+    "height": 480,
+    "resolved_product": "shoes",
+    "alpha": true,
+    "positive_prompt": "(flat vector illustration:1.5), (2D cartoon product icon:1.3), soft pastel colors, clean simple curved outlines, stylized drawing, one single complete object, isolated on pure white background, (one low-top sneaker:1.2), a single complete athletic shoe drawn from the side, toe pointing left, simple curved color panels, low ankle collar, rounded white sole, entire shoe with space around it, (soft coral red upper body panels:1.15), primary color reference #EC6868 RGB(236, 104, 104), (light sky blue accent trim and laces:1.15), secondary color reference #5FB0E3 RGB(95, 176, 227), practical casual design with sporty details, smooth simplified rounded shapes, gentle cel shading, lavender outline accents, minimal surface detail, charming clean editorial illustration, centered composition with wide empty margins, entire object inside the canvas, no graphic decorations, no ground shadow"
+  },
+  "seconds_request_to_png": 14.719,
+  "width": 480,
+  "height": 480,
+  "local_image": "style_clean_trial.png",
+  "server_image": {
+    "filename": "product_00050_.png",
+    "subfolder": "Thai02",
+    "type": "output",
+    "metadata": {
+      "kind": "image",
+      "width": 480,
+      "height": 480
+    },
+    "id": "be5ef9af-b1eb-459f-9c27-ea4c154e9070"
+  }
+}

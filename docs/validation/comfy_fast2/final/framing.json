@@ -1,0 +1,366 @@
+[
+  {
+    "file": "headphones_student_1206501.png",
+    "center": [
+      240.0,
+      240.0
+    ],
+    "bounds": [
+      31,
+      24,
+      449,
+      456
+    ],
+    "transparent_pixels": 138938
+  },
+  {
+    "file": "tops_student_1206501.png",
+    "center": [
+      239.5,
+      239.5
+    ],
+    "bounds": [
+      39,
+      41,
+      440,
+      438
+    ],
+    "transparent_pixels": 181311
+  },
+  {
+    "file": "hats_student_1206501.png",
+    "center": [
+      240.0,
+      239.5
+    ],
+    "bounds": [
+      24,
+      74,
+      456,
+      405
+    ],
+    "transparent_pixels": 126474
+  },
+  {
+    "file": "tumblers_student_1206501.png",
+    "center": [
+      239.5,
+      240.0
+    ],
+    "bounds": [
+      131,
+      69,
+      348,
+      411
+    ],
+    "transparent_pixels": 173599
+  },
+  {
+    "file": "bags_student_1206501.png",
+    "center": [
+      239.5,
+      240.0
+    ],
+    "bounds": [
+      74,
+      24,
+      405,
+      456
+    ],
+    "transparent_pixels": 119053
+  },
+  {
+    "file": "shoes_student_1206501.png",
+    "center": [
+      240.0,
+      239.5
+    ],
+    "bounds": [
+      34,
+      80,
+      446,
+      399
+    ],
+    "transparent_pixels": 142139
+  },
+  {
+    "file": "sunglasses_student_1206501.png",
+    "center": [
+      240.0,
+      240.0
+    ],
+    "bounds": [
+      34,
+      136,
+      446,
+      344
+    ],
+    "transparent_pixels": 195424
+  },
+  {
+    "file": "bicycles_student_1206501.png",
+    "center": [
+      240.0,
+      239.5
+    ],
+    "bounds": [
+      24,
+      52,
+      456,
+      427
+    ],
+    "transparent_pixels": 157876
+  },
+  {
+    "file": "wristwatches_student_1206501.png",
+    "center": [
+      240.0,
+      240.0
+    ],
+    "bounds": [
+      34,
+      28,
+      446,
+      452
+    ],
+    "transparent_pixels": 142107
+  },
+  {
+    "file": "umbrellas_student_1206501.png",
+    "center": [
+      239.5,
+      240.0
+    ],
+    "bounds": [
+      37,
+      24,
+      442,
+      456
+    ],
+    "transparent_pixels": 119190
+  },
+  {
+    "file": "headphones_student_1206502.png",
+    "center": [
+      240.0,
+      239.5
+    ],
+    "bounds": [
+      54,
+      52,
+      426,
+      427
+    ],
+    "transparent_pixels": 168330
+  },
+  {
+    "file": "tops_student_1206502.png",
+    "center": [
+      240.0,
+      240.0
+    ],
+    "bounds": [
+      24,
+      43,
+      456,
+      437
+    ],
+    "transparent_pixels": 190756
+  },
+  {
+    "file": "hats_student_1206502.png",
+    "center": [
+      240.0,
+      239.5
+    ],
+    "bounds": [
+      24,
+      84,
+      456,
+      395
+    ],
+    "transparent_pixels": 130892
+  },
+  {
+    "file": "tumblers_student_1206502.png",
+    "center": [
+      240.0,
+      239.5
+    ],
+    "bounds": [
+      100,
+      49,
+      380,
+      430
+    ],
+    "transparent_pixels": 151465
+  },
+  {
+    "file": "bags_student_1206502.png",
+    "center": [
+      239.5,
+      240.0
+    ],
+    "bounds": [
+      61,
+      24,
+      418,
+      456
+    ],
+    "transparent_pixels": 106681
+  },
+  {
+    "file": "shoes_student_1206502.png",
+    "center": [
+      240.0,
+      239.5
+    ],
+    "bounds": [
+      25,
+      98,
+      455,
+      381
+    ],
+    "transparent_pixels": 145253
+  },
+  {
+    "file": "sunglasses_student_1206502.png",
+    "center": [
+      240.0,
+      240.0
+    ],
+    "bounds": [
+      31,
+      140,
+      449,
+      340
+    ],
+    "transparent_pixels": 194899
+  },
+  {
+    "file": "bicycles_student_1206502.png",
+    "center": [
+      240.0,
+      239.5
+    ],
+    "bounds": [
+      24,
+      64,
+      456,
+      415
+    ],
+    "transparent_pixels": 166161
+  },
+  {
+    "file": "wristwatches_student_1206502.png",
+    "center": [
+      240.0,
+      240.0
+    ],
+    "bounds": [
+      31,
+      46,
+      449,
+      434
+    ],
+    "transparent_pixels": 135305
+  },
+  {
+    "file": "umbrellas_student_1206502.png",
+    "center": [
+      239.5,
+      240.0
+    ],
+    "bounds": [
+      24,
+      50,
+      455,
+      430
+    ],
+    "transparent_pixels": 163290
+  },
+  {
+    "file": "bags_child_1206501.png",
+    "center": [
+      240.0,
+      239.5
+    ],
+    "bounds": [
+      75,
+      25,
+      405,
+      454
+    ],
+    "transparent_pixels": 127733
+  },
+  {
+    "file": "bags_working_adult_1206501.png",
+    "center": [
+      240.0,
+      240.0
+    ],
+    "bounds": [
+      71,
+      25,
+      409,
+      455
+    ],
+    "transparent_pixels": 126229
+  },
+  {
+    "file": "bags_senior_1206501.png",
+    "center": [
+      240.0,
+      240.0
+    ],
+    "bounds": [
+      69,
+      24,
+      411,
+      456
+    ],
+    "transparent_pixels": 113248
+  },
+  {
+    "file": "shoes_child_1206501.png",
+    "center": [
+      240.0,
+      239.5
+    ],
+    "bounds": [
+      33,
+      65,
+      447,
+      414
+    ],
+    "transparent_pixels": 133064
+  },
+  {
+    "file": "shoes_working_adult_1206501.png",
+    "center": [
+      239.5,
+      239.5
+    ],
+    "bounds": [
+      36,
+      89,
+      443,
+      390
+    ],
+    "transparent_pixels": 147248
+  },
+  {
+    "file": "shoes_senior_1206501.png",
+    "center": [
+      239.5,
+      239.5
+    ],
+    "bounds": [
+      33,
+      82,
+      446,
+      397
+    ],
+    "transparent_pixels": 144036
+  }
+]

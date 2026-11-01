@@ -1,0 +1,48 @@
+{
+  "task": "AGE-DESIGN-002",
+  "config_sha256": "cd3567a79839f0fad710bd82f251f6d97ffc65674148f814246d739a34cbf4d1",
+  "distinct_age_subjects": 40,
+  "csharp_offline_compile": true,
+  "csharp_python_prompt_parity_combinations": 1440,
+  "rejection_paths": 6,
+  "python_tests": 8,
+  "unity_editor_compile_and_play": false,
+  "unity_connector_error": "Transport closed",
+  "actual_output_checks": [
+    {
+      "folder": "approved",
+      "seed": 1206502,
+      "actual_output_cases": 40,
+      "api_sha_matches_current": 40,
+      "framing_center_and_margin_pass": 40,
+      "median_seconds": 1.8795,
+      "max_seconds": 2.715,
+      "visual_review": "Both halves inspected. Seed 1206502 is the representative sheet; 1206501 retains clutter/cropping in some products. No per-cell seed selection."
+    },
+    {
+      "folder": "second_seed_final",
+      "seed": 1206501,
+      "actual_output_cases": 40,
+      "api_sha_matches_current": 40,
+      "framing_center_and_margin_pass": 40,
+      "median_seconds": 1.733,
+      "max_seconds": 2.4,
+      "visual_review": "Both halves inspected. Seed 1206502 is the representative sheet; 1206501 retains clutter/cropping in some products. No per-cell seed selection."
+    }
+  ],
+  "measured_devices": [
+    "cuda:0 NVIDIA GeForce RTX 5070 Ti Laptop GPU : cudaMallocAsync"
+  ],
+  "target_rtx3060_measured": false,
+  "preview_sha256": "131c9f10d034a7912948769df6c82e1f7ace1322b9668255cdb0f35aa75e66ad",
+  "preview_size": [
+    2248,
+    5330
+  ],
+  "known_visual_limits": [
+    "Some seeds create repeated objects or clipped garments, bands or wheels.",
+    "Selected colors are conveyed, not enforced pixel by pixel.",
+    "Student folding umbrella may render open."
+  ],
+  "framing_execution": "Exact production C# array helper in a separate Add-Type process with Color32 byte shim. Initial duplicate shim type error was fixed by using a fresh process. No Unity native API/JsonUtility/Play validation."
+}

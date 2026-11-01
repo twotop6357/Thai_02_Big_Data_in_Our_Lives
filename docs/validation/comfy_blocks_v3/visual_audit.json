@@ -1,0 +1,77 @@
+{
+  "products": {
+    "bags": {
+      "files": [
+        "bags_student_1206501.png",
+        "bags_student_1206502.png"
+      ],
+      "both_present": false
+    },
+    "shoes": {
+      "files": [
+        "shoes_student_1206501.png",
+        "shoes_student_1206502.png"
+      ],
+      "both_present": false
+    },
+    "hats": {
+      "files": [
+        "hats_student_1206501.png",
+        "hats_student_1206502.png"
+      ],
+      "both_present": false
+    },
+    "sunglasses": {
+      "files": [
+        "sunglasses_student_1206501.png",
+        "sunglasses_student_1206502.png"
+      ],
+      "both_present": false
+    },
+    "headphones": {
+      "files": [
+        "headphones_student_1206501.png",
+        "headphones_student_1206502.png"
+      ],
+      "both_present": true
+    },
+    "tops": {
+      "files": [
+        "tops_student_1206501.png",
+        "tops_student_1206502.png"
+      ],
+      "both_present": false
+    },
+    "bicycles": {
+      "files": [
+        "bicycles_student_1206501.png",
+        "bicycles_student_1206502.png"
+      ],
+      "both_present": false
+    },
+    "tumblers": {
+      "files": [
+        "tumblers_student_1206501.png",
+        "tumblers_student_1206502.png"
+      ],
+      "both_present": false
+    },
+    "wristwatches": {
+      "files": [
+        "wristwatches_student_1206501.png",
+        "wristwatches_student_1206502.png"
+      ],
+      "both_present": false
+    },
+    "umbrellas": {
+      "files": [
+        "umbrellas_student_1206501.png",
+        "umbrellas_student_1206502.png"
+      ],
+      "both_present": false
+    }
+  },
+  "ages": {},
+  "completed": false,
+  "technical_failures": []
+}

@@ -1,0 +1,33 @@
+{
+  "prompt_id": "d7eac5bf-7e29-4af8-9e53-b0b8f95310ec",
+  "selection": {
+    "group": "student",
+    "product": "bags",
+    "color1": "blue",
+    "color2": "white",
+    "primary_hex": "#5FB0E3",
+    "secondary_hex": "#FFFFFF",
+    "profile": "quality",
+    "seed": 986536,
+    "width": 480,
+    "height": 480,
+    "resolved_product": "bags",
+    "alpha": true,
+    "positive_prompt": "one stylish backpack, a single complete bag with a rounded body, front pocket, zipper and two attached shoulder straps, tasteful color-block panels, light sky blue fabric body, white straps and zipper trim, practical casual design with sporty details, masterpiece, best quality, (polished game item illustration:1.3), (one single product:1.2), no humans, object focus, isolated complete object, highly finished anime game prop illustration, refined crisp linework, rich layered painted shading, carefully rendered material textures, subtle natural reflections, soft specular highlights, clean volumetric form, deliberate edge control, collectible game inventory artwork, tasteful small details, product centered horizontally and vertically, balanced empty margins, one natural three-quarter camera angle, plain white background"
+  },
+  "seconds_request_to_png": 21.582,
+  "width": 480,
+  "height": 480,
+  "local_image": "gameart_bag.png",
+  "server_image": {
+    "filename": "product_00059_.png",
+    "subfolder": "Thai02",
+    "type": "output",
+    "metadata": {
+      "kind": "image",
+      "width": 480,
+      "height": 480
+    },
+    "id": "7ada7996-2857-4192-a8c3-bf9480afcc53"
+  }
+}

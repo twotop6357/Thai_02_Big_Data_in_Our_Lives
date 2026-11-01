@@ -2,6 +2,7 @@ using System;
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using Exhibition.Input;
+using Exhibition.UI;
 using MessagePipe;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -40,13 +41,21 @@ namespace Core
         private bool _inputReady;
         private bool _isGame;
         private Texture2D _resultTexture;
+        private LocalizedImageSet _localizedUI;
+        private UIPresentationTransitions _presentation;
+        public UIPresentationTransitions Presentation => _presentation ? _presentation :
+            (_presentation = GetComponent<UIPresentationTransitions>() ?? gameObject.AddComponent<UIPresentationTransitions>());
+        public bool IsPresentationLocked => _presentation && _presentation.IsInputLocked;
+
+        public event Action ShortButtonPressed;
+        public bool IsLanguageChanging { get; private set; }
+        public bool IsTitleScreen => _isIdle;
 
         public SessionLanguage CurrentLanguage => currentLanguage;
         public string LanguageCode => currentLanguage == SessionLanguage.Thai ? "th" : "en";
         public bool HasLanguageSelection { get; private set; }
         public bool IsTransitioning { get; private set; }
         public bool IsInputReady => _inputReady;
-        public double DoublePressIntervalSeconds => _gesture.DoublePressIntervalSeconds;
 
         /// <summary>Generated image owned by this manager until the session returns to Idle.</summary>
         public Texture2D ResultTexture => _resultTexture;
@@ -81,6 +90,7 @@ namespace Core
             SceneManager.activeSceneChanged += OnActiveSceneChanged;
             _isIdle = SceneManager.GetActiveScene().path == idleScenePath;
             _isGame = SceneManager.GetActiveScene().path == gameScenePath;
+            _localizedUI = FindFirstObjectByType<LocalizedImageSet>();
             ResetButtonInput();
         }
 
@@ -105,7 +115,7 @@ namespace Core
         {
             if (_isIdle || IsTransitioning) return;
             Debug.Log("[GameManager] Inactivity timeout. Returning to Idle.", this);
-            BeginTransition(idleScenePath, false, SessionLanguage.Thai);
+            BeginTransition(idleScenePath, false, currentLanguage);
         }
 
         protected override void OnDestroy()
@@ -118,52 +128,54 @@ namespace Core
         protected override void OnSettingsLoaded(Settings loadedSettings)
         {
             base.OnSettingsLoaded(loadedSettings);
-            LoadButtonSettingsAsync().Forget();
-        }
-
-        private async UniTask LoadButtonSettingsAsync()
-        {
-            try
-            {
-                // Provider supplies package settings first. Its concrete Settings type has no
-                // extension fields, so our fields are read once separately from the same file.
-                ButtonInputSettings inputSettings = await JsonLoader.LoadAsync<ButtonInputSettings>(
-                    "Settings.json", this.GetCancellationTokenOnDestroy());
-                if (!inputSettings.HasValidInterval)
-                    Debug.LogWarning("[GameManager] buttonDoublePressIntervalSeconds must be 0.1-2 seconds. Using 0.4.", this);
-                _gesture.DoublePressIntervalSeconds = inputSettings.HasValidInterval
-                    ? inputSettings.buttonDoublePressIntervalSeconds
-                    : ButtonInputSettings.DefaultDoublePressIntervalSeconds;
-                _gesture.Reset();
-                _inputReady = true;
-                Debug.Log($"[GameManager] Button input ready. Double-press interval: {_gesture.DoublePressIntervalSeconds} seconds.", this);
-            }
-            catch (OperationCanceledException) { }
+            _gesture.Reset();
+            _inputReady = true;
+            Debug.Log("[GameManager] Button input ready. Title language hold: 2 seconds; home hold: 5 seconds.", this);
         }
 
         private void Update()
         {
-            if (!_inputReady || IsTransitioning) return;
+            if (!_inputReady || IsTransitioning || IsPresentationLocked) return;
             ButtonGesture gesture = _gesture.Tick(_buttonPressed, _isIdle, Time.realtimeSinceStartupAsDouble);
             switch (gesture)
             {
-                case ButtonGesture.SelectThai:
-                    BeginTransition(gameScenePath, false, SessionLanguage.Thai);
+                case ButtonGesture.StartSession:
+                    if (!IsLanguageChanging && (!_localizedUI || _localizedUI.IsReady))
+                        BeginTransition(gameScenePath, false, currentLanguage);
                     break;
-                case ButtonGesture.SelectEnglish:
-                    BeginTransition(gameScenePath, false, SessionLanguage.English);
+                case ButtonGesture.ToggleLanguage:
+                    ToggleTitleLanguageAsync().Forget();
                     break;
                 case ButtonGesture.ReturnToIdle:
                     ReturnToIdleManually();
                     break;
                 case ButtonGesture.ShortPress:
-                    if (_isGame && _resultTexture)
-                    {
-                        Debug.Log("[GameManager] Button pressed with a generated image. Moving to Result.", this);
-                        BeginTransition(resultScenePath, false, currentLanguage);
-                    }
+                    if (ShortButtonPressed != null) ShortButtonPressed.Invoke();
+                    else TryOpenResult();
                     break;
             }
+        }
+
+        private async UniTask ToggleTitleLanguageAsync()
+        {
+            if (!_isIdle || IsTransitioning || IsLanguageChanging || !_localizedUI || !_localizedUI.IsReady) return;
+            IsLanguageChanging = true;
+            SessionLanguage next = currentLanguage == SessionLanguage.Thai ? SessionLanguage.English : SessionLanguage.Thai;
+            try
+            {
+                if (await _localizedUI.ApplyLanguageAsync(next, true))
+                {
+                    currentLanguage = next;
+                    Debug.Log("[GameManager] Title language changed to " + LanguageCode + ".", this);
+                }
+            }
+            finally { IsLanguageChanging = false; }
+        }
+
+        public void TryOpenResult()
+        {
+            if (_isGame && _resultTexture && !IsTransitioning)
+                BeginTransition(resultScenePath, false, currentLanguage);
         }
 
         /// <summary>Main-thread press/release state; future Arduino adapter uses this same API.</summary>
@@ -215,7 +227,7 @@ namespace Core
         {
             if (_isIdle || IsTransitioning) return;
             Debug.Log("[GameManager] Manual return to Idle requested.", this);
-            BeginTransition(idleScenePath, true, SessionLanguage.Thai);
+            BeginTransition(idleScenePath, true, currentLanguage);
         }
 
         private void BeginTransition(string scenePath, bool manualReturn, SessionLanguage language)
@@ -237,8 +249,11 @@ namespace Core
             bool returning = scenePath == idleScenePath;
             // Game -> Result keeps the same visitor session, language and generated image.
             bool continuing = scenePath == resultScenePath;
+            using var presentationLock = Presentation.LockInput();
+            bool presentationCompleted = false;
             try
             {
+                await Presentation.CoverAsync(this.GetCancellationTokenOnDestroy());
                 if (!continuing) EndSession();
                 if (returning)
                 {
@@ -271,6 +286,8 @@ namespace Core
                         : "[GameManager] Game started. Language: English (en).", this);
                 }
                 else Debug.Log("[GameManager] Returned to Idle. Session cleared.", this);
+                await Presentation.RevealReadySceneAsync(this.GetCancellationTokenOnDestroy());
+                presentationCompleted = true;
             }
             catch (OperationCanceledException) { Debug.Log($"[GameManager] Scene transition cancelled: {scenePath}", this); }
             catch (Exception exception)
@@ -286,6 +303,8 @@ namespace Core
             {
                 if (this)
                 {
+                    if (!presentationCompleted) Presentation.RestoreVisibleScene();
+                    Presentation.ClearBlackout();
                     _inactivityTimer?.Resume();
                     _gesture.Reset();
                     IsTransitioning = false;
@@ -297,6 +316,7 @@ namespace Core
         {
             _isIdle = next.path == idleScenePath;
             _isGame = next.path == gameScenePath;
+            _localizedUI = FindFirstObjectByType<LocalizedImageSet>();
             _gesture.Reset();
             if (_isIdle)
             {
@@ -309,7 +329,6 @@ namespace Core
 
         private void ClearSelection()
         {
-            currentLanguage = SessionLanguage.Thai;
             HasLanguageSelection = false;
         }
 

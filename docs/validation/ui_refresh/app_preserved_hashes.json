@@ -1,0 +1,930 @@
+[
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\App.meta",
+    "Hash": "9C996B2D6C9EE913EE5AF87C44B2FE9F817210F075AA16CA8C87321DD05BF1E6"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks.meta",
+    "Hash": "27431305C0C3B0B14F1179AFB9C32E51B20D77E1D4CD1B4F6AB0C047C667996D"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Core.meta",
+    "Hash": "743695BAE774782C50C4C0B0FBB9E01E235723B67BFED8E73C9C51D01CAAE266"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Input.meta",
+    "Hash": "CA6C80A17F2C855A4E43A41413E0F95A06BC248E2B7EFA260075A3E8299ACD3D"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Network.meta",
+    "Hash": "10347D9EEA3DB3203C4BBA6CA8BA049CC4C0BE86CBF5E54F52F12C969792B683"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Result.meta",
+    "Hash": "5BDC9C38A28EDE2E6F17575D8174AE711787BF67662AE28D3CDFE9B5C3D08459"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\ScriptableObjects.meta",
+    "Hash": "EAAC8BCB63D166FD438A062F6315610FA5C520F400FADBF9A3F69951B31A1EED"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI.meta",
+    "Hash": "A4F12C08C444DD90DE75638F33FB729C0559930349D3D776CCE1850B9B30FBB8"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\App\\EnglishDebugLogHandler.cs",
+    "Hash": "2C6377C1B724AF77EEFA09F5F70166267144ED4C0CE640B55C4E3CBE64C1DDEF"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\App\\EnglishDebugLogHandler.cs.meta",
+    "Hash": "11CA5BC0E4317277AE4AC18C6B7A6DA4E346C6ABEA0B0721CC6816EC4BC087AC"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\App\\GameLifetimeScope.cs",
+    "Hash": "A9CD60CB513BEC54C17F28DEEE2AB0A9BB25141D11097F27F684A49F84D7B151"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\App\\GameLifetimeScope.cs.meta",
+    "Hash": "52AE5E9467877E0AB17DDCE456789DBB003A4A37114FF29D95AF6784C261AB82"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\BlockArtworkCatalog.cs",
+    "Hash": "2376617DBF003B0D76C45D1F5FF72B031B37970E591701B9349806C2EEC26EB1"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\BlockArtworkCatalog.cs.meta",
+    "Hash": "53F19B7244168C0E1FE5F58024FB93161C2EA679CF18B90645C4BD000871DE4C"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\BlockExperienceController.cs",
+    "Hash": "38F924418225A42F60C9D79C9221C1CC5FA287D8F8ED5A643455CDF4100F8776"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\BlockExperienceController.cs.meta",
+    "Hash": "447CD4F3789E2C09DB9B21961886CE81EB9E58961AA559B2C5E447BB93F71B3B"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\BlockJournal.cs",
+    "Hash": "DF9EF10A56205B685D520CDF0EC482DA8C989726C5F55965CE6616F29AE9542B"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\BlockJournal.cs.meta",
+    "Hash": "DC067DBB7F733938D4D0659F927AEE11F7643F615B7F6C86F7C8C2D55C141BBA"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\Data.meta",
+    "Hash": "DB5BF75123E6D836977CB7FEF0470348D8CE6B839835B6F4F5812B83BB587C90"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\LocalBlockColoring.cs",
+    "Hash": "47A23BF59846DA6D437955E23AD1A3D732DCF0E56ACAB98F816BF21F2F5689C3"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\LocalBlockColoring.cs.meta",
+    "Hash": "BFCC78B930B8BD6578D6F0F6BCA104D8139E07036C057FD7AA3858113E68811A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\RfidReaderHub.cs",
+    "Hash": "54336018D331AAA9EBBA30AD17190B92EBF074306BE4B2ADE290335FF120DE83"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\RfidReaderHub.cs.meta",
+    "Hash": "EE3860BF963FF15787ED946F02128F9084EAFB06400A4C71858C2E46B8253A9A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\RfidSimulator.cs",
+    "Hash": "ACB0C0015D72A6B6420076543BFA7C8437687C07977B6EBBA7AA384A973B1E6D"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\RfidSimulator.cs.meta",
+    "Hash": "B718F616D7DA95F6BFA1B75DDA105F85178C225DD0F7C62FC4407E05607DFF17"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\Data\\BlockColoringCatalog.cs",
+    "Hash": "59E5023216462688773C0A394A925F456AE01D1E3FC72E4B663DC2B6FF27EFF0"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\Data\\BlockColoringCatalog.cs.meta",
+    "Hash": "03E41E82EC903219BC188D0808228D20DA207CAB82AB8107144385B49F625C67"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\Data\\BlockColorizer.cs",
+    "Hash": "BDBCBF4597E62906C8B54F5007D4B42F2EBFF0C5DC7E86F2D4887E0CA66D0A35"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\Data\\BlockColorizer.cs.meta",
+    "Hash": "7FB532466A9059C8410FEE45EB202C4E02F28704B4234F681FA1E2D8DA674C87"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\Data\\BlockSelection.cs",
+    "Hash": "A66905F1796E7E5782B28498989557D3AF7E82B5E0FD0BC7BFCF4562C5A9F5A5"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\Data\\BlockSelection.cs.meta",
+    "Hash": "B4628E15829E208CC61962F330DCE25DC50DC87660BADE18C1F85EBCC4A3EC0A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\Data\\BlockSettings.cs",
+    "Hash": "586A73D9FEFB332021BA6D3D47DBEA16F9485F17DE3687BEC162EF83CB681E7B"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\Data\\BlockSettings.cs.meta",
+    "Hash": "0090DAADF453B2E628E0AA6B29A6F66383884136F053527F6467B3946C23FE0D"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\Data\\Exhibition.Blocks.Data.asmdef",
+    "Hash": "AC686F7C8FBF8D0A37CD9ADEEAEF4A1798746E5DD6A697657841CADAF0798F2F"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\Data\\Exhibition.Blocks.Data.asmdef.meta",
+    "Hash": "EFAF472A63EC3D38E8CD0602A43DDC410DAA2E02247B142EB7E861B455EC576E"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\Data\\RfidReaderSelection.cs",
+    "Hash": "27957B1D58E9519F988A1C4D1869740282CD825629E6548DDA0FE6B80F192A1D"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\Data\\RfidReaderSelection.cs.meta",
+    "Hash": "7EA2F6A78F2D040B50557C763B61ABC0D201B2525A66FBBA34A16AFF73EDDAE9"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Core\\ButtonInputSettings.cs",
+    "Hash": "A44B5DA2599EE16671C7867415F89E75B6722928B72F10A10152AED4AF34CC01"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Core\\ButtonInputSettings.cs.meta",
+    "Hash": "2975F225F7301DB47B9B7A863DBCFFB8C4A6256AD430C05FC255CD186BDED973"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Core\\GameManager.cs",
+    "Hash": "A592E78EA23DE2EC55DE29F18F57FF561ED847C33D7E6DF612DA1BD56A20B4AE"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Core\\GameManager.cs.meta",
+    "Hash": "980904C4727F78F524A7DC1CA9F60FA3337DB54DE246C35566AEFF57C6B623A5"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Core\\KeyboardButtonSimulator.cs",
+    "Hash": "B2AB59F1BC48D368A3C670B91C13D30011B223A07C86DE6EDD0B1DD413751E32"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Core\\KeyboardButtonSimulator.cs.meta",
+    "Hash": "8AD4AD25D33E17520246206A79BE0FBB82A63D895ADAA6B6955645A18FAC4553"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Input\\Exhibition.Input.asmdef",
+    "Hash": "55DC74F4FF7CC02B21F8C12141145E6E7A557637CDF046EA592558FE5AA20A6D"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Input\\Exhibition.Input.asmdef.meta",
+    "Hash": "0833CEBFF5C34355004209518F35FF795EBDBC6449959C0A12F2EFC8929ECB79"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Input\\ExhibitionButtonGesture.cs",
+    "Hash": "0E8EB43A3A2916263ADC0E8FBB95283F625FD836E079CF4A4CE6E0333B75D0D8"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Input\\ExhibitionButtonGesture.cs.meta",
+    "Hash": "0ECC9D2FC11FBF69584DFC39A614AA33380112204563E43F2D68546FA0420316"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Network\\APIManager.cs",
+    "Hash": "4984A0329805CB80BC037DC969BFE592C8AA3BEC3D060510BB232B780E7ACFE4"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Network\\APIManager.cs.meta",
+    "Hash": "01A498832CD0DDDF1339D22E419CDD27A0E4EEB05819B3D0EC7A199BBE0F3C58"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Result\\ResultImagePresenter.cs",
+    "Hash": "C82DBF944781F3A155CD7D124528B264C2D2E6DEE667C23C2EC9CF64F4DF8DED"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Result\\ResultImagePresenter.cs.meta",
+    "Hash": "FEC5B8CF71D67EB6CD63741D389BDF03A3492B95806C5B56D77D41687B2ED2E0"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\ScriptableObjects\\GameSceneTitleTextSO.cs",
+    "Hash": "23405D41A0B94E5B5911E4E8A368F2865D4266985BCA13C43C7B1FB1E59ADFDA"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\ScriptableObjects\\GameSceneTitleTextSO.cs.meta",
+    "Hash": "C042CBBCAE0C490FB92C464A232556F3657041FC56F16DB899D21C60CEB11D15"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\AdProductHighlight.cs",
+    "Hash": "20EE984CBB8975067638D20C3F7B4ABE51DF103DB8AE6882192DB20A5EE902B3"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\AdProductHighlight.cs.meta",
+    "Hash": "AD095C13DCA85C10D1C7C6F213B874CBCEF5E5F1BAF55388BC171BD0689FC72C"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\BlockExperienceView.cs",
+    "Hash": "E057A795E32B1B21FB7928AB98A3FAC3698EAC5BED13F3702CB2F31854708D51"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\BlockExperienceView.cs.meta",
+    "Hash": "6C56E99D858BD56C443D71771B2827759F33B0780080DB1CCDFACD923C07D05C"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\ExhibitionUIAssets.cs",
+    "Hash": "FB23FD80A0CCD54EDF91AEEC8EE459F38FA75E91B7635403CDA2BE1E7F84FA73"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\ExhibitionUIAssets.cs.meta",
+    "Hash": "BCCA178B1A0A41C3D4C613179F64891B21570DC70A330F7142B76D2B6CF06F01"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\LocalizedImageSet.cs",
+    "Hash": "B4778709408088D78D308D48017D8BB6D2C16FD073B00E1392D5DD7BC2C79CC3"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\LocalizedImageSet.cs.meta",
+    "Hash": "4505A271AAD34A2600BB4DC36058F230CFD0D3C2AB716061069FF5B6AF5A2F30"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\ResultVideoController.cs",
+    "Hash": "F9963635D511DB06EDD34750CEF55AC4BB6D900EF07F926DE12F86CC6D32E7B9"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\ResultVideoController.cs.meta",
+    "Hash": "889C42862A6BFF42BD923A261B7972E964C27D2497B312D7550A7EA55AB17FB8"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\UIAnimatedElement.cs",
+    "Hash": "207206D9F430089EDF1022FB7A4CAF6BAE212C9374C863A056C6AB118A05FAE4"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\UIAnimatedElement.cs.meta",
+    "Hash": "203EEC4093945543AF9E4927FD2904709EB2EA127DE617A36A1BEC1724F9D834"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\UIBlockSlotTransfer.cs",
+    "Hash": "717EF2EB7DEF25FDEC1FB3CE28609C8491845A8760EFB68344227967C0726DCA"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\UIBlockSlotTransfer.cs.meta",
+    "Hash": "AFE593C844010078FD398DFC42752B173C2F51DC4EE918497D1201144076FDC2"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\UIMotion.cs",
+    "Hash": "014EA7A70CEC10C7DB409F70D16F1D3A0E071D79080591FBF557D43F2ACA25D5"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\UIMotion.cs.meta",
+    "Hash": "35C7BB3F8EEDCDD9B81C0DE989BB21BCC6ED2A2250401C7FF45365B77BAFE10A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\UIPopupPresentation.cs",
+    "Hash": "3F37913D924710C49D8B7ACC082EC09DEB348F608C41E7A034D84E16983D1763"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\UIPopupPresentation.cs.meta",
+    "Hash": "B992216AA1FC2DB5A89A8F650582C2CA0C75324DB07BBFBDDCE690514DD25934"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\UIPresentationTransitions.cs",
+    "Hash": "3B4D9652167819CE881C6F9981A26B38FA2AE7E3B6B94C73B6DAED031020E6E3"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\UIPresentationTransitions.cs.meta",
+    "Hash": "30ACC239BD543FAB1F2D014B31258DA026B9E453F7B74D23E92D7E1F60796414"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\UIScenePresentation.cs",
+    "Hash": "E91ABFCDBF838FB2EC4C8FB2852AFF98EBCCBBC669310B19F74A3B4974B563B4"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\UIScenePresentation.cs.meta",
+    "Hash": "D4E677DF55891A939CE424340DA4665EDACE555897C77D6C13C675B24BDC66B9"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Backgrounds.meta",
+    "Hash": "EE1F0CBBBDE3C54EC2FA662A3CCE3C2B3A345133F2CF1ABBD338EA595EFFE14B"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks.meta",
+    "Hash": "440CB789C24C9249189EA79D785ACEBFE3B8C3FF9929AC514789B97726B6AABD"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Effects.meta",
+    "Hash": "9DF3EE1FCE86BC2B960061164C98A8FAA7A6A289601D009ED7B13A3D0C2C8F2E"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\ExhibitionUIAssets.asset",
+    "Hash": "747255044FB72D960FB469E2440F74E4AB7A4DF27040CBB0D08AF263B8A7A0EC"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\ExhibitionUIAssets.asset.meta",
+    "Hash": "DE1B31D47F2531E19E1D599F90441B065D97B8560132A074B5A33C8C5E36C0EA"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Common.meta",
+    "Hash": "EF3104EAA358C5CB4A0BE1C28FEE730CEB63C1E722A5ACCC75FCE912BD3A8A8E"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En.meta",
+    "Hash": "E07770418BAFBF0AF235C46EF2834B77507FB82666E9B992593A85D23E265F02"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th.meta",
+    "Hash": "B60C8E9D7057C61FFE81AF4612FE39042E91405A651BD2A0E1AE2A970AE52310"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Backgrounds\\Intro_bg.png",
+    "Hash": "493F275E5FE818D4EFDB17BBDC81DD3A68073C193739F1634CBD3226479244F2"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Backgrounds\\Intro_bg.png.meta",
+    "Hash": "D0B48DE7D137699CD3D2ECDBF3624C8764641D46C3A0B53C4AB20E67F00F5B45"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Backgrounds\\RecommendedAdPanel_bg.png",
+    "Hash": "F57C84BA2642FDF7AB0EDE757BAEE49C82B31848E8941304347CA89A4127A530"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Backgrounds\\RecommendedAdPanel_bg.png.meta",
+    "Hash": "D3E576A0509E304563B6B6A09AB2149E5189A6C3FD99C70A7157EA0A8F17CCAD"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Backgrounds\\SelectAllPanel_bg.png",
+    "Hash": "B67A6287908B07231AD67281392F855FA086115C0831B268885D08573584DF84"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Backgrounds\\SelectAllPanel_bg.png.meta",
+    "Hash": "6036A67EB463B9604F6F9E62CBED21C6BFEA7C69624A5743F2312CBCEB32821A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Backgrounds\\SelectGroupPanel_bg.png",
+    "Hash": "44C3D728143A2201976A116FA85702930516D7C1C3B090B92B48F60D4E9F3485"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Backgrounds\\SelectGroupPanel_bg.png.meta",
+    "Hash": "364C6CBCD3CA2834A97E0C1B18744153A57D0A407A21E0B23FFF5C5873F94448"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\BagBlock.png",
+    "Hash": "C3159448F3368418E0B411D9C17B458025D8019A7519C8D7D678294F865B4680"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\BagBlock.png.meta",
+    "Hash": "64936BFD3775BACD70F3859338E13FA2A7FF44A7636F897276EC427785734C1C"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\BicycleBlock.png",
+    "Hash": "37AA89E4D8BC0669C9EA7813BE1D21F0AB951E080A03A23A5D6701C9CAF9C88E"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\BicycleBlock.png.meta",
+    "Hash": "86D1BCC81429B54543AB6D20F751C7AE2CE87D0CD454115CECC500FA04D69651"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\BlackBlock.png",
+    "Hash": "BDD446EAC9B0BA95579D34819E2800EACBE3E12D20579DADEA7E30C8976B55A5"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\BlackBlock.png.meta",
+    "Hash": "3992C50ED6B5127F4EDE0B5E59B6D30AC04538B9A26AE560A6301CF35B1145F4"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\BlueBlock.png",
+    "Hash": "64B6A78812F548C177911D5B0951E1993BC726EEB8BD59754F9BB5BAFDC406F1"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\BlueBlock.png.meta",
+    "Hash": "A03517FF39107C0987D09CBB038DAAF3BB988F0ECE05978C538403326EDD94BD"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\ChildBlock.png",
+    "Hash": "FCCE379552C99DE4F40A09D31BCC84813943E4E8A86E6C909234C4EA99CDC7F3"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\ChildBlock.png.meta",
+    "Hash": "B04FC7A984E6FE99D460B3BF731F925F666DAC5E62188F9FCD85D25E0CB824BA"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\GreenBlock.png",
+    "Hash": "408341BC190E7607A1892A4780A8F4143CD313A89438C00A6A60915630294EDB"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\GreenBlock.png.meta",
+    "Hash": "D9DE5F5FFF4D52152B476ECD768702D96935F6621A742D3FE4E911FAF45AA844"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\HatBlock.png",
+    "Hash": "29D9D4A1FE25B4352FCAA3CA73109A2A607AEA62B59ADBA5E2564BAAB9CD0EB5"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\HatBlock.png.meta",
+    "Hash": "1C79A2EC23EDAC97F4B69BFEEBA13FBD00BFD05BAC75D1CC00E968133FD7E772"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\HeadphonesBlock.png",
+    "Hash": "A785609C77665BA20450BAF33D436AFD85BA7B405F0C1B4073308CBB0AF0EEAB"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\HeadphonesBlock.png.meta",
+    "Hash": "6C97089DC87390086F6C1D781CEAEE34BE21360D8E50A5BC86DEC52FA21A91E1"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\RedBlock.png",
+    "Hash": "29452F076FC4F4520F0BF5ECFC7148C8EA61F84C5B321D87C3FBF9B696F51737"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\RedBlock.png.meta",
+    "Hash": "2F2A6642E3B57A3C896E95DF0141698AFC686E27C22DE41B702F9013803CAAB3"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\SeniorBlock.png",
+    "Hash": "339A20619C055D37B3588ACAD24717427BE3ECD4DA03C5810311BB6C49D433DA"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\SeniorBlock.png.meta",
+    "Hash": "D2FBAF3B0B38B6075A07B8B8212DCFCD27329FBD11024D70A17AA1AA326FE614"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\ShoesBlock.png",
+    "Hash": "1DA48F280AF26F8BB4446E79A4FF3797F3E12CE30C09B6FBF245205C6600C52F"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\ShoesBlock.png.meta",
+    "Hash": "0AF245EF8E41C0EC82C8DE615F638518D144BBAAD7A1DCCB5F8BEDC28AFF5692"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\StudentBlock.png",
+    "Hash": "120422586F73039AEA603127BE217CF346FC74993FC6E7EF5EC465C4B7EE493E"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\StudentBlock.png.meta",
+    "Hash": "5353F0BC00F63D2C686C76BE9362A5708F8B1EAB3DD2E3414CF2780EE800AD97"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\SunglassesBlock.png",
+    "Hash": "0F85C8D3EE34ADAB0395DA33117221A086CBD79FE6928E34B0081E4748499171"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\SunglassesBlock.png.meta",
+    "Hash": "9714B97DB043C073102FD37A3BB19EF467C4AA1751C5E7D0ACCEB76956867D02"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\TopBlock.png",
+    "Hash": "9EBDD74D413A72765077EA8418409B4FFCC42ED94D8371315661F904DD477F3E"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\TopBlock.png.meta",
+    "Hash": "D78D5E8ADD95DB5F2B4D1A2BEAE8D12C5160B67AD28FEF507207C9D4994CD767"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\TumblerBlock.png",
+    "Hash": "59A496656C2C7685F12AE851F12F3B56F644C267EDFF085D19F250FC082A8C72"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\TumblerBlock.png.meta",
+    "Hash": "EC611B5FFEFACA2EE9F581BE6DA2010C0C799F5230F0224B6A6B5F1C6B09216D"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\UmbrellaBlock.png",
+    "Hash": "35C2C260C1F615DD096B93B92CE6DBA0EB029F88EDB32073EFF6F9F09D05FE4A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\UmbrellaBlock.png.meta",
+    "Hash": "7A980E48C1EE66DE7A848F79FA839A4D3BBFC302E9DA1DD975B8D0453EBCD172"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\WhiteBlock.png",
+    "Hash": "ECBF94110C985986AA06D5A44570FADEE5E7EE291B753C2C8CDA49DE1598BCB2"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\WhiteBlock.png.meta",
+    "Hash": "FA1639B2E0DD7C35182086F37E3008D6391F2A469B2BD3DD2D650EBF699C66D4"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\WorkingAdultBlock.png",
+    "Hash": "54ED34290EDE8795AF01BC2EC179BECEE360148398CF3C7E99412AC50C6B3267"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\WorkingAdultBlock.png.meta",
+    "Hash": "1A8D6F8D65E08AD0949ED00435E9B1B10AF45A8635651DE8A11F5347FC1A98C3"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\WristWatchBlock.png",
+    "Hash": "D583E4A0D09634569165AA79039717D3DDAF88F250B539A3F8625BF094680FB3"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\WristWatchBlock.png.meta",
+    "Hash": "7FF2F2697E1C128827D77BB5459132AC1E7247EE9CC40FB98FA8843796174E50"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\YellowBlock.png",
+    "Hash": "14CE2643DB995A0C30B1A0F16ABB9FB8840E09B570A89FF0E1F7C8E5B529C09A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Blocks\\YellowBlock.png.meta",
+    "Hash": "897DEA953987BF24EADE5F47A99BC88D1B41F749C465776CA241D1B6E48E4259"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Effects\\AdConfettiFullscreen.prefab",
+    "Hash": "26B703692286D50E46264359AC1667C8E613DA9D8454E430315EFAD5687BC746"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Effects\\AdConfettiFullscreen.prefab.meta",
+    "Hash": "C3D2FAD47D1C949311D50B8748A6FDE5EA4C769A5850DC5C5F1161291B99CB7F"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Effects\\AdItemEmphasis.prefab",
+    "Hash": "307801513812E2D280DD3E6E8278F21FD9517C750C095F529DECA1BA6D3A830C"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Effects\\AdItemEmphasis.prefab.meta",
+    "Hash": "0C2E39C347AB98B8C4DAFC777901D8295AE37B1B20BAFC476D80F6307F3FEF8D"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Common\\RecommendedAdPanel.meta",
+    "Hash": "5E8936793E9E31E872A73BA950DE8F274EA72819CBE456CCC44E28D8F85D4249"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Common\\SelectAllPanel.meta",
+    "Hash": "B5C319E4497F473EC9BA5E7A922F7A5674146EAD56BC2402610CF836CEDA5DD9"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Common\\SelectGroupPanel.meta",
+    "Hash": "7CC6B9B45F1D3565A570A2243554857DFC9B1D7F2DA1DBB12900CDEA095CC262"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Common\\VideoPanel.meta",
+    "Hash": "A2B4B8A37800CCED8173E4DC43640707B7E067CE7DD4136719BC304A89DD902A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Common\\RecommendedAdPanel\\AdBoard.png",
+    "Hash": "99AB2F9140349813A05F2ACA3259CA1AEFD785990872C6C9F7861C3CB9A4597A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Common\\RecommendedAdPanel\\AdBoard.png.meta",
+    "Hash": "588658AA3D7845DE2B2E394AED1B5FD9A831B9913ACC27D527736542BD3C60DD"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Common\\SelectAllPanel\\CenterBoard_selectallPanel.png",
+    "Hash": "2DDEAE53434362EEC0F2A0F079B51ED4A6AC213A22290E5AA8149B5BF16DE8F4"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Common\\SelectAllPanel\\CenterBoard_selectallPanel.png.meta",
+    "Hash": "1C51A9CE9FAECAC8DE3BD79025AC035D84B1DCE41ED23FD0D2BA9EC3A77717BF"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Common\\SelectGroupPanel\\BlockImage.meta",
+    "Hash": "D36707E21B19A74F39B8CD466EC9B19CC7D9F8243E35F9616A484DAF75B1F308"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Common\\SelectGroupPanel\\BoardImage.png",
+    "Hash": "C814C0084AFAE6B292676587D8B3426DC4373796BCAD875737521D27C7600C58"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Common\\SelectGroupPanel\\BoardImage.png.meta",
+    "Hash": "840CBDFDD580DE07A38CC0758D5EAF9A5DE5F0AB7E427CCE012B6298F40D2F52"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Common\\SelectGroupPanel\\FrameImage.png",
+    "Hash": "B88BD2E00DCCCCFC2A369EDCC6EB646E09A4F22A2D0536BDB2B2725B6658905A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Common\\SelectGroupPanel\\FrameImage.png.meta",
+    "Hash": "56F2E003CE6F2F98546BA451C7839A4834C83018D2B5D241631930C19CABC2AD"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Common\\SelectGroupPanel\\BlockImage\\Child_BlockImage.png",
+    "Hash": "FCCE379552C99DE4F40A09D31BCC84813943E4E8A86E6C909234C4EA99CDC7F3"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Common\\SelectGroupPanel\\BlockImage\\Child_BlockImage.png.meta",
+    "Hash": "46F30676D881C9CA582B3B85950D13113A7C794C88F8C565B38438AC698D854A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Common\\SelectGroupPanel\\BlockImage\\Senior_BlockImage.png",
+    "Hash": "339A20619C055D37B3588ACAD24717427BE3ECD4DA03C5810311BB6C49D433DA"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Common\\SelectGroupPanel\\BlockImage\\Senior_BlockImage.png.meta",
+    "Hash": "18AC2A388A6E6D98806A79C6DF35DC420759C3918BCC277EA7A1787CFC24981B"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Common\\SelectGroupPanel\\BlockImage\\Student_BlockImage.png",
+    "Hash": "120422586F73039AEA603127BE217CF346FC74993FC6E7EF5EC465C4B7EE493E"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Common\\SelectGroupPanel\\BlockImage\\Student_BlockImage.png.meta",
+    "Hash": "CE500A34A05DE42F5E8D4E86B3ACFF57E3B23B66560C5806095331B961B1584F"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Common\\SelectGroupPanel\\BlockImage\\WorkingAdult_BlockImage.png",
+    "Hash": "54ED34290EDE8795AF01BC2EC179BECEE360148398CF3C7E99412AC50C6B3267"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Common\\SelectGroupPanel\\BlockImage\\WorkingAdult_BlockImage.png.meta",
+    "Hash": "0B08D6694F07C3FFF5939C1EA00356602E2D7AF6076B35EBF27A86F3C19B3799"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Common\\VideoPanel\\VideoEndPopup.png",
+    "Hash": "E7EAE3220313F8D88EFB0926FCE5A5BAC6F9195901ECDF75A639F679892B2038"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Common\\VideoPanel\\VideoEndPopup.png.meta",
+    "Hash": "24C8ADE3F4B5786E94490218DD517E9F13BA85E04FA69514FAC99B17A854D78E"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\GroupSelect.meta",
+    "Hash": "9A4C557D4BF1DB253794BD03650AE8D5653CC27669127C54E9228345B2AC2CF1"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\Idle.meta",
+    "Hash": "14DFDC3ABCF62746D3C31117E5C944540FAA25F8F5F5E18BFC14B722D5A4096F"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\RecommendedAd.meta",
+    "Hash": "56CB4C32CCBD7AE074FF0A5F5A1BE2D7159A1ACD4988640A34A37594FC9ECB4C"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\SelectAll.meta",
+    "Hash": "84A708D3EC8617E0D76131CBCD9B1DB940507DEE1DEB0FCA1E20B10E2AC24AAF"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\Video.meta",
+    "Hash": "F7FB1845D0C9DEFBEE87DC11394816D75EFC5F8DF69D6DC1CA14C676C43C7683"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\GroupSelect\\ButtonHelpBox_groupselectPanel_en.png",
+    "Hash": "23CB90AE551B800CA54837F944BA569C828282176352AC287EAED7414EB426D9"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\GroupSelect\\ButtonHelpBox_groupselectPanel_en.png.meta",
+    "Hash": "5691882A4D74B219AC3CC97129EC49121A481AE712EFD96804175C1554768650"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\GroupSelect\\Subtitle_groupselectPanel_en.png",
+    "Hash": "F0B01F9AAC796359995903B1805E74FE955A71A8B8F92E6BECA27A3DA8193C61"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\GroupSelect\\Subtitle_groupselectPanel_en.png.meta",
+    "Hash": "419489BC8766FEC55C922A6EEE3CFA37CE854BCD83360033A7845AC2D7D9DDB1"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\GroupSelect\\Title_groupselectPanel_en.png",
+    "Hash": "BEB11A62DFA0137E136341E6FBB3DF40E978D1C4E203F8EAF4AEB0C3ACC42EAC"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\GroupSelect\\Title_groupselectPanel_en.png.meta",
+    "Hash": "6D4298DBAC98E2A75C6A6738FE6329F18087B73D7FC78875ECE97E20A53F3639"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\Idle\\ButtonHelpBox_en.png",
+    "Hash": "443C1017E658C50D3C05A8F38A7973B65AE241C4F8F5F5AAFAEB028B83A7F5DE"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\Idle\\ButtonHelpBox_en.png.meta",
+    "Hash": "500E858A76BACD827D68647A7357648142B43DBEE3DEE35D502A512BA13275DD"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\Idle\\Subtitle_en.png",
+    "Hash": "B6245DF350299B73A0C517CFDA5B815347FC8ACA18A8E0F712557CAF143F193E"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\Idle\\Subtitle_en.png.meta",
+    "Hash": "61F6C200B95770AB6FF567A018FD150142F10C6451AD22347B287A758392D4F5"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\Idle\\Title_en.png",
+    "Hash": "8AFE9FA21C9C826A23CD74C7E06C485089DAA28D0053AC5238AEB4349CC41574"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\Idle\\Title_en.png.meta",
+    "Hash": "411423BFB225B7E44298D91433F9B4A61838803DA760DBC49D085CE8E53FDC7B"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\RecommendedAd\\ButtonHelpBox_RecommendedAd_en.png",
+    "Hash": "0E701B0BB25CE76135729B49B8F75E40E410139DE5468B701EC31161D68090B0"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\RecommendedAd\\ButtonHelpBox_RecommendedAd_en.png.meta",
+    "Hash": "4E5B2C9BA883B3CE246C2FB078301BB831D20A8A230B0DEFC452181CBA5F7B61"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\RecommendedAd\\Subtitle_RecommendedAd_en.png",
+    "Hash": "BE22FD354ED7BC55DF5181A73726C00FBC55FED63876C29814A238925C1B3AAD"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\RecommendedAd\\Subtitle_RecommendedAd_en.png.meta",
+    "Hash": "777AA1B6A15D2388849903AB0C8E2B40B12EAB376A2C38A335AAA509C30367E0"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\RecommendedAd\\Title_RecommendedAd_en.png",
+    "Hash": "EDDE7DD5C948B03C288FE835582BDE0F042E4B8EAC705CC0DD8C4E06CFC143BB"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\RecommendedAd\\Title_RecommendedAd_en.png.meta",
+    "Hash": "8F6AFDD03AAEE7EAC06896A351D017CEF9F941871532AE7678AB293B5DF26BF2"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\SelectAll\\ButtonHelpBox_selectallPanel_en.png",
+    "Hash": "23CB90AE551B800CA54837F944BA569C828282176352AC287EAED7414EB426D9"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\SelectAll\\ButtonHelpBox_selectallPanel_en.png.meta",
+    "Hash": "A6F7F00A8433E282C0A2CD188E9507D4C87F1330664D6F52EB3BB921E735AB7B"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\SelectAll\\RecommendedProductImageBoard_en.png",
+    "Hash": "61B055FF5837D9E85489E8F797954AF55FEA35CA6C36ED0EEAC75050F397417C"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\SelectAll\\RecommendedProductImageBoard_en.png.meta",
+    "Hash": "8F6E7D2C4CEAF31C745CF80FF7FBC979A246115CF51510C0384697CA0EB6AC78"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\SelectAll\\Subtitle_selectallPanel_en.png",
+    "Hash": "D58EAAC1FB013FB6E9669A354E90EC7098DAD1096A7A943710C332F248A77269"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\SelectAll\\Subtitle_selectallPanel_en.png.meta",
+    "Hash": "8EAC839AB55A3F666136B88EDA6E78F858FFABB19B760D7C5D4988830D8F6695"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\SelectAll\\Title_selectallPanel_en.png",
+    "Hash": "08800E3F2318FFEACA4D0964A48E5EEAE65487561B41E7973F3AD685E36092E9"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\SelectAll\\Title_selectallPanel_en.png.meta",
+    "Hash": "A8F15471C94298776C59F5AADC984C8203181B0C1937FEC3B9DADACBA2A5161E"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\Video\\VideoEndPopupText_en.png",
+    "Hash": "FF597F656668E9A170B5AE7F97A2C4C81087983BB9986818D01298B4517C832A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\Video\\VideoEndPopupText_en.png.meta",
+    "Hash": "760529787E3A8741DAF5D97D344C0FFC0257A8B89CAD5E81C74F76C9EACE9689"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\GroupSelect.meta",
+    "Hash": "A5D0AF6167A0FCCEFD20300B3C26BC85E5675D6088B7C9FA78887B71F2A66535"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\Idle.meta",
+    "Hash": "E5A9F83045CF16F1F7B27D8B7DEF45B0C49EBAB2231E1E4C226ACA6578043727"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\RecommendedAd.meta",
+    "Hash": "7182E635DD446A11D829BDB78AC1C32FDB098A5D624A7A2D0FFBC841985827D4"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\SelectAll.meta",
+    "Hash": "D092ADCEF0E9B9F75CC2BA7A7D58441B9A5C1AF159F74619664CA508F85F3382"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\Video.meta",
+    "Hash": "54740FF43E04932374F3150CA308BE0F9D82320F0532AEE714D5B87F148E1E8B"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\GroupSelect\\ButtonHelpBox_groupselect_th.png",
+    "Hash": "3A7154AFD30D35B87C3107FD6E277920D3528FEA925D7846F2DF759C1F0AF26C"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\GroupSelect\\ButtonHelpBox_groupselect_th.png.meta",
+    "Hash": "B2A7F82E0B3CF20FFE11B055E7ABC37A9198226BB7C1193FFE84D45BF72AE482"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\GroupSelect\\Subtitle_groupselect_th.png",
+    "Hash": "ACEEF06483DE388905693E11B22F68D80067E8C599CF74B1CB7D549D3138A3FE"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\GroupSelect\\Subtitle_groupselect_th.png.meta",
+    "Hash": "1A8F04956D39CC054B6933DC229CCAB7292436FE33A2B35CA05582C14D83EB5F"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\GroupSelect\\Title_groupselect_th.png",
+    "Hash": "16C408593711AE7E8761E4D8DB6CE34A7D96C28F29E6C13400C591AA3B5558F9"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\GroupSelect\\Title_groupselect_th.png.meta",
+    "Hash": "4CF42B68DB9D438C50438F6EA7F17F5F10A79A31E4E8CC469E0694B160F20577"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\Idle\\ButtonHelpBox_th.png",
+    "Hash": "B29555D16C159B602BF82A5F70AEF261096AD31345A0C1B4E3498687EFF6D337"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\Idle\\ButtonHelpBox_th.png.meta",
+    "Hash": "1FFBB43F9DE71DD71C6C0DEF2B509B4B39E57EABA7CE1B7BB4224DF6E784C5B7"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\Idle\\Subtitle_th.png",
+    "Hash": "CFD0FE005CA1C61A437CD2622C7153CA16EF94DC905946BD7802BFDB3F427B16"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\Idle\\Subtitle_th.png.meta",
+    "Hash": "2789327654C47232C7581AB647121A02A1262F95125EAB25726C2D5C64960205"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\Idle\\Title_th.png",
+    "Hash": "A2444BCCC1B30967F1EBB0EBF28A81A280367231EF712E5282647E4FE63610D9"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\Idle\\Title_th.png.meta",
+    "Hash": "10EB87A42B94340BD3019A416C813FF67D739DA4C1D9ECD5110C0A89AC68867F"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\RecommendedAd\\ButtonHelpBox_recommendedAd_th.png",
+    "Hash": "3A78D86C3F34D8B5FCDA2339A793A4173457271E61F9E05BA60C110FD32B6AD3"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\RecommendedAd\\ButtonHelpBox_recommendedAd_th.png.meta",
+    "Hash": "53B66EF937ADA80F7A9767239997D7E1BE3728F18B42AD8DF8A129AFCEDAC8D6"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\RecommendedAd\\Subtitle_recommendedAd_th.png",
+    "Hash": "DE130488DF2ED4D606C1BEEAE2F2E6150F714EBFC07C0C90A6D2024837ED8996"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\RecommendedAd\\Subtitle_recommendedAd_th.png.meta",
+    "Hash": "7AEAD108D5819B78FB2373EBAAEB97AE81F7BEA63174B56FB63F3C00E2E4DFFD"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\RecommendedAd\\Title_recommendedAd_th.png",
+    "Hash": "F646C030FC2EB975090DC9DD0419F72C478484F48DE9E084DF8B278ADCA95A77"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\RecommendedAd\\Title_recommendedAd_th.png.meta",
+    "Hash": "AA027FFCF0B646964A1219F8D99BAA545527A1FA0263B54A3366F4BF69505E6D"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\SelectAll\\ButtonHelpBox_selectall_th.png",
+    "Hash": "A147C869F28891751DDA956D307AD776D69FF6740663315ECA544F1F1CF1E467"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\SelectAll\\ButtonHelpBox_selectall_th.png.meta",
+    "Hash": "D4C17E31A01534E1D97114575C327E6D54AF84DF619E4433E80F27D00CADCA8E"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\SelectAll\\RecommendedProductImageBox_selectall_th.png",
+    "Hash": "0A35A9BE509A19BBA7C43C54CEA90D78F1AB6B3396DA7395451AFA3F461FC16F"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\SelectAll\\RecommendedProductImageBox_selectall_th.png.meta",
+    "Hash": "A3F0CBE00CCA34009E368C4E9968D8D06F9649D4B86852C9DDFAABEEE8EBAA64"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\SelectAll\\Subtitle_selectall_th.png",
+    "Hash": "66D3549A607682EDF85421FA80244AA14AC5565E11285986A7255601E61AC4FD"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\SelectAll\\Subtitle_selectall_th.png.meta",
+    "Hash": "4DBBD80D759A6C23B7FC8F33AF350B733B61DAFE0C046FF7C8EFC2B2E7DE2931"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\SelectAll\\Title_selectall_th.png",
+    "Hash": "588FB97908B4B4FAA40D979E85F678EAB4200D006838774D432DCA4F77984D84"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\SelectAll\\Title_selectall_th.png.meta",
+    "Hash": "64ABD917E8B21CFFBD7C1919067C6A10CE3C113FFACB69E8A0C639DEC14084C5"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\Video\\VideoEndPopupText_th.png",
+    "Hash": "235F98492465CB824CA765875DD3869F222ACBA5065E08838962C790C30F52A5"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\Video\\VideoEndPopupText_th.png.meta",
+    "Hash": "48819741A7E8CC134DA4B298AFB4048AE942F381C7D3BF7D89ACD23DCE42071F"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scenes\\0_Idle.unity",
+    "Hash": "D4245134FBE112D8C39F67897879BAB9E7EA506B09C383B1B8D313CC21636CB0"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scenes\\0_Idle.unity.meta",
+    "Hash": "B5815A6B12AFAF810577BC89041C4CE46516C7CD6609693F8DB616F8E5584D80"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scenes\\1_Game.unity",
+    "Hash": "945FF9BFC847690D346E3CDCA7A2987257C5EC1908134AA72BFF6467A1934FC3"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scenes\\1_Game.unity.meta",
+    "Hash": "5D614EBA14F5C398E135ED6F2EBAD6051B0B69CDB8B9D8AB5C917260C00F96FE"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scenes\\2_Result.unity",
+    "Hash": "0741B5900C6DA6E47756CD2BC7DA87937F96EF41EC5DBCAB88597259418C967A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scenes\\2_Result.unity.meta",
+    "Hash": "0EC376653592D6053D5C3293F5FCC62D476B1F9E9BA73582CD102C30959BAAEB"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\Lang_En.json",
+    "Hash": "1E9B0AD01E2886D6F05D2F43F89EB29540AA936000C268495EDDC39F282004C4"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\Lang_Th.json",
+    "Hash": "7802955C1B5A8CAC1938B6BDDF755507F8B32BFC804BBA80549EBA6B33334843"
+  }
+]

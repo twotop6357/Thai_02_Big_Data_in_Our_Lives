@@ -1,0 +1,16 @@
+{
+  "name": "Counterfeit V3.0 fp16",
+  "filename": "Counterfeit-V3.0_fix_fp16.safetensors",
+  "repository": "gsdf/Counterfeit-V3.0",
+  "revision": "d8ce63b3eb8e9102e54b3fcc07f9cb7a28ef30fc",
+  "url": "https://huggingface.co/gsdf/Counterfeit-V3.0/resolve/d8ce63b3eb8e9102e54b3fcc07f9cb7a28ef30fc/Counterfeit-V3.0_fix_fp16.safetensors",
+  "bytes": 2132651162,
+  "sha256": "a54c944e4c04e9d9ca43468ef5b90ea0408bb6264829a4980de79a768df7179f",
+  "model_card": "https://huggingface.co/gsdf/Counterfeit-V3.0",
+  "license_note": "CreativeML Open RAIL-M; preserve the model license and notices.",
+  "steps": 4,
+  "cfg": 6.0,
+  "sampler": "euler_ancestral",
+  "scheduler": "normal",
+  "denoise": 0.3
+}

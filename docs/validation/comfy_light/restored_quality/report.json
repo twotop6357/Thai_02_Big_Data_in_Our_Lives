@@ -1,0 +1,73 @@
+{
+  "task": "COMFY-LIGHT-001 quality fallback",
+  "results": [
+    {
+      "prompt_id": "d6b3930d-7824-4f9c-ba51-6f6d67f13789",
+      "selection": {
+        "group": "student",
+        "product": "shoes",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 996531,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "(sneaker:1.5), one low-top sneaker in a natural upright three-quarter view, softly rounded toe, simple curved upper panels, white base panels, neat simple laces and smooth white midsole, soft coral red upper body panels, light sky blue accent trim and laces, practical casual design with sporty details, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, delicate even lavender contour lines, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+      },
+      "seconds_request_to_png": 33.235,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_996531.png",
+      "server_image": {
+        "filename": "product_00355_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "3a611273-da4e-4ca2-9ca6-8ff603c0e34a"
+      }
+    },
+    {
+      "prompt_id": "be17ed8e-543c-40b4-8e5d-072be45b83e3",
+      "selection": {
+        "group": "student",
+        "product": "shoes",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 996532,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "(sneaker:1.5), one low-top sneaker in a natural upright three-quarter view, softly rounded toe, simple curved upper panels, white base panels, neat simple laces and smooth white midsole, soft coral red upper body panels, light sky blue accent trim and laces, practical casual design with sporty details, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, delicate even lavender contour lines, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+      },
+      "seconds_request_to_png": 25.299,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_996532.png",
+      "server_image": {
+        "filename": "product_00356_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "8a65057f-27aa-4c8d-b471-5e6445205dd5"
+      }
+    }
+  ],
+  "completed": true,
+  "quality_target": "user reference style; latency goal NOT met"
+}

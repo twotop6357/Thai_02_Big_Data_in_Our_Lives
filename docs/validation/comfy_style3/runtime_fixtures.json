@@ -1,0 +1,17 @@
+{
+  "task": "STYLE-QUALITY-003 fixture lifecycle",
+  "checks": [
+    "Generation locks input and pauses inactivity",
+    "Direct Continue and taps cannot navigate during generation",
+    "Clipped source is rejected without displaying a centered broken product",
+    "Quality rejection releases input and resumes inactivity",
+    "Fresh tap retries successfully after quality rejection",
+    "A new generation clears the previous image and keeps input locked",
+    "Explicit cancellation restores input and inactivity",
+    "Deadline cancels stalled generation without a late image",
+    "Submission failure leaves a retryable panel with no stale image",
+    "Home cancels the pending session and restores all lifetimes"
+  ],
+  "rejectionStatus": "Image generation failed. Press the button to retry or change blocks. Generated product touches the source image edge; cropped artwork was rejected.",
+  "passed": true
+}

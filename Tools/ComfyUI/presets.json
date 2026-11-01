@@ -2,22 +2,22 @@
   "catalog": "../../Assets/StreamingAssets/BlockGeneration/BlockCatalog.json",
   "profiles": {
     "quality": {
-      "steps": 28,
-      "cfg": 5.0,
-      "sampler": "euler_ancestral",
-      "scheduler": "normal"
+      "steps": 4,
+      "cfg": 1,
+      "sampler": "euler",
+      "scheduler": "Flux2Scheduler"
     },
     "balanced": {
-      "steps": 24,
-      "cfg": 5.0,
-      "sampler": "euler_ancestral",
-      "scheduler": "normal"
+      "steps": 4,
+      "cfg": 1,
+      "sampler": "euler",
+      "scheduler": "Flux2Scheduler"
     },
     "fast": {
-      "steps": 20,
-      "cfg": 5.0,
-      "sampler": "euler_ancestral",
-      "scheduler": "normal"
+      "steps": 4,
+      "cfg": 1,
+      "sampler": "euler",
+      "scheduler": "Flux2Scheduler"
     }
   }
 }

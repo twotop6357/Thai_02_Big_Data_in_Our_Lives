@@ -1,0 +1,2887 @@
+{
+  "task": "STYLE-QUALITY-003",
+  "config_sha256": "c25f6b8decde9d160fe51b3c839e3f4c26a03b8443c1a6c2e95773532839acf8",
+  "results": [
+    {
+      "prompt_id": "f7c9d7e7-89cb-4e69-b9db-f858a40cd779",
+      "selection": {
+        "group": "child",
+        "product": "bags",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211201,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "one small bear-shaped kindergarten backpack with rounded bear ears and a front pocket. Main color #EC6868 (soft red) on backpack body. Accent color #5FB0E3 (light blue) on bear ears and front pocket. playful rounded design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.621,
+      "width": 480,
+      "height": 480,
+      "local_image": "bags_child_red_blue_1211201.png",
+      "server_image": {
+        "filename": "product_00773_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "b8ed1cc0-87fe-40a4-b906-4e822f130f21"
+      },
+      "pass_id": 0,
+      "png_sha256": "4b147ef8c8b5a620bbac86ecef4d325590a10cd79b10ea758cdbab05f216fa51",
+      "api_sha256": "a71beeb7abd83e7e9f6b93b54a76e3e6690b1708b05faf51ced312b424e04b72"
+    },
+    {
+      "prompt_id": "e375d370-46f4-44bc-a4b2-078a7255ce8d",
+      "selection": {
+        "group": "child",
+        "product": "shoes",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211202,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "one small child's rain boot with a short shaft and rounded toe, natural three-quarter view. Main color #EC6868 (soft red) on boot upper. Accent color #5FB0E3 (light blue) on sole and cuff. playful rounded design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.294,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_child_red_blue_1211202.png",
+      "server_image": {
+        "filename": "product_00774_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "b4650f8d-77df-4f94-bb1f-584fea980317"
+      },
+      "pass_id": 0,
+      "png_sha256": "400a95bdb5a8466558fea099859fc630212106090d6d81ea723a5f60dd39aee0",
+      "api_sha256": "a96c3a7bb3febea16942da3fa3074dfb0442cf296782d6269d6476cd1d893dce"
+    },
+    {
+      "prompt_id": "fa4d27c8-8ef4-4a19-b3ea-985f5e452986",
+      "selection": {
+        "group": "child",
+        "product": "hats",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211203,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "hats",
+        "alpha": true,
+        "positive_prompt": "one kindergarten sun hat with a rounded crown, wide brim and chin strap. Main color #EC6868 (soft red) on crown. Accent color #5FB0E3 (light blue) on brim and chin strap. playful rounded design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.277,
+      "width": 480,
+      "height": 480,
+      "local_image": "hats_child_red_blue_1211203.png",
+      "server_image": {
+        "filename": "product_00775_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "07469055-690a-42fb-9250-9ebe6719c8b7"
+      },
+      "pass_id": 0,
+      "png_sha256": "47ca48ad8ab2db8f9dfe3ca2ec3d53a13c1e790046d6d29b864ac2f54a23f2b9",
+      "api_sha256": "ff02548b82fd80441e1b931c76b9ef8167e2397277ca84c47a9b01e22502be68"
+    },
+    {
+      "prompt_id": "e2f768d3-fa05-4801-a6d5-4969f7c5449b",
+      "selection": {
+        "group": "child",
+        "product": "sunglasses",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211204,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "sunglasses",
+        "alpha": true,
+        "positive_prompt": "heart-shaped sunglasses, one pair of heart-shaped frames. Main color #EC6868 (soft red) on heart-shaped frame. Accent color #5FB0E3 (light blue) on solid tinted lenses. playful rounded design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.649,
+      "width": 480,
+      "height": 480,
+      "local_image": "sunglasses_child_red_blue_1211204.png",
+      "server_image": {
+        "filename": "product_00776_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "eabf5e11-36bf-40bf-9c43-c3402d5e1071"
+      },
+      "pass_id": 0,
+      "png_sha256": "e8602332b3f4649ebf03c152ad8ba34acb768c03e5665e91896441318f1d00d1",
+      "api_sha256": "3371746222ad8fb8079980ad7a1389e210b8c688656a7fb1d7f9194ac1f6c653"
+    },
+    {
+      "prompt_id": "067c9e36-3740-4757-9a0e-0928c3606943",
+      "selection": {
+        "group": "child",
+        "product": "headphones",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211205,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "headphones",
+        "alpha": true,
+        "positive_prompt": "one small over-ear headphones with cat ears on the headband. Main color #EC6868 (soft red) on earcups and cat ears. Accent color #5FB0E3 (light blue) on headband. playful rounded design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.229,
+      "width": 480,
+      "height": 480,
+      "local_image": "headphones_child_red_blue_1211205.png",
+      "server_image": {
+        "filename": "product_00777_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "b4b55e77-cadb-409f-91a9-e7b76a294157"
+      },
+      "pass_id": 0,
+      "png_sha256": "cb148149d2edc2d4c2ce3356960c45bd6ae41e3bbcfd20455683aee1804f1377",
+      "api_sha256": "880dc4268a7457fea08a4838e1aa02da0a2b48e90118f5c1bd85adc1af934346"
+    },
+    {
+      "prompt_id": "2249c16e-7148-4d63-86a6-847c5868b246",
+      "selection": {
+        "group": "child",
+        "product": "tops",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211206,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tops",
+        "alpha": true,
+        "positive_prompt": "one child's short-sleeved T-shirt with a small star patch, laid flat. Main color #EC6868 (soft red) on body. Accent color #5FB0E3 (light blue) on sleeves and collar. playful rounded design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.361,
+      "width": 480,
+      "height": 480,
+      "local_image": "tops_child_red_blue_1211206.png",
+      "server_image": {
+        "filename": "product_00778_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "a5469381-64bc-4130-a067-6ad94e90a537"
+      },
+      "pass_id": 0,
+      "png_sha256": "e8f1ce98a83987b63e97c0506b35bea0a5891abd0e47ac5fe416264e817edc99",
+      "api_sha256": "33643fa9de84df9da2f77b7ac2b40d9b9822d316367786e863800d5dbc6f584a"
+    },
+    {
+      "prompt_id": "bb047b15-907d-4bac-9306-4ef00da0613c",
+      "selection": {
+        "group": "child",
+        "product": "bicycles",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211207,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bicycles",
+        "alpha": true,
+        "positive_prompt": "one tiny child's bicycle with training wheels and a low frame, full side view, complete wheels with ample white space. Main color #EC6868 (soft red) on frame. Accent color #5FB0E3 (light blue) on wheel rims and training wheels. playful rounded design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.665,
+      "width": 480,
+      "height": 480,
+      "local_image": "bicycles_child_red_blue_1211207.png",
+      "server_image": {
+        "filename": "product_00779_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "6ce9af5b-6689-4240-b9c7-c3d97bf298c4"
+      },
+      "pass_id": 0,
+      "png_sha256": "825ab9addf0d1d3ef0e4342f5739854fb0e90726243998c8d9524201f59d663a",
+      "api_sha256": "91516b8e1939975df13143da079668cd93289a56b1101a5a23cf008a7e183adc"
+    },
+    {
+      "prompt_id": "ec98b36e-eec4-4aa8-97d3-11ed5056bc60",
+      "selection": {
+        "group": "child",
+        "product": "tumblers",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211208,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tumblers",
+        "alpha": true,
+        "positive_prompt": "one child's sippy cup with two side handles and a short spout lid. Main color #EC6868 (soft red) on cup body. Accent color #5FB0E3 (light blue) on handles and lid. playful rounded design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.286,
+      "width": 480,
+      "height": 480,
+      "local_image": "tumblers_child_red_blue_1211208.png",
+      "server_image": {
+        "filename": "product_00780_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "391250af-d3c9-49a9-8421-e9ea55513334"
+      },
+      "pass_id": 0,
+      "png_sha256": "b516b23a46069263635bfac97dd22c9747f76723cd3a5d30e3269eb5177b5fc7",
+      "api_sha256": "65038743964111918feb5cd81a9a0598dd170ede9708db8d4f7d258698b83fa8"
+    },
+    {
+      "prompt_id": "a518f73d-3ca3-435e-b171-0f61307e3b02",
+      "selection": {
+        "group": "child",
+        "product": "wristwatches",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211209,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "wristwatches",
+        "alpha": true,
+        "positive_prompt": "one child's round wristwatch with a star dial and short rubber band, complete short wristband, centered. Main color #EC6868 (soft red) on rubber strap. Accent color #5FB0E3 (light blue) on round case and dial. playful rounded design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.331,
+      "width": 480,
+      "height": 480,
+      "local_image": "wristwatches_child_red_blue_1211209.png",
+      "server_image": {
+        "filename": "product_00781_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "42a556be-6b9e-49f2-89f2-dd6d0d66d806"
+      },
+      "pass_id": 0,
+      "png_sha256": "501a343e1b68622f1515ea11f01fdccbaac90f36d6d828649465a5086ba78486",
+      "api_sha256": "a690c51f0a6d6fbf6782d8e12967c15e8838ceadc11a2afa25278ffb6007a443"
+    },
+    {
+      "prompt_id": "d91c8803-d8c6-438e-8ceb-d994ba91f1a6",
+      "selection": {
+        "group": "child",
+        "product": "umbrellas",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211210,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "umbrellas",
+        "alpha": true,
+        "positive_prompt": "one small open dome umbrella with a scalloped edge and short curved handle. Main color #EC6868 (soft red) on dome canopy. Accent color #5FB0E3 (light blue) on scalloped trim and handle. playful rounded design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.618,
+      "width": 480,
+      "height": 480,
+      "local_image": "umbrellas_child_red_blue_1211210.png",
+      "server_image": {
+        "filename": "product_00782_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "e4ca8697-9d67-4112-b946-cfdbdc7acd2b"
+      },
+      "pass_id": 0,
+      "png_sha256": "74006f690ae7f981a8cf50f4915123125086383d27472d0d84de1546ac1c1852",
+      "api_sha256": "b8557eb72d16cd1c1804d014efaae4ac9a03c92e6ae1a905304807bbff02c1fc"
+    },
+    {
+      "prompt_id": "90819f1c-03c7-4b9c-b2d0-f58572f1cc41",
+      "selection": {
+        "group": "student",
+        "product": "bags",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211211,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "one school backpack with a large front zipper pocket and two shoulder straps. Main color #EC6868 (soft red) on body. Accent color #5FB0E3 (light blue) on front pocket and straps. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.252,
+      "width": 480,
+      "height": 480,
+      "local_image": "bags_student_red_blue_1211211.png",
+      "server_image": {
+        "filename": "product_00783_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "53818fec-a423-4046-8b48-86f4011fe809"
+      },
+      "pass_id": 0,
+      "png_sha256": "a20ffd147e3f9babb6a6a9c50804c35f12d479351763c1d755ec1e3eb55afc28",
+      "api_sha256": "9ca2899681246dcd3d100a05209a349c5cf46b052bad73610ba3483c9947e868"
+    },
+    {
+      "prompt_id": "08749967-e2e2-43df-938c-b9e006d1d123",
+      "selection": {
+        "group": "student",
+        "product": "shoes",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211212,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "one high-top canvas sneaker with laces, natural three-quarter view. Main color #EC6868 (soft red) on canvas upper. Accent color #5FB0E3 (light blue) on ankle panels and sole. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.364,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_student_red_blue_1211212.png",
+      "server_image": {
+        "filename": "product_00784_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "a5eb274a-c2b0-4266-9fc0-5cc558bc4b72"
+      },
+      "pass_id": 0,
+      "png_sha256": "85d2f00c493346a3a16670833a7e00bccde29b97c436c7f8878dc4a696d52bf9",
+      "api_sha256": "d4104332d90d5708bbe5d22033f0193123d7a65c47b3ed1c95cda726487a122d"
+    },
+    {
+      "prompt_id": "daf2fe8b-6ce0-4d4b-88b0-e8d4a3658d9a",
+      "selection": {
+        "group": "student",
+        "product": "hats",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211213,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "hats",
+        "alpha": true,
+        "positive_prompt": "one ribbed knitted beanie with a folded cuff. Main color #EC6868 (soft red) on knitted crown. Accent color #5FB0E3 (light blue) on folded cuff. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.648,
+      "width": 480,
+      "height": 480,
+      "local_image": "hats_student_red_blue_1211213.png",
+      "server_image": {
+        "filename": "product_00785_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "59e64e7b-8bec-4c34-9c17-f31622240810"
+      },
+      "pass_id": 0,
+      "png_sha256": "666bdd5301131ea5cce4662fdb9e8045993aa7d34f034e7bdc6354eb6ea936ba",
+      "api_sha256": "985f4dc8d9a01ecffd2e7f105c7878a66c32d161cd7a7cdd5893c320df019215"
+    },
+    {
+      "prompt_id": "a54c41a9-db7e-4b7b-b72f-2214b12e16f5",
+      "selection": {
+        "group": "student",
+        "product": "sunglasses",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211214,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "sunglasses",
+        "alpha": true,
+        "positive_prompt": "one wraparound sports sunglasses with a curved shield lens and solid tint. Main color #EC6868 (soft red) on frame. Accent color #5FB0E3 (light blue) on opaque shield lens. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.299,
+      "width": 480,
+      "height": 480,
+      "local_image": "sunglasses_student_red_blue_1211214.png",
+      "server_image": {
+        "filename": "product_00786_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "942aa919-9e37-4a77-b956-b650de87675b"
+      },
+      "pass_id": 0,
+      "png_sha256": "f276e903dd316fccc365ad2b4ebd9d0a26c86fbbc41c17f3ce31f97c049f34ec",
+      "api_sha256": "bb6c3f5155067e9806441b1dcb8a16e527dff54c0f7f67e5996a0ff83efd7017"
+    },
+    {
+      "prompt_id": "1422d0f0-5f8c-4d51-a529-0a8147f486af",
+      "selection": {
+        "group": "student",
+        "product": "headphones",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211215,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "headphones",
+        "alpha": true,
+        "positive_prompt": "one gaming headset with large earcups and a short boom microphone. Main color #EC6868 (soft red) on earcups. Accent color #5FB0E3 (light blue) on headband and microphone. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.418,
+      "width": 480,
+      "height": 480,
+      "local_image": "headphones_student_red_blue_1211215.png",
+      "server_image": {
+        "filename": "product_00787_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "4e56922f-2011-4804-8398-e238e0669e19"
+      },
+      "pass_id": 0,
+      "png_sha256": "874a65f66f1db16015e9a3c47e09d9ee6a9d81d37520ab9e353cea10434800e2",
+      "api_sha256": "e51bfdb16359229f3e54cc0ad44b8d0b1a0ce27e48122a0d7b39837aee5d96fb"
+    },
+    {
+      "prompt_id": "2b9cca2e-2c47-494a-8b27-747d10376b06",
+      "selection": {
+        "group": "student",
+        "product": "tops",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211216,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tops",
+        "alpha": true,
+        "positive_prompt": "one pullover hoodie with a front pocket, complete hood and sleeves, centered. Main color #EC6868 (soft red) on body. Accent color #5FB0E3 (light blue) on hood and sleeves. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.936,
+      "width": 480,
+      "height": 480,
+      "local_image": "tops_student_red_blue_1211216.png",
+      "server_image": {
+        "filename": "product_00788_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "70fbab8c-41f8-4a9b-a6d2-22b2878fe275"
+      },
+      "pass_id": 0,
+      "png_sha256": "d1af5eccf817dce5388c29a7f373688dbd30aba2bb8a336843ffc1ae3c2bd525",
+      "api_sha256": "0e2183e1a8ddf37f3dd083517dda681143405b8f9d8441a0b5ed001b739ad446"
+    },
+    {
+      "prompt_id": "704d8768-0ea6-4a66-80af-48fcf288296c",
+      "selection": {
+        "group": "student",
+        "product": "bicycles",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211217,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bicycles",
+        "alpha": true,
+        "positive_prompt": "one road bicycle with drop handlebars and thin tires, both wheels visible, centered. Main color #EC6868 (soft red) on frame. Accent color #5FB0E3 (light blue) on wheel rims and handlebars. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.218,
+      "width": 480,
+      "height": 480,
+      "local_image": "bicycles_student_red_blue_1211217.png",
+      "server_image": {
+        "filename": "product_00789_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "5ddc8895-1221-4245-be5c-46320103423b"
+      },
+      "pass_id": 0,
+      "png_sha256": "86572552fd2432b7326e50c62faf409b89d9101579265ae30e29fef61c895b6e",
+      "api_sha256": "eb262e610ff4e2871078afaf9c937a776743f2638d3a5f47eed680ba6748262e"
+    },
+    {
+      "prompt_id": "2190e82a-ceca-4239-8f99-0449b896ba24",
+      "selection": {
+        "group": "student",
+        "product": "tumblers",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211218,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tumblers",
+        "alpha": true,
+        "positive_prompt": "one tall tumbler with a straw and flat lid. Main color #EC6868 (soft red) on body. Accent color #5FB0E3 (light blue) on straw and lid. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.329,
+      "width": 480,
+      "height": 480,
+      "local_image": "tumblers_student_red_blue_1211218.png",
+      "server_image": {
+        "filename": "product_00790_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "60272a21-1ede-4e16-bb45-3ff040d4ff22"
+      },
+      "pass_id": 0,
+      "png_sha256": "7b7feddcd82aa83b9493da0f0b29b2fccb3765240c6ab4a5796b5e577ed153e4",
+      "api_sha256": "a358aee819679d336f20a034e0413a8e2973c9b81083668be5d5b4847f8a2a01"
+    },
+    {
+      "prompt_id": "775b1e57-37cc-42db-a621-0c510dac1463",
+      "selection": {
+        "group": "student",
+        "product": "wristwatches",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211219,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "wristwatches",
+        "alpha": true,
+        "positive_prompt": "one rectangular digital sports wristwatch with a chunky band and a clear LCD display reading 12:30, entire watch and both band ends. Main color #EC6868 (soft red) on plastic strap. Accent color #5FB0E3 (light blue) on digital case. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.583,
+      "width": 480,
+      "height": 480,
+      "local_image": "wristwatches_student_red_blue_1211219.png",
+      "server_image": {
+        "filename": "product_00791_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "8ebdb1a2-d16e-41ed-bbf8-0da99c29e951"
+      },
+      "pass_id": 0,
+      "png_sha256": "843eb15c01c15c1f240dba652c6a2e83434a401dc3765711915e45fbce4376e3",
+      "api_sha256": "fd3dc249a430065d88f1f7f49439d87abfa49bf25b1fe661df79e2f3bc3fecad"
+    },
+    {
+      "prompt_id": "a0872af3-94b1-4d01-9a16-31550bb7d126",
+      "selection": {
+        "group": "student",
+        "product": "umbrellas",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211220,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "umbrellas",
+        "alpha": true,
+        "positive_prompt": "one compact folding umbrella with a short telescopic shaft and a straight handle. Main color #EC6868 (soft red) on canopy. Accent color #5FB0E3 (light blue) on handle and rim. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.403,
+      "width": 480,
+      "height": 480,
+      "local_image": "umbrellas_student_red_blue_1211220.png",
+      "server_image": {
+        "filename": "product_00792_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "31beb5be-2595-4d29-8bc0-1f76c27b34ad"
+      },
+      "pass_id": 0,
+      "png_sha256": "82c27e9be2547aa67c7b721f4c68cfbaff4bd12c1c910fc5d49b7a4548cf9c3f",
+      "api_sha256": "6e5630d008b04cb2da9e897359a10f5bece0df1f772eb0772b5db30987eb62d0"
+    },
+    {
+      "prompt_id": "40993cfb-c182-4bc6-95d7-5f3214f5a8ff",
+      "selection": {
+        "group": "working_adult",
+        "product": "bags",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211221,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "one structured office briefcase with a top handle and rectangular flap. Main color #EC6868 (soft red) on body. Accent color #5FB0E3 (light blue) on handle and flap. refined minimal design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.376,
+      "width": 480,
+      "height": 480,
+      "local_image": "bags_working_adult_red_blue_1211221.png",
+      "server_image": {
+        "filename": "product_00793_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "f8d91668-7db3-49f8-ba6f-d133c6f5fc9e"
+      },
+      "pass_id": 0,
+      "png_sha256": "d222ace44e881bc3e4fa98ee1dd99a291aebf1d5911b5c9a5c7f28bac9f6bc70",
+      "api_sha256": "fb1e1efc2cba8460f5ef12cb91f279553de65c9e21dad65e7defe647cb2b3901"
+    },
+    {
+      "prompt_id": "f2dd1842-1117-4ecd-a951-152106591e9d",
+      "selection": {
+        "group": "working_adult",
+        "product": "shoes",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211222,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "one classic laceless penny loafer, a slip-on dress shoe with a wide strap across the vamp, smooth moccasin toe and low flat heel, no shoelaces or sneaker panels. Main color #EC6868 (soft red) on leather upper. Accent color #5FB0E3 (light blue) on sole and instep band. refined minimal design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.822,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_working_adult_red_blue_1211222.png",
+      "server_image": {
+        "filename": "product_00794_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "728c621b-7878-4c7e-b240-f26fa5a26bbd"
+      },
+      "pass_id": 0,
+      "png_sha256": "d294eca906fbf2345c8644bfcce517b65dfdd6707fb4bd646a1c129cda5e96ed",
+      "api_sha256": "6e402858a1b10db1122fa975934982189a7e71ad247c0547d4b109325ec6a4be"
+    },
+    {
+      "prompt_id": "fdaaee3f-5c79-4e0b-88aa-e8d60d18cbf9",
+      "selection": {
+        "group": "working_adult",
+        "product": "hats",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211223,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "hats",
+        "alpha": true,
+        "positive_prompt": "one baseball cap with a curved visor and button on top. Main color #EC6868 (soft red) on crown. Accent color #5FB0E3 (light blue) on visor. refined minimal design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.283,
+      "width": 480,
+      "height": 480,
+      "local_image": "hats_working_adult_red_blue_1211223.png",
+      "server_image": {
+        "filename": "product_00795_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "623fb80e-ce07-4454-acd3-d21e64a4ae01"
+      },
+      "pass_id": 0,
+      "png_sha256": "720b534abf2386d390a14790fb8909fb778abd8bcd7dc746e574959de30455b9",
+      "api_sha256": "9b0eac7796446dcdd98ba2fc2f02872107f25102e0433eb8c764c417e0ff1498"
+    },
+    {
+      "prompt_id": "867aa84c-6751-4fa3-840b-93da256fdbdc",
+      "selection": {
+        "group": "working_adult",
+        "product": "sunglasses",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211224,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "sunglasses",
+        "alpha": true,
+        "positive_prompt": "one rectangular browline sunglasses with solid tinted lenses. Main color #EC6868 (soft red) on frame. Accent color #5FB0E3 (light blue) on opaque lenses. refined minimal design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.4,
+      "width": 480,
+      "height": 480,
+      "local_image": "sunglasses_working_adult_red_blue_1211224.png",
+      "server_image": {
+        "filename": "product_00796_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "53eecfca-612b-4cc0-bbf8-5c297deb85c6"
+      },
+      "pass_id": 0,
+      "png_sha256": "018f00c74d6238be5a46a6a77d686ff9796aaf43064e20afb3a07273bdec584f",
+      "api_sha256": "0df2beb68ee5e4438bfbdc69f95b823478a849b60b3a61b59af4f37e4cd2bed8"
+    },
+    {
+      "prompt_id": "afa52035-da5d-40f9-bf7d-fc59f2e9e211",
+      "selection": {
+        "group": "working_adult",
+        "product": "headphones",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211225,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "headphones",
+        "alpha": true,
+        "positive_prompt": "one sleek noise-cancelling over-ear headphones with smooth oval earcups. Main color #EC6868 (soft red) on earcups. Accent color #5FB0E3 (light blue) on padded headband. refined minimal design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.767,
+      "width": 480,
+      "height": 480,
+      "local_image": "headphones_working_adult_red_blue_1211225.png",
+      "server_image": {
+        "filename": "product_00797_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "4172b3e9-b21a-4986-97d7-a538e9e0c84b"
+      },
+      "pass_id": 0,
+      "png_sha256": "9e1aacf364b9c7e7dac013e6cbe1bccc35c171fcd033b22fb8dca497f5a0847c",
+      "api_sha256": "6b3774a234654dda380091c0a745e79f6dd4f12ee3c3aece781b88d4bca0c743"
+    },
+    {
+      "prompt_id": "a2b53c58-c619-4898-89a3-b168ca63bf75",
+      "selection": {
+        "group": "working_adult",
+        "product": "tops",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211226,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tops",
+        "alpha": true,
+        "positive_prompt": "one button-up shirt with a collar and long sleeves, complete garment, centered. Main color #EC6868 (soft red) on body. Accent color #5FB0E3 (light blue) on collar and cuffs. refined minimal design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.349,
+      "width": 480,
+      "height": 480,
+      "local_image": "tops_working_adult_red_blue_1211226.png",
+      "server_image": {
+        "filename": "product_00798_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "6fe001e1-f6a8-4d33-872c-e3fa9ea97be5"
+      },
+      "pass_id": 0,
+      "png_sha256": "e7427a694656dfea4234de9b48b55dfd222c7dd23a5c68c23ba4034925d42fff",
+      "api_sha256": "931d1f43df8b0882bdbdee092e043c4cb24efbe9ed160cf80d93f7038d769583"
+    },
+    {
+      "prompt_id": "2f48f20a-cab3-4112-8fbd-6602dc11a644",
+      "selection": {
+        "group": "working_adult",
+        "product": "bicycles",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211227,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bicycles",
+        "alpha": true,
+        "positive_prompt": "one tiny folding commuter bicycle with a hinged frame and small wheels, full side view, complete wheels with ample white space. Main color #EC6868 (soft red) on frame. Accent color #5FB0E3 (light blue) on wheel rims and hinge. refined minimal design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.393,
+      "width": 480,
+      "height": 480,
+      "local_image": "bicycles_working_adult_red_blue_1211227.png",
+      "server_image": {
+        "filename": "product_00799_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "03e2e55e-7652-40f7-bda0-92d74be7f39f"
+      },
+      "pass_id": 0,
+      "png_sha256": "814559b5b94d17601ed94dbb2bd8a36a023232d43ba4d5abbe13addc3c66a183",
+      "api_sha256": "8bef17c8be8fd0943c3980bd22818ede2cf69a3a1354a2c9256f713896d12317"
+    },
+    {
+      "prompt_id": "d0ed2b4a-123c-47e0-a010-63e147054308",
+      "selection": {
+        "group": "working_adult",
+        "product": "tumblers",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211228,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tumblers",
+        "alpha": true,
+        "positive_prompt": "one tapered travel coffee mug with a handle and flip-top lid. Main color #EC6868 (soft red) on body. Accent color #5FB0E3 (light blue) on handle and lid. refined minimal design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.757,
+      "width": 480,
+      "height": 480,
+      "local_image": "tumblers_working_adult_red_blue_1211228.png",
+      "server_image": {
+        "filename": "product_00800_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "dc629e01-3d80-4a2b-a11a-560b6f36f147"
+      },
+      "pass_id": 0,
+      "png_sha256": "393b0a91e0648a126b22f244b9b2833dc234c009972172be98f2609125690b3a",
+      "api_sha256": "93601d5216c3585976a54539bed4cd9d710133c583e4f7e98d124b826c1b5f69"
+    },
+    {
+      "prompt_id": "a3e58cbb-1434-407b-b344-6c111f630568",
+      "selection": {
+        "group": "working_adult",
+        "product": "wristwatches",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211229,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "wristwatches",
+        "alpha": true,
+        "positive_prompt": "one rounded square smartwatch with a complete silicone wristband, simple clock face and three small colorful app dots on the screen. Main color #EC6868 (soft red) on silicone strap. Accent color #5FB0E3 (light blue) on square case. refined minimal design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.41,
+      "width": 480,
+      "height": 480,
+      "local_image": "wristwatches_working_adult_red_blue_1211229.png",
+      "server_image": {
+        "filename": "product_00801_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "58c80ef9-5976-43be-80e9-85b01c9a9727"
+      },
+      "pass_id": 0,
+      "png_sha256": "7de021730b3c06847da663eb2d8a77c8b27281d008a881949a51266befa0914c",
+      "api_sha256": "07c46ca397cdafb88b379f4d8717369cc727d6dd0295c1770e829c3bd5ce37fb"
+    },
+    {
+      "prompt_id": "f463263b-3064-4ce0-91d3-7b485ac2c53b",
+      "selection": {
+        "group": "working_adult",
+        "product": "umbrellas",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211230,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "umbrellas",
+        "alpha": true,
+        "positive_prompt": "one open classic umbrella with an angular canopy, long shaft and hooked handle. Main color #EC6868 (soft red) on canopy. Accent color #5FB0E3 (light blue) on trim and hooked handle. refined minimal design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.315,
+      "width": 480,
+      "height": 480,
+      "local_image": "umbrellas_working_adult_red_blue_1211230.png",
+      "server_image": {
+        "filename": "product_00802_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "65f79f74-605f-48bb-be6c-6069660881eb"
+      },
+      "pass_id": 0,
+      "png_sha256": "ab6069a159234de686a49d8fdeaf4b796e9db1d3ce0f2523c62b7511eb84f911",
+      "api_sha256": "6c7bd7b4ea59caa96e99d15c0c301a5c069b2e6ed07b4c8100bd13b030818794"
+    },
+    {
+      "prompt_id": "3e2521c0-c01a-4d1f-b426-98a320e03125",
+      "selection": {
+        "group": "senior",
+        "product": "bags",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211231,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "one soft crossbody satchel with a long shoulder strap and flap. Main color #EC6868 (soft red) on body. Accent color #5FB0E3 (light blue) on flap and shoulder strap. simple ergonomic design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.838,
+      "width": 480,
+      "height": 480,
+      "local_image": "bags_senior_red_blue_1211231.png",
+      "server_image": {
+        "filename": "product_00803_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "4ec30400-774c-4d32-b6ca-88997b674392"
+      },
+      "pass_id": 0,
+      "png_sha256": "485530319dc30c13078d61f830c002da5109346bf57589058bbefd987be59408",
+      "api_sha256": "ac3aadd77f3843fb92ecaad7cf05ac062538b1a68f0bafd38fb9fa95603e2e60"
+    },
+    {
+      "prompt_id": "3e28f99e-9c9a-4f26-b7ce-c8e726597dca",
+      "selection": {
+        "group": "senior",
+        "product": "shoes",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211232,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "one comfortable slip-on walking shoe, wide rounded toe and elastic instep, no shoelaces. Main color #EC6868 (soft red) on fabric upper. Accent color #5FB0E3 (light blue) on sole and heel panel. simple ergonomic design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.461,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_senior_red_blue_1211232.png",
+      "server_image": {
+        "filename": "product_00804_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "ae7ebcfa-b76c-481f-ae29-01ed6edd086d"
+      },
+      "pass_id": 0,
+      "png_sha256": "ab9e112b9209a55956a9b36d9c30d53fb38bc6331977cbe0f80935aa221a9c4c",
+      "api_sha256": "5b15c6f723c84abc6e25a8c3d4ed3092125b4cfb48520bc11c781bb187c15cd6"
+    },
+    {
+      "prompt_id": "7f3853cd-14cd-4dd3-a3e6-82739b7b3c36",
+      "selection": {
+        "group": "senior",
+        "product": "hats",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211233,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "hats",
+        "alpha": true,
+        "positive_prompt": "one classic fedora hat with a pinched crown, ribbon band and brim. Main color #EC6868 (soft red) on crown and brim. Accent color #5FB0E3 (light blue) on ribbon band. simple ergonomic design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.235,
+      "width": 480,
+      "height": 480,
+      "local_image": "hats_senior_red_blue_1211233.png",
+      "server_image": {
+        "filename": "product_00805_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "00723f65-9cb1-468e-970c-e08d0107105c"
+      },
+      "pass_id": 0,
+      "png_sha256": "58b85c245d0909aa4bc0d034e4e038bc153e0200dbbf1416014855296b956b68",
+      "api_sha256": "c3166f6061cddb3cd177d5407515ec20d2c20b05fdd3cf013465c05d8138155e"
+    },
+    {
+      "prompt_id": "32313acb-d6d6-4b76-9926-be0b0aeb17f6",
+      "selection": {
+        "group": "senior",
+        "product": "sunglasses",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211234,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "sunglasses",
+        "alpha": true,
+        "positive_prompt": "one round vintage sunglasses with thick circular frames and solid tinted lenses. Main color #EC6868 (soft red) on circular frame. Accent color #5FB0E3 (light blue) on opaque lenses. simple ergonomic design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.614,
+      "width": 480,
+      "height": 480,
+      "local_image": "sunglasses_senior_red_blue_1211234.png",
+      "server_image": {
+        "filename": "product_00806_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "16860c84-6c6d-488b-8b47-50039d947a68"
+      },
+      "pass_id": 0,
+      "png_sha256": "b68c6c2049bbed644cfbe3f7e75973b967b78fffb1919ad722a2c98c5f8ec4f9",
+      "api_sha256": "673d47b72f84d5b379e94de9b97542c4627d735d45341bc050f83817aa19489e"
+    },
+    {
+      "prompt_id": "9e815f46-7cbf-482e-a46d-d7b5b8c44996",
+      "selection": {
+        "group": "senior",
+        "product": "headphones",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211235,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "headphones",
+        "alpha": true,
+        "positive_prompt": "one lightweight retro on-ear headphones, two small round foam earpads connected by a thin curved headband, no microphone. Main color #EC6868 (soft red) on round foam earpads. Accent color #5FB0E3 (light blue) on thin headband. simple ergonomic design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.526,
+      "width": 480,
+      "height": 480,
+      "local_image": "headphones_senior_red_blue_1211235.png",
+      "server_image": {
+        "filename": "product_00807_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "72b20886-5636-4785-9c94-300fcebb145b"
+      },
+      "pass_id": 0,
+      "png_sha256": "dfafaf7a0310583e57665b9e95b9fc88940bc8b20523592307d99ae1c93ddd34",
+      "api_sha256": "f3198f585aa488d84f0e85096d1196e028395e1dafd76bb08781e23e2b55512f"
+    },
+    {
+      "prompt_id": "c1ddb069-2344-4b0c-b649-426b998ada0f",
+      "selection": {
+        "group": "senior",
+        "product": "tops",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211236,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tops",
+        "alpha": true,
+        "positive_prompt": "one V-neck cardigan with buttons and pockets, complete garment, centered. Main color #EC6868 (soft red) on body. Accent color #5FB0E3 (light blue) on sleeves and ribbed edges. simple ergonomic design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.518,
+      "width": 480,
+      "height": 480,
+      "local_image": "tops_senior_red_blue_1211236.png",
+      "server_image": {
+        "filename": "product_00808_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "211c11e0-ef38-41d4-8b00-4db223247a8a"
+      },
+      "pass_id": 0,
+      "png_sha256": "8c0adfa44ca283776851fceb8ceed310d83a03f2ebf0e4af40590def3bdd8759",
+      "api_sha256": "2362d915a36819fb4fac83b533227811599eb98c67cf165a7b4c408da1deffe6"
+    },
+    {
+      "prompt_id": "e98ac064-e982-4389-910e-1ea22bfd5e02",
+      "selection": {
+        "group": "senior",
+        "product": "bicycles",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211237,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bicycles",
+        "alpha": true,
+        "positive_prompt": "one tiny step-through city bicycle with a front basket and upright handlebars, full side view, complete wheels with ample white space. Main color #EC6868 (soft red) on frame. Accent color #5FB0E3 (light blue) on basket and wheel rims. simple ergonomic design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.668,
+      "width": 480,
+      "height": 480,
+      "local_image": "bicycles_senior_red_blue_1211237.png",
+      "server_image": {
+        "filename": "product_00809_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "812dcd14-4a04-48b7-8933-f9cd7b33aba6"
+      },
+      "pass_id": 0,
+      "png_sha256": "44bb804cfd248d722d579eec33fb74e4ae539eaf109db3cf2f1c72e19c0d6c7c",
+      "api_sha256": "bea7313376d3600797aa522f9efc3162689298d9ab735ed8ec7273e135856992"
+    },
+    {
+      "prompt_id": "a22bb48f-38f8-4be6-ad5f-1ecf6dafed34",
+      "selection": {
+        "group": "senior",
+        "product": "tumblers",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211238,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tumblers",
+        "alpha": true,
+        "positive_prompt": "one insulated vacuum flask with a screw-on cup cap. Main color #EC6868 (soft red) on flask body. Accent color #5FB0E3 (light blue) on cup cap. simple ergonomic design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.356,
+      "width": 480,
+      "height": 480,
+      "local_image": "tumblers_senior_red_blue_1211238.png",
+      "server_image": {
+        "filename": "product_00810_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "dfa2b392-f8aa-4441-a4cb-6ac242ad936d"
+      },
+      "pass_id": 0,
+      "png_sha256": "a1267bfe099a8eaa119d42ff29312b4095194a63bfa92f189cd66cf2fa8b34db",
+      "api_sha256": "fbf756a829c9d2e50e795e247aca7d6c92b2c5c50d4059f2f8ebfae138ff2e3f"
+    },
+    {
+      "prompt_id": "9c72eb0c-d9d8-48d7-a00a-5b6bd2a4a9fd",
+      "selection": {
+        "group": "senior",
+        "product": "wristwatches",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211239,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "wristwatches",
+        "alpha": true,
+        "positive_prompt": "one round analog wristwatch with large clear hands and a metal link band, complete short wristband, centered. Main color #EC6868 (soft red) on metal bracelet. Accent color #5FB0E3 (light blue) on round case. simple ergonomic design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.283,
+      "width": 480,
+      "height": 480,
+      "local_image": "wristwatches_senior_red_blue_1211239.png",
+      "server_image": {
+        "filename": "product_00811_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "bcd769ed-3076-4732-9179-5157f5e7cb5a"
+      },
+      "pass_id": 0,
+      "png_sha256": "153e999ad68ac1d974523e79ec95b694783cabcc8031021b50c996f43e65a824",
+      "api_sha256": "67243fa425facf33b33c08f1b4833878d7ebbf3200d948e3505d4ab630fc5431"
+    },
+    {
+      "prompt_id": "1c6a0bdb-705f-4e83-be46-27e67e846d50",
+      "selection": {
+        "group": "senior",
+        "product": "umbrellas",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1211240,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "umbrellas",
+        "alpha": true,
+        "positive_prompt": "one traditional paper parasol with a flat circular canopy and a straight bamboo handle. Main color #EC6868 (soft red) on paper canopy. Accent color #5FB0E3 (light blue) on ribs and handle. simple ergonomic design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.67,
+      "width": 480,
+      "height": 480,
+      "local_image": "umbrellas_senior_red_blue_1211240.png",
+      "server_image": {
+        "filename": "product_00812_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "6c75a74d-10ab-4cf9-ba64-5f3c76bef949"
+      },
+      "pass_id": 0,
+      "png_sha256": "e09840df925af72be4b7ec63e07fcc9da7cb07dd241e2cb6d4707b7776a791d9",
+      "api_sha256": "fb9810a391b29a01199cb33f773ab15c1dde959ef45ca5376f3120f6c5950e39"
+    },
+    {
+      "prompt_id": "7c977c6b-b9db-40aa-828f-c4cda8f47ea2",
+      "selection": {
+        "group": "child",
+        "product": "bags",
+        "color1": "green",
+        "color2": "white",
+        "primary_hex": "#B7DBA9",
+        "secondary_hex": "#FFFFFF",
+        "profile": "quality",
+        "seed": 1211301,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "one small bear-shaped kindergarten backpack with rounded bear ears and a front pocket. Main color #B7DBA9 (light pastel green) on backpack body. Accent color #FFFFFF (white) on bear ears and front pocket. playful rounded design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.24,
+      "width": 480,
+      "height": 480,
+      "local_image": "bags_child_green_white_1211301.png",
+      "server_image": {
+        "filename": "product_00813_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "3135574d-7c13-4bfc-806f-e0b0b0ad0326"
+      },
+      "pass_id": 1,
+      "png_sha256": "21642674f939457897a26aba0772d16817af01ceee89a7d1b1a55b41ce156db5",
+      "api_sha256": "a121d8472c05827e8fa3a69c3136349da8ff7da6244ea271ca274d551872880f"
+    },
+    {
+      "prompt_id": "e332d55b-ad21-48de-ade6-03b6cc3c0788",
+      "selection": {
+        "group": "child",
+        "product": "shoes",
+        "color1": "yellow",
+        "color2": "black",
+        "primary_hex": "#F6EEA2",
+        "secondary_hex": "#171619",
+        "profile": "quality",
+        "seed": 1211302,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "one small child's rain boot with a short shaft and rounded toe, natural three-quarter view. Main color #F6EEA2 (pale pastel yellow) on boot upper. Accent color #171619 (near-black) on sole and cuff. playful rounded design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.224,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_child_yellow_black_1211302.png",
+      "server_image": {
+        "filename": "product_00814_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "8a9c6724-6ce1-431d-a318-9a42b2c0cb9f"
+      },
+      "pass_id": 1,
+      "png_sha256": "3c7951bfb49e6681581d65f03f6974fe7642c802c52d949ab867d15ca8528f27",
+      "api_sha256": "ffb1dc977298a768728cd892715ef35b36d0644f227645a2b7fa5190a2f2a39b"
+    },
+    {
+      "prompt_id": "cde80639-0d6a-457d-95f7-6295fccf7fef",
+      "selection": {
+        "group": "child",
+        "product": "hats",
+        "color1": "blue",
+        "color2": "white",
+        "primary_hex": "#5FB0E3",
+        "secondary_hex": "#FFFFFF",
+        "profile": "quality",
+        "seed": 1211303,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "hats",
+        "alpha": true,
+        "positive_prompt": "one kindergarten sun hat with a rounded crown, wide brim and chin strap. Main color #5FB0E3 (light blue) on crown. Accent color #FFFFFF (white) on brim and chin strap. playful rounded design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.589,
+      "width": 480,
+      "height": 480,
+      "local_image": "hats_child_blue_white_1211303.png",
+      "server_image": {
+        "filename": "product_00815_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "2781edf8-8e6c-4ef5-9047-8023bcfa7bcd"
+      },
+      "pass_id": 1,
+      "png_sha256": "f242ed4a74fa5a8fa106dad67d6313fa6d7ad00e8fd9fbe36f1a445a18e1e265",
+      "api_sha256": "6df372a9fca3c58f97c4762b95bdd64b6e1a25af8ea7cccdf63b56aacf0d6496"
+    },
+    {
+      "prompt_id": "132d4ad1-1217-4732-a500-d981b6004632",
+      "selection": {
+        "group": "child",
+        "product": "sunglasses",
+        "color1": "black",
+        "color2": "yellow",
+        "primary_hex": "#171619",
+        "secondary_hex": "#F6EEA2",
+        "profile": "quality",
+        "seed": 1211304,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "sunglasses",
+        "alpha": true,
+        "positive_prompt": "heart-shaped sunglasses, one pair of heart-shaped frames. Main color #171619 (near-black) on heart-shaped frame. Accent color #F6EEA2 (pale pastel yellow) on solid tinted lenses. playful rounded design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.316,
+      "width": 480,
+      "height": 480,
+      "local_image": "sunglasses_child_black_yellow_1211304.png",
+      "server_image": {
+        "filename": "product_00816_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "f8321731-8383-4bdb-9b0f-3512fea7ad71"
+      },
+      "pass_id": 1,
+      "png_sha256": "437d2505b82413db41be5d95126cd44ef159d1b2d277ae880f7420cf192b4b66",
+      "api_sha256": "3d26372f73c24b7a990c7c04d9003b13b618329b93f7e8957183d4d6cafea083"
+    },
+    {
+      "prompt_id": "99abf4ae-49e6-428b-88ef-f36b327adce4",
+      "selection": {
+        "group": "child",
+        "product": "headphones",
+        "color1": "white",
+        "color2": "black",
+        "primary_hex": "#FFFFFF",
+        "secondary_hex": "#171619",
+        "profile": "quality",
+        "seed": 1211305,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "headphones",
+        "alpha": true,
+        "positive_prompt": "one small over-ear headphones with cat ears on the headband. Main color #FFFFFF (white) on earcups and cat ears. Accent color #171619 (near-black) on headband. playful rounded design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.367,
+      "width": 480,
+      "height": 480,
+      "local_image": "headphones_child_white_black_1211305.png",
+      "server_image": {
+        "filename": "product_00817_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "90eabc7c-97bb-426a-8f16-64d42b21073a"
+      },
+      "pass_id": 1,
+      "png_sha256": "1129c54aa9ece65e2f19627fdda46d0e6aea95c3bd0bdd61f4701a9fc92c0dea",
+      "api_sha256": "64897f6583bece1732bdcb8ae943ecf78bd303a0a858e63f105befa887e1dead"
+    },
+    {
+      "prompt_id": "dc23a290-86e1-4fe2-aa10-89ed584f46fe",
+      "selection": {
+        "group": "child",
+        "product": "tops",
+        "color1": "red",
+        "color2": "green",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#B7DBA9",
+        "profile": "quality",
+        "seed": 1211306,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tops",
+        "alpha": true,
+        "positive_prompt": "one child's short-sleeved T-shirt with a small star patch, laid flat. Main color #EC6868 (soft red) on body. Accent color #B7DBA9 (light pastel green) on sleeves and collar. playful rounded design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.63,
+      "width": 480,
+      "height": 480,
+      "local_image": "tops_child_red_green_1211306.png",
+      "server_image": {
+        "filename": "product_00818_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "8fe9b31c-7367-4ad4-b9c3-b40b85593f2b"
+      },
+      "pass_id": 1,
+      "png_sha256": "1b6fb34893df5b9cd6308c54b6802d5bb10b2e503f85b745d9fb89cb05417a37",
+      "api_sha256": "bcb15837af7a0350483ec23524718cdd863e8b1cf6e48179fb9771c287cffdbd"
+    },
+    {
+      "prompt_id": "33ccf285-aabc-4586-a22e-4381ff4e9914",
+      "selection": {
+        "group": "child",
+        "product": "bicycles",
+        "color1": "green",
+        "color2": "white",
+        "primary_hex": "#B7DBA9",
+        "secondary_hex": "#FFFFFF",
+        "profile": "quality",
+        "seed": 1211307,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bicycles",
+        "alpha": true,
+        "positive_prompt": "one tiny child's bicycle with training wheels and a low frame, full side view, complete wheels with ample white space. Main color #B7DBA9 (light pastel green) on frame. Accent color #FFFFFF (white) on wheel rims and training wheels. playful rounded design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.299,
+      "width": 480,
+      "height": 480,
+      "local_image": "bicycles_child_green_white_1211307.png",
+      "server_image": {
+        "filename": "product_00819_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "c97e988e-c030-4580-842c-10c903a55cff"
+      },
+      "pass_id": 1,
+      "png_sha256": "435310360f078ba700c6878b33c1e1042a6134e53bf21113cfce0d9f8b5bd778",
+      "api_sha256": "1e72f71d30819e8a452271f1695f17ca546a51f90870b6e93df5bc2a33e9a4c5"
+    },
+    {
+      "prompt_id": "f2510261-6432-4530-a3db-59de75212778",
+      "selection": {
+        "group": "child",
+        "product": "tumblers",
+        "color1": "yellow",
+        "color2": "black",
+        "primary_hex": "#F6EEA2",
+        "secondary_hex": "#171619",
+        "profile": "quality",
+        "seed": 1211308,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tumblers",
+        "alpha": true,
+        "positive_prompt": "one child's sippy cup with two side handles and a short spout lid. Main color #F6EEA2 (pale pastel yellow) on cup body. Accent color #171619 (near-black) on handles and lid. playful rounded design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.204,
+      "width": 480,
+      "height": 480,
+      "local_image": "tumblers_child_yellow_black_1211308.png",
+      "server_image": {
+        "filename": "product_00820_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "8627ea56-ee67-4ff7-a7e0-b5bfdd4e5f9a"
+      },
+      "pass_id": 1,
+      "png_sha256": "ced03ab215bd5fec37add4aa52b8fe19a157614bc179973c4b5cf118a1d29b18",
+      "api_sha256": "db42748ab86605d64b3a5d17f72ccb9684d460e4fc2a2abf0de04c7efb73c533"
+    },
+    {
+      "prompt_id": "d39fee2e-355e-436c-95f1-ea64a417a3a6",
+      "selection": {
+        "group": "child",
+        "product": "wristwatches",
+        "color1": "blue",
+        "color2": "white",
+        "primary_hex": "#5FB0E3",
+        "secondary_hex": "#FFFFFF",
+        "profile": "quality",
+        "seed": 1211309,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "wristwatches",
+        "alpha": true,
+        "positive_prompt": "one child's round wristwatch with a star dial and short rubber band, complete short wristband, centered. Main color #5FB0E3 (light blue) on rubber strap. Accent color #FFFFFF (white) on round case and dial. playful rounded design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.622,
+      "width": 480,
+      "height": 480,
+      "local_image": "wristwatches_child_blue_white_1211309.png",
+      "server_image": {
+        "filename": "product_00821_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "3d0e82bf-aa07-4bbe-a4de-8beae72a5671"
+      },
+      "pass_id": 1,
+      "png_sha256": "4d5da1f1aa785710fac9c1dcc087d3f294c0c81d186154420ebc4181f18208f1",
+      "api_sha256": "a02426434ef55c7586d259827d607cd663c8162157c980598b3c598dfed2c7c7"
+    },
+    {
+      "prompt_id": "2ec15daa-c97c-4922-99b3-c99b883b8b1b",
+      "selection": {
+        "group": "child",
+        "product": "umbrellas",
+        "color1": "black",
+        "color2": "yellow",
+        "primary_hex": "#171619",
+        "secondary_hex": "#F6EEA2",
+        "profile": "quality",
+        "seed": 1211310,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "umbrellas",
+        "alpha": true,
+        "positive_prompt": "one small open dome umbrella with a scalloped edge and short curved handle. Main color #171619 (near-black) on dome canopy. Accent color #F6EEA2 (pale pastel yellow) on scalloped trim and handle. playful rounded design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.405,
+      "width": 480,
+      "height": 480,
+      "local_image": "umbrellas_child_black_yellow_1211310.png",
+      "server_image": {
+        "filename": "product_00822_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "81ab279e-1eb6-44bf-87f0-f4b7283aecd0"
+      },
+      "pass_id": 1,
+      "png_sha256": "f2aa40d93df2bba87e30dafda8ce1e5d5643de8d2de5a52a6b06a18be061718b",
+      "api_sha256": "ed6163e6805c3597a886b5c426a2cdb958fec27e9522651ec2f859463f5b659e"
+    },
+    {
+      "prompt_id": "57c641a2-dd8e-4865-a84b-f543d6563370",
+      "selection": {
+        "group": "student",
+        "product": "bags",
+        "color1": "yellow",
+        "color2": "black",
+        "primary_hex": "#F6EEA2",
+        "secondary_hex": "#171619",
+        "profile": "quality",
+        "seed": 1211311,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "one school backpack with a large front zipper pocket and two shoulder straps. Main color #F6EEA2 (pale pastel yellow) on body. Accent color #171619 (near-black) on front pocket and straps. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.419,
+      "width": 480,
+      "height": 480,
+      "local_image": "bags_student_yellow_black_1211311.png",
+      "server_image": {
+        "filename": "product_00823_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "5705872c-ea67-404d-9c26-afa36012945b"
+      },
+      "pass_id": 1,
+      "png_sha256": "16c8ec3cc45e4b254c5fb36ad3e1e003b854df9481ad92ef102b59a502c19fe1",
+      "api_sha256": "5eb0bfcec424a2b932c2eef54d54e2816978f626c5cb3444b25f7cebcf48d16a"
+    },
+    {
+      "prompt_id": "4f97ca8c-8427-4d3e-a209-927aaff3e0fd",
+      "selection": {
+        "group": "student",
+        "product": "shoes",
+        "color1": "blue",
+        "color2": "white",
+        "primary_hex": "#5FB0E3",
+        "secondary_hex": "#FFFFFF",
+        "profile": "quality",
+        "seed": 1211312,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "one high-top canvas sneaker with laces, natural three-quarter view. Main color #5FB0E3 (light blue) on canvas upper. Accent color #FFFFFF (white) on ankle panels and sole. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.782,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_student_blue_white_1211312.png",
+      "server_image": {
+        "filename": "product_00824_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "f7dcda11-90a1-4c0e-9d34-e1cab9afe657"
+      },
+      "pass_id": 1,
+      "png_sha256": "6e560001655d543ae508faa35b7aefce4badcfbd1c7a0f9dfed90dc4c6adebe7",
+      "api_sha256": "08069ac7b292662c3aafc3c593c0f38f0dfb39083843246056c63768b989dd9d"
+    },
+    {
+      "prompt_id": "bffb035a-1970-4274-866a-7ee338dbce71",
+      "selection": {
+        "group": "student",
+        "product": "hats",
+        "color1": "black",
+        "color2": "yellow",
+        "primary_hex": "#171619",
+        "secondary_hex": "#F6EEA2",
+        "profile": "quality",
+        "seed": 1211313,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "hats",
+        "alpha": true,
+        "positive_prompt": "one ribbed knitted beanie with a folded cuff. Main color #171619 (near-black) on knitted crown. Accent color #F6EEA2 (pale pastel yellow) on folded cuff. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.362,
+      "width": 480,
+      "height": 480,
+      "local_image": "hats_student_black_yellow_1211313.png",
+      "server_image": {
+        "filename": "product_00825_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "76a4dab9-ca18-4839-9b62-6145add34ad8"
+      },
+      "pass_id": 1,
+      "png_sha256": "ce6ed00bef01ae045342dbb8046e2336b7de59b50cfc65587312c3d0166e5bad",
+      "api_sha256": "604d0885165917142f027375a4e91a181d42e2a6a9eccbcbadf45def6ead0ef5"
+    },
+    {
+      "prompt_id": "4f10efe1-9598-417c-b1a4-9bf0aa880717",
+      "selection": {
+        "group": "student",
+        "product": "sunglasses",
+        "color1": "white",
+        "color2": "black",
+        "primary_hex": "#FFFFFF",
+        "secondary_hex": "#171619",
+        "profile": "quality",
+        "seed": 1211314,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "sunglasses",
+        "alpha": true,
+        "positive_prompt": "one wraparound sports sunglasses with a curved shield lens and solid tint. Main color #FFFFFF (white) on frame. Accent color #171619 (near-black) on opaque shield lens. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.239,
+      "width": 480,
+      "height": 480,
+      "local_image": "sunglasses_student_white_black_1211314.png",
+      "server_image": {
+        "filename": "product_00826_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "ea7412c5-62ce-47cf-b9e3-3efdb066b6be"
+      },
+      "pass_id": 1,
+      "png_sha256": "34e7def8e6947dd8bca37ecacca19af24de0734ed62d0f81f3a16c3fa5a0b2b3",
+      "api_sha256": "2d34433eefa15c48370a8816c611f6f8d45061f9556416a5b3dd43ebe66b4702"
+    },
+    {
+      "prompt_id": "9aba8163-afb8-46f5-8bb9-c3634a812983",
+      "selection": {
+        "group": "student",
+        "product": "headphones",
+        "color1": "red",
+        "color2": "green",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#B7DBA9",
+        "profile": "quality",
+        "seed": 1211315,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "headphones",
+        "alpha": true,
+        "positive_prompt": "one gaming headset with large earcups and a short boom microphone. Main color #EC6868 (soft red) on earcups. Accent color #B7DBA9 (light pastel green) on headband and microphone. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.828,
+      "width": 480,
+      "height": 480,
+      "local_image": "headphones_student_red_green_1211315.png",
+      "server_image": {
+        "filename": "product_00827_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "0a549742-11fc-4e6b-89bc-09b9f40a3c35"
+      },
+      "pass_id": 1,
+      "png_sha256": "58a79ff6f37b42cb66863638a2b730fd7f2e84760963c320ce08f8e2d43b78bb",
+      "api_sha256": "9fadd01d95acc2f048e7e99c10c51a8bf06a1cff58b648070ba4172414cde2fc"
+    },
+    {
+      "prompt_id": "bf04f304-7de3-4747-8ec8-8497df22ed95",
+      "selection": {
+        "group": "student",
+        "product": "tops",
+        "color1": "green",
+        "color2": "white",
+        "primary_hex": "#B7DBA9",
+        "secondary_hex": "#FFFFFF",
+        "profile": "quality",
+        "seed": 1211316,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tops",
+        "alpha": true,
+        "positive_prompt": "one pullover hoodie with a front pocket, complete hood and sleeves, centered. Main color #B7DBA9 (light pastel green) on body. Accent color #FFFFFF (white) on hood and sleeves. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.383,
+      "width": 480,
+      "height": 480,
+      "local_image": "tops_student_green_white_1211316.png",
+      "server_image": {
+        "filename": "product_00828_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "4038e740-b6af-44f4-9e7b-140b2928b922"
+      },
+      "pass_id": 1,
+      "png_sha256": "09fa9227d91d0caf1efd12ee021b1c30e52cb3ba4e52cd3e61e20aac5ab55556",
+      "api_sha256": "b85fb55d732f8f035e9cd5769af17257bd1677875d093bcf00d2c11b330ad946"
+    },
+    {
+      "prompt_id": "eedd5899-1d07-4603-bd0a-94cddb977e4a",
+      "selection": {
+        "group": "student",
+        "product": "bicycles",
+        "color1": "yellow",
+        "color2": "black",
+        "primary_hex": "#F6EEA2",
+        "secondary_hex": "#171619",
+        "profile": "quality",
+        "seed": 1211317,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bicycles",
+        "alpha": true,
+        "positive_prompt": "one road bicycle with drop handlebars and thin tires, both wheels visible, centered. Main color #F6EEA2 (pale pastel yellow) on frame. Accent color #171619 (near-black) on wheel rims and handlebars. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.265,
+      "width": 480,
+      "height": 480,
+      "local_image": "bicycles_student_yellow_black_1211317.png",
+      "server_image": {
+        "filename": "product_00829_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "2a4b4037-89ab-4a49-a342-bddd160ad13d"
+      },
+      "pass_id": 1,
+      "png_sha256": "6d226c62d556ad90ab2eab8ca2dd6b0ce71ecf14421432a6f4d74fa3d651e96f",
+      "api_sha256": "635fdc2364199bf1ec3376d0c502403465caae7d25335f6e2fbf398e2d8f2fc6"
+    },
+    {
+      "prompt_id": "cd1c70d6-fac2-4c7c-95c5-6a7bb64ce1d0",
+      "selection": {
+        "group": "student",
+        "product": "tumblers",
+        "color1": "blue",
+        "color2": "white",
+        "primary_hex": "#5FB0E3",
+        "secondary_hex": "#FFFFFF",
+        "profile": "quality",
+        "seed": 1211318,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tumblers",
+        "alpha": true,
+        "positive_prompt": "one tall tumbler with a straw and flat lid. Main color #5FB0E3 (light blue) on body. Accent color #FFFFFF (white) on straw and lid. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.573,
+      "width": 480,
+      "height": 480,
+      "local_image": "tumblers_student_blue_white_1211318.png",
+      "server_image": {
+        "filename": "product_00830_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "3370b1dc-cbc4-41da-b95e-954ee22b8a77"
+      },
+      "pass_id": 1,
+      "png_sha256": "e44ceb7b8528953da753c6e0bb5fd5a49a140a24dee62eb3e378e45b088b2244",
+      "api_sha256": "ee92d9b1cf002a69604539386606af442fc0e4e5ed775b920f11486fe853043d"
+    },
+    {
+      "prompt_id": "6ba197eb-622d-4f3b-9ce2-d7e921150479",
+      "selection": {
+        "group": "student",
+        "product": "wristwatches",
+        "color1": "black",
+        "color2": "yellow",
+        "primary_hex": "#171619",
+        "secondary_hex": "#F6EEA2",
+        "profile": "quality",
+        "seed": 1211319,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "wristwatches",
+        "alpha": true,
+        "positive_prompt": "one rectangular digital sports wristwatch with a chunky band and a clear LCD display reading 12:30, entire watch and both band ends. Main color #171619 (near-black) on plastic strap. Accent color #F6EEA2 (pale pastel yellow) on digital case. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.383,
+      "width": 480,
+      "height": 480,
+      "local_image": "wristwatches_student_black_yellow_1211319.png",
+      "server_image": {
+        "filename": "product_00831_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "5fa5daf1-2624-4b29-8a95-86ee6be3a68b"
+      },
+      "pass_id": 1,
+      "png_sha256": "9e3ad72750527562323ba6641c291ef2a45bf9b70bce8dfa7834877b8d3a7fd6",
+      "api_sha256": "4a9c77c5620d827aedf4d6fd978afd04f7ffae3358511de8e4f6f165504ab3be"
+    },
+    {
+      "prompt_id": "36e14378-1d38-4fc9-92c6-7de979943d4f",
+      "selection": {
+        "group": "student",
+        "product": "umbrellas",
+        "color1": "white",
+        "color2": "black",
+        "primary_hex": "#FFFFFF",
+        "secondary_hex": "#171619",
+        "profile": "quality",
+        "seed": 1211320,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "umbrellas",
+        "alpha": true,
+        "positive_prompt": "one compact folding umbrella with a short telescopic shaft and a straight handle. Main color #FFFFFF (white) on canopy. Accent color #171619 (near-black) on handle and rim. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.385,
+      "width": 480,
+      "height": 480,
+      "local_image": "umbrellas_student_white_black_1211320.png",
+      "server_image": {
+        "filename": "product_00832_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "5f4bb847-50e7-4ca3-b44c-94841de98481"
+      },
+      "pass_id": 1,
+      "png_sha256": "f6ccd6c247438dfaef610ddac9bb7d1c11a75e1cbf0b8922b672de6d19668f25",
+      "api_sha256": "333721f8ead61cd389bb30098ad54e8d5c32464a55ebe98e2644ab67abcf94ea"
+    },
+    {
+      "prompt_id": "a48db984-31f3-46a8-a5cf-bef683ecbef0",
+      "selection": {
+        "group": "working_adult",
+        "product": "bags",
+        "color1": "blue",
+        "color2": "white",
+        "primary_hex": "#5FB0E3",
+        "secondary_hex": "#FFFFFF",
+        "profile": "quality",
+        "seed": 1211321,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "one structured office briefcase with a top handle and rectangular flap. Main color #5FB0E3 (light blue) on body. Accent color #FFFFFF (white) on handle and flap. refined minimal design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.602,
+      "width": 480,
+      "height": 480,
+      "local_image": "bags_working_adult_blue_white_1211321.png",
+      "server_image": {
+        "filename": "product_00833_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "e69a6ceb-a8e1-48a3-bf16-7559022f084e"
+      },
+      "pass_id": 1,
+      "png_sha256": "eef08ffc3a14391fb6a633e0dead018a1c7a9dbe150a0d1bfe5755f24f967041",
+      "api_sha256": "9b817b21b529338887dfa4fc37c25cd20023db05f8e58666bd0203aabea8eea8"
+    },
+    {
+      "prompt_id": "e318c998-55d5-4a6c-bb6e-fa6fcfffaa39",
+      "selection": {
+        "group": "working_adult",
+        "product": "shoes",
+        "color1": "black",
+        "color2": "yellow",
+        "primary_hex": "#171619",
+        "secondary_hex": "#F6EEA2",
+        "profile": "quality",
+        "seed": 1211322,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "one classic laceless penny loafer, a slip-on dress shoe with a wide strap across the vamp, smooth moccasin toe and low flat heel, no shoelaces or sneaker panels. Main color #171619 (near-black) on leather upper. Accent color #F6EEA2 (pale pastel yellow) on sole and instep band. refined minimal design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.268,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_working_adult_black_yellow_1211322.png",
+      "server_image": {
+        "filename": "product_00834_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "d9a2dcf1-e966-4efe-95a0-faf49a3754fc"
+      },
+      "pass_id": 1,
+      "png_sha256": "3f542625a34750d05422711f3ae41c902e42571beb85dc7c8c79d629685e2967",
+      "api_sha256": "ba9cd72124c50a9cfd2fadbc9a6209fc41f5bd0c959be508018e8ffc417ba21d"
+    },
+    {
+      "prompt_id": "a3036d5e-e29f-4cc2-9a6f-c58777aa9e3c",
+      "selection": {
+        "group": "working_adult",
+        "product": "hats",
+        "color1": "white",
+        "color2": "black",
+        "primary_hex": "#FFFFFF",
+        "secondary_hex": "#171619",
+        "profile": "quality",
+        "seed": 1211323,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "hats",
+        "alpha": true,
+        "positive_prompt": "one baseball cap with a curved visor and button on top. Main color #FFFFFF (white) on crown. Accent color #171619 (near-black) on visor. refined minimal design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.372,
+      "width": 480,
+      "height": 480,
+      "local_image": "hats_working_adult_white_black_1211323.png",
+      "server_image": {
+        "filename": "product_00835_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "376a735f-5dd6-4cac-b54b-ccf49b194fd8"
+      },
+      "pass_id": 1,
+      "png_sha256": "86b6bf079950821c858ad6e0590c0a79fb7367019825ba0993996c6f2c416504",
+      "api_sha256": "8f6bb6bfcee916e2f4917db994c299aefe9a14be8f85244ce29561063305603c"
+    },
+    {
+      "prompt_id": "6100f3a3-7506-4777-854f-307ff18576b6",
+      "selection": {
+        "group": "working_adult",
+        "product": "sunglasses",
+        "color1": "red",
+        "color2": "green",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#B7DBA9",
+        "profile": "quality",
+        "seed": 1211324,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "sunglasses",
+        "alpha": true,
+        "positive_prompt": "one rectangular browline sunglasses with solid tinted lenses. Main color #EC6868 (soft red) on frame. Accent color #B7DBA9 (light pastel green) on opaque lenses. refined minimal design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.738,
+      "width": 480,
+      "height": 480,
+      "local_image": "sunglasses_working_adult_red_green_1211324.png",
+      "server_image": {
+        "filename": "product_00836_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "390ac1fd-5245-4bbf-bb32-f1f65041ba92"
+      },
+      "pass_id": 1,
+      "png_sha256": "71d5812f253edb735b1bd70c7d4ef6cc3c335efd7281c3d3cb62f531cae17ed1",
+      "api_sha256": "720f984765dbec5af3ca2359165e872ccdb899e01c36c0da2a5b75fe570d0f2a"
+    },
+    {
+      "prompt_id": "54cee774-4053-4e2e-b968-c59745883869",
+      "selection": {
+        "group": "working_adult",
+        "product": "headphones",
+        "color1": "green",
+        "color2": "white",
+        "primary_hex": "#B7DBA9",
+        "secondary_hex": "#FFFFFF",
+        "profile": "quality",
+        "seed": 1211325,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "headphones",
+        "alpha": true,
+        "positive_prompt": "one sleek noise-cancelling over-ear headphones with smooth oval earcups. Main color #B7DBA9 (light pastel green) on earcups. Accent color #FFFFFF (white) on padded headband. refined minimal design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.248,
+      "width": 480,
+      "height": 480,
+      "local_image": "headphones_working_adult_green_white_1211325.png",
+      "server_image": {
+        "filename": "product_00837_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "288f5541-5cb2-4e81-b010-6fc46b74f1b5"
+      },
+      "pass_id": 1,
+      "png_sha256": "9173b7c5b8ad7d3511009b98895923906920fb30bf2d8d01403f1054bf973127",
+      "api_sha256": "2bba7ca64d859b5172af143102d9ba445b0038366f8d5c96f1227240270c25e3"
+    },
+    {
+      "prompt_id": "e3f68882-77d4-4e7e-a8b6-9feb6c32648e",
+      "selection": {
+        "group": "working_adult",
+        "product": "tops",
+        "color1": "yellow",
+        "color2": "black",
+        "primary_hex": "#F6EEA2",
+        "secondary_hex": "#171619",
+        "profile": "quality",
+        "seed": 1211326,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tops",
+        "alpha": true,
+        "positive_prompt": "one button-up shirt with a collar and long sleeves, complete garment, centered. Main color #F6EEA2 (pale pastel yellow) on body. Accent color #171619 (near-black) on collar and cuffs. refined minimal design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.257,
+      "width": 480,
+      "height": 480,
+      "local_image": "tops_working_adult_yellow_black_1211326.png",
+      "server_image": {
+        "filename": "product_00838_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "91acff0a-1df7-4d5c-8ba8-c3e034b5f8c8"
+      },
+      "pass_id": 1,
+      "png_sha256": "1e46c42f3d1dc2f4b1f6b6ce5178621d0cc992f3b0eeef8f35f3e9bbc40e41b4",
+      "api_sha256": "38876be113c9185a0dad0525f120485f6caa514fd4695836f98329a8556cd432"
+    },
+    {
+      "prompt_id": "eabc34df-4b8f-4ba3-a8be-1d7fd6a47ac3",
+      "selection": {
+        "group": "working_adult",
+        "product": "bicycles",
+        "color1": "blue",
+        "color2": "white",
+        "primary_hex": "#5FB0E3",
+        "secondary_hex": "#FFFFFF",
+        "profile": "quality",
+        "seed": 1211327,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bicycles",
+        "alpha": true,
+        "positive_prompt": "one tiny folding commuter bicycle with a hinged frame and small wheels, full side view, complete wheels with ample white space. Main color #5FB0E3 (light blue) on frame. Accent color #FFFFFF (white) on wheel rims and hinge. refined minimal design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.8,
+      "width": 480,
+      "height": 480,
+      "local_image": "bicycles_working_adult_blue_white_1211327.png",
+      "server_image": {
+        "filename": "product_00839_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "59ed7131-2061-4041-9f88-1fbff5185b88"
+      },
+      "pass_id": 1,
+      "png_sha256": "6af8532675a73977f82881bfe8dc211164281778e13303bc3f8b8c8bad2cf924",
+      "api_sha256": "965215fb68a2d19b2846260cc40785c88c99ede2c6ef9a34c8a14982656c2499"
+    },
+    {
+      "prompt_id": "1e71c165-705e-4b3f-80d7-1eeb38c431e3",
+      "selection": {
+        "group": "working_adult",
+        "product": "tumblers",
+        "color1": "black",
+        "color2": "yellow",
+        "primary_hex": "#171619",
+        "secondary_hex": "#F6EEA2",
+        "profile": "quality",
+        "seed": 1211328,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tumblers",
+        "alpha": true,
+        "positive_prompt": "one tapered travel coffee mug with a handle and flip-top lid. Main color #171619 (near-black) on body. Accent color #F6EEA2 (pale pastel yellow) on handle and lid. refined minimal design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.332,
+      "width": 480,
+      "height": 480,
+      "local_image": "tumblers_working_adult_black_yellow_1211328.png",
+      "server_image": {
+        "filename": "product_00840_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "39969b74-c2a9-4c63-90f3-dff82d24292b"
+      },
+      "pass_id": 1,
+      "png_sha256": "2eafe73278018ccd1b7955a33a7c1efcbf14947d2f5180e00d989f2928afc33d",
+      "api_sha256": "571063d63c21efbf6461787a898a0da464e7dde7a414ace1ecb71279dd3f051b"
+    },
+    {
+      "prompt_id": "5a7161a3-5c6d-4d39-9b75-540ffcdc5e4e",
+      "selection": {
+        "group": "working_adult",
+        "product": "wristwatches",
+        "color1": "white",
+        "color2": "black",
+        "primary_hex": "#FFFFFF",
+        "secondary_hex": "#171619",
+        "profile": "quality",
+        "seed": 1211329,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "wristwatches",
+        "alpha": true,
+        "positive_prompt": "one rounded square smartwatch with a complete silicone wristband, simple clock face and three small colorful app dots on the screen. Main color #FFFFFF (white) on silicone strap. Accent color #171619 (near-black) on square case. refined minimal design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.279,
+      "width": 480,
+      "height": 480,
+      "local_image": "wristwatches_working_adult_white_black_1211329.png",
+      "server_image": {
+        "filename": "product_00841_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "7c912702-2211-4ecb-8970-2f4bf7b2f2c6"
+      },
+      "pass_id": 1,
+      "png_sha256": "f3fb44650ba9ed8c9064629b17a9373efaa1b1b59f933ac500c0d5600ef4f7f5",
+      "api_sha256": "eb9ac13565b4fafff6d661f3084b6d53c1d583b981ea7e40aa1d7f2cf009e0fc"
+    },
+    {
+      "prompt_id": "4698047b-5802-4d02-b36e-c80ce55311b7",
+      "selection": {
+        "group": "working_adult",
+        "product": "umbrellas",
+        "color1": "red",
+        "color2": "green",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#B7DBA9",
+        "profile": "quality",
+        "seed": 1211330,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "umbrellas",
+        "alpha": true,
+        "positive_prompt": "one open classic umbrella with an angular canopy, long shaft and hooked handle. Main color #EC6868 (soft red) on canopy. Accent color #B7DBA9 (light pastel green) on trim and hooked handle. refined minimal design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.756,
+      "width": 480,
+      "height": 480,
+      "local_image": "umbrellas_working_adult_red_green_1211330.png",
+      "server_image": {
+        "filename": "product_00842_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "2f05c356-b4fc-4157-a3d3-d3727076a0f8"
+      },
+      "pass_id": 1,
+      "png_sha256": "0ef82cb334d935f33085360d4773e416f0e9c2455a92a4c88d6b21881404f219",
+      "api_sha256": "03381eacbfd366692d39cc116cedea0c818dd64589423fd25474cd3486ff497c"
+    },
+    {
+      "prompt_id": "2da78ef4-08ff-4180-bed5-341db6ffef07",
+      "selection": {
+        "group": "senior",
+        "product": "bags",
+        "color1": "black",
+        "color2": "yellow",
+        "primary_hex": "#171619",
+        "secondary_hex": "#F6EEA2",
+        "profile": "quality",
+        "seed": 1211331,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "one soft crossbody satchel with a long shoulder strap and flap. Main color #171619 (near-black) on body. Accent color #F6EEA2 (pale pastel yellow) on flap and shoulder strap. simple ergonomic design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.3,
+      "width": 480,
+      "height": 480,
+      "local_image": "bags_senior_black_yellow_1211331.png",
+      "server_image": {
+        "filename": "product_00843_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "daf4e579-b670-4389-ad72-4ba06a584bda"
+      },
+      "pass_id": 1,
+      "png_sha256": "2044f90430cd6c5b5721eadf3cbfb5171fe20269c41a4d3f3413a2ebc58a0333",
+      "api_sha256": "4d1394e4496faa19b73945bcda372c0870a9b6b88b19fc0d1ad7668ebbe43a56"
+    },
+    {
+      "prompt_id": "4cb54233-0527-4049-894b-5236bd17a074",
+      "selection": {
+        "group": "senior",
+        "product": "shoes",
+        "color1": "white",
+        "color2": "black",
+        "primary_hex": "#FFFFFF",
+        "secondary_hex": "#171619",
+        "profile": "quality",
+        "seed": 1211332,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "one comfortable slip-on walking shoe, wide rounded toe and elastic instep, no shoelaces. Main color #FFFFFF (white) on fabric upper. Accent color #171619 (near-black) on sole and heel panel. simple ergonomic design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.363,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_senior_white_black_1211332.png",
+      "server_image": {
+        "filename": "product_00844_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "fb58f095-a945-4dfb-ad07-e4d25eb39141"
+      },
+      "pass_id": 1,
+      "png_sha256": "91b0821b87e18d6e5d72d5ac03d960a1cd96340ffdfb1f8d58f93a5d7eb61aa1",
+      "api_sha256": "9152de5375d8eaa166501aca07ce6b0b04bc316a94b6dda7ee099f2c5347f4b1"
+    },
+    {
+      "prompt_id": "df58716a-176f-4045-a1ff-953b5a6d3fd2",
+      "selection": {
+        "group": "senior",
+        "product": "hats",
+        "color1": "red",
+        "color2": "green",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#B7DBA9",
+        "profile": "quality",
+        "seed": 1211333,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "hats",
+        "alpha": true,
+        "positive_prompt": "one classic fedora hat with a pinched crown, ribbon band and brim. Main color #EC6868 (soft red) on crown and brim. Accent color #B7DBA9 (light pastel green) on ribbon band. simple ergonomic design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.811,
+      "width": 480,
+      "height": 480,
+      "local_image": "hats_senior_red_green_1211333.png",
+      "server_image": {
+        "filename": "product_00845_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "959794e7-a02d-4777-9eb3-030e76dcced0"
+      },
+      "pass_id": 1,
+      "png_sha256": "97df5395c9dc02b254e10a286d68627ad63ef47b60e6828030f65334305da03a",
+      "api_sha256": "f473fa6a979904be064a8a6e34307d2dd55a306945ce9ba0e12f932293d9dd3e"
+    },
+    {
+      "prompt_id": "f281b67e-47fd-40e9-9c49-90c0ed1b5774",
+      "selection": {
+        "group": "senior",
+        "product": "sunglasses",
+        "color1": "green",
+        "color2": "white",
+        "primary_hex": "#B7DBA9",
+        "secondary_hex": "#FFFFFF",
+        "profile": "quality",
+        "seed": 1211334,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "sunglasses",
+        "alpha": true,
+        "positive_prompt": "one round vintage sunglasses with thick circular frames and solid tinted lenses. Main color #B7DBA9 (light pastel green) on circular frame. Accent color #FFFFFF (white) on opaque lenses. simple ergonomic design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.364,
+      "width": 480,
+      "height": 480,
+      "local_image": "sunglasses_senior_green_white_1211334.png",
+      "server_image": {
+        "filename": "product_00846_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "2b901be9-3e8a-48bb-a03a-bafc12fe1b89"
+      },
+      "pass_id": 1,
+      "png_sha256": "2dd50f84cc269ff64a08c0e37e7f467a405366179f9aaca692597b47120c6c45",
+      "api_sha256": "83a96bdcafd5548306760efb4754239b4246b2a09b2127adcc9608bd3f1e23d5"
+    },
+    {
+      "prompt_id": "6f9139e2-d147-4e02-afe9-624ca89b7847",
+      "selection": {
+        "group": "senior",
+        "product": "headphones",
+        "color1": "yellow",
+        "color2": "black",
+        "primary_hex": "#F6EEA2",
+        "secondary_hex": "#171619",
+        "profile": "quality",
+        "seed": 1211335,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "headphones",
+        "alpha": true,
+        "positive_prompt": "one lightweight retro on-ear headphones, two small round foam earpads connected by a thin curved headband, no microphone. Main color #F6EEA2 (pale pastel yellow) on round foam earpads. Accent color #171619 (near-black) on thin headband. simple ergonomic design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.347,
+      "width": 480,
+      "height": 480,
+      "local_image": "headphones_senior_yellow_black_1211335.png",
+      "server_image": {
+        "filename": "product_00847_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "32d4e6d3-889c-4317-be67-c32dced91e26"
+      },
+      "pass_id": 1,
+      "png_sha256": "6a312ddc07adffdf4b64e7b86e67091714809b23d1ae5ff3c4fb53b5e8be3d1a",
+      "api_sha256": "aed22b55b1749564d1d04123e7ee39535b9bb6a3bb313465e1e9d844aec18124"
+    },
+    {
+      "prompt_id": "eafcc435-9e89-4bd5-816b-331a77d44331",
+      "selection": {
+        "group": "senior",
+        "product": "tops",
+        "color1": "blue",
+        "color2": "white",
+        "primary_hex": "#5FB0E3",
+        "secondary_hex": "#FFFFFF",
+        "profile": "quality",
+        "seed": 1211336,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tops",
+        "alpha": true,
+        "positive_prompt": "one V-neck cardigan with buttons and pockets, complete garment, centered. Main color #5FB0E3 (light blue) on body. Accent color #FFFFFF (white) on sleeves and ribbed edges. simple ergonomic design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.694,
+      "width": 480,
+      "height": 480,
+      "local_image": "tops_senior_blue_white_1211336.png",
+      "server_image": {
+        "filename": "product_00848_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "10b86f26-658e-4c6b-ac96-d017d7355034"
+      },
+      "pass_id": 1,
+      "png_sha256": "83822b760633ea78f4e020050b385bf866afd9249e135e79ab6a19385a8c1cad",
+      "api_sha256": "5bab7e1c7123d2057cc180d12fd1133efd647b30d650f6f1bb5f7fc07cb08484"
+    },
+    {
+      "prompt_id": "6dd0931f-7b0b-49d9-b274-f96cfb96c5ff",
+      "selection": {
+        "group": "senior",
+        "product": "bicycles",
+        "color1": "black",
+        "color2": "yellow",
+        "primary_hex": "#171619",
+        "secondary_hex": "#F6EEA2",
+        "profile": "quality",
+        "seed": 1211337,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bicycles",
+        "alpha": true,
+        "positive_prompt": "one tiny step-through city bicycle with a front basket and upright handlebars, full side view, complete wheels with ample white space. Main color #171619 (near-black) on frame. Accent color #F6EEA2 (pale pastel yellow) on basket and wheel rims. simple ergonomic design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.288,
+      "width": 480,
+      "height": 480,
+      "local_image": "bicycles_senior_black_yellow_1211337.png",
+      "server_image": {
+        "filename": "product_00849_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "80215a6a-2b2f-40b3-8a8c-c170eeaeb021"
+      },
+      "pass_id": 1,
+      "png_sha256": "4509c4b9bf221f52dffa2809a59478ea71979cd3f6aa7840de603d3dc4ee0a2e",
+      "api_sha256": "d0d37dd375fc1d8b85a3e0376a7949592a7ae53f14718e5c66b654d8e707861f"
+    },
+    {
+      "prompt_id": "63f0cd91-b02a-4d37-90de-e5af3007d598",
+      "selection": {
+        "group": "senior",
+        "product": "tumblers",
+        "color1": "white",
+        "color2": "black",
+        "primary_hex": "#FFFFFF",
+        "secondary_hex": "#171619",
+        "profile": "quality",
+        "seed": 1211338,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tumblers",
+        "alpha": true,
+        "positive_prompt": "one insulated vacuum flask with a screw-on cup cap. Main color #FFFFFF (white) on flask body. Accent color #171619 (near-black) on cup cap. simple ergonomic design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.378,
+      "width": 480,
+      "height": 480,
+      "local_image": "tumblers_senior_white_black_1211338.png",
+      "server_image": {
+        "filename": "product_00850_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "57e4ebd9-e661-47fa-9a93-8c72734ba7ac"
+      },
+      "pass_id": 1,
+      "png_sha256": "7b726378fbdcc81191adc3a9616e219844e83e3fe2764cc2b516df5eeee6faa3",
+      "api_sha256": "c0a4b784bef66a778d104d860c85da0475cb39c46f9c19a3ec2f854f39afb470"
+    },
+    {
+      "prompt_id": "db00df06-9b3e-4d9c-a2da-a69a7d5a9304",
+      "selection": {
+        "group": "senior",
+        "product": "wristwatches",
+        "color1": "red",
+        "color2": "green",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#B7DBA9",
+        "profile": "quality",
+        "seed": 1211339,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "wristwatches",
+        "alpha": true,
+        "positive_prompt": "one round analog wristwatch with large clear hands and a metal link band, complete short wristband, centered. Main color #EC6868 (soft red) on metal bracelet. Accent color #B7DBA9 (light pastel green) on round case. simple ergonomic design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.785,
+      "width": 480,
+      "height": 480,
+      "local_image": "wristwatches_senior_red_green_1211339.png",
+      "server_image": {
+        "filename": "product_00851_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "1f658b23-cb21-40c0-9156-f1290138fc20"
+      },
+      "pass_id": 1,
+      "png_sha256": "9f91b68a9d2ec9dd1d0f725d74130069babc660ae5db2938f098d1c5b01c70f8",
+      "api_sha256": "f5a1db848555e362b14c86b6088b00660470f7bf1a88a620a1848ab9b6fa7945"
+    },
+    {
+      "prompt_id": "b090b40c-2053-42e8-9206-22c198241e45",
+      "selection": {
+        "group": "senior",
+        "product": "umbrellas",
+        "color1": "green",
+        "color2": "white",
+        "primary_hex": "#B7DBA9",
+        "secondary_hex": "#FFFFFF",
+        "profile": "quality",
+        "seed": 1211340,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "umbrellas",
+        "alpha": true,
+        "positive_prompt": "one traditional paper parasol with a flat circular canopy and a straight bamboo handle. Main color #B7DBA9 (light pastel green) on paper canopy. Accent color #FFFFFF (white) on ribs and handle. simple ergonomic design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 3.299,
+      "width": 480,
+      "height": 480,
+      "local_image": "umbrellas_senior_green_white_1211340.png",
+      "server_image": {
+        "filename": "product_00852_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "6d1e11f0-25ff-4672-8d73-4065c910cead"
+      },
+      "pass_id": 1,
+      "png_sha256": "f524d8fdee3b652aec0598a770675e8f29989449a5df060b2d9e3c726281f3ae",
+      "api_sha256": "788c369086053ca51fcbb29eb005c1e09367f4e5478b3eabf6e29d4527c5b4fb"
+    }
+  ],
+  "completed": true
+}

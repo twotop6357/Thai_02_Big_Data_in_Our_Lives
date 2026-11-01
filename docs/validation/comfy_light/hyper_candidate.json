@@ -1,0 +1,10 @@
+{
+  "name": "Hyper-SD15 8-step CFG-preserved LoRA",
+  "filename": "Hyper-SD15-8steps-CFG-lora.safetensors",
+  "repository": "ByteDance/Hyper-SD",
+  "revision": "bc08d970a87c74c71209491d64e3525845698863",
+  "url": "https://huggingface.co/ByteDance/Hyper-SD/resolve/bc08d970a87c74c71209491d64e3525845698863/Hyper-SD15-8steps-CFG-lora.safetensors",
+  "bytes": 269127064,
+  "sha256": "f6123d5b950d5250ab6c33600e27f4dcf71b3099ebf888685e01e9e8117ce482",
+  "model_card": "https://huggingface.co/ByteDance/Hyper-SD"
+}

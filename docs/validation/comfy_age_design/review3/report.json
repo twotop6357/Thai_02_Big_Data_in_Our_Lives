@@ -1,0 +1,1447 @@
+{
+  "task": "AGE-DESIGN-002",
+  "config_sha256": "dc261beff997a2da3201cddfcae334771e9153dccdaedc4a67ddbcd1c4bab39a",
+  "seed": 1206501,
+  "colors": [
+    "red",
+    "blue"
+  ],
+  "age_order": [
+    "child",
+    "student",
+    "working_adult",
+    "senior"
+  ],
+  "results": [
+    {
+      "prompt_id": "63433953-77cb-4380-8564-892440fe4537",
+      "selection": {
+        "group": "child",
+        "product": "bags",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "one small kindergarten backpack with a rounded flap and front pocket, soft red body, light blue flap and straps, playful rounded design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.913,
+      "width": 480,
+      "height": 480,
+      "local_image": "bags_child_1206501.png",
+      "server_image": {
+        "filename": "product_00557_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "53678432-b641-4e17-a138-d8f14b2ad6b6"
+      },
+      "api_sha256": "7df19ac5ff395f79870bcade5d60d0570dddcae33418963ef92beef457f72034",
+      "png_sha256": "90f11ebb2015401dceb498568780c831cf2a5d8155c9e60092a2097274488480",
+      "reused_from": "docs\\validation\\comfy_age_design\\review2\\bags_child_1206501.png"
+    },
+    {
+      "prompt_id": "8360f8cb-01de-431a-b03c-0f28536323a3",
+      "selection": {
+        "group": "student",
+        "product": "bags",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "one school backpack with a large front zipper pocket and two shoulder straps, soft red body, light blue front pocket and straps, simple sporty design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.593,
+      "width": 480,
+      "height": 480,
+      "local_image": "bags_student_1206501.png",
+      "server_image": {
+        "filename": "product_00558_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "6c24493f-7796-481d-a94c-f2e907a3661e"
+      },
+      "api_sha256": "33cc43248d1ae7d0933fe5d8c4b413e879a94819b638f4029c0d85e375459a71",
+      "png_sha256": "56dd48069a316a816afa25182fa1519ecedace6bbfcefa58ca3984f0ca07f41f",
+      "reused_from": "docs\\validation\\comfy_age_design\\review2\\bags_student_1206501.png"
+    },
+    {
+      "prompt_id": "7d830da1-cb3e-4de6-a773-b4db73e57bfe",
+      "selection": {
+        "group": "working_adult",
+        "product": "bags",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "one structured office briefcase with a top handle and rectangular flap, soft red body, light blue handle and flap, refined minimal design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.545,
+      "width": 480,
+      "height": 480,
+      "local_image": "bags_working_adult_1206501.png",
+      "server_image": {
+        "filename": "product_00559_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "7edffa5d-5767-46f3-87d8-67678eeea510"
+      },
+      "api_sha256": "59c2c1d0231c81a7c60ca42d56270cb580e54819730fe334a970029d09c1b59f",
+      "png_sha256": "2e4df8130f8f313170c93b0804c50857922b745d1d4ef2a5faf681f62d2b8c97",
+      "reused_from": "docs\\validation\\comfy_age_design\\review2\\bags_working_adult_1206501.png"
+    },
+    {
+      "prompt_id": "2faa935a-936b-47c8-a611-40501db82005",
+      "selection": {
+        "group": "senior",
+        "product": "bags",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "one soft crossbody satchel with a long shoulder strap and flap, soft red body, light blue flap and shoulder strap, simple ergonomic design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.559,
+      "width": 480,
+      "height": 480,
+      "local_image": "bags_senior_1206501.png",
+      "server_image": {
+        "filename": "product_00560_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "c2f6abfa-0645-4080-bafd-7a1437e866d6"
+      },
+      "api_sha256": "0b68dba5503f2f32fd9b203cac5493d9644ca9afc243e3fd544d17ef3408c20a",
+      "png_sha256": "c7ad788e55eee48cea1c4884a54958e55edfc7bbdff31e57d82b1297febdbeba",
+      "reused_from": "docs\\validation\\comfy_age_design\\review2\\bags_senior_1206501.png"
+    },
+    {
+      "prompt_id": "7832e77d-6e1a-40d3-b8e4-697dbb3d00b7",
+      "selection": {
+        "group": "child",
+        "product": "shoes",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "one small child's rain boot with a short shaft and rounded toe, natural three-quarter view, soft red boot upper, light blue sole and cuff, playful rounded design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.744,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_child_1206501.png",
+      "server_image": {
+        "filename": "product_00561_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "cff03551-6d89-40c2-8822-4279670ce65b"
+      },
+      "api_sha256": "91ec1df05af623aec9828aea27b475a174372fb1b933665e5ce157ab2f0ed975",
+      "png_sha256": "6e73fe746cc8fedaa50b6fe7769c6799df808fd2c144a90d40022b16c60041a6",
+      "reused_from": "docs\\validation\\comfy_age_design\\review2\\shoes_child_1206501.png"
+    },
+    {
+      "prompt_id": "15aa2ae5-bf60-494a-9a8f-2830a181585f",
+      "selection": {
+        "group": "student",
+        "product": "shoes",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "one high-top canvas sneaker with laces, natural three-quarter view, soft red canvas upper, light blue ankle panels and sole, simple sporty design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.677,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_student_1206501.png",
+      "server_image": {
+        "filename": "product_00562_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "11124dc0-6713-431a-8245-2dbc1c310975"
+      },
+      "api_sha256": "7b88253529170154b8c7c8945421ec460979994b708b0960af946e877b267c70",
+      "png_sha256": "8b011e5c41f1d039917315ef07d91d3bbd9ab623a94132bc2fa1e2a71055927f",
+      "reused_from": "docs\\validation\\comfy_age_design\\review2\\shoes_student_1206501.png"
+    },
+    {
+      "prompt_id": "095cb2c1-2d2d-40ca-90f9-e1a6fa2413a3",
+      "selection": {
+        "group": "working_adult",
+        "product": "shoes",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "one slip-on penny loafer with a neat toe seam, natural three-quarter view, soft red leather upper, light blue sole and instep band, refined minimal design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 2.354,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_working_adult_1206501.png",
+      "server_image": {
+        "filename": "product_00563_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "1dd9a651-f2e3-45c9-ba37-e54bf868deb2"
+      },
+      "api_sha256": "af3d2c8b8171b9fc89d807f6ed92a0bb0202e5268b6bebabe1f8e180af80d80c",
+      "png_sha256": "35ad14ef045a19f677ef7b4c38a3369db637b8c11eb3a27f783300e2d01952ca",
+      "reused_from": "docs\\validation\\comfy_age_design\\review2\\shoes_working_adult_1206501.png"
+    },
+    {
+      "prompt_id": "bac0efda-ce41-4423-89a9-00f5aa4891f4",
+      "selection": {
+        "group": "senior",
+        "product": "shoes",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "one slip-on walking shoe with a wide rounded toe and elastic upper, natural three-quarter view, soft red fabric upper, light blue sole and heel panel, simple ergonomic design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.577,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_senior_1206501.png",
+      "server_image": {
+        "filename": "product_00564_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "1909f45b-e716-43bc-946e-e6626706975c"
+      },
+      "api_sha256": "693f9ae7d24e20e66bf4cfa0bd4c8150dc77845861f503d39c844b11eedb390b",
+      "png_sha256": "85bc280344683f771cd2152c61b54c52cf7af88a5f991de90837a8f62c07a274",
+      "reused_from": "docs\\validation\\comfy_age_design\\review2\\shoes_senior_1206501.png"
+    },
+    {
+      "prompt_id": "66ad1b99-be3d-414c-a7c8-7c9c44f3f320",
+      "selection": {
+        "group": "child",
+        "product": "hats",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "hats",
+        "alpha": true,
+        "positive_prompt": "one kindergarten sun hat with a rounded crown, wide brim and chin strap, soft red crown, light blue brim and chin strap, playful rounded design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.7,
+      "width": 480,
+      "height": 480,
+      "local_image": "hats_child_1206501.png",
+      "server_image": {
+        "filename": "product_00565_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "64c0a70a-636b-48a5-a863-d0b55b648be8"
+      },
+      "api_sha256": "ac785295800788ceb010d7ce931fcdb6d3dacc9708b0056286dcded7104c3384",
+      "png_sha256": "d8863427536c951ff2f0ac770ec9dbf9ebf7781e43e6a964433ef89b9aa922c2",
+      "reused_from": "docs\\validation\\comfy_age_design\\review2\\hats_child_1206501.png"
+    },
+    {
+      "prompt_id": "bb40b6ab-85a4-45e5-9701-0247a3177b42",
+      "selection": {
+        "group": "student",
+        "product": "hats",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "hats",
+        "alpha": true,
+        "positive_prompt": "one ribbed knitted beanie with a folded cuff, soft red knitted crown, light blue folded cuff, simple sporty design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.745,
+      "width": 480,
+      "height": 480,
+      "local_image": "hats_student_1206501.png",
+      "server_image": {
+        "filename": "product_00566_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "41d3a3a9-f873-4ba5-b4ac-aa3cc1aacf33"
+      },
+      "api_sha256": "c0736171142bff27021e53b853e7dc5a4d8675c8dfdb1c14b8904cc00f605cc8",
+      "png_sha256": "8e481c0b4cee94c0cedf79a4e7b484c55c28ea5d2bd26bc633e67e8bff4da2a3",
+      "reused_from": "docs\\validation\\comfy_age_design\\review2\\hats_student_1206501.png"
+    },
+    {
+      "prompt_id": "3099992c-d0f9-4750-8ff6-2716817024fa",
+      "selection": {
+        "group": "working_adult",
+        "product": "hats",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "hats",
+        "alpha": true,
+        "positive_prompt": "one baseball cap with a curved visor and button on top, soft red crown, light blue visor, refined minimal design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.677,
+      "width": 480,
+      "height": 480,
+      "local_image": "hats_working_adult_1206501.png",
+      "server_image": {
+        "filename": "product_00567_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "10d48a03-9cdd-4929-9c5e-b0c154e9b534"
+      },
+      "api_sha256": "1d6a397d6e2588b95431530df711144c6eb3811bfb5a835185eb095024210c3e",
+      "png_sha256": "b78404cc642e043658c623265cf30d85b9954298f0b0e9ac4bdf0791e22b5ef9",
+      "reused_from": "docs\\validation\\comfy_age_design\\review2\\hats_working_adult_1206501.png"
+    },
+    {
+      "prompt_id": "a35ceb06-d2e8-416c-b65b-b48459fa082a",
+      "selection": {
+        "group": "senior",
+        "product": "hats",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "hats",
+        "alpha": true,
+        "positive_prompt": "one classic fedora hat with a pinched crown, ribbon band and brim, soft red crown and brim, light blue ribbon band, simple ergonomic design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.847,
+      "width": 480,
+      "height": 480,
+      "local_image": "hats_senior_1206501.png",
+      "server_image": {
+        "filename": "product_00568_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "b6a01971-4fe2-4514-8dc7-51e1df709867"
+      },
+      "api_sha256": "e50c1a91115d22eb8f8e693eb7f81b45033b90060f82b4b89a476ad70b00eb33",
+      "png_sha256": "1d1de7c013961ea8cee491d42f45e4002adccd54e5031dcc5ece9c59ed1cd20d",
+      "reused_from": "docs\\validation\\comfy_age_design\\review2\\hats_senior_1206501.png"
+    },
+    {
+      "prompt_id": "29ce91c5-753b-4572-aa61-4a7572efbefa",
+      "selection": {
+        "group": "child",
+        "product": "sunglasses",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "sunglasses",
+        "alpha": true,
+        "positive_prompt": "simple flat illustration of heart-shaped sunglasses, one pair of heart-shaped frames, soft red heart-shaped frame, light blue solid tinted lenses, playful rounded design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.655,
+      "width": 480,
+      "height": 480,
+      "local_image": "sunglasses_child_1206501.png",
+      "server_image": {
+        "filename": "product_00609_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "b317fce1-3994-435b-bf50-01a00615d305"
+      },
+      "api_sha256": "311fce5c257945a1dad2986c1c7e086d29695925a23cfd45489d7ab23c885723",
+      "png_sha256": "236c6001e097e405d85b07694b07feb39167a0fbc87af97d5aafbc03e8df90c0"
+    },
+    {
+      "prompt_id": "8e23a11d-e945-4015-b547-c7736d8371ab",
+      "selection": {
+        "group": "student",
+        "product": "sunglasses",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "sunglasses",
+        "alpha": true,
+        "positive_prompt": "one wraparound sports sunglasses with a curved shield lens and solid tint, soft red frame, light blue opaque shield lens, simple sporty design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.602,
+      "width": 480,
+      "height": 480,
+      "local_image": "sunglasses_student_1206501.png",
+      "server_image": {
+        "filename": "product_00570_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "986d38ce-a93a-47aa-98ef-5d88f86e17db"
+      },
+      "api_sha256": "8dc8e218aeb4a61e112371ecdc9ebd8f8d9cda2b30d532202a95745e7e95b210",
+      "png_sha256": "87d217f2bcafdf3ef49155abaf890a4ca9eaad6ab3bd2598d73cd8409a29d456",
+      "reused_from": "docs\\validation\\comfy_age_design\\review2\\sunglasses_student_1206501.png"
+    },
+    {
+      "prompt_id": "0be9fd65-d8b5-4b43-9b00-a7d0ea2bd56a",
+      "selection": {
+        "group": "working_adult",
+        "product": "sunglasses",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "sunglasses",
+        "alpha": true,
+        "positive_prompt": "one rectangular browline sunglasses with solid tinted lenses, soft red frame, light blue opaque lenses, refined minimal design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.728,
+      "width": 480,
+      "height": 480,
+      "local_image": "sunglasses_working_adult_1206501.png",
+      "server_image": {
+        "filename": "product_00571_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "830aea59-9d58-4d55-ac82-9bf590ffbd08"
+      },
+      "api_sha256": "94caa1670f0973d894899fd72b08d2c76f4fc9e218ffe4a581f7b1a9c595fbb7",
+      "png_sha256": "92a2bf00c643757a5587d4bebc187abbf55009d48e35701339179aaf63bc972e",
+      "reused_from": "docs\\validation\\comfy_age_design\\review2\\sunglasses_working_adult_1206501.png"
+    },
+    {
+      "prompt_id": "48b25284-ff0c-478e-b12e-05e94bdc53ac",
+      "selection": {
+        "group": "senior",
+        "product": "sunglasses",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "sunglasses",
+        "alpha": true,
+        "positive_prompt": "one round vintage sunglasses with thick circular frames and solid tinted lenses, soft red circular frame, light blue opaque lenses, simple ergonomic design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.734,
+      "width": 480,
+      "height": 480,
+      "local_image": "sunglasses_senior_1206501.png",
+      "server_image": {
+        "filename": "product_00572_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "9a61259d-a81d-4984-9c66-e6edc0845c0f"
+      },
+      "api_sha256": "500ed7a5a4b13981ea1beb7803c2c39387fb14261dae38d359740f839fdf9274",
+      "png_sha256": "f05410bc670365701b849676c499030cfdbeff313332871bc8f90c35df2e5d5e",
+      "reused_from": "docs\\validation\\comfy_age_design\\review2\\sunglasses_senior_1206501.png"
+    },
+    {
+      "prompt_id": "ffb40044-5437-48f0-ac46-b449b609bef6",
+      "selection": {
+        "group": "child",
+        "product": "headphones",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "headphones",
+        "alpha": true,
+        "positive_prompt": "one small over-ear headphones with cat ears on the headband, soft red earcups and cat ears, light blue headband, playful rounded design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.839,
+      "width": 480,
+      "height": 480,
+      "local_image": "headphones_child_1206501.png",
+      "server_image": {
+        "filename": "product_00573_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "f702be69-c88d-4ad4-8576-2823b5335b96"
+      },
+      "api_sha256": "63854379a5e4e6d1f638b9ca0dffc16f22bce8f99fa00676f7a7b8589291bedb",
+      "png_sha256": "0677f8eadd6f871c48586364f813db4f023ca03086a1cf3725d1483010892c34",
+      "reused_from": "docs\\validation\\comfy_age_design\\review2\\headphones_child_1206501.png"
+    },
+    {
+      "prompt_id": "8a5ef868-c84a-436a-bf4f-9eb14fcf54eb",
+      "selection": {
+        "group": "student",
+        "product": "headphones",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "headphones",
+        "alpha": true,
+        "positive_prompt": "one gaming headset with large earcups and a short boom microphone, soft red earcups, light blue headband and microphone, simple sporty design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.732,
+      "width": 480,
+      "height": 480,
+      "local_image": "headphones_student_1206501.png",
+      "server_image": {
+        "filename": "product_00574_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "2208d2a9-c68b-4ca8-94ad-e5f74b74c17b"
+      },
+      "api_sha256": "3f681b4fca87cf48b0b9f38705c1fb14e41e91c32efa7ba8f19a038845d45bd7",
+      "png_sha256": "97e12cec9d5223342799000e03a7a2848a302d4783d4ba5abf36458247bd69de",
+      "reused_from": "docs\\validation\\comfy_age_design\\review2\\headphones_student_1206501.png"
+    },
+    {
+      "prompt_id": "9a3edc14-5bd1-4f64-84bf-3d6db9832a4d",
+      "selection": {
+        "group": "working_adult",
+        "product": "headphones",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "headphones",
+        "alpha": true,
+        "positive_prompt": "one sleek noise-cancelling over-ear headphones with smooth oval earcups, soft red earcups, light blue padded headband, refined minimal design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 2.4,
+      "width": 480,
+      "height": 480,
+      "local_image": "headphones_working_adult_1206501.png",
+      "server_image": {
+        "filename": "product_00575_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "2142b9f3-445e-4ab0-b27c-0f56dfbef8b2"
+      },
+      "api_sha256": "485e95f955b26631b68224100a7db7db12a741deec1825eb8c5227d18e405042",
+      "png_sha256": "bf3be7c88b72ea6e3875dbfb31d4130631687fcd54af49a61b2bfc1de4c8a1de",
+      "reused_from": "docs\\validation\\comfy_age_design\\review2\\headphones_working_adult_1206501.png"
+    },
+    {
+      "prompt_id": "f7a78c3b-25c8-49c8-8300-01e648cb5f67",
+      "selection": {
+        "group": "senior",
+        "product": "headphones",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "headphones",
+        "alpha": true,
+        "positive_prompt": "simple flat illustration of wireless neckband earphones, U-shaped neckband and two small earbuds, soft red U-shaped neckband, light blue earbuds, simple ergonomic design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.538,
+      "width": 480,
+      "height": 480,
+      "local_image": "headphones_senior_1206501.png",
+      "server_image": {
+        "filename": "product_00610_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "7dc43f97-9132-4285-8601-777414147930"
+      },
+      "api_sha256": "296139a627641f15953230273fcee2bc227604d584e4b1909a97a1fda6799d08",
+      "png_sha256": "37ad7992b33de5b227c66d59bee7cda35ae10c326be551ff73d8f287117e2ded"
+    },
+    {
+      "prompt_id": "eb004a8f-4bbd-4918-8bd6-b282ef1501c6",
+      "selection": {
+        "group": "child",
+        "product": "tops",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tops",
+        "alpha": true,
+        "positive_prompt": "one child's short-sleeved T-shirt with a small star patch, laid flat, soft red body, light blue sleeves and collar, playful rounded design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.873,
+      "width": 480,
+      "height": 480,
+      "local_image": "tops_child_1206501.png",
+      "server_image": {
+        "filename": "product_00577_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "e340a93f-f0ba-4d0c-a30e-1dde6c44bcd5"
+      },
+      "api_sha256": "7b7dad658e60bca0d33f9ac36779461f09e07749d55d8027729c55eed702c44e",
+      "png_sha256": "17a3f04f881682a18af37348cfdd6bd10298b4c0efc2dae62a7ba565c31f0aab",
+      "reused_from": "docs\\validation\\comfy_age_design\\review2\\tops_child_1206501.png"
+    },
+    {
+      "prompt_id": "968ae4a8-a2f0-470a-8e44-32d9843391a8",
+      "selection": {
+        "group": "student",
+        "product": "tops",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tops",
+        "alpha": true,
+        "positive_prompt": "simple flat illustration of one pullover hoodie with a front pocket, complete hood and sleeves, centered, soft red body, light blue hood and sleeves, simple sporty design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.556,
+      "width": 480,
+      "height": 480,
+      "local_image": "tops_student_1206501.png",
+      "server_image": {
+        "filename": "product_00611_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "11495804-223f-45b1-88b0-849faebc1b6a"
+      },
+      "api_sha256": "b5cf96f42aafc8d7c3b2dc13782461e7ce6c4566f14a87750625f6c57091e52f",
+      "png_sha256": "60135fd056e41d2c269128f5db0cc35bfb2e671044ae88ce229baf3e3b77e5c9"
+    },
+    {
+      "prompt_id": "b1d750b8-2f7f-406b-91e3-0b6b9fdd89ee",
+      "selection": {
+        "group": "working_adult",
+        "product": "tops",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tops",
+        "alpha": true,
+        "positive_prompt": "simple flat illustration of one button-up shirt with a collar and long sleeves, complete garment, centered, soft red body, light blue collar and cuffs, refined minimal design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.547,
+      "width": 480,
+      "height": 480,
+      "local_image": "tops_working_adult_1206501.png",
+      "server_image": {
+        "filename": "product_00612_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "cb066f08-8ed7-4afa-959f-77acdd22d272"
+      },
+      "api_sha256": "49ffbd3ca497edc85ebaf89dd0fa7ad976a9bb302c42e26519134817bb7b16f3",
+      "png_sha256": "2b10c9bb932ba7b30f20c80a99175c1b4a01933d4a83733781cbea15f5baeb5b"
+    },
+    {
+      "prompt_id": "8053d52e-4ec3-455e-91ed-b12a0726bdc4",
+      "selection": {
+        "group": "senior",
+        "product": "tops",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tops",
+        "alpha": true,
+        "positive_prompt": "simple flat illustration of one V-neck cardigan with buttons and pockets, complete garment, centered, soft red body, light blue sleeves and ribbed edges, simple ergonomic design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.698,
+      "width": 480,
+      "height": 480,
+      "local_image": "tops_senior_1206501.png",
+      "server_image": {
+        "filename": "product_00613_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "898d4888-66c2-4ba9-95a1-042d761dc391"
+      },
+      "api_sha256": "abeb36278f7db2e864529ba82109cde9804f78109ace5d95546fdba894d34e9a",
+      "png_sha256": "b6e2aea9b8a217a8495a1e6241a084b226bd9485c1321f5e6da0fca00a3e88f4"
+    },
+    {
+      "prompt_id": "ef2b946e-d524-405d-9d37-9842e9f26136",
+      "selection": {
+        "group": "child",
+        "product": "bicycles",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bicycles",
+        "alpha": true,
+        "positive_prompt": "one tiny child's bicycle with training wheels and a low frame, full side view, complete wheels with ample white space, soft red frame, light blue wheel rims and training wheels, playful rounded design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 2.36,
+      "width": 480,
+      "height": 480,
+      "local_image": "bicycles_child_1206501.png",
+      "server_image": {
+        "filename": "product_00581_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "a75d5c04-ddb5-4c65-970c-288adf8aa18e"
+      },
+      "api_sha256": "95c8ce8b8d06fc02b1c9362b6b4789673e55727d4c2bce797bb2bfbd66fde266",
+      "png_sha256": "564a780b7cecd4ddb8c6c49735689ee03069d7a6594d65f81c705d54061cad80",
+      "reused_from": "docs\\validation\\comfy_age_design\\review2\\bicycles_child_1206501.png"
+    },
+    {
+      "prompt_id": "01e49892-e89a-4d5f-8b04-e9b68a8836b4",
+      "selection": {
+        "group": "student",
+        "product": "bicycles",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bicycles",
+        "alpha": true,
+        "positive_prompt": "simple flat illustration of one road bicycle with drop handlebars and thin tires, both wheels visible, centered, soft red frame, light blue wheel rims and handlebars, simple sporty design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.717,
+      "width": 480,
+      "height": 480,
+      "local_image": "bicycles_student_1206501.png",
+      "server_image": {
+        "filename": "product_00614_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "4cc3a48c-6ac2-406c-887e-856e449c6ad0"
+      },
+      "api_sha256": "2a0844880757a06247bdd59c16bf72691caaf4966fcafd0f0349aa26e4b04d0b",
+      "png_sha256": "ebf2fc5688ff67995920b2d3b8947eea5369d271a9a666ecca0ce345ac636169"
+    },
+    {
+      "prompt_id": "2b5775a3-bef9-470a-b806-7cc6d918ac19",
+      "selection": {
+        "group": "working_adult",
+        "product": "bicycles",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bicycles",
+        "alpha": true,
+        "positive_prompt": "one tiny folding commuter bicycle with a hinged frame and small wheels, full side view, complete wheels with ample white space, soft red frame, light blue wheel rims and hinge, refined minimal design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.712,
+      "width": 480,
+      "height": 480,
+      "local_image": "bicycles_working_adult_1206501.png",
+      "server_image": {
+        "filename": "product_00583_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "81f20006-8d7d-4d40-a1d1-47d447616a40"
+      },
+      "api_sha256": "17f868581926aaedc0c0951fe593757e469184c86669af596fb6dc6fd3129b3e",
+      "png_sha256": "1a7094c11c2dc700dd057c3158da360439e3f3644920bd63ba340ebe0f8b2565",
+      "reused_from": "docs\\validation\\comfy_age_design\\review2\\bicycles_working_adult_1206501.png"
+    },
+    {
+      "prompt_id": "83d2f689-f3c0-4645-8c11-06acb78cd57b",
+      "selection": {
+        "group": "senior",
+        "product": "bicycles",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bicycles",
+        "alpha": true,
+        "positive_prompt": "one tiny step-through city bicycle with a front basket and upright handlebars, full side view, complete wheels with ample white space, soft red frame, light blue basket and wheel rims, simple ergonomic design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.948,
+      "width": 480,
+      "height": 480,
+      "local_image": "bicycles_senior_1206501.png",
+      "server_image": {
+        "filename": "product_00584_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "64d215f2-1660-49b0-a2db-323fdf4f520c"
+      },
+      "api_sha256": "db123c1957909302c7fa8fa91c3c37355d1760834c78c49b11e13c3cd610e0ce",
+      "png_sha256": "4ddab37d428d3a687e34cff653ccf5b02fc04a2c34a151e7bb43569bca47968d",
+      "reused_from": "docs\\validation\\comfy_age_design\\review2\\bicycles_senior_1206501.png"
+    },
+    {
+      "prompt_id": "92097848-804f-4983-ba6f-db702b076e1e",
+      "selection": {
+        "group": "child",
+        "product": "tumblers",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tumblers",
+        "alpha": true,
+        "positive_prompt": "one child's sippy cup with two side handles and a short spout lid, soft red cup body, light blue handles and lid, playful rounded design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.909,
+      "width": 480,
+      "height": 480,
+      "local_image": "tumblers_child_1206501.png",
+      "server_image": {
+        "filename": "product_00585_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "93fefb2d-8f4e-4221-bc28-4241a9cb73ae"
+      },
+      "api_sha256": "802cda4bfa6b00814f5372c27394a150088d0633f222f257ca7ccf2455aa36a4",
+      "png_sha256": "c53126f7176c6be46fdce20038d875077f5607768a012652119d3a5260239554",
+      "reused_from": "docs\\validation\\comfy_age_design\\review2\\tumblers_child_1206501.png"
+    },
+    {
+      "prompt_id": "3121f53a-9bd9-44ce-bb07-131272b56d75",
+      "selection": {
+        "group": "student",
+        "product": "tumblers",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tumblers",
+        "alpha": true,
+        "positive_prompt": "one tall tumbler with a straw and flat lid, soft red body, light blue straw and lid, simple sporty design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.917,
+      "width": 480,
+      "height": 480,
+      "local_image": "tumblers_student_1206501.png",
+      "server_image": {
+        "filename": "product_00586_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "7f9930ae-6a72-486b-bebb-0b042b379a3f"
+      },
+      "api_sha256": "5fd6105fd46bf3db562e0e1f6be97cb73b63d048a06f97c20f521af87c0caf63",
+      "png_sha256": "787d181e435beb9fbc048fce68ceaea6ee5850ca82c3a8dd0fe4b8af874adbde",
+      "reused_from": "docs\\validation\\comfy_age_design\\review2\\tumblers_student_1206501.png"
+    },
+    {
+      "prompt_id": "6d16b92d-ebcc-4e3c-b0cc-40db3f2e942d",
+      "selection": {
+        "group": "working_adult",
+        "product": "tumblers",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tumblers",
+        "alpha": true,
+        "positive_prompt": "one tapered travel coffee mug with a handle and flip-top lid, soft red body, light blue handle and lid, refined minimal design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 2.358,
+      "width": 480,
+      "height": 480,
+      "local_image": "tumblers_working_adult_1206501.png",
+      "server_image": {
+        "filename": "product_00587_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "d1ada706-6597-4f87-b0de-ea0d362a990c"
+      },
+      "api_sha256": "225087a67e025bab616a191de5fce086c3de55d1d9a49e0465b5687d45bd6d50",
+      "png_sha256": "8639a5fa677bd492e605d2525b485060349ccbaf1e05a91dc33f902a1b7c151c",
+      "reused_from": "docs\\validation\\comfy_age_design\\review2\\tumblers_working_adult_1206501.png"
+    },
+    {
+      "prompt_id": "41d20715-9e86-442c-b630-8af85aef66bd",
+      "selection": {
+        "group": "senior",
+        "product": "tumblers",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tumblers",
+        "alpha": true,
+        "positive_prompt": "one insulated vacuum flask with a screw-on cup cap, soft red flask body, light blue cup cap, simple ergonomic design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.893,
+      "width": 480,
+      "height": 480,
+      "local_image": "tumblers_senior_1206501.png",
+      "server_image": {
+        "filename": "product_00588_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "1f82b68e-274c-45a5-bbf0-100ce3ceae8a"
+      },
+      "api_sha256": "4530d9528069323aed0a7579e0729b037f062d5c56710e8317934406bb8212ed",
+      "png_sha256": "d7e32a08282a57b7040b2cc7f5d7a6cb6ba208ee4323b352b44e306d73ea5267",
+      "reused_from": "docs\\validation\\comfy_age_design\\review2\\tumblers_senior_1206501.png"
+    },
+    {
+      "prompt_id": "dfbedd6f-c3b8-4b6e-b887-f5e6f5717ec2",
+      "selection": {
+        "group": "child",
+        "product": "wristwatches",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "wristwatches",
+        "alpha": true,
+        "positive_prompt": "simple flat illustration of one child's round wristwatch with a star dial and short rubber band, complete short wristband, centered, soft red rubber strap, light blue round case and dial, playful rounded design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 2.281,
+      "width": 480,
+      "height": 480,
+      "local_image": "wristwatches_child_1206501.png",
+      "server_image": {
+        "filename": "product_00615_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "ed910e57-21dc-40a9-9e6f-8ae63b85462b"
+      },
+      "api_sha256": "803085dc208ea044a4cc5307ce29115a4a95f1252f2da6eb5c99626154bc2b99",
+      "png_sha256": "2f86438b3fa7f887b5e1f1bc2e564f42be48571f1727aec299a538f533aae63f"
+    },
+    {
+      "prompt_id": "f58cf9ae-d21e-4b20-ae3f-c0aca9f3b378",
+      "selection": {
+        "group": "student",
+        "product": "wristwatches",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "wristwatches",
+        "alpha": true,
+        "positive_prompt": "simple flat illustration of one rectangular digital sports wristwatch with a short plastic band, complete short wristband, centered, soft red plastic strap, light blue digital case, simple sporty design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.703,
+      "width": 480,
+      "height": 480,
+      "local_image": "wristwatches_student_1206501.png",
+      "server_image": {
+        "filename": "product_00616_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "c953ca1a-b77c-4414-b724-35925a52ee08"
+      },
+      "api_sha256": "a83e143be62dcdd371861bd31aba7d20b4c64a6c94b86443d6100c4d12af92f6",
+      "png_sha256": "6095b43b873a4bf236d792a9912adc96ada57d92b86db86595ee36ff137a9229"
+    },
+    {
+      "prompt_id": "6865935d-0b40-4288-a5bb-7023a2ce7757",
+      "selection": {
+        "group": "working_adult",
+        "product": "wristwatches",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "wristwatches",
+        "alpha": true,
+        "positive_prompt": "simple flat illustration of one square smartwatch with a silicone wrist band and dark screen, complete short wristband, centered, soft red silicone strap, light blue square case, refined minimal design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.841,
+      "width": 480,
+      "height": 480,
+      "local_image": "wristwatches_working_adult_1206501.png",
+      "server_image": {
+        "filename": "product_00617_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "4514e145-23d5-4da3-838e-27ab15246019"
+      },
+      "api_sha256": "5a0d3c7c2233982cc1d94a30f0dce1ece8e68f9d144b22f0d5c8675c5ff06a7f",
+      "png_sha256": "e5e880106e053f0300b641c818324c0b7a823a240aa43f9682a20eea9f46d61c"
+    },
+    {
+      "prompt_id": "e5ad3f19-45ef-42af-a99c-d31002e1de47",
+      "selection": {
+        "group": "senior",
+        "product": "wristwatches",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "wristwatches",
+        "alpha": true,
+        "positive_prompt": "simple flat illustration of one round analog wristwatch with large clear hands and a metal link band, complete short wristband, centered, soft red metal bracelet, light blue round case, simple ergonomic design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.739,
+      "width": 480,
+      "height": 480,
+      "local_image": "wristwatches_senior_1206501.png",
+      "server_image": {
+        "filename": "product_00618_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "b932529e-0418-499e-b4bf-09785d78229f"
+      },
+      "api_sha256": "86c005400f07ac0fba807e15d54538a0c09cdd2a625f55b3247bddfd635a2f12",
+      "png_sha256": "00c51dc4e338817a274c29e086426c3131ffc2a9ee77921cf602692f35ebb122"
+    },
+    {
+      "prompt_id": "11e82083-3d78-428d-ba34-2442cadfead5",
+      "selection": {
+        "group": "child",
+        "product": "umbrellas",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "umbrellas",
+        "alpha": true,
+        "positive_prompt": "one small open dome umbrella with a scalloped edge and short curved handle, soft red dome canopy, light blue scalloped trim and handle, playful rounded design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.946,
+      "width": 480,
+      "height": 480,
+      "local_image": "umbrellas_child_1206501.png",
+      "server_image": {
+        "filename": "product_00593_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "e7000f53-84c2-4eda-a1d0-75bb8fa14e05"
+      },
+      "api_sha256": "8bd7c6cdfe0f813c8b33d362610c524d7f8206bac2b44dbd3563657fa81d01d6",
+      "png_sha256": "b93887c962e2bad9955e38489b962c92f527f4f8173de39910e88647a2b3e4a3",
+      "reused_from": "docs\\validation\\comfy_age_design\\review2\\umbrellas_child_1206501.png"
+    },
+    {
+      "prompt_id": "58d29559-98d0-4ae0-bff2-523831c016d2",
+      "selection": {
+        "group": "student",
+        "product": "umbrellas",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "umbrellas",
+        "alpha": true,
+        "positive_prompt": "simple flat illustration of one rolled-up pocket umbrella with a wrist loop, narrow folded fabric, soft red folded fabric, light blue handle and wrist loop, simple sporty design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.691,
+      "width": 480,
+      "height": 480,
+      "local_image": "umbrellas_student_1206501.png",
+      "server_image": {
+        "filename": "product_00619_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "f3694973-8424-4248-b00e-c9a1370a5921"
+      },
+      "api_sha256": "d20a099e0a9f2e2f23fa580d40ae304d9ff2ed88b0f967e672b67459b8dc6303",
+      "png_sha256": "43318cb921dfb640d4f6794fef5bb6d9585b03b9e4d6b8eb6b9702fb1f792784"
+    },
+    {
+      "prompt_id": "b4c5bf31-6984-411a-8f08-2e93ceb40b4b",
+      "selection": {
+        "group": "working_adult",
+        "product": "umbrellas",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "umbrellas",
+        "alpha": true,
+        "positive_prompt": "one open classic umbrella with an angular canopy, long shaft and hooked handle, soft red canopy, light blue trim and hooked handle, refined minimal design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.878,
+      "width": 480,
+      "height": 480,
+      "local_image": "umbrellas_working_adult_1206501.png",
+      "server_image": {
+        "filename": "product_00595_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "14ef43a5-2338-4c92-8b94-658f5e707401"
+      },
+      "api_sha256": "6d9c06047fd581a645a7f185693df6557618784555e6f75a308059104c3bf745",
+      "png_sha256": "918e15609957a354d4609a1b9b043eb8ff6ea7290170e0fc59af6c3f36e46862",
+      "reused_from": "docs\\validation\\comfy_age_design\\review2\\umbrellas_working_adult_1206501.png"
+    },
+    {
+      "prompt_id": "84c9cedb-d293-445f-a602-c0d8cc2d8cbe",
+      "selection": {
+        "group": "senior",
+        "product": "umbrellas",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "umbrellas",
+        "alpha": true,
+        "positive_prompt": "simple flat illustration of one closed walking umbrella with a wooden crook handle, long narrow folded fabric, soft red folded fabric, light blue wooden crook handle, simple ergonomic design, simple soft shaded illustration, one isolated item, plain white background, full view, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.693,
+      "width": 480,
+      "height": 480,
+      "local_image": "umbrellas_senior_1206501.png",
+      "server_image": {
+        "filename": "product_00620_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "5810049f-cd49-46ae-856b-2a5b84253e33"
+      },
+      "api_sha256": "44dc2e4b1f8cae77f71c98f93f99f12517354f7a25a6b2517da93470c7dd4b02",
+      "png_sha256": "1787195c3d1346c5d1c02ad0cd35dfc73bf1295e86c23e53a7d757fe8b5c37fc"
+    }
+  ],
+  "completed": true,
+  "generated_count": 12
+}

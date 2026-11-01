@@ -1,0 +1,115 @@
+ M Assets/AssetKits/ParticleImage/Demo/Prefabs/ConfettiFullscreen.prefab
+ M Assets/Scenes/0_Idle.unity
+ M Assets/Scenes/1_Game.unity
+ M Assets/Scenes/2_Result.unity
+ M Assets/Scripts/App/GameLifetimeScope.cs
+ M Assets/Scripts/Blocks/BlockExperienceController.cs
+ M Assets/Scripts/Blocks/Data/BlockSelection.cs
+ M Assets/Scripts/Core/GameManager.cs
+ M Assets/Scripts/Input/ExhibitionButtonGesture.cs
+ M Assets/Settings/URP-Balanced.asset
+ M Assets/Settings/URP-HighFidelity.asset
+ M Assets/Settings/URP-Performant.asset
+ M Assets/StreamingAssets/BlockGeneration/BlockCatalog.json
+ M Assets/StreamingAssets/BlockGeneration/BlockColoring.json
+ M Assets/Tests/Blocks/BlockSelectionTests.cs
+ M Assets/Tests/Editor/ExhibitionButtonGestureTests.cs
+ M CHANGELOG.md
+ M ProjectSettings/ProjectSettings.asset
+ M TODO.md
+ M Tools/Coloring/verify_runtime.cs
+ M Tools/ComfyUI/README.md
+ M Tools/ComfyUI/benchmark.py
+ M Tools/ComfyUI/build_workflow.py
+ M Tools/ComfyUI/control_model.json
+ M Tools/ComfyUI/install_control_guides.py
+ M Tools/ComfyUI/model.json
+ M Tools/ComfyUI/presets.json
+ M Tools/ComfyUI/test_workflow.py
+ M Tools/ComfyUI/workflows/product_480.api.json
+ M Tools/ComfyUI/workflows/product_480.inputs.json
+ M Tools/ComfyUI/workflows/product_480.ui.json
+ M docs/BLOCK_SIMULATOR.md
+ M docs/BUTTON_INPUT.md
+ M docs/COLORING.md
+ M docs/COMFYUI_SETUP.md
+ M docs/agents/HANDOFF.md
+?? Assets/Editor.meta
+?? Assets/Editor/
+?? Assets/Resources/RfidBlockArtwork.asset
+?? Assets/Resources/RfidBlockArtwork.asset.meta
+?? Assets/Resources/Videos.meta
+?? Assets/Resources/Videos/
+?? Assets/Scripts/Blocks/BlockArtworkCatalog.cs
+?? Assets/Scripts/Blocks/BlockArtworkCatalog.cs.meta
+?? Assets/Scripts/Blocks/ComfyImageClient.cs
+?? Assets/Scripts/Blocks/ComfyImageClient.cs.meta
+?? Assets/Scripts/Blocks/ComfyServerLauncher.cs
+?? Assets/Scripts/Blocks/ComfyServerLauncher.cs.meta
+?? Assets/Scripts/Blocks/Data/GeneratedImageFraming.cs
+?? Assets/Scripts/Blocks/Data/GeneratedImageFraming.cs.meta
+?? Assets/Scripts/Blocks/Data/GeneratedImageRetentionPolicy.cs
+?? Assets/Scripts/Blocks/Data/GeneratedImageRetentionPolicy.cs.meta
+?? Assets/Scripts/Blocks/Data/RfidReaderSelection.cs
+?? Assets/Scripts/Blocks/Data/RfidReaderSelection.cs.meta
+?? Assets/Scripts/Blocks/GeneratedImageRetention.cs
+?? Assets/Scripts/Blocks/GeneratedImageRetention.cs.meta
+?? Assets/Scripts/Blocks/RfidReaderHub.cs
+?? Assets/Scripts/Blocks/RfidReaderHub.cs.meta
+?? Assets/Scripts/Blocks/RfidSimulator.cs
+?? Assets/Scripts/Blocks/RfidSimulator.cs.meta
+?? Assets/Scripts/UI.meta
+?? Assets/Scripts/UI/
+?? Assets/StreamingAssets/BlockGeneration/ComfyUISettings.json
+?? Assets/StreamingAssets/BlockGeneration/ComfyUISettings.json.meta
+?? Assets/StreamingAssets/BlockGeneration/ControlGuides.meta
+?? Assets/StreamingAssets/BlockGeneration/ControlGuides/
+?? Assets/StreamingAssets/BlockGeneration/product_480.api.json
+?? Assets/StreamingAssets/BlockGeneration/product_480.api.json.meta
+?? Assets/StreamingAssets/Lang_En.json
+?? Assets/StreamingAssets/Lang_En.json.meta
+?? Assets/StreamingAssets/Lang_Th.json
+?? Assets/StreamingAssets/Lang_Th.json.meta
+?? Assets/Tests/Blocks/GeneratedImageFramingTests.cs
+?? Assets/Tests/Blocks/GeneratedImageFramingTests.cs.meta
+?? Assets/Tests/Blocks/GeneratedImageRetentionTests.cs
+?? Assets/Tests/Blocks/GeneratedImageRetentionTests.cs.meta
+?? Assets/Tests/Blocks/RfidReaderSelectionTests.cs
+?? Assets/Tests/Blocks/RfidReaderSelectionTests.cs.meta
+?? Assets/Tests/Runtime.meta
+?? Assets/Tests/Runtime/
+?? Assets/UI/
+?? Tools/ComfyUI/export_age_gallery.py
+?? Tools/ComfyUI/frame_visual_matrix.cs
+?? Tools/ComfyUI/licenses/
+?? Tools/ComfyUI/probe_acceleration.py
+?? Tools/ComfyUI/review_visual_matrix.py
+?? Tools/ComfyUI/slow_test_server.py
+?? Tools/ComfyUI/sync_block_palette.py
+?? Tools/ComfyUI/sync_block_references.py
+?? Tools/ComfyUI/verify_age_variants.py
+?? Tools/ComfyUI/verify_framing_runtime.cs
+?? Tools/ComfyUI/verify_generation_exits.cs
+?? Tools/ComfyUI/verify_restored_runtime.cs
+?? Tools/ComfyUI/verify_visual_matrix.py
+?? Tools/UI/
+?? docs/AD_PRODUCT_HIGHLIGHT.md
+?? docs/IMAGE_UI.md
+?? docs/UI_MOTION.md
+?? docs/validation/ad_fx/
+?? docs/validation/ad_fx2/
+?? docs/validation/ad_fx3/
+?? docs/validation/comfy_age_all/
+?? docs/validation/comfy_age_design/
+?? docs/validation/comfy_blocks/
+?? docs/validation/comfy_blocks_v2/
+?? docs/validation/comfy_blocks_v3/
+?? docs/validation/comfy_fast2/
+?? docs/validation/comfy_framing/
+?? docs/validation/comfy_light/
+?? docs/validation/comfy_restore/
+?? docs/validation/comfy_shoepose/
+?? docs/validation/comfy_style3/
+?? docs/validation/ui/
+?? docs/validation/ui_refresh/
+?? docs/validation/ui_refresh2/

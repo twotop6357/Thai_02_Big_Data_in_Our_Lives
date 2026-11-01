@@ -1,0 +1,12 @@
+{
+  "task": "UI-MOTION-001 / UI-GATE-001",
+  "date": "2026-10-29 Asia/Seoul",
+  "unity": "2022.3.62f3",
+  "mode": "EditMode",
+  "jobId": "3df12518e0714277a0b8e99480a3115d",
+  "status": "succeeded",
+  "total": 27,
+  "passed": 27,
+  "failed": 0,
+  "scope": "Existing input/selection/coloring tests rerun during motion work. Later slot fade and required-block hint/input changes are covered by motion.json and the runtime regression reports."
+}

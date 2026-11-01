@@ -1,0 +1,633 @@
+{
+  "source": "https://www.figma.com/design/Nq9j1gdpFVxXnDlv8wGqna",
+  "date": "2026-10-29",
+  "referenceResolution": [
+    1920,
+    1080
+  ],
+  "note": "Read-only Figma absoluteBoundingBox/absoluteRenderBounds relative to each frame. Existing exported PNGs match rendered bounds rounded to raster pixels. Block mockup images are intentionally replaced by generic frames.",
+  "languages": [
+    {
+      "language": "en",
+      "entries": [
+        {
+          "key": "idle.title",
+          "node": "20:355",
+          "frame": "20:350",
+          "bounds": {
+            "x": 63.00048828125,
+            "y": 23,
+            "width": 872.5042724609375,
+            "height": 434.0683898925781
+          },
+          "render": {
+            "x": 63.00048828125,
+            "y": 23,
+            "width": 872.5042724609375,
+            "height": 434.0683898925781
+          }
+        },
+        {
+          "key": "idle.subtitle",
+          "node": "20:352",
+          "frame": "20:350",
+          "bounds": {
+            "x": 97,
+            "y": 457,
+            "width": 683,
+            "height": 100
+          },
+          "render": {
+            "x": 98.83251953125,
+            "y": 466.744140625,
+            "width": 677.85107421875,
+            "height": 88.4375
+          }
+        },
+        {
+          "key": "idle.help",
+          "node": "20:362",
+          "frame": "20:350",
+          "bounds": {
+            "x": 695,
+            "y": 847,
+            "width": 861,
+            "height": 154
+          },
+          "render": {
+            "x": 692.318359375,
+            "y": 840.08251953125,
+            "width": 875.681640625,
+            "height": 172.91748046875
+          }
+        },
+        {
+          "key": "group.title",
+          "node": "20:378",
+          "frame": "20:363",
+          "bounds": {
+            "x": 303,
+            "y": 54,
+            "width": 1314,
+            "height": 126
+          },
+          "render": {
+            "x": 306.45703125,
+            "y": 75.859375,
+            "width": 1316.892578125,
+            "height": 110.5390625
+          }
+        },
+        {
+          "key": "group.subtitle",
+          "node": "20:379",
+          "frame": "20:363",
+          "bounds": {
+            "x": 426,
+            "y": 199,
+            "width": 1067,
+            "height": 50
+          },
+          "render": {
+            "x": 428.130859375,
+            "y": 208.5029296875,
+            "width": 1062.1162109375,
+            "height": 38.678955078125
+          }
+        },
+        {
+          "key": "group.help",
+          "node": "20:366",
+          "frame": "20:363",
+          "bounds": {
+            "x": 549,
+            "y": 904,
+            "width": 823,
+            "height": 136
+          },
+          "render": {
+            "x": 549,
+            "y": 898.99755859375,
+            "width": 835,
+            "height": 153.00244140625
+          }
+        },
+        {
+          "key": "common.groupBoard",
+          "node": "20:367",
+          "frame": "20:363",
+          "bounds": {
+            "x": 636,
+            "y": 281,
+            "width": 648,
+            "height": 615
+          },
+          "render": {
+            "x": 636,
+            "y": 281,
+            "width": 648,
+            "height": 615
+          }
+        },
+        {
+          "key": "common.groupGrid",
+          "node": "20:368",
+          "frame": "20:363",
+          "bounds": {
+            "x": 690,
+            "y": 323,
+            "width": 540,
+            "height": 545
+          },
+          "render": {
+            "x": 690,
+            "y": 323,
+            "width": 540,
+            "height": 545
+          }
+        },
+        {
+          "key": "common.groupFrame",
+          "node": "20:369",
+          "frame": "20:363",
+          "bounds": {
+            "x": 690,
+            "y": 323,
+            "width": 262,
+            "height": 262
+          },
+          "render": {
+            "x": 690,
+            "y": 323,
+            "width": 262,
+            "height": 262
+          }
+        },
+        {
+          "key": "selection.title",
+          "node": "20:404",
+          "frame": "20:384",
+          "bounds": {
+            "x": 251,
+            "y": 54,
+            "width": 1419,
+            "height": 126
+          },
+          "render": {
+            "x": 254.22265625,
+            "y": 73.984375,
+            "width": 1417.6484375,
+            "height": 96.06640625
+          }
+        },
+        {
+          "key": "selection.subtitle",
+          "node": "20:405",
+          "frame": "20:384",
+          "bounds": {
+            "x": 385,
+            "y": 199,
+            "width": 1151,
+            "height": 50
+          },
+          "render": {
+            "x": 387.130859375,
+            "y": 208.50283813476562,
+            "width": 1145.4755859375,
+            "height": 39.133514404296875
+          }
+        },
+        {
+          "key": "selection.help",
+          "node": "20:387",
+          "frame": "20:384",
+          "bounds": {
+            "x": 549,
+            "y": 904,
+            "width": 823,
+            "height": 136
+          },
+          "render": {
+            "x": 549,
+            "y": 898.997314453125,
+            "width": 835,
+            "height": 153.002685546875
+          }
+        },
+        {
+          "key": "selection.productBoard",
+          "node": "20:390",
+          "frame": "20:384",
+          "bounds": {
+            "x": 816,
+            "y": 336,
+            "width": 838,
+            "height": 488
+          },
+          "render": {
+            "x": 816,
+            "y": 331,
+            "width": 838,
+            "height": 493
+          }
+        },
+        {
+          "key": "common.selectionBoard",
+          "node": "20:388",
+          "frame": "20:384",
+          "bounds": {
+            "x": 207,
+            "y": 281,
+            "width": 1507,
+            "height": 597
+          },
+          "render": {
+            "x": 207,
+            "y": 281,
+            "width": 1507,
+            "height": 597
+          }
+        },
+        {
+          "key": "common.selectionGrid",
+          "node": "20:394",
+          "frame": "20:384",
+          "bounds": {
+            "x": 268,
+            "y": 320,
+            "width": 520,
+            "height": 520
+          },
+          "render": {
+            "x": 268,
+            "y": 320,
+            "width": 520,
+            "height": 520
+          }
+        },
+        {
+          "key": "common.selectionFrame",
+          "node": "20:395",
+          "frame": "20:384",
+          "bounds": {
+            "x": 268,
+            "y": 320,
+            "width": 252,
+            "height": 252
+          },
+          "render": {
+            "x": 268,
+            "y": 320,
+            "width": 252,
+            "height": 252
+          }
+        },
+        {
+          "key": "result.title",
+          "node": "20:411",
+          "frame": "20:406",
+          "bounds": {
+            "x": 355,
+            "y": 77,
+            "width": 1211,
+            "height": 126
+          },
+          "render": {
+            "x": 360.390625,
+            "y": 96.984375,
+            "width": 1199.4072265625,
+            "height": 105.5859375
+          }
+        },
+        {
+          "key": "result.subtitle",
+          "node": "20:412",
+          "frame": "20:406",
+          "bounds": {
+            "x": 546,
+            "y": 227,
+            "width": 829,
+            "height": 64
+          },
+          "render": {
+            "x": 549.8349609375,
+            "y": 239.693115234375,
+            "width": 821.130859375,
+            "height": 46.125
+          }
+        },
+        {
+          "key": "result.help",
+          "node": "20:409",
+          "frame": "20:406",
+          "bounds": {
+            "x": 474.5,
+            "y": 904,
+            "width": 972,
+            "height": 136
+          },
+          "render": {
+            "x": 474.5,
+            "y": 898.99755859375,
+            "width": 984,
+            "height": 153.00244140625
+          }
+        },
+        {
+          "key": "common.resultBoard",
+          "node": "20:413",
+          "frame": "20:406",
+          "bounds": {
+            "x": 461,
+            "y": 320,
+            "width": 998,
+            "height": 537
+          },
+          "render": {
+            "x": 461,
+            "y": 320,
+            "width": 998,
+            "height": 537
+          }
+        },
+        {
+          "key": "video.end",
+          "node": "20:440",
+          "frame": "20:436",
+          "bounds": {
+            "x": 349,
+            "y": 446,
+            "width": 1223,
+            "height": 188
+          },
+          "render": {
+            "x": 350.375,
+            "y": 463.2109375,
+            "width": 1218.9609375,
+            "height": 157.37890625
+          }
+        },
+        {
+          "key": "common.videoPopup",
+          "node": "20:439",
+          "frame": "20:436",
+          "bounds": {
+            "x": 263,
+            "y": 203,
+            "width": 1394,
+            "height": 674
+          },
+          "render": {
+            "x": 263,
+            "y": 203,
+            "width": 1394,
+            "height": 674
+          }
+        }
+      ]
+    },
+    {
+      "language": "th",
+      "entries": [
+        {
+          "key": "idle.title",
+          "node": "20:228",
+          "frame": "20:223",
+          "bounds": {
+            "x": 63,
+            "y": 37.154296875,
+            "width": 934.3611450195312,
+            "height": 438.9140625
+          },
+          "render": {
+            "x": 63,
+            "y": 22.8095703125,
+            "width": 934.3611450195312,
+            "height": 453.2587890625
+          }
+        },
+        {
+          "key": "idle.subtitle",
+          "node": "20:225",
+          "frame": "20:223",
+          "bounds": {
+            "x": 97,
+            "y": 457,
+            "width": 497,
+            "height": 100
+          },
+          "render": {
+            "x": 98.60009765625,
+            "y": 458.35986328125,
+            "width": 491.61279296875,
+            "height": 97
+          }
+        },
+        {
+          "key": "idle.help",
+          "node": "20:235",
+          "frame": "20:223",
+          "bounds": {
+            "x": 517.5,
+            "y": 847,
+            "width": 836,
+            "height": 154
+          },
+          "render": {
+            "x": 514.81787109375,
+            "y": 840.0830078125,
+            "width": 850.68212890625,
+            "height": 172.9169921875
+          }
+        },
+        {
+          "key": "group.title",
+          "node": "20:251",
+          "frame": "20:236",
+          "bounds": {
+            "x": 526.5,
+            "y": 54,
+            "width": 867,
+            "height": 126
+          },
+          "render": {
+            "x": 532.97998046875,
+            "y": 52.1201171875,
+            "width": 863.2587890625,
+            "height": 148.159912109375
+          }
+        },
+        {
+          "key": "group.subtitle",
+          "node": "20:252",
+          "frame": "20:236",
+          "bounds": {
+            "x": 569,
+            "y": 209,
+            "width": 797,
+            "height": 50
+          },
+          "render": {
+            "x": 572.0400390625,
+            "y": 205.0400390625,
+            "width": 793.7900390625,
+            "height": 42.35986328125
+          }
+        },
+        {
+          "key": "group.help",
+          "node": "20:239",
+          "frame": "20:236",
+          "bounds": {
+            "x": 622.5,
+            "y": 904,
+            "width": 676,
+            "height": 136
+          },
+          "render": {
+            "x": 622.5,
+            "y": 898.99755859375,
+            "width": 688,
+            "height": 153.00244140625
+          }
+        },
+        {
+          "key": "selection.title",
+          "node": "20:277",
+          "frame": "20:257",
+          "bounds": {
+            "x": 406.5,
+            "y": 54,
+            "width": 1174,
+            "height": 126
+          },
+          "render": {
+            "x": 410.33984375,
+            "y": 26.43999481201172,
+            "width": 1170.21533203125,
+            "height": 173.83999633789062
+          }
+        },
+        {
+          "key": "selection.subtitle",
+          "node": "20:278",
+          "frame": "20:257",
+          "bounds": {
+            "x": 385,
+            "y": 199,
+            "width": 1092,
+            "height": 50
+          },
+          "render": {
+            "x": 386.35986328125,
+            "y": 203.79998779296875,
+            "width": 1088.53125,
+            "height": 44
+          }
+        },
+        {
+          "key": "selection.help",
+          "node": "20:260",
+          "frame": "20:257",
+          "bounds": {
+            "x": 622.5,
+            "y": 904,
+            "width": 676,
+            "height": 136
+          },
+          "render": {
+            "x": 622.5,
+            "y": 898.997314453125,
+            "width": 688,
+            "height": 153.002685546875
+          }
+        },
+        {
+          "key": "selection.productBoard",
+          "node": "20:263",
+          "frame": "20:257",
+          "bounds": {
+            "x": 816,
+            "y": 336,
+            "width": 838,
+            "height": 488
+          },
+          "render": {
+            "x": 816,
+            "y": 331,
+            "width": 838,
+            "height": 493
+          }
+        },
+        {
+          "key": "result.title",
+          "node": "20:284",
+          "frame": "20:279",
+          "bounds": {
+            "x": 256,
+            "y": 77,
+            "width": 1408,
+            "height": 126
+          },
+          "render": {
+            "x": 263.2001953125,
+            "y": 50.639892578125,
+            "width": 1392.85009765625,
+            "height": 164.64013671875
+          }
+        },
+        {
+          "key": "result.subtitle",
+          "node": "20:285",
+          "frame": "20:279",
+          "bounds": {
+            "x": 546,
+            "y": 227,
+            "width": 843,
+            "height": 64
+          },
+          "render": {
+            "x": 549.2158203125,
+            "y": 226.3759765625,
+            "width": 835.34326171875,
+            "height": 61.055908203125
+          }
+        },
+        {
+          "key": "result.help",
+          "node": "20:282",
+          "frame": "20:279",
+          "bounds": {
+            "x": 583.5,
+            "y": 904,
+            "width": 754,
+            "height": 136
+          },
+          "render": {
+            "x": 583.5,
+            "y": 898.99755859375,
+            "width": 766,
+            "height": 153.00244140625
+          }
+        },
+        {
+          "key": "video.end",
+          "node": "20:291",
+          "frame": "20:287",
+          "bounds": {
+            "x": 432,
+            "y": 446,
+            "width": 1056,
+            "height": 188
+          },
+          "render": {
+            "x": 433.580078125,
+            "y": 445.9677734375,
+            "width": 1049.34326171875,
+            "height": 170.912109375
+          }
+        }
+      ]
+    }
+  ]
+}

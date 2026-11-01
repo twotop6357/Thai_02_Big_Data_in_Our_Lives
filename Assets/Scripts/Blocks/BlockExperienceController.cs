@@ -19,27 +19,39 @@ namespace Exhibition.Blocks
         [SerializeField] private TMP_Text groupText, productText, color1Text, color2Text;
         [SerializeField] private Image resultImage;
         [SerializeField] private GameObject resultTextGroup;
-        [Tooltip("Shown only while a generated image is ready to open in the Result scene.")]
+        [Tooltip("Image hint for the physical continue button; incomplete selections are guarded by GameManager.")]
         [SerializeField] private GameObject pressButtonText;
         [SerializeField] private bool enableEditorKeyboard = true;
 
+        public event Action PresentationChanged;
+        [SerializeField] private bool showEditorDiagnostics;
+
         private readonly BlockSelection _selection = new BlockSelection();
         private BlockCatalog _catalog;
-        private BlockColoringCatalog _coloring;
+        private ComfyBlockSettings _settings;
+        private ComfyImageClient _client;
+        private GeneratedImageRetention _retention;
+        private IDisposable _generationLock;
+        private bool _pausedTimer;
         private BlockJournal _journal;
+        private RfidReaderHub _readerHub;
         private GameManager _manager;
         private InactivityTimer _timer;
-        private CancellationTokenSource _screenCts, _colorCts;
+        private CancellationTokenSource _screenCts, _requestCts;
         private Sprite _originalSprite, _generatedSprite;
         private Texture2D _generatedTexture, _handedOffTexture;
         private bool _ready;
         private int _popup = -1;
         private Vector2 _scroll;
         public string Status { get; private set; } = "Loading block configuration...";
-        public bool IsGenerating => _colorCts != null;
+        public bool IsGenerating => _requestCts != null;
+        public bool HasGeneratedImage => _handedOffTexture || _generatedTexture;
         public bool IsReady => _ready;
         public BlockSelection Selection => _selection;
         public BlockCatalog Catalog => _catalog;
+        public RfidReaderHub ReaderHub => _readerHub;
+        public bool HasRequiredComposition => _readerHub && _readerHub.Readers.HasRequiredComposition && _selection.Complete;
+        public bool HasSingleGroup => _readerHub && _readerHub.Readers.GroupCount == 1 && _selection[BlockSlot.Group] != null;
 
 #if UNITY_EDITOR
         private bool _oldCursorVisible;
@@ -70,28 +82,34 @@ namespace Exhibition.Blocks
                 await UniTask.Yield(PlayerLoopTiming.Update, token);
                 _manager = FindFirstObjectByType<GameManager>();
                 _timer = FindFirstObjectByType<InactivityTimer>();
-                if (!groupText || !productText || !color1Text || !color2Text || !resultImage || !resultTextGroup || !pressButtonText)
-                    throw new InvalidOperationException("Assign all four OptionText fields, ResultImage, TextGroup and PressButtonText.");
+                _readerHub = FindFirstObjectByType<RfidReaderHub>();
+                _retention = FindFirstObjectByType<GeneratedImageRetention>();
+                if (!_readerHub) throw new InvalidOperationException("RFID reader hub is missing. Start from Idle.");
+                if (!resultImage || !resultTextGroup || !pressButtonText)
+                    throw new InvalidOperationException("Assign ResultImage, TextGroup and PressButtonText.");
                 _catalog = JsonUtility.FromJson<BlockCatalog>(await LoadConfigurationTextAsync("BlockCatalog.json", token));
                 _catalog.Validate();
-                _coloring = JsonUtility.FromJson<BlockColoringCatalog>(await LoadConfigurationTextAsync("BlockColoring.json", token));
-                if (_coloring == null) throw new InvalidOperationException("Coloring catalog is missing.");
-                _coloring.Validate(_catalog);
-                var settings = JsonUtility.FromJson<BlockSettings>(await LoadConfigurationTextAsync("BlockSettings.json", token));
-                if (settings == null) throw new InvalidOperationException("Block settings are missing.");
-                settings.Validate();
+                _settings = JsonUtility.FromJson<ComfyBlockSettings>(await LoadConfigurationTextAsync("ComfyUISettings.json", token));
+                if (_settings == null) throw new InvalidOperationException("ComfyUI settings are missing.");
+                _settings.Validate();
+                _client = new ComfyImageClient(_settings);
                 _journal = new BlockJournal(Path.Combine(Application.persistentDataPath, "BlockData"),
-                    settings.maxJournalFiles, settings.maxJournalMegabytes);
+                    _settings.maxJournalFiles, _settings.maxJournalMegabytes);
                 _selection.Clear();
                 RefreshLabels();
                 await _journal.AppendAsync("session_started", new JObject { ["language"] = Language, ["catalog_schema"] = _catalog.schemaVersion });
                 token.ThrowIfCancellationRequested();
                 _ready = true;
+                _readerHub.Changed += SynchronizeReaders;
+                _readerHub.ReaderChanged += RecordReaderChange;
+                SynchronizeReaders();
+                for (int reader = 0; reader < 4; reader++)
+                    if (_readerHub.Readers[reader].HasValue) RecordReaderChange(reader, null, _readerHub.Readers[reader]);
 #if UNITY_EDITOR
                 // The persistent manager hides the cursor in Start, after this component's OnEnable.
                 if (enableEditorKeyboard) { Cursor.visible = true; Cursor.lockState = CursorLockMode.None; }
 #endif
-                Status = "Place four blocks. Keys: 2 Group / 3 Product / 4 Color1 / 5 Color2.";
+                if (!HasRequiredComposition) Status = "Place 1 group, 1 product and 2 color blocks. F9 opens the RFID simulator.";
                 Debug.Log("[BlockExperience] Block configuration loaded. Language: " + Language + ".", this);
             }
             catch (OperationCanceledException) { }
@@ -104,42 +122,67 @@ namespace Exhibition.Blocks
         public void RecognizeBlock(BlockSlot slot, string id)
         {
             if (!_ready || (_manager && _manager.IsTransitioning)) return;
-            int previousRevision = _selection.Revision;
-            _selection.Set(_catalog, slot, id);
-            if (previousRevision == _selection.Revision) return;
-            _popup = -1;
-            SelectionChanged("block_recognized", slot, id);
+            _catalog.Find(slot, id);
+            _readerHub.RecognizeReader(DefaultReader(slot), Kind(slot), id);
         }
 
         public void RemoveBlock(BlockSlot slot)
         {
             if (!_ready) return;
-            string previous = _selection[slot];
-            if (previous == null) return;
-            _selection.Remove(slot);
-            SelectionChanged("block_removed", slot, previous);
+            _readerHub.RemoveReader(DefaultReader(slot));
         }
 
         public void ToggleSlot(BlockSlot slot)
         {
-            if (!_ready) return;
+            if (!_ready || (_manager && _manager.IsPresentationLocked)) return;
             _timer?.ResetTimer();
             if (_selection[slot] != null) { RemoveBlock(slot); _popup = -1; }
             else _popup = _popup == (int)slot ? -1 : (int)slot;
         }
 
-        private void SelectionChanged(string kind, BlockSlot slot, string id)
+        private static int DefaultReader(BlockSlot slot) => slot == BlockSlot.Group ? 3 : (int)slot - 1;
+        private static BlockKind Kind(BlockSlot slot) => slot == BlockSlot.Group ? BlockKind.Group :
+            slot == BlockSlot.Product ? BlockKind.Product : BlockKind.Color;
+
+        private void SynchronizeReaders()
         {
+            if (!_ready) return;
+            _popup = -1;
             CancelGeneration();
             ClearImage();
-            RefreshLabels();
+            var readers = _readerHub.Readers;
+            SetSelection(BlockSlot.Group, readers.GroupId);
+            SetSelection(BlockSlot.Product, readers.ProductId);
+            SetSelection(BlockSlot.Color1, readers.Color1Id);
+            SetSelection(BlockSlot.Color2, readers.Color2Id);
             _timer?.ResetTimer();
-            Status = _selection.Complete ? "Applying selected colors..." : "Waiting for four blocks.";
-            Debug.Log("[BlockExperience] " + (kind == "block_removed" ? "Block removed" : "Block recognized") +
-                ". Slot: " + slot + "; ID: " + id + "; complete: " + _selection.Complete + ".", this);
-            WriteEventAsync(kind, new JObject { ["slot"] = slot.ToString(), ["block_id"] = id,
-                ["revision"] = _selection.Revision, ["selection"] = Snapshot() }).Forget();
-            if (_selection.Complete) GenerateImage();
+            Status = "Waiting for 1 group, 1 product and 2 color blocks.";
+            if (HasRequiredComposition) GenerateImage();
+            RefreshLabels();
+        }
+
+        private void SetSelection(BlockSlot slot, string id)
+        {
+            if (id == null) _selection.Remove(slot);
+            else _selection.Set(_catalog, slot, id);
+        }
+
+        private void RecordReaderChange(int reader, RfidBlock? previous, RfidBlock? current)
+        {
+            if (previous.HasValue) RecordReader("block_removed", reader, previous.Value);
+            if (current.HasValue) RecordReader("block_recognized", reader, current.Value);
+        }
+
+        private void RecordReader(string kind, int reader, RfidBlock block)
+        {
+            int colorsBefore = 0;
+            for (int i = 0; i < reader; i++) if (_readerHub.Readers[i]?.Kind == BlockKind.Color) colorsBefore++;
+            var slot = block.Kind == BlockKind.Group ? BlockSlot.Group : block.Kind == BlockKind.Product ? BlockSlot.Product :
+                colorsBefore == 0 ? BlockSlot.Color1 : BlockSlot.Color2;
+            Debug.Log("[RFID] " + kind + ". Reader: " + (reader + 1) + "; kind: " + block.Kind + "; ID: " + block.Id + ".", this);
+            WriteEventAsync(kind, new JObject { ["slot"] = slot.ToString(), ["reader_index"] = reader,
+                ["block_kind"] = block.Kind.ToString(), ["block_id"] = block.Id, ["revision"] = _selection.Revision,
+                ["reader_revision"] = _readerHub.Readers.Revision, ["selection"] = Snapshot() }).Forget();
         }
 
         private JObject Snapshot() => new JObject {
@@ -153,6 +196,7 @@ namespace Exhibition.Blocks
             SetLabel(productText, BlockSlot.Product);
             SetLabel(color1Text, BlockSlot.Color1);
             SetLabel(color2Text, BlockSlot.Color2);
+            PresentationChanged?.Invoke();
         }
 
         private void SetLabel(TMP_Text label, BlockSlot slot)
@@ -160,67 +204,161 @@ namespace Exhibition.Blocks
             if (label) label.text = _selection[slot] == null ? "—" : _catalog.Find(slot, _selection[slot]).label;
         }
 
-        // Existing UnityEvents can also retry the current local coloring operation.
+        // Existing UnityEvents can retry a failed or cancelled generation.
         public void GenerateImage()
         {
-            if (!_ready || !_selection.Complete || IsGenerating || (_manager && _manager.IsTransitioning)) return;
-            ColorImageAsync().Forget();
+            if (!_ready || !HasRequiredComposition || IsGenerating || (_manager && _manager.IsTransitioning)) return;
+            GenerateAsync().Forget();
         }
 
-        private async UniTask ColorImageAsync()
+        private async UniTask GenerateAsync()
         {
             var source = _manager && _manager.HasLanguageSelection
                 ? CancellationTokenSource.CreateLinkedTokenSource(_screenCts.Token, _manager.SessionCancellationToken)
                 : CancellationTokenSource.CreateLinkedTokenSource(_screenCts.Token);
-            _colorCts = source;
+            _requestCts = source;
+            var timeout = source.CancelAfterSlim(TimeSpan.FromSeconds(_settings.generationTimeoutSeconds), DelayType.Realtime);
             var token = source.Token;
             int revision = _selection.Revision;
             var journal = _journal;
-            var selection = Snapshot();
+            var client = _client;
+            string requestId = Guid.NewGuid().ToString("N"), promptId = null;
             Texture2D pending = null;
             try
             {
+                _generationLock = _manager ? _manager.Presentation.LockInput() : null;
+                _timer?.Pause();
+                _pausedTimer = true;
                 ClearImage();
-                Status = "Applying selected colors...";
-                var template = _coloring.Find(_selection[BlockSlot.Group], _selection[BlockSlot.Product]);
-                var primary = _coloring.GetColor(_selection[BlockSlot.Color1]);
-                var secondary = _coloring.GetColor(_selection[BlockSlot.Color2]);
-                pending = await LocalBlockColoring.RenderAsync(template, primary, secondary, token);
+                Status = "Preparing image generation...";
+                PresentationChanged?.Invoke();
+                var prompt = _selection.CreatePrompt(_catalog, 0);
+                long seed = DateTime.UtcNow.Ticks & 0x7FFFFFFFFFFFFFFF;
+                var graph = JObject.Parse(await ComfyImageClient.LoadText("product_480.api.json", token));
+                graph["10"]["inputs"]["value"] = prompt.audienceFragment;
+                graph["11"]["inputs"]["value"] = prompt.productFragment;
+                graph["12"]["inputs"]["value"] = prompt.primaryFragment;
+                graph["13"]["inputs"]["value"] = prompt.secondaryFragment;
+                graph["12"]["_meta"]["color_reference"] = prompt.primaryReference;
+                graph["13"]["_meta"]["color_reference"] = prompt.secondaryReference;
+                graph["17"]["inputs"]["string_b"] = _catalog.stylePrefix;
+                graph["18"]["inputs"]["string_b"] = _catalog.styleSuffix;
+                if ((string)graph["3"]?["class_type"] == "CLIPTextEncode")
+                    graph["3"]["inputs"]["text"] = prompt.negative;
+                bool turboSampler = (string)graph["5"]["class_type"] == "SamplerCustom";
+                bool referenceSampler = (string)graph["5"]["class_type"] == "SamplerCustomAdvanced";
+                if (referenceSampler)
+                {
+                    if ((string)graph["36"]?["class_type"] != "RandomNoise" ||
+                        (string)graph["37"]?["class_type"] != "BasicGuider" ||
+                        (string)graph["32"]?["class_type"] != "LoadImage" || !string.IsNullOrEmpty(prompt.poseGuide))
+                        throw new InvalidOperationException("Invalid reference illustration workflow bindings.");
+                    graph["36"]["inputs"]["noise_seed"] = seed;
+                }
+                else graph["5"]["inputs"][turboSampler ? "noise_seed" : "seed"] = seed;
+                graph["7"]["inputs"]["filename_prefix"] = "Thai02/blocks_" + requestId;
+                if (!referenceSampler)
+                {
+                    graph["5"]["inputs"]["positive"] = new JArray("2", 0);
+                    // Turbo runs without classifier-free guidance; skip an unused negative encode.
+                    graph["5"]["inputs"]["negative"] = new JArray(turboSampler ? "2" : "3", 0);
+                }
+                string controlModel = (string)graph["25"]?["inputs"]?["control_net_name"];
+                foreach (string node in new[] { "24", "25", "26", "27" }) graph.Remove(node);
+                if (!string.IsNullOrEmpty(prompt.poseGuide))
+                {
+                    if (string.IsNullOrEmpty(controlModel)) throw new InvalidOperationException("The workflow is missing its product control model.");
+                    graph["24"] = new JObject { ["class_type"] = "LoadImage", ["inputs"] = new JObject { ["image"] = "Thai02Quality/" + prompt.poseGuide } };
+                    graph["25"] = new JObject { ["class_type"] = "ControlNetLoader", ["inputs"] = new JObject { ["control_net_name"] = controlModel } };
+                    // The block artwork is intentionally pale; photo thresholds erase its headbands/bodies.
+                    graph["27"] = new JObject { ["class_type"] = "Canny", ["inputs"] = new JObject { ["image"] = new JArray("24", 0), ["low_threshold"] = prompt.poseLowThreshold, ["high_threshold"] = prompt.poseHighThreshold } };
+                    graph["26"] = new JObject { ["class_type"] = "ControlNetApplyAdvanced", ["inputs"] = new JObject {
+                        ["positive"] = new JArray("2", 0), ["negative"] = new JArray("3", 0), ["control_net"] = new JArray("25", 0),
+                        ["image"] = new JArray("27", 0), ["vae"] = new JArray("1", 2), ["strength"] = prompt.poseStrength,
+                        ["start_percent"] = 0, ["end_percent"] = prompt.poseEndPercent } };
+                    graph["5"]["inputs"]["positive"] = new JArray("26", 0);
+                    graph["5"]["inputs"]["negative"] = new JArray("26", 1);
+                }
+                await journal.AppendAsync("generation_requested", new JObject {
+                    ["request_id"] = requestId, ["language"] = Language, ["revision"] = revision,
+                    ["prompt"] = JObject.FromObject(prompt), ["seed"] = seed, ["workflow"] = graph.DeepClone()
+                });
+                token.ThrowIfCancellationRequested();
+                if (!_retention) throw new InvalidOperationException("Image retention service is unavailable. Start from Idle.");
+                _retention.ProtectRequest(requestId);
+                await _retention.EnsureCapacityAsync(token);
+                var queue = await client.Json("/queue", null, token);
+                if ((queue["queue_running"] as JArray)?.Count > 0 || (queue["queue_pending"] as JArray)?.Count > 0)
+                    throw new InvalidOperationException("ComfyUI is busy. Retry when the queue is empty.");
+                if (!string.IsNullOrEmpty(prompt.poseGuide))
+                    await client.EnsureControlGuideAsync("Thai02Quality/" + prompt.poseGuide, token);
+                if (referenceSampler)
+                    await client.EnsureStyleReferenceAsync((string)graph["32"]["inputs"]["image"], token);
+                var response = await client.Json("/prompt", new JObject { ["client_id"] = requestId, ["prompt"] = graph }, token);
+                promptId = (string)response["prompt_id"];
+                if (string.IsNullOrEmpty(promptId)) throw new InvalidOperationException("ComfyUI rejected the workflow.");
+                await journal.AppendAsync("generation_queued", new JObject { ["request_id"] = requestId, ["prompt_id"] = promptId });
+                Status = "Generating image...";
+                Debug.Log("[BlockExperience] Image generation queued. Prompt: " + promptId + ".", this);
+                var file = await client.WaitForImage(promptId, token);
+                pending = await client.Download(file, token);
+                await journal.AppendAsync("generation_completed", new JObject {
+                    ["request_id"] = requestId, ["prompt_id"] = promptId, ["server_image"] = file.DeepClone(),
+                    ["width"] = pending.width, ["height"] = pending.height
+                });
                 token.ThrowIfCancellationRequested();
                 if (!TryDisplayResult(pending, revision)) return;
-                int width = pending.width, height = pending.height;
                 pending = null;
-                Debug.Log("[BlockExperience] Local coloring completed. Template: " + template.groupId + "/" + template.resolvedProductId + ".", this);
-                await WriteEventAsync("coloring_completed", new JObject { ["revision"] = revision,
-                    ["selection"] = selection, ["resolved_product"] = template.resolvedProductId,
-                    ["base_image"] = template.baseImage, ["mask_image"] = template.maskImage,
-                    ["primary_hex"] = ColorUtility.ToHtmlStringRGB(primary), ["secondary_hex"] = ColorUtility.ToHtmlStringRGB(secondary),
-                    ["width"] = width, ["height"] = height }, journal);
+                Debug.Log("[BlockExperience] Image generation completed. Product: " + prompt.resolvedProduct + ".", this);
             }
             catch (OperationCanceledException)
             {
-                if (this && isActiveAndEnabled && revision == _selection.Revision && _colorCts == source)
-                    Status = "Coloring cancelled. Retry or change blocks.";
+                if (this && isActiveAndEnabled && revision == _selection.Revision && _requestCts == source)
+                    Status = "Generation cancelled or timed out. Press the button to retry.";
+                await WriteEventAsync("generation_cancelled", new JObject { ["request_id"] = requestId,
+                    ["prompt_id"] = promptId, ["server_work_may_continue"] = true }, journal);
             }
             catch (Exception ex)
             {
                 if (!token.IsCancellationRequested && this && isActiveAndEnabled && revision == _selection.Revision)
-                    Fail("Coloring failed. Retry or change blocks", ex);
+                    Fail("Image generation failed. Press the button to retry or change blocks", ex);
+                await WriteEventAsync("generation_failed", new JObject { ["request_id"] = requestId,
+                    ["prompt_id"] = promptId, ["error_type"] = ex.GetType().Name, ["message"] = ex.Message }, journal);
             }
             finally
             {
                 if (pending) Destroy(pending);
-                if (_colorCts == source) _colorCts = null;
+                if (_retention) _retention.ReleaseRequest(requestId);
+                if (source.IsCancellationRequested && promptId != null) client.RemovePending(promptId).Forget();
+                if (_requestCts == source)
+                {
+                    _requestCts = null;
+                    ReleaseGenerationInput();
+                    if (this && isActiveAndEnabled) PresentationChanged?.Invoke();
+                }
+                timeout.Dispose();
                 source.Dispose();
             }
         }
 
         public void CancelGeneration()
         {
-            var source = _colorCts;
-            _colorCts = null;
+            var source = _requestCts;
+            _requestCts = null;
             source?.Cancel();
-            if (source != null && isActiveAndEnabled) Status = "Coloring cancelled. Retry or change blocks.";
+            ReleaseGenerationInput();
+            if (source != null && isActiveAndEnabled)
+            {
+                Status = "Generation cancelled. Press the button to retry or change blocks.";
+                PresentationChanged?.Invoke();
+            }
+        }
+
+        private void ReleaseGenerationInput()
+        {
+            _generationLock?.Dispose();
+            _generationLock = null;
+            if (_pausedTimer) { _timer?.Resume(); _timer?.ResetTimer(); _pausedTimer = false; }
         }
 
         /// <summary>
@@ -230,7 +368,7 @@ namespace Exhibition.Blocks
         /// </summary>
         public bool TryDisplayResult(Texture2D texture, int selectionRevision)
         {
-            if (!_ready || !isActiveAndEnabled || !_selection.Complete || !texture ||
+            if (!_ready || !isActiveAndEnabled || !HasRequiredComposition || !texture ||
                 selectionRevision != _selection.Revision || (_manager && _manager.IsTransitioning)) return false;
             if (texture == _generatedTexture || texture == _handedOffTexture) return true;
             var sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(.5f, .5f));
@@ -245,9 +383,9 @@ namespace Exhibition.Blocks
             {
                 _handedOffTexture = texture;
                 _generatedTexture = null;
-                pressButtonText.SetActive(true);
             }
             Status = "Image ready.";
+            PresentationChanged?.Invoke();
             return true;
         }
 
@@ -277,7 +415,6 @@ namespace Exhibition.Blocks
 
         private void ClearImage(bool releaseResult = true)
         {
-            if (pressButtonText) pressButtonText.SetActive(false);
             if (resultImage)
             {
                 resultImage.gameObject.SetActive(false);
@@ -295,6 +432,11 @@ namespace Exhibition.Blocks
 
         private void OnDisable()
         {
+            if (_readerHub)
+            {
+                _readerHub.Changed -= SynchronizeReaders;
+                _readerHub.ReaderChanged -= RecordReaderChange;
+            }
             _ready = false;
             _popup = -1;
             CancelGeneration();
@@ -326,24 +468,27 @@ namespace Exhibition.Blocks
 
         private void OnGUI()
         {
-            if (!enableEditorKeyboard) return;
+            if (!enableEditorKeyboard || (_manager && _manager.IsPresentationLocked) || (!showEditorDiagnostics && _popup < 0)) return;
             var oldMatrix = GUI.matrix;
             float scale = Mathf.Max(.5f, Screen.height / 1080f);
             GUI.matrix = Matrix4x4.Scale(new Vector3(scale, scale, 1));
             float w = Mathf.Min(720, Screen.width / scale - 24);
-            GUILayout.BeginArea(new Rect(12, 12, w, 220), GUI.skin.box);
-            GUILayout.Label("RFID Simulator: 2 Group | 3 Product | 4 Color1 | 5 Color2");
-            GUILayout.Label(Status);
-            GUI.enabled = _ready && _selection.Complete && !IsGenerating;
-            if (GUILayout.Button("Apply colors / Retry", GUILayout.Height(36))) { _timer?.ResetTimer(); GenerateImage(); }
-            GUI.enabled = IsGenerating;
-            if (GUILayout.Button("Cancel coloring", GUILayout.Height(30)))
+            if (showEditorDiagnostics)
             {
-                CancelGeneration();
-                Status = "Coloring cancelled. Retry or change blocks.";
+                GUILayout.BeginArea(new Rect(12, 12, w, 220), GUI.skin.box);
+                GUILayout.Label("RFID Simulator: 2 Group | 3 Product | 4 Color1 | 5 Color2");
+                GUILayout.Label(Status);
+                GUI.enabled = _ready && _selection.Complete && !IsGenerating;
+                if (GUILayout.Button("Generate image / Retry", GUILayout.Height(36))) { _timer?.ResetTimer(); GenerateImage(); }
+                GUI.enabled = IsGenerating;
+                if (GUILayout.Button("Cancel generation", GUILayout.Height(30)))
+                {
+                    CancelGeneration();
+                    Status = "Generation cancelled. Press the button to retry or change blocks.";
+                }
+                GUI.enabled = true;
+                GUILayout.EndArea();
             }
-            GUI.enabled = true;
-            GUILayout.EndArea();
             if (_ready && _popup >= 0)
             {
                 GUILayout.BeginArea(new Rect(12, 240, w, Mathf.Min(690, Screen.height / scale - 252)), GUI.skin.box);

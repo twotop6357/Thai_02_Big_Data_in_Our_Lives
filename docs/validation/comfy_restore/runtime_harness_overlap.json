@@ -1,0 +1,24 @@
+{
+  "task": "COMFY-RESTORE-001",
+  "checks": [
+    "Exactly one persistent launcher and retention service are registered",
+    "Current product artwork and generation option: bags",
+    "Current product artwork and generation option: shoes",
+    "Current product artwork and generation option: hats",
+    "Current product artwork and generation option: sunglasses",
+    "Current product artwork and generation option: headphones",
+    "Current product artwork and generation option: tops",
+    "Current product artwork and generation option: bicycles",
+    "Current product artwork and generation option: tumblers",
+    "Current product artwork and generation option: wristwatches",
+    "Current product artwork and generation option: umbrellas",
+    "Full composition locks input immediately on the group panel",
+    "Group panel ignores direct Continue and physical taps while generating",
+    "Five-second hold during generation is discarded",
+    "Actual ComfyUI workflow returns a 480x480 RGBA image to Unity",
+    "Success releases generation input lock"
+  ],
+  "generationSeconds": 18.821983899999964,
+  "passed": false,
+  "error": "System.NullReferenceException: Object reference not set to an instance of an object\r\n  at MCPDynamicCode+<>c.<Execute>b__0_0 () [0x009ac] in <9cfbdcc435ba41f79e2de30c6d885acb>:0 "
+}

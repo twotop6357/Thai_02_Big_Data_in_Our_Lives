@@ -1,0 +1,1321 @@
+[
+  {
+    "tag": "glasses_product",
+    "seconds": 4.27,
+    "stages": [
+      {
+        "node": "1",
+        "seconds": 0.151
+      },
+      {
+        "node": "4",
+        "seconds": 0.485
+      },
+      {
+        "node": "24",
+        "seconds": 0.513
+      },
+      {
+        "node": "27",
+        "seconds": 0.533
+      },
+      {
+        "node": "25",
+        "seconds": 0.726
+      },
+      {
+        "node": "3",
+        "seconds": 1.187
+      },
+      {
+        "node": "2",
+        "seconds": 1.396
+      },
+      {
+        "node": "26",
+        "seconds": 1.418
+      },
+      {
+        "node": "29",
+        "seconds": 1.419
+      },
+      {
+        "node": "5",
+        "seconds": 1.422
+      },
+      {
+        "node": "6",
+        "seconds": 2.967
+      },
+      {
+        "node": "20",
+        "seconds": 3.214
+      },
+      {
+        "node": "21",
+        "seconds": 3.258
+      },
+      {
+        "node": "22",
+        "seconds": 3.996
+      },
+      {
+        "node": "23",
+        "seconds": 3.998
+      },
+      {
+        "node": "8",
+        "seconds": 4.001
+      },
+      {
+        "node": "7",
+        "seconds": 4.003
+      },
+      {
+        "node": null,
+        "seconds": 4.264
+      }
+    ],
+    "api": {
+      "1": {
+        "class_type": "CheckpointLoaderSimple",
+        "inputs": {
+          "ckpt_name": "DreamShaper8_LCM.safetensors"
+        },
+        "_meta": {
+          "title": "Animagine XL 4.0 Opt"
+        }
+      },
+      "2": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": "simple flat cartoon illustration of a red eyeglass frame with two blue glass lenses and attached folded arms, eyewear product lying alone, broad color shapes, gentle shading, plain white background",
+          "clip": [
+            "1",
+            1
+          ]
+        },
+        "_meta": {
+          "title": "Positive product conditioning"
+        }
+      },
+      "3": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": "(head, face, human, person, hair:1.5), photo, outline, text, logo, patterns, decorations",
+          "clip": [
+            "1",
+            1
+          ]
+        },
+        "_meta": {
+          "title": "Negative / exclude people and text"
+        }
+      },
+      "4": {
+        "class_type": "EmptyLatentImage",
+        "inputs": {
+          "width": 512,
+          "height": 512,
+          "batch_size": 1
+        },
+        "_meta": {
+          "title": "1024 x 1024 internal / batch 1"
+        }
+      },
+      "5": {
+        "class_type": "KSampler",
+        "inputs": {
+          "model": [
+            "29",
+            0
+          ],
+          "positive": [
+            "26",
+            0
+          ],
+          "negative": [
+            "26",
+            1
+          ],
+          "latent_image": [
+            "4",
+            0
+          ],
+          "seed": 4257001,
+          "steps": 6,
+          "cfg": 2.5,
+          "sampler_name": "lcm",
+          "scheduler": "sgm_uniform",
+          "denoise": 1.0
+        },
+        "_meta": {
+          "title": "quality / 36 steps"
+        }
+      },
+      "6": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "5",
+            0
+          ],
+          "vae": [
+            "1",
+            2
+          ]
+        },
+        "_meta": {
+          "title": "Decode final image"
+        }
+      },
+      "7": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "8",
+            0
+          ],
+          "filename_prefix": "Thai02/product"
+        },
+        "_meta": {
+          "title": "Final 480 x 480 RGBA PNG"
+        }
+      },
+      "8": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "23",
+            0
+          ],
+          "upscale_method": "area",
+          "width": 480,
+          "height": 480,
+          "crop": "disabled"
+        },
+        "_meta": {
+          "title": "Downsample RGBA to 480 x 480"
+        }
+      },
+      "10": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "practical casual design with sporty details"
+        },
+        "_meta": {
+          "title": "INPUT 1 / audience: student"
+        }
+      },
+      "11": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "a single pair of sunglasses, one complete connected eyewear frame, two tinted lenses and two attached temples, smooth rounded frame, soft reflective highlights"
+        },
+        "_meta": {
+          "title": "INPUT 2 / product: sunglasses"
+        }
+      },
+      "12": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "soft coral red frame"
+        },
+        "_meta": {
+          "title": "INPUT 3 / primary: red",
+          "color_reference": "#EC6868 RGB(236, 104, 104)"
+        }
+      },
+      "13": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "light sky blue lenses"
+        },
+        "_meta": {
+          "title": "INPUT 4 / accent: blue",
+          "color_reference": "#5FB0E3 RGB(95, 176, 227)"
+        }
+      },
+      "14": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "11",
+            0
+          ],
+          "string_b": [
+            "15",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product + colors"
+        }
+      },
+      "15": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "12",
+            0
+          ],
+          "string_b": [
+            "13",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product-specific color parts"
+        }
+      },
+      "16": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "14",
+            0
+          ],
+          "string_b": [
+            "10",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Combine four choices"
+        }
+      },
+      "17": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "16",
+            0
+          ],
+          "string_b": "(clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product first, then illustration style"
+        }
+      },
+      "18": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "17",
+            0
+          ],
+          "string_b": "soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, delicate even lavender contour lines, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Fixed product composition"
+        }
+      },
+      "20": {
+        "class_type": "LoadBackgroundRemovalModel",
+        "inputs": {
+          "bg_removal_name": "birefnet.safetensors"
+        },
+        "_meta": {
+          "title": "BiRefNet foreground segmentation"
+        }
+      },
+      "21": {
+        "class_type": "RemoveBackground",
+        "inputs": {
+          "bg_removal_model": [
+            "20",
+            0
+          ],
+          "image": [
+            "6",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground mask at native resolution"
+        }
+      },
+      "22": {
+        "class_type": "InvertMask",
+        "inputs": {
+          "mask": [
+            "21",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground to Comfy alpha convention"
+        }
+      },
+      "23": {
+        "class_type": "JoinImageWithAlpha",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "alpha": [
+            "22",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Apply actual alpha (not painted transparency)"
+        }
+      },
+      "24": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "Thai02Quality/guide_block_sunglasses_ed4d27112a.png"
+        },
+        "_meta": {
+          "title": "Limited natural pose reference"
+        }
+      },
+      "25": {
+        "class_type": "ControlNetLoader",
+        "inputs": {
+          "control_net_name": "control_v11p_sd15_canny_fp16.safetensors"
+        },
+        "_meta": {
+          "title": "Lightweight product pose control"
+        }
+      },
+      "27": {
+        "class_type": "Canny",
+        "inputs": {
+          "image": [
+            "24",
+            0
+          ],
+          "low_threshold": 0.02,
+          "high_threshold": 0.06
+        },
+        "_meta": {
+          "title": "Product reference edges"
+        }
+      },
+      "26": {
+        "class_type": "ControlNetApplyAdvanced",
+        "inputs": {
+          "positive": [
+            "2",
+            0
+          ],
+          "negative": [
+            "3",
+            0
+          ],
+          "control_net": [
+            "25",
+            0
+          ],
+          "image": [
+            "27",
+            0
+          ],
+          "vae": [
+            "1",
+            2
+          ],
+          "strength": 0.8,
+          "start_percent": 0,
+          "end_percent": 0.8
+        },
+        "_meta": {
+          "title": "Loose pose during early sampling only"
+        }
+      },
+      "29": {
+        "class_type": "ModelSamplingDiscrete",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "sampling": "lcm",
+          "zsnr": false
+        }
+      }
+    },
+    "prompt_id": "769ff2f4-f8bb-4885-b0d0-d6486da3761d",
+    "server_image": {
+      "filename": "product_00369_.png",
+      "subfolder": "Thai02",
+      "type": "output",
+      "metadata": {
+        "kind": "image",
+        "width": 480,
+        "height": 480
+      },
+      "id": "6d234005-0189-400b-8e5e-3ddca09b40e1"
+    }
+  },
+  {
+    "tag": "glasses_strong",
+    "seconds": 1.678,
+    "stages": [
+      {
+        "node": "2",
+        "seconds": 0.132
+      },
+      {
+        "node": "26",
+        "seconds": 0.161
+      },
+      {
+        "node": "5",
+        "seconds": 0.162
+      },
+      {
+        "node": "6",
+        "seconds": 0.929
+      },
+      {
+        "node": "21",
+        "seconds": 1.083
+      },
+      {
+        "node": "22",
+        "seconds": 1.64
+      },
+      {
+        "node": "23",
+        "seconds": 1.641
+      },
+      {
+        "node": "8",
+        "seconds": 1.643
+      },
+      {
+        "node": "7",
+        "seconds": 1.645
+      },
+      {
+        "node": null,
+        "seconds": 1.675
+      }
+    ],
+    "api": {
+      "1": {
+        "class_type": "CheckpointLoaderSimple",
+        "inputs": {
+          "ckpt_name": "DreamShaper8_LCM.safetensors"
+        },
+        "_meta": {
+          "title": "Animagine XL 4.0 Opt"
+        }
+      },
+      "2": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": "simple flat cartoon illustration of standalone red sunglasses with blue lenses, isolated eyewear product, broad color shapes, gentle shading, plain white background",
+          "clip": [
+            "1",
+            1
+          ]
+        },
+        "_meta": {
+          "title": "Positive product conditioning"
+        }
+      },
+      "3": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": "(head, face, human, person, hair:1.5), photo, outline, text, logo, patterns, decorations",
+          "clip": [
+            "1",
+            1
+          ]
+        },
+        "_meta": {
+          "title": "Negative / exclude people and text"
+        }
+      },
+      "4": {
+        "class_type": "EmptyLatentImage",
+        "inputs": {
+          "width": 512,
+          "height": 512,
+          "batch_size": 1
+        },
+        "_meta": {
+          "title": "1024 x 1024 internal / batch 1"
+        }
+      },
+      "5": {
+        "class_type": "KSampler",
+        "inputs": {
+          "model": [
+            "29",
+            0
+          ],
+          "positive": [
+            "26",
+            0
+          ],
+          "negative": [
+            "26",
+            1
+          ],
+          "latent_image": [
+            "4",
+            0
+          ],
+          "seed": 4257001,
+          "steps": 6,
+          "cfg": 2.5,
+          "sampler_name": "lcm",
+          "scheduler": "sgm_uniform",
+          "denoise": 1.0
+        },
+        "_meta": {
+          "title": "quality / 36 steps"
+        }
+      },
+      "6": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "5",
+            0
+          ],
+          "vae": [
+            "1",
+            2
+          ]
+        },
+        "_meta": {
+          "title": "Decode final image"
+        }
+      },
+      "7": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "8",
+            0
+          ],
+          "filename_prefix": "Thai02/product"
+        },
+        "_meta": {
+          "title": "Final 480 x 480 RGBA PNG"
+        }
+      },
+      "8": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "23",
+            0
+          ],
+          "upscale_method": "area",
+          "width": 480,
+          "height": 480,
+          "crop": "disabled"
+        },
+        "_meta": {
+          "title": "Downsample RGBA to 480 x 480"
+        }
+      },
+      "10": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "practical casual design with sporty details"
+        },
+        "_meta": {
+          "title": "INPUT 1 / audience: student"
+        }
+      },
+      "11": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "a single pair of sunglasses, one complete connected eyewear frame, two tinted lenses and two attached temples, smooth rounded frame, soft reflective highlights"
+        },
+        "_meta": {
+          "title": "INPUT 2 / product: sunglasses"
+        }
+      },
+      "12": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "soft coral red frame"
+        },
+        "_meta": {
+          "title": "INPUT 3 / primary: red",
+          "color_reference": "#EC6868 RGB(236, 104, 104)"
+        }
+      },
+      "13": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "light sky blue lenses"
+        },
+        "_meta": {
+          "title": "INPUT 4 / accent: blue",
+          "color_reference": "#5FB0E3 RGB(95, 176, 227)"
+        }
+      },
+      "14": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "11",
+            0
+          ],
+          "string_b": [
+            "15",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product + colors"
+        }
+      },
+      "15": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "12",
+            0
+          ],
+          "string_b": [
+            "13",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product-specific color parts"
+        }
+      },
+      "16": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "14",
+            0
+          ],
+          "string_b": [
+            "10",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Combine four choices"
+        }
+      },
+      "17": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "16",
+            0
+          ],
+          "string_b": "(clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product first, then illustration style"
+        }
+      },
+      "18": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "17",
+            0
+          ],
+          "string_b": "soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, delicate even lavender contour lines, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Fixed product composition"
+        }
+      },
+      "20": {
+        "class_type": "LoadBackgroundRemovalModel",
+        "inputs": {
+          "bg_removal_name": "birefnet.safetensors"
+        },
+        "_meta": {
+          "title": "BiRefNet foreground segmentation"
+        }
+      },
+      "21": {
+        "class_type": "RemoveBackground",
+        "inputs": {
+          "bg_removal_model": [
+            "20",
+            0
+          ],
+          "image": [
+            "6",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground mask at native resolution"
+        }
+      },
+      "22": {
+        "class_type": "InvertMask",
+        "inputs": {
+          "mask": [
+            "21",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground to Comfy alpha convention"
+        }
+      },
+      "23": {
+        "class_type": "JoinImageWithAlpha",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "alpha": [
+            "22",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Apply actual alpha (not painted transparency)"
+        }
+      },
+      "24": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "Thai02Quality/guide_block_sunglasses_ed4d27112a.png"
+        },
+        "_meta": {
+          "title": "Limited natural pose reference"
+        }
+      },
+      "25": {
+        "class_type": "ControlNetLoader",
+        "inputs": {
+          "control_net_name": "control_v11p_sd15_canny_fp16.safetensors"
+        },
+        "_meta": {
+          "title": "Lightweight product pose control"
+        }
+      },
+      "27": {
+        "class_type": "Canny",
+        "inputs": {
+          "image": [
+            "24",
+            0
+          ],
+          "low_threshold": 0.02,
+          "high_threshold": 0.06
+        },
+        "_meta": {
+          "title": "Product reference edges"
+        }
+      },
+      "26": {
+        "class_type": "ControlNetApplyAdvanced",
+        "inputs": {
+          "positive": [
+            "2",
+            0
+          ],
+          "negative": [
+            "3",
+            0
+          ],
+          "control_net": [
+            "25",
+            0
+          ],
+          "image": [
+            "27",
+            0
+          ],
+          "vae": [
+            "1",
+            2
+          ],
+          "strength": 0.8,
+          "start_percent": 0,
+          "end_percent": 0.8
+        },
+        "_meta": {
+          "title": "Loose pose during early sampling only"
+        }
+      },
+      "29": {
+        "class_type": "ModelSamplingDiscrete",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "sampling": "lcm",
+          "zsnr": false
+        }
+      }
+    },
+    "prompt_id": "32e99667-3d0b-4ecc-8f88-bf0e60db3b45",
+    "server_image": {
+      "filename": "product_00370_.png",
+      "subfolder": "Thai02",
+      "type": "output",
+      "metadata": {
+        "kind": "image",
+        "width": 480,
+        "height": 480
+      },
+      "id": "7d47d27f-fb66-4cf0-9c54-b6fca9414040"
+    }
+  },
+  {
+    "tag": "shoes_block",
+    "seconds": 1.911,
+    "stages": [
+      {
+        "node": "24",
+        "seconds": 0.133
+      },
+      {
+        "node": "27",
+        "seconds": 0.16
+      },
+      {
+        "node": "3",
+        "seconds": 0.237
+      },
+      {
+        "node": "2",
+        "seconds": 0.26
+      },
+      {
+        "node": "26",
+        "seconds": 0.289
+      },
+      {
+        "node": "5",
+        "seconds": 0.289
+      },
+      {
+        "node": "6",
+        "seconds": 1.062
+      },
+      {
+        "node": "21",
+        "seconds": 1.225
+      },
+      {
+        "node": "22",
+        "seconds": 1.861
+      },
+      {
+        "node": "23",
+        "seconds": 1.862
+      },
+      {
+        "node": "8",
+        "seconds": 1.865
+      },
+      {
+        "node": "7",
+        "seconds": 1.867
+      },
+      {
+        "node": null,
+        "seconds": 1.907
+      }
+    ],
+    "api": {
+      "1": {
+        "class_type": "CheckpointLoaderSimple",
+        "inputs": {
+          "ckpt_name": "DreamShaper8_LCM.safetensors"
+        },
+        "_meta": {
+          "title": "Animagine XL 4.0 Opt"
+        }
+      },
+      "2": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": "(simple 2D cartoon illustration:1.4), one sneaker with a pastel red upper and pastel blue accents, white sole, three-quarter view, smooth broad color shapes, soft cel shading, isolated object only, centered on white background",
+          "clip": [
+            "1",
+            1
+          ]
+        },
+        "_meta": {
+          "title": "Positive product conditioning"
+        }
+      },
+      "3": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": "person, human, head, face, wearing, photograph, realistic, 3d render, outline, sketch, text, logo, pattern, complex details, cropped",
+          "clip": [
+            "1",
+            1
+          ]
+        },
+        "_meta": {
+          "title": "Negative / exclude people and text"
+        }
+      },
+      "4": {
+        "class_type": "EmptyLatentImage",
+        "inputs": {
+          "width": 512,
+          "height": 512,
+          "batch_size": 1
+        },
+        "_meta": {
+          "title": "1024 x 1024 internal / batch 1"
+        }
+      },
+      "5": {
+        "class_type": "KSampler",
+        "inputs": {
+          "model": [
+            "29",
+            0
+          ],
+          "positive": [
+            "26",
+            0
+          ],
+          "negative": [
+            "26",
+            1
+          ],
+          "latent_image": [
+            "4",
+            0
+          ],
+          "seed": 4257001,
+          "steps": 6,
+          "cfg": 2.5,
+          "sampler_name": "lcm",
+          "scheduler": "sgm_uniform",
+          "denoise": 1.0
+        },
+        "_meta": {
+          "title": "quality / 36 steps"
+        }
+      },
+      "6": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "5",
+            0
+          ],
+          "vae": [
+            "1",
+            2
+          ]
+        },
+        "_meta": {
+          "title": "Decode final image"
+        }
+      },
+      "7": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "8",
+            0
+          ],
+          "filename_prefix": "Thai02/product"
+        },
+        "_meta": {
+          "title": "Final 480 x 480 RGBA PNG"
+        }
+      },
+      "8": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "23",
+            0
+          ],
+          "upscale_method": "area",
+          "width": 480,
+          "height": 480,
+          "crop": "disabled"
+        },
+        "_meta": {
+          "title": "Downsample RGBA to 480 x 480"
+        }
+      },
+      "10": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "practical casual design with sporty details"
+        },
+        "_meta": {
+          "title": "INPUT 1 / audience: student"
+        }
+      },
+      "11": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "(sneaker:1.5), one low-top sneaker in a natural upright three-quarter view, softly rounded toe, simple curved upper panels, white base panels, neat simple laces and smooth white midsole"
+        },
+        "_meta": {
+          "title": "INPUT 2 / product: shoes"
+        }
+      },
+      "12": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "soft coral red upper body panels"
+        },
+        "_meta": {
+          "title": "INPUT 3 / primary: red",
+          "color_reference": "#EC6868 RGB(236, 104, 104)"
+        }
+      },
+      "13": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "light sky blue accent trim and laces"
+        },
+        "_meta": {
+          "title": "INPUT 4 / accent: blue",
+          "color_reference": "#5FB0E3 RGB(95, 176, 227)"
+        }
+      },
+      "14": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "11",
+            0
+          ],
+          "string_b": [
+            "15",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product + colors"
+        }
+      },
+      "15": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "12",
+            0
+          ],
+          "string_b": [
+            "13",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product-specific color parts"
+        }
+      },
+      "16": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "14",
+            0
+          ],
+          "string_b": [
+            "10",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Combine four choices"
+        }
+      },
+      "17": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "16",
+            0
+          ],
+          "string_b": "(clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product first, then illustration style"
+        }
+      },
+      "18": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "17",
+            0
+          ],
+          "string_b": "soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, delicate even lavender contour lines, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Fixed product composition"
+        }
+      },
+      "20": {
+        "class_type": "LoadBackgroundRemovalModel",
+        "inputs": {
+          "bg_removal_name": "birefnet.safetensors"
+        },
+        "_meta": {
+          "title": "BiRefNet foreground segmentation"
+        }
+      },
+      "21": {
+        "class_type": "RemoveBackground",
+        "inputs": {
+          "bg_removal_model": [
+            "20",
+            0
+          ],
+          "image": [
+            "6",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground mask at native resolution"
+        }
+      },
+      "22": {
+        "class_type": "InvertMask",
+        "inputs": {
+          "mask": [
+            "21",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground to Comfy alpha convention"
+        }
+      },
+      "23": {
+        "class_type": "JoinImageWithAlpha",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "alpha": [
+            "22",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Apply actual alpha (not painted transparency)"
+        }
+      },
+      "24": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "Thai02Quality/guide_block_shoes_aa9dfd2c00.png"
+        },
+        "_meta": {
+          "title": "Limited natural pose reference"
+        }
+      },
+      "25": {
+        "class_type": "ControlNetLoader",
+        "inputs": {
+          "control_net_name": "control_v11p_sd15_canny_fp16.safetensors"
+        },
+        "_meta": {
+          "title": "Lightweight product pose control"
+        }
+      },
+      "27": {
+        "class_type": "Canny",
+        "inputs": {
+          "image": [
+            "24",
+            0
+          ],
+          "low_threshold": 0.02,
+          "high_threshold": 0.06
+        },
+        "_meta": {
+          "title": "Product reference edges"
+        }
+      },
+      "26": {
+        "class_type": "ControlNetApplyAdvanced",
+        "inputs": {
+          "positive": [
+            "2",
+            0
+          ],
+          "negative": [
+            "3",
+            0
+          ],
+          "control_net": [
+            "25",
+            0
+          ],
+          "image": [
+            "27",
+            0
+          ],
+          "vae": [
+            "1",
+            2
+          ],
+          "strength": 0.6,
+          "start_percent": 0,
+          "end_percent": 0.5
+        },
+        "_meta": {
+          "title": "Loose pose during early sampling only"
+        }
+      },
+      "29": {
+        "class_type": "ModelSamplingDiscrete",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "sampling": "lcm",
+          "zsnr": false
+        }
+      }
+    },
+    "prompt_id": "3e3a6da0-a9af-43f5-bce9-ee5e48ba3705",
+    "server_image": {
+      "filename": "product_00371_.png",
+      "subfolder": "Thai02",
+      "type": "output",
+      "metadata": {
+        "kind": "image",
+        "width": 480,
+        "height": 480
+      },
+      "id": "e24d1bb9-47b5-466d-a610-3dc33c50907f"
+    }
+  }
+]

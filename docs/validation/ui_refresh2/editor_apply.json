@@ -1,0 +1,17 @@
+[
+  {
+    "scene": "Assets/Scenes/0_Idle.unity",
+    "localizedImages": 3,
+    "videoHierarchyUnchanged": true
+  },
+  {
+    "scene": "Assets/Scenes/1_Game.unity",
+    "localizedImages": 7,
+    "videoHierarchyUnchanged": true
+  },
+  {
+    "scene": "Assets/Scenes/2_Result.unity",
+    "localizedImages": 3,
+    "videoHierarchyUnchanged": true
+  }
+]

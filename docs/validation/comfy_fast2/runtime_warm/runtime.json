@@ -1,0 +1,25 @@
+{
+  "task": "COMFY-FAST-002",
+  "checks": [
+    "Product panel accepts the existing group-only progression",
+    "Input remains locked while generating and centering",
+    "The real generated product is accepted by Unity",
+    "Visible product bounds are centered at (240,240) within one raster pixel",
+    "Product fits within the transparent 24-pixel safety margin",
+    "All four canvas corners remain transparent",
+    "Result keeps the exact centered texture",
+    "Home releases the image and restores inactivity"
+  ],
+  "generationSeconds": 2.6467245000021649,
+  "bounds": [
+    28,
+    114,
+    452,
+    366
+  ],
+  "center": [
+    240.0,
+    240.0
+  ],
+  "passed": true
+}

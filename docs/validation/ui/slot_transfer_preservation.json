@@ -1,0 +1,13 @@
+{
+  "task": "UI-SLOTS-001",
+  "protectedFiles": 58,
+  "changed": [],
+  "passed": true,
+  "comparison": "UI-MOTION-001 preserved original PNG/MP4, configuration, selection/coloring/input sources",
+  "screenshots": [
+    "slot_transfer_start.png",
+    "slot_transfer_middle.png",
+    "slot_transfer_end.png",
+    "slot_transfer_removed.png"
+  ]
+}

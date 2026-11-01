@@ -1,0 +1,36 @@
+{
+  "prompt_id": "9dc361f4-d9f2-43ee-aad6-5187c46266e2",
+  "selection": {
+    "group": "student",
+    "product": "headphones",
+    "color1": "red",
+    "color2": "blue",
+    "primary_hex": "#EC6868",
+    "secondary_hex": "#5FB0E3",
+    "profile": "quality",
+    "seed": 1206501,
+    "width": 480,
+    "height": 480,
+    "resolved_product": "headphones",
+    "alpha": true,
+    "positive_prompt": "(over-ear headphones:1.5), one complete headset with one curved headband connecting two softly padded earcups, simple rounded design, soft coral red ear cups, light sky blue headband, practical casual design with sporty details, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, soft color separation with subtle edge shading, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+  },
+  "seconds_request_to_png": 38.721,
+  "width": 480,
+  "height": 480,
+  "local_image": "headphones_model1.png",
+  "server_image": {
+    "filename": "product_00087_.png",
+    "subfolder": "Thai02",
+    "type": "output",
+    "metadata": {
+      "kind": "image",
+      "width": 480,
+      "height": 480
+    },
+    "id": "837075f8-b0e0-4780-a164-47e15601c3d6"
+  },
+  "trial_checkpoint": "animagine-xl-4.0-opt.safetensors",
+  "trial_strength": 1.0,
+  "trial_end": 0.85
+}

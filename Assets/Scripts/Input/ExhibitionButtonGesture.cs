@@ -1,21 +1,21 @@
 namespace Exhibition.Input
 {
-    public enum ButtonGesture { None, SelectThai, SelectEnglish, ReturnToIdle, ShortPress }
+    public enum ButtonGesture { None, StartSession, ToggleLanguage, ReturnToIdle, ShortPress }
 
-    /// <summary>Allocation-free state machine. Time is supplied in unscaled seconds.</summary>
+    /// <summary>Allocation-free input state machine driven by unscaled seconds.</summary>
     public sealed class ExhibitionButtonGesture
     {
         public const double ReturnHoldSeconds = 5.0;
-        public double DoublePressIntervalSeconds { get; set; } = 0.4;
-        private bool _wasPressed, _waitForRelease, _pendingSingle, _holding;
-        private double _singleDeadline, _holdStarted;
+        public const double LanguageHoldSeconds = 2.0;
+        private bool _wasPressed, _waitForRelease, _holding, _languageToggled, _startedInIdle;
+        private double _holdStarted;
 
         public void Reset(bool waitForRelease = true)
         {
             _wasPressed = false;
             _waitForRelease = waitForRelease;
-            _pendingSingle = false;
             _holding = false;
+            _languageToggled = false;
         }
 
         public ButtonGesture Tick(bool pressed, bool isIdle, double now)
@@ -28,47 +28,33 @@ namespace Exhibition.Input
             }
             bool pressedThisTick = pressed && !_wasPressed;
             _wasPressed = pressed;
-            if (isIdle)
+            if (pressedThisTick)
             {
-                // An exact-boundary second press takes priority over single-press expiry.
-                if (_pendingSingle)
-                {
-                    if (pressedThisTick && now <= _singleDeadline)
-                    {
-                        Reset();
-                        return ButtonGesture.SelectEnglish;
-                    }
-                    if (now >= _singleDeadline)
-                    {
-                        Reset();
-                        return ButtonGesture.SelectThai;
-                    }
-                }
-                else if (pressedThisTick)
-                {
-                    _pendingSingle = true;
-                    _singleDeadline = now + DoublePressIntervalSeconds;
-                }
+                _holding = true;
+                _languageToggled = false;
+                _startedInIdle = isIdle;
+                _holdStarted = now;
                 return ButtonGesture.None;
+            }
+            if (!_holding) return ButtonGesture.None;
+            double held = now - _holdStarted;
+            // Also check release duration: a slow frame must not turn a completed hold into a tap.
+            if (held >= ReturnHoldSeconds)
+            {
+                Reset(pressed);
+                return ButtonGesture.ReturnToIdle;
+            }
+            if (_startedInIdle && isIdle && !_languageToggled && held >= LanguageHoldSeconds)
+            {
+                _languageToggled = true;
+                if (!pressed) _holding = false;
+                return ButtonGesture.ToggleLanguage;
             }
             if (!pressed)
             {
-                // Released before the return hold completed: a short press outside Idle.
-                if (_holding)
-                {
-                    _holding = false;
-                    return ButtonGesture.ShortPress;
-                }
-            }
-            else if (pressedThisTick)
-            {
-                _holding = true;
-                _holdStarted = now;
-            }
-            else if (_holding && now - _holdStarted >= ReturnHoldSeconds)
-            {
-                Reset();
-                return ButtonGesture.ReturnToIdle;
+                _holding = false;
+                if (_languageToggled || _startedInIdle != isIdle) return ButtonGesture.None;
+                return isIdle ? ButtonGesture.StartSession : ButtonGesture.ShortPress;
             }
             return ButtonGesture.None;
         }

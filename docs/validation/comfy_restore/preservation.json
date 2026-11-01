@@ -1,0 +1,10 @@
+{
+  "checked": 397,
+  "changed": [
+    "Assets/Scripts/UI/BlockExperienceView.cs"
+  ],
+  "expected_changed": [
+    "Assets/Scripts/UI/BlockExperienceView.cs"
+  ],
+  "passed": true
+}

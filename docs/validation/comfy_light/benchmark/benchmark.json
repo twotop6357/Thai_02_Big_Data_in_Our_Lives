@@ -1,0 +1,771 @@
+{
+  "measured_device": [
+    "cuda:0 NVIDIA GeForce RTX 5070 Ti Laptop GPU : cudaMallocAsync"
+  ],
+  "target_device": "RTX 3060 12GB",
+  "target_device_match": false,
+  "comfyui_version": "0.42.0",
+  "pytorch_version": "2.11.0+cu128",
+  "checkpoint": "DreamShaper_8_pruned.safetensors",
+  "acceleration": {
+    "name": "Hyper-SD15 8-step CFG-preserved LoRA",
+    "filename": "Hyper-SD15-8steps-CFG-lora.safetensors",
+    "repository": "ByteDance/Hyper-SD",
+    "revision": "bc08d970a87c74c71209491d64e3525845698863",
+    "url": "https://huggingface.co/ByteDance/Hyper-SD/resolve/bc08d970a87c74c71209491d64e3525845698863/Hyper-SD15-8steps-CFG-lora.safetensors",
+    "bytes": 269127064,
+    "sha256": "f6123d5b950d5250ab6c33600e27f4dcf71b3099ebf888685e01e9e8117ce482",
+    "model_card": "https://huggingface.co/ByteDance/Hyper-SD",
+    "steps": 8,
+    "strength": 1.0,
+    "license_note": "ByteDance Hyper-SD author model terms and upstream SD1.5 CreativeML Open RAIL-M; preserve notices."
+  },
+  "control": {
+    "name": "SD1.5 Canny ControlNet 1.1 fp16",
+    "filename": "control_v11p_sd15_canny_fp16.safetensors",
+    "repository": "comfyanonymous/ControlNet-v1-1_fp16_safetensors",
+    "revision": "ab830a51c5c573a5b85bfdbaa3ae0ab7e1baf5f7",
+    "url": "https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/resolve/ab830a51c5c573a5b85bfdbaa3ae0ab7e1baf5f7/control_v11p_sd15_canny_fp16.safetensors",
+    "bytes": 722601100,
+    "sha256": "8932b66e15aae835b3490dbf989f56c253104cee08a88bf21283762f557c9f10",
+    "model_card": "https://huggingface.co/lllyasviel/ControlNet-v1-1",
+    "license_note": "ControlNet 1.1 OpenRAIL; preserve upstream notices and converted Control-LoRA notices."
+  },
+  "refiner": {
+    "name": "Counterfeit V3.0 fp16",
+    "filename": "Counterfeit-V3.0_fix_fp16.safetensors",
+    "repository": "gsdf/Counterfeit-V3.0",
+    "revision": "d8ce63b3eb8e9102e54b3fcc07f9cb7a28ef30fc",
+    "url": "https://huggingface.co/gsdf/Counterfeit-V3.0/resolve/d8ce63b3eb8e9102e54b3fcc07f9cb7a28ef30fc/Counterfeit-V3.0_fix_fp16.safetensors",
+    "bytes": 2132651162,
+    "sha256": "a54c944e4c04e9d9ca43468ef5b90ea0408bb6264829a4980de79a768df7179f",
+    "model_card": "https://huggingface.co/gsdf/Counterfeit-V3.0",
+    "license_note": "CreativeML Open RAIL-M; preserve the model license and notices.",
+    "steps": 4,
+    "cfg": 6.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "denoise": 0.3
+  },
+  "sampling": {
+    "steps": 8,
+    "cfg": 5.5,
+    "sampler": "ddim",
+    "scheduler": "sgm_uniform"
+  },
+  "internal_resolution": [
+    640,
+    640
+  ],
+  "output_resolution": [
+    480,
+    480
+  ],
+  "profile": "quality",
+  "target_seconds": 15.0,
+  "warmup": [
+    {
+      "prompt_id": "15d384ea-5f03-403c-83a9-95af4ab84100",
+      "selection": {
+        "group": "student",
+        "product": "bags",
+        "color1": "blue",
+        "color2": "white",
+        "primary_hex": "#5FB0E3",
+        "secondary_hex": "#FFFFFF",
+        "profile": "quality",
+        "seed": 7042026,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "(clean finished 2D illustration:1.4), polished pastel game item artwork, one complete rounded backpack with front pocket and attached shoulder straps, light blue fabric body, white straps and zipper trim, practical casual design with sporty details, soft pastel colors, rounded shapes, smooth white accents, gentle cel shading, subtle colored edges, a few soft highlights, minimal fine texture, isolated product only, centered with empty margins, plain white background"
+      },
+      "seconds_request_to_png": 7.147,
+      "width": 480,
+      "height": 480,
+      "local_image": "warmup_00.png",
+      "server_image": {
+        "filename": "product_00285_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "89853ae1-9232-4695-bbb7-cc83e6def6c7"
+      }
+    }
+  ],
+  "runs": [
+    {
+      "prompt_id": "0eb00980-034b-4515-bc18-35b2b401346e",
+      "selection": {
+        "group": "student",
+        "product": "bags",
+        "color1": "blue",
+        "color2": "white",
+        "primary_hex": "#5FB0E3",
+        "secondary_hex": "#FFFFFF",
+        "profile": "quality",
+        "seed": 7042027,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "(clean finished 2D illustration:1.4), polished pastel game item artwork, one complete rounded backpack with front pocket and attached shoulder straps, light blue fabric body, white straps and zipper trim, practical casual design with sporty details, soft pastel colors, rounded shapes, smooth white accents, gentle cel shading, subtle colored edges, a few soft highlights, minimal fine texture, isolated product only, centered with empty margins, plain white background"
+      },
+      "seconds_request_to_png": 3.52,
+      "width": 480,
+      "height": 480,
+      "local_image": "run_01.png",
+      "server_image": {
+        "filename": "product_00286_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "ac56cbd0-3879-4813-979b-7b01c244d171"
+      }
+    },
+    {
+      "prompt_id": "8446f7d8-1e34-48cc-b66f-4d21b5a7f2f4",
+      "selection": {
+        "group": "child",
+        "product": "sunglasses",
+        "color1": "red",
+        "color2": "yellow",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#F6EEA2",
+        "profile": "quality",
+        "seed": 7042028,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "sunglasses",
+        "alpha": true,
+        "positive_prompt": "(clean finished 2D illustration:1.4), polished pastel game item artwork, (standalone eyewear product:1.4), one empty pair of sunglasses with two tinted lenses and attached temples, glasses lying alone, warm pink red frame, pale pastel yellow tinted lenses, playful rounded proportions and friendly simple shapes, soft pastel colors, rounded shapes, smooth white accents, gentle cel shading, subtle colored edges, a few soft highlights, minimal fine texture, isolated product only, centered with empty margins, plain white background"
+      },
+      "seconds_request_to_png": 4.182,
+      "width": 480,
+      "height": 480,
+      "local_image": "run_02.png",
+      "server_image": {
+        "filename": "product_00287_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "21fa05ce-adbe-40f9-92de-9b9eebf33e21"
+      }
+    },
+    {
+      "prompt_id": "49e65fa1-8c9b-4eb5-a654-5e38789c2abc",
+      "selection": {
+        "group": "working_adult",
+        "product": "bags",
+        "color1": "black",
+        "color2": "blue",
+        "primary_hex": "#171619",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 7042029,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "(clean finished 2D illustration:1.4), polished pastel game item artwork, one complete rounded backpack with front pocket and attached shoulder straps, near-black fabric body, light blue straps and zipper trim, refined minimal design and premium finish, soft pastel colors, rounded shapes, smooth white accents, gentle cel shading, subtle colored edges, a few soft highlights, minimal fine texture, isolated product only, centered with empty margins, plain white background"
+      },
+      "seconds_request_to_png": 4.634,
+      "width": 480,
+      "height": 480,
+      "local_image": "run_03.png",
+      "server_image": {
+        "filename": "product_00288_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "d814497f-7fc5-48ce-808c-f872eb03145a"
+      }
+    },
+    {
+      "prompt_id": "23f625d2-c5c9-4c16-b11b-369e7d18c818",
+      "selection": {
+        "group": "senior",
+        "product": "sunglasses",
+        "color1": "white",
+        "color2": "green",
+        "primary_hex": "#FFFFFF",
+        "secondary_hex": "#B7DBA9",
+        "profile": "quality",
+        "seed": 7042030,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "sunglasses",
+        "alpha": true,
+        "positive_prompt": "(clean finished 2D illustration:1.4), polished pastel game item artwork, (standalone eyewear product:1.4), one empty pair of sunglasses with two tinted lenses and attached temples, glasses lying alone, white frame, light pastel green tinted lenses, ergonomic design with clear simple controls, soft pastel colors, rounded shapes, smooth white accents, gentle cel shading, subtle colored edges, a few soft highlights, minimal fine texture, isolated product only, centered with empty margins, plain white background"
+      },
+      "seconds_request_to_png": 4.957,
+      "width": 480,
+      "height": 480,
+      "local_image": "run_04.png",
+      "server_image": {
+        "filename": "product_00289_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "1695f3d3-b121-4317-991e-d4ec739fabe5"
+      }
+    },
+    {
+      "prompt_id": "f3877680-9cd8-4b97-be4b-91c6ce142f19",
+      "selection": {
+        "group": "student",
+        "product": "bags",
+        "color1": "blue",
+        "color2": "white",
+        "primary_hex": "#5FB0E3",
+        "secondary_hex": "#FFFFFF",
+        "profile": "quality",
+        "seed": 7042031,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "(clean finished 2D illustration:1.4), polished pastel game item artwork, one complete rounded backpack with front pocket and attached shoulder straps, light blue fabric body, white straps and zipper trim, practical casual design with sporty details, soft pastel colors, rounded shapes, smooth white accents, gentle cel shading, subtle colored edges, a few soft highlights, minimal fine texture, isolated product only, centered with empty margins, plain white background"
+      },
+      "seconds_request_to_png": 4.52,
+      "width": 480,
+      "height": 480,
+      "local_image": "run_05.png",
+      "server_image": {
+        "filename": "product_00290_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "7e3dc4b3-0932-4618-88be-2e7da3afc43c"
+      }
+    },
+    {
+      "prompt_id": "b4804bbd-c064-42d2-aa4c-804adfbdc88e",
+      "selection": {
+        "group": "child",
+        "product": "sunglasses",
+        "color1": "red",
+        "color2": "yellow",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#F6EEA2",
+        "profile": "quality",
+        "seed": 7042032,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "sunglasses",
+        "alpha": true,
+        "positive_prompt": "(clean finished 2D illustration:1.4), polished pastel game item artwork, (standalone eyewear product:1.4), one empty pair of sunglasses with two tinted lenses and attached temples, glasses lying alone, warm pink red frame, pale pastel yellow tinted lenses, playful rounded proportions and friendly simple shapes, soft pastel colors, rounded shapes, smooth white accents, gentle cel shading, subtle colored edges, a few soft highlights, minimal fine texture, isolated product only, centered with empty margins, plain white background"
+      },
+      "seconds_request_to_png": 4.549,
+      "width": 480,
+      "height": 480,
+      "local_image": "run_06.png",
+      "server_image": {
+        "filename": "product_00291_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "7c93fef5-5d57-4c40-9745-8bc8e0d2e192"
+      }
+    },
+    {
+      "prompt_id": "a6827580-7cc3-4725-82e0-9ce7413c75c4",
+      "selection": {
+        "group": "working_adult",
+        "product": "bags",
+        "color1": "black",
+        "color2": "blue",
+        "primary_hex": "#171619",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 7042033,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "(clean finished 2D illustration:1.4), polished pastel game item artwork, one complete rounded backpack with front pocket and attached shoulder straps, near-black fabric body, light blue straps and zipper trim, refined minimal design and premium finish, soft pastel colors, rounded shapes, smooth white accents, gentle cel shading, subtle colored edges, a few soft highlights, minimal fine texture, isolated product only, centered with empty margins, plain white background"
+      },
+      "seconds_request_to_png": 4.992,
+      "width": 480,
+      "height": 480,
+      "local_image": "run_07.png",
+      "server_image": {
+        "filename": "product_00292_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "df441199-2791-4434-a41c-d58c7dfe4dc5"
+      }
+    },
+    {
+      "prompt_id": "66d7dd49-a5c2-43e5-8560-993d5d5613d4",
+      "selection": {
+        "group": "senior",
+        "product": "sunglasses",
+        "color1": "white",
+        "color2": "green",
+        "primary_hex": "#FFFFFF",
+        "secondary_hex": "#B7DBA9",
+        "profile": "quality",
+        "seed": 7042034,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "sunglasses",
+        "alpha": true,
+        "positive_prompt": "(clean finished 2D illustration:1.4), polished pastel game item artwork, (standalone eyewear product:1.4), one empty pair of sunglasses with two tinted lenses and attached temples, glasses lying alone, white frame, light pastel green tinted lenses, ergonomic design with clear simple controls, soft pastel colors, rounded shapes, smooth white accents, gentle cel shading, subtle colored edges, a few soft highlights, minimal fine texture, isolated product only, centered with empty margins, plain white background"
+      },
+      "seconds_request_to_png": 4.351,
+      "width": 480,
+      "height": 480,
+      "local_image": "run_08.png",
+      "server_image": {
+        "filename": "product_00293_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "320566a3-f506-485f-b3af-623f3d245c58"
+      }
+    },
+    {
+      "prompt_id": "e1ad0a41-2e19-449a-b324-adea218dc1ce",
+      "selection": {
+        "group": "student",
+        "product": "bags",
+        "color1": "blue",
+        "color2": "white",
+        "primary_hex": "#5FB0E3",
+        "secondary_hex": "#FFFFFF",
+        "profile": "quality",
+        "seed": 7042035,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "(clean finished 2D illustration:1.4), polished pastel game item artwork, one complete rounded backpack with front pocket and attached shoulder straps, light blue fabric body, white straps and zipper trim, practical casual design with sporty details, soft pastel colors, rounded shapes, smooth white accents, gentle cel shading, subtle colored edges, a few soft highlights, minimal fine texture, isolated product only, centered with empty margins, plain white background"
+      },
+      "seconds_request_to_png": 4.576,
+      "width": 480,
+      "height": 480,
+      "local_image": "run_09.png",
+      "server_image": {
+        "filename": "product_00294_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "398ac029-9cee-44dd-9241-b2e52ddab04b"
+      }
+    },
+    {
+      "prompt_id": "637b3794-e4ab-418d-b946-1689a8e404ca",
+      "selection": {
+        "group": "child",
+        "product": "sunglasses",
+        "color1": "red",
+        "color2": "yellow",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#F6EEA2",
+        "profile": "quality",
+        "seed": 7042036,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "sunglasses",
+        "alpha": true,
+        "positive_prompt": "(clean finished 2D illustration:1.4), polished pastel game item artwork, (standalone eyewear product:1.4), one empty pair of sunglasses with two tinted lenses and attached temples, glasses lying alone, warm pink red frame, pale pastel yellow tinted lenses, playful rounded proportions and friendly simple shapes, soft pastel colors, rounded shapes, smooth white accents, gentle cel shading, subtle colored edges, a few soft highlights, minimal fine texture, isolated product only, centered with empty margins, plain white background"
+      },
+      "seconds_request_to_png": 4.937,
+      "width": 480,
+      "height": 480,
+      "local_image": "run_10.png",
+      "server_image": {
+        "filename": "product_00295_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "99b58da9-e26d-4d39-ac67-7ef4a5c1d4c1"
+      }
+    },
+    {
+      "prompt_id": "bc51f2ab-5f00-44aa-8e6d-995133cef9ea",
+      "selection": {
+        "group": "working_adult",
+        "product": "bags",
+        "color1": "black",
+        "color2": "blue",
+        "primary_hex": "#171619",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 7042037,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "(clean finished 2D illustration:1.4), polished pastel game item artwork, one complete rounded backpack with front pocket and attached shoulder straps, near-black fabric body, light blue straps and zipper trim, refined minimal design and premium finish, soft pastel colors, rounded shapes, smooth white accents, gentle cel shading, subtle colored edges, a few soft highlights, minimal fine texture, isolated product only, centered with empty margins, plain white background"
+      },
+      "seconds_request_to_png": 4.351,
+      "width": 480,
+      "height": 480,
+      "local_image": "run_11.png",
+      "server_image": {
+        "filename": "product_00296_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "82d287cb-2d52-40ef-ad42-6956e8487330"
+      }
+    },
+    {
+      "prompt_id": "482b9703-2031-4274-a22d-9cd3f982652a",
+      "selection": {
+        "group": "senior",
+        "product": "sunglasses",
+        "color1": "white",
+        "color2": "green",
+        "primary_hex": "#FFFFFF",
+        "secondary_hex": "#B7DBA9",
+        "profile": "quality",
+        "seed": 7042038,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "sunglasses",
+        "alpha": true,
+        "positive_prompt": "(clean finished 2D illustration:1.4), polished pastel game item artwork, (standalone eyewear product:1.4), one empty pair of sunglasses with two tinted lenses and attached temples, glasses lying alone, white frame, light pastel green tinted lenses, ergonomic design with clear simple controls, soft pastel colors, rounded shapes, smooth white accents, gentle cel shading, subtle colored edges, a few soft highlights, minimal fine texture, isolated product only, centered with empty margins, plain white background"
+      },
+      "seconds_request_to_png": 4.493,
+      "width": 480,
+      "height": 480,
+      "local_image": "run_12.png",
+      "server_image": {
+        "filename": "product_00297_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "ce4c5b27-de6b-4acd-bc72-b39825512154"
+      }
+    },
+    {
+      "prompt_id": "f999ecbc-1c2d-4b6c-8be8-45add527786e",
+      "selection": {
+        "group": "student",
+        "product": "bags",
+        "color1": "blue",
+        "color2": "white",
+        "primary_hex": "#5FB0E3",
+        "secondary_hex": "#FFFFFF",
+        "profile": "quality",
+        "seed": 7042039,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "(clean finished 2D illustration:1.4), polished pastel game item artwork, one complete rounded backpack with front pocket and attached shoulder straps, light blue fabric body, white straps and zipper trim, practical casual design with sporty details, soft pastel colors, rounded shapes, smooth white accents, gentle cel shading, subtle colored edges, a few soft highlights, minimal fine texture, isolated product only, centered with empty margins, plain white background"
+      },
+      "seconds_request_to_png": 4.869,
+      "width": 480,
+      "height": 480,
+      "local_image": "run_13.png",
+      "server_image": {
+        "filename": "product_00298_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "c68fec8f-2dcb-4392-8087-c47a538d11de"
+      }
+    },
+    {
+      "prompt_id": "71a27e2f-8758-409b-b096-920b8c13ab56",
+      "selection": {
+        "group": "child",
+        "product": "sunglasses",
+        "color1": "red",
+        "color2": "yellow",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#F6EEA2",
+        "profile": "quality",
+        "seed": 7042040,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "sunglasses",
+        "alpha": true,
+        "positive_prompt": "(clean finished 2D illustration:1.4), polished pastel game item artwork, (standalone eyewear product:1.4), one empty pair of sunglasses with two tinted lenses and attached temples, glasses lying alone, warm pink red frame, pale pastel yellow tinted lenses, playful rounded proportions and friendly simple shapes, soft pastel colors, rounded shapes, smooth white accents, gentle cel shading, subtle colored edges, a few soft highlights, minimal fine texture, isolated product only, centered with empty margins, plain white background"
+      },
+      "seconds_request_to_png": 4.521,
+      "width": 480,
+      "height": 480,
+      "local_image": "run_14.png",
+      "server_image": {
+        "filename": "product_00299_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "5b35d75a-8e7d-4b7d-bd0f-81655ade4d08"
+      }
+    },
+    {
+      "prompt_id": "f8b5a6c9-1f98-44d2-aa1b-f9d27338fdcd",
+      "selection": {
+        "group": "working_adult",
+        "product": "bags",
+        "color1": "black",
+        "color2": "blue",
+        "primary_hex": "#171619",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 7042041,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "(clean finished 2D illustration:1.4), polished pastel game item artwork, one complete rounded backpack with front pocket and attached shoulder straps, near-black fabric body, light blue straps and zipper trim, refined minimal design and premium finish, soft pastel colors, rounded shapes, smooth white accents, gentle cel shading, subtle colored edges, a few soft highlights, minimal fine texture, isolated product only, centered with empty margins, plain white background"
+      },
+      "seconds_request_to_png": 4.757,
+      "width": 480,
+      "height": 480,
+      "local_image": "run_15.png",
+      "server_image": {
+        "filename": "product_00300_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "acbeb085-4d31-4f50-bb89-fa177c219f33"
+      }
+    },
+    {
+      "prompt_id": "8e7efcdb-ccbc-45f1-84ca-3ab602d0748c",
+      "selection": {
+        "group": "senior",
+        "product": "sunglasses",
+        "color1": "white",
+        "color2": "green",
+        "primary_hex": "#FFFFFF",
+        "secondary_hex": "#B7DBA9",
+        "profile": "quality",
+        "seed": 7042042,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "sunglasses",
+        "alpha": true,
+        "positive_prompt": "(clean finished 2D illustration:1.4), polished pastel game item artwork, (standalone eyewear product:1.4), one empty pair of sunglasses with two tinted lenses and attached temples, glasses lying alone, white frame, light pastel green tinted lenses, ergonomic design with clear simple controls, soft pastel colors, rounded shapes, smooth white accents, gentle cel shading, subtle colored edges, a few soft highlights, minimal fine texture, isolated product only, centered with empty margins, plain white background"
+      },
+      "seconds_request_to_png": 5.197,
+      "width": 480,
+      "height": 480,
+      "local_image": "run_16.png",
+      "server_image": {
+        "filename": "product_00301_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "c85fede9-5608-46dc-8b8c-eb0b93ae5d9a"
+      }
+    },
+    {
+      "prompt_id": "961b1e30-ab1a-4301-8e24-ee87ac6b3e59",
+      "selection": {
+        "group": "student",
+        "product": "bags",
+        "color1": "blue",
+        "color2": "white",
+        "primary_hex": "#5FB0E3",
+        "secondary_hex": "#FFFFFF",
+        "profile": "quality",
+        "seed": 7042043,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "(clean finished 2D illustration:1.4), polished pastel game item artwork, one complete rounded backpack with front pocket and attached shoulder straps, light blue fabric body, white straps and zipper trim, practical casual design with sporty details, soft pastel colors, rounded shapes, smooth white accents, gentle cel shading, subtle colored edges, a few soft highlights, minimal fine texture, isolated product only, centered with empty margins, plain white background"
+      },
+      "seconds_request_to_png": 4.6,
+      "width": 480,
+      "height": 480,
+      "local_image": "run_17.png",
+      "server_image": {
+        "filename": "product_00302_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "db3be52e-7b02-4b21-9a1c-60e215b8ec34"
+      }
+    },
+    {
+      "prompt_id": "4c50d5a7-3772-4a88-9852-22b736f2a897",
+      "selection": {
+        "group": "child",
+        "product": "sunglasses",
+        "color1": "red",
+        "color2": "yellow",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#F6EEA2",
+        "profile": "quality",
+        "seed": 7042044,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "sunglasses",
+        "alpha": true,
+        "positive_prompt": "(clean finished 2D illustration:1.4), polished pastel game item artwork, (standalone eyewear product:1.4), one empty pair of sunglasses with two tinted lenses and attached temples, glasses lying alone, warm pink red frame, pale pastel yellow tinted lenses, playful rounded proportions and friendly simple shapes, soft pastel colors, rounded shapes, smooth white accents, gentle cel shading, subtle colored edges, a few soft highlights, minimal fine texture, isolated product only, centered with empty margins, plain white background"
+      },
+      "seconds_request_to_png": 4.655,
+      "width": 480,
+      "height": 480,
+      "local_image": "run_18.png",
+      "server_image": {
+        "filename": "product_00303_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "d5b11dbd-e819-40d1-bcc7-939e8632479f"
+      }
+    },
+    {
+      "prompt_id": "03592927-53c0-4cb5-84d8-1719a6f440de",
+      "selection": {
+        "group": "working_adult",
+        "product": "bags",
+        "color1": "black",
+        "color2": "blue",
+        "primary_hex": "#171619",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 7042045,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "(clean finished 2D illustration:1.4), polished pastel game item artwork, one complete rounded backpack with front pocket and attached shoulder straps, near-black fabric body, light blue straps and zipper trim, refined minimal design and premium finish, soft pastel colors, rounded shapes, smooth white accents, gentle cel shading, subtle colored edges, a few soft highlights, minimal fine texture, isolated product only, centered with empty margins, plain white background"
+      },
+      "seconds_request_to_png": 4.82,
+      "width": 480,
+      "height": 480,
+      "local_image": "run_19.png",
+      "server_image": {
+        "filename": "product_00304_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "efc6e73d-adb7-429f-97ee-478f8c9e328c"
+      }
+    },
+    {
+      "prompt_id": "0d8c5d33-459e-4b8c-a786-3b56fb98d0cc",
+      "selection": {
+        "group": "senior",
+        "product": "sunglasses",
+        "color1": "white",
+        "color2": "green",
+        "primary_hex": "#FFFFFF",
+        "secondary_hex": "#B7DBA9",
+        "profile": "quality",
+        "seed": 7042046,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "sunglasses",
+        "alpha": true,
+        "positive_prompt": "(clean finished 2D illustration:1.4), polished pastel game item artwork, (standalone eyewear product:1.4), one empty pair of sunglasses with two tinted lenses and attached temples, glasses lying alone, white frame, light pastel green tinted lenses, ergonomic design with clear simple controls, soft pastel colors, rounded shapes, smooth white accents, gentle cel shading, subtle colored edges, a few soft highlights, minimal fine texture, isolated product only, centered with empty margins, plain white background"
+      },
+      "seconds_request_to_png": 4.346,
+      "width": 480,
+      "height": 480,
+      "local_image": "run_20.png",
+      "server_image": {
+        "filename": "product_00305_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "ef6a0e93-d985-4a95-9b2b-c1e57deb960d"
+      }
+    }
+  ],
+  "summary": {
+    "count": 20,
+    "median_seconds": 4.587999999999999,
+    "p95_seconds": 4.992,
+    "max_seconds": 5.197,
+    "meets_target_on_measured_device": true,
+    "target_gpu_acceptance_verified": false
+  }
+}

@@ -1,0 +1,282 @@
+[
+  {
+    "product": "bags",
+    "age": "child",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211001
+  },
+  {
+    "product": "shoes",
+    "age": "child",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211001
+  },
+  {
+    "product": "hats",
+    "age": "child",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211001
+  },
+  {
+    "product": "sunglasses",
+    "age": "child",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211001
+  },
+  {
+    "product": "headphones",
+    "age": "child",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211001
+  },
+  {
+    "product": "tops",
+    "age": "child",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211001
+  },
+  {
+    "product": "bicycles",
+    "age": "child",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211001
+  },
+  {
+    "product": "tumblers",
+    "age": "child",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211001
+  },
+  {
+    "product": "wristwatches",
+    "age": "child",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211001
+  },
+  {
+    "product": "umbrellas",
+    "age": "child",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211001
+  },
+  {
+    "product": "bags",
+    "age": "student",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211002
+  },
+  {
+    "product": "shoes",
+    "age": "student",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211002
+  },
+  {
+    "product": "hats",
+    "age": "student",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211002
+  },
+  {
+    "product": "sunglasses",
+    "age": "student",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211002
+  },
+  {
+    "product": "headphones",
+    "age": "student",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211002
+  },
+  {
+    "product": "tops",
+    "age": "student",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211002
+  },
+  {
+    "product": "bicycles",
+    "age": "student",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211002
+  },
+  {
+    "product": "tumblers",
+    "age": "student",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211002
+  },
+  {
+    "product": "wristwatches",
+    "age": "student",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211002
+  },
+  {
+    "product": "umbrellas",
+    "age": "student",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211002
+  },
+  {
+    "product": "bags",
+    "age": "working_adult",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211003
+  },
+  {
+    "product": "shoes",
+    "age": "working_adult",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211003
+  },
+  {
+    "product": "hats",
+    "age": "working_adult",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211003
+  },
+  {
+    "product": "sunglasses",
+    "age": "working_adult",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211003
+  },
+  {
+    "product": "headphones",
+    "age": "working_adult",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211003
+  },
+  {
+    "product": "tops",
+    "age": "working_adult",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211003
+  },
+  {
+    "product": "bicycles",
+    "age": "working_adult",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211003
+  },
+  {
+    "product": "tumblers",
+    "age": "working_adult",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211003
+  },
+  {
+    "product": "wristwatches",
+    "age": "working_adult",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211003
+  },
+  {
+    "product": "umbrellas",
+    "age": "working_adult",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211003
+  },
+  {
+    "product": "bags",
+    "age": "senior",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211004
+  },
+  {
+    "product": "shoes",
+    "age": "senior",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211004
+  },
+  {
+    "product": "hats",
+    "age": "senior",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211004
+  },
+  {
+    "product": "sunglasses",
+    "age": "senior",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211004
+  },
+  {
+    "product": "headphones",
+    "age": "senior",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211004
+  },
+  {
+    "product": "tops",
+    "age": "senior",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211004
+  },
+  {
+    "product": "bicycles",
+    "age": "senior",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211004
+  },
+  {
+    "product": "tumblers",
+    "age": "senior",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211004
+  },
+  {
+    "product": "wristwatches",
+    "age": "senior",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211004
+  },
+  {
+    "product": "umbrellas",
+    "age": "senior",
+    "first": "red",
+    "second": "blue",
+    "seed": 1211004
+  }
+]

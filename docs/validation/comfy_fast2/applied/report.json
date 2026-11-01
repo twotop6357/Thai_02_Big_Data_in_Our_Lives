@@ -1,0 +1,991 @@
+{
+  "config_sha256": "a9d003dec57fc92d3ef46b8c422b927175f62722597b2607e7a208243c69fd09",
+  "suite": "all",
+  "results": [
+    {
+      "prompt_id": "30567d28-6ddb-484b-8228-5f72ea818a2e",
+      "selection": {
+        "group": "student",
+        "product": "headphones",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "headphones",
+        "alpha": true,
+        "positive_prompt": "one empty headset, a single headband and two padded earcups, soft red earcups, light blue headband, simple sporty design, simple soft shaded product illustration, broad pastel color areas, smooth rounded shapes, white accents, minimal details, isolated on white background, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.839,
+      "width": 480,
+      "height": 480,
+      "local_image": "headphones_student_1206501.png",
+      "server_image": {
+        "filename": "product_00387_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "7b7a4fec-be0a-444a-8b0c-c45dd7a354b2"
+      },
+      "suite": "products",
+      "api_sha256": "8044a86152c8c43e3a640d7eec88ee423ecc24d03bb4d21ee97a873e42793f2f"
+    },
+    {
+      "prompt_id": "b3042d3d-9a29-44ed-aa98-12fd7b9b84de",
+      "selection": {
+        "group": "student",
+        "product": "tops",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tops",
+        "alpha": true,
+        "positive_prompt": "one plain T-shirt laid flat, short sleeves, soft red body, light blue sleeves, simple sporty design, simple soft shaded product illustration, broad pastel color areas, smooth rounded shapes, white accents, minimal details, isolated on white background, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.412,
+      "width": 480,
+      "height": 480,
+      "local_image": "tops_student_1206501.png",
+      "server_image": {
+        "filename": "product_00388_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "047a4ed2-98a7-4d08-beb9-0223c22b5f3b"
+      },
+      "suite": "products",
+      "api_sha256": "8ce38fb485be80fb9eab19f90fb655e5f29ceae5bf292586d7aaff8fe488434f"
+    },
+    {
+      "prompt_id": "5273f5d1-31e8-4aa3-ab8f-55c2e068ddc9",
+      "selection": {
+        "group": "student",
+        "product": "hats",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "hats",
+        "alpha": true,
+        "positive_prompt": "one bucket hat with a short brim, soft red crown, light blue brim, simple sporty design, simple soft shaded product illustration, broad pastel color areas, smooth rounded shapes, white accents, minimal details, isolated on white background, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.402,
+      "width": 480,
+      "height": 480,
+      "local_image": "hats_student_1206501.png",
+      "server_image": {
+        "filename": "product_00389_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "14c0caff-bea7-414d-b329-baebfbf72b17"
+      },
+      "suite": "products",
+      "api_sha256": "a60b726d682fe9ccc514a91861411e59b6fd19b56479ef2dbe97e8ab743ebb9a"
+    },
+    {
+      "prompt_id": "1d7dc447-b83b-432e-a1a9-0d2eb8e8a836",
+      "selection": {
+        "group": "student",
+        "product": "tumblers",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tumblers",
+        "alpha": true,
+        "positive_prompt": "one travel tumbler with a closed lid, soft red body, light blue lid, simple sporty design, simple soft shaded product illustration, broad pastel color areas, smooth rounded shapes, white accents, minimal details, isolated on white background, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.44,
+      "width": 480,
+      "height": 480,
+      "local_image": "tumblers_student_1206501.png",
+      "server_image": {
+        "filename": "product_00390_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "093819ea-c2a7-4dec-852a-fa08c2c06abc"
+      },
+      "suite": "products",
+      "api_sha256": "e53167ad761585d689ebc55e55ecbfeee85f6f6d43eb6f04dceb8e71fea609c6"
+    },
+    {
+      "prompt_id": "69a2c8d9-4306-475a-abd4-270418779ded",
+      "selection": {
+        "group": "student",
+        "product": "bags",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "one backpack with a front pocket, soft red body, light blue straps, simple sporty design, simple soft shaded product illustration, broad pastel color areas, smooth rounded shapes, white accents, minimal details, isolated on white background, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.595,
+      "width": 480,
+      "height": 480,
+      "local_image": "bags_student_1206501.png",
+      "server_image": {
+        "filename": "product_00391_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "b0dfda61-1e47-4288-afd0-06fa4bcc9df6"
+      },
+      "suite": "products",
+      "api_sha256": "d7541f779f86c0eaa8a8ef6d30806d7efa30c048b77ebcd3a484009cb42312f8"
+    },
+    {
+      "prompt_id": "e6f6073e-2a33-4e84-bc00-d466e0c6c845",
+      "selection": {
+        "group": "student",
+        "product": "shoes",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "one low-top sneaker, natural three-quarter view, soft red upper panels, light blue accent panels, simple sporty design, simple soft shaded product illustration, broad pastel color areas, smooth rounded shapes, white accents, minimal details, isolated on white background, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.715,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_student_1206501.png",
+      "server_image": {
+        "filename": "product_00392_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "edb504f0-e95c-45c0-b359-638df4c1b52f"
+      },
+      "suite": "products",
+      "api_sha256": "1030a13a93ca9b01a3b887d2e1c6f66d3ed24ef375a4b7f81267178b7357d579"
+    },
+    {
+      "prompt_id": "387caec9-1f2c-4ee3-81e4-ac03531a8a4c",
+      "selection": {
+        "group": "student",
+        "product": "sunglasses",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "sunglasses",
+        "alpha": true,
+        "positive_prompt": "a single eyewear product, sunglasses with solid tinted lenses, folded closed, soft red frame, light blue opaque lenses, simple sporty design, simple soft shaded product illustration, broad pastel color areas, smooth rounded shapes, white accents, minimal details, isolated on white background, centered with empty margins"
+      },
+      "seconds_request_to_png": 2.312,
+      "width": 480,
+      "height": 480,
+      "local_image": "sunglasses_student_1206501.png",
+      "server_image": {
+        "filename": "product_00393_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "9d871a51-4b77-4d8b-810c-0b0958238bbc"
+      },
+      "suite": "products",
+      "api_sha256": "5ce8782199422bcb32a913d655938c9cd896bbf15ce791f503509c4e7d8e9b24"
+    },
+    {
+      "prompt_id": "2feaf612-472d-406b-b7a2-67acc655a106",
+      "selection": {
+        "group": "student",
+        "product": "bicycles",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bicycles",
+        "alpha": true,
+        "positive_prompt": "one simple city bicycle with two wheels and attached handlebars, soft red frame, light blue wheel rims, simple sporty design, simple soft shaded product illustration, broad pastel color areas, smooth rounded shapes, white accents, minimal details, isolated on white background, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.626,
+      "width": 480,
+      "height": 480,
+      "local_image": "bicycles_student_1206501.png",
+      "server_image": {
+        "filename": "product_00394_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "66b66932-8b77-48e8-95bc-16c5d0450171"
+      },
+      "suite": "products",
+      "api_sha256": "95d1dc52520a9a33c50b8d8ca6a200a309b578f3e10f6d124d8527d4898bb73d"
+    },
+    {
+      "prompt_id": "d5a17d0a-9b40-487d-ba50-28697d3ecd6e",
+      "selection": {
+        "group": "student",
+        "product": "wristwatches",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "wristwatches",
+        "alpha": true,
+        "positive_prompt": "one wristwatch with a plain round dial and attached strap, soft red strap, light blue case, simple sporty design, simple soft shaded product illustration, broad pastel color areas, smooth rounded shapes, white accents, minimal details, isolated on white background, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.64,
+      "width": 480,
+      "height": 480,
+      "local_image": "wristwatches_student_1206501.png",
+      "server_image": {
+        "filename": "product_00395_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "b6fc4505-4b1e-4781-bfe1-ca4d8b23194e"
+      },
+      "suite": "products",
+      "api_sha256": "524188bde59d0c8623197ed71dbf01baa35f9524154ba833ba10923460563f94"
+    },
+    {
+      "prompt_id": "9d5261b6-e5ba-4b4a-87db-074af99b944e",
+      "selection": {
+        "group": "student",
+        "product": "umbrellas",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "umbrellas",
+        "alpha": true,
+        "positive_prompt": "one open umbrella with a rounded canopy and one curved handle, soft red canopy panels, light blue alternate panels and handle, simple sporty design, simple soft shaded product illustration, broad pastel color areas, smooth rounded shapes, white accents, minimal details, isolated on white background, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.718,
+      "width": 480,
+      "height": 480,
+      "local_image": "umbrellas_student_1206501.png",
+      "server_image": {
+        "filename": "product_00396_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "4fc40b86-e691-49a8-a2b6-a6b8de179981"
+      },
+      "suite": "products",
+      "api_sha256": "b7dcfe32ff7459e7f2f668350e65b2666d10bcc24ef8eb58b620750f4b2db267"
+    },
+    {
+      "prompt_id": "9d43486e-e341-4964-bf79-e3555edd7aeb",
+      "selection": {
+        "group": "student",
+        "product": "headphones",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206502,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "headphones",
+        "alpha": true,
+        "positive_prompt": "one empty headset, a single headband and two padded earcups, soft red earcups, light blue headband, simple sporty design, simple soft shaded product illustration, broad pastel color areas, smooth rounded shapes, white accents, minimal details, isolated on white background, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.879,
+      "width": 480,
+      "height": 480,
+      "local_image": "headphones_student_1206502.png",
+      "server_image": {
+        "filename": "product_00397_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "b61f2a00-7f21-46a6-9e95-29fc0a21f7ab"
+      },
+      "suite": "products",
+      "api_sha256": "03730bfd0c9bed0977c33f141b1c5d5d7a6ed4c535cb609d7898603698631af2"
+    },
+    {
+      "prompt_id": "a528c08f-08e6-4b52-81b6-7d2bfc5e3bf9",
+      "selection": {
+        "group": "student",
+        "product": "tops",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206502,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tops",
+        "alpha": true,
+        "positive_prompt": "one plain T-shirt laid flat, short sleeves, soft red body, light blue sleeves, simple sporty design, simple soft shaded product illustration, broad pastel color areas, smooth rounded shapes, white accents, minimal details, isolated on white background, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.711,
+      "width": 480,
+      "height": 480,
+      "local_image": "tops_student_1206502.png",
+      "server_image": {
+        "filename": "product_00398_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "b57cdbe4-5a4e-4e00-9f71-aa0d9d4758aa"
+      },
+      "suite": "products",
+      "api_sha256": "ebc4a1c2d01c5c81b521215d7b352628955176d36f255ba9c9172eec2e4beb83"
+    },
+    {
+      "prompt_id": "c2c2511a-fe00-4b48-b0f2-70a2d4366118",
+      "selection": {
+        "group": "student",
+        "product": "hats",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206502,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "hats",
+        "alpha": true,
+        "positive_prompt": "one bucket hat with a short brim, soft red crown, light blue brim, simple sporty design, simple soft shaded product illustration, broad pastel color areas, smooth rounded shapes, white accents, minimal details, isolated on white background, centered with empty margins"
+      },
+      "seconds_request_to_png": 2.271,
+      "width": 480,
+      "height": 480,
+      "local_image": "hats_student_1206502.png",
+      "server_image": {
+        "filename": "product_00399_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "aa9ce0e3-bf8a-4802-94e1-cf9b26795465"
+      },
+      "suite": "products",
+      "api_sha256": "4830b5f2f7d252da8928b7b60908fc794bad40654171726d6b6e1adf7056aa7c"
+    },
+    {
+      "prompt_id": "832179d9-6c72-456e-80a9-5fa51a4810bb",
+      "selection": {
+        "group": "student",
+        "product": "tumblers",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206502,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tumblers",
+        "alpha": true,
+        "positive_prompt": "one travel tumbler with a closed lid, soft red body, light blue lid, simple sporty design, simple soft shaded product illustration, broad pastel color areas, smooth rounded shapes, white accents, minimal details, isolated on white background, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.763,
+      "width": 480,
+      "height": 480,
+      "local_image": "tumblers_student_1206502.png",
+      "server_image": {
+        "filename": "product_00400_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "e19889dc-3f68-40a0-a081-3f26d1a04360"
+      },
+      "suite": "products",
+      "api_sha256": "425fc92d6ab16221472f489c23dce335c0fb1bec23c61051a4070f550b41df6c"
+    },
+    {
+      "prompt_id": "2fdecd45-597a-42ab-b0c7-1810548c0eed",
+      "selection": {
+        "group": "student",
+        "product": "bags",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206502,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "one backpack with a front pocket, soft red body, light blue straps, simple sporty design, simple soft shaded product illustration, broad pastel color areas, smooth rounded shapes, white accents, minimal details, isolated on white background, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.722,
+      "width": 480,
+      "height": 480,
+      "local_image": "bags_student_1206502.png",
+      "server_image": {
+        "filename": "product_00401_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "812ff9a4-0abf-4533-9d0e-669fede567f7"
+      },
+      "suite": "products",
+      "api_sha256": "6d534441ae4fab8d830353fd4d7764a57b8db5c9cb270f1f6c2367fbb2fef521"
+    },
+    {
+      "prompt_id": "2b8acf36-887b-48dd-8b28-6cb11040433e",
+      "selection": {
+        "group": "student",
+        "product": "shoes",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206502,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "one low-top sneaker, natural three-quarter view, soft red upper panels, light blue accent panels, simple sporty design, simple soft shaded product illustration, broad pastel color areas, smooth rounded shapes, white accents, minimal details, isolated on white background, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.735,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_student_1206502.png",
+      "server_image": {
+        "filename": "product_00402_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "4b243e1d-fdc3-4300-86de-5c1930dc115b"
+      },
+      "suite": "products",
+      "api_sha256": "cbb98bbb5a4c7d97a6c3680fdc92c555fc6c7881b9429341b780f4146b63b5eb"
+    },
+    {
+      "prompt_id": "cc4c7641-9561-4c0b-a195-3cb13335b29a",
+      "selection": {
+        "group": "student",
+        "product": "sunglasses",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206502,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "sunglasses",
+        "alpha": true,
+        "positive_prompt": "a single eyewear product, sunglasses with solid tinted lenses, folded closed, soft red frame, light blue opaque lenses, simple sporty design, simple soft shaded product illustration, broad pastel color areas, smooth rounded shapes, white accents, minimal details, isolated on white background, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.706,
+      "width": 480,
+      "height": 480,
+      "local_image": "sunglasses_student_1206502.png",
+      "server_image": {
+        "filename": "product_00403_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "9462b338-fdfb-464c-8ee2-25a536e79c52"
+      },
+      "suite": "products",
+      "api_sha256": "b18a9053fe2081c138c5902f7b908c859defa06bd08121782e8544fa01ad271b"
+    },
+    {
+      "prompt_id": "d6b15dac-7440-4237-8193-fa0e5a272dda",
+      "selection": {
+        "group": "student",
+        "product": "bicycles",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206502,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bicycles",
+        "alpha": true,
+        "positive_prompt": "one simple city bicycle with two wheels and attached handlebars, soft red frame, light blue wheel rims, simple sporty design, simple soft shaded product illustration, broad pastel color areas, smooth rounded shapes, white accents, minimal details, isolated on white background, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.711,
+      "width": 480,
+      "height": 480,
+      "local_image": "bicycles_student_1206502.png",
+      "server_image": {
+        "filename": "product_00404_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "cfa3c175-1cc2-4ac5-9b46-c77dfc1f3670"
+      },
+      "suite": "products",
+      "api_sha256": "6f5cca16e4b61f3c92eba49fd6989d93eeccea7447d958c3c94d1855c7f79299"
+    },
+    {
+      "prompt_id": "09b322ee-f13c-424a-9460-ac824f900ee9",
+      "selection": {
+        "group": "student",
+        "product": "wristwatches",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206502,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "wristwatches",
+        "alpha": true,
+        "positive_prompt": "one wristwatch with a plain round dial and attached strap, soft red strap, light blue case, simple sporty design, simple soft shaded product illustration, broad pastel color areas, smooth rounded shapes, white accents, minimal details, isolated on white background, centered with empty margins"
+      },
+      "seconds_request_to_png": 2.444,
+      "width": 480,
+      "height": 480,
+      "local_image": "wristwatches_student_1206502.png",
+      "server_image": {
+        "filename": "product_00405_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "24475f06-29a9-47b8-8b90-1ae23573dbc2"
+      },
+      "suite": "products",
+      "api_sha256": "27e1e1ee96f229ca08bb3b5c76e040c631b0a89ca6b643dbfda6d10024a1893d"
+    },
+    {
+      "prompt_id": "967d4f6e-074e-470b-ae19-f5364536bfb7",
+      "selection": {
+        "group": "student",
+        "product": "umbrellas",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206502,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "umbrellas",
+        "alpha": true,
+        "positive_prompt": "one open umbrella with a rounded canopy and one curved handle, soft red canopy panels, light blue alternate panels and handle, simple sporty design, simple soft shaded product illustration, broad pastel color areas, smooth rounded shapes, white accents, minimal details, isolated on white background, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.712,
+      "width": 480,
+      "height": 480,
+      "local_image": "umbrellas_student_1206502.png",
+      "server_image": {
+        "filename": "product_00406_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "b74dc49a-e648-4d0f-8014-88ffbb1e0138"
+      },
+      "suite": "products",
+      "api_sha256": "88605ef0246af1487b9aa3bb8ca056bfc3d9512fc6ccd5de187766456c016084"
+    },
+    {
+      "prompt_id": "de952298-ba26-40a5-8dd4-6c2480380495",
+      "selection": {
+        "group": "child",
+        "product": "bags",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "one backpack with a front pocket, soft red body, light blue straps, playful rounded design, simple soft shaded product illustration, broad pastel color areas, smooth rounded shapes, white accents, minimal details, isolated on white background, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.766,
+      "width": 480,
+      "height": 480,
+      "local_image": "bags_child_1206501.png",
+      "server_image": {
+        "filename": "product_00407_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "1e6ebcc8-56f0-4b84-9428-fd2ef4de3809"
+      },
+      "suite": "ages",
+      "api_sha256": "e22e1b55006c94e67668ed79ffa188b08df3a9503ccaa9fc887edb9ee6bf7d6d"
+    },
+    {
+      "prompt_id": "69a2c8d9-4306-475a-abd4-270418779ded",
+      "selection": {
+        "group": "student",
+        "product": "bags",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "one backpack with a front pocket, soft red body, light blue straps, simple sporty design, simple soft shaded product illustration, broad pastel color areas, smooth rounded shapes, white accents, minimal details, isolated on white background, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.595,
+      "width": 480,
+      "height": 480,
+      "local_image": "bags_student_1206501.png",
+      "server_image": {
+        "filename": "product_00391_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "b0dfda61-1e47-4288-afd0-06fa4bcc9df6"
+      },
+      "suite": "ages",
+      "api_sha256": "d7541f779f86c0eaa8a8ef6d30806d7efa30c048b77ebcd3a484009cb42312f8",
+      "reused": true
+    },
+    {
+      "prompt_id": "5aac64af-1ed6-43ac-a74a-f780f9ce9eaf",
+      "selection": {
+        "group": "working_adult",
+        "product": "bags",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "one backpack with a front pocket, soft red body, light blue straps, refined minimal design, simple soft shaded product illustration, broad pastel color areas, smooth rounded shapes, white accents, minimal details, isolated on white background, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.871,
+      "width": 480,
+      "height": 480,
+      "local_image": "bags_working_adult_1206501.png",
+      "server_image": {
+        "filename": "product_00408_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "fbd8b2d7-9d3e-41cd-ae79-36cb32b736fb"
+      },
+      "suite": "ages",
+      "api_sha256": "237ddfa79efde7073b221996ec99360b95ca80a9a80d424a413be5a5039a12ac"
+    },
+    {
+      "prompt_id": "965ae5d1-56b7-44ba-af4e-aa70dfb4f97f",
+      "selection": {
+        "group": "senior",
+        "product": "bags",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "one backpack with a front pocket, soft red body, light blue straps, simple ergonomic design, simple soft shaded product illustration, broad pastel color areas, smooth rounded shapes, white accents, minimal details, isolated on white background, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.891,
+      "width": 480,
+      "height": 480,
+      "local_image": "bags_senior_1206501.png",
+      "server_image": {
+        "filename": "product_00409_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "162e4f4c-6055-4f4d-8d34-93e82501c282"
+      },
+      "suite": "ages",
+      "api_sha256": "a049cd57250eb3665cacf22db1f912ae865fedbcfbe69f674a006207d331a2f5"
+    },
+    {
+      "prompt_id": "9e3368f2-c55f-4372-baf8-dfb43a523a1c",
+      "selection": {
+        "group": "child",
+        "product": "shoes",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "one low-top sneaker, natural three-quarter view, soft red upper panels, light blue accent panels, playful rounded design, simple soft shaded product illustration, broad pastel color areas, smooth rounded shapes, white accents, minimal details, isolated on white background, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.88,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_child_1206501.png",
+      "server_image": {
+        "filename": "product_00410_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "3d1ebbd7-5abd-404e-9bad-859acfdd68a5"
+      },
+      "suite": "ages",
+      "api_sha256": "54172b650a49360c3694125a1fbcf7fec221a171a9009b1ad31d137025828c3c"
+    },
+    {
+      "prompt_id": "e6f6073e-2a33-4e84-bc00-d466e0c6c845",
+      "selection": {
+        "group": "student",
+        "product": "shoes",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "one low-top sneaker, natural three-quarter view, soft red upper panels, light blue accent panels, simple sporty design, simple soft shaded product illustration, broad pastel color areas, smooth rounded shapes, white accents, minimal details, isolated on white background, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.715,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_student_1206501.png",
+      "server_image": {
+        "filename": "product_00392_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "edb504f0-e95c-45c0-b359-638df4c1b52f"
+      },
+      "suite": "ages",
+      "api_sha256": "1030a13a93ca9b01a3b887d2e1c6f66d3ed24ef375a4b7f81267178b7357d579",
+      "reused": true
+    },
+    {
+      "prompt_id": "8f1810d7-9a94-4a5f-a183-77164671cb19",
+      "selection": {
+        "group": "working_adult",
+        "product": "shoes",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "one low-top sneaker, natural three-quarter view, soft red upper panels, light blue accent panels, refined minimal design, simple soft shaded product illustration, broad pastel color areas, smooth rounded shapes, white accents, minimal details, isolated on white background, centered with empty margins"
+      },
+      "seconds_request_to_png": 2.442,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_working_adult_1206501.png",
+      "server_image": {
+        "filename": "product_00411_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "1fe7817d-f3b5-4851-9446-be34b43eaf56"
+      },
+      "suite": "ages",
+      "api_sha256": "083e60ead0fa8c18c343153088a03f3a58318eb947cadbbc2647ef0a73d4c174"
+    },
+    {
+      "prompt_id": "e702ca2c-92a6-4a35-86b9-45bd7b32fa13",
+      "selection": {
+        "group": "senior",
+        "product": "shoes",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "one low-top sneaker, natural three-quarter view, soft red upper panels, light blue accent panels, simple ergonomic design, simple soft shaded product illustration, broad pastel color areas, smooth rounded shapes, white accents, minimal details, isolated on white background, centered with empty margins"
+      },
+      "seconds_request_to_png": 1.713,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_senior_1206501.png",
+      "server_image": {
+        "filename": "product_00412_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "6a49bbcc-6d00-4d66-a9b4-ae2217cc1e9b"
+      },
+      "suite": "ages",
+      "api_sha256": "fb85c1c7fc7fa1a0d40534036411a7f1f9d7abe72272cd7adf4a8a66b012ea94"
+    }
+  ],
+  "failed": [],
+  "total_cases": 28,
+  "completed": true
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "hoodie",
+    "positive": "one red pullover hoodie with blue sleeves, white background, simple product illustration",
+    "prompt_id": "fe9a65f5-ec4c-4947-9e10-ed92f1834243",
+    "seconds": 1.849
+  },
+  {
+    "name": "shirt",
+    "positive": "one red long-sleeved shirt with blue collar, white background, simple product illustration",
+    "prompt_id": "b4e74cf4-7396-44d2-baf7-43ae6349d649",
+    "seconds": 1.453
+  },
+  {
+    "name": "cardigan",
+    "positive": "one red cardigan with blue sleeves, white background, simple product illustration",
+    "prompt_id": "16bdf1a0-500d-413d-9bb6-c878709197c5",
+    "seconds": 1.571
+  },
+  {
+    "name": "umbrella_folded",
+    "positive": "one closed red folded umbrella with a blue handle, white background, simple product illustration",
+    "prompt_id": "db33b486-864f-49f8-b519-4cba3ab4208b",
+    "seconds": 1.588
+  },
+  {
+    "name": "umbrella_closed",
+    "positive": "a single closed umbrella, red fabric and blue wooden hook handle, isolated on white, simple illustration",
+    "prompt_id": "083cd93a-c25b-4532-9e89-346db8507dbb",
+    "seconds": 1.729
+  },
+  {
+    "name": "glasses",
+    "positive": "one heart-shaped red sunglasses with blue lenses, white background, simple product illustration",
+    "prompt_id": "46a0f28b-9535-4886-ab04-fd264014ae01",
+    "seconds": 1.742
+  },
+  {
+    "name": "watch",
+    "positive": "one red wristwatch with a blue strap, white background, simple product illustration",
+    "prompt_id": "04d7e76c-8018-4df3-b638-8870b032e9fa",
+    "seconds": 2.404
+  },
+  {
+    "name": "roadbike",
+    "positive": "one red road bicycle with blue wheel rims, white background, simple product illustration",
+    "prompt_id": "265ae2d3-ca6d-4ac5-acd8-0df7a3a403e1",
+    "seconds": 1.618
+  }
+]

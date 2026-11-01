@@ -1,0 +1,42 @@
+<canvas id="0:1" name="Page 1" x="0" y="0" width="0" height="0">
+  <section id="27:524" name="02. Big Data in our lives_ UI (TH)" x="5350" y="-5477" width="2194" height="19268">
+    <frame id="27:525" name=" E02-S01. 인트로 및 체험 시작" x="137" y="160" width="1920" height="1080" />
+    <frame id="27:538" name=" E02-S02. 사용자 유형 선택 및 정보 입력 " x="137" y="3225" width="1920" height="1080" />
+    <frame id="27:558" name=" E02-S03. 제품 및 색상 선택" x="137" y="6290" width="1920" height="1080" />
+    <frame id="27:579" name=" E02-S04. 맞춤형 추천 광고 결과" x="137" y="9355" width="1920" height="1080" />
+    <frame id="27:587" name=" E02-S05. 빅데이터 기반 광고 추천 원리 영상_팝업창" x="137" y="15590" width="1920" height="1080" />
+  </section>
+  <section id="27:643" name="02. Big Data in our lives_ UI (En)" x="7677" y="-5477" width="2194" height="18379">
+    <frame id="27:644" name=" E02-S01. 인트로 및 체험 시작" x="137" y="160" width="1920" height="1080" />
+    <frame id="27:656" name=" E02-S02. 사용자 유형 선택 및 정보 입력 " x="137" y="3225" width="1920" height="1080" />
+    <frame id="27:676" name=" E02-S03. 제품 및 색상 선택" x="137" y="6290" width="1920" height="1080" />
+    <frame id="27:697" name=" E02-S04. 맞춤형 추천 광고 결과" x="137" y="9355" width="1920" height="1080" />
+    <frame id="27:705" name="Group 26" x="106" y="1330.5" width="1982" height="1276">
+      <rounded-rectangle id="27:706" name="체험부 1" x="106" y="1330.5" width="1982" height="1276" />
+      <ellipse id="27:707" name="Ellipse 24" x="1024" y="2336" width="135" height="135" />
+    </frame>
+    <frame id="27:708" name="Group 96" x="106" y="4395.5" width="1982" height="1276">
+      <rounded-rectangle id="27:709" name="체험부 1" x="106" y="4395.5" width="1982" height="1276" />
+      <ellipse id="27:710" name="Ellipse 24" x="1024" y="5401" width="135" height="135" />
+    </frame>
+    <frame id="27:711" name="Group 111" x="106" y="7460.5" width="1982" height="1276">
+      <rounded-rectangle id="27:712" name="체험부 1" x="106" y="7460.5" width="1982" height="1276" />
+      <ellipse id="27:713" name="Ellipse 24" x="1024" y="8466" width="135" height="135" />
+    </frame>
+    <frame id="27:714" name="Group 108" x="106" y="13678" width="1982" height="1276">
+      <rounded-rectangle id="27:715" name="체험부 1" x="106" y="13678" width="1982" height="1276" />
+      <ellipse id="27:716" name="Ellipse 24" x="1024" y="14683.5" width="135" height="135" />
+    </frame>
+    <frame id="27:717" name="Group 110" x="106" y="10514" width="1982" height="1276">
+      <rounded-rectangle id="27:718" name="체험부 1" x="106" y="10514" width="1982" height="1276" />
+      <ellipse id="27:719" name="Ellipse 24" x="1024" y="11519.5" width="135" height="135" />
+    </frame>
+    <frame id="27:720" name="Group 109" x="106" y="16733" width="1982" height="1276">
+      <rounded-rectangle id="27:721" name="체험부 1" x="106" y="16733" width="1982" height="1276" />
+      <ellipse id="27:722" name="Ellipse 24" x="1024" y="17738.5" width="135" height="135" />
+    </frame>
+    <frame id="27:723" name=" E02-S05. 빅데이터 기반 광고 추천 원리 영상" x="137" y="12535" width="1920" height="1080" />
+    <frame id="27:727" name=" E02-S05. 빅데이터 기반 광고 추천 원리 영상_팝업창" x="137" y="15590" width="1920" height="1080" />
+  </section>
+</canvas>
+IMPORTANT: After you call this tool, you MUST call get_design_context if trying to implement the design, since this tool only returns metadata. If you do not call get_design_context, the agent will not be able to implement the design.

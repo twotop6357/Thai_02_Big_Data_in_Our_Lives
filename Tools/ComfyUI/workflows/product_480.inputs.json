@@ -3,11 +3,13 @@
   "product": "bags",
   "color1": "blue",
   "color2": "white",
+  "primary_hex": "#5FB0E3",
+  "secondary_hex": "#FFFFFF",
   "profile": "quality",
   "seed": 7042026,
   "width": 480,
   "height": 480,
   "resolved_product": "bags",
   "alpha": true,
-  "positive_prompt": "no humans, still life, object focus, (full shot:1.3), (entire object:1.3), (wide shot:1.15), isolated object, a single backpack, one bag only, closed main compartment, structured front pocket, two attached padded shoulder straps, woven canvas texture, reinforced stitching, metal zipper teeth, small fastened buckles, (blue fabric body:1.15), (white straps and zipper trim:1.15), practical casual design with sporty details, detailed Japanese game item illustration, precise clean linework, soft painted shading, carefully rendered material texture, crisp edges, complete object fully in frame, centered composition, generous empty margin, plain white background, masterpiece, high score, great score, absurdres, rating:general"
+  "positive_prompt": "one school backpack with a large front zipper pocket and two shoulder straps. Main color #5FB0E3 (light blue) on body. Accent color #FFFFFF (white) on front pocket and straps. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
 }

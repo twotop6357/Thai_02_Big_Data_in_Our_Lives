@@ -1,0 +1,10 @@
+{
+  "cells": 40,
+  "all_ten_products_four_ages": true,
+  "new_generations": 24,
+  "reused_exact_api_outputs": 16,
+  "same_rgba_framing_as_prior_unity": 16,
+  "same_color_input_and_seed": true,
+  "gallery_sha256": "1894722342deede1fcd0aaf6e2f45865f8d516b72d7ae6986617979ce0f8c507",
+  "visual_review": "Both halves inspected; all labels and all40 cells visible. No aesthetic curation."
+}

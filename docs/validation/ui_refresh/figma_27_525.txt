@@ -1,0 +1,124 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/102f2cdd-086c-450c-a088-95757fb8fde8";
+const imgE02S01 = `${assetPathPrefix}/bfb92.png`;
+const img1 = `${assetPathPrefix}/b39bb.png`;
+const imgThaiNationalScienceMuseumLogo21 = `${assetPathPrefix}/fe099.png`;
+const img2 = `${assetPathPrefix}/2e5f0.png`;
+const imgEllipse2 = `${assetPathPrefix}/605dc.svg`;
+const imgEllipse53 = `${assetPathPrefix}/7d448.svg`;
+const imgGroup136 = `${assetPathPrefix}/27d8b.svg`;
+const imgLine29 = `${assetPathPrefix}/e98cb.svg`;
+const imgLine30 = `${assetPathPrefix}/4f2d9.svg`;
+const imgGroup28 = `${assetPathPrefix}/53674.svg`;
+
+export default function E02S01() {
+  return (
+    <div className="relative size-full" data-node-id="27:525" data-name="E02-S01. 인트로 및 체험 시작">
+      <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgE02S01} />
+      <div className="absolute h-[983px] left-[-206px] top-[-295px] w-[1077px]" data-node-id="27:526">
+        <div className="absolute inset-[-20.35%_-18.57%]">
+          <img alt="" className="block max-w-none size-full" src={imgEllipse2} />
+        </div>
+      </div>
+      <p className="[word-break:break-word] absolute font-['Noto_Sans_Thai:Medium'] font-medium leading-[1.4] left-[calc(50%-863px)] text-[40px] text-white top-[476px] whitespace-nowrap" data-node-id="27:527" style={{ fontVariationSettings: '"wdth" 100' }}>
+        ดูว่าบิ๊กดาต้าช่วยแนะนำโฆษณา
+        <br aria-hidden />
+        ตามตัวเลือกของคุณได้อย่างไร!
+      </p>
+      <div className="absolute flex h-[758.477px] items-center justify-center left-[820.91px] top-[190.76px] w-[1116.179px]" data-node-id="27:528">
+        <div className="flex-none rotate-[1.28deg]">
+          <div className="h-[734px] relative w-[1100px]" data-name="귀여운 키즈 쇼핑 위시리스트 인터페이스 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img1} />
+          </div>
+        </div>
+      </div>
+      <div className="absolute h-[467px] left-[630px] top-[896px] w-[1513px]" data-node-id="27:529">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse53} />
+      </div>
+      <div className="absolute contents left-[63px] top-[37.15px]" data-node-id="27:530">
+        <div className="absolute flex h-[219.778px] items-center justify-center left-[77.58px] top-[256.29px] w-[919.784px]" data-node-id="27:531">
+          <div className="flex-none rotate-[-1.49deg]">
+            <p className="[word-break:break-word] font-['Futura_100_THA:Bold'] leading-[1.4] not-italic relative text-[140px] text-shadow-[4px_4px_8px_#65b7d5] text-white tracking-[2.8px] w-[914.987px]">ในชีวิตของเรำ</p>
+          </div>
+        </div>
+        <div className="absolute flex h-[296.692px] items-center justify-center left-[63px] top-[37.15px] w-[810.653px]" data-node-id="27:532">
+          <div className="flex-none rotate-[-1.19deg]">
+            <p className="[word-break:break-word] font-['Futura_100_THA:Bold'] leading-[1.4] not-italic relative text-[#ff8cae] text-[200px] text-shadow-[4px_4px_8px_#65b7d5] tracking-[4px] whitespace-nowrap">บิ ๊กดำต้ำ</p>
+          </div>
+        </div>
+        <div className="absolute h-[83.652px] left-[853px] top-[71px] w-[74.504px]" data-node-id="27:533">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGroup136} />
+        </div>
+      </div>
+      <div className="absolute h-[116px] right-[39.72px] top-[40px] w-[134.283px]" data-node-id="27:536" data-name="Thai_National_Science_Museum_logo_2 1">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-[100.18%] left-0 max-w-none top-[-0.09%] w-[91.08%]" src={imgThaiNationalScienceMuseumLogo21} />
+        </div>
+      </div>
+      <div className="-translate-x-1/2 absolute bg-white bottom-[40px] content-stretch drop-shadow-[6px_6px_3px_rgba(50,120,197,0.3)] flex gap-[24px] items-center justify-center left-1/2 px-[32px] py-[16px] rounded-[95px]" data-node-id="27:537" data-name="버튼 안내문구 2">
+        <div className="relative shrink-0 size-[122px]" data-node-id="I27:537;315:614" data-name="광택 레드 원형 푸시 버튼 스티커 1">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img2} />
+        </div>
+        <div className="content-stretch flex flex-col gap-[10px] items-center justify-center relative shrink-0" data-node-id="I27:537;315:615">
+          <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[40px] not-italic relative shrink-0 text-[#65b7d5] text-[36px] whitespace-nowrap" data-node-id="I27:537;315:616">
+            Press the red button to select your language and start!
+          </p>
+          <div className="h-0 relative shrink-0 w-full" data-node-id="I27:537;315:617">
+            <div className="absolute inset-[-1px_0_0_0]">
+              <img alt="" className="block max-w-none size-full" src={imgLine29} />
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[24px] items-center px-[4px] relative shrink-0 w-full" data-node-id="I27:537;315:618">
+            <div className="content-stretch flex gap-[6px] items-center relative shrink-0" data-node-id="I27:537;438:2676">
+              <div className="bg-[#ff8cae] content-stretch flex items-center justify-center px-[12px] py-[2px] relative rounded-[33px] shrink-0" data-node-id="I27:537;438:2665">
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[34px] not-italic relative shrink-0 text-[24px] text-white whitespace-nowrap" data-node-id="I27:537;315:619">
+                  Press Once / กดหนึ่งครั้ง
+                </p>
+              </div>
+              <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[34px] not-italic relative shrink-0 text-[#ff8cae] text-[24px] whitespace-nowrap" data-node-id="I27:537;438:2659">
+                → เริ่ม / Start
+              </p>
+            </div>
+            <div className="flex h-[30px] items-center justify-center relative shrink-0 w-0" data-node-id="I27:537;315:620">
+              <div className="flex-none rotate-90">
+                <div className="h-0 relative w-[30px]">
+                  <div className="absolute inset-[-1px_0_0_0]">
+                    <img alt="" className="block max-w-none size-full" src={imgLine30} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex gap-[6px] items-center relative shrink-0" data-node-id="I27:537;438:2697">
+              <div className="bg-[#ff8cae] content-stretch flex items-center justify-center px-[12px] py-[2px] relative rounded-[33px] shrink-0" data-node-id="I27:537;438:2698">
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[34px] not-italic relative shrink-0 text-[24px] text-white whitespace-nowrap" data-node-id="I27:537;438:2699">
+                  Hold for 2 seconds / กดค้างไว้ 2 วินาที
+                </p>
+              </div>
+              <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[34px] not-italic relative shrink-0 text-[#ff8cae] text-[24px] whitespace-nowrap" data-node-id="I27:537;438:2700">
+                → ไทย / English
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="absolute flex h-[67.77px] items-center justify-center left-[-3.41px] top-[-2.69px] w-[62.775px]" data-node-id="I27:537;414:510">
+          <div className="flex-none rotate-[-2.86deg]">
+            <div className="h-[64.877px] relative w-[59.612px]">
+              <div className="absolute inset-[-7.91%_-7.75%_0_-1.76%]">
+                <img alt="" className="block max-w-none size-full" src={imgGroup28} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: Primary/Number 2: #65B7D5, GrayScale/4: #FFFFFF, EN/Body/S: Font(family: "Inter", style: Regular, size: 24, weight: 400, lineHeight: 34, letterSpacing: 0).
+The generated code contains image and SVG URL constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

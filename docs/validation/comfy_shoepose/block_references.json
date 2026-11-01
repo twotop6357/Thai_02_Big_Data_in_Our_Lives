@@ -1,0 +1,182 @@
+{
+  "bags": {
+    "source": "Assets\\UI\\Blocks\\BagBlock.png",
+    "source_sha256": "c3159448f3368418e0b411d9c17b458025d8019a7519c8d7d678294f865b4680",
+    "content_crop": [
+      17,
+      17,
+      234,
+      186
+    ],
+    "object_bounds_in_crop": [
+      52,
+      29,
+      169,
+      157
+    ],
+    "reference": "guide_block_bags_a4a04b8362.png",
+    "reference_sha256": "a4a04b83622deff25acc6da5a13cb9acc32d82c332848fc963f8330be48396a7"
+  },
+  "shoes": {
+    "source": "Assets\\UI\\Blocks\\ShoesBlock.png",
+    "source_sha256": "1da48f280af26f8bb4446e79a4ff3797f3e12ce30c09b6fbf245205c6600c52f",
+    "content_crop": [
+      17,
+      17,
+      234,
+      186
+    ],
+    "object_bounds_in_crop": [
+      35,
+      50,
+      185,
+      137
+    ],
+    "reference": "guide_block_shoes_aa9dfd2c00.png",
+    "reference_sha256": "aa9dfd2c002073e0f1f1e4170cfdf8804f669bc39fd08830137947115d673a6c"
+  },
+  "hats": {
+    "source": "Assets\\UI\\Blocks\\HatBlock.png",
+    "source_sha256": "29d9d4a1fe25b4352fcaa3ca73109a2a607aea62b59adba5e2564baab9cd0eb5",
+    "content_crop": [
+      17,
+      17,
+      234,
+      186
+    ],
+    "object_bounds_in_crop": [
+      44,
+      42,
+      176,
+      144
+    ],
+    "reference": "guide_block_hats_feed7b9026.png",
+    "reference_sha256": "feed7b902629e33335e26d1d10e8a4ee6b05cab84c2619e62b22ec77252da7bc"
+  },
+  "sunglasses": {
+    "source": "Assets\\UI\\Blocks\\SunglassesBlock.png",
+    "source_sha256": "0f85c8d3ee34adab0395da33117221a086cbd79fe6928e34b0081e4748499171",
+    "content_crop": [
+      17,
+      17,
+      234,
+      186
+    ],
+    "object_bounds_in_crop": [
+      36,
+      64,
+      184,
+      123
+    ],
+    "reference": "guide_block_sunglasses_ed4d27112a.png",
+    "reference_sha256": "ed4d27112aaf443eea36402615f3736bca268de434f9144ed8812bb1736aedf2"
+  },
+  "headphones": {
+    "source": "Assets\\UI\\Blocks\\HeadphonesBlock.png",
+    "source_sha256": "a785609c77665ba20450baf33d436afd85ba7b405f0c1b4073308cbb0af0eeab",
+    "content_crop": [
+      17,
+      17,
+      234,
+      186
+    ],
+    "object_bounds_in_crop": [
+      47,
+      36,
+      172,
+      151
+    ],
+    "reference": "guide_block_headphones_b9701cd630.png",
+    "reference_sha256": "b9701cd6309e9ee05117e3560229d67fe1007ba1d859824dc79e6c1e31237442"
+  },
+  "tops": {
+    "source": "Assets\\UI\\Blocks\\TopBlock.png",
+    "source_sha256": "9ebdd74d413a72765077ea8418409b4ffcc42ed94d8371315661f904dd477f3e",
+    "content_crop": [
+      17,
+      17,
+      234,
+      186
+    ],
+    "object_bounds_in_crop": [
+      50,
+      40,
+      169,
+      147
+    ],
+    "reference": "guide_block_tops_553c6663bf.png",
+    "reference_sha256": "553c6663bf892bbc457b0da01e1ffe073189ab3c2e1d882e75d0da011564bdc6"
+  },
+  "bicycles": {
+    "source": "Assets\\UI\\Blocks\\BicycleBlock.png",
+    "source_sha256": "37aa89e4d8bc0669c9ea7813be1d21f0ab951e080a03a23a5d6701c9caf9c88e",
+    "content_crop": [
+      17,
+      17,
+      234,
+      186
+    ],
+    "object_bounds_in_crop": [
+      39,
+      48,
+      180,
+      139
+    ],
+    "reference": "guide_block_bicycles_44eac87284.png",
+    "reference_sha256": "44eac87284129a8d4b7728962906ac5315e80dfb7a1b1627336377ad375b0bbb"
+  },
+  "tumblers": {
+    "source": "Assets\\UI\\Blocks\\TumblerBlock.png",
+    "source_sha256": "59a496656c2c7685f12ae851f12f3b56f644c267edff085d19f250fc082a8c72",
+    "content_crop": [
+      17,
+      17,
+      234,
+      186
+    ],
+    "object_bounds_in_crop": [
+      71,
+      34,
+      150,
+      152
+    ],
+    "reference": "guide_block_tumblers_6d1bd89592.png",
+    "reference_sha256": "6d1bd895924a4c5956c20c9a08f040b9dd899b9b885d23e29838869198c1facc"
+  },
+  "wristwatches": {
+    "source": "Assets\\UI\\Blocks\\WristWatchBlock.png",
+    "source_sha256": "d583e4a0d09634569165aa79039717d3ddaf88f250b539a3f8625bf094680fb3",
+    "content_crop": [
+      17,
+      17,
+      234,
+      186
+    ],
+    "object_bounds_in_crop": [
+      69,
+      35,
+      152,
+      151
+    ],
+    "reference": "guide_block_wristwatches_024d84b6bc.png",
+    "reference_sha256": "024d84b6bca2fb9a598cc6fd1c49ea5b2088ed67880dde8f9b672d19b10e3cec"
+  },
+  "umbrellas": {
+    "source": "Assets\\UI\\Blocks\\UmbrellaBlock.png",
+    "source_sha256": "35c2c260c1f615dd096b93b92ce6dba0eb029f88edb32073eff6f9f09d05fe4a",
+    "content_crop": [
+      17,
+      17,
+      234,
+      186
+    ],
+    "object_bounds_in_crop": [
+      54,
+      34,
+      165,
+      153
+    ],
+    "reference": "guide_block_umbrellas_0adcfcb043.png",
+    "reference_sha256": "0adcfcb043f731e6ddf5aa0847feaf3eea403b729d1365e01767bff1522df727"
+  }
+}

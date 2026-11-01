@@ -1,0 +1,17 @@
+[
+  {
+    "path": "Assets/Scenes/0_Idle.unity",
+    "missingScripts": 0,
+    "missingSprites": 0
+  },
+  {
+    "path": "Assets/Scenes/1_Game.unity",
+    "missingScripts": 0,
+    "missingSprites": 0
+  },
+  {
+    "path": "Assets/Scenes/2_Result.unity",
+    "missingScripts": 0,
+    "missingSprites": 0
+  }
+]

@@ -1,0 +1,100 @@
+{
+  "task": "UI-REFRESH-002",
+  "checks": [
+    "Start from a ready Idle scene",
+    "th mode is selected",
+    "th idle uses only the registered images and correct geometry",
+    "th enlarged title hint fits the common guide position",
+    "th group board and all four readers use the new vertical alignment",
+    "th four empty slots fade at their design size",
+    "th empty group cannot advance",
+    "th one recognized group enables the group button",
+    "th group uses only the registered images and correct geometry",
+    "th group-to-placement keeps the animated slot transfer without blackout",
+    "th reader removal keeps the placement page and disables continue",
+    "th incomplete block composition hides the placement hint",
+    "th incomplete composition cannot advance",
+    "th group/product/two colors complete the existing coloring and hint gate",
+    "th all slot frames keep their original untinted colors",
+    "th selection uses only the registered images and correct geometry",
+    "th advertisement entrance and confetti still lock input",
+    "th early advertisement tap is ignored",
+    "th slow aura keeps looping after the finite entrance",
+    "th result uses only the registered images and correct geometry",
+    "th unchanged video transition covers the screen and delivers frame zero",
+    "th mode still selects its original video",
+    "th video_end uses only the registered images and correct geometry",
+    "th advertisement effects are cleared before the video/end overlay",
+    "Finished video returns to Idle",
+    "Two-second title hold keeps the existing language fade/toggle",
+    "en mode is selected",
+    "en idle uses only the registered images and correct geometry",
+    "en enlarged title hint fits the common guide position",
+    "en group board and all four readers use the new vertical alignment",
+    "en four empty slots fade at their design size",
+    "en empty group cannot advance",
+    "en one recognized group enables the group button",
+    "en group uses only the registered images and correct geometry",
+    "en group-to-placement keeps the animated slot transfer without blackout",
+    "en reader removal keeps the placement page and disables continue",
+    "en incomplete block composition hides the placement hint",
+    "en incomplete composition cannot advance",
+    "en group/product/two colors complete the existing coloring and hint gate",
+    "en all slot frames keep their original untinted colors",
+    "en selection uses only the registered images and correct geometry",
+    "en advertisement entrance and confetti still lock input",
+    "en early advertisement tap is ignored",
+    "en slow aura keeps looping after the finite entrance",
+    "en result uses only the registered images and correct geometry",
+    "en unchanged video transition covers the screen and delivers frame zero",
+    "en mode still selects its original video",
+    "en video_end uses only the registered images and correct geometry",
+    "en advertisement effects are cleared before the video/end overlay",
+    "Five-second button hold returns home and preserves the selected language",
+    "Repeated sessions retain one manager",
+    "Video textures are released after returning home"
+  ],
+  "captures": [
+    {
+      "language": "th",
+      "stage": "idle",
+      "path": "docs/validation/ui_refresh2/th_idle.png"
+    },
+    {
+      "language": "th",
+      "stage": "group",
+      "path": "docs/validation/ui_refresh2/th_group.png"
+    },
+    {
+      "language": "th",
+      "stage": "selection",
+      "path": "docs/validation/ui_refresh2/th_selection.png"
+    },
+    {
+      "language": "th",
+      "stage": "result",
+      "path": "docs/validation/ui_refresh2/th_result.png"
+    },
+    {
+      "language": "en",
+      "stage": "idle",
+      "path": "docs/validation/ui_refresh2/en_idle.png"
+    },
+    {
+      "language": "en",
+      "stage": "group",
+      "path": "docs/validation/ui_refresh2/en_group.png"
+    },
+    {
+      "language": "en",
+      "stage": "selection",
+      "path": "docs/validation/ui_refresh2/en_selection.png"
+    },
+    {
+      "language": "en",
+      "stage": "result",
+      "path": "docs/validation/ui_refresh2/en_result.png"
+    }
+  ],
+  "status": "PASS"
+}

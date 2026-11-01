@@ -1,0 +1,218 @@
+[
+  {
+    "id": "idle.subtitle",
+    "language": "th",
+    "source": "Assets/UI/2_new/Thai/Idle_Th/태국어서브타이틀.png",
+    "target": "Assets/UI/UIs_Th/Idle/Subtitle_th.png",
+    "oldHash": "cfd0fe005ca1c61a437cd2622c7153ca16ef94dc905946bd7802bfdb3f427b16",
+    "newHash": "6b92c612cd2a4da84760f690fe1b315b59a2dcb9b0f6a5cfa249af3aec947cca",
+    "metaHash": "2789327654c47232c7581ab647121a02a1262f95125eab25726c2d5c64960205"
+  },
+  {
+    "id": "idle.title",
+    "language": "th",
+    "source": "Assets/UI/2_new/Thai/Idle_Th/태국어타이틀.png",
+    "target": "Assets/UI/UIs_Th/Idle/Title_th.png",
+    "oldHash": "a2444bccc1b30967f1ebb0ebf28a81a280367231ef712e5282647e4fe63610d9",
+    "newHash": "7abfcd2d992d69b89272749e2d05203297f84d10d0e9172007286fafc261113e",
+    "metaHash": "10eb87a42b94340bd3019a416c813ff67d739da4c1d9ecd5110c0a89ac68867f"
+  },
+  {
+    "id": "idle.help",
+    "language": "th",
+    "source": "Assets/UI/2_new/Thai/Idle_Th/태국어타이틀버튼안내문구.png",
+    "target": "Assets/UI/UIs_Th/Idle/ButtonHelpBox_th.png",
+    "oldHash": "b29555d16c159b602bf82a5f70aef261096ad31345a0c1b4e3498687eff6d337",
+    "newHash": "ca8a71de515ee6a29a21b758c58f0afe598ab45e901740d43dfbb3cd3a97e4bc",
+    "metaHash": "1ffbb43f9de71dd71c6c0def2b509b4b39e57eaba7ce1b7bb4224df6e784c5b7"
+  },
+  {
+    "id": "group.help",
+    "language": "th",
+    "source": "Assets/UI/2_new/Thai/GroupSelect_Th/그룹선택버튼안내문구.png",
+    "target": "Assets/UI/UIs_Th/GroupSelect/ButtonHelpBox_groupselect_th.png",
+    "oldHash": "3a7154afd30d35b87c3107fd6e277920d3528fea925d7846f2df759c1f0af26c",
+    "newHash": "0b5de5f4686cdbb64df6358a94219a41be6d7b606fea0aaa7ae36933bcc03092",
+    "metaHash": "b2a7f82e0b3cf20ffe11b055e7abc37a9198226bb7c1193ffe84d45bf72ae482"
+  },
+  {
+    "id": "group.subtitle",
+    "language": "th",
+    "source": "Assets/UI/2_new/Thai/GroupSelect_Th/그룹선택서브타이틀.png",
+    "target": "Assets/UI/UIs_Th/GroupSelect/Subtitle_groupselect_th.png",
+    "oldHash": "aceef06483de388905693e11b22f68d80067e8c599cf74b1cb7d549d3138a3fe",
+    "newHash": "be7afaa10e8134a6dbbf868654f0c3db24ceddf1d3f267ee997933a499888a9b",
+    "metaHash": "1a8f04956d39cc054b6933dc229ccab7292436fe33a2b35ca05582c14d83eb5f"
+  },
+  {
+    "id": "group.title",
+    "language": "th",
+    "source": "Assets/UI/2_new/Thai/GroupSelect_Th/그룹선택타이틀.png",
+    "target": "Assets/UI/UIs_Th/GroupSelect/Title_groupselect_th.png",
+    "oldHash": "16c408593711ae7e8761e4d8db6ce34a7d96c28f29e6c13400c591aa3b5558f9",
+    "newHash": "16c408593711ae7e8761e4d8db6ce34a7d96c28f29e6c13400c591aa3b5558f9",
+    "metaHash": "4cf42b68db9d438c50438f6ea7f17f5f10a79a31e4e8cc469e0694b160f20577"
+  },
+  {
+    "id": "selection.help",
+    "language": "th",
+    "source": "Assets/UI/2_new/Thai/SelectAll_Th/태국어모든선택버튼안내문구.png",
+    "target": "Assets/UI/UIs_Th/SelectAll/ButtonHelpBox_selectall_th.png",
+    "oldHash": "a147c869f28891751dda956d307ad776d69ff6740663315eca544f1f1cf1e467",
+    "newHash": "ea351a4959d5d1d9f61bd58e059170bc19273eee93041840b5b5d3e90b9f6c76",
+    "metaHash": "d4c17e31a01534e1d97114575c327e6d54af84df619e4433e80f27d00cadca8e"
+  },
+  {
+    "id": "selection.subtitle",
+    "language": "th",
+    "source": "Assets/UI/2_new/Thai/SelectAll_Th/태국어모든선택서브타이틀.png",
+    "target": "Assets/UI/UIs_Th/SelectAll/Subtitle_selectall_th.png",
+    "oldHash": "66d3549a607682edf85421fa80244aa14ac5565e11285986a7255601e61ac4fd",
+    "newHash": "fbe5f50c1cc30760936a682ed847bcfe29e1954bbfe0cdcf6ff2dc4645511f07",
+    "metaHash": "4dbbd80d759a6c23b7fc8f33af350b733b61dafe0c046ff7c8efc2b2e7de2931"
+  },
+  {
+    "id": "selection.title",
+    "language": "th",
+    "source": "Assets/UI/2_new/Thai/SelectAll_Th/태국어모든선택타이틀.png",
+    "target": "Assets/UI/UIs_Th/SelectAll/Title_selectall_th.png",
+    "oldHash": "588fb97908b4b4faa40d979e85f678eab4200d006838774d432dca4f77984d84",
+    "newHash": "e5e15c0f5eada14dfd8d1f18c153ea9eba316262d0ac5283a6e6801415e37656",
+    "metaHash": "64abd917e8b21cffbd7c1919067c6a10ce3c113ffacb69e8a0c639dec14084c5"
+  },
+  {
+    "id": "result.help",
+    "language": "th",
+    "source": "Assets/UI/2_new/Thai/Ad_Th/태국어광고창버튼안내문구.png",
+    "target": "Assets/UI/UIs_Th/RecommendedAd/ButtonHelpBox_recommendedAd_th.png",
+    "oldHash": "3a78d86c3f34d8b5fcda2339a793a4173457271e61f9e05ba60c110fd32b6ad3",
+    "newHash": "595bd35604dabf2500f9e061af7acbeb131b915f748b3e6affde650ef8341b5e",
+    "metaHash": "53b66ef937ada80f7a9767239997d7e1be3728f18b42ad8df8a129afcedac8d6"
+  },
+  {
+    "id": "result.subtitle",
+    "language": "th",
+    "source": "Assets/UI/2_new/Thai/Ad_Th/태국어광고창서브타이틀.png",
+    "target": "Assets/UI/UIs_Th/RecommendedAd/Subtitle_recommendedAd_th.png",
+    "oldHash": "de130488df2ed4d606c1beeae2f2e6150f714ebfc07c0c90a6d2024837ed8996",
+    "newHash": "5ef59e3239b307c2b2d00b83bf4d58a3acd36cd8934c4172ab1bb861bfdf3371",
+    "metaHash": "7aead108d5819b78fb2373ebaaeb97ae81f7bea63174b56fb63f3c00e2e4dffd"
+  },
+  {
+    "id": "result.title",
+    "language": "th",
+    "source": "Assets/UI/2_new/Thai/Ad_Th/태국어광고창타이틀.png",
+    "target": "Assets/UI/UIs_Th/RecommendedAd/Title_recommendedAd_th.png",
+    "oldHash": "f646c030fc2eb975090dc9dd0419f72c478484f48de9e084df8b278adca95a77",
+    "newHash": "6a00b6341426e0e82ed15d52c240eb37a01cdae9b4a2bc6228a0881d6e870161",
+    "metaHash": "aa027ffcf0b646964a1219f8d99baa545527a1fa0263b54a3366f4bf69505e6d"
+  },
+  {
+    "id": "idle.subtitle",
+    "language": "en",
+    "source": "Assets/UI/2_new/English/Title_En/영어서브타이틀.png",
+    "target": "Assets/UI/UIs_En/Idle/Subtitle_en.png",
+    "oldHash": "b6245df350299b73a0c517cfda5b815347fc8aca18a8e0f712557caf143f193e",
+    "newHash": "98b6c67ea443d392212d01a69f32492dca892f1a8ad3f1b6eecee5e6b878dc03",
+    "metaHash": "61f6c200b95770ab6ff567a018fd150142f10c6451ad22347b287a758392d4f5"
+  },
+  {
+    "id": "idle.title",
+    "language": "en",
+    "source": "Assets/UI/2_new/English/Title_En/영어타이틀.png",
+    "target": "Assets/UI/UIs_En/Idle/Title_en.png",
+    "oldHash": "8afe9fa21c9c826a23cd74c7e06c485089daa28d0053ac5238aeb4349cc41574",
+    "newHash": "12d71c849dbb27779f651c47dc564e3c1a55f13a8b2521f0bc6c6509c2c1d8ca",
+    "metaHash": "411423bfb225b7e44298d91433f9b4a61838803da760dbc49d085ce8e53fdc7b"
+  },
+  {
+    "id": "idle.help",
+    "language": "en",
+    "source": "Assets/UI/2_new/English/Title_En/영어타이틀버튼안내문구.png",
+    "target": "Assets/UI/UIs_En/Idle/ButtonHelpBox_en.png",
+    "oldHash": "443c1017e658c50d3c05a8f38a7973b65ae241c4f8f5f5aafaeb028b83a7f5de",
+    "newHash": "c3623d0c596c267d4106acdd4f916549cf5548b05168b003705efd788a790e61",
+    "metaHash": "500e858a76bacd827d68647a7357648142b43dbee3dee35d502a512ba13275dd"
+  },
+  {
+    "id": "group.help",
+    "language": "en",
+    "source": "Assets/UI/2_new/English/GroupSelect_En/영어그룹선택버튼안내문구.png",
+    "target": "Assets/UI/UIs_En/GroupSelect/ButtonHelpBox_groupselectPanel_en.png",
+    "oldHash": "23cb90ae551b800ca54837f944ba569c828282176352ac287eaed7414eb426d9",
+    "newHash": "388865ad13f2ed8387b511eb44fce99c64da85093d524dc3cd03995276384aff",
+    "metaHash": "5691882a4d74b219ac3cc97129ec49121a481ae712efd96804175c1554768650"
+  },
+  {
+    "id": "group.subtitle",
+    "language": "en",
+    "source": "Assets/UI/2_new/English/GroupSelect_En/영어그룹선택서브타이틀.png",
+    "target": "Assets/UI/UIs_En/GroupSelect/Subtitle_groupselectPanel_en.png",
+    "oldHash": "f0b01f9aac796359995903b1805e74fe955a71a8b8f92e6beca27a3da8193c61",
+    "newHash": "36441cce8ea93d97e9e564c4052e6e662c49a9e92134fca0b329cc12e92f66bb",
+    "metaHash": "419489bc8766fec55c922a6eee3cfa37ce854bcd83360033a7845ac2d7d9ddb1"
+  },
+  {
+    "id": "group.title",
+    "language": "en",
+    "source": "Assets/UI/2_new/English/GroupSelect_En/영어그룹선택타이틀.png",
+    "target": "Assets/UI/UIs_En/GroupSelect/Title_groupselectPanel_en.png",
+    "oldHash": "beb11a62dfa0137e136341e6fbb3df40e978d1c4e203f8eaf4aeb0c3acc42eac",
+    "newHash": "fba6fbeefed0765bc5e2f716594e44117b7a9db98107d3d65571e55a6ac9fd4c",
+    "metaHash": "6d4298dbac98e2a75c6a6738fe6329f18087b73d7fc78875ece97e20a53f3639"
+  },
+  {
+    "id": "selection.help",
+    "language": "en",
+    "source": "Assets/UI/2_new/English/SelectAll_En/영어모든선택버튼안내문구.png",
+    "target": "Assets/UI/UIs_En/SelectAll/ButtonHelpBox_selectallPanel_en.png",
+    "oldHash": "23cb90ae551b800ca54837f944ba569c828282176352ac287eaed7414eb426d9",
+    "newHash": "b049f0e35b44d6791d7a80e7b11b9370ebcfdd8ecfae3e3baddb4d298a81c9ac",
+    "metaHash": "a6f7f00a8433e282c0a2cd188e9507d4c87f1330664d6f52eb3bb921e735ab7b"
+  },
+  {
+    "id": "selection.subtitle",
+    "language": "en",
+    "source": "Assets/UI/2_new/English/SelectAll_En/영어모든선택서브타이틀.png",
+    "target": "Assets/UI/UIs_En/SelectAll/Subtitle_selectallPanel_en.png",
+    "oldHash": "d58eaac1fb013fb6e9669a354e90ec7098dad1096a7a943710c332f248a77269",
+    "newHash": "aa880e86fe602835cc99bc01dd736fef07ef33aed74430c25220b1893a279977",
+    "metaHash": "8eac839ab55a3f666136b88eda6e78f858ffabb19b760d7c5d4988830d8f6695"
+  },
+  {
+    "id": "selection.title",
+    "language": "en",
+    "source": "Assets/UI/2_new/English/SelectAll_En/영어모든선택타이틀.png",
+    "target": "Assets/UI/UIs_En/SelectAll/Title_selectallPanel_en.png",
+    "oldHash": "08800e3f2318ffeaca4d0964a48e5eeae65487561b41e7973f3ad685e36092e9",
+    "newHash": "0db02b026a664ada490521d2501edd50e208602640d8d614e8794b9580a7d86b",
+    "metaHash": "a8f15471c94298776c59f5aadc984c8203181b0c1937fec3b9dadacba2a5161e"
+  },
+  {
+    "id": "result.help",
+    "language": "en",
+    "source": "Assets/UI/2_new/English/Ad_En/영어광고창버튼안내문구.png",
+    "target": "Assets/UI/UIs_En/RecommendedAd/ButtonHelpBox_RecommendedAd_en.png",
+    "oldHash": "0e701b0bb25ce76135729b49b8f75e40e410139de5468b701ec31161d68090b0",
+    "newHash": "9500c45c23d04a805efea0bb0aa6a0968935e5951f21acf5f3b082f518adf304",
+    "metaHash": "4e5b2c9ba883b3ce246c2fb078301bb831d20a8a230b0defc452181cba5f7b61"
+  },
+  {
+    "id": "result.subtitle",
+    "language": "en",
+    "source": "Assets/UI/2_new/English/Ad_En/영어광고창서브타이틀.png",
+    "target": "Assets/UI/UIs_En/RecommendedAd/Subtitle_RecommendedAd_en.png",
+    "oldHash": "be22fd354ed7bc55df5181a73726c00fbc55fed63876c29814a238925c1b3aad",
+    "newHash": "5fc8f352651a4a4f1c1b8a062ef7c230c53051cd7038f488a6726d5448d770c6",
+    "metaHash": "777aa1b6a15d2388849903ab0c8e2b40b12eab376a2c38a335aaa509c30367e0"
+  },
+  {
+    "id": "result.title",
+    "language": "en",
+    "source": "Assets/UI/2_new/English/Ad_En/영어광고창타이틀.png",
+    "target": "Assets/UI/UIs_En/RecommendedAd/Title_RecommendedAd_en.png",
+    "oldHash": "edde7dd5c948b03c288fe835582bde0f042e4b8eac705cc0dd8c4e06cfc143bb",
+    "newHash": "edde7dd5c948b03c288fe835582bde0f042e4b8eac705cc0dd8c4e06cfc143bb",
+    "metaHash": "8f6afdd03aaee7eac06896a351d017cef9f941871532ae7678ab293b5df26bf2"
+  }
+]

@@ -1,0 +1,156 @@
+[
+  {
+    "file": "headphones_student_1206501.png",
+    "center": [
+      240.0,
+      240.0
+    ],
+    "bounds": [
+      58,
+      66,
+      422,
+      414
+    ],
+    "transparent_pixels": 162888
+  },
+  {
+    "file": "tops_student_1206501.png",
+    "center": [
+      240.0,
+      239.5
+    ],
+    "bounds": [
+      57,
+      73,
+      423,
+      406
+    ],
+    "transparent_pixels": 146024
+  },
+  {
+    "file": "hats_student_1206501.png",
+    "center": [
+      239.5,
+      240.0
+    ],
+    "bounds": [
+      55,
+      99,
+      424,
+      381
+    ],
+    "transparent_pixels": 153415
+  },
+  {
+    "file": "tumblers_student_1206501.png",
+    "center": [
+      240.0,
+      239.5
+    ],
+    "bounds": [
+      118,
+      53,
+      362,
+      426
+    ],
+    "transparent_pixels": 156719
+  },
+  {
+    "file": "bags_student_1206501.png",
+    "center": [
+      239.5,
+      240.0
+    ],
+    "bounds": [
+      72,
+      58,
+      407,
+      422
+    ],
+    "transparent_pixels": 152950
+  },
+  {
+    "file": "shoes_student_1206501.png",
+    "center": [
+      240.0,
+      239.5
+    ],
+    "bounds": [
+      57,
+      133,
+      423,
+      346
+    ],
+    "transparent_pixels": 173666
+  },
+  {
+    "file": "sunglasses_student_1206501.png",
+    "center": [
+      240.0,
+      240.0
+    ],
+    "bounds": [
+      24,
+      24,
+      456,
+      456
+    ],
+    "transparent_pixels": 133324
+  },
+  {
+    "file": "bicycles_student_1206501.png",
+    "center": [
+      239.5,
+      239.5
+    ],
+    "bounds": [
+      56,
+      120,
+      423,
+      359
+    ],
+    "transparent_pixels": 181066
+  },
+  {
+    "file": "wristwatches_student_1206501.png",
+    "center": [
+      239.5,
+      239.5
+    ],
+    "bounds": [
+      99,
+      82,
+      380,
+      397
+    ],
+    "transparent_pixels": 167512
+  },
+  {
+    "file": "umbrellas_student_1206501.png",
+    "center": [
+      240.0,
+      239.5
+    ],
+    "bounds": [
+      69,
+      55,
+      411,
+      424
+    ],
+    "transparent_pixels": 169937
+  },
+  {
+    "file": "headphones_student_1206502.png",
+    "center": [
+      239.5,
+      239.5
+    ],
+    "bounds": [
+      57,
+      35,
+      422,
+      444
+    ],
+    "transparent_pixels": 164454
+  }
+]

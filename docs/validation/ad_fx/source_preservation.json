@@ -1,0 +1,8 @@
+{
+  "sourceScene": "Assets/AssetKits/ParticleImage/Demo/Scenes/Scroll.unity",
+  "isDirty": true,
+  "designUnchanged": true,
+  "particleComponents": 3,
+  "ignoredRuntimeState": "Unity Play mode resets ParticleImage burst.used; all authored serialized values match.",
+  "playing": false
+}

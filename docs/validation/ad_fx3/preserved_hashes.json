@@ -1,0 +1,798 @@
+[
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo.meta",
+    "Hash": "2567D1172D6055E855176F525CEC075C21CACCD7772DD8C1BA663A97B4CA5DE6"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor.meta",
+    "Hash": "11BD8A731DF5F3B7C21AA6D1BA6AB98EA4A264511D1FE77F7442738D07B07CA6"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\README.md",
+    "Hash": "92F834CC8457FC3DFD19B93ABBE1D3A178B287683973FDC7360B17A9DE3E89F0"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\README.md.meta",
+    "Hash": "5574FBCF59B09B3B284B1AB3B8E6768AB0BE2E10A27690DD07E0F18DCB7AC70E"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Runtime.meta",
+    "Hash": "784B2CE38D578379D84A61A3E0FC4FAD147F5B18708838F1B1F1B4E544E1E24C"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Materials.meta",
+    "Hash": "5E8674E539089EE4E23780C7A23B5A650E595345968B337E0C2C21255408CC58"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs.meta",
+    "Hash": "64095335E62C88CD20E1BC54BDCD0E4F105560060597BD0E938E5458283B2583"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Scenes.meta",
+    "Hash": "244BB3854B14C58641BD3C88971278AF3C9438C7F501661022CE9A5D0385B038"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites.meta",
+    "Hash": "E7E1BACF3BD7C0CC1530140534828F0FA54339D22BF78C6C8F0BE5657BEA24B9"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Materials\\Additive.mat",
+    "Hash": "139143105565231180B14AFB9019415F998D068FCA31BCBF1EC8AAF0C5D234BE"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Materials\\Additive.mat.meta",
+    "Hash": "2BD2DC82D5275199BBD245A0190A0E131A3F66A2CAFA60F361542DD50B2CB252"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Materials\\Additive.shader",
+    "Hash": "CF688C4B3714BB79C7CD71462B6F35E45F4ECBF65867EEB84A47AC36A5C0445A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Materials\\Additive.shader.meta",
+    "Hash": "9B7B29E9B4C01CB5DDF41415151155DDC90E4135023553FB4E12BF7CE226D612"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\_Primitives.meta",
+    "Hash": "671A1C8AA2DF4290D005074229C6D42CCEF85D163B78FDE5E00195C75E330A00"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\AlignToDirection.prefab",
+    "Hash": "2D1202CBF8C86A0DB2B9215F7C40A3D436A05FF17A926382C085D2E452AC61D8"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\AlignToDirection.prefab.meta",
+    "Hash": "98BFF7581D6DDF93B2B340E05C800DC9C4742CFE2CA60053C3DA4ADB88CA0481"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\CoinAttraction.prefab",
+    "Hash": "02E6518EA4A5FF4B5A34C1753A4BFAACA8339C682FCD7ED7B1722CA64818A07B"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\CoinAttraction.prefab.meta",
+    "Hash": "042E0D7B7C79618042B4744CC439CE084C4349D782C0D6067E66BD1B74E74EF6"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\ConfettiBurst.prefab",
+    "Hash": "A8371470A79CF513F9B2300C5AD65F8455C1932DF323FE70B7660EABA098BF16"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\ConfettiBurst.prefab.meta",
+    "Hash": "32F1690D255D678DE07B39352810CD8601439D59FE0260DEB0447CDE68E26A67"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\ConfettiFullscreen.prefab",
+    "Hash": "3B6BFFF1F8B193832CE7BFEABF06F744910DB4C2231DF9E5161E51B02EBDFFBA"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\ConfettiFullscreen.prefab.meta",
+    "Hash": "851F7C348107237E836EE58651AFFC497B971337CD50C7AC970DF65358970759"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\EnergySpread.prefab",
+    "Hash": "92DCA12B692E47C50EEC8A939BB500BA771F86F708D05EF0B963F77FFAC16DBD"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\EnergySpread.prefab.meta",
+    "Hash": "16496F35AC39F941F518A8ACBA7AE152EEF7FACA27D959536ABCD1229BBADB2C"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\Highlight.prefab",
+    "Hash": "BF29DCB0B7F6E571B4D3C44170C0607B7A9500623B3AE2BA83A38D004C34874C"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\Highlight.prefab.meta",
+    "Hash": "934E49125D4B3C0E606B7829330DA28BF3F003E00289D23B0ED2916129052B7F"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\Masking.prefab",
+    "Hash": "2F9A1255D6B0608884D9A033C2EAF4682E4C92B9DAC401D0C11D25A35CEFFE31"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\Masking.prefab.meta",
+    "Hash": "D434CDCC222859B427B1EF3F9D14260CF6F70D07554CB08E5F8EFE76FA6EDE43"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\Puff.prefab",
+    "Hash": "ABF5209F236DE05EBAC1888349DE1A5ADC14CD9E756634A246A8D0AFC05F2EA7"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\Puff.prefab.meta",
+    "Hash": "C392DC145F92435418B31FA4289EB657F1159BD2DFA2BA3363D344D429953CA3"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\Scroll.prefab",
+    "Hash": "C9F8C4835786BF5A241A8D19066663B778361CF7F64E729112D50AFE10E32FA0"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\Scroll.prefab.meta",
+    "Hash": "77D961F18BE08A31746AE669BD6B814D7E1860127FD81470634485523A00FC62"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\Slider.prefab",
+    "Hash": "D311B09CB0CBF96C4174EEB215ED016316C3BD2751CDAA9F8D1C1B42EA103C70"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\Slider.prefab.meta",
+    "Hash": "1BF556AA0FBA826776F0459DFE0CEA4FF566D94C46C040E7839EE61DE5DD72FB"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\UniformEmitter.prefab",
+    "Hash": "832A2DEFF52D773A11E969FC8ADC47A1BBC47C1746D82D25A84A8CBFABF72727"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\UniformEmitter.prefab.meta",
+    "Hash": "5E609474F11C3859ACEAC2A2783DDD3AD5FC5FFE54D17EEB3C1CE35B1E6F751D"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\WorldSpaceConstraintAttractor.prefab",
+    "Hash": "CEB7867BA2536B4973B3BE2DC4876A25B7337848FE307CC17E9EEFEF787C7176"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\WorldSpaceConstraintAttractor.prefab.meta",
+    "Hash": "3AB978597E5277B8582D02D4AD45F6D6A27D6C47289BF73822242E5901607658"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\_Primitives\\AttractorBurst.prefab",
+    "Hash": "4EF199BFCA6E500F30042E2F85EC10021856F539B9485FFE67FB9B714FEF6343"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\_Primitives\\AttractorBurst.prefab.meta",
+    "Hash": "5B0445DEB99D3E70F5A0C64116335AB76CAD24B844C97CAA9464E0A22E64C7C4"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\_Primitives\\AttractorContinuous.prefab",
+    "Hash": "AF25CAFB3D02C1BA73A7363665B1870A56237C04A04E61F3B2DEFD8E4619F600"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\_Primitives\\AttractorContinuous.prefab.meta",
+    "Hash": "A125184DF9CA9DBECC83A43EA81BC168A0277320CF0D75BB11931F40D9F3E039"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\_Primitives\\AttractorLine.prefab",
+    "Hash": "D221DCFB2BA3A901F86440DFABEEA3CA56AD13731073DC4F46023FD508F3A503"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\_Primitives\\AttractorLine.prefab.meta",
+    "Hash": "9DF6136EAF390D9287BBD39907388FD4C07E5CA08F258901F4D04D11A629FD3A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\_Primitives\\BackgroundRays.prefab",
+    "Hash": "FEC30F667F7214B873E6A8685515EEFF55A16F51A3C9603B39E7A508073EC9B5"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\_Primitives\\BackgroundRays.prefab.meta",
+    "Hash": "5C26177D87CA0CC3ECF865FB3CB5B8DE000D5F582E6CA99F686F5C2EE4732E6E"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\_Primitives\\BackgroundScale.prefab",
+    "Hash": "20CDDB07885F4D7020D97DF452E1BED8F21C6C05C365892A9FD5BFF09793D436"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\_Primitives\\BackgroundScale.prefab.meta",
+    "Hash": "FAEBED52E5BA1A692C44B1C1D769BCFC3E12D6ED55A3287D68884CBF0A48C38E"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\_Primitives\\BurstDirectionalWithNoise.prefab",
+    "Hash": "2B88F7D3237DACB6CFB42ECF7A3D22CBFDB83367E32E1EEA03C8C7AE43D761E0"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\_Primitives\\BurstDirectionalWithNoise.prefab.meta",
+    "Hash": "AC3F6EF134C4DC3FE7B53E1CB8E3644072F6B9E3DE9974446D67226BC422AC3E"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\_Primitives\\BurstWithNoise.prefab",
+    "Hash": "667AAEF523B2EDE827DA291DC9E9252FA6BAF5BFF96AF657AC1369B7817CC600"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\_Primitives\\BurstWithNoise.prefab.meta",
+    "Hash": "7A59785BA891A714D467D21324B4099BADE89DE46DA8FBA5979620A5F942A122"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Scenes\\AlignToDirection.unity",
+    "Hash": "59C4751EBDAF9DB0C8828552467B004E4C1B78DAD6EC9FB57158F7FE6047ED28"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Scenes\\AlignToDirection.unity.meta",
+    "Hash": "F2C0684DD5A83E3EE9F8D6C3135CE66313EBDCA150EB6FBE84A7C370A83EFF45"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Scenes\\APICall.unity",
+    "Hash": "159BEA0B07D21A9753DFE6AF45289F51FE559C2B6F10AE705C447AA397BBF027"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Scenes\\APICall.unity.meta",
+    "Hash": "A5C4B4D8569F12B4A695F87D69615A0A2D946385D2D79D9155DBC243F7C0F507"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Scenes\\CoinAttraction.unity",
+    "Hash": "636C82622E17F77359F7126F52DD42E5E015920D3340C82086846D3A4D2F2B39"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Scenes\\CoinAttraction.unity.meta",
+    "Hash": "E6756CDBE07655ACF5718DDB0A1D59E58C32D4653A2A1B156D0A65C3E47E2876"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Scenes\\ConfettiBurst.unity",
+    "Hash": "EBE595CD56961E01F1FBD7D3CA6702220F10389B7375F219208F189275C22C25"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Scenes\\ConfettiBurst.unity.meta",
+    "Hash": "D896496A831D8A0BDB12B9DAB4DB8BC444C901A032C6CEF53BEFEBB26392CB52"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Scenes\\ConfettiFullscreen.unity",
+    "Hash": "92D8CAE7CC69A238258C884D78F1947F7B9507624FBC2FEFAA9EFDFBE04AD008"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Scenes\\ConfettiFullscreen.unity.meta",
+    "Hash": "A1E1A6E050E85DC8CAC4434FC16AD829996298814D905B50D5D5731D484D84BF"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Scenes\\EnergySpread.unity",
+    "Hash": "31CAAACF273F3DE460B8F70BF24A5D7E268F74C25F4280B8548986F10D65FC47"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Scenes\\EnergySpread.unity.meta",
+    "Hash": "6B7E1DE169B319861B6DDFA1F871E4EB49876C7F12D67315791AFD9D6D1E40A8"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Scenes\\Highlight.unity",
+    "Hash": "630330F61A890DEEA9D3883B69ED8285C644818A312E6EBED1699CCE17DE367B"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Scenes\\Highlight.unity.meta",
+    "Hash": "9BA082F8D980F09BFB130551307D7D6EA1F1B1C493EE95D3403472FBC9D5743E"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Scenes\\Masking.unity",
+    "Hash": "0DBFA6CDEB4939F85F73DD4211B5BA6BBA5B18C1222CEEA4BF11FBBFFA972AD9"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Scenes\\Masking.unity.meta",
+    "Hash": "8D130DC76E57F2A6EA32763D52A89E05604D8388DC3BAF1FEE1F5452C1500138"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Scenes\\Puff.unity",
+    "Hash": "CDF934DB2AEF1BDEDC285A8F528FB9D15D01137FDB69926B9D031757E9827C94"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Scenes\\Puff.unity.meta",
+    "Hash": "8AD0F4F0D2DD29AB7894AD76879371A941726CDC0732BA9E83675835A5F65EFA"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Scenes\\Scroll.unity",
+    "Hash": "810570ECED12E615669A52BF316DCA6ECD1D8EDFAFF8F7524DCFD3E87CE766EE"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Scenes\\Scroll.unity.meta",
+    "Hash": "FC1A026BBE821B451A5A7B7969861E13D724AD22FE2091F0E31F0867A1813FFB"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Scenes\\Slider.unity",
+    "Hash": "E618ABA5FBEBCD0B4BC16D98F1FAD6285FA184525C42B8591C8E9AD2881FDCA4"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Scenes\\Slider.unity.meta",
+    "Hash": "2AD6AE7B6379CC647294485770E59896C7576D450188301E74D925E5CA2F6CBF"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Scenes\\UniformEmitter.unity",
+    "Hash": "C3675DD8EC88389DD298DBDCB6B3D4BD21AD08A27E1B804CA5D9213DA31EFA01"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Scenes\\UniformEmitter.unity.meta",
+    "Hash": "5203BC9C11F25D056505098157F506869990EDC4BA535DB6E4E5065B9F813F00"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Scenes\\WorldSpaceAttractor.unity",
+    "Hash": "63CAC347DA8384BA9D734DD2E8F45C8EEDD1547A24488C9272C9C0125B2D271B"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Scenes\\WorldSpaceAttractor.unity.meta",
+    "Hash": "8F0710ADC08010553262F4E7943701F2B496B71C3E4721BF8D4E1A502E308496"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\4Star.png",
+    "Hash": "A0A89B0CBA3D4D6336E04053910942D651D11D07F0D409384ED29437F680D4E4"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\4Star.png.meta",
+    "Hash": "5D321A4892979100E693D4A3BFF557A917169FE942E766418064AA50EF3F1181"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Arrow.png",
+    "Hash": "C7C2A43A23789A584D7F0F0C4269D85E3489F60FFED0736364ADF8E10B6B219A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Arrow.png.meta",
+    "Hash": "DDD032144B27AA32CF49514E06F5F82633DF6B2B4431039D64457AFA11E1E2C8"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Background.png",
+    "Hash": "D4A4568455ACFC68B82A0BA64AD1490B106F7BE4F58DC058F65C666F558F1803"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Background.png.meta",
+    "Hash": "9EFB15C25655D1AAE4D192837A0DA9BFD45BA43D39833B1B25FD49AE17C19233"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\CardBlue.png",
+    "Hash": "813C36FC58526FB9F0F0138978A838D706334177B3708A53F15DE47D11518E10"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\CardBlue.png.meta",
+    "Hash": "FEE468FA39106A94AE7AEAC19957348B0A62C5C640AEB96E9ED3CF773E9A79EB"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\CardGreen.png",
+    "Hash": "B4F49D5620B13C3EC354165435A666286349B02C22518C7261797F55C189BE2F"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\CardGreen.png.meta",
+    "Hash": "6115B74AB1C3B742142272597F66324CF7EE1FF0E31A500F7230DB83E6F9810B"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\CardRed.png",
+    "Hash": "4B6094F1807BC34DBBF24B0C7DD34422F2675199757109660E7A57D235AE51B8"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\CardRed.png.meta",
+    "Hash": "725752E1BD92101D9EFDDC1CF975429135E82FD479C9EF97EF21D5B826975679"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\CardYellow.png",
+    "Hash": "3EC0AD47EDE8DF09F64A8E7C660BD92E3A13633183BD84509285B9CF7CBFADCF"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\CardYellow.png.meta",
+    "Hash": "6BD1114108E862A2FAB064237E471CA16F03B30BFFAA99C4AD5CD3225EAA17CA"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\CircleGlow.png",
+    "Hash": "F69BCDDAFF924ACA932E8BE4FC42093129A8A6326E983A711019070FD971854F"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\CircleGlow.png.meta",
+    "Hash": "AAC41ECA867B92D4500A078CCF7AD70648029C584EC77E28AA93A205165797F5"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Coin_Rotation.png",
+    "Hash": "D169E2DD9AC5FDA425B877997039A5E0CABF12466E24237CA0A79F2963D3F9E3"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Coin_Rotation.png.meta",
+    "Hash": "7EDC1336AE9E080DF548D0C95BBF6C8525F98003FD55656D1CE71F45A9DC2E48"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Coin.png",
+    "Hash": "AE0E26CE51892D6976E69CDDF06D528B7A10877D04E8C8FF3F8EE26339482922"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Coin.png.meta",
+    "Hash": "1736194C7D772586D0FC9B990B2CB6660043D2D0EE7568513B59F5D8A3CE71E1"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Confetti.png",
+    "Hash": "AB907FB7087DE21E9460998878188BE8F92E184F992CD1B8132A5F82208F9344"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Confetti.png.meta",
+    "Hash": "CDF42A55EE0B4CFE6804968EB8F77D61FA831555FBCDC4EF39AC345590E6BFE0"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Fire.png",
+    "Hash": "C1E86454C611F2331CB63467111F6F2AA969CB2F7F045059780606861D1F9459"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Fire.png.meta",
+    "Hash": "EA5AADC9D0E72401987C5D35D50C711717B2566CF6087E67F6521E31DC8D378E"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Glow.png",
+    "Hash": "B442802BAF2009E022705296534E8B48EB956CF1878928DA364DCB01B55FE224"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Glow.png.meta",
+    "Hash": "AAC1F79DDA2EDB9D77E20CC19B6EDF05F30B676E3A0D3AFCB4F84DE3E015AA52"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\GlowRays.png",
+    "Hash": "9AD08EF22ECB537AC3D3D68E79E8B8D2F86F5AD47E79F75906A8EEA3A94C2B7F"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\GlowRays.png.meta",
+    "Hash": "4DC860A741FB44039B00041A944853CC46F82572CB4063D3ABCBD09E96312367"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Heart.png",
+    "Hash": "EB7D37D0FEA17ADAAB189AF653172B5CFAA4EF3A7F0879E8D227AC1F37D46EDD"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Heart.png.meta",
+    "Hash": "ACD9EE6DB46A57B008D36000623EBCC8F5CAB0ED64122D437BBF5FACA9A006FC"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Heart2.png",
+    "Hash": "01654A940A7C510B095695878ED7E4BCB2CD3B2A0A69DCC3E0064662ABDF3F4C"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Heart2.png.meta",
+    "Hash": "F6CD1ED8BA6A95F3D37A5F1781731EA6EC5AA01B2490149FFED230710EA2A354"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Power.png",
+    "Hash": "09DB881D15910366A69AF5723FC0B1684A254ECF35FF07F99A06F4520EB43A2D"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Power.png.meta",
+    "Hash": "05EA94F44658F4308669E326469F9E9D7E9F3CB53471719741A8055DC01A16CD"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Puff.png",
+    "Hash": "BE64C526E730980232241A349F0C7D560851642DB89BFF4200C6A4B9939E27CF"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Puff.png.meta",
+    "Hash": "DECEAEBD83A6513D03126951CCEF9DE07167DAAFCBE885AF3CFFA5EB52BF87AE"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\PuffCloud.png",
+    "Hash": "84CFD4DEDE256D86DB8AFEA244023B23506BE5250E0CF0F6D484466EBCB294E9"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\PuffCloud.png.meta",
+    "Hash": "C7E68C4D4E1BB5BB319C315A9E81A16F6571101D66813004628482F5FD927FAE"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Ray1.png",
+    "Hash": "1B21B52C7BF4AA45B65AFA59920290D7AE6E26D69A98D8F1BC8743B36ED7F36F"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Ray1.png.meta",
+    "Hash": "30601F9400C31B607F8EEDA9FA2870B34ED5ED16733D7425BFC0A4BB06522A81"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Ray2.png",
+    "Hash": "FD1DD5C0706730AA3D13795D9B1823B4B2701386035316A1A04CB6F2E0C9AA89"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Ray2.png.meta",
+    "Hash": "2B95CB8F12EEEE8D8573E6A6B9F77BB0341734BBF22517CFD8799A173BA3606A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Ray3.png",
+    "Hash": "E6545BB5455F4D9DE0F9BE321E9CD54DEFAC5C206B9D0625A5DB4A19EF9B3955"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Ray3.png.meta",
+    "Hash": "AE2AF843F9BFE0263F70FF8649CFF951AEFA8267AECDA6CFB74B6EA5BD161948"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Ring.png",
+    "Hash": "B2E96395254210406A08CB0E2A05EDE00A406CD52F29F56351CAA294604F53A1"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Ring.png.meta",
+    "Hash": "D74E5AEB6142A0AC2E50A03A010EEDB87F8364AB20A14E404D9B48B13229AA17"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Ring2.png",
+    "Hash": "F39B8DCE10EF8FDCC59E3B3E809F2823DB9AF3DEC1B0116EC05955C53991B067"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Ring2.png.meta",
+    "Hash": "779664E9077949AFC28DDC85BB0609A64C3298D938597699D7C8C2E9136CCCEE"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\ripple.png",
+    "Hash": "274533D2608ED4B9B93364B1FBCCC785E7DBC6B41F792947F75F273182F131A3"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\ripple.png.meta",
+    "Hash": "E6267DE2A3D12B73F06C3C1F6AC62BB661DB5A3CEF70F559F1B74DF939BCB4AB"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Rounded.png",
+    "Hash": "1A8012517C4B292ECDCA4253C9519368AADE79CF704DBD7999E5B66CCF6DC7AE"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Rounded.png.meta",
+    "Hash": "D07E04F177E8D1E362B9C2716AEA37BF6BD25043D6C16A9141BA22B16F3047EF"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Sirop.png",
+    "Hash": "8C856209ABADE9817058BF8F5243D26857E8E1A43662F0D393661798A50DEB22"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Sirop.png.meta",
+    "Hash": "959AA97C038B54053C86AB96F9FCC91A0D61784CBA3DC1391203FDC089D800EA"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\SlideBG.png",
+    "Hash": "98FE26105E8D6DEEFD21F4EA8A3A1AC79D88711440798D007468D0679030FCEE"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\SlideBG.png.meta",
+    "Hash": "8B6E8F476D5D0824B07E910B4DA9BE24F8031081AF1E952D0A5AB5F3ED48970F"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\SlideDec.png",
+    "Hash": "A0458423EAF201977F25643B2C417C1C7D00AE04E2AD526548CE02D2B5D3DD75"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\SlideDec.png.meta",
+    "Hash": "DAD5DAEEE61B10AF86EB0B856AEC0C19CD87808DBC0B19766935596DDCBCE939"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\SlideFill.png",
+    "Hash": "E7ED5B72840950C04D5C001C447FAD572D7BE037E74B8484106F42951E2ED9D3"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\SlideFill.png.meta",
+    "Hash": "91D34A9747B84A17EAFB505F2B22A2EECB75519853097531331321A4E0D03EEA"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Star.png",
+    "Hash": "28C8050F3D0DA0E8D9D617966ACCB021B43CC9C18A7C11B26D9EDBD27D6485F8"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\Star.png.meta",
+    "Hash": "5FE3A103CAC447B15CC37BBBDD3758362FCE737710EB8795EAAE1BFF33A3FD0A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\StarryNight.png",
+    "Hash": "4F49C2A19F18E5266ED9DC89EE204CBA99D45C99A3BC310EE4C80E63AF205873"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Sprites\\StarryNight.png.meta",
+    "Hash": "64F64767EBB19E433FB572CD376691B4DEF77278796440FFD346FC05C895724F"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\ParticleImage.Editor.asmdef",
+    "Hash": "F0DF28430829521C0F6126A6D77139ABDC878293023F1944C030A909F04273B9"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\ParticleImage.Editor.asmdef.meta",
+    "Hash": "864B902B100884A946944A9CF76DC7CEF2EA7363C61ADBB414EE016095627BB5"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\ParticleImageEditor.cs",
+    "Hash": "7C1072CB4E4C4F41E837E7D63E9D96F63150452ADF09DB09F6367F2C1F69114F"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\ParticleImageEditor.cs.meta",
+    "Hash": "0DD7C7708071B47652FFA4B98F46F829DA11DB4C603E3E1BE39C8701C2438995"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\PropertyDrawer.meta",
+    "Hash": "371BF134271873E0548EF6E264DEE3490969F4038722396222A273B30C54A946"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\Resources.meta",
+    "Hash": "A2484399E3B20A33CE8F7DE32A91B2116B33A7BA3D0755BFE6DBBAE99FC4D1F5"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\TrailRendererEditor.cs",
+    "Hash": "3972B0A8D3569176AC0CF84E0612E044CA2692392C9C4935D442067EED9A8BA8"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\TrailRendererEditor.cs.meta",
+    "Hash": "0DA84D9CC19B25EFECE957C0D8DE648E5F95617698F5B3F3DD1840320A53BD02"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\Utility.meta",
+    "Hash": "13FA5CEAD3C2FDFB262CF1B7D7DDDBB223E962A7B70F3AF8DB72A198F08CF48B"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\PropertyDrawer\\BurstDrawer.cs",
+    "Hash": "F41602E0D017D30853016D62456D38B04C0C433FDC9C053E78265E9860021D31"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\PropertyDrawer\\BurstDrawer.cs.meta",
+    "Hash": "C071A2129169D994836649D55DE031870137C72E78DB5D781726D697FB224AEC"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\PropertyDrawer\\ModuleDrawer.cs",
+    "Hash": "EC943D75FF897E64795337B76A303A68C5AC40166AA47AFE9E8A2F2F71662777"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\PropertyDrawer\\ModuleDrawer.cs.meta",
+    "Hash": "64AB8E6AC1F0607D0B1AE71BD30243D4646E0372C0C2ADADEACE885C927D5BB0"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\PropertyDrawer\\SeparateMinMaxCurveDrawer.cs",
+    "Hash": "B85BF56C0720F27EA1CA5EF99E502444639987A59CD6821047B47EF771CD950B"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\PropertyDrawer\\SeparateMinMaxCurveDrawer.cs.meta",
+    "Hash": "19C321E49B97AB6DF3B3A7436C236B05CCEAEF127C788114AA77C0DB95D55AEF"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\PropertyDrawer\\SpeedRangeDrawer.cs",
+    "Hash": "E471D86C3B6DF301E9E7DC071DFB1086B7B5EAD6A94224A0ADECC575199FD639"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\PropertyDrawer\\SpeedRangeDrawer.cs.meta",
+    "Hash": "5EF491F7C4BEA2C9063E2A9917065C537B32725D0683E9BA0BD6221704A2A716"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\Resources\\AdvancedIcon.png",
+    "Hash": "36D8F3E9ACCAB95EDA812A14FE4B29D1927D8E338C9AADE0D804BF3807B21DAB"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\Resources\\AdvancedIcon.png.meta",
+    "Hash": "011A332C0FC58DE9813B91C0F165476AB66C916B81FF1578A08F85EDAE91C156"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\Resources\\ComponentIcon.png",
+    "Hash": "00995840905E53BAF5E8CF953F31C36439ECF9FDD7C91F3A14631464421C382C"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\Resources\\ComponentIcon.png.meta",
+    "Hash": "D6D307E0D4AAA7F5BE01D3C30803B633293A819DD99C6FE86FCAA397BC05CA74"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\Resources\\EventModule.png",
+    "Hash": "FA34C38FFF3068B7668ED459D03876EDCEFB756B671CD11120176BDA84BC866A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\Resources\\EventModule.png.meta",
+    "Hash": "FB1589314867793725E1261F193C7CA91CFD7B7DD53E13C2B8AE3E25ADD7B3DB"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\Resources\\MovementModule.png",
+    "Hash": "F655C368E86AA440D244CF61D3913E43BE7019E03AED8C36EBDE586C470DB2B5"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\Resources\\MovementModule.png.meta",
+    "Hash": "C7EBB8C123169B872D5EFAB6A97867264F4E9190E58FB4FA7CB784F53EECB991"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\Resources\\ParticleModule.png",
+    "Hash": "8434CF4429F8816E2F8A25D60CA326265CC99F2A37634DEFEB9E119FF3403D7A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\Resources\\ParticleModule.png.meta",
+    "Hash": "7898C9730E41DF7E766FD41B835A3F49BFFDE0189DBC53DABBA36472B22E852D"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\Resources\\TrailIcon.png",
+    "Hash": "CBD7451B31DA03F5190203C1F000A3EE9ADBB2A329AB931EC8327F62D859841F"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\Resources\\TrailIcon.png.meta",
+    "Hash": "19CBDF3DA2EF963AFE0B1B79EC3EAE294522E35D460E50CE267A6142B0D308E2"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\Utility\\EditorUtilities.cs",
+    "Hash": "831FF88B33EB2447E7193D094A7C5F53E83F219744576F893C4AE7F3277B5353"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Editor\\Utility\\EditorUtilities.cs.meta",
+    "Hash": "9CFAC205071587C51B8A2E1A2DC068CB1197098A86FB94BBB996035E33C76AF2"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Runtime\\Jobs.meta",
+    "Hash": "2592FEEC991E95D7B8E6D15820A1547B767435C24FFBFBA9AC5AE9C9C09ED3B2"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Runtime\\Particle.cs",
+    "Hash": "B1AD3881A9E53D5358933C65CC95F440BC83D6599BB1AA3E84C9C8B1C47C93EA"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Runtime\\Particle.cs.meta",
+    "Hash": "E4DF632B0581ECE9A35C98828C9E3E51F6F1CC58B332F844E7080D8B4FD5CB21"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Runtime\\ParticleImage.asmdef",
+    "Hash": "1C54FBC8DC8C63F115F0BEE4922C0A20FF3D0E05BF2869594A28FF3C8E1398DB"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Runtime\\ParticleImage.asmdef.meta",
+    "Hash": "4F35CEBDF103691CCFDE7D6F83FD385E954CE356BF4DB202C3DC2CB254BE6D66"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Runtime\\ParticleImage.cs",
+    "Hash": "D4B7EBADD35A56D52388F2B528C11D27786C41A12C58708075AE0D6A97385866"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Runtime\\ParticleImage.cs.meta",
+    "Hash": "C879EF8636804FC9A7F2A839A40E93489772F833F29067459A2D79B83B963FBF"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Runtime\\ParticleTrailRenderer.cs",
+    "Hash": "19C0FF5BEE7EBC577ECBC30F5C7109FB0597651F5467BD439D7CC597BBFD1B3F"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Runtime\\ParticleTrailRenderer.cs.meta",
+    "Hash": "BBE6BA39A2FD0EF93B5FCEE9B6B8A9C0733D2C89427A41DF8B165F0B78E9BFCF"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Runtime\\Utility.meta",
+    "Hash": "0984993A232C76034E6C61F15A885DD51D32C1349987C3D3215ACB77CC424C62"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Runtime\\Jobs\\JobData.cs",
+    "Hash": "802A4EB3A7B22086034B1EBD08A5CF76078D3CC2ABDDB84156C04CA32A1FC336"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Runtime\\Jobs\\JobData.cs.meta",
+    "Hash": "64F76FF8BEDCD66A0E3BA5F58CF95B3D5DDA0A5CC8121C33C8D0B579779D3EA1"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Runtime\\Jobs\\JobUtils.cs",
+    "Hash": "0A48DFC2E808403143EFB831720D17E2EB624A1B394D2C8D4C51300642A0E0FF"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Runtime\\Jobs\\JobUtils.cs.meta",
+    "Hash": "13A9BDCC7D2BCE19A5D6F4C866E4AE4C4B2FC901ABF289D9DBD2D7EC7F0948E7"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Runtime\\Jobs\\ParticleJob.cs",
+    "Hash": "FAF6D690FF3CB90414C945D508B29D1D54EEDF297CC9F67FB10E1F802585988B"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Runtime\\Jobs\\ParticleJob.cs.meta",
+    "Hash": "59B4BBB083813569139969649A306978DCC31759ED823672FEEC464C3117A178"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Runtime\\Jobs\\TrailJob.cs",
+    "Hash": "61FB1AEA595B461F927AC1D1CDFDCFE5CD1B6803D279AEC8056174E6CE4C574D"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Runtime\\Jobs\\TrailJob.cs.meta",
+    "Hash": "3D8C68AE605994A3786DF72373B43C1953FDC650CD039317580089A035D176B0"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Runtime\\Utility\\Noise.cs",
+    "Hash": "9D493F6CA6EEE79611333BB9CF9E701273FA98BADDB41CCC73437B7D7416CF09"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Runtime\\Utility\\Noise.cs.meta",
+    "Hash": "C6F5152565431F70E6C47332097985148BED309D15270A371B49CC8789A1571B"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Runtime\\Utility\\ParticlePool.cs",
+    "Hash": "0DD82E418AC9DBB8BB6BC85AACBD40541D4B8B128A0DFFB3A683B6AE83D92D2E"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Runtime\\Utility\\ParticlePool.cs.meta",
+    "Hash": "AA0990FEFBA036A1BF540EDA344BB9D230A9F0D93BF7D3065064F9956C430F5E"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scenes\\2_Result.unity",
+    "Hash": "0741B5900C6DA6E47756CD2BC7DA87937F96EF41EC5DBCAB88597259418C967A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Effects\\AdConfettiFullscreen.prefab",
+    "Hash": "26B703692286D50E46264359AC1667C8E613DA9D8454E430315EFAD5687BC746"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\AdProductHighlight.cs",
+    "Hash": "20EE984CBB8975067638D20C3F7B4ABE51DF103DB8AE6882192DB20A5EE902B3"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\ResultVideoController.cs",
+    "Hash": "F9963635D511DB06EDD34750CEF55AC4BB6D900EF07F926DE12F86CC6D32E7B9"
+  }
+]

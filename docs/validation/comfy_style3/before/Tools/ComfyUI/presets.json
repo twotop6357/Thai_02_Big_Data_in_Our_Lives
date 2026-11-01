@@ -1,0 +1,23 @@
+{
+  "catalog": "../../Assets/StreamingAssets/BlockGeneration/BlockCatalog.json",
+  "profiles": {
+    "quality": {
+      "steps": 4,
+      "cfg": 1,
+      "sampler": "euler_ancestral",
+      "scheduler": "SDTurboScheduler"
+    },
+    "balanced": {
+      "steps": 3,
+      "cfg": 1,
+      "sampler": "euler_ancestral",
+      "scheduler": "SDTurboScheduler"
+    },
+    "fast": {
+      "steps": 2,
+      "cfg": 1,
+      "sampler": "euler_ancestral",
+      "scheduler": "SDTurboScheduler"
+    }
+  }
+}

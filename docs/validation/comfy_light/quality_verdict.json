@@ -1,0 +1,40 @@
+{
+  "task": "COMFY-LIGHT-001",
+  "reference": "reference_requested.png",
+  "comparison": "reference_comparison.png",
+  "method": "Human visual comparison of unchanged RGBA outputs composited over white; actual Unity framing applied to restored sample. No numeric aesthetic-similarity score.",
+  "fast_candidate_accepted": false,
+  "current_mode": "Animagine XL 4.0 quality fallback,1024,36steps",
+  "latency_goal_met": false,
+  "rtx3060_measured": false,
+  "comparison_findings": {
+    "palette": "Fast candidate too white/washed out; restored mode has pink-blue-white color blocks closer to reference.",
+    "rendering": "Fast candidate has grain/crosshatching and stronger 3D cues; restored mode closer to clean 2D cel shading.",
+    "contours": "Reference includes subtle pink/lavender contour lines; rough black outlines are unsuitable.",
+    "composition": "Fast seed examples have disconnected or awkwardly arranged shoes and extra fragments. Restored new-seed example is upright/coherent but not guaranteed across every seed.",
+    "residual": "Restored same-seed sample996531 retains a small decorative diamond; all-item/color/seed quality approval remains incomplete."
+  },
+  "validation": {
+    "EditMode": "59/59 Passed; job79879aa359ae404e9ffc714c00c1b11f,11.8315898s",
+    "workflow": "7/7 Passed",
+    "restored_API_seconds": [
+      33.235,
+      25.299
+    ],
+    "restored_framing": "2/2 centered by actual GeneratedImageFraming.Center",
+    "restored_runtime": {
+      "passed": true,
+      "checks": 8,
+      "seconds": 33.7671655,
+      "center": [
+        240,
+        240
+      ]
+    }
+  },
+  "files": {
+    "docs\\validation\\comfy_light\\reference_requested.png": "fbfd5f885033dac09c5e985f251b810289906494a244451c5b04255dc1f40e66",
+    "docs\\validation\\comfy_light\\runtime\\generated_product.png": "2c1bb2a688825209eb15ca2aef8a711b951c2463d850083b043fb8cf80ebfc20",
+    "docs\\validation\\comfy_light\\restored_quality\\framed\\shoes_996532.png": "1a049b9043dcb9f4843829e30548d2e7e11eb1b961537c2d31ff00f9517642a7"
+  }
+}

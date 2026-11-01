@@ -1,0 +1,562 @@
+[
+  {
+    "product": "bags",
+    "age": "child",
+    "file": "../accepted_matrix/bags_child_green_white_1211301.png",
+    "opaque_fraction": 0.3423090277777778,
+    "empty": false,
+    "bounds": [
+      103,
+      77,
+      385,
+      414
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "bags",
+    "age": "student",
+    "file": "../accepted_matrix/bags_student_yellow_black_1211311.png",
+    "opaque_fraction": 0.40893229166666667,
+    "empty": false,
+    "bounds": [
+      94,
+      42,
+      391,
+      423
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "bags",
+    "age": "working_adult",
+    "file": "../accepted_matrix/bags_working_adult_blue_white_1211321.png",
+    "opaque_fraction": 0.4075651041666667,
+    "empty": false,
+    "bounds": [
+      63,
+      93,
+      423,
+      396
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "bags",
+    "age": "senior",
+    "file": "../accepted_matrix/bags_senior_black_yellow_1211331.png",
+    "opaque_fraction": 0.2334548611111111,
+    "empty": false,
+    "bounds": [
+      107,
+      39,
+      384,
+      423
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "shoes",
+    "age": "child",
+    "file": "../accepted_matrix/shoes_child_yellow_black_1211302.png",
+    "opaque_fraction": 0.2838498263888889,
+    "empty": false,
+    "bounds": [
+      51,
+      105,
+      409,
+      384
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "shoes",
+    "age": "student",
+    "file": "../accepted_matrix/shoes_student_blue_white_1211312.png",
+    "opaque_fraction": 0.2983029513888889,
+    "empty": false,
+    "bounds": [
+      30,
+      128,
+      437,
+      375
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "shoes",
+    "age": "working_adult",
+    "file": "../accepted_matrix/shoes_working_adult_black_yellow_1211322.png",
+    "opaque_fraction": 0.22580729166666666,
+    "empty": false,
+    "bounds": [
+      33,
+      162,
+      419,
+      357
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "shoes",
+    "age": "senior",
+    "file": "../accepted_matrix/shoes_senior_white_black_1211332.png",
+    "opaque_fraction": 0.2703515625,
+    "empty": false,
+    "bounds": [
+      29,
+      138,
+      441,
+      366
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "hats",
+    "age": "child",
+    "file": "../accepted_matrix/hats_child_blue_white_1211303.png",
+    "opaque_fraction": 0.226328125,
+    "empty": false,
+    "bounds": [
+      29,
+      87,
+      451,
+      383
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "hats",
+    "age": "student",
+    "file": "../accepted_matrix/hats_student_black_yellow_1211313.png",
+    "opaque_fraction": 0.4561588541666667,
+    "empty": false,
+    "bounds": [
+      53,
+      57,
+      434,
+      411
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "hats",
+    "age": "working_adult",
+    "file": "../accepted_matrix/hats_working_adult_white_black_1211323.png",
+    "opaque_fraction": 0.2666232638888889,
+    "empty": false,
+    "bounds": [
+      28,
+      119,
+      420,
+      369
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "hats",
+    "age": "senior",
+    "file": "../accepted_matrix/hats_senior_red_green_1211333.png",
+    "opaque_fraction": 0.29129774305555556,
+    "empty": false,
+    "bounds": [
+      44,
+      100,
+      439,
+      352
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "sunglasses",
+    "age": "child",
+    "file": "../accepted_matrix/sunglasses_child_black_yellow_1211304.png",
+    "opaque_fraction": 0.25743489583333334,
+    "empty": false,
+    "bounds": [
+      30,
+      140,
+      452,
+      339
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "sunglasses",
+    "age": "student",
+    "file": "../accepted_matrix/sunglasses_student_white_black_1211314.png",
+    "opaque_fraction": 0.22323350694444444,
+    "empty": false,
+    "bounds": [
+      26,
+      153,
+      453,
+      310
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "sunglasses",
+    "age": "working_adult",
+    "file": "../accepted_matrix/sunglasses_working_adult_red_green_1211324.png",
+    "opaque_fraction": 0.18656684027777778,
+    "empty": false,
+    "bounds": [
+      36,
+      168,
+      445,
+      311
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "sunglasses",
+    "age": "senior",
+    "file": "../accepted_matrix/sunglasses_senior_green_white_1211334.png",
+    "opaque_fraction": 0.1169704861111111,
+    "empty": false,
+    "bounds": [
+      23,
+      143,
+      458,
+      327
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "headphones",
+    "age": "child",
+    "file": "../accepted_matrix/headphones_child_white_black_1211305.png",
+    "opaque_fraction": 0.2722829861111111,
+    "empty": false,
+    "bounds": [
+      95,
+      55,
+      394,
+      411
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "headphones",
+    "age": "student",
+    "file": "../accepted_matrix/headphones_student_red_green_1211315.png",
+    "opaque_fraction": 0.25725694444444447,
+    "empty": false,
+    "bounds": [
+      92,
+      39,
+      387,
+      438
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "headphones",
+    "age": "working_adult",
+    "file": "../accepted_matrix/headphones_working_adult_green_white_1211325.png",
+    "opaque_fraction": 0.2731467013888889,
+    "empty": false,
+    "bounds": [
+      82,
+      45,
+      395,
+      413
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "headphones",
+    "age": "senior",
+    "file": "../accepted_matrix/headphones_senior_yellow_black_1211335.png",
+    "opaque_fraction": 0.18150173611111112,
+    "empty": false,
+    "bounds": [
+      99,
+      50,
+      388,
+      396
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "tops",
+    "age": "child",
+    "file": "../accepted_matrix/tops_child_red_green_1211306.png",
+    "opaque_fraction": 0.39708767361111114,
+    "empty": false,
+    "bounds": [
+      37,
+      81,
+      447,
+      402
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "tops",
+    "age": "student",
+    "file": "../accepted_matrix/tops_student_green_white_1211316.png",
+    "opaque_fraction": 0.42724826388888887,
+    "empty": false,
+    "bounds": [
+      40,
+      32,
+      441,
+      431
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "tops",
+    "age": "working_adult",
+    "file": "../accepted_matrix/tops_working_adult_yellow_black_1211326.png",
+    "opaque_fraction": 0.4362977430555556,
+    "empty": false,
+    "bounds": [
+      48,
+      57,
+      433,
+      423
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "tops",
+    "age": "senior",
+    "file": "../accepted_matrix/tops_senior_blue_white_1211336.png",
+    "opaque_fraction": 0.47501302083333335,
+    "empty": false,
+    "bounds": [
+      24,
+      62,
+      457,
+      406
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "bicycles",
+    "age": "child",
+    "file": "../accepted_matrix/bicycles_child_green_white_1211307.png",
+    "opaque_fraction": 0.1824001736111111,
+    "empty": false,
+    "bounds": [
+      30,
+      121,
+      452,
+      418
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "bicycles",
+    "age": "student",
+    "file": "../accepted_matrix/bicycles_student_yellow_black_1211317.png",
+    "opaque_fraction": 0.16925347222222223,
+    "empty": false,
+    "bounds": [
+      21,
+      103,
+      460,
+      385
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "bicycles",
+    "age": "working_adult",
+    "file": "../accepted_matrix/bicycles_working_adult_blue_white_1211327.png",
+    "opaque_fraction": 0.1915190972222222,
+    "empty": false,
+    "bounds": [
+      25,
+      90,
+      453,
+      397
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "bicycles",
+    "age": "senior",
+    "file": "../accepted_matrix/bicycles_senior_black_yellow_1211337.png",
+    "opaque_fraction": 0.20479166666666668,
+    "empty": false,
+    "bounds": [
+      20,
+      106,
+      458,
+      417
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "tumblers",
+    "age": "child",
+    "file": "../accepted_matrix/tumblers_child_yellow_black_1211308.png",
+    "opaque_fraction": 0.2736631944444444,
+    "empty": false,
+    "bounds": [
+      87,
+      55,
+      402,
+      417
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "tumblers",
+    "age": "student",
+    "file": "../accepted_matrix/tumblers_student_blue_white_1211318.png",
+    "opaque_fraction": 0.2459331597222222,
+    "empty": false,
+    "bounds": [
+      143,
+      18,
+      341,
+      453
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "tumblers",
+    "age": "working_adult",
+    "file": "../accepted_matrix/tumblers_working_adult_black_yellow_1211328.png",
+    "opaque_fraction": 0.3354904513888889,
+    "empty": false,
+    "bounds": [
+      126,
+      47,
+      417,
+      432
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "tumblers",
+    "age": "senior",
+    "file": "../accepted_matrix/tumblers_senior_white_black_1211338.png",
+    "opaque_fraction": 0.21776041666666668,
+    "empty": false,
+    "bounds": [
+      174,
+      38,
+      306,
+      441
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "wristwatches",
+    "age": "child",
+    "file": "../accepted_matrix/wristwatches_child_blue_white_1211309.png",
+    "opaque_fraction": 0.21907552083333334,
+    "empty": false,
+    "bounds": [
+      147,
+      48,
+      347,
+      432
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "wristwatches",
+    "age": "student",
+    "file": "../accepted_matrix/wristwatches_student_black_yellow_1211319.png",
+    "opaque_fraction": 0.31084635416666667,
+    "empty": false,
+    "bounds": [
+      135,
+      27,
+      355,
+      452
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "wristwatches",
+    "age": "working_adult",
+    "file": "../accepted_matrix/wristwatches_working_adult_white_black_1211329.png",
+    "opaque_fraction": 0.28901041666666666,
+    "empty": false,
+    "bounds": [
+      126,
+      64,
+      358,
+      415
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "wristwatches",
+    "age": "senior",
+    "file": "../accepted_matrix/wristwatches_senior_red_green_1211339.png",
+    "opaque_fraction": 0.2580078125,
+    "empty": false,
+    "bounds": [
+      135,
+      33,
+      363,
+      447
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "umbrellas",
+    "age": "child",
+    "file": "../accepted_matrix/umbrellas_child_black_yellow_1211310.png",
+    "opaque_fraction": 0.2527734375,
+    "empty": false,
+    "bounds": [
+      45,
+      42,
+      439,
+      425
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "umbrellas",
+    "age": "student",
+    "file": "../accepted_matrix/umbrellas_student_white_black_1211320.png",
+    "opaque_fraction": 0.17865885416666666,
+    "empty": false,
+    "bounds": [
+      24,
+      27,
+      456,
+      438
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "umbrellas",
+    "age": "working_adult",
+    "file": "../accepted_matrix/umbrellas_working_adult_red_green_1211330.png",
+    "opaque_fraction": 0.2358940972222222,
+    "empty": false,
+    "bounds": [
+      20,
+      30,
+      459,
+      437
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "umbrellas",
+    "age": "senior",
+    "file": "../accepted_matrix/umbrellas_senior_green_white_1211340.png",
+    "opaque_fraction": 0.20912760416666668,
+    "empty": false,
+    "bounds": [
+      26,
+      53,
+      453,
+      422
+    ],
+    "touches_edge": false
+  }
+]

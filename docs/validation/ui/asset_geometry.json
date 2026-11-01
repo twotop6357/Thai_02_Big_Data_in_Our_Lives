@@ -1,0 +1,370 @@
+{
+  "passed": true,
+  "count": 28,
+  "checks": [
+    {
+      "id": "idle.title",
+      "language": "en",
+      "asset": "Assets/UI/UIs_En/Idle/Title_en.png",
+      "pixels": [
+        873,
+        435
+      ],
+      "figmaRenderSize": [
+        872.50427,
+        434.06839
+      ]
+    },
+    {
+      "id": "idle.subtitle",
+      "language": "en",
+      "asset": "Assets/UI/UIs_En/Idle/Subtitle_en.png",
+      "pixels": [
+        678,
+        89
+      ],
+      "figmaRenderSize": [
+        677.85107,
+        88.4375
+      ]
+    },
+    {
+      "id": "idle.help",
+      "language": "en",
+      "asset": "Assets/UI/UIs_En/Idle/ButtonHelpBox_en.png",
+      "pixels": [
+        876,
+        173
+      ],
+      "figmaRenderSize": [
+        875.68164,
+        172.91748
+      ]
+    },
+    {
+      "id": "group.title",
+      "language": "en",
+      "asset": "Assets/UI/UIs_En/GroupSelect/Title_groupselectPanel_en.png",
+      "pixels": [
+        1317,
+        111
+      ],
+      "figmaRenderSize": [
+        1316.89258,
+        110.53906
+      ]
+    },
+    {
+      "id": "group.subtitle",
+      "language": "en",
+      "asset": "Assets/UI/UIs_En/GroupSelect/Subtitle_groupselectPanel_en.png",
+      "pixels": [
+        1063,
+        39
+      ],
+      "figmaRenderSize": [
+        1062.11621,
+        38.67896
+      ]
+    },
+    {
+      "id": "group.help",
+      "language": "en",
+      "asset": "Assets/UI/UIs_En/GroupSelect/ButtonHelpBox_groupselectPanel_en.png",
+      "pixels": [
+        835,
+        153
+      ],
+      "figmaRenderSize": [
+        835,
+        153.00244
+      ]
+    },
+    {
+      "id": "selection.title",
+      "language": "en",
+      "asset": "Assets/UI/UIs_En/SelectAll/Title_selectallPanel_en.png",
+      "pixels": [
+        1418,
+        97
+      ],
+      "figmaRenderSize": [
+        1417.64844,
+        96.06641
+      ]
+    },
+    {
+      "id": "selection.subtitle",
+      "language": "en",
+      "asset": "Assets/UI/UIs_En/SelectAll/Subtitle_selectallPanel_en.png",
+      "pixels": [
+        1146,
+        40
+      ],
+      "figmaRenderSize": [
+        1145.47559,
+        39.13351
+      ]
+    },
+    {
+      "id": "selection.help",
+      "language": "en",
+      "asset": "Assets/UI/UIs_En/SelectAll/ButtonHelpBox_selectallPanel_en.png",
+      "pixels": [
+        835,
+        153
+      ],
+      "figmaRenderSize": [
+        835,
+        153.00269
+      ]
+    },
+    {
+      "id": "result.title",
+      "language": "en",
+      "asset": "Assets/UI/UIs_En/RecommendedAd/Title_RecommendedAd_en.png",
+      "pixels": [
+        1200,
+        106
+      ],
+      "figmaRenderSize": [
+        1199.40723,
+        105.58594
+      ]
+    },
+    {
+      "id": "result.subtitle",
+      "language": "en",
+      "asset": "Assets/UI/UIs_En/RecommendedAd/Subtitle_RecommendedAd_en.png",
+      "pixels": [
+        822,
+        47
+      ],
+      "figmaRenderSize": [
+        821.13086,
+        46.125
+      ]
+    },
+    {
+      "id": "result.help",
+      "language": "en",
+      "asset": "Assets/UI/UIs_En/RecommendedAd/ButtonHelpBox_RecommendedAd_en.png",
+      "pixels": [
+        984,
+        153
+      ],
+      "figmaRenderSize": [
+        984,
+        153.00244
+      ]
+    },
+    {
+      "id": "selection.productBoard",
+      "language": "en",
+      "asset": "Assets/UI/UIs_En/SelectAll/RecommendedProductImageBoard_en.png",
+      "pixels": [
+        838,
+        493
+      ],
+      "figmaRenderSize": [
+        838,
+        493
+      ]
+    },
+    {
+      "id": "video.end",
+      "language": "en",
+      "asset": "Assets/UI/UIs_En/Video/VideoEndPopupText_en.png",
+      "pixels": [
+        1219,
+        158
+      ],
+      "figmaRenderSize": [
+        1218.96094,
+        157.37891
+      ]
+    },
+    {
+      "id": "idle.title",
+      "language": "th",
+      "asset": "Assets/UI/UIs_Th/Idle/Title_th.png",
+      "pixels": [
+        935,
+        454
+      ],
+      "figmaRenderSize": [
+        934.36115,
+        453.25879
+      ]
+    },
+    {
+      "id": "idle.subtitle",
+      "language": "th",
+      "asset": "Assets/UI/UIs_Th/Idle/Subtitle_th.png",
+      "pixels": [
+        492,
+        97
+      ],
+      "figmaRenderSize": [
+        491.61279,
+        97
+      ]
+    },
+    {
+      "id": "idle.help",
+      "language": "th",
+      "asset": "Assets/UI/UIs_Th/Idle/ButtonHelpBox_th.png",
+      "pixels": [
+        851,
+        173
+      ],
+      "figmaRenderSize": [
+        850.68213,
+        172.91699
+      ]
+    },
+    {
+      "id": "group.title",
+      "language": "th",
+      "asset": "Assets/UI/UIs_Th/GroupSelect/Title_groupselect_th.png",
+      "pixels": [
+        864,
+        149
+      ],
+      "figmaRenderSize": [
+        863.25879,
+        148.15991
+      ]
+    },
+    {
+      "id": "group.subtitle",
+      "language": "th",
+      "asset": "Assets/UI/UIs_Th/GroupSelect/Subtitle_groupselect_th.png",
+      "pixels": [
+        794,
+        43
+      ],
+      "figmaRenderSize": [
+        793.79004,
+        42.35986
+      ]
+    },
+    {
+      "id": "group.help",
+      "language": "th",
+      "asset": "Assets/UI/UIs_Th/GroupSelect/ButtonHelpBox_groupselect_th.png",
+      "pixels": [
+        688,
+        153
+      ],
+      "figmaRenderSize": [
+        688,
+        153.00244
+      ]
+    },
+    {
+      "id": "selection.title",
+      "language": "th",
+      "asset": "Assets/UI/UIs_Th/SelectAll/Title_selectall_th.png",
+      "pixels": [
+        1171,
+        174
+      ],
+      "figmaRenderSize": [
+        1170.21533,
+        173.84
+      ]
+    },
+    {
+      "id": "selection.subtitle",
+      "language": "th",
+      "asset": "Assets/UI/UIs_Th/SelectAll/Subtitle_selectall_th.png",
+      "pixels": [
+        1089,
+        44
+      ],
+      "figmaRenderSize": [
+        1088.53125,
+        44
+      ]
+    },
+    {
+      "id": "selection.help",
+      "language": "th",
+      "asset": "Assets/UI/UIs_Th/SelectAll/ButtonHelpBox_selectall_th.png",
+      "pixels": [
+        688,
+        153
+      ],
+      "figmaRenderSize": [
+        688,
+        153.00269
+      ]
+    },
+    {
+      "id": "result.title",
+      "language": "th",
+      "asset": "Assets/UI/UIs_Th/RecommendedAd/Title_recommendedAd_th.png",
+      "pixels": [
+        1393,
+        165
+      ],
+      "figmaRenderSize": [
+        1392.8501,
+        164.64014
+      ]
+    },
+    {
+      "id": "result.subtitle",
+      "language": "th",
+      "asset": "Assets/UI/UIs_Th/RecommendedAd/Subtitle_recommendedAd_th.png",
+      "pixels": [
+        836,
+        62
+      ],
+      "figmaRenderSize": [
+        835.34326,
+        61.05591
+      ]
+    },
+    {
+      "id": "result.help",
+      "language": "th",
+      "asset": "Assets/UI/UIs_Th/RecommendedAd/ButtonHelpBox_recommendedAd_th.png",
+      "pixels": [
+        766,
+        153
+      ],
+      "figmaRenderSize": [
+        766,
+        153.00244
+      ]
+    },
+    {
+      "id": "selection.productBoard",
+      "language": "th",
+      "asset": "Assets/UI/UIs_Th/SelectAll/RecommendedProductImageBox_selectall_th.png",
+      "pixels": [
+        838,
+        493
+      ],
+      "figmaRenderSize": [
+        838,
+        493
+      ]
+    },
+    {
+      "id": "video.end",
+      "language": "th",
+      "asset": "Assets/UI/UIs_Th/Video/VideoEndPopupText_th.png",
+      "pixels": [
+        1050,
+        171
+      ],
+      "figmaRenderSize": [
+        1049.34326,
+        170.91211
+      ]
+    }
+  ]
+}

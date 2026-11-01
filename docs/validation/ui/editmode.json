@@ -1,0 +1,14 @@
+{
+  "task": "UI-LANG-001",
+  "date": "2026-10-29 Asia/Seoul",
+  "unity": "2022.3.62f3",
+  "mode": "EditMode",
+  "jobId": "85ae6795a3eb4b7186d47563a72cbec6",
+  "total": 27,
+  "passed": 27,
+  "failed": 0,
+  "skipped": 0,
+  "durationSeconds": 13.7479487,
+  "result": "Passed",
+  "scope": "Input hold/release/reset/boundary state machine plus existing block selection and coloring tests. Later UI geometry and slot changes were verified by the runtime report."
+}

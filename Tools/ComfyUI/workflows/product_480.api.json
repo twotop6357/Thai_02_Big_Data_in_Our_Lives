@@ -1,11 +1,12 @@
 {
   "1": {
-    "class_type": "CheckpointLoaderSimple",
+    "class_type": "UNETLoader",
     "inputs": {
-      "ckpt_name": "animagine-xl-4.0-opt.safetensors"
+      "unet_name": "flux-2-klein-4b-fp8.safetensors",
+      "weight_dtype": "default"
     },
     "_meta": {
-      "title": "Animagine XL 4.0 Opt"
+      "title": "FLUX.2 Klein 4B FP8 / reference illustration"
     }
   },
   "2": {
@@ -16,8 +17,8 @@
         0
       ],
       "clip": [
-        "1",
-        1
+        "30",
+        0
       ]
     },
     "_meta": {
@@ -25,57 +26,54 @@
     }
   },
   "3": {
-    "class_type": "CLIPTextEncode",
+    "class_type": "ConditioningZeroOut",
     "inputs": {
-      "text": "worst quality, bad quality, low quality, lowres, blurry, unfinished, rough sketch, noisy, jpeg artifacts, text, logo, watermark, signature, human, person, 1girl, 1boy, woman, man, child, human face, human head, human hands, human arms, human legs, human feet, fingers, skin, portrait, wearing, holding, mannequin, model wearing product, multiple objects, duplicate, duplicates, collection, collage, grid, contact sheet, multiple views, comparison, exploded view, spare parts, extra accessories, cropped, cut off, out of frame, distorted geometry, malformed, flat vector art, thick black outlines, photograph, photorealistic, close-up, extreme close-up, macro, zoomed in, cropped object, partial object, object extending beyond the frame",
-      "clip": [
-        "1",
-        1
+      "conditioning": [
+        "2",
+        0
       ]
     },
     "_meta": {
-      "title": "Negative / exclude people and text"
+      "title": "Unused negative conditioning at CFG1"
     }
   },
   "4": {
-    "class_type": "EmptyLatentImage",
+    "class_type": "EmptyFlux2LatentImage",
     "inputs": {
-      "width": 1024,
-      "height": 1024,
+      "width": 640,
+      "height": 640,
       "batch_size": 1
     },
     "_meta": {
-      "title": "1024 x 1024 internal / batch 1"
+      "title": "640 x 640 canvas"
     }
   },
   "5": {
-    "class_type": "KSampler",
+    "class_type": "SamplerCustomAdvanced",
     "inputs": {
-      "model": [
-        "1",
+      "noise": [
+        "36",
         0
       ],
-      "positive": [
-        "26",
+      "guider": [
+        "37",
         0
       ],
-      "negative": [
-        "26",
-        1
+      "sampler": [
+        "28",
+        0
+      ],
+      "sigmas": [
+        "29",
+        0
       ],
       "latent_image": [
         "4",
         0
-      ],
-      "seed": 7042026,
-      "steps": 28,
-      "cfg": 5.0,
-      "sampler_name": "euler_ancestral",
-      "scheduler": "normal",
-      "denoise": 1.0
+      ]
     },
     "_meta": {
-      "title": "quality / 28 steps"
+      "title": "Single illustration generation / 4 steps"
     }
   },
   "6": {
@@ -86,8 +84,8 @@
         0
       ],
       "vae": [
-        "1",
-        2
+        "31",
+        0
       ]
     },
     "_meta": {
@@ -126,7 +124,7 @@
   "10": {
     "class_type": "PrimitiveString",
     "inputs": {
-      "value": "practical casual design with sporty details"
+      "value": "simple sporty design"
     },
     "_meta": {
       "title": "INPUT 1 / audience: student"
@@ -135,7 +133,7 @@
   "11": {
     "class_type": "PrimitiveString",
     "inputs": {
-      "value": "a single backpack, one bag only, closed main compartment, structured front pocket, two attached padded shoulder straps, woven canvas texture, reinforced stitching, metal zipper teeth, small fastened buckles"
+      "value": "one school backpack with a large front zipper pocket and two shoulder straps"
     },
     "_meta": {
       "title": "INPUT 2 / product: bags"
@@ -144,19 +142,21 @@
   "12": {
     "class_type": "PrimitiveString",
     "inputs": {
-      "value": "(blue fabric body:1.15)"
+      "value": "Main color #5FB0E3 (light blue) on body"
     },
     "_meta": {
-      "title": "INPUT 3 / primary: blue"
+      "title": "INPUT 3 / primary: blue",
+      "color_reference": "#5FB0E3 RGB(95, 176, 227)"
     }
   },
   "13": {
     "class_type": "PrimitiveString",
     "inputs": {
-      "value": "(white straps and zipper trim:1.15)"
+      "value": "Accent color #FFFFFF (white) on front pocket and straps"
     },
     "_meta": {
-      "title": "INPUT 4 / accent: white"
+      "title": "INPUT 4 / accent: white",
+      "color_reference": "#FFFFFF RGB(255, 255, 255)"
     }
   },
   "14": {
@@ -170,7 +170,7 @@
         "15",
         0
       ],
-      "delimiter": ", "
+      "delimiter": ". "
     },
     "_meta": {
       "title": "Product + colors"
@@ -187,7 +187,7 @@
         "13",
         0
       ],
-      "delimiter": ", "
+      "delimiter": ". "
     },
     "_meta": {
       "title": "Product-specific color parts"
@@ -204,7 +204,7 @@
         "10",
         0
       ],
-      "delimiter": ", "
+      "delimiter": ". "
     },
     "_meta": {
       "title": "Combine four choices"
@@ -213,15 +213,15 @@
   "17": {
     "class_type": "StringConcatenate",
     "inputs": {
-      "string_a": "no humans, still life, object focus, (full shot:1.3), (entire object:1.3), (wide shot:1.15), isolated object",
-      "string_b": [
+      "string_a": [
         "16",
         0
       ],
-      "delimiter": ", "
+      "string_b": "Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors",
+      "delimiter": ". "
     },
     "_meta": {
-      "title": "Fixed mobile RPG item style"
+      "title": "Product first, then illustration style"
     }
   },
   "18": {
@@ -231,8 +231,8 @@
         "17",
         0
       ],
-      "string_b": "detailed Japanese game item illustration, precise clean linework, soft painted shading, carefully rendered material texture, crisp edges, complete object fully in frame, centered composition, generous empty margin, plain white background, masterpiece, high score, great score, absurdres, rating:general",
-      "delimiter": ", "
+      "string_b": "One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render",
+      "delimiter": ". "
     },
     "_meta": {
       "title": "Fixed product composition"
@@ -291,53 +291,151 @@
       "title": "Apply actual alpha (not painted transparency)"
     }
   },
-  "24": {
+  "28": {
+    "class_type": "KSamplerSelect",
+    "inputs": {
+      "sampler_name": "euler"
+    },
+    "_meta": {
+      "title": "Turbo sampler"
+    }
+  },
+  "29": {
+    "class_type": "Flux2Scheduler",
+    "inputs": {
+      "steps": 4,
+      "width": 640,
+      "height": 640
+    },
+    "_meta": {
+      "title": "Distilled Klein / 4 steps"
+    }
+  },
+  "30": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen_3_4b.safetensors",
+      "type": "flux2",
+      "device": "default"
+    },
+    "_meta": {
+      "title": "Qwen3 4B language encoder"
+    }
+  },
+  "31": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "flux2-klein-vae-bf16.safetensors"
+    },
+    "_meta": {
+      "title": "Klein VAE"
+    }
+  },
+  "32": {
     "class_type": "LoadImage",
     "inputs": {
-      "image": "Thai02Quality/guide_bags.png"
+      "image": "Thai02Style3/style_user_fa1ec41434dabe24.png"
     },
     "_meta": {
-      "title": "Single product structure guide"
+      "title": "Original user art style only"
     }
   },
-  "25": {
-    "class_type": "ControlNetLoader",
+  "33": {
+    "class_type": "ImageScale",
     "inputs": {
-      "control_net_name": "control-lora-canny-rank256.safetensors"
-    },
-    "_meta": {
-      "title": "SDXL Canny structure control"
-    }
-  },
-  "26": {
-    "class_type": "ControlNetApplyAdvanced",
-    "inputs": {
-      "positive": [
-        "2",
-        0
-      ],
-      "negative": [
-        "3",
-        0
-      ],
-      "control_net": [
-        "25",
-        0
-      ],
       "image": [
-        "24",
+        "39",
+        0
+      ],
+      "upscale_method": "lanczos",
+      "width": 384,
+      "height": 304,
+      "crop": "disabled"
+    },
+    "_meta": {
+      "title": "Small art style reference"
+    }
+  },
+  "38": {
+    "class_type": "ImageToMask",
+    "inputs": {
+      "image": [
+        "32",
+        0
+      ],
+      "channel": "green"
+    },
+    "_meta": {
+      "title": "Remove reference colors, retain drawing style"
+    }
+  },
+  "39": {
+    "class_type": "MaskToImage",
+    "inputs": {
+      "mask": [
+        "38",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Neutral art style reference"
+    }
+  },
+  "34": {
+    "class_type": "VAEEncode",
+    "inputs": {
+      "pixels": [
+        "33",
         0
       ],
       "vae": [
-        "1",
-        2
-      ],
-      "strength": 1.4,
-      "start_percent": 0.0,
-      "end_percent": 1.0
+        "31",
+        0
+      ]
     },
     "_meta": {
-      "title": "Keep one complete product"
+      "title": "Encode art style reference"
+    }
+  },
+  "35": {
+    "class_type": "ReferenceLatent",
+    "inputs": {
+      "conditioning": [
+        "2",
+        0
+      ],
+      "latent": [
+        "34",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Reference illustration conditioning"
+    }
+  },
+  "36": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 7042026
+    },
+    "_meta": {
+      "title": "Session seed"
+    }
+  },
+  "37": {
+    "class_type": "BasicGuider",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "conditioning": [
+        "35",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Reference art guidance"
     }
   }
 }

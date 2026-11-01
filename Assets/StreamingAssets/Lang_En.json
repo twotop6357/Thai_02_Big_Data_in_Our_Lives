@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "language": "en",
+  "video": "Videos/Video_en",
+  "images": [
+    {
+      "id": "idle.title",
+      "sprite": "Title_en",
+      "x": 63,
+      "y": 23,
+      "width": 873,
+      "height": 435,
+      "figmaNode": "27:644"
+    },
+    {
+      "id": "idle.subtitle",
+      "sprite": "Subtitle_en",
+      "x": 99,
+      "y": 467,
+      "width": 678,
+      "height": 89,
+      "figmaNode": "27:644"
+    },
+    {
+      "id": "idle.help",
+      "sprite": "ButtonHelpBox_en",
+      "x": 307,
+      "y": 879,
+      "width": 1315,
+      "height": 173,
+      "figmaNode": "27:644"
+    },
+    {
+      "id": "group.title",
+      "sprite": "Title_groupselectPanel_en",
+      "x": 306,
+      "y": 76,
+      "width": 1317,
+      "height": 111,
+      "figmaNode": "27:656"
+    },
+    {
+      "id": "group.subtitle",
+      "sprite": "Subtitle_groupselectPanel_en",
+      "x": 428,
+      "y": 208,
+      "width": 1063,
+      "height": 39,
+      "figmaNode": "27:656"
+    },
+    {
+      "id": "group.help",
+      "sprite": "ButtonHelpBox_groupselectPanel_en",
+      "x": 549,
+      "y": 899,
+      "width": 835,
+      "height": 153,
+      "figmaNode": "27:656"
+    },
+    {
+      "id": "selection.title",
+      "sprite": "Title_selectallPanel_en",
+      "x": 254,
+      "y": 74,
+      "width": 1418,
+      "height": 97,
+      "figmaNode": "27:676"
+    },
+    {
+      "id": "selection.subtitle",
+      "sprite": "Subtitle_selectallPanel_en",
+      "x": 387,
+      "y": 208,
+      "width": 1146,
+      "height": 40,
+      "figmaNode": "27:676"
+    },
+    {
+      "id": "selection.help",
+      "sprite": "ButtonHelpBox_selectallPanel_en",
+      "x": 549,
+      "y": 899,
+      "width": 835,
+      "height": 153,
+      "figmaNode": "27:676"
+    },
+    {
+      "id": "result.title",
+      "sprite": "Title_RecommendedAd_en",
+      "x": 360,
+      "y": 97,
+      "width": 1200,
+      "height": 106,
+      "figmaNode": "27:697"
+    },
+    {
+      "id": "result.subtitle",
+      "sprite": "Subtitle_RecommendedAd_en",
+      "x": 550,
+      "y": 236,
+      "width": 822,
+      "height": 47,
+      "figmaNode": "27:697"
+    },
+    {
+      "id": "result.help",
+      "sprite": "ButtonHelpBox_RecommendedAd_en",
+      "x": 474,
+      "y": 899,
+      "width": 984,
+      "height": 153,
+      "figmaNode": "27:697"
+    },
+    {
+      "id": "selection.productBoard",
+      "sprite": "RecommendedProductImageBoard_en",
+      "x": 816,
+      "y": 331,
+      "width": 838,
+      "height": 493,
+      "figmaNode": "20:390"
+    },
+    {
+      "id": "video.end",
+      "sprite": "VideoEndPopupText_en",
+      "x": 350.375,
+      "y": 463.21094,
+      "width": 1218.96094,
+      "height": 157.37891,
+      "figmaNode": "20:440"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "prompt_id": "e4dda74a-a8cd-43bf-a04d-c6620cadc7e8",
+  "selection": {
+    "group": "student",
+    "product": "shoes",
+    "color1": "red",
+    "color2": "blue",
+    "primary_hex": "#EC6868",
+    "secondary_hex": "#5FB0E3",
+    "profile": "quality",
+    "seed": 986534,
+    "width": 480,
+    "height": 480,
+    "resolved_product": "shoes",
+    "alpha": true,
+    "positive_prompt": "masterpiece, best quality, (polished game item illustration:1.3), (one single product:1.2), no humans, object focus, isolated complete object, (single sneaker:1.4), one low-top sneaker, natural upright pose, viewed diagonally from slightly above, one intact shoe with connected panels and simple laces, soft coral red upper body panels, light sky blue accent trim and laces, practical casual design with sporty details, highly finished anime game prop illustration, refined crisp linework, rich layered painted shading, carefully rendered material textures, subtle natural reflections, soft specular highlights, clean volumetric form, deliberate edge control, collectible game inventory artwork, tasteful small details, product centered horizontally and vertically, balanced empty margins, one natural three-quarter camera angle, plain white background"
+  },
+  "seconds_request_to_png": 33.463,
+  "width": 480,
+  "height": 480,
+  "local_image": "gameart_04.png",
+  "server_image": {
+    "filename": "product_00058_.png",
+    "subfolder": "Thai02",
+    "type": "output",
+    "metadata": {
+      "kind": "image",
+      "width": 480,
+      "height": 480
+    },
+    "id": "4eeed805-29f6-4d5b-ae25-02f44d7a0278"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "DreamShaper 8 LCM",
+  "filename": "DreamShaper8_LCM.safetensors",
+  "repository": "Lykon/DreamShaper",
+  "revision": "228d79cb20811466f5c5710aa91f05dabd0b8a14",
+  "url": "https://huggingface.co/Lykon/DreamShaper/resolve/228d79cb20811466f5c5710aa91f05dabd0b8a14/DreamShaper8_LCM.safetensors",
+  "bytes": 2133804992,
+  "sha256": "a4f3e1526c5dc4fcbe342f5c410d83ae202c7a415fcefcbb92e0f93fcd0a87c3",
+  "model_card": "https://huggingface.co/Lykon/DreamShaper",
+  "license_note": "Model author terms at official model card; base CreativeML Open RAIL-M. Retain notices."
+}

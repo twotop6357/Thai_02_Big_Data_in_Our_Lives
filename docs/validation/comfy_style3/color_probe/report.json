@@ -1,0 +1,3549 @@
+{
+  "results": [
+    {
+      "tag": "shoes_working_adult_black_white",
+      "seconds": 2.956,
+      "stages": [
+        {
+          "node": "2",
+          "seconds": 0.124
+        },
+        {
+          "node": "35",
+          "seconds": 0.986
+        },
+        {
+          "node": "37",
+          "seconds": 0.987
+        },
+        {
+          "node": "36",
+          "seconds": 0.988
+        },
+        {
+          "node": "5",
+          "seconds": 0.988
+        },
+        {
+          "node": "6",
+          "seconds": 2.267
+        },
+        {
+          "node": "21",
+          "seconds": 2.444
+        },
+        {
+          "node": "22",
+          "seconds": 2.899
+        },
+        {
+          "node": "23",
+          "seconds": 2.9
+        },
+        {
+          "node": "8",
+          "seconds": 2.904
+        },
+        {
+          "node": "7",
+          "seconds": 2.905
+        },
+        {
+          "node": null,
+          "seconds": 2.924
+        }
+      ],
+      "api": {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "flux-2-klein-4b-fp8.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "one classic laceless penny loafer, a slip-on dress shoe with a wide strap across the vamp, smooth moccasin toe and low flat heel, no shoelaces or sneaker panels. Main color #171619 (near-black) on leather upper. Accent color #FFFFFF (white) on sole and instep band. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, writing, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render.",
+            "clip": [
+              "30",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Positive product conditioning"
+          }
+        },
+        "4": {
+          "class_type": "EmptyFlux2LatentImage",
+          "inputs": {
+            "width": 640,
+            "height": 640,
+            "batch_size": 1
+          }
+        },
+        "5": {
+          "class_type": "SamplerCustomAdvanced",
+          "inputs": {
+            "noise": [
+              "36",
+              0
+            ],
+            "guider": [
+              "37",
+              0
+            ],
+            "sampler": [
+              "28",
+              0
+            ],
+            "sigmas": [
+              "29",
+              0
+            ],
+            "latent_image": [
+              "4",
+              0
+            ]
+          }
+        },
+        "6": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "5",
+              0
+            ],
+            "vae": [
+              "31",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Decode final image"
+          }
+        },
+        "7": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "8",
+              0
+            ],
+            "filename_prefix": "Thai02/Style3/klein_ref"
+          },
+          "_meta": {
+            "title": "Final 480 x 480 RGBA PNG"
+          }
+        },
+        "8": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "23",
+              0
+            ],
+            "upscale_method": "area",
+            "width": 480,
+            "height": 480,
+            "crop": "disabled"
+          },
+          "_meta": {
+            "title": "Downsample RGBA to 480 x 480"
+          }
+        },
+        "10": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "refined minimal design"
+          },
+          "_meta": {
+            "title": "INPUT 1 / audience: working_adult"
+          }
+        },
+        "11": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "one slip-on penny loafer with a neat toe seam, natural three-quarter view"
+          },
+          "_meta": {
+            "title": "INPUT 2 / product: shoes"
+          }
+        },
+        "12": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "near-black leather upper"
+          },
+          "_meta": {
+            "title": "INPUT 3 / primary: black",
+            "color_reference": "#171619 RGB(23, 22, 25)"
+          }
+        },
+        "13": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "white sole and instep band"
+          },
+          "_meta": {
+            "title": "INPUT 4 / accent: white",
+            "color_reference": "#FFFFFF RGB(255, 255, 255)"
+          }
+        },
+        "14": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "11",
+              0
+            ],
+            "string_b": [
+              "15",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product + colors"
+          }
+        },
+        "15": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "12",
+              0
+            ],
+            "string_b": [
+              "13",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product-specific color parts"
+          }
+        },
+        "16": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "14",
+              0
+            ],
+            "string_b": [
+              "10",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Combine four choices"
+          }
+        },
+        "17": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "16",
+              0
+            ],
+            "string_b": "simple soft shaded illustration",
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product first, then illustration style"
+          }
+        },
+        "18": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "17",
+              0
+            ],
+            "string_b": "one isolated item, plain white background, full view, centered with empty margins",
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed product composition"
+          }
+        },
+        "20": {
+          "class_type": "LoadBackgroundRemovalModel",
+          "inputs": {
+            "bg_removal_name": "birefnet.safetensors"
+          },
+          "_meta": {
+            "title": "BiRefNet foreground segmentation"
+          }
+        },
+        "21": {
+          "class_type": "RemoveBackground",
+          "inputs": {
+            "bg_removal_model": [
+              "20",
+              0
+            ],
+            "image": [
+              "6",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Foreground mask at native resolution"
+          }
+        },
+        "22": {
+          "class_type": "InvertMask",
+          "inputs": {
+            "mask": [
+              "21",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Foreground to Comfy alpha convention"
+          }
+        },
+        "23": {
+          "class_type": "JoinImageWithAlpha",
+          "inputs": {
+            "image": [
+              "6",
+              0
+            ],
+            "alpha": [
+              "22",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Apply actual alpha (not painted transparency)"
+          }
+        },
+        "28": {
+          "class_type": "KSamplerSelect",
+          "inputs": {
+            "sampler_name": "euler"
+          }
+        },
+        "29": {
+          "class_type": "Flux2Scheduler",
+          "inputs": {
+            "steps": 4,
+            "width": 640,
+            "height": 640
+          }
+        },
+        "30": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "qwen_3_4b.safetensors",
+            "type": "flux2",
+            "device": "default"
+          }
+        },
+        "31": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "flux2-klein-vae-bf16.safetensors"
+          }
+        },
+        "32": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "Thai02Style3/style_user_fa1ec41434dabe24.png"
+          }
+        },
+        "33": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "32",
+              0
+            ],
+            "upscale_method": "lanczos",
+            "width": 384,
+            "height": 304,
+            "crop": "disabled"
+          }
+        },
+        "34": {
+          "class_type": "VAEEncode",
+          "inputs": {
+            "pixels": [
+              "33",
+              0
+            ],
+            "vae": [
+              "31",
+              0
+            ]
+          }
+        },
+        "35": {
+          "class_type": "ReferenceLatent",
+          "inputs": {
+            "conditioning": [
+              "2",
+              0
+            ],
+            "latent": [
+              "34",
+              0
+            ]
+          }
+        },
+        "36": {
+          "class_type": "RandomNoise",
+          "inputs": {
+            "noise_seed": 1211101
+          }
+        },
+        "37": {
+          "class_type": "BasicGuider",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "conditioning": [
+              "35",
+              0
+            ]
+          }
+        }
+      },
+      "prompt_id": "7b1787d0-cc66-4c33-9a4a-42bd6b113880",
+      "server_image": {
+        "filename": "klein_ref_00054_.png",
+        "subfolder": "Thai02\\Style3",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "57d717c7-1b0e-4d3a-b6a6-0ca3e50a730b"
+      },
+      "selection": {
+        "group": "working_adult",
+        "product": "shoes",
+        "color1": "black",
+        "color2": "white",
+        "primary_hex": "#171619",
+        "secondary_hex": "#FFFFFF",
+        "profile": "quality",
+        "seed": 1211101,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "one classic laceless penny loafer, a slip-on dress shoe with a wide strap across the vamp, smooth moccasin toe and low flat heel, no shoelaces or sneaker panels. Main color #171619 (near-black) on leather upper. Accent color #FFFFFF (white) on sole and instep band. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, writing, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render."
+      }
+    },
+    {
+      "tag": "shoes_working_adult_green_white",
+      "seconds": 2.763,
+      "stages": [
+        {
+          "node": "2",
+          "seconds": 0.091
+        },
+        {
+          "node": "35",
+          "seconds": 0.799
+        },
+        {
+          "node": "37",
+          "seconds": 0.8
+        },
+        {
+          "node": "36",
+          "seconds": 0.8
+        },
+        {
+          "node": "5",
+          "seconds": 0.801
+        },
+        {
+          "node": "6",
+          "seconds": 2.08
+        },
+        {
+          "node": "21",
+          "seconds": 2.26
+        },
+        {
+          "node": "22",
+          "seconds": 2.733
+        },
+        {
+          "node": "23",
+          "seconds": 2.734
+        },
+        {
+          "node": "8",
+          "seconds": 2.736
+        },
+        {
+          "node": "7",
+          "seconds": 2.738
+        },
+        {
+          "node": null,
+          "seconds": 2.759
+        }
+      ],
+      "api": {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "flux-2-klein-4b-fp8.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "one classic laceless penny loafer, a slip-on dress shoe with a wide strap across the vamp, smooth moccasin toe and low flat heel, no shoelaces or sneaker panels. Main color #B7DBA9 (light pastel green) on leather upper. Accent color #FFFFFF (white) on sole and instep band. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, writing, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render.",
+            "clip": [
+              "30",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Positive product conditioning"
+          }
+        },
+        "4": {
+          "class_type": "EmptyFlux2LatentImage",
+          "inputs": {
+            "width": 640,
+            "height": 640,
+            "batch_size": 1
+          }
+        },
+        "5": {
+          "class_type": "SamplerCustomAdvanced",
+          "inputs": {
+            "noise": [
+              "36",
+              0
+            ],
+            "guider": [
+              "37",
+              0
+            ],
+            "sampler": [
+              "28",
+              0
+            ],
+            "sigmas": [
+              "29",
+              0
+            ],
+            "latent_image": [
+              "4",
+              0
+            ]
+          }
+        },
+        "6": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "5",
+              0
+            ],
+            "vae": [
+              "31",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Decode final image"
+          }
+        },
+        "7": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "8",
+              0
+            ],
+            "filename_prefix": "Thai02/Style3/klein_ref"
+          },
+          "_meta": {
+            "title": "Final 480 x 480 RGBA PNG"
+          }
+        },
+        "8": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "23",
+              0
+            ],
+            "upscale_method": "area",
+            "width": 480,
+            "height": 480,
+            "crop": "disabled"
+          },
+          "_meta": {
+            "title": "Downsample RGBA to 480 x 480"
+          }
+        },
+        "10": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "refined minimal design"
+          },
+          "_meta": {
+            "title": "INPUT 1 / audience: working_adult"
+          }
+        },
+        "11": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "one slip-on penny loafer with a neat toe seam, natural three-quarter view"
+          },
+          "_meta": {
+            "title": "INPUT 2 / product: shoes"
+          }
+        },
+        "12": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "light pastel green leather upper"
+          },
+          "_meta": {
+            "title": "INPUT 3 / primary: green",
+            "color_reference": "#B7DBA9 RGB(183, 219, 169)"
+          }
+        },
+        "13": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "white sole and instep band"
+          },
+          "_meta": {
+            "title": "INPUT 4 / accent: white",
+            "color_reference": "#FFFFFF RGB(255, 255, 255)"
+          }
+        },
+        "14": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "11",
+              0
+            ],
+            "string_b": [
+              "15",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product + colors"
+          }
+        },
+        "15": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "12",
+              0
+            ],
+            "string_b": [
+              "13",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product-specific color parts"
+          }
+        },
+        "16": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "14",
+              0
+            ],
+            "string_b": [
+              "10",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Combine four choices"
+          }
+        },
+        "17": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "16",
+              0
+            ],
+            "string_b": "simple soft shaded illustration",
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product first, then illustration style"
+          }
+        },
+        "18": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "17",
+              0
+            ],
+            "string_b": "one isolated item, plain white background, full view, centered with empty margins",
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed product composition"
+          }
+        },
+        "20": {
+          "class_type": "LoadBackgroundRemovalModel",
+          "inputs": {
+            "bg_removal_name": "birefnet.safetensors"
+          },
+          "_meta": {
+            "title": "BiRefNet foreground segmentation"
+          }
+        },
+        "21": {
+          "class_type": "RemoveBackground",
+          "inputs": {
+            "bg_removal_model": [
+              "20",
+              0
+            ],
+            "image": [
+              "6",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Foreground mask at native resolution"
+          }
+        },
+        "22": {
+          "class_type": "InvertMask",
+          "inputs": {
+            "mask": [
+              "21",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Foreground to Comfy alpha convention"
+          }
+        },
+        "23": {
+          "class_type": "JoinImageWithAlpha",
+          "inputs": {
+            "image": [
+              "6",
+              0
+            ],
+            "alpha": [
+              "22",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Apply actual alpha (not painted transparency)"
+          }
+        },
+        "28": {
+          "class_type": "KSamplerSelect",
+          "inputs": {
+            "sampler_name": "euler"
+          }
+        },
+        "29": {
+          "class_type": "Flux2Scheduler",
+          "inputs": {
+            "steps": 4,
+            "width": 640,
+            "height": 640
+          }
+        },
+        "30": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "qwen_3_4b.safetensors",
+            "type": "flux2",
+            "device": "default"
+          }
+        },
+        "31": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "flux2-klein-vae-bf16.safetensors"
+          }
+        },
+        "32": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "Thai02Style3/style_user_fa1ec41434dabe24.png"
+          }
+        },
+        "33": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "32",
+              0
+            ],
+            "upscale_method": "lanczos",
+            "width": 384,
+            "height": 304,
+            "crop": "disabled"
+          }
+        },
+        "34": {
+          "class_type": "VAEEncode",
+          "inputs": {
+            "pixels": [
+              "33",
+              0
+            ],
+            "vae": [
+              "31",
+              0
+            ]
+          }
+        },
+        "35": {
+          "class_type": "ReferenceLatent",
+          "inputs": {
+            "conditioning": [
+              "2",
+              0
+            ],
+            "latent": [
+              "34",
+              0
+            ]
+          }
+        },
+        "36": {
+          "class_type": "RandomNoise",
+          "inputs": {
+            "noise_seed": 1211102
+          }
+        },
+        "37": {
+          "class_type": "BasicGuider",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "conditioning": [
+              "35",
+              0
+            ]
+          }
+        }
+      },
+      "prompt_id": "ecbd5546-ff2d-4b76-b0df-550c17962dff",
+      "server_image": {
+        "filename": "klein_ref_00055_.png",
+        "subfolder": "Thai02\\Style3",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "887051b1-accf-452d-9f39-b7ae23e8e148"
+      },
+      "selection": {
+        "group": "working_adult",
+        "product": "shoes",
+        "color1": "green",
+        "color2": "white",
+        "primary_hex": "#B7DBA9",
+        "secondary_hex": "#FFFFFF",
+        "profile": "quality",
+        "seed": 1211102,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "one classic laceless penny loafer, a slip-on dress shoe with a wide strap across the vamp, smooth moccasin toe and low flat heel, no shoelaces or sneaker panels. Main color #B7DBA9 (light pastel green) on leather upper. Accent color #FFFFFF (white) on sole and instep band. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, writing, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render."
+      }
+    },
+    {
+      "tag": "headphones_senior_yellow_black",
+      "seconds": 3.056,
+      "stages": [
+        {
+          "node": "2",
+          "seconds": 0.09
+        },
+        {
+          "node": "35",
+          "seconds": 0.81
+        },
+        {
+          "node": "37",
+          "seconds": 0.81
+        },
+        {
+          "node": "36",
+          "seconds": 0.811
+        },
+        {
+          "node": "5",
+          "seconds": 0.811
+        },
+        {
+          "node": "6",
+          "seconds": 2.081
+        },
+        {
+          "node": "21",
+          "seconds": 2.26
+        },
+        {
+          "node": "22",
+          "seconds": 2.725
+        },
+        {
+          "node": "23",
+          "seconds": 2.727
+        },
+        {
+          "node": "8",
+          "seconds": 2.731
+        },
+        {
+          "node": "7",
+          "seconds": 2.732
+        },
+        {
+          "node": null,
+          "seconds": 3.04
+        }
+      ],
+      "api": {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "flux-2-klein-4b-fp8.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "one wireless neckband earphones, U-shaped neckband with two thin connected cables ending in two small in-ear earbuds. Main color #F6EEA2 (pale pastel yellow) on U-shaped neckband. Accent color #171619 (near-black) on earbuds. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, writing, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render.",
+            "clip": [
+              "30",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Positive product conditioning"
+          }
+        },
+        "4": {
+          "class_type": "EmptyFlux2LatentImage",
+          "inputs": {
+            "width": 640,
+            "height": 640,
+            "batch_size": 1
+          }
+        },
+        "5": {
+          "class_type": "SamplerCustomAdvanced",
+          "inputs": {
+            "noise": [
+              "36",
+              0
+            ],
+            "guider": [
+              "37",
+              0
+            ],
+            "sampler": [
+              "28",
+              0
+            ],
+            "sigmas": [
+              "29",
+              0
+            ],
+            "latent_image": [
+              "4",
+              0
+            ]
+          }
+        },
+        "6": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "5",
+              0
+            ],
+            "vae": [
+              "31",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Decode final image"
+          }
+        },
+        "7": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "8",
+              0
+            ],
+            "filename_prefix": "Thai02/Style3/klein_ref"
+          },
+          "_meta": {
+            "title": "Final 480 x 480 RGBA PNG"
+          }
+        },
+        "8": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "23",
+              0
+            ],
+            "upscale_method": "area",
+            "width": 480,
+            "height": 480,
+            "crop": "disabled"
+          },
+          "_meta": {
+            "title": "Downsample RGBA to 480 x 480"
+          }
+        },
+        "10": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "simple ergonomic design"
+          },
+          "_meta": {
+            "title": "INPUT 1 / audience: senior"
+          }
+        },
+        "11": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "simple flat illustration of wireless neckband earphones, U-shaped neckband and two small earbuds"
+          },
+          "_meta": {
+            "title": "INPUT 2 / product: headphones"
+          }
+        },
+        "12": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "pale pastel yellow U-shaped neckband"
+          },
+          "_meta": {
+            "title": "INPUT 3 / primary: yellow",
+            "color_reference": "#F6EEA2 RGB(246, 238, 162)"
+          }
+        },
+        "13": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "near-black earbuds"
+          },
+          "_meta": {
+            "title": "INPUT 4 / accent: black",
+            "color_reference": "#171619 RGB(23, 22, 25)"
+          }
+        },
+        "14": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "11",
+              0
+            ],
+            "string_b": [
+              "15",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product + colors"
+          }
+        },
+        "15": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "12",
+              0
+            ],
+            "string_b": [
+              "13",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product-specific color parts"
+          }
+        },
+        "16": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "14",
+              0
+            ],
+            "string_b": [
+              "10",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Combine four choices"
+          }
+        },
+        "17": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "16",
+              0
+            ],
+            "string_b": "simple soft shaded illustration",
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product first, then illustration style"
+          }
+        },
+        "18": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "17",
+              0
+            ],
+            "string_b": "one isolated item, plain white background, full view, centered with empty margins",
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed product composition"
+          }
+        },
+        "20": {
+          "class_type": "LoadBackgroundRemovalModel",
+          "inputs": {
+            "bg_removal_name": "birefnet.safetensors"
+          },
+          "_meta": {
+            "title": "BiRefNet foreground segmentation"
+          }
+        },
+        "21": {
+          "class_type": "RemoveBackground",
+          "inputs": {
+            "bg_removal_model": [
+              "20",
+              0
+            ],
+            "image": [
+              "6",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Foreground mask at native resolution"
+          }
+        },
+        "22": {
+          "class_type": "InvertMask",
+          "inputs": {
+            "mask": [
+              "21",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Foreground to Comfy alpha convention"
+          }
+        },
+        "23": {
+          "class_type": "JoinImageWithAlpha",
+          "inputs": {
+            "image": [
+              "6",
+              0
+            ],
+            "alpha": [
+              "22",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Apply actual alpha (not painted transparency)"
+          }
+        },
+        "28": {
+          "class_type": "KSamplerSelect",
+          "inputs": {
+            "sampler_name": "euler"
+          }
+        },
+        "29": {
+          "class_type": "Flux2Scheduler",
+          "inputs": {
+            "steps": 4,
+            "width": 640,
+            "height": 640
+          }
+        },
+        "30": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "qwen_3_4b.safetensors",
+            "type": "flux2",
+            "device": "default"
+          }
+        },
+        "31": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "flux2-klein-vae-bf16.safetensors"
+          }
+        },
+        "32": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "Thai02Style3/style_user_fa1ec41434dabe24.png"
+          }
+        },
+        "33": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "32",
+              0
+            ],
+            "upscale_method": "lanczos",
+            "width": 384,
+            "height": 304,
+            "crop": "disabled"
+          }
+        },
+        "34": {
+          "class_type": "VAEEncode",
+          "inputs": {
+            "pixels": [
+              "33",
+              0
+            ],
+            "vae": [
+              "31",
+              0
+            ]
+          }
+        },
+        "35": {
+          "class_type": "ReferenceLatent",
+          "inputs": {
+            "conditioning": [
+              "2",
+              0
+            ],
+            "latent": [
+              "34",
+              0
+            ]
+          }
+        },
+        "36": {
+          "class_type": "RandomNoise",
+          "inputs": {
+            "noise_seed": 1211103
+          }
+        },
+        "37": {
+          "class_type": "BasicGuider",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "conditioning": [
+              "35",
+              0
+            ]
+          }
+        }
+      },
+      "prompt_id": "69deced9-39b8-47c5-8d02-13093c4e6ad3",
+      "server_image": {
+        "filename": "klein_ref_00056_.png",
+        "subfolder": "Thai02\\Style3",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "0f6a2645-ecfb-4464-b409-2b8253236ade"
+      },
+      "selection": {
+        "group": "senior",
+        "product": "headphones",
+        "color1": "yellow",
+        "color2": "black",
+        "primary_hex": "#F6EEA2",
+        "secondary_hex": "#171619",
+        "profile": "quality",
+        "seed": 1211103,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "headphones",
+        "alpha": true,
+        "positive_prompt": "one wireless neckband earphones, U-shaped neckband with two thin connected cables ending in two small in-ear earbuds. Main color #F6EEA2 (pale pastel yellow) on U-shaped neckband. Accent color #171619 (near-black) on earbuds. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, writing, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render."
+      }
+    },
+    {
+      "tag": "wristwatches_student_blue_white",
+      "seconds": 2.948,
+      "stages": [
+        {
+          "node": "2",
+          "seconds": 0.131
+        },
+        {
+          "node": "35",
+          "seconds": 0.924
+        },
+        {
+          "node": "37",
+          "seconds": 0.925
+        },
+        {
+          "node": "36",
+          "seconds": 0.926
+        },
+        {
+          "node": "5",
+          "seconds": 0.926
+        },
+        {
+          "node": "6",
+          "seconds": 2.281
+        },
+        {
+          "node": "21",
+          "seconds": 2.449
+        },
+        {
+          "node": "22",
+          "seconds": 2.908
+        },
+        {
+          "node": "23",
+          "seconds": 2.909
+        },
+        {
+          "node": "8",
+          "seconds": 2.912
+        },
+        {
+          "node": "7",
+          "seconds": 2.914
+        },
+        {
+          "node": null,
+          "seconds": 2.944
+        }
+      ],
+      "api": {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "flux-2-klein-4b-fp8.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "one rectangular digital sports wristwatch with a chunky band and a clear digital LCD display reading 12:30, entire watch and both band ends. Main color #5FB0E3 (light blue) on plastic strap. Accent color #FFFFFF (white) on digital case. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, writing, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render.",
+            "clip": [
+              "30",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Positive product conditioning"
+          }
+        },
+        "4": {
+          "class_type": "EmptyFlux2LatentImage",
+          "inputs": {
+            "width": 640,
+            "height": 640,
+            "batch_size": 1
+          }
+        },
+        "5": {
+          "class_type": "SamplerCustomAdvanced",
+          "inputs": {
+            "noise": [
+              "36",
+              0
+            ],
+            "guider": [
+              "37",
+              0
+            ],
+            "sampler": [
+              "28",
+              0
+            ],
+            "sigmas": [
+              "29",
+              0
+            ],
+            "latent_image": [
+              "4",
+              0
+            ]
+          }
+        },
+        "6": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "5",
+              0
+            ],
+            "vae": [
+              "31",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Decode final image"
+          }
+        },
+        "7": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "8",
+              0
+            ],
+            "filename_prefix": "Thai02/Style3/klein_ref"
+          },
+          "_meta": {
+            "title": "Final 480 x 480 RGBA PNG"
+          }
+        },
+        "8": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "23",
+              0
+            ],
+            "upscale_method": "area",
+            "width": 480,
+            "height": 480,
+            "crop": "disabled"
+          },
+          "_meta": {
+            "title": "Downsample RGBA to 480 x 480"
+          }
+        },
+        "10": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "simple sporty design"
+          },
+          "_meta": {
+            "title": "INPUT 1 / audience: student"
+          }
+        },
+        "11": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "simple flat illustration of one rectangular digital sports wristwatch with a short plastic band, complete short wristband, centered"
+          },
+          "_meta": {
+            "title": "INPUT 2 / product: wristwatches"
+          }
+        },
+        "12": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "light blue plastic strap"
+          },
+          "_meta": {
+            "title": "INPUT 3 / primary: blue",
+            "color_reference": "#5FB0E3 RGB(95, 176, 227)"
+          }
+        },
+        "13": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "white digital case"
+          },
+          "_meta": {
+            "title": "INPUT 4 / accent: white",
+            "color_reference": "#FFFFFF RGB(255, 255, 255)"
+          }
+        },
+        "14": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "11",
+              0
+            ],
+            "string_b": [
+              "15",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product + colors"
+          }
+        },
+        "15": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "12",
+              0
+            ],
+            "string_b": [
+              "13",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product-specific color parts"
+          }
+        },
+        "16": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "14",
+              0
+            ],
+            "string_b": [
+              "10",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Combine four choices"
+          }
+        },
+        "17": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "16",
+              0
+            ],
+            "string_b": "simple soft shaded illustration",
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product first, then illustration style"
+          }
+        },
+        "18": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "17",
+              0
+            ],
+            "string_b": "one isolated item, plain white background, full view, centered with empty margins",
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed product composition"
+          }
+        },
+        "20": {
+          "class_type": "LoadBackgroundRemovalModel",
+          "inputs": {
+            "bg_removal_name": "birefnet.safetensors"
+          },
+          "_meta": {
+            "title": "BiRefNet foreground segmentation"
+          }
+        },
+        "21": {
+          "class_type": "RemoveBackground",
+          "inputs": {
+            "bg_removal_model": [
+              "20",
+              0
+            ],
+            "image": [
+              "6",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Foreground mask at native resolution"
+          }
+        },
+        "22": {
+          "class_type": "InvertMask",
+          "inputs": {
+            "mask": [
+              "21",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Foreground to Comfy alpha convention"
+          }
+        },
+        "23": {
+          "class_type": "JoinImageWithAlpha",
+          "inputs": {
+            "image": [
+              "6",
+              0
+            ],
+            "alpha": [
+              "22",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Apply actual alpha (not painted transparency)"
+          }
+        },
+        "28": {
+          "class_type": "KSamplerSelect",
+          "inputs": {
+            "sampler_name": "euler"
+          }
+        },
+        "29": {
+          "class_type": "Flux2Scheduler",
+          "inputs": {
+            "steps": 4,
+            "width": 640,
+            "height": 640
+          }
+        },
+        "30": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "qwen_3_4b.safetensors",
+            "type": "flux2",
+            "device": "default"
+          }
+        },
+        "31": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "flux2-klein-vae-bf16.safetensors"
+          }
+        },
+        "32": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "Thai02Style3/style_user_fa1ec41434dabe24.png"
+          }
+        },
+        "33": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "32",
+              0
+            ],
+            "upscale_method": "lanczos",
+            "width": 384,
+            "height": 304,
+            "crop": "disabled"
+          }
+        },
+        "34": {
+          "class_type": "VAEEncode",
+          "inputs": {
+            "pixels": [
+              "33",
+              0
+            ],
+            "vae": [
+              "31",
+              0
+            ]
+          }
+        },
+        "35": {
+          "class_type": "ReferenceLatent",
+          "inputs": {
+            "conditioning": [
+              "2",
+              0
+            ],
+            "latent": [
+              "34",
+              0
+            ]
+          }
+        },
+        "36": {
+          "class_type": "RandomNoise",
+          "inputs": {
+            "noise_seed": 1211104
+          }
+        },
+        "37": {
+          "class_type": "BasicGuider",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "conditioning": [
+              "35",
+              0
+            ]
+          }
+        }
+      },
+      "prompt_id": "48ff9e92-e684-4c96-8dd3-c55363cfe982",
+      "server_image": {
+        "filename": "klein_ref_00057_.png",
+        "subfolder": "Thai02\\Style3",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "df1f2b83-4579-4401-88ea-599fe70d7720"
+      },
+      "selection": {
+        "group": "student",
+        "product": "wristwatches",
+        "color1": "blue",
+        "color2": "white",
+        "primary_hex": "#5FB0E3",
+        "secondary_hex": "#FFFFFF",
+        "profile": "quality",
+        "seed": 1211104,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "wristwatches",
+        "alpha": true,
+        "positive_prompt": "one rectangular digital sports wristwatch with a chunky band and a clear digital LCD display reading 12:30, entire watch and both band ends. Main color #5FB0E3 (light blue) on plastic strap. Accent color #FFFFFF (white) on digital case. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, writing, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render."
+      }
+    },
+    {
+      "tag": "hats_child_yellow_black",
+      "seconds": 2.756,
+      "stages": [
+        {
+          "node": "2",
+          "seconds": 0.086
+        },
+        {
+          "node": "35",
+          "seconds": 0.796
+        },
+        {
+          "node": "37",
+          "seconds": 0.797
+        },
+        {
+          "node": "36",
+          "seconds": 0.798
+        },
+        {
+          "node": "5",
+          "seconds": 0.798
+        },
+        {
+          "node": "6",
+          "seconds": 2.067
+        },
+        {
+          "node": "21",
+          "seconds": 2.248
+        },
+        {
+          "node": "22",
+          "seconds": 2.722
+        },
+        {
+          "node": "23",
+          "seconds": 2.724
+        },
+        {
+          "node": "8",
+          "seconds": 2.727
+        },
+        {
+          "node": "7",
+          "seconds": 2.728
+        },
+        {
+          "node": null,
+          "seconds": 2.752
+        }
+      ],
+      "api": {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "flux-2-klein-4b-fp8.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "one kindergarten sun hat with a rounded crown, wide brim and chin strap. Main color #F6EEA2 (pale pastel yellow) on crown. Accent color #171619 (near-black) on brim and chin strap. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, writing, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render.",
+            "clip": [
+              "30",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Positive product conditioning"
+          }
+        },
+        "4": {
+          "class_type": "EmptyFlux2LatentImage",
+          "inputs": {
+            "width": 640,
+            "height": 640,
+            "batch_size": 1
+          }
+        },
+        "5": {
+          "class_type": "SamplerCustomAdvanced",
+          "inputs": {
+            "noise": [
+              "36",
+              0
+            ],
+            "guider": [
+              "37",
+              0
+            ],
+            "sampler": [
+              "28",
+              0
+            ],
+            "sigmas": [
+              "29",
+              0
+            ],
+            "latent_image": [
+              "4",
+              0
+            ]
+          }
+        },
+        "6": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "5",
+              0
+            ],
+            "vae": [
+              "31",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Decode final image"
+          }
+        },
+        "7": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "8",
+              0
+            ],
+            "filename_prefix": "Thai02/Style3/klein_ref"
+          },
+          "_meta": {
+            "title": "Final 480 x 480 RGBA PNG"
+          }
+        },
+        "8": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "23",
+              0
+            ],
+            "upscale_method": "area",
+            "width": 480,
+            "height": 480,
+            "crop": "disabled"
+          },
+          "_meta": {
+            "title": "Downsample RGBA to 480 x 480"
+          }
+        },
+        "10": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "playful rounded design"
+          },
+          "_meta": {
+            "title": "INPUT 1 / audience: child"
+          }
+        },
+        "11": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "one kindergarten sun hat with a rounded crown, wide brim and chin strap"
+          },
+          "_meta": {
+            "title": "INPUT 2 / product: hats"
+          }
+        },
+        "12": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "pale pastel yellow crown"
+          },
+          "_meta": {
+            "title": "INPUT 3 / primary: yellow",
+            "color_reference": "#F6EEA2 RGB(246, 238, 162)"
+          }
+        },
+        "13": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "near-black brim and chin strap"
+          },
+          "_meta": {
+            "title": "INPUT 4 / accent: black",
+            "color_reference": "#171619 RGB(23, 22, 25)"
+          }
+        },
+        "14": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "11",
+              0
+            ],
+            "string_b": [
+              "15",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product + colors"
+          }
+        },
+        "15": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "12",
+              0
+            ],
+            "string_b": [
+              "13",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product-specific color parts"
+          }
+        },
+        "16": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "14",
+              0
+            ],
+            "string_b": [
+              "10",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Combine four choices"
+          }
+        },
+        "17": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "16",
+              0
+            ],
+            "string_b": "simple soft shaded illustration",
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product first, then illustration style"
+          }
+        },
+        "18": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "17",
+              0
+            ],
+            "string_b": "one isolated item, plain white background, full view, centered with empty margins",
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed product composition"
+          }
+        },
+        "20": {
+          "class_type": "LoadBackgroundRemovalModel",
+          "inputs": {
+            "bg_removal_name": "birefnet.safetensors"
+          },
+          "_meta": {
+            "title": "BiRefNet foreground segmentation"
+          }
+        },
+        "21": {
+          "class_type": "RemoveBackground",
+          "inputs": {
+            "bg_removal_model": [
+              "20",
+              0
+            ],
+            "image": [
+              "6",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Foreground mask at native resolution"
+          }
+        },
+        "22": {
+          "class_type": "InvertMask",
+          "inputs": {
+            "mask": [
+              "21",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Foreground to Comfy alpha convention"
+          }
+        },
+        "23": {
+          "class_type": "JoinImageWithAlpha",
+          "inputs": {
+            "image": [
+              "6",
+              0
+            ],
+            "alpha": [
+              "22",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Apply actual alpha (not painted transparency)"
+          }
+        },
+        "28": {
+          "class_type": "KSamplerSelect",
+          "inputs": {
+            "sampler_name": "euler"
+          }
+        },
+        "29": {
+          "class_type": "Flux2Scheduler",
+          "inputs": {
+            "steps": 4,
+            "width": 640,
+            "height": 640
+          }
+        },
+        "30": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "qwen_3_4b.safetensors",
+            "type": "flux2",
+            "device": "default"
+          }
+        },
+        "31": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "flux2-klein-vae-bf16.safetensors"
+          }
+        },
+        "32": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "Thai02Style3/style_user_fa1ec41434dabe24.png"
+          }
+        },
+        "33": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "32",
+              0
+            ],
+            "upscale_method": "lanczos",
+            "width": 384,
+            "height": 304,
+            "crop": "disabled"
+          }
+        },
+        "34": {
+          "class_type": "VAEEncode",
+          "inputs": {
+            "pixels": [
+              "33",
+              0
+            ],
+            "vae": [
+              "31",
+              0
+            ]
+          }
+        },
+        "35": {
+          "class_type": "ReferenceLatent",
+          "inputs": {
+            "conditioning": [
+              "2",
+              0
+            ],
+            "latent": [
+              "34",
+              0
+            ]
+          }
+        },
+        "36": {
+          "class_type": "RandomNoise",
+          "inputs": {
+            "noise_seed": 1211105
+          }
+        },
+        "37": {
+          "class_type": "BasicGuider",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "conditioning": [
+              "35",
+              0
+            ]
+          }
+        }
+      },
+      "prompt_id": "c4900c31-1e4d-4d06-ab3c-b182121192a8",
+      "server_image": {
+        "filename": "klein_ref_00058_.png",
+        "subfolder": "Thai02\\Style3",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "79287fb0-3ebf-45d6-9dee-890e27ef839e"
+      },
+      "selection": {
+        "group": "child",
+        "product": "hats",
+        "color1": "yellow",
+        "color2": "black",
+        "primary_hex": "#F6EEA2",
+        "secondary_hex": "#171619",
+        "profile": "quality",
+        "seed": 1211105,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "hats",
+        "alpha": true,
+        "positive_prompt": "one kindergarten sun hat with a rounded crown, wide brim and chin strap. Main color #F6EEA2 (pale pastel yellow) on crown. Accent color #171619 (near-black) on brim and chin strap. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, writing, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render."
+      }
+    },
+    {
+      "tag": "hats_senior_green_white",
+      "seconds": 2.887,
+      "stages": [
+        {
+          "node": "2",
+          "seconds": 0.086
+        },
+        {
+          "node": "35",
+          "seconds": 0.866
+        },
+        {
+          "node": "37",
+          "seconds": 0.866
+        },
+        {
+          "node": "36",
+          "seconds": 0.867
+        },
+        {
+          "node": "5",
+          "seconds": 0.869
+        },
+        {
+          "node": "6",
+          "seconds": 2.237
+        },
+        {
+          "node": "21",
+          "seconds": 2.402
+        },
+        {
+          "node": "22",
+          "seconds": 2.854
+        },
+        {
+          "node": "23",
+          "seconds": 2.855
+        },
+        {
+          "node": "8",
+          "seconds": 2.858
+        },
+        {
+          "node": "7",
+          "seconds": 2.859
+        },
+        {
+          "node": null,
+          "seconds": 2.883
+        }
+      ],
+      "api": {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "flux-2-klein-4b-fp8.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "one classic fedora hat with a pinched crown, ribbon band and brim. Main color #B7DBA9 (light pastel green) on crown and brim. Accent color #FFFFFF (white) on ribbon band. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, writing, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render.",
+            "clip": [
+              "30",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Positive product conditioning"
+          }
+        },
+        "4": {
+          "class_type": "EmptyFlux2LatentImage",
+          "inputs": {
+            "width": 640,
+            "height": 640,
+            "batch_size": 1
+          }
+        },
+        "5": {
+          "class_type": "SamplerCustomAdvanced",
+          "inputs": {
+            "noise": [
+              "36",
+              0
+            ],
+            "guider": [
+              "37",
+              0
+            ],
+            "sampler": [
+              "28",
+              0
+            ],
+            "sigmas": [
+              "29",
+              0
+            ],
+            "latent_image": [
+              "4",
+              0
+            ]
+          }
+        },
+        "6": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "5",
+              0
+            ],
+            "vae": [
+              "31",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Decode final image"
+          }
+        },
+        "7": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "8",
+              0
+            ],
+            "filename_prefix": "Thai02/Style3/klein_ref"
+          },
+          "_meta": {
+            "title": "Final 480 x 480 RGBA PNG"
+          }
+        },
+        "8": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "23",
+              0
+            ],
+            "upscale_method": "area",
+            "width": 480,
+            "height": 480,
+            "crop": "disabled"
+          },
+          "_meta": {
+            "title": "Downsample RGBA to 480 x 480"
+          }
+        },
+        "10": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "simple ergonomic design"
+          },
+          "_meta": {
+            "title": "INPUT 1 / audience: senior"
+          }
+        },
+        "11": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "one classic fedora hat with a pinched crown, ribbon band and brim"
+          },
+          "_meta": {
+            "title": "INPUT 2 / product: hats"
+          }
+        },
+        "12": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "light pastel green crown and brim"
+          },
+          "_meta": {
+            "title": "INPUT 3 / primary: green",
+            "color_reference": "#B7DBA9 RGB(183, 219, 169)"
+          }
+        },
+        "13": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "white ribbon band"
+          },
+          "_meta": {
+            "title": "INPUT 4 / accent: white",
+            "color_reference": "#FFFFFF RGB(255, 255, 255)"
+          }
+        },
+        "14": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "11",
+              0
+            ],
+            "string_b": [
+              "15",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product + colors"
+          }
+        },
+        "15": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "12",
+              0
+            ],
+            "string_b": [
+              "13",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product-specific color parts"
+          }
+        },
+        "16": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "14",
+              0
+            ],
+            "string_b": [
+              "10",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Combine four choices"
+          }
+        },
+        "17": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "16",
+              0
+            ],
+            "string_b": "simple soft shaded illustration",
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product first, then illustration style"
+          }
+        },
+        "18": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "17",
+              0
+            ],
+            "string_b": "one isolated item, plain white background, full view, centered with empty margins",
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed product composition"
+          }
+        },
+        "20": {
+          "class_type": "LoadBackgroundRemovalModel",
+          "inputs": {
+            "bg_removal_name": "birefnet.safetensors"
+          },
+          "_meta": {
+            "title": "BiRefNet foreground segmentation"
+          }
+        },
+        "21": {
+          "class_type": "RemoveBackground",
+          "inputs": {
+            "bg_removal_model": [
+              "20",
+              0
+            ],
+            "image": [
+              "6",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Foreground mask at native resolution"
+          }
+        },
+        "22": {
+          "class_type": "InvertMask",
+          "inputs": {
+            "mask": [
+              "21",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Foreground to Comfy alpha convention"
+          }
+        },
+        "23": {
+          "class_type": "JoinImageWithAlpha",
+          "inputs": {
+            "image": [
+              "6",
+              0
+            ],
+            "alpha": [
+              "22",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Apply actual alpha (not painted transparency)"
+          }
+        },
+        "28": {
+          "class_type": "KSamplerSelect",
+          "inputs": {
+            "sampler_name": "euler"
+          }
+        },
+        "29": {
+          "class_type": "Flux2Scheduler",
+          "inputs": {
+            "steps": 4,
+            "width": 640,
+            "height": 640
+          }
+        },
+        "30": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "qwen_3_4b.safetensors",
+            "type": "flux2",
+            "device": "default"
+          }
+        },
+        "31": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "flux2-klein-vae-bf16.safetensors"
+          }
+        },
+        "32": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "Thai02Style3/style_user_fa1ec41434dabe24.png"
+          }
+        },
+        "33": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "32",
+              0
+            ],
+            "upscale_method": "lanczos",
+            "width": 384,
+            "height": 304,
+            "crop": "disabled"
+          }
+        },
+        "34": {
+          "class_type": "VAEEncode",
+          "inputs": {
+            "pixels": [
+              "33",
+              0
+            ],
+            "vae": [
+              "31",
+              0
+            ]
+          }
+        },
+        "35": {
+          "class_type": "ReferenceLatent",
+          "inputs": {
+            "conditioning": [
+              "2",
+              0
+            ],
+            "latent": [
+              "34",
+              0
+            ]
+          }
+        },
+        "36": {
+          "class_type": "RandomNoise",
+          "inputs": {
+            "noise_seed": 1211106
+          }
+        },
+        "37": {
+          "class_type": "BasicGuider",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "conditioning": [
+              "35",
+              0
+            ]
+          }
+        }
+      },
+      "prompt_id": "a4aa6ad2-98cd-414a-a410-41aea98b3247",
+      "server_image": {
+        "filename": "klein_ref_00059_.png",
+        "subfolder": "Thai02\\Style3",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "8538b8e5-2b74-464e-b80e-ea0aa9325782"
+      },
+      "selection": {
+        "group": "senior",
+        "product": "hats",
+        "color1": "green",
+        "color2": "white",
+        "primary_hex": "#B7DBA9",
+        "secondary_hex": "#FFFFFF",
+        "profile": "quality",
+        "seed": 1211106,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "hats",
+        "alpha": true,
+        "positive_prompt": "one classic fedora hat with a pinched crown, ribbon band and brim. Main color #B7DBA9 (light pastel green) on crown and brim. Accent color #FFFFFF (white) on ribbon band. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, writing, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render."
+      }
+    },
+    {
+      "tag": "bags_child_green_white",
+      "seconds": 3.136,
+      "stages": [
+        {
+          "node": "2",
+          "seconds": 0.084
+        },
+        {
+          "node": "35",
+          "seconds": 0.824
+        },
+        {
+          "node": "37",
+          "seconds": 0.825
+        },
+        {
+          "node": "36",
+          "seconds": 0.826
+        },
+        {
+          "node": "5",
+          "seconds": 0.826
+        },
+        {
+          "node": "6",
+          "seconds": 2.094
+        },
+        {
+          "node": "21",
+          "seconds": 2.285
+        },
+        {
+          "node": "22",
+          "seconds": 2.766
+        },
+        {
+          "node": "23",
+          "seconds": 2.768
+        },
+        {
+          "node": "8",
+          "seconds": 2.77
+        },
+        {
+          "node": "7",
+          "seconds": 2.771
+        },
+        {
+          "node": null,
+          "seconds": 3.112
+        }
+      ],
+      "api": {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "flux-2-klein-4b-fp8.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "one small bear-shaped kindergarten backpack with rounded bear ears and a front pocket. Main color #B7DBA9 (light pastel green) on backpack body. Accent color #FFFFFF (white) on bear ears and front pocket. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, writing, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render.",
+            "clip": [
+              "30",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Positive product conditioning"
+          }
+        },
+        "4": {
+          "class_type": "EmptyFlux2LatentImage",
+          "inputs": {
+            "width": 640,
+            "height": 640,
+            "batch_size": 1
+          }
+        },
+        "5": {
+          "class_type": "SamplerCustomAdvanced",
+          "inputs": {
+            "noise": [
+              "36",
+              0
+            ],
+            "guider": [
+              "37",
+              0
+            ],
+            "sampler": [
+              "28",
+              0
+            ],
+            "sigmas": [
+              "29",
+              0
+            ],
+            "latent_image": [
+              "4",
+              0
+            ]
+          }
+        },
+        "6": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "5",
+              0
+            ],
+            "vae": [
+              "31",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Decode final image"
+          }
+        },
+        "7": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "8",
+              0
+            ],
+            "filename_prefix": "Thai02/Style3/klein_ref"
+          },
+          "_meta": {
+            "title": "Final 480 x 480 RGBA PNG"
+          }
+        },
+        "8": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "23",
+              0
+            ],
+            "upscale_method": "area",
+            "width": 480,
+            "height": 480,
+            "crop": "disabled"
+          },
+          "_meta": {
+            "title": "Downsample RGBA to 480 x 480"
+          }
+        },
+        "10": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "playful rounded design"
+          },
+          "_meta": {
+            "title": "INPUT 1 / audience: child"
+          }
+        },
+        "11": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "one small bear-shaped kindergarten backpack with rounded bear ears and a front pocket"
+          },
+          "_meta": {
+            "title": "INPUT 2 / product: bags"
+          }
+        },
+        "12": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "light pastel green backpack body"
+          },
+          "_meta": {
+            "title": "INPUT 3 / primary: green",
+            "color_reference": "#B7DBA9 RGB(183, 219, 169)"
+          }
+        },
+        "13": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "white bear ears and front pocket"
+          },
+          "_meta": {
+            "title": "INPUT 4 / accent: white",
+            "color_reference": "#FFFFFF RGB(255, 255, 255)"
+          }
+        },
+        "14": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "11",
+              0
+            ],
+            "string_b": [
+              "15",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product + colors"
+          }
+        },
+        "15": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "12",
+              0
+            ],
+            "string_b": [
+              "13",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product-specific color parts"
+          }
+        },
+        "16": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "14",
+              0
+            ],
+            "string_b": [
+              "10",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Combine four choices"
+          }
+        },
+        "17": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "16",
+              0
+            ],
+            "string_b": "simple soft shaded illustration",
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product first, then illustration style"
+          }
+        },
+        "18": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "17",
+              0
+            ],
+            "string_b": "one isolated item, plain white background, full view, centered with empty margins",
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed product composition"
+          }
+        },
+        "20": {
+          "class_type": "LoadBackgroundRemovalModel",
+          "inputs": {
+            "bg_removal_name": "birefnet.safetensors"
+          },
+          "_meta": {
+            "title": "BiRefNet foreground segmentation"
+          }
+        },
+        "21": {
+          "class_type": "RemoveBackground",
+          "inputs": {
+            "bg_removal_model": [
+              "20",
+              0
+            ],
+            "image": [
+              "6",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Foreground mask at native resolution"
+          }
+        },
+        "22": {
+          "class_type": "InvertMask",
+          "inputs": {
+            "mask": [
+              "21",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Foreground to Comfy alpha convention"
+          }
+        },
+        "23": {
+          "class_type": "JoinImageWithAlpha",
+          "inputs": {
+            "image": [
+              "6",
+              0
+            ],
+            "alpha": [
+              "22",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Apply actual alpha (not painted transparency)"
+          }
+        },
+        "28": {
+          "class_type": "KSamplerSelect",
+          "inputs": {
+            "sampler_name": "euler"
+          }
+        },
+        "29": {
+          "class_type": "Flux2Scheduler",
+          "inputs": {
+            "steps": 4,
+            "width": 640,
+            "height": 640
+          }
+        },
+        "30": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "qwen_3_4b.safetensors",
+            "type": "flux2",
+            "device": "default"
+          }
+        },
+        "31": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "flux2-klein-vae-bf16.safetensors"
+          }
+        },
+        "32": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "Thai02Style3/style_user_fa1ec41434dabe24.png"
+          }
+        },
+        "33": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "32",
+              0
+            ],
+            "upscale_method": "lanczos",
+            "width": 384,
+            "height": 304,
+            "crop": "disabled"
+          }
+        },
+        "34": {
+          "class_type": "VAEEncode",
+          "inputs": {
+            "pixels": [
+              "33",
+              0
+            ],
+            "vae": [
+              "31",
+              0
+            ]
+          }
+        },
+        "35": {
+          "class_type": "ReferenceLatent",
+          "inputs": {
+            "conditioning": [
+              "2",
+              0
+            ],
+            "latent": [
+              "34",
+              0
+            ]
+          }
+        },
+        "36": {
+          "class_type": "RandomNoise",
+          "inputs": {
+            "noise_seed": 1211107
+          }
+        },
+        "37": {
+          "class_type": "BasicGuider",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "conditioning": [
+              "35",
+              0
+            ]
+          }
+        }
+      },
+      "prompt_id": "486c6c22-6a3d-4def-9fab-dbcb60e370ea",
+      "server_image": {
+        "filename": "klein_ref_00060_.png",
+        "subfolder": "Thai02\\Style3",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "66d50672-2ded-4a40-9732-44092629765e"
+      },
+      "selection": {
+        "group": "child",
+        "product": "bags",
+        "color1": "green",
+        "color2": "white",
+        "primary_hex": "#B7DBA9",
+        "secondary_hex": "#FFFFFF",
+        "profile": "quality",
+        "seed": 1211107,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "one small bear-shaped kindergarten backpack with rounded bear ears and a front pocket. Main color #B7DBA9 (light pastel green) on backpack body. Accent color #FFFFFF (white) on bear ears and front pocket. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, writing, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render."
+      }
+    },
+    {
+      "tag": "tops_student_white_black",
+      "seconds": 2.78,
+      "stages": [
+        {
+          "node": "2",
+          "seconds": 0.128
+        },
+        {
+          "node": "35",
+          "seconds": 0.846
+        },
+        {
+          "node": "37",
+          "seconds": 0.847
+        },
+        {
+          "node": "36",
+          "seconds": 0.848
+        },
+        {
+          "node": "5",
+          "seconds": 0.848
+        },
+        {
+          "node": "6",
+          "seconds": 2.12
+        },
+        {
+          "node": "21",
+          "seconds": 2.301
+        },
+        {
+          "node": "22",
+          "seconds": 2.747
+        },
+        {
+          "node": "23",
+          "seconds": 2.749
+        },
+        {
+          "node": "8",
+          "seconds": 2.752
+        },
+        {
+          "node": "7",
+          "seconds": 2.753
+        },
+        {
+          "node": null,
+          "seconds": 2.776
+        }
+      ],
+      "api": {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "flux-2-klein-4b-fp8.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPTextEncode",
+          "inputs": {
+            "text": "one pullover hoodie with a front pocket, complete hood and sleeves, centered. Main color #FFFFFF (white) on body. Accent color #171619 (near-black) on hood and sleeves. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, writing, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render.",
+            "clip": [
+              "30",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Positive product conditioning"
+          }
+        },
+        "4": {
+          "class_type": "EmptyFlux2LatentImage",
+          "inputs": {
+            "width": 640,
+            "height": 640,
+            "batch_size": 1
+          }
+        },
+        "5": {
+          "class_type": "SamplerCustomAdvanced",
+          "inputs": {
+            "noise": [
+              "36",
+              0
+            ],
+            "guider": [
+              "37",
+              0
+            ],
+            "sampler": [
+              "28",
+              0
+            ],
+            "sigmas": [
+              "29",
+              0
+            ],
+            "latent_image": [
+              "4",
+              0
+            ]
+          }
+        },
+        "6": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "5",
+              0
+            ],
+            "vae": [
+              "31",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Decode final image"
+          }
+        },
+        "7": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "8",
+              0
+            ],
+            "filename_prefix": "Thai02/Style3/klein_ref"
+          },
+          "_meta": {
+            "title": "Final 480 x 480 RGBA PNG"
+          }
+        },
+        "8": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "23",
+              0
+            ],
+            "upscale_method": "area",
+            "width": 480,
+            "height": 480,
+            "crop": "disabled"
+          },
+          "_meta": {
+            "title": "Downsample RGBA to 480 x 480"
+          }
+        },
+        "10": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "simple sporty design"
+          },
+          "_meta": {
+            "title": "INPUT 1 / audience: student"
+          }
+        },
+        "11": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "simple flat illustration of one pullover hoodie with a front pocket, complete hood and sleeves, centered"
+          },
+          "_meta": {
+            "title": "INPUT 2 / product: tops"
+          }
+        },
+        "12": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "white body"
+          },
+          "_meta": {
+            "title": "INPUT 3 / primary: white",
+            "color_reference": "#FFFFFF RGB(255, 255, 255)"
+          }
+        },
+        "13": {
+          "class_type": "PrimitiveString",
+          "inputs": {
+            "value": "near-black hood and sleeves"
+          },
+          "_meta": {
+            "title": "INPUT 4 / accent: black",
+            "color_reference": "#171619 RGB(23, 22, 25)"
+          }
+        },
+        "14": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "11",
+              0
+            ],
+            "string_b": [
+              "15",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product + colors"
+          }
+        },
+        "15": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "12",
+              0
+            ],
+            "string_b": [
+              "13",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product-specific color parts"
+          }
+        },
+        "16": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "14",
+              0
+            ],
+            "string_b": [
+              "10",
+              0
+            ],
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Combine four choices"
+          }
+        },
+        "17": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "16",
+              0
+            ],
+            "string_b": "simple soft shaded illustration",
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Product first, then illustration style"
+          }
+        },
+        "18": {
+          "class_type": "StringConcatenate",
+          "inputs": {
+            "string_a": [
+              "17",
+              0
+            ],
+            "string_b": "one isolated item, plain white background, full view, centered with empty margins",
+            "delimiter": ", "
+          },
+          "_meta": {
+            "title": "Fixed product composition"
+          }
+        },
+        "20": {
+          "class_type": "LoadBackgroundRemovalModel",
+          "inputs": {
+            "bg_removal_name": "birefnet.safetensors"
+          },
+          "_meta": {
+            "title": "BiRefNet foreground segmentation"
+          }
+        },
+        "21": {
+          "class_type": "RemoveBackground",
+          "inputs": {
+            "bg_removal_model": [
+              "20",
+              0
+            ],
+            "image": [
+              "6",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Foreground mask at native resolution"
+          }
+        },
+        "22": {
+          "class_type": "InvertMask",
+          "inputs": {
+            "mask": [
+              "21",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Foreground to Comfy alpha convention"
+          }
+        },
+        "23": {
+          "class_type": "JoinImageWithAlpha",
+          "inputs": {
+            "image": [
+              "6",
+              0
+            ],
+            "alpha": [
+              "22",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Apply actual alpha (not painted transparency)"
+          }
+        },
+        "28": {
+          "class_type": "KSamplerSelect",
+          "inputs": {
+            "sampler_name": "euler"
+          }
+        },
+        "29": {
+          "class_type": "Flux2Scheduler",
+          "inputs": {
+            "steps": 4,
+            "width": 640,
+            "height": 640
+          }
+        },
+        "30": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "qwen_3_4b.safetensors",
+            "type": "flux2",
+            "device": "default"
+          }
+        },
+        "31": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "flux2-klein-vae-bf16.safetensors"
+          }
+        },
+        "32": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "Thai02Style3/style_user_fa1ec41434dabe24.png"
+          }
+        },
+        "33": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "32",
+              0
+            ],
+            "upscale_method": "lanczos",
+            "width": 384,
+            "height": 304,
+            "crop": "disabled"
+          }
+        },
+        "34": {
+          "class_type": "VAEEncode",
+          "inputs": {
+            "pixels": [
+              "33",
+              0
+            ],
+            "vae": [
+              "31",
+              0
+            ]
+          }
+        },
+        "35": {
+          "class_type": "ReferenceLatent",
+          "inputs": {
+            "conditioning": [
+              "2",
+              0
+            ],
+            "latent": [
+              "34",
+              0
+            ]
+          }
+        },
+        "36": {
+          "class_type": "RandomNoise",
+          "inputs": {
+            "noise_seed": 1211108
+          }
+        },
+        "37": {
+          "class_type": "BasicGuider",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "conditioning": [
+              "35",
+              0
+            ]
+          }
+        }
+      },
+      "prompt_id": "94aa42d7-de18-4895-b86a-47b27976ac59",
+      "server_image": {
+        "filename": "klein_ref_00061_.png",
+        "subfolder": "Thai02\\Style3",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "06bb08f6-9454-4d03-87cb-c6d82815cc4f"
+      },
+      "selection": {
+        "group": "student",
+        "product": "tops",
+        "color1": "white",
+        "color2": "black",
+        "primary_hex": "#FFFFFF",
+        "secondary_hex": "#171619",
+        "profile": "quality",
+        "seed": 1211108,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tops",
+        "alpha": true,
+        "positive_prompt": "one pullover hoodie with a front pocket, complete hood and sleeves, centered. Main color #FFFFFF (white) on body. Accent color #171619 (near-black) on hood and sleeves. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, writing, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render."
+      }
+    }
+  ],
+  "completed": true
+}

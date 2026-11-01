@@ -1,0 +1,173 @@
+{
+  "entries": [
+    {
+      "language": "th",
+      "id": "idle.subtitle",
+      "renderedGuideRmse": 4.9052,
+      "fractionOver40": 0.00636,
+      "sourceInstalledExactly": true
+    },
+    {
+      "language": "th",
+      "id": "idle.title",
+      "renderedGuideRmse": 0.959,
+      "fractionOver40": 0.0,
+      "sourceInstalledExactly": true
+    },
+    {
+      "language": "th",
+      "id": "idle.help",
+      "renderedGuideRmse": 5.3004,
+      "fractionOver40": 0.01027,
+      "sourceInstalledExactly": true
+    },
+    {
+      "language": "th",
+      "id": "group.help",
+      "renderedGuideRmse": 9.948,
+      "fractionOver40": 0.03203,
+      "sourceInstalledExactly": true
+    },
+    {
+      "language": "th",
+      "id": "group.subtitle",
+      "renderedGuideRmse": 7.5338,
+      "fractionOver40": 0.02093,
+      "sourceInstalledExactly": true
+    },
+    {
+      "language": "th",
+      "id": "group.title",
+      "renderedGuideRmse": 8.5315,
+      "fractionOver40": 0.02423,
+      "sourceInstalledExactly": true
+    },
+    {
+      "language": "th",
+      "id": "selection.help",
+      "renderedGuideRmse": 10.1407,
+      "fractionOver40": 0.03253,
+      "sourceInstalledExactly": true
+    },
+    {
+      "language": "th",
+      "id": "selection.subtitle",
+      "renderedGuideRmse": 5.8128,
+      "fractionOver40": 0.01486,
+      "sourceInstalledExactly": true
+    },
+    {
+      "language": "th",
+      "id": "selection.title",
+      "renderedGuideRmse": 6.3536,
+      "fractionOver40": 0.02133,
+      "sourceInstalledExactly": true
+    },
+    {
+      "language": "th",
+      "id": "result.help",
+      "renderedGuideRmse": 9.8558,
+      "fractionOver40": 0.03186,
+      "sourceInstalledExactly": true
+    },
+    {
+      "language": "th",
+      "id": "result.subtitle",
+      "renderedGuideRmse": 4.7203,
+      "fractionOver40": 0.00089,
+      "sourceInstalledExactly": true
+    },
+    {
+      "language": "th",
+      "id": "result.title",
+      "renderedGuideRmse": 3.9208,
+      "fractionOver40": 0.0055,
+      "sourceInstalledExactly": true
+    },
+    {
+      "language": "en",
+      "id": "idle.subtitle",
+      "renderedGuideRmse": 3.1265,
+      "fractionOver40": 0.00025,
+      "sourceInstalledExactly": true
+    },
+    {
+      "language": "en",
+      "id": "idle.title",
+      "renderedGuideRmse": 0.0356,
+      "fractionOver40": 0.0,
+      "sourceInstalledExactly": true
+    },
+    {
+      "language": "en",
+      "id": "idle.help",
+      "renderedGuideRmse": 5.679,
+      "fractionOver40": 0.01188,
+      "sourceInstalledExactly": true
+    },
+    {
+      "language": "en",
+      "id": "group.help",
+      "renderedGuideRmse": 1.6239,
+      "fractionOver40": 0.00041,
+      "sourceInstalledExactly": true
+    },
+    {
+      "language": "en",
+      "id": "group.subtitle",
+      "renderedGuideRmse": 5.4277,
+      "fractionOver40": 0.01409,
+      "sourceInstalledExactly": true
+    },
+    {
+      "language": "en",
+      "id": "group.title",
+      "renderedGuideRmse": 7.4998,
+      "fractionOver40": 0.02062,
+      "sourceInstalledExactly": true
+    },
+    {
+      "language": "en",
+      "id": "selection.help",
+      "renderedGuideRmse": 1.6224,
+      "fractionOver40": 0.00041,
+      "sourceInstalledExactly": true
+    },
+    {
+      "language": "en",
+      "id": "selection.subtitle",
+      "renderedGuideRmse": 5.5006,
+      "fractionOver40": 0.01292,
+      "sourceInstalledExactly": true
+    },
+    {
+      "language": "en",
+      "id": "selection.title",
+      "renderedGuideRmse": 3.6003,
+      "fractionOver40": 0.00769,
+      "sourceInstalledExactly": true
+    },
+    {
+      "language": "en",
+      "id": "result.help",
+      "renderedGuideRmse": 9.0363,
+      "fractionOver40": 0.02699,
+      "sourceInstalledExactly": true
+    },
+    {
+      "language": "en",
+      "id": "result.subtitle",
+      "renderedGuideRmse": 3.8416,
+      "fractionOver40": 0.00159,
+      "sourceInstalledExactly": true
+    },
+    {
+      "language": "en",
+      "id": "result.title",
+      "renderedGuideRmse": 2.2611,
+      "fractionOver40": 0.00211,
+      "sourceInstalledExactly": true
+    }
+  ],
+  "status": "PASS"
+}

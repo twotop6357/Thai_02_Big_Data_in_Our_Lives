@@ -1,0 +1,17 @@
+{
+  "size": [
+    480,
+    480
+  ],
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "transparent_pixels": 154591,
+  "solid_pixels": 73379,
+  "corners": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "passed": true
+}

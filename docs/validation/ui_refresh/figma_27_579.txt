@@ -1,0 +1,76 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/b99e9e23-0605-40a4-9673-16d352c7bb51";
+const imgE02S04 = `${assetPathPrefix}/bfb92.png`;
+const imgThaiNationalScienceMuseumLogo21 = `${assetPathPrefix}/fe099.png`;
+const img1 = `${assetPathPrefix}/2e5f0.png`;
+const imgEllipse53 = `${assetPathPrefix}/7d448.svg`;
+const imgGroup28 = `${assetPathPrefix}/68a0b.svg`;
+const imgLine29 = `${assetPathPrefix}/919e2.svg`;
+
+export default function E02S04() {
+  return (
+    <div className="relative size-full" data-node-id="27:579" data-name="E02-S04. 맞춤형 추천 광고 결과">
+      <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgE02S04} />
+      <div className="absolute h-[467px] left-[630px] top-[896px] w-[1513px]" data-node-id="27:580">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse53} />
+      </div>
+      <div className="absolute h-[116px] right-[39.72px] top-[40px] w-[134.283px]" data-node-id="27:581" data-name="Thai_National_Science_Museum_logo_2 1">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-[100.18%] left-0 max-w-none top-[-0.09%] w-[91.08%]" src={imgThaiNationalScienceMuseumLogo21} />
+        </div>
+      </div>
+      <div className="-translate-x-1/2 absolute bg-white bottom-[40px] content-stretch drop-shadow-[6px_6px_3px_rgba(50,120,197,0.3)] flex gap-[20px] items-center justify-center left-[calc(50%+0.5px)] pb-[16px] pt-[12px] px-[32px] rounded-[95px]" data-node-id="27:582" data-name="버튼 안내문구 3">
+        <div className="relative shrink-0 size-[92px]" data-node-id="I27:582;414:462" data-name="광택 레드 원형 푸시 버튼 스티커 1">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img1} />
+        </div>
+        <div className="absolute flex h-[49.402px] items-center justify-center left-0 top-[-2px] w-[46.863px]" data-node-id="I27:582;414:503">
+          <div className="flex-none rotate-[-1.48deg]">
+            <div className="h-[48.241px] relative w-[45.634px]">
+              <div className="absolute inset-[-7%_-7.06%_0_-0.8%]">
+                <img alt="" className="block max-w-none size-full" src={imgGroup28} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col gap-[10px] items-center justify-center relative shrink-0" data-node-id="I27:582;779:4768">
+          <p className="[word-break:break-word] font-['Futura_100_THA:Medium'] leading-[50px] not-italic relative shrink-0 text-[#65b7d5] text-[34px] whitespace-nowrap" data-node-id="I27:582;414:464">
+            กดปุ่มสีแดงด้านล่างเพื่อเรียนรู้วิธีการทำงาน
+          </p>
+          <div className="h-0 relative shrink-0 w-full" data-node-id="I27:582;779:5163">
+            <div className="absolute inset-[-1px_0_0_0]">
+              <img alt="" className="block max-w-none size-full" src={imgLine29} />
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[6px] items-center relative shrink-0" data-node-id="I27:582;779:4459">
+            <div className="bg-[#3278c5] content-stretch flex items-center justify-center px-[12px] py-[2px] relative rounded-[33px] shrink-0" data-node-id="I27:582;779:4460">
+              <p className="[word-break:break-word] font-['Futura_100_THA:Regular'] leading-[34px] not-italic relative shrink-0 text-[24px] text-white whitespace-nowrap" data-node-id="I27:582;779:4461">
+                กดค้างไว้5วินาที
+              </p>
+            </div>
+            <p className="[word-break:break-word] font-['Futura_100_THA:Regular'] leading-[34px] not-italic relative shrink-0 text-[#3278c5] text-[24px] whitespace-nowrap" data-node-id="I27:582;779:4462">
+              → หน้าหลัก
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="-translate-x-1/2 absolute bg-[#6dccf7] blur-[60px] h-[163px] left-1/2 opacity-80 top-[64px] w-[1388px]" data-node-id="27:583" />
+      <p className="[word-break:break-word] absolute font-['Berlin_Sans_FB_Demi:Bold'] leading-[0] left-[calc(50%-645px)] not-italic text-[#ff8cae] text-[0px] top-[77px] tracking-[-1.1px] whitespace-nowrap" data-node-id="27:584">
+        <span className="font-['Futura_100_THA:Bold'] leading-[126px] text-[110px] text-white">มำดูกันว่ำ</span>
+        <span className="font-['Futura_100_THA:Bold'] leading-[126px] text-[110px]">อะไรเหมำะกับคุณ!</span>
+      </p>
+      <p className="[word-break:break-word] absolute font-['Noto_Sans_Thai:Medium'] font-medium leading-[64px] left-[calc(50%-423px)] text-[48px] text-white top-[223px] whitespace-nowrap" data-node-id="27:585" style={{ fontVariationSettings: '"wdth" 100' }}>
+        นี ่คือโฆษณำที ่สร้ำงขึ ้นจำกตัวเลือกของคุณ!
+      </p>
+      <div className="-translate-x-1/2 absolute bg-[rgba(255,255,255,0.7)] border-12 border-solid border-white h-[537px] left-1/2 rounded-[58px] top-[320px] w-[998px]" data-node-id="27:586" />
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: GrayScale/4: #FFFFFF, Primary/Number 2: #65B7D5, Primary/Number 1: #3278C5.
+The generated code contains image and SVG URL constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

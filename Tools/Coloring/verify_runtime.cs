@@ -1,6 +1,7 @@
-// Execute as a method body through Unity MCP while playing from 0_Idle.
+// Execute as a method body through Unity MCP while playing from a fresh Thai 0_Idle.
+// UI-LANG-001: title hold toggles language; the first Game tap advances the group step.
 // SessionState guard prevents an MCP retry from starting duplicate asynchronous checks.
-const string key = "COLOR-001-runtime-v2";
+const string key = "RFID-BLOCKS-001-color-regression";
 if (UnityEditor.SessionState.GetString(key, "") == "running") return "Already running";
 UnityEditor.SessionState.SetString(key, "running");
 Cysharp.Threading.Tasks.UniTask.Void(async () =>
@@ -29,16 +30,22 @@ Cysharp.Threading.Tasks.UniTask.Void(async () =>
     HuliacDev.Core.InactivityTimer timer = null;
     Core.KeyboardButtonSimulator simulator = null;
     bool simulatorWasEnabled = false;
+    async Cysharp.Threading.Tasks.UniTask Tap()
+    {
+        await Wait(() => !manager.IsTransitioning && !manager.IsPresentationLocked);
+        manager.SetButtonPressed(false); await Frames(3);
+        manager.SetButtonPressed(true); await Frames(3); manager.SetButtonPressed(false); await Frames(3);
+    }
     try
     {
         manager = UnityEngine.Object.FindFirstObjectByType<Core.GameManager>();
         timer = UnityEngine.Object.FindFirstObjectByType<HuliacDev.Core.InactivityTimer>();
-        await Wait(() => manager && manager.IsInputReady);
+        await Wait(() => manager && manager.IsInputReady && !manager.IsPresentationLocked);
         simulator = UnityEngine.Object.FindFirstObjectByType<Core.KeyboardButtonSimulator>();
         simulatorWasEnabled = simulator && simulator.enabled;
         if (simulator) simulator.enabled = false;
         await Frames(2);
-        manager.SetButtonPressed(true); await Frames(3); manager.SetButtonPressed(false);
+        await Tap();
         await Wait(() => UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "1_Game" && !manager.IsTransitioning);
         var controller = UnityEngine.Object.FindFirstObjectByType<Exhibition.Blocks.BlockExperienceController>();
         await Wait(() => controller && controller.IsReady);
@@ -84,13 +91,14 @@ Cysharp.Threading.Tasks.UniTask.Void(async () =>
         Check(!manager.ResultTexture && !controller.Selection.Complete && !controller.IsGenerating, "Screen disable cancels and clears selection");
         controller.enabled = true; await Wait(() => controller.IsReady);
         controller.RecognizeBlock(Exhibition.Blocks.BlockSlot.Group, "working_adult");
-        controller.RecognizeBlock(Exhibition.Blocks.BlockSlot.Product, "equipment");
+        await Tap();
+        controller.RecognizeBlock(Exhibition.Blocks.BlockSlot.Product, "umbrellas");
         controller.RecognizeBlock(Exhibition.Blocks.BlockSlot.Color1, "black");
         controller.RecognizeBlock(Exhibition.Blocks.BlockSlot.Color2, "white");
         await Wait(() => !controller.IsGenerating);
-        Check(manager.ResultTexture && manager.ResultTexture.name.Contains("keyboards"), "Age-dependent Equipment template");
+        Check(manager.ResultTexture && manager.ResultTexture.name.Contains("umbrellas"), "Age-dependent supported product template");
         var ready = manager.ResultTexture;
-        await Frames(3); manager.SetButtonPressed(true); await Frames(3); manager.SetButtonPressed(false);
+        await Frames(3); await Tap();
         await Wait(() => UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "2_Result" && !manager.IsTransitioning);
         await Frames(3);
         var presenter = UnityEngine.Object.FindFirstObjectByType<Exhibition.Result.ResultImagePresenter>();
@@ -102,8 +110,14 @@ Cysharp.Threading.Tasks.UniTask.Void(async () =>
         await Frames(3);
         Check(!ready && !manager.ResultTexture && !manager.HasLanguageSelection, "Idle releases image and language selection");
         Check(timer && !timer.IsPaused, "Inactivity timer remains active");
-        manager.SetButtonPressed(true); await Frames(3); manager.SetButtonPressed(false); await Frames(2);
-        manager.SetButtonPressed(true); await Frames(3); manager.SetButtonPressed(false);
+        var ui = UnityEngine.Object.FindFirstObjectByType<Exhibition.UI.LocalizedImageSet>();
+        await Wait(() => ui && ui.IsReady);
+        await Wait(() => !manager.IsPresentationLocked);
+        manager.SetButtonPressed(true); await Frames(3);
+        await Cysharp.Threading.Tasks.UniTask.Delay(System.TimeSpan.FromSeconds(2.1), Cysharp.Threading.Tasks.DelayType.UnscaledDeltaTime, cancellationToken: token);
+        manager.SetButtonPressed(false); await Wait(() => !manager.IsLanguageChanging);
+        await Frames(3);
+        await Tap();
         await Wait(() => UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "1_Game" && !manager.IsTransitioning);
         controller = UnityEngine.Object.FindFirstObjectByType<Exhibition.Blocks.BlockExperienceController>();
         await Wait(() => controller && controller.IsReady);
@@ -133,7 +147,7 @@ Cysharp.Threading.Tasks.UniTask.Void(async () =>
         if (simulator) simulator.enabled = simulatorWasEnabled;
         string json = report.ToString();
         System.IO.Directory.CreateDirectory("docs/validation");
-        System.IO.File.WriteAllText("docs/validation/coloring_runtime.json", json);
+        System.IO.File.WriteAllText("docs/validation/ui/rfid_color_regression.json", json);
         UnityEditor.SessionState.SetString(key, json);
     }
 });

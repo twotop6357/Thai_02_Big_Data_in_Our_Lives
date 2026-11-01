@@ -1,0 +1,328 @@
+{
+  "actualUnity": "2022.3.62f3",
+  "strictRequireComplete": true,
+  "passed": 80,
+  "total": 80,
+  "checks": [
+    {
+      "file": "bags_child_red_blue_1211201.png",
+      "passed": true
+    },
+    {
+      "file": "shoes_child_red_blue_1211202.png",
+      "passed": true
+    },
+    {
+      "file": "hats_child_red_blue_1211203.png",
+      "passed": true
+    },
+    {
+      "file": "sunglasses_child_red_blue_1211204.png",
+      "passed": true
+    },
+    {
+      "file": "headphones_child_red_blue_1211205.png",
+      "passed": true
+    },
+    {
+      "file": "tops_child_red_blue_1211206.png",
+      "passed": true
+    },
+    {
+      "file": "bicycles_child_red_blue_1211207.png",
+      "passed": true
+    },
+    {
+      "file": "tumblers_child_red_blue_1211208.png",
+      "passed": true
+    },
+    {
+      "file": "wristwatches_child_red_blue_1211209.png",
+      "passed": true
+    },
+    {
+      "file": "umbrellas_child_red_blue_1211210.png",
+      "passed": true
+    },
+    {
+      "file": "bags_student_red_blue_1211211.png",
+      "passed": true
+    },
+    {
+      "file": "shoes_student_red_blue_1211212.png",
+      "passed": true
+    },
+    {
+      "file": "hats_student_red_blue_1211213.png",
+      "passed": true
+    },
+    {
+      "file": "sunglasses_student_red_blue_1211214.png",
+      "passed": true
+    },
+    {
+      "file": "headphones_student_red_blue_1211215.png",
+      "passed": true
+    },
+    {
+      "file": "tops_student_red_blue_1211216.png",
+      "passed": true
+    },
+    {
+      "file": "bicycles_student_red_blue_1211217.png",
+      "passed": true
+    },
+    {
+      "file": "tumblers_student_red_blue_1211218.png",
+      "passed": true
+    },
+    {
+      "file": "wristwatches_student_red_blue_1211219.png",
+      "passed": true
+    },
+    {
+      "file": "umbrellas_student_red_blue_1211220.png",
+      "passed": true
+    },
+    {
+      "file": "bags_working_adult_red_blue_1211221.png",
+      "passed": true
+    },
+    {
+      "file": "shoes_working_adult_red_blue_1211222.png",
+      "passed": true
+    },
+    {
+      "file": "hats_working_adult_red_blue_1211223.png",
+      "passed": true
+    },
+    {
+      "file": "sunglasses_working_adult_red_blue_1211224.png",
+      "passed": true
+    },
+    {
+      "file": "headphones_working_adult_red_blue_1211225.png",
+      "passed": true
+    },
+    {
+      "file": "tops_working_adult_red_blue_1211226.png",
+      "passed": true
+    },
+    {
+      "file": "bicycles_working_adult_red_blue_1211227.png",
+      "passed": true
+    },
+    {
+      "file": "tumblers_working_adult_red_blue_1211228.png",
+      "passed": true
+    },
+    {
+      "file": "wristwatches_working_adult_red_blue_1211229.png",
+      "passed": true
+    },
+    {
+      "file": "umbrellas_working_adult_red_blue_1211230.png",
+      "passed": true
+    },
+    {
+      "file": "bags_senior_red_blue_1211231.png",
+      "passed": true
+    },
+    {
+      "file": "shoes_senior_red_blue_1211232.png",
+      "passed": true
+    },
+    {
+      "file": "hats_senior_red_blue_1211233.png",
+      "passed": true
+    },
+    {
+      "file": "sunglasses_senior_red_blue_1211234.png",
+      "passed": true
+    },
+    {
+      "file": "headphones_senior_red_blue_1211235.png",
+      "passed": true
+    },
+    {
+      "file": "tops_senior_red_blue_1211236.png",
+      "passed": true
+    },
+    {
+      "file": "bicycles_senior_red_blue_1211237.png",
+      "passed": true
+    },
+    {
+      "file": "tumblers_senior_red_blue_1211238.png",
+      "passed": true
+    },
+    {
+      "file": "wristwatches_senior_red_blue_1211239.png",
+      "passed": true
+    },
+    {
+      "file": "umbrellas_senior_red_blue_1211240.png",
+      "passed": true
+    },
+    {
+      "file": "bags_child_green_white_1211301.png",
+      "passed": true
+    },
+    {
+      "file": "shoes_child_yellow_black_1211302.png",
+      "passed": true
+    },
+    {
+      "file": "hats_child_blue_white_1211303.png",
+      "passed": true
+    },
+    {
+      "file": "sunglasses_child_black_yellow_1211304.png",
+      "passed": true
+    },
+    {
+      "file": "headphones_child_white_black_1211305.png",
+      "passed": true
+    },
+    {
+      "file": "tops_child_red_green_1211306.png",
+      "passed": true
+    },
+    {
+      "file": "bicycles_child_green_white_1211307.png",
+      "passed": true
+    },
+    {
+      "file": "tumblers_child_yellow_black_1211308.png",
+      "passed": true
+    },
+    {
+      "file": "wristwatches_child_blue_white_1211309.png",
+      "passed": true
+    },
+    {
+      "file": "umbrellas_child_black_yellow_1211310.png",
+      "passed": true
+    },
+    {
+      "file": "bags_student_yellow_black_1211311.png",
+      "passed": true
+    },
+    {
+      "file": "shoes_student_blue_white_1211312.png",
+      "passed": true
+    },
+    {
+      "file": "hats_student_black_yellow_1211313.png",
+      "passed": true
+    },
+    {
+      "file": "sunglasses_student_white_black_1211314.png",
+      "passed": true
+    },
+    {
+      "file": "headphones_student_red_green_1211315.png",
+      "passed": true
+    },
+    {
+      "file": "tops_student_green_white_1211316.png",
+      "passed": true
+    },
+    {
+      "file": "bicycles_student_yellow_black_1211317.png",
+      "passed": true
+    },
+    {
+      "file": "tumblers_student_blue_white_1211318.png",
+      "passed": true
+    },
+    {
+      "file": "wristwatches_student_black_yellow_1211319.png",
+      "passed": true
+    },
+    {
+      "file": "umbrellas_student_white_black_1211320.png",
+      "passed": true
+    },
+    {
+      "file": "bags_working_adult_blue_white_1211321.png",
+      "passed": true
+    },
+    {
+      "file": "shoes_working_adult_black_yellow_1211322.png",
+      "passed": true
+    },
+    {
+      "file": "hats_working_adult_white_black_1211323.png",
+      "passed": true
+    },
+    {
+      "file": "sunglasses_working_adult_red_green_1211324.png",
+      "passed": true
+    },
+    {
+      "file": "headphones_working_adult_green_white_1211325.png",
+      "passed": true
+    },
+    {
+      "file": "tops_working_adult_yellow_black_1211326.png",
+      "passed": true
+    },
+    {
+      "file": "bicycles_working_adult_blue_white_1211327.png",
+      "passed": true
+    },
+    {
+      "file": "tumblers_working_adult_black_yellow_1211328.png",
+      "passed": true
+    },
+    {
+      "file": "wristwatches_working_adult_white_black_1211329.png",
+      "passed": true
+    },
+    {
+      "file": "umbrellas_working_adult_red_green_1211330.png",
+      "passed": true
+    },
+    {
+      "file": "bags_senior_black_yellow_1211331.png",
+      "passed": true
+    },
+    {
+      "file": "shoes_senior_white_black_1211332.png",
+      "passed": true
+    },
+    {
+      "file": "hats_senior_red_green_1211333.png",
+      "passed": true
+    },
+    {
+      "file": "sunglasses_senior_green_white_1211334.png",
+      "passed": true
+    },
+    {
+      "file": "headphones_senior_yellow_black_1211335.png",
+      "passed": true
+    },
+    {
+      "file": "tops_senior_blue_white_1211336.png",
+      "passed": true
+    },
+    {
+      "file": "bicycles_senior_black_yellow_1211337.png",
+      "passed": true
+    },
+    {
+      "file": "tumblers_senior_white_black_1211338.png",
+      "passed": true
+    },
+    {
+      "file": "wristwatches_senior_red_green_1211339.png",
+      "passed": true
+    },
+    {
+      "file": "umbrellas_senior_green_white_1211340.png",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "csharp_offline_compiled": true,
+  "unity_editor_validation": false,
+  "unity_connector_error": "Transport closed",
+  "csharp_python_prompt_parity_combinations": 1440,
+  "rejection_paths": 6,
+  "python_tests": 8,
+  "model": "SDXL-Turbo",
+  "steps": 4,
+  "internal_size": [
+    512,
+    512
+  ],
+  "notes": "Actual production C# compiled by Add-Type; Unity color parsing only uses a hex test shim. Not a fresh Unity Editor compile or Play run."
+}

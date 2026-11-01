@@ -1,14 +1,94 @@
-# 보관 문서 — ComfyUI 연동 종료 (2026-10-22)
+# 현재: 레퍼런스 기반 귀여운 2D 일러스트 / STYLE-QUALITY-003 (2026-11-01)
 
-**이 문서는 과거 구현/검증 기록이다. 현재 설치 지침으로 사용하지 않는다.** 앱의 ComfyUI 자동실행·서버 검사·이미지 생성·다운로드·가이드 업로드·출력 자동삭제를 제거했다. 신규 생성 방식은 아직 연결되지 않았다. 현재 사용법은 [BLOCK_SIMULATOR](BLOCK_SIMULATOR.md)를 따른다.
+현재 기본값은 **FLUX.2 Klein 4B FP8 · 640×640 · 4단계 · Euler/Flux2Scheduler · 단일 생성**이다. 이전 범용 SDXL-Turbo의 제품 사진/거친 선 혼입을 줄이기 위해 사용자가 제공한 작은 신발 일러스트의 그림체를 직접 참고한다. [실제 비교/검수](validation/comfy_style3/README.md)를 기준으로 한다. 모델을 교체했으므로 과거 Turbo의3060 5~12초 추정은 새 경로의 실측 근거가 아니다.
 
-기존 런타임 전용 파일과 메타는 `Tools/ComfyUI/legacy_runtime/Assets`에 보관하며 Unity 실행/빌드 대상에서 제외했다. 외부 설치본·모델·기존 생성물은 변경하지 않았다. 아래 가이드/StreamingAssets 경로와 모델/성능 검증은 이전 구현 기준이다.
+## 생성과 색·연령
+
+- 블록에서 인식한 4연령/10물건/6색을 사용한다. 제품별 ageVariants로 종류·형태와 색 부위를 선택한다. 유치원모자/비니/볼캡/중절모 등 기존 연령 구분은 유지하며 로퍼에 끈이 그려지는 혼동과 잘못된 이어폰 형태는 명시적인 설명으로 수정했다.
+- 언어 인코더에 실제 색 블록 원의 HEX와 대응 색 이름·부위를 함께 전달한다. 원 RGB/두 선택은 저널에도 보존한다. 모델이 명암/악센트를 그리므로 모든 픽셀을 지정 RGB로 고정한다는 뜻은 아니다.
+- 원본 스타일 PNG는 StyleReferences에 해시 이름으로 포함한다. 서버의 같은 이름 파일이 다르면 덮어쓰지 않고 실패한다. 원본을 회색 입력으로 전처리해 레퍼런스의 분홍/파랑을 선택 색으로 잘못 복제하는 영향을 줄인다. ReferenceLatent는 그림체를 전달하고 새 물건을 그린다. 물건 블록의 윤곽을 강제로 따라 그리거나 기존 가이드에 색만 입히는 경로가 아니다.
+- Qwen3 4B 텍스트 → 원본 스타일 조건 → Klein4단계 → VAE → BiRefNet → 실제 알파480RGBA → 앱의 원본 검사/중앙보정. CFG1에는 negative prompt 효과가 없고 스타일은 양성 설명과 참조 조건으로 지정한다. 노드5는 SamplerCustomAdvanced, 실제 시드는 RandomNoise 노드36이다. Controller가 노드5에 잘못된seed/positive/negative를 추가하지 않는다.
+- quality/balanced/fast 모두 검수한4단계를 사용한다. 불필요한 두 번째 생성/후처리 모델/ControlNet/가이드형태제어/외부 유료 API/커스텀노드 추가는 없다.
+
+## 잘린 결과 처리와 수명
+
+다운로드 원본에 알파64이상 물건이3px 가장자리까지 닿거나, 주 전경의8%를 넘는 큰 분리 부품이 있거나, 가시 영역이 너무 희미하면 표시 전에 거부한다. 이미 잘린 물건을 축소/중앙배치로 감추지 않는다. 실패 후에는 입력/타이머를 복구하고 새 버튼 입력으로 재시도한다. 이 검사는 경계/분리/빈 이미지 검사이며 모든 의미적 구조나 미술 스타일을 판별하는 AI 검수기가 아니다.
+
+허용된 원본은480×480 중심(240,240), 최소24px 투명 여백, 종횡비 유지로 배치한다. 생성·다운로드·검사 완료까지 선택 패널의 모든 버튼과5초 유지 입력을 잠그며 실패/취소/복귀/기한 초과 시 복구한다. 원본 서버PNG와 사용자 블록 아트/씬은 보존한다.
+
+## 설치·실행
+
+ComfyUI0.42.0의 기존 기본 노드로 검증한다. 설치 폴더/패키지를 임의 업데이트하지 않는다. 모델은 model.json, text_encoder.json, vae.json, background_model.json의 고정revision/바이트/SHA로 확인한다. 새 PC에는 다음을 실행한다.
+
+```powershell
+$modelsRoot = "$env:LOCALAPPDATA\Comfy-Desktop\ComfyUI-Shared\models"
+python Tools/ComfyUI/download_model.py --manifest Tools/ComfyUI/model.json --models-dir "$modelsRoot\diffusion_models"
+python Tools/ComfyUI/download_model.py --manifest Tools/ComfyUI/text_encoder.json --models-dir "$modelsRoot\text_encoders"
+python Tools/ComfyUI/download_model.py --manifest Tools/ComfyUI/vae.json --models-dir "$modelsRoot\vae"
+python Tools/ComfyUI/download_model.py --manifest Tools/ComfyUI/background_model.json --models-dir "$modelsRoot\background_removal"
+python Tools/ComfyUI/build_workflow.py --output-dir Tools/ComfyUI/workflows
+Copy-Item Tools/ComfyUI/workflows/product_480.api.json Assets/StreamingAssets/BlockGeneration/product_480.api.json
+```
+
+앱과benchmark.py는 포함된 스타일 참조를 검사/자동 업로드한다. 수동 API 시험은 `python Tools/ComfyUI/prepare_style_reference.py`를 먼저 실행한다. 기본 그래프와카탈로그는 다음Game 진입에 다시 읽는다. 새 C#은 Editor 재컴파일/Player 재빌드가 필요하다. 기존 사용자 설정/자동 종료 옵션은 바꾸지 않는다.
+
+## 검증과 제한
+
+현재 검수의 원본/요청ID/해시·각 색/연령·기능 정상/실패/취소·시간 측정은 [STYLE-QUALITY-003 기록](validation/comfy_style3/README.md)에 보존한다. 최종 샘플의 수치 검증과 직접 시각 검토는 분리한다. 검수한 조합에서 기준 충족을 확인하되 무한히 가능한 모든 랜덤 시드의 무결점을 보장하지 않는다. 실제3060/Windows Player·물리입력·장시간 측정은 해당 장비에서 따로 수행한다.
+
+공식 모델/구현 근거: [Klein FP8](https://huggingface.co/black-forest-labs/FLUX.2-klein-4b-fp8), [ComfyUI Klein 기본 워크플로](https://docs.comfy.org/tutorials/flux/flux-2-klein). Klein/VAE/Qwen 배포 출처와 Apache2.0 라이선스는 고정 manifest 및 Tools/ComfyUI/licenses/flux2-klein-LICENSE.md/NOTICE.txt에 보존한다. 과거 Turbo/Animagine 모델은 삭제하지 않았다.
 
 ---
 
-# ComfyUI 물품 이미지 생성 구성
+# 과거 구성 (현재 기본값 아님): 4단계 SDXL-Turbo / COMFY-FAST-002
 
-## 현재 품질 우선 구성 (QUALITY-001)
+사용자 최신 기준은 **세부 묘사/외곽선 강조 없이 간단한 물건 일러스트에 인식한 두 색을 표현하고,3060 12GB에서10~15초를 목표**로 한다. 이전34초 품질 복귀 설정은 현재 기본값이 아니다. 활성 경로는 **SDXL-Turbo fp16,512×512,4steps,CFG1,SDTurboScheduler+Euler ancestral,단일 생성**이다. 실제 결과/시간은 [FAST-002 검증](validation/comfy_fast2/README.md)을 따른다.
+
+## 활성 경로
+
+연령별 형태는 `BlockCatalog.json`의 각 제품 `ageVariants`에서 선택한다(AGE-DESIGN-002). 모자는 아동 유치원 모자/학생 비니/직장인 볼캡/시니어 중절모, 상의는 티셔츠/후드티/셔츠/카디건처럼 10종 모두 4개의 다른 제품 설명을 지정한다. 일반 제품 설명을 연령별 설명으로 **교체**하고 색을 입힐 부위도 함께 교체한다. 비니에는 챙이 아닌 접힌 커프에 두 번째 색을 넣는다. 4연령 중 일부 누락/중복/잘못된 ID는 카탈로그 검증에서 거부한다. 연령별 설정이 없는 기존 카탈로그는 일반 제품 설명을 사용한다. 연령 디자인은 체험을 위한 대표 예시이며 실제 개인의 취향을 제한하는 규칙이 아니다. 변경은 카탈로그를 다시 로드한 다음 체험부터 적용된다. 전체 매핑/실제 결과/검증 한계는 [AGE-DESIGN-002](validation/comfy_age_design/README.md)를 따른다.
+
+블록4선택 → 짧은 제품/두 색/연령 디자인 프롬프트 → Turbo4단계 → VAE → BiRefNet → 실제 알파480RGBA(노드7) → 앱에서 가장 큰 연결 전경 선택·중앙보정. ControlNet/Canny·물건 가이드 업로드·IPAdapter·LoRA·두 번째 생성/스타일 보정은 사용하지 않는다. 프롬프트에서도 세밀한 재질/기계/복잡한 표면/외곽선 강조 조건을 제거했다. 모델이 자연스럽게 경계선을 그리는 경우는 있다.
+
+기본 quality4단계,balanced3,fast2다. 모두 내부512/batch1,출력480RGBA다. 공식 권장 Turbo 스케줄을 사용하며CFG1이라 negative prompt는 효과가 없다. 같은 positive conditioning을 negative 입력에도 연결해 불필요한 음성 인코딩을 생략한다. 실제 네 선택과색상 HEX/RGB는 요청/저널에 유지하고, 짧은 색 이름과 부위 설명을 모델에 전달한다. 색상은 실제6개 색 블록 원 내부에서 추출한 값이며 픽셀 RGB를 강제 고정하는 방식은 아니다.
+
+최종 프레이밍은8방향으로 연결된 알파8이상 픽셀 중 가장 큰 영역을 선택해 별도의 작은 물건/장식을 제거한다. 같은 물건의 대각선·가는 연결은 유지한다. 원본 배열/서버PNG는 변경하지 않고 작업스레드에서 취소 가능하게 처리한다.480×480의중심(240,240)/최소24px여백/비율유지·필요할 때만 축소를 유지한다. 물건 일부가 원본 생성부터 잘린 경우는 복구할 수 없으며 큰 물건끼리 붙으면 함께 남을 수 있다.
+
+생성 완료·다운로드·중앙보정까지 모든 선택패널 버튼/5초 유지 입력을 막는다. 실패·취소·홈/세션 종료의 이미지 해제·입력/타이머 복구와 Result에 같은 텍스처를 넘기는 동작을 보존한다. 현재10종/4연령/6색 원본PNG/GUID·씬/패키지는 변경하지 않는다.
+
+## 설치·갱신
+
+현재 필요한 모델은 `model.json`의SDXL-Turbo fp16 체크포인트와`background_model.json`의BiRefNet이다. Turbo는 가중치 파일은 약6.94GB지만 생성 평가 횟수/해상도를 크게 줄이는 가속 모델이다. 파일 크기를2GB 경량 모델처럼 설명하지 않는다. 이 PC에서는 새 Turbo 모델의 고정 revision/크기/SHA256을 검증해 설치했다. 기존 기본 ComfyUI 노드만 사용한다.
+
+```powershell
+$modelsRoot = "$env:LOCALAPPDATA\Comfy-Desktop\ComfyUI-Shared\models"
+python Tools/ComfyUI/download_model.py --manifest Tools/ComfyUI/model.json --models-dir "$modelsRoot\checkpoints"
+python Tools/ComfyUI/download_model.py --manifest Tools/ComfyUI/background_model.json --models-dir "$modelsRoot\background_removal"
+python Tools/ComfyUI/build_workflow.py --output-dir Tools/ComfyUI/workflows
+Copy-Item Tools/ComfyUI/workflows/product_480.api.json Assets/StreamingAssets/BlockGeneration/product_480.api.json
+```
+
+`SamplerCustom/SDTurboScheduler/KSamplerSelect`와 배경 제거 기본 노드가 필요하다.Unity패키지/Comfy코어 소스/커스텀노드의 업데이트는 하지 않았다. 이전IPAdapter실험폴더는disabled유지. 구도 가이드 파일들은 보관용이며현재사용하지않는다. `sync_block_references.py`는Turbo모드에서poseGuide를다시활성화하지않는다. 팔레트 갱신/검사는Pillow가있는Python의`sync_block_palette.py [--check]`를사용한다. API와UI는[워크플로](../Tools/ComfyUI/workflows/product_480.ui.json)와StreamingAssets사본을함께갱신한다.
+
+## 성능/검수
+
+실측 장비는 RTX5070 Ti Laptop12GB,ComfyUI0.42.0/PyTorch2.11.0+cu128이다. 각기 다른 시드의 최종20회는 중앙1.750초/최대2.541초였다. 실제 앱은 모델 캐시 해제 후 첫6.242초,다른 연령/색의 반복2.647초였다. 자세한 조건은 [검증 기록](validation/comfy_fast2/README.md)을 따른다.
+
+3060 12GB는 예열 후 약5~12초를 계획 추정치로 본다. 실제3060 측정/보장이 아니며 첫 모델 로드·SSD·다른GPU 부하에 따라 추가 시간이 필요할 수 있다.
+
+```powershell
+python Tools/ComfyUI/benchmark.py --warmup 1 --runs 20 --target-seconds 15 --output-dir Tools/ComfyUI/results/rtx3060
+```
+
+`target_gpu_acceptance_verified`는 실제3060에서 예열 후20회 모두15초 이내일 때만true다. 현PC 통과를3060 통과로 표시하지 않는다. Windows Player/실장비·장시간·전색/시드 품질은 별도 검수한다.
+
+공식 근거: [Turbo 모델 카드](https://huggingface.co/stabilityai/sdxl-turbo),[ComfyUI Turbo 스케줄 예제](https://comfyanonymous.github.io/ComfyUI_examples/sdturbo/). 고정 [LICENSE](../Tools/ComfyUI/licenses/sdxl-turbo-LICENSE.md)와[NOTICE](../Tools/ComfyUI/licenses/NOTICE.txt)를 보존했다. 배포/상업 사용은 그 조건을 따른다. Powered by Stability AI.
+
+---
+
+# 과거 ComfyUI 물품 이미지 생성 구성 — QUALITY-001 보관 기록
+
+## 당시 품질 우선 구성 (QUALITY-001)
 
 서브컬처 모바일게임의 아이템 일러스트를 목표로 **Animagine XL 4.0 Opt**를 사용한다. SDXL Base 내부768/16steps 시험 구성을 교체했다. 인물을 직접 연상시키는 그룹 이름 대신 디자인 특성을 프롬프트에 넣고, 제품의 구조·재질·봉제선·금속/고무 등의 묘사와 제품별 금지 조건을 추가했다. 신발은 복수 생성을 줄이기 위해 한 켤레 대신 **신발 한 개**를 생성한다. UI의 Shoes 이름은 유지한다.
 

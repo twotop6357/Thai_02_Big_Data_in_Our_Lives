@@ -1,0 +1,1166 @@
+[
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\App.meta",
+    "Hash": "9C996B2D6C9EE913EE5AF87C44B2FE9F817210F075AA16CA8C87321DD05BF1E6"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks.meta",
+    "Hash": "27431305C0C3B0B14F1179AFB9C32E51B20D77E1D4CD1B4F6AB0C047C667996D"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Core.meta",
+    "Hash": "743695BAE774782C50C4C0B0FBB9E01E235723B67BFED8E73C9C51D01CAAE266"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Input.meta",
+    "Hash": "CA6C80A17F2C855A4E43A41413E0F95A06BC248E2B7EFA260075A3E8299ACD3D"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Network.meta",
+    "Hash": "10347D9EEA3DB3203C4BBA6CA8BA049CC4C0BE86CBF5E54F52F12C969792B683"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Result.meta",
+    "Hash": "5BDC9C38A28EDE2E6F17575D8174AE711787BF67662AE28D3CDFE9B5C3D08459"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\ScriptableObjects.meta",
+    "Hash": "EAAC8BCB63D166FD438A062F6315610FA5C520F400FADBF9A3F69951B31A1EED"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI.meta",
+    "Hash": "A4F12C08C444DD90DE75638F33FB729C0559930349D3D776CCE1850B9B30FBB8"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\App\\EnglishDebugLogHandler.cs",
+    "Hash": "2C6377C1B724AF77EEFA09F5F70166267144ED4C0CE640B55C4E3CBE64C1DDEF"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\App\\EnglishDebugLogHandler.cs.meta",
+    "Hash": "11CA5BC0E4317277AE4AC18C6B7A6DA4E346C6ABEA0B0721CC6816EC4BC087AC"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\App\\GameLifetimeScope.cs",
+    "Hash": "A9CD60CB513BEC54C17F28DEEE2AB0A9BB25141D11097F27F684A49F84D7B151"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\App\\GameLifetimeScope.cs.meta",
+    "Hash": "52AE5E9467877E0AB17DDCE456789DBB003A4A37114FF29D95AF6784C261AB82"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\BlockArtworkCatalog.cs",
+    "Hash": "2376617DBF003B0D76C45D1F5FF72B031B37970E591701B9349806C2EEC26EB1"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\BlockArtworkCatalog.cs.meta",
+    "Hash": "53F19B7244168C0E1FE5F58024FB93161C2EA679CF18B90645C4BD000871DE4C"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\BlockExperienceController.cs",
+    "Hash": "38F924418225A42F60C9D79C9221C1CC5FA287D8F8ED5A643455CDF4100F8776"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\BlockExperienceController.cs.meta",
+    "Hash": "447CD4F3789E2C09DB9B21961886CE81EB9E58961AA559B2C5E447BB93F71B3B"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\BlockJournal.cs",
+    "Hash": "DF9EF10A56205B685D520CDF0EC482DA8C989726C5F55965CE6616F29AE9542B"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\BlockJournal.cs.meta",
+    "Hash": "DC067DBB7F733938D4D0659F927AEE11F7643F615B7F6C86F7C8C2D55C141BBA"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\Data.meta",
+    "Hash": "DB5BF75123E6D836977CB7FEF0470348D8CE6B839835B6F4F5812B83BB587C90"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\LocalBlockColoring.cs",
+    "Hash": "47A23BF59846DA6D437955E23AD1A3D732DCF0E56ACAB98F816BF21F2F5689C3"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\LocalBlockColoring.cs.meta",
+    "Hash": "BFCC78B930B8BD6578D6F0F6BCA104D8139E07036C057FD7AA3858113E68811A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\RfidReaderHub.cs",
+    "Hash": "54336018D331AAA9EBBA30AD17190B92EBF074306BE4B2ADE290335FF120DE83"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\RfidReaderHub.cs.meta",
+    "Hash": "EE3860BF963FF15787ED946F02128F9084EAFB06400A4C71858C2E46B8253A9A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\RfidSimulator.cs",
+    "Hash": "ACB0C0015D72A6B6420076543BFA7C8437687C07977B6EBBA7AA384A973B1E6D"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\RfidSimulator.cs.meta",
+    "Hash": "B718F616D7DA95F6BFA1B75DDA105F85178C225DD0F7C62FC4407E05607DFF17"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\Data\\BlockColoringCatalog.cs",
+    "Hash": "59E5023216462688773C0A394A925F456AE01D1E3FC72E4B663DC2B6FF27EFF0"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\Data\\BlockColoringCatalog.cs.meta",
+    "Hash": "03E41E82EC903219BC188D0808228D20DA207CAB82AB8107144385B49F625C67"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\Data\\BlockColorizer.cs",
+    "Hash": "BDBCBF4597E62906C8B54F5007D4B42F2EBFF0C5DC7E86F2D4887E0CA66D0A35"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\Data\\BlockColorizer.cs.meta",
+    "Hash": "7FB532466A9059C8410FEE45EB202C4E02F28704B4234F681FA1E2D8DA674C87"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\Data\\BlockSelection.cs",
+    "Hash": "A66905F1796E7E5782B28498989557D3AF7E82B5E0FD0BC7BFCF4562C5A9F5A5"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\Data\\BlockSelection.cs.meta",
+    "Hash": "B4628E15829E208CC61962F330DCE25DC50DC87660BADE18C1F85EBCC4A3EC0A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\Data\\BlockSettings.cs",
+    "Hash": "586A73D9FEFB332021BA6D3D47DBEA16F9485F17DE3687BEC162EF83CB681E7B"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\Data\\BlockSettings.cs.meta",
+    "Hash": "0090DAADF453B2E628E0AA6B29A6F66383884136F053527F6467B3946C23FE0D"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\Data\\Exhibition.Blocks.Data.asmdef",
+    "Hash": "AC686F7C8FBF8D0A37CD9ADEEAEF4A1798746E5DD6A697657841CADAF0798F2F"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\Data\\Exhibition.Blocks.Data.asmdef.meta",
+    "Hash": "EFAF472A63EC3D38E8CD0602A43DDC410DAA2E02247B142EB7E861B455EC576E"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\Data\\RfidReaderSelection.cs",
+    "Hash": "27957B1D58E9519F988A1C4D1869740282CD825629E6548DDA0FE6B80F192A1D"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Blocks\\Data\\RfidReaderSelection.cs.meta",
+    "Hash": "7EA2F6A78F2D040B50557C763B61ABC0D201B2525A66FBBA34A16AFF73EDDAE9"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Core\\ButtonInputSettings.cs",
+    "Hash": "A44B5DA2599EE16671C7867415F89E75B6722928B72F10A10152AED4AF34CC01"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Core\\ButtonInputSettings.cs.meta",
+    "Hash": "2975F225F7301DB47B9B7A863DBCFFB8C4A6256AD430C05FC255CD186BDED973"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Core\\GameManager.cs",
+    "Hash": "A592E78EA23DE2EC55DE29F18F57FF561ED847C33D7E6DF612DA1BD56A20B4AE"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Core\\GameManager.cs.meta",
+    "Hash": "980904C4727F78F524A7DC1CA9F60FA3337DB54DE246C35566AEFF57C6B623A5"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Core\\KeyboardButtonSimulator.cs",
+    "Hash": "B2AB59F1BC48D368A3C670B91C13D30011B223A07C86DE6EDD0B1DD413751E32"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Core\\KeyboardButtonSimulator.cs.meta",
+    "Hash": "8AD4AD25D33E17520246206A79BE0FBB82A63D895ADAA6B6955645A18FAC4553"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Input\\Exhibition.Input.asmdef",
+    "Hash": "55DC74F4FF7CC02B21F8C12141145E6E7A557637CDF046EA592558FE5AA20A6D"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Input\\Exhibition.Input.asmdef.meta",
+    "Hash": "0833CEBFF5C34355004209518F35FF795EBDBC6449959C0A12F2EFC8929ECB79"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Input\\ExhibitionButtonGesture.cs",
+    "Hash": "0E8EB43A3A2916263ADC0E8FBB95283F625FD836E079CF4A4CE6E0333B75D0D8"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Input\\ExhibitionButtonGesture.cs.meta",
+    "Hash": "0ECC9D2FC11FBF69584DFC39A614AA33380112204563E43F2D68546FA0420316"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Network\\APIManager.cs",
+    "Hash": "4984A0329805CB80BC037DC969BFE592C8AA3BEC3D060510BB232B780E7ACFE4"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Network\\APIManager.cs.meta",
+    "Hash": "01A498832CD0DDDF1339D22E419CDD27A0E4EEB05819B3D0EC7A199BBE0F3C58"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Result\\ResultImagePresenter.cs",
+    "Hash": "C82DBF944781F3A155CD7D124528B264C2D2E6DEE667C23C2EC9CF64F4DF8DED"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\Result\\ResultImagePresenter.cs.meta",
+    "Hash": "FEC5B8CF71D67EB6CD63741D389BDF03A3492B95806C5B56D77D41687B2ED2E0"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\ScriptableObjects\\GameSceneTitleTextSO.cs",
+    "Hash": "23405D41A0B94E5B5911E4E8A368F2865D4266985BCA13C43C7B1FB1E59ADFDA"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\ScriptableObjects\\GameSceneTitleTextSO.cs.meta",
+    "Hash": "C042CBBCAE0C490FB92C464A232556F3657041FC56F16DB899D21C60CEB11D15"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\AdProductHighlight.cs",
+    "Hash": "20EE984CBB8975067638D20C3F7B4ABE51DF103DB8AE6882192DB20A5EE902B3"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\AdProductHighlight.cs.meta",
+    "Hash": "AD095C13DCA85C10D1C7C6F213B874CBCEF5E5F1BAF55388BC171BD0689FC72C"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\BlockExperienceView.cs",
+    "Hash": "E057A795E32B1B21FB7928AB98A3FAC3698EAC5BED13F3702CB2F31854708D51"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\BlockExperienceView.cs.meta",
+    "Hash": "6C56E99D858BD56C443D71771B2827759F33B0780080DB1CCDFACD923C07D05C"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\ExhibitionUIAssets.cs",
+    "Hash": "FB23FD80A0CCD54EDF91AEEC8EE459F38FA75E91B7635403CDA2BE1E7F84FA73"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\ExhibitionUIAssets.cs.meta",
+    "Hash": "BCCA178B1A0A41C3D4C613179F64891B21570DC70A330F7142B76D2B6CF06F01"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\LocalizedImageSet.cs",
+    "Hash": "B4778709408088D78D308D48017D8BB6D2C16FD073B00E1392D5DD7BC2C79CC3"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\LocalizedImageSet.cs.meta",
+    "Hash": "4505A271AAD34A2600BB4DC36058F230CFD0D3C2AB716061069FF5B6AF5A2F30"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\ResultVideoController.cs",
+    "Hash": "F9963635D511DB06EDD34750CEF55AC4BB6D900EF07F926DE12F86CC6D32E7B9"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\ResultVideoController.cs.meta",
+    "Hash": "889C42862A6BFF42BD923A261B7972E964C27D2497B312D7550A7EA55AB17FB8"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\UIAnimatedElement.cs",
+    "Hash": "207206D9F430089EDF1022FB7A4CAF6BAE212C9374C863A056C6AB118A05FAE4"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\UIAnimatedElement.cs.meta",
+    "Hash": "203EEC4093945543AF9E4927FD2904709EB2EA127DE617A36A1BEC1724F9D834"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\UIBlockSlotTransfer.cs",
+    "Hash": "717EF2EB7DEF25FDEC1FB3CE28609C8491845A8760EFB68344227967C0726DCA"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\UIBlockSlotTransfer.cs.meta",
+    "Hash": "AFE593C844010078FD398DFC42752B173C2F51DC4EE918497D1201144076FDC2"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\UIMotion.cs",
+    "Hash": "014EA7A70CEC10C7DB409F70D16F1D3A0E071D79080591FBF557D43F2ACA25D5"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\UIMotion.cs.meta",
+    "Hash": "35C7BB3F8EEDCDD9B81C0DE989BB21BCC6ED2A2250401C7FF45365B77BAFE10A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\UIPopupPresentation.cs",
+    "Hash": "3F37913D924710C49D8B7ACC082EC09DEB348F608C41E7A034D84E16983D1763"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\UIPopupPresentation.cs.meta",
+    "Hash": "B992216AA1FC2DB5A89A8F650582C2CA0C75324DB07BBFBDDCE690514DD25934"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\UIPresentationTransitions.cs",
+    "Hash": "3B4D9652167819CE881C6F9981A26B38FA2AE7E3B6B94C73B6DAED031020E6E3"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\UIPresentationTransitions.cs.meta",
+    "Hash": "30ACC239BD543FAB1F2D014B31258DA026B9E453F7B74D23E92D7E1F60796414"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\UIScenePresentation.cs",
+    "Hash": "E91ABFCDBF838FB2EC4C8FB2852AFF98EBCCBBC669310B19F74A3B4974B563B4"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Scripts\\UI\\UIScenePresentation.cs.meta",
+    "Hash": "D4E677DF55891A939CE424340DA4665EDACE555897C77D6C13C675B24BDC66B9"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Effects\\AdConfettiFullscreen.prefab",
+    "Hash": "26B703692286D50E46264359AC1667C8E613DA9D8454E430315EFAD5687BC746"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Effects\\AdConfettiFullscreen.prefab.meta",
+    "Hash": "C3D2FAD47D1C949311D50B8748A6FDE5EA4C769A5850DC5C5F1161291B99CB7F"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Effects\\AdItemEmphasis.prefab",
+    "Hash": "307801513812E2D280DD3E6E8278F21FD9517C750C095F529DECA1BA6D3A830C"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\Effects\\AdItemEmphasis.prefab.meta",
+    "Hash": "0C2E39C347AB98B8C4DAFC777901D8295AE37B1B20BAFC476D80F6307F3FEF8D"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\Video\\VideoEndPopupText_th.png",
+    "Hash": "235F98492465CB824CA765875DD3869F222ACBA5065E08838962C790C30F52A5"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Th\\Video\\VideoEndPopupText_th.png.meta",
+    "Hash": "48819741A7E8CC134DA4B298AFB4048AE942F381C7D3BF7D89ACD23DCE42071F"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\Video\\VideoEndPopupText_en.png",
+    "Hash": "FF597F656668E9A170B5AE7F97A2C4C81087983BB9986818D01298B4517C832A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_En\\Video\\VideoEndPopupText_en.png.meta",
+    "Hash": "760529787E3A8741DAF5D97D344C0FFC0257A8B89CAD5E81C74F76C9EACE9689"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Resources\\Videos\\Video_en.mp4",
+    "Hash": "29D90A86D9C5D1DE0A1A76253B636A7F22522A998B0BD9BE89A7654092F03D96"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Resources\\Videos\\Video_en.mp4.meta",
+    "Hash": "E2042F07C5D06EB94D38E98EC238C0E52C306C32C5BD20B762C857394B83C5E8"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Resources\\Videos\\Video_th.mp4",
+    "Hash": "90C63AA4BA7A3494F9510A3C8845E253AEF670C237290448C7136E8CBBB6F3A9"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\Resources\\Videos\\Video_th.mp4.meta",
+    "Hash": "C5536FF52218FD954388660141E8A444F13D22BD5E1A7E36424D539B94E9FB5B"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\BlockCatalog.json",
+    "Hash": "B043EE7DDA356F7825A7E6B2493C37B18EC55E90A6468FB0D9671E1724BB99B8"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\BlockCatalog.json.meta",
+    "Hash": "8A84698B179E2778691990A0FEFF1CB245FB87DEF2ABD1DA53D7B577A39016A4"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\BlockColoring.json",
+    "Hash": "2EFCDA5508C1E0DCFBA139AAAC3474FD6FA00A8038F08A7A9E31F1205BA974FB"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\BlockColoring.json.meta",
+    "Hash": "33867AFBC06184BAD8C608E277CDCF5487CE94F6EA2F15E3537E4353AA0E3E55"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\BlockSettings.json",
+    "Hash": "59F6CE17563AB7A0E0DB2F2A8CBF0C1395B28890F113F377ED13C1DAC814BB71"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\BlockSettings.json.meta",
+    "Hash": "314EC9594968CAC0FCD88D521C0D13B258B4DC1F780FCCA8CBD8F4752CBE0CDC"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring.meta",
+    "Hash": "7A77595857CDD5B6568684089FAC748533A3D37744096FF4AB962929C984F1B5"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples.meta",
+    "Hash": "AC1C8B08F8377D8BE37FA101FDBC967FE585C6F4EA811942A206C1CC66D201A7"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_bags_base.png",
+    "Hash": "629CE3F6702C4C8DC0C85935E5F9B43D56718D9E19A95ED86696A4757AE9DECF"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_bags_base.png.meta",
+    "Hash": "F738EFCDE9B751FD0050D91695989D7E1B3506BE91C167998559C4BD5391EC37"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_bags_mask.png",
+    "Hash": "E94907F2C5C5EDDFC6441E75F8041384FD26D8EFA2C84A1AE2E1CB73DEFD2166"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_bags_mask.png.meta",
+    "Hash": "CE46741568ED44767C1D2EA19D86633E2A38C98730448830B639BB7029B8C4CA"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_bicycles_base.png",
+    "Hash": "B937B9523F9752F7B02903AE2444D295EB9F807658F4B56F4CEDD2EAF615D156"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_bicycles_base.png.meta",
+    "Hash": "57D07F4274D200F227AB3979B6089ED91290E46F6A3773314E368B28C687A781"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_bicycles_mask.png",
+    "Hash": "4FCB03FBB7264AECBA3B7819206505E701F53ADFA7930322DFD5C2A6577A419A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_bicycles_mask.png.meta",
+    "Hash": "CE3B8E014413DFFDCEFDD97EB52EF3475B15C96FD6AB33621B45B21CB1E1FDE4"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_hats_base.png",
+    "Hash": "46FEFC0284AFD8B64E2053029D7E0135C775FC83BDEF5F99CA76A23CEB584E81"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_hats_base.png.meta",
+    "Hash": "7401D2764287C7ABC52566CB6D5578E05E8E70C0D288DEEBD0E655DA35BF70A9"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_hats_mask.png",
+    "Hash": "59F230C3EFC934DBA907DADFBCB8917DE52FEBF753F7C3E5451E731A69BBDC2A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_hats_mask.png.meta",
+    "Hash": "34473F09B796B473FCEBEB4AA12A465D2CF82D8EDE335C717C7ABE455B5C0F40"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_headphones_base.png",
+    "Hash": "7260FCB13E3DE9BEEAE21AD4BA89A7E277A786C9F94FEE10737983491E5884B3"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_headphones_base.png.meta",
+    "Hash": "645B346B5833DBF6F7A32960F4CA5D8F709D799DA7BB53BAF8C9957DF3AD839C"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_headphones_mask.png",
+    "Hash": "81BBC163F4831226B17876A0F90F7B0E05414346D689D980ECD47BE52F6B0F98"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_headphones_mask.png.meta",
+    "Hash": "73FE6F2F8AEF4E64448CAC49A34395153648FA3BB713205EE828F34047FA014B"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_phone_cases_base.png",
+    "Hash": "C27152B921DBB4B78DC73FDA7C5B378412D5A8CFCD425833A3372670757C8CEE"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_phone_cases_base.png.meta",
+    "Hash": "FA1F312911BF6B788F00833A7F98446ACC5A6B7A2FD04130011004A766B85DDB"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_phone_cases_mask.png",
+    "Hash": "059496FC90C7B95145705549A8D7FACB3E397FD519ACA5EB81DEF86835D8287E"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_phone_cases_mask.png.meta",
+    "Hash": "73214E0D06021D964C35863C4A536B46A7BB33FD494FD19AC40F67EBB850F204"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_robots_base.png",
+    "Hash": "C4C68C972E6E1236B1798A75CD75904EF40413F31D4F24CD6AD3CB0BC9268082"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_robots_base.png.meta",
+    "Hash": "E4C7D4A9B942B30C54A4EF21EDAF1180AB472B15636ED2BAD52BD7B6B337E14A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_robots_mask.png",
+    "Hash": "B8C57D39905EECF80035899256223FD9C41E2173832E6895ACF09D89E1852831"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_robots_mask.png.meta",
+    "Hash": "2B5FD77671C3D585691B07F78640E5D53242259F7F7C59D8F799D5D274607B60"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_shoes_base.png",
+    "Hash": "8939257590D5B41C35D9F96F9E8A74CFBB7342C36471F7B9793DA5B68FA5C8CF"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_shoes_base.png.meta",
+    "Hash": "B019C714BB2F8A48381CB9CAD93CDBF2840F7878CD98EE760B2F2DEAEBB31740"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_shoes_mask.png",
+    "Hash": "FED9AD45CB0231188D1FDAEBBEB038119EFB517E4F6AC40743599424BE57BA6D"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_shoes_mask.png.meta",
+    "Hash": "BB38561B5D2547BE3094B99CC41693860612165DBEC5D7ABA87E565C93286D8E"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_sunglasses_base.png",
+    "Hash": "AAF1629BE16C82B85263508B508504E1EC05027C5C6C34BC2BAA6ED872489089"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_sunglasses_base.png.meta",
+    "Hash": "945286052959C858E5C200D3C5605C18E9F4BD807A52A8EE48F58DCE53AD7966"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_sunglasses_mask.png",
+    "Hash": "C5614BE6F784B6419A07BD57F4BD65555405E6154CBAA3D9086ACD249EAC89D8"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_sunglasses_mask.png.meta",
+    "Hash": "65A8105BBD8D17D3EEE7B8D58B17C551C9C6CB79BEEDB8ED8A96CC491EC6FBC0"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_tops_base.png",
+    "Hash": "F3C39F7172C7D761F70ADDC29AB234B9F7F0F6D805A00BFDA537856DC6473F0F"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_tops_base.png.meta",
+    "Hash": "4CC88E4875BA34FCF66E90ECAD088E1988D26AF2FBB5F873F2BE90C09FDC1F46"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_tops_mask.png",
+    "Hash": "697A4CFDA2D155BD70A171C967FAA8DF9308C0A222630B18686F6A5261E130A9"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_tops_mask.png.meta",
+    "Hash": "64B9103D293A99D228D657E43210ACC135A291AADCCEC006045AAD6D55003FF3"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_tumblers_base.png",
+    "Hash": "0417A4C18DDE7EFF29AD7ABDC9D8AE849A82B4FE594098A34614040A80158B82"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_tumblers_base.png.meta",
+    "Hash": "BD07C23A5D3172BEDCA9E47E8B7023A7DA07C0B86AF53208967FF3209FD99049"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_tumblers_mask.png",
+    "Hash": "F3B8D220F877627D7B6F8C0B3782D3B9ACD0BBEC3C98CBB39205F880829AA5CD"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_tumblers_mask.png.meta",
+    "Hash": "C424B9E98E8CC475A3519B93FBE81C7CA1AFFC88880C5D4CD8641029851C6B9F"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_umbrellas_base.png",
+    "Hash": "E0268DDD97BD7CC3E41D6EA43DD15937AAD8540F312C2A09E5A5AD90745FBD00"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_umbrellas_base.png.meta",
+    "Hash": "D8ACE2E6F5BAF7BCBA5EF865D7C5FCD73A9E86276589A610B1DB3664B1E6E3C5"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_umbrellas_mask.png",
+    "Hash": "B69FF3C36D4F1F0BA8D75509AB402ED269D6E7197DE2F4C660A926D5F675F188"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_umbrellas_mask.png.meta",
+    "Hash": "D800C6A269DECB8C447234F7827EDF685910C646351BE1F20C255FE3795578CC"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_wristwatches_base.png",
+    "Hash": "6A69D11CA7137735C7ED1E38B8E01CEE16140F61652A268AA871847E595D30C4"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_wristwatches_base.png.meta",
+    "Hash": "22AF1FDD731900990E06FCA20808E8BFAE5A87065223ECB15886498B92C0E0A5"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_wristwatches_mask.png",
+    "Hash": "37F373E39D15E7F3DEAB8A59D3715E2F94F790140CFAF4F964B04ED03CAED542"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\child_wristwatches_mask.png.meta",
+    "Hash": "0CE2447D088CC590003E5C57309D3CBAB01FCF66C76B9F4D3934D9B2B4916099"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_bags_base.png",
+    "Hash": "81562F7C8EFA07AD14A2F146B095E30E323668A16703FEB57A3215D7F66A83EE"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_bags_base.png.meta",
+    "Hash": "8E8C6C370C648FCA78E55053EFD9E3780142F9FDF1FA68F25FDBBE2B2331D7AB"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_bags_mask.png",
+    "Hash": "955911095E527B60D5B951910F57F39575A1FAEC4618DE8EA956AF993ECB9DDA"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_bags_mask.png.meta",
+    "Hash": "A34F89304BD195DDD9A3E720567C7FC89911BDE6D4DF84541DAA2D4E1693C69C"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_bicycles_base.png",
+    "Hash": "BDAC2DD7684C7F514092FFD794A7932712CAF5A61FD09747A47757E85FFA7ED6"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_bicycles_base.png.meta",
+    "Hash": "8D3F13C75AEE189B1862F28FFE364BD36F9BC83F654AD72EC3E71089210F001A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_bicycles_mask.png",
+    "Hash": "96DB0654DCCDAA0A8C85F4ECAEACAB8749BEC2DFFA08D8FE7FC2829BB53E6750"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_bicycles_mask.png.meta",
+    "Hash": "BDA677FFAE082A4046CD0C828C93D5C7C91172DF8A048EAA04DB183B82314FEC"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_hats_base.png",
+    "Hash": "17BF66592D224D2C860C9D74DF53204C26EC4EC633FD0160E6A4F022A463005A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_hats_base.png.meta",
+    "Hash": "F8D29D23FEFEE20D05CCFEFCC4B4BF56A369BE9D92D7E836C08F030E7775FF0A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_hats_mask.png",
+    "Hash": "F5897CCE48EA5706304850EF43F218CA14FA60957464D10C4A42D9D9BDB794D3"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_hats_mask.png.meta",
+    "Hash": "8622BAE3D1373D634698A89E3ECCB6D16AE029FE99441F9539DCC65153F632EA"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_headphones_base.png",
+    "Hash": "6BD4F45F49CE86AF011A10AA31D28AFF34DA2130837B0F58A0F37345EE8859A7"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_headphones_base.png.meta",
+    "Hash": "C53CD052B9C314D41B01CC8F5272733726335307666AABA222C7E73614DB68E9"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_headphones_mask.png",
+    "Hash": "C8552D381656C98C53682CF3BA930FFEEFA38284C8E689F95956145BD3D960CD"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_headphones_mask.png.meta",
+    "Hash": "C602373E92F18F5531B23FD5BE81383E653696017965570A5040BF66AE098113"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_laptops_base.png",
+    "Hash": "E0E7F4A287D337019C602086E720D6592470A2E7CB8C622FAA7004578591E8B6"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_laptops_base.png.meta",
+    "Hash": "D5951EA6604FC5D434754BB6CAB55648590DEF7E38CA2432436978FEB9046198"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_laptops_mask.png",
+    "Hash": "D07D30F0416CFD7E2746C2CE04072EE07260FAF9FB92E2CA291B38E0FAF21709"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_laptops_mask.png.meta",
+    "Hash": "1D3949A9F2DF9405F4F8061B0F5CECBAAF5935CDC55C5AC26A8BFFE679CEB72B"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_phone_cases_base.png",
+    "Hash": "FC9DFB92F42CEF86358D2B9793317ED21DB35704810EA8DD0BA553339C55BF4A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_phone_cases_base.png.meta",
+    "Hash": "F4CD9F49866DFDE70BE170868CC2C5572AB549279BCB607CC752F5FF778A52C7"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_phone_cases_mask.png",
+    "Hash": "225004C6C46B4453FCB721A50FDB94172ACE9A8F3215FFC742A482E7693ADB24"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_phone_cases_mask.png.meta",
+    "Hash": "51EF2BBA80D53150327CB21A0B38C412A477926EE164D9B936EC1AA858A5B5C0"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_shoes_base.png",
+    "Hash": "BAA69FAB7B527855C4D4B7CC78387F909695F4BD797072D8B5547191C2054DFD"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_shoes_base.png.meta",
+    "Hash": "4531D8EC6B10FC2B707EAFA0D12CAB357F580F9A7D0334F5B455066DB879983B"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_shoes_mask.png",
+    "Hash": "A1F979EB31F7B32CB2006FE60C07AEA74D6822165EE0C401E9BCC25253AD5D22"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_shoes_mask.png.meta",
+    "Hash": "7B109C2792AF270366CE95C41E98B5E737CECF44302FA4B1C568E8BDE8309D4A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_sunglasses_base.png",
+    "Hash": "AAF1629BE16C82B85263508B508504E1EC05027C5C6C34BC2BAA6ED872489089"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_sunglasses_base.png.meta",
+    "Hash": "EC1443E98B61CA8752001D68491374D3CFA34E66EFF16F2AF14370C35D7DF199"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_sunglasses_mask.png",
+    "Hash": "C5614BE6F784B6419A07BD57F4BD65555405E6154CBAA3D9086ACD249EAC89D8"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_sunglasses_mask.png.meta",
+    "Hash": "4A09CA913C075738998D7EDD84386960034415FB37AAA0ADBC67447C15BA32C8"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_tops_base.png",
+    "Hash": "E9B9B9DDB5F5678D8E021E2724C22745F880242C547EFDA3AE88E8C6001549C4"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_tops_base.png.meta",
+    "Hash": "7A4D6825FCF4A6D987D8FBA08DA61F294063D63E5D35940AC014898901EF39CB"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_tops_mask.png",
+    "Hash": "FBE8BB4541AAE49F46FFD44461D280284A34A7F196ECB73FD36ED59534CE75E3"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_tops_mask.png.meta",
+    "Hash": "B7448507B9A7D966E4E33FBBCAD36FE0C626B550CED58749B1FF3C3661588141"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_tumblers_base.png",
+    "Hash": "8840C878F69F546AB0BEF29DAE275E4B267721055637249242C98F16F3DB9030"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_tumblers_base.png.meta",
+    "Hash": "CAB25DFDAAF13D270057E977979B4F193D6FABC7B3004A774E3F236C2ED2C8E7"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_tumblers_mask.png",
+    "Hash": "5BDF0537B86486EDAE060F797DF65EE0D80F8E6CCB89B5611DB4549F55B9AB86"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_tumblers_mask.png.meta",
+    "Hash": "B0DC8EF976A8C8F390A030BF0A0F0CCF7B065DE3C4FA72EA925CAE913240EB64"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_umbrellas_base.png",
+    "Hash": "A073F5ABB8BC92D2934349611D6F731545382522F6938B9114D99C8D7E2C555E"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_umbrellas_base.png.meta",
+    "Hash": "99FCA28CD391658B58CD233602D1F570CAE55256DDDCB98F650E64570448C21F"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_umbrellas_mask.png",
+    "Hash": "120BDEDF17002AC655A3C1957EA7A4077704DCAB9FE5C3B33045037685E44B27"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_umbrellas_mask.png.meta",
+    "Hash": "98476F5819463770DA8C72E392354E86E8D7611B540C4443ACE7A6AD0263C90C"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_wristwatches_base.png",
+    "Hash": "B0670B210D492CB9B89D442198D1263BE11DBA9E2B8D5EEEFE07BCA293CD9611"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_wristwatches_base.png.meta",
+    "Hash": "B42E07CA4EED7EDDE189B32D15562004E513A046698CD9BC793FA5E38CBCA766"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_wristwatches_mask.png",
+    "Hash": "4C37C3788F9552B8139C2955F8BB48A9381943D81FD80D60F93DE26558F32948"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\senior_wristwatches_mask.png.meta",
+    "Hash": "89D07A0F08DE7914BF47BC73AB49DF1091056D8F8B520B4FF924D3F630292595"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_bags_base.png",
+    "Hash": "C23DC85D9640ADE896EC54FFFB0039FE0B76C8901361B2749C6E3B8CB597ADD8"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_bags_base.png.meta",
+    "Hash": "DACCF03C76142585E637FF932F89CF157DBD4C2FD14C7ECD620050D002D11DB5"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_bags_mask.png",
+    "Hash": "84933E11B60E683BCFAF1619C5FA0A2C75F643A0BE2875EC30281299F5BAB5CD"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_bags_mask.png.meta",
+    "Hash": "AC2198713D68A836A838FBA725BFE738EC78056446E50D8A853CB91FAD473FAF"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_bicycles_base.png",
+    "Hash": "6E3BEEAD17279FD793B9F0844ABFE540DF4BB5EC6727AD2DEE127948E1F957EF"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_bicycles_base.png.meta",
+    "Hash": "36FC046EFBBF20BEACC669C295A019A39F6F0F80233E28C9C9EA8C8BA78479E0"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_bicycles_mask.png",
+    "Hash": "0F88BF271F377B9CC42719C162D30FA84C54650C34CE71F91E50BCEF68599BBC"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_bicycles_mask.png.meta",
+    "Hash": "2A8BBD25D11E4967494C7DA734E8D2ADA61E3E21985C394EE5BA87BEC1A6691C"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_hats_base.png",
+    "Hash": "ACBE45AF0041E971328A3660BCC7CEEE2D8C9146A2B0F9ADD43A3526FE33B1C8"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_hats_base.png.meta",
+    "Hash": "595C193408BA31CC8F51323514CDFAC2FBC9F11E47C46F178169E79F44F16B80"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_hats_mask.png",
+    "Hash": "ADE29C7C87A79A3E95533983E68B84BD72C0AD76035B1A217536F4D93D14948D"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_hats_mask.png.meta",
+    "Hash": "2F3CAE726A47BB3D0D5D63E039956255B930ED8094963368A8A1F3EF74288B0D"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_headphones_base.png",
+    "Hash": "501CDB8D4F008C624DB53A1112CEFA877E4C5BD8577D99C1F50E2D1E6FB1FF8E"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_headphones_base.png.meta",
+    "Hash": "5EC00C3032532B8D891D54B1C578D68FD385D7AC7C57469FD143396253E37872"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_headphones_mask.png",
+    "Hash": "C90A4D53C0A74B6841D119DD011A67DB3BCB7170678964E1B905AB92CFD26CE2"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_headphones_mask.png.meta",
+    "Hash": "BCBFF72F993001A2CAFD43FAA66A39F6370FF2A5CBB619CDFD952413EE0ACA9E"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_laptops_base.png",
+    "Hash": "9464A532569555B60C212622FF460F1AFBA6A8BC1F4BD5BF2E41C0B3329F3520"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_laptops_base.png.meta",
+    "Hash": "135AD57112B17D273E001D8B99A078FEB5E8CA1D43DCDAA3F3212D33A8897FB8"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_laptops_mask.png",
+    "Hash": "2E98A015968F44536B5579F8B643686682EF52D66E04318ABE54910194658E8D"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_laptops_mask.png.meta",
+    "Hash": "E56C6879D967393392A206B311FB01181389F34E076BEB18C5F2D7613373CF7C"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_phone_cases_base.png",
+    "Hash": "9DCA59EE914AFDCDBE736339A4A359B2D13326B7453A32293C27449B3EB60911"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_phone_cases_base.png.meta",
+    "Hash": "C16D56B2D387731C2D04BB316C2E9C96D7EBF8ACBD9AE238439BD546AE3FBEE3"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_phone_cases_mask.png",
+    "Hash": "D0BE6A0D96865CBCF4D826C716C03372ADC393B494DA80ECE1E09C7BF85913C0"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_phone_cases_mask.png.meta",
+    "Hash": "A27B19765C9B57529094BDBF9F7F2AA202775A533CA49E06A0320AD1A0598951"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_shoes_base.png",
+    "Hash": "EFD49DCD5D70252CA83231AFDC16DF5454FD93B47523436D9ED20225DBEE4567"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_shoes_base.png.meta",
+    "Hash": "64BEBB97E8B445FAEEEF680A9C55B8A175C0B68283D0CB0B76FA54CD453EB7FD"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_shoes_mask.png",
+    "Hash": "399CFF3BD80580DAD151DAC5FBAC0B078B1477F1286F034A46903A1C9B276201"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_shoes_mask.png.meta",
+    "Hash": "686423FD3722DA7B5B9BA279E4A0CF027D387F9368CB1BEC7F23499E501C558C"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_sunglasses_base.png",
+    "Hash": "A97A9745F008F3B02B8A392D2F3BC513A9098997A16BB6DA7892C674B8BDBB64"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_sunglasses_base.png.meta",
+    "Hash": "FFF2EA7919CCB8590DFBBDA36535C578E7066622D2BB5E8035979993EDCEDC19"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_sunglasses_mask.png",
+    "Hash": "23CA5831DFC0C6B0CBCB1388CA32D23E7BD246A0B1103FAE5D8D5CAFE5988292"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_sunglasses_mask.png.meta",
+    "Hash": "25A5E24A98DEB0079C2CAEF0465B1F423BBF08FEC7FD69723416AF4CBE45CA40"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_tops_base.png",
+    "Hash": "E21561A0971293685AB5203A525153ECA483B7ECFA5449529518144A96BA6212"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_tops_base.png.meta",
+    "Hash": "5B116525E2F237A80ACCC62AA41B869B5908D2FD31457DBB505B3128F126A5D8"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_tops_mask.png",
+    "Hash": "7CCCE14094507D1267A07AE3F730561489A1A3EBFF336AC7FB7F2226C1DC810C"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_tops_mask.png.meta",
+    "Hash": "96C5D8CE17DB4FFD8D0503A6489AC3A2BA9DBFDCA40954B16D945C06C1890E07"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_tumblers_base.png",
+    "Hash": "75E0E30B98C63A9AAC1855AF2EC47BF072415E0EF02AAAC7608679EF5B821D04"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_tumblers_base.png.meta",
+    "Hash": "034BAB75C037845480E0386C12257367CEF381CC6955CEE8B3FA0A8F074957AC"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_tumblers_mask.png",
+    "Hash": "74114ED78A50A6CDE6E3F76BADF294BE48B147B76D1576F2D6AAD6480DDD400D"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_tumblers_mask.png.meta",
+    "Hash": "00769B3A4E589BF7DC0AFF65686D90AB809E1E6D25308599F1EE1A27C4ADCDD4"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_umbrellas_base.png",
+    "Hash": "611ED17FA704372931A556D89A99AE2C23859E42B5D6CB410176F8D88D02A7CD"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_umbrellas_base.png.meta",
+    "Hash": "93A1FFCEB462FF20103F5B6D2515BE9B5A87F1BFBC210938D615E87FD1FCEF41"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_umbrellas_mask.png",
+    "Hash": "D61F93140C5A9AC519DFA44806F92B55D1B3C997D393B8BEDC550C6778210689"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_umbrellas_mask.png.meta",
+    "Hash": "10CACAF5A6C53C990A0427D7CAC5CC7D0A791C7D5BBDAE4EF495228DC8EE3DF7"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_wristwatches_base.png",
+    "Hash": "444FFF426F10F2FA54A0C713C56D6B93048F6530F76593A50538E7E280CD4FFE"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_wristwatches_base.png.meta",
+    "Hash": "4F43E9F2B662920D928D13A75B97966F0F6B444DA4617E35BBB6EF607A46AB38"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_wristwatches_mask.png",
+    "Hash": "AB2D99C08B5AF7920925193372663D3F16FBE098B270580BF69884555105699F"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\student_wristwatches_mask.png.meta",
+    "Hash": "BADE5331562159F688CF6577CD37971BC292D27DE5FC82EABC980539CDE36FF7"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_bags_base.png",
+    "Hash": "AEF7DEA38BEBB445EFF7E66E5E4EA14BDF59F0B1C030FD884B6829527514BDED"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_bags_base.png.meta",
+    "Hash": "E460B8E7CC956048C7E5A3E9369A821EFAE9335DE427888EF8D01FCDA2A7FE3A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_bags_mask.png",
+    "Hash": "5142793582D86EEEDD0EEA74C757B9854550C6EABDAF0914E41F673B06211ECF"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_bags_mask.png.meta",
+    "Hash": "7DC869167DD618E7823BB676D1A49A8D18BAF612E3802601F29B56E0EF93DEBB"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_bicycles_base.png",
+    "Hash": "B2E5E6871C74B26A243684B5216AA05482555E7D344AD2F12EB5559C12BDC7ED"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_bicycles_base.png.meta",
+    "Hash": "1729DC0798AB183492FECBABB747D26684544ED1DDD1E09CCF6D83F6A834E62D"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_bicycles_mask.png",
+    "Hash": "2E648B727C23277C06BF45BD21B9D54784201BBA6AB0907CD96FEE4E8F7F8121"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_bicycles_mask.png.meta",
+    "Hash": "3245716AD9F401E97B619D72DF276EE718FDFB212B7833BA6A88A4F2854CD478"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_hats_base.png",
+    "Hash": "44B8AB31345AF4C009E99381CFCFF4A4B4549CB7A11622FCBBA5045CFD393A7A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_hats_base.png.meta",
+    "Hash": "06A081A42BF595989FA2EE38C24C96E4ED30FF81188D63BE3D7000F6523B4F61"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_hats_mask.png",
+    "Hash": "7BD17FC57E0869B1E82F8A678D6E301574A3855E7BDD16556F7A420C5F20DE4A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_hats_mask.png.meta",
+    "Hash": "AEACA7BEF55B12C22FD2D381B475A9A5D69B4D2314C66C097C3A20BB3B3B498C"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_headphones_base.png",
+    "Hash": "5840E062E032A9D56E275DD94A5CC93352921044BA85EC6495829296670044F0"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_headphones_base.png.meta",
+    "Hash": "C98D4DA6A08960360724418DA6292EC8D13F80B4FE57FBCF7DB29DB121306A6B"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_headphones_mask.png",
+    "Hash": "BDB582A23A64F726B3847D329E121E3903CAB71B4D6A4C20AB6B57298EDDF6A6"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_headphones_mask.png.meta",
+    "Hash": "1AEA40DB1EEF44D2B3C681D5196115D3E0C98C0967B4F682BB4DDDDCCEADFF00"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_keyboards_base.png",
+    "Hash": "CD93E1E715385764870A4468D5495490252EAA43A0AC4F736F50E0D632D467A9"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_keyboards_base.png.meta",
+    "Hash": "B58A8B1C8E4598D4C24267AFC059E9018FE1C08E0ECF739A878C41217FEB352E"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_keyboards_mask.png",
+    "Hash": "7DF7D8ABF9B4014773160C544008CBAED7616E22A7F65780BCEE0EDA54E4BEC2"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_keyboards_mask.png.meta",
+    "Hash": "0F07365B17C76DF993BF876AFB014DB6D57DD65C862690378869C9C8BA8E20C5"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_phone_cases_base.png",
+    "Hash": "B7CAC252036E9EA13E88003DCB26FB455C8D6BEAF7E672F4AFBAEE3C3DA0E53F"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_phone_cases_base.png.meta",
+    "Hash": "C4C0639DBF2C4AF85FB18FBF0B4DDF249C851F1044A1CA2684559F904FB8805C"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_phone_cases_mask.png",
+    "Hash": "9A4C520EA12DF3AE8E2C8F20EE05DA4DDEC381FA9A667876C49A963BF0FAE83C"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_phone_cases_mask.png.meta",
+    "Hash": "77DE3B65E565087EB378F93FFFBEB1075384D6FAB7B42F28EE2FD49A20F8998B"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_shoes_base.png",
+    "Hash": "493F54BAD721FFC31A31ACF99AAA3B905931EB099AB9D965EA4572D398B6F9C6"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_shoes_base.png.meta",
+    "Hash": "17B4429AC0277189C162E73C1AE38389FEA1E973BF5A1748E9A3B97EF2F2D7D6"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_shoes_mask.png",
+    "Hash": "36E687DBC9AE28D4645EA10F55271FECA4CC80DFEEDAF4CCB8D6652DFD7D456F"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_shoes_mask.png.meta",
+    "Hash": "54A3AD94B5D6ABC2CA944BB45F347DFE8EF0FFFC1B7D545EFB5C6AF299398ED8"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_sunglasses_base.png",
+    "Hash": "3F6F152ABEBEEA00170C23108E62F9E189E84AD435DA1F717A2EC54C7F9740FA"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_sunglasses_base.png.meta",
+    "Hash": "1EFC01FE1AF13DB46172A3672830DC91B7FBBDD850F5CC340943A2BAE8DC155A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_sunglasses_mask.png",
+    "Hash": "3E18F9C40D7BB506DE959800954066F7C718D57194596DB224EE66FA94EC0449"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_sunglasses_mask.png.meta",
+    "Hash": "BDADC2CEC46D53DC6004B684C62F575C40FC52766D669AF2C45263778B6A698E"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_tops_base.png",
+    "Hash": "76E16DC1F21659636AC9A2FAA142F8ACC0441BA04B55A71F41C94CB7553AC0AC"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_tops_base.png.meta",
+    "Hash": "DE568226BCA539976B723693A18F016A731737D75121D0BAFFFEEE8C1D5BA54B"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_tops_mask.png",
+    "Hash": "DE1F1BE3A02B1C8C19D0DFEF53A59F9A34BFEF76B6EF556929C1DAEDC5AEA212"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_tops_mask.png.meta",
+    "Hash": "7EFB9722D7C754036DFE0D26AC89D3C80AB578929F9F7D51180B0772B76C05A7"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_tumblers_base.png",
+    "Hash": "D1CA5DED28978D7931927939EE0A5FC40753083F28D8D7F255C4DF2F32EB9113"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_tumblers_base.png.meta",
+    "Hash": "D8A34EA6E2A523EF7604B52405A5702A194B828507ECC88B82A8FCE3DDCD273F"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_tumblers_mask.png",
+    "Hash": "AE79FDCB5523C7685458396236E1FAF4A109B70CBEE7DF1F15C00E4B2C94D3B7"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_tumblers_mask.png.meta",
+    "Hash": "42DFA2360E3DEF1BC1F3E43AB08F9E18C4220665084771829D7751ED12D66263"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_umbrellas_base.png",
+    "Hash": "AB34CF9CEF882B097834F8A0709FA24353F4F2DC93C657EF3A90593284F92496"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_umbrellas_base.png.meta",
+    "Hash": "A416F7E98A71C820A102230EA34BE45C3437DB28EB4E23F77A977AD2FC3D7538"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_umbrellas_mask.png",
+    "Hash": "F7B6B95F9D1BAB7F84F4FCDD6312DC4B022E0BFA7398F82DF2114C372BBD10F6"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_umbrellas_mask.png.meta",
+    "Hash": "C173BAFD30B5790DC8949922787068ED809C7186E347903B89C8AE50E43DD0CC"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_wristwatches_base.png",
+    "Hash": "3F2B7BCF3AD55DC843380A406B1760910697811C4D68B16DC8EE1219C4A5DCBC"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_wristwatches_base.png.meta",
+    "Hash": "C13394E68996BEC3476344172284BEF0C76529B5B5C98BB9EDAD1D44BE0F705B"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_wristwatches_mask.png",
+    "Hash": "78192CD1CBE5B712E7C9EDB6246F7F7C43037345092886BE850A226CBE7526EF"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\StreamingAssets\\BlockGeneration\\Coloring\\Samples\\working_adult_wristwatches_mask.png.meta",
+    "Hash": "AB98C23ECD0B4FF86A549894764267B0C18079F43CF3687DB4DDED03DB8BE29A"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\UI\\UIs_Common\\VideoPanel\\VideoEndPopup.png",
+    "Hash": "E7EAE3220313F8D88EFB0926FCE5A5BAC6F9195901ECDF75A639F679892B2038"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Packages\\manifest.json",
+    "Hash": "11B34C9C62182CAAAB314C1878892A5CC536EF0B1846A334E58D7A2025AC67D7"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Packages\\packages-lock.json",
+    "Hash": "993F6725AD34EF0F2FFA6F2CC2355B72755EBC74AA2B4CFE803104195E5C62EE"
+  },
+  {
+    "Path": "C:\\UnityProjects\\Thai_02_Big_Data_in_Our_Lives\\Assets\\AssetKits\\ParticleImage\\Demo\\Prefabs\\ConfettiFullscreen.prefab",
+    "Hash": "20A74C21E4385412C22AF86BE86216DDA9FE6D04F84C6B90ACF6A1CDBCBFCC39"
+  }
+]

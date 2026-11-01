@@ -1,0 +1,54 @@
+[
+  {
+    "scene": "0_Idle",
+    "missingScripts": 0,
+    "textComponents": 0,
+    "blockSlots": 0,
+    "slotsUntinted": true,
+    "slotFadeOnly": true,
+    "emptyBlockContent": true,
+    "dirty": false,
+    "hints": [
+      {
+        "name": "ButtonHelpBox_th",
+        "active": true
+      }
+    ]
+  },
+  {
+    "scene": "1_Game",
+    "missingScripts": 0,
+    "textComponents": 0,
+    "blockSlots": 8,
+    "slotsUntinted": true,
+    "slotFadeOnly": true,
+    "emptyBlockContent": true,
+    "dirty": false,
+    "hints": [
+      {
+        "name": "ButtonHelpBox_groupselect_th",
+        "active": false
+      },
+      {
+        "name": "ButtonHelpBox_selectall_th",
+        "active": false
+      }
+    ]
+  },
+  {
+    "scene": "2_Result",
+    "missingScripts": 0,
+    "textComponents": 0,
+    "blockSlots": 0,
+    "slotsUntinted": true,
+    "slotFadeOnly": true,
+    "emptyBlockContent": true,
+    "dirty": false,
+    "hints": [
+      {
+        "name": "ButtonHelpBox_recommendedAd_th",
+        "active": true
+      }
+    ]
+  }
+]

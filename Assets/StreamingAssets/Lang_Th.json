@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "language": "th",
+  "video": "Videos/Video_th",
+  "images": [
+    {
+      "id": "idle.title",
+      "sprite": "Title_th",
+      "x": 63,
+      "y": 23,
+      "width": 935,
+      "height": 454,
+      "figmaNode": "27:525"
+    },
+    {
+      "id": "idle.subtitle",
+      "sprite": "Subtitle_th",
+      "x": 99,
+      "y": 478,
+      "width": 486,
+      "height": 105,
+      "figmaNode": "27:525"
+    },
+    {
+      "id": "idle.help",
+      "sprite": "ButtonHelpBox_th",
+      "x": 307,
+      "y": 879,
+      "width": 1315,
+      "height": 173,
+      "figmaNode": "27:525"
+    },
+    {
+      "id": "group.title",
+      "sprite": "Title_groupselect_th",
+      "x": 533,
+      "y": 52,
+      "width": 864,
+      "height": 149,
+      "figmaNode": "27:538"
+    },
+    {
+      "id": "group.subtitle",
+      "sprite": "Subtitle_groupselect_th",
+      "x": 565,
+      "y": 207,
+      "width": 753,
+      "height": 41,
+      "figmaNode": "27:538"
+    },
+    {
+      "id": "group.help",
+      "sprite": "ButtonHelpBox_groupselect_th",
+      "x": 622,
+      "y": 899,
+      "width": 688,
+      "height": 153,
+      "figmaNode": "27:538"
+    },
+    {
+      "id": "selection.title",
+      "sprite": "Title_selectall_th",
+      "x": 426,
+      "y": 34,
+      "width": 1074,
+      "height": 161,
+      "figmaNode": "27:558"
+    },
+    {
+      "id": "selection.subtitle",
+      "sprite": "Subtitle_selectall_th",
+      "x": 587,
+      "y": 198,
+      "width": 748,
+      "height": 39,
+      "figmaNode": "27:558"
+    },
+    {
+      "id": "selection.help",
+      "sprite": "ButtonHelpBox_selectall_th",
+      "x": 622,
+      "y": 899,
+      "width": 688,
+      "height": 153,
+      "figmaNode": "27:558"
+    },
+    {
+      "id": "result.title",
+      "sprite": "Title_recommendedAd_th",
+      "x": 322,
+      "y": 58,
+      "width": 1277,
+      "height": 151,
+      "figmaNode": "27:579"
+    },
+    {
+      "id": "result.subtitle",
+      "sprite": "Subtitle_recommendedAd_th",
+      "x": 541,
+      "y": 221,
+      "width": 839,
+      "height": 62,
+      "figmaNode": "27:579"
+    },
+    {
+      "id": "result.help",
+      "sprite": "ButtonHelpBox_recommendedAd_th",
+      "x": 584,
+      "y": 899,
+      "width": 766,
+      "height": 153,
+      "figmaNode": "27:579"
+    },
+    {
+      "id": "selection.productBoard",
+      "sprite": "RecommendedProductImageBox_selectall_th",
+      "x": 816,
+      "y": 331,
+      "width": 838,
+      "height": 493,
+      "figmaNode": "20:263"
+    },
+    {
+      "id": "video.end",
+      "sprite": "VideoEndPopupText_th",
+      "x": 433.58008,
+      "y": 445.96777,
+      "width": 1049.34326,
+      "height": 170.91211,
+      "figmaNode": "20:291"
+    }
+  ]
+}

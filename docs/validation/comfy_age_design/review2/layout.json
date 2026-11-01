@@ -1,0 +1,289 @@
+{
+  "size": [
+    2248,
+    5330
+  ],
+  "cells": [
+    {
+      "product": "bags",
+      "age": "child",
+      "source": "bags_child_1206501.png",
+      "row": 0,
+      "column": 0
+    },
+    {
+      "product": "bags",
+      "age": "student",
+      "source": "bags_student_1206501.png",
+      "row": 0,
+      "column": 1
+    },
+    {
+      "product": "bags",
+      "age": "working_adult",
+      "source": "bags_working_adult_1206501.png",
+      "row": 0,
+      "column": 2
+    },
+    {
+      "product": "bags",
+      "age": "senior",
+      "source": "bags_senior_1206501.png",
+      "row": 0,
+      "column": 3
+    },
+    {
+      "product": "shoes",
+      "age": "child",
+      "source": "shoes_child_1206501.png",
+      "row": 1,
+      "column": 0
+    },
+    {
+      "product": "shoes",
+      "age": "student",
+      "source": "shoes_student_1206501.png",
+      "row": 1,
+      "column": 1
+    },
+    {
+      "product": "shoes",
+      "age": "working_adult",
+      "source": "shoes_working_adult_1206501.png",
+      "row": 1,
+      "column": 2
+    },
+    {
+      "product": "shoes",
+      "age": "senior",
+      "source": "shoes_senior_1206501.png",
+      "row": 1,
+      "column": 3
+    },
+    {
+      "product": "hats",
+      "age": "child",
+      "source": "hats_child_1206501.png",
+      "row": 2,
+      "column": 0
+    },
+    {
+      "product": "hats",
+      "age": "student",
+      "source": "hats_student_1206501.png",
+      "row": 2,
+      "column": 1
+    },
+    {
+      "product": "hats",
+      "age": "working_adult",
+      "source": "hats_working_adult_1206501.png",
+      "row": 2,
+      "column": 2
+    },
+    {
+      "product": "hats",
+      "age": "senior",
+      "source": "hats_senior_1206501.png",
+      "row": 2,
+      "column": 3
+    },
+    {
+      "product": "sunglasses",
+      "age": "child",
+      "source": "sunglasses_child_1206501.png",
+      "row": 3,
+      "column": 0
+    },
+    {
+      "product": "sunglasses",
+      "age": "student",
+      "source": "sunglasses_student_1206501.png",
+      "row": 3,
+      "column": 1
+    },
+    {
+      "product": "sunglasses",
+      "age": "working_adult",
+      "source": "sunglasses_working_adult_1206501.png",
+      "row": 3,
+      "column": 2
+    },
+    {
+      "product": "sunglasses",
+      "age": "senior",
+      "source": "sunglasses_senior_1206501.png",
+      "row": 3,
+      "column": 3
+    },
+    {
+      "product": "headphones",
+      "age": "child",
+      "source": "headphones_child_1206501.png",
+      "row": 4,
+      "column": 0
+    },
+    {
+      "product": "headphones",
+      "age": "student",
+      "source": "headphones_student_1206501.png",
+      "row": 4,
+      "column": 1
+    },
+    {
+      "product": "headphones",
+      "age": "working_adult",
+      "source": "headphones_working_adult_1206501.png",
+      "row": 4,
+      "column": 2
+    },
+    {
+      "product": "headphones",
+      "age": "senior",
+      "source": "headphones_senior_1206501.png",
+      "row": 4,
+      "column": 3
+    },
+    {
+      "product": "tops",
+      "age": "child",
+      "source": "tops_child_1206501.png",
+      "row": 5,
+      "column": 0
+    },
+    {
+      "product": "tops",
+      "age": "student",
+      "source": "tops_student_1206501.png",
+      "row": 5,
+      "column": 1
+    },
+    {
+      "product": "tops",
+      "age": "working_adult",
+      "source": "tops_working_adult_1206501.png",
+      "row": 5,
+      "column": 2
+    },
+    {
+      "product": "tops",
+      "age": "senior",
+      "source": "tops_senior_1206501.png",
+      "row": 5,
+      "column": 3
+    },
+    {
+      "product": "bicycles",
+      "age": "child",
+      "source": "bicycles_child_1206501.png",
+      "row": 6,
+      "column": 0
+    },
+    {
+      "product": "bicycles",
+      "age": "student",
+      "source": "bicycles_student_1206501.png",
+      "row": 6,
+      "column": 1
+    },
+    {
+      "product": "bicycles",
+      "age": "working_adult",
+      "source": "bicycles_working_adult_1206501.png",
+      "row": 6,
+      "column": 2
+    },
+    {
+      "product": "bicycles",
+      "age": "senior",
+      "source": "bicycles_senior_1206501.png",
+      "row": 6,
+      "column": 3
+    },
+    {
+      "product": "tumblers",
+      "age": "child",
+      "source": "tumblers_child_1206501.png",
+      "row": 7,
+      "column": 0
+    },
+    {
+      "product": "tumblers",
+      "age": "student",
+      "source": "tumblers_student_1206501.png",
+      "row": 7,
+      "column": 1
+    },
+    {
+      "product": "tumblers",
+      "age": "working_adult",
+      "source": "tumblers_working_adult_1206501.png",
+      "row": 7,
+      "column": 2
+    },
+    {
+      "product": "tumblers",
+      "age": "senior",
+      "source": "tumblers_senior_1206501.png",
+      "row": 7,
+      "column": 3
+    },
+    {
+      "product": "wristwatches",
+      "age": "child",
+      "source": "wristwatches_child_1206501.png",
+      "row": 8,
+      "column": 0
+    },
+    {
+      "product": "wristwatches",
+      "age": "student",
+      "source": "wristwatches_student_1206501.png",
+      "row": 8,
+      "column": 1
+    },
+    {
+      "product": "wristwatches",
+      "age": "working_adult",
+      "source": "wristwatches_working_adult_1206501.png",
+      "row": 8,
+      "column": 2
+    },
+    {
+      "product": "wristwatches",
+      "age": "senior",
+      "source": "wristwatches_senior_1206501.png",
+      "row": 8,
+      "column": 3
+    },
+    {
+      "product": "umbrellas",
+      "age": "child",
+      "source": "umbrellas_child_1206501.png",
+      "row": 9,
+      "column": 0
+    },
+    {
+      "product": "umbrellas",
+      "age": "student",
+      "source": "umbrellas_student_1206501.png",
+      "row": 9,
+      "column": 1
+    },
+    {
+      "product": "umbrellas",
+      "age": "working_adult",
+      "source": "umbrellas_working_adult_1206501.png",
+      "row": 9,
+      "column": 2
+    },
+    {
+      "product": "umbrellas",
+      "age": "senior",
+      "source": "umbrellas_senior_1206501.png",
+      "row": 9,
+      "column": 3
+    }
+  ],
+  "count": 40
+}

@@ -3,7 +3,7 @@
   "colors": [
     {
       "id": "black",
-      "hex": "#000000"
+      "hex": "#171619"
     },
     {
       "id": "white",
@@ -11,19 +11,19 @@
     },
     {
       "id": "blue",
-      "hex": "#2068E8"
+      "hex": "#5FB0E3"
     },
     {
       "id": "red",
-      "hex": "#E83030"
+      "hex": "#EC6868"
     },
     {
       "id": "green",
-      "hex": "#27AD55"
+      "hex": "#B7DBA9"
     },
     {
       "id": "yellow",
-      "hex": "#FFD52A"
+      "hex": "#F6EEA2"
     }
   ],
   "templates": [
@@ -92,24 +92,10 @@
     },
     {
       "groupId": "child",
-      "productId": "phone_cases",
-      "resolvedProductId": "phone_cases",
-      "baseImage": "Coloring/Samples/child_phone_cases_base.png",
-      "maskImage": "Coloring/Samples/child_phone_cases_mask.png"
-    },
-    {
-      "groupId": "child",
       "productId": "umbrellas",
       "resolvedProductId": "umbrellas",
       "baseImage": "Coloring/Samples/child_umbrellas_base.png",
       "maskImage": "Coloring/Samples/child_umbrellas_mask.png"
-    },
-    {
-      "groupId": "child",
-      "productId": "equipment",
-      "resolvedProductId": "robots",
-      "baseImage": "Coloring/Samples/child_robots_base.png",
-      "maskImage": "Coloring/Samples/child_robots_mask.png"
     },
     {
       "groupId": "student",
@@ -176,24 +162,10 @@
     },
     {
       "groupId": "student",
-      "productId": "phone_cases",
-      "resolvedProductId": "phone_cases",
-      "baseImage": "Coloring/Samples/student_phone_cases_base.png",
-      "maskImage": "Coloring/Samples/student_phone_cases_mask.png"
-    },
-    {
-      "groupId": "student",
       "productId": "umbrellas",
       "resolvedProductId": "umbrellas",
       "baseImage": "Coloring/Samples/student_umbrellas_base.png",
       "maskImage": "Coloring/Samples/student_umbrellas_mask.png"
-    },
-    {
-      "groupId": "student",
-      "productId": "equipment",
-      "resolvedProductId": "laptops",
-      "baseImage": "Coloring/Samples/student_laptops_base.png",
-      "maskImage": "Coloring/Samples/student_laptops_mask.png"
     },
     {
       "groupId": "working_adult",
@@ -260,24 +232,10 @@
     },
     {
       "groupId": "working_adult",
-      "productId": "phone_cases",
-      "resolvedProductId": "phone_cases",
-      "baseImage": "Coloring/Samples/working_adult_phone_cases_base.png",
-      "maskImage": "Coloring/Samples/working_adult_phone_cases_mask.png"
-    },
-    {
-      "groupId": "working_adult",
       "productId": "umbrellas",
       "resolvedProductId": "umbrellas",
       "baseImage": "Coloring/Samples/working_adult_umbrellas_base.png",
       "maskImage": "Coloring/Samples/working_adult_umbrellas_mask.png"
-    },
-    {
-      "groupId": "working_adult",
-      "productId": "equipment",
-      "resolvedProductId": "keyboards",
-      "baseImage": "Coloring/Samples/working_adult_keyboards_base.png",
-      "maskImage": "Coloring/Samples/working_adult_keyboards_mask.png"
     },
     {
       "groupId": "senior",
@@ -344,24 +302,10 @@
     },
     {
       "groupId": "senior",
-      "productId": "phone_cases",
-      "resolvedProductId": "phone_cases",
-      "baseImage": "Coloring/Samples/senior_phone_cases_base.png",
-      "maskImage": "Coloring/Samples/senior_phone_cases_mask.png"
-    },
-    {
-      "groupId": "senior",
       "productId": "umbrellas",
       "resolvedProductId": "umbrellas",
       "baseImage": "Coloring/Samples/senior_umbrellas_base.png",
       "maskImage": "Coloring/Samples/senior_umbrellas_mask.png"
-    },
-    {
-      "groupId": "senior",
-      "productId": "equipment",
-      "resolvedProductId": "laptops",
-      "baseImage": "Coloring/Samples/senior_laptops_base.png",
-      "maskImage": "Coloring/Samples/senior_laptops_mask.png"
     }
   ]
 }

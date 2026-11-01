@@ -5,9 +5,38 @@ namespace Exhibition.Blocks
     public enum BlockSlot { Group, Product, Color1, Color2 }
 
     [Serializable]
+    public sealed class BlockAgeVariant
+    {
+        public string groupId, label, prompt, primaryPart, secondaryPart;
+    }
+
+    [Serializable]
     public sealed class BlockOption
     {
-        public string id, label, prompt, primaryPart, secondaryPart, negativePrompt;
+        public string id, label, prompt, primaryPart, secondaryPart, negativePrompt, hex;
+        public string poseGuide;
+        public float poseStrength, poseEndPercent;
+        public float poseLowThreshold = .02f, poseHighThreshold = .06f;
+        public BlockAgeVariant[] ageVariants;
+
+        public BlockAgeVariant ForGroup(string groupId)
+        {
+            if (ageVariants == null || ageVariants.Length == 0) return null;
+            foreach (var variant in ageVariants)
+                if (variant.groupId == groupId) return variant;
+            throw new ArgumentException("Missing product design for audience: " + id + "/" + groupId);
+        }
+
+        public string ColorReference
+        {
+            get
+            {
+                if (!UnityEngine.ColorUtility.TryParseHtmlString(hex, out var color))
+                    throw new ArgumentException("Invalid block resource color: " + id);
+                UnityEngine.Color32 rgb = color;
+                return hex.ToUpperInvariant() + " RGB(" + rgb.r + ", " + rgb.g + ", " + rgb.b + ")";
+            }
+        }
     }
 
     [Serializable]
@@ -15,6 +44,8 @@ namespace Exhibition.Blocks
     {
         public int schemaVersion;
         public string stylePrefix, styleSuffix, negativePrompt;
+        public string promptSeparator;
+        public bool numericColorPrompt;
         public BlockOption[] groups, products, colors, equipmentVariants;
 
         public BlockOption[] Options(BlockSlot slot) => slot == BlockSlot.Group ? groups :
@@ -30,6 +61,8 @@ namespace Exhibition.Blocks
         {
             if (schemaVersion != 1 || string.IsNullOrWhiteSpace(styleSuffix) || string.IsNullOrWhiteSpace(negativePrompt))
                 throw new ArgumentException("Invalid block catalog schema or prompts.");
+            if (promptSeparator != null && promptSeparator != ", " && promptSeparator != ". ")
+                throw new ArgumentException("Invalid prompt separator.");
             foreach (var options in new[] { groups, products, colors, equipmentVariants })
             {
                 if (options == null || options.Length == 0) throw new ArgumentException("Empty block catalog.");
@@ -40,8 +73,36 @@ namespace Exhibition.Blocks
                         throw new ArgumentException("Invalid or duplicate block option.");
             }
             foreach (var option in products)
+            {
                 if (string.IsNullOrWhiteSpace(option.primaryPart) || string.IsNullOrWhiteSpace(option.secondaryPart))
                     throw new ArgumentException("Missing product color parts.");
+                if (option.ageVariants != null && option.ageVariants.Length > 0)
+                {
+                    var audiences = new System.Collections.Generic.HashSet<string>();
+                    foreach (var variant in option.ageVariants)
+                    {
+                        if (variant == null || string.IsNullOrWhiteSpace(variant.groupId) ||
+                            string.IsNullOrWhiteSpace(variant.label) || string.IsNullOrWhiteSpace(variant.prompt) ||
+                            string.IsNullOrWhiteSpace(variant.primaryPart) || string.IsNullOrWhiteSpace(variant.secondaryPart) ||
+                            !audiences.Add(variant.groupId))
+                            throw new ArgumentException("Invalid or duplicate product age design: " + option.id);
+                        Find(BlockSlot.Group, variant.groupId);
+                    }
+                    if (audiences.Count != groups.Length)
+                        throw new ArgumentException("Incomplete product age designs: " + option.id);
+                }
+                if (!string.IsNullOrEmpty(option.poseGuide) &&
+                    (!option.poseGuide.StartsWith("guide_", StringComparison.Ordinal) ||
+                     !option.poseGuide.EndsWith(".png", StringComparison.Ordinal) || option.poseGuide.Contains("..") ||
+                     option.poseGuide.Contains("/") || option.poseGuide.Contains("\\") || option.poseGuide.Contains(":") ||
+                     !(option.poseStrength > 0 && option.poseStrength <= .8f) || !(option.poseEndPercent > 0 && option.poseEndPercent <= .8f) ||
+                     !(option.poseLowThreshold >= 0 && option.poseLowThreshold < option.poseHighThreshold && option.poseHighThreshold <= 1)))
+                    throw new ArgumentException("Invalid limited product pose reference.");
+            }
+            foreach (var option in colors)
+                if (option.hex == null || option.hex.Length != 7 || option.hex[0] != '#' ||
+                    !UnityEngine.ColorUtility.TryParseHtmlString(option.hex, out _))
+                    throw new ArgumentException("Use #RRGGBB sampled from the color block circle: " + option.id);
         }
     }
 
@@ -81,15 +142,23 @@ namespace Exhibition.Blocks
             var first = catalog.Find(BlockSlot.Color1, _ids[2]);
             var second = catalog.Find(BlockSlot.Color2, _ids[3]);
             var variant = product.id == "equipment" ? catalog.equipmentVariants[equipmentIndex] : null;
-            string subject = variant != null ? variant.prompt : product.prompt;
-            string primary = "(" + first.prompt + " " + product.primaryPart + ":1.15)";
-            string secondary = "(" + second.prompt + " " + product.secondaryPart + ":1.15)";
+            var ageDesign = product.ForGroup(group.id);
+            string subject = variant != null ? variant.prompt : ageDesign != null ? ageDesign.prompt : product.prompt;
+            string primaryPart = ageDesign != null ? ageDesign.primaryPart : product.primaryPart;
+            string secondaryPart = ageDesign != null ? ageDesign.secondaryPart : product.secondaryPart;
+            // The reference model's language encoder understands numeric colors; legacy CLIP keeps color words.
+            string primary = catalog.numericColorPrompt ? "Main color " + first.hex.ToUpperInvariant() + " (" + first.prompt + ") on " + primaryPart : first.prompt + " " + primaryPart;
+            string secondary = catalog.numericColorPrompt ? "Accent color " + second.hex.ToUpperInvariant() + " (" + second.prompt + ") on " + secondaryPart : second.prompt + " " + secondaryPart;
             return new BlockPrompt {
                 groupId = group.id, productId = product.id, color1 = first.id, color2 = second.id,
+                primaryHex = first.hex, secondaryHex = second.hex,
+                primaryReference = first.ColorReference, secondaryReference = second.ColorReference,
+                poseGuide = product.poseGuide, poseStrength = product.poseStrength, poseEndPercent = product.poseEndPercent,
+                poseLowThreshold = product.poseLowThreshold, poseHighThreshold = product.poseHighThreshold,
                 resolvedProduct = variant != null ? variant.id : product.id,
                 audienceFragment = group.prompt, productFragment = subject,
                 primaryFragment = primary, secondaryFragment = secondary,
-                positive = string.Join(", ", catalog.stylePrefix, subject, primary, secondary, group.prompt, catalog.styleSuffix),
+                positive = string.Join(catalog.promptSeparator ?? ", ", subject, primary, secondary, group.prompt, catalog.stylePrefix, catalog.styleSuffix),
                 negative = string.IsNullOrWhiteSpace(product.negativePrompt) ? catalog.negativePrompt :
                     catalog.negativePrompt + ", " + product.negativePrompt
             };
@@ -100,6 +169,11 @@ namespace Exhibition.Blocks
     public sealed class BlockPrompt
     {
         public string groupId, productId, color1, color2, resolvedProduct;
+        public string primaryHex, secondaryHex;
+        public string primaryReference, secondaryReference;
+        public string poseGuide;
+        public float poseStrength, poseEndPercent;
+        public float poseLowThreshold, poseHighThreshold;
         public string audienceFragment, productFragment, primaryFragment, secondaryFragment, positive, negative;
     }
 }

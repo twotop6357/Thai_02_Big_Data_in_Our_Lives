@@ -1,0 +1,310 @@
+[
+  {
+    "file": "headphones_student_1206501.png",
+    "center": [
+      239.5,
+      240.0
+    ],
+    "bounds": [
+      50,
+      69,
+      429,
+      411
+    ],
+    "transparent_pixels": 159136
+  },
+  {
+    "file": "tops_student_1206501.png",
+    "center": [
+      240.0,
+      240.0
+    ],
+    "bounds": [
+      55,
+      24,
+      425,
+      456
+    ],
+    "transparent_pixels": 130973
+  },
+  {
+    "file": "hats_student_1206501.png",
+    "center": [
+      240.0,
+      240.0
+    ],
+    "bounds": [
+      59,
+      24,
+      421,
+      456
+    ],
+    "transparent_pixels": 137311
+  },
+  {
+    "file": "tumblers_student_1206501.png",
+    "center": [
+      239.5,
+      240.0
+    ],
+    "bounds": [
+      112,
+      54,
+      367,
+      426
+    ],
+    "transparent_pixels": 156327
+  },
+  {
+    "file": "bags_student_1206501.png",
+    "center": [
+      239.5,
+      240.0
+    ],
+    "bounds": [
+      48,
+      55,
+      431,
+      425
+    ],
+    "transparent_pixels": 137930
+  },
+  {
+    "file": "shoes_student_1206501.png",
+    "center": [
+      239.5,
+      240.0
+    ],
+    "bounds": [
+      32,
+      92,
+      447,
+      388
+    ],
+    "transparent_pixels": 158140
+  },
+  {
+    "file": "sunglasses_student_1206501.png",
+    "center": [
+      240.0,
+      240.0
+    ],
+    "bounds": [
+      51,
+      54,
+      429,
+      426
+    ],
+    "transparent_pixels": 118737
+  },
+  {
+    "file": "bicycles_student_1206501.png",
+    "center": [
+      240.0,
+      239.5
+    ],
+    "bounds": [
+      43,
+      47,
+      437,
+      432
+    ],
+    "transparent_pixels": 168637
+  },
+  {
+    "file": "wristwatches_student_1206501.png",
+    "center": [
+      239.5,
+      239.5
+    ],
+    "bounds": [
+      108,
+      50,
+      371,
+      429
+    ],
+    "transparent_pixels": 158537
+  },
+  {
+    "file": "umbrellas_student_1206501.png",
+    "center": [
+      240.0,
+      239.5
+    ],
+    "bounds": [
+      38,
+      49,
+      442,
+      430
+    ],
+    "transparent_pixels": 117790
+  },
+  {
+    "file": "headphones_student_1206502.png",
+    "center": [
+      240.0,
+      240.0
+    ],
+    "bounds": [
+      24,
+      75,
+      456,
+      405
+    ],
+    "transparent_pixels": 163217
+  },
+  {
+    "file": "tops_student_1206502.png",
+    "center": [
+      239.5,
+      240.0
+    ],
+    "bounds": [
+      51,
+      24,
+      428,
+      456
+    ],
+    "transparent_pixels": 105127
+  },
+  {
+    "file": "hats_student_1206502.png",
+    "center": [
+      240.0,
+      240.0
+    ],
+    "bounds": [
+      53,
+      24,
+      427,
+      456
+    ],
+    "transparent_pixels": 122431
+  },
+  {
+    "file": "tumblers_student_1206502.png",
+    "center": [
+      239.5,
+      240.0
+    ],
+    "bounds": [
+      105,
+      40,
+      374,
+      440
+    ],
+    "transparent_pixels": 152097
+  },
+  {
+    "file": "bags_student_1206502.png",
+    "center": [
+      240.0,
+      240.0
+    ],
+    "bounds": [
+      61,
+      55,
+      419,
+      425
+    ],
+    "transparent_pixels": 194025
+  },
+  {
+    "file": "shoes_student_1206502.png",
+    "center": [
+      239.5,
+      239.5
+    ],
+    "bounds": [
+      34,
+      28,
+      445,
+      451
+    ],
+    "transparent_pixels": 135896
+  },
+  {
+    "file": "sunglasses_student_1206502.png",
+    "center": [
+      240.0,
+      240.0
+    ],
+    "bounds": [
+      24,
+      30,
+      456,
+      450
+    ],
+    "transparent_pixels": 73994
+  },
+  {
+    "file": "bicycles_student_1206502.png",
+    "center": [
+      239.5,
+      239.5
+    ],
+    "bounds": [
+      53,
+      62,
+      426,
+      417
+    ],
+    "transparent_pixels": 169319
+  },
+  {
+    "file": "wristwatches_student_1206502.png",
+    "center": [
+      240.0,
+      240.0
+    ],
+    "bounds": [
+      112,
+      47,
+      368,
+      433
+    ],
+    "transparent_pixels": 159268
+  },
+  {
+    "file": "umbrellas_student_1206502.png",
+    "center": [
+      240.0,
+      239.5
+    ],
+    "bounds": [
+      50,
+      49,
+      430,
+      430
+    ],
+    "transparent_pixels": 164094
+  },
+  {
+    "file": "bags_child_1206501.png",
+    "center": [
+      239.5,
+      240.0
+    ],
+    "bounds": [
+      34,
+      38,
+      445,
+      442
+    ],
+    "transparent_pixels": 122725
+  },
+  {
+    "file": "bags_working_adult_1206501.png",
+    "center": [
+      239.5,
+      240.0
+    ],
+    "bounds": [
+      48,
+      56,
+      431,
+      424
+    ],
+    "transparent_pixels": 140440
+  }
+]

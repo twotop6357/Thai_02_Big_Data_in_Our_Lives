@@ -2,6 +2,7 @@ using Core;
 using VContainer;
 using VContainer.Unity;
 using HuliacDev.App;
+using Exhibition.Blocks;
 
 namespace App
 {
@@ -26,6 +27,13 @@ namespace App
         private void ConfigureManagers(IContainerBuilder builder)
         {
             builder.RegisterComponentInHierarchy<GameManager>();
+            builder.RegisterBuildCallback(resolver => {
+                var manager = resolver.Resolve<GameManager>();
+                if (!manager.GetComponent<GeneratedImageRetention>())
+                    manager.gameObject.AddComponent<GeneratedImageRetention>();
+                if (!manager.GetComponent<ComfyServerLauncher>())
+                    manager.gameObject.AddComponent<ComfyServerLauncher>();
+            });
         }
     }
 }

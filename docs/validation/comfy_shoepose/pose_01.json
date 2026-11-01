@@ -1,0 +1,33 @@
+{
+  "prompt_id": "cbcd4913-6a86-46d9-b070-6b7d41d3245c",
+  "selection": {
+    "group": "student",
+    "product": "shoes",
+    "color1": "red",
+    "color2": "blue",
+    "primary_hex": "#EC6868",
+    "secondary_hex": "#5FB0E3",
+    "profile": "quality",
+    "seed": 976531,
+    "width": 480,
+    "height": 480,
+    "resolved_product": "shoes",
+    "alpha": true,
+    "positive_prompt": "(vector illustration:1.4), (one single product:1.3), one complete object only, isolated on pure white, (one single intact sneaker:1.5), one low-top shoe only, natural upright resting position, sole facing down, heel and toe on the same ground plane, one three-quarter view from slightly above, toe pointing toward the lower left, connected upper and sole, neatly tied laces, softly rounded toe and white midsole, soft coral red upper body panels, light sky blue accent trim and laces, practical casual design with sporty details, soft pastel colors, clean lavender outlines, gentle soft cel shading, polished simple cartoon illustration, product centered horizontally and vertically, balanced empty margins on every side, one natural three-quarter camera angle, no shadows, no decorations"
+  },
+  "seconds_request_to_png": 13.792,
+  "width": 480,
+  "height": 480,
+  "local_image": "pose_01.png",
+  "server_image": {
+    "filename": "product_00051_.png",
+    "subfolder": "Thai02",
+    "type": "output",
+    "metadata": {
+      "kind": "image",
+      "width": 480,
+      "height": 480
+    },
+    "id": "07bf942a-e558-4011-a76d-49361bf3ce07"
+  }
+}

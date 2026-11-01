@@ -1,0 +1,29 @@
+{
+  "task": "AD-FX-001",
+  "checks": [
+    "Two Item branches including the nested ring are present",
+    "Physical and keyboard input share the effect input lock",
+    "Effect starts only on the visible advertisement",
+    "All emitters are non-looping and unscaled",
+    "Button taps and direct continue requests are ignored during emphasis",
+    "Product emphasis emits visible particles while the game is paused",
+    "Sparkles remain within the product image instead of crossing the page",
+    "Effect finishes within two real-time seconds even at timeScale zero",
+    "Completion clears all particles and hides the effect",
+    "Ignored taps are not replayed after unlocking",
+    "Completion leaves input unlocked and no blackout",
+    "Repeated entrance notification does not restart the same advertisement effect",
+    "Advertisement to video still uses a full black transition",
+    "Video decoder still hands over opening frame zero",
+    "Video entry releases blackout and input lock",
+    "Home after video still returns to Idle",
+    "Advertisement reentry starts a fresh locked effect",
+    "Disabling the effect cancels it and releases its input lease",
+    "Reenabled effect can start from a clean state",
+    "Cancellation clears particles and releases input",
+    "Scene exit during emphasis leaves no stale effect or input lock"
+  ],
+  "unity": "2022.3.62f3",
+  "observedSeconds": 1.8135867000019061,
+  "status": "PASS"
+}

@@ -1,0 +1,3178 @@
+[
+  {
+    "tag": "anime_hyper_shoes_student",
+    "seconds": 13.715,
+    "stages": [
+      {
+        "node": "1",
+        "seconds": 0.02
+      },
+      {
+        "node": "4",
+        "seconds": 2.461
+      },
+      {
+        "node": "3",
+        "seconds": 2.462
+      },
+      {
+        "node": "2",
+        "seconds": 4.043
+      },
+      {
+        "node": "30",
+        "seconds": 4.158
+      },
+      {
+        "node": "5",
+        "seconds": 4.404
+      },
+      {
+        "node": "6",
+        "seconds": 11.848
+      },
+      {
+        "node": "20",
+        "seconds": 12.19
+      },
+      {
+        "node": "21",
+        "seconds": 12.241
+      },
+      {
+        "node": "22",
+        "seconds": 13.38
+      },
+      {
+        "node": "23",
+        "seconds": 13.381
+      },
+      {
+        "node": "8",
+        "seconds": 13.387
+      },
+      {
+        "node": "7",
+        "seconds": 13.389
+      },
+      {
+        "node": null,
+        "seconds": 13.679
+      }
+    ],
+    "api": {
+      "1": {
+        "class_type": "CheckpointLoaderSimple",
+        "inputs": {
+          "ckpt_name": "animagine-xl-4.0-opt.safetensors"
+        },
+        "_meta": {
+          "title": "SDXL Turbo 1.0 fp16"
+        }
+      },
+      "2": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": "masterpiece, best quality, very aesthetic, cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one high-top canvas sneaker with laces, natural three-quarter view. soft red canvas upper, light blue ankle panels and sole. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background.",
+          "clip": [
+            "1",
+            1
+          ]
+        },
+        "_meta": {
+          "title": "Positive product conditioning"
+        }
+      },
+      "3": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": "photograph, photorealistic, semi-realistic, realistic, 3d render, glossy plastic render, sketch, unfinished, rough lineart, black outlines, hatching, messy lines, noise, grunge, intricate texture, text, watermark, logo, person, human, face, mannequin, hands, feet, wearing, holding, collage, grid, multiple views, duplicates, cropped, cut off, missing parts, broken, malformed, deformed, disconnected parts, floating parts, scenery, pedestal",
+          "clip": [
+            "1",
+            1
+          ]
+        },
+        "_meta": {
+          "title": "Negative / exclude people and text"
+        }
+      },
+      "4": {
+        "class_type": "EmptyLatentImage",
+        "inputs": {
+          "width": 640,
+          "height": 640,
+          "batch_size": 1
+        },
+        "_meta": {
+          "title": "512 x 512 internal / batch 1"
+        }
+      },
+      "5": {
+        "class_type": "KSampler",
+        "inputs": {
+          "model": [
+            "30",
+            0
+          ],
+          "positive": [
+            "2",
+            0
+          ],
+          "negative": [
+            "3",
+            0
+          ],
+          "latent_image": [
+            "4",
+            0
+          ],
+          "seed": 1206503,
+          "steps": 8,
+          "cfg": 5.5,
+          "sampler_name": "euler",
+          "scheduler": "sgm_uniform",
+          "denoise": 1.0
+        }
+      },
+      "6": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "5",
+            0
+          ],
+          "vae": [
+            "1",
+            2
+          ]
+        },
+        "_meta": {
+          "title": "Decode final image"
+        }
+      },
+      "7": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "8",
+            0
+          ],
+          "filename_prefix": "Thai02/Style3/anime_hyper"
+        },
+        "_meta": {
+          "title": "Final 480 x 480 RGBA PNG"
+        }
+      },
+      "8": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "23",
+            0
+          ],
+          "upscale_method": "area",
+          "width": 480,
+          "height": 480,
+          "crop": "disabled"
+        },
+        "_meta": {
+          "title": "Downsample RGBA to 480 x 480"
+        }
+      },
+      "10": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "simple sporty design"
+        },
+        "_meta": {
+          "title": "INPUT 1 / audience: student"
+        }
+      },
+      "11": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "one high-top canvas sneaker with laces, natural three-quarter view"
+        },
+        "_meta": {
+          "title": "INPUT 2 / product: shoes"
+        }
+      },
+      "12": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "soft red canvas upper"
+        },
+        "_meta": {
+          "title": "INPUT 3 / primary: red",
+          "color_reference": "#EC6868 RGB(236, 104, 104)"
+        }
+      },
+      "13": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "light blue ankle panels and sole"
+        },
+        "_meta": {
+          "title": "INPUT 4 / accent: blue",
+          "color_reference": "#5FB0E3 RGB(95, 176, 227)"
+        }
+      },
+      "14": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "11",
+            0
+          ],
+          "string_b": [
+            "15",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product + colors"
+        }
+      },
+      "15": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "12",
+            0
+          ],
+          "string_b": [
+            "13",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product-specific color parts"
+        }
+      },
+      "16": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "14",
+            0
+          ],
+          "string_b": [
+            "10",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Combine four choices"
+        }
+      },
+      "17": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "16",
+            0
+          ],
+          "string_b": "simple soft shaded illustration",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product first, then illustration style"
+        }
+      },
+      "18": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "17",
+            0
+          ],
+          "string_b": "one isolated item, plain white background, full view, centered with empty margins",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Fixed product composition"
+        }
+      },
+      "20": {
+        "class_type": "LoadBackgroundRemovalModel",
+        "inputs": {
+          "bg_removal_name": "birefnet.safetensors"
+        },
+        "_meta": {
+          "title": "BiRefNet foreground segmentation"
+        }
+      },
+      "21": {
+        "class_type": "RemoveBackground",
+        "inputs": {
+          "bg_removal_model": [
+            "20",
+            0
+          ],
+          "image": [
+            "6",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground mask at native resolution"
+        }
+      },
+      "22": {
+        "class_type": "InvertMask",
+        "inputs": {
+          "mask": [
+            "21",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground to Comfy alpha convention"
+        }
+      },
+      "23": {
+        "class_type": "JoinImageWithAlpha",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "alpha": [
+            "22",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Apply actual alpha (not painted transparency)"
+        }
+      },
+      "30": {
+        "class_type": "LoraLoaderModelOnly",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "lora_name": "Hyper-SDXL-8steps-CFG-lora.safetensors",
+          "strength_model": 1.0
+        }
+      }
+    },
+    "prompt_id": "42759d45-0c19-42de-9df0-a4fc31172d1c",
+    "server_image": {
+      "filename": "anime_hyper_00001_.png",
+      "subfolder": "Thai02\\Style3",
+      "type": "output",
+      "metadata": {
+        "kind": "image",
+        "width": 480,
+        "height": 480
+      },
+      "id": "91da8b38-f0a6-404a-a99f-fadeb58839dc"
+    },
+    "selection": {
+      "group": "student",
+      "product": "shoes",
+      "color1": "red",
+      "color2": "blue",
+      "primary_hex": "#EC6868",
+      "secondary_hex": "#5FB0E3",
+      "profile": "quality",
+      "seed": 1206503,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "shoes",
+      "alpha": true,
+      "positive_prompt": "masterpiece, best quality, very aesthetic, cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one high-top canvas sneaker with laces, natural three-quarter view. soft red canvas upper, light blue ankle panels and sole. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background."
+    }
+  },
+  {
+    "tag": "anime_hyper_bags_working_adult",
+    "seconds": 2.049,
+    "stages": [
+      {
+        "node": "2",
+        "seconds": 0.02
+      },
+      {
+        "node": "5",
+        "seconds": 0.117
+      },
+      {
+        "node": "6",
+        "seconds": 1.458
+      },
+      {
+        "node": "21",
+        "seconds": 1.614
+      },
+      {
+        "node": "22",
+        "seconds": 2.002
+      },
+      {
+        "node": "23",
+        "seconds": 2.004
+      },
+      {
+        "node": "8",
+        "seconds": 2.007
+      },
+      {
+        "node": "7",
+        "seconds": 2.009
+      },
+      {
+        "node": null,
+        "seconds": 2.045
+      }
+    ],
+    "api": {
+      "1": {
+        "class_type": "CheckpointLoaderSimple",
+        "inputs": {
+          "ckpt_name": "animagine-xl-4.0-opt.safetensors"
+        },
+        "_meta": {
+          "title": "SDXL Turbo 1.0 fp16"
+        }
+      },
+      "2": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": "masterpiece, best quality, very aesthetic, cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one structured office briefcase with a top handle and rectangular flap. soft red body, light blue handle and flap. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background.",
+          "clip": [
+            "1",
+            1
+          ]
+        },
+        "_meta": {
+          "title": "Positive product conditioning"
+        }
+      },
+      "3": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": "photograph, photorealistic, semi-realistic, realistic, 3d render, glossy plastic render, sketch, unfinished, rough lineart, black outlines, hatching, messy lines, noise, grunge, intricate texture, text, watermark, logo, person, human, face, mannequin, hands, feet, wearing, holding, collage, grid, multiple views, duplicates, cropped, cut off, missing parts, broken, malformed, deformed, disconnected parts, floating parts, scenery, pedestal",
+          "clip": [
+            "1",
+            1
+          ]
+        },
+        "_meta": {
+          "title": "Negative / exclude people and text"
+        }
+      },
+      "4": {
+        "class_type": "EmptyLatentImage",
+        "inputs": {
+          "width": 640,
+          "height": 640,
+          "batch_size": 1
+        },
+        "_meta": {
+          "title": "512 x 512 internal / batch 1"
+        }
+      },
+      "5": {
+        "class_type": "KSampler",
+        "inputs": {
+          "model": [
+            "30",
+            0
+          ],
+          "positive": [
+            "2",
+            0
+          ],
+          "negative": [
+            "3",
+            0
+          ],
+          "latent_image": [
+            "4",
+            0
+          ],
+          "seed": 1206503,
+          "steps": 8,
+          "cfg": 5.5,
+          "sampler_name": "euler",
+          "scheduler": "sgm_uniform",
+          "denoise": 1.0
+        }
+      },
+      "6": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "5",
+            0
+          ],
+          "vae": [
+            "1",
+            2
+          ]
+        },
+        "_meta": {
+          "title": "Decode final image"
+        }
+      },
+      "7": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "8",
+            0
+          ],
+          "filename_prefix": "Thai02/Style3/anime_hyper"
+        },
+        "_meta": {
+          "title": "Final 480 x 480 RGBA PNG"
+        }
+      },
+      "8": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "23",
+            0
+          ],
+          "upscale_method": "area",
+          "width": 480,
+          "height": 480,
+          "crop": "disabled"
+        },
+        "_meta": {
+          "title": "Downsample RGBA to 480 x 480"
+        }
+      },
+      "10": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "refined minimal design"
+        },
+        "_meta": {
+          "title": "INPUT 1 / audience: working_adult"
+        }
+      },
+      "11": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "one structured office briefcase with a top handle and rectangular flap"
+        },
+        "_meta": {
+          "title": "INPUT 2 / product: bags"
+        }
+      },
+      "12": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "soft red body"
+        },
+        "_meta": {
+          "title": "INPUT 3 / primary: red",
+          "color_reference": "#EC6868 RGB(236, 104, 104)"
+        }
+      },
+      "13": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "light blue handle and flap"
+        },
+        "_meta": {
+          "title": "INPUT 4 / accent: blue",
+          "color_reference": "#5FB0E3 RGB(95, 176, 227)"
+        }
+      },
+      "14": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "11",
+            0
+          ],
+          "string_b": [
+            "15",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product + colors"
+        }
+      },
+      "15": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "12",
+            0
+          ],
+          "string_b": [
+            "13",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product-specific color parts"
+        }
+      },
+      "16": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "14",
+            0
+          ],
+          "string_b": [
+            "10",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Combine four choices"
+        }
+      },
+      "17": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "16",
+            0
+          ],
+          "string_b": "simple soft shaded illustration",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product first, then illustration style"
+        }
+      },
+      "18": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "17",
+            0
+          ],
+          "string_b": "one isolated item, plain white background, full view, centered with empty margins",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Fixed product composition"
+        }
+      },
+      "20": {
+        "class_type": "LoadBackgroundRemovalModel",
+        "inputs": {
+          "bg_removal_name": "birefnet.safetensors"
+        },
+        "_meta": {
+          "title": "BiRefNet foreground segmentation"
+        }
+      },
+      "21": {
+        "class_type": "RemoveBackground",
+        "inputs": {
+          "bg_removal_model": [
+            "20",
+            0
+          ],
+          "image": [
+            "6",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground mask at native resolution"
+        }
+      },
+      "22": {
+        "class_type": "InvertMask",
+        "inputs": {
+          "mask": [
+            "21",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground to Comfy alpha convention"
+        }
+      },
+      "23": {
+        "class_type": "JoinImageWithAlpha",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "alpha": [
+            "22",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Apply actual alpha (not painted transparency)"
+        }
+      },
+      "30": {
+        "class_type": "LoraLoaderModelOnly",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "lora_name": "Hyper-SDXL-8steps-CFG-lora.safetensors",
+          "strength_model": 1.0
+        }
+      }
+    },
+    "prompt_id": "d983114f-10b5-40cc-a606-cde11b75e784",
+    "server_image": {
+      "filename": "anime_hyper_00002_.png",
+      "subfolder": "Thai02\\Style3",
+      "type": "output",
+      "metadata": {
+        "kind": "image",
+        "width": 480,
+        "height": 480
+      },
+      "id": "42f03840-8b44-47aa-989a-41a74020a6ce"
+    },
+    "selection": {
+      "group": "working_adult",
+      "product": "bags",
+      "color1": "red",
+      "color2": "blue",
+      "primary_hex": "#EC6868",
+      "secondary_hex": "#5FB0E3",
+      "profile": "quality",
+      "seed": 1206503,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "bags",
+      "alpha": true,
+      "positive_prompt": "masterpiece, best quality, very aesthetic, cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one structured office briefcase with a top handle and rectangular flap. soft red body, light blue handle and flap. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background."
+    }
+  },
+  {
+    "tag": "anime_plain_shoes_student",
+    "seconds": 4.037,
+    "stages": [
+      {
+        "node": "2",
+        "seconds": 0.016
+      },
+      {
+        "node": "5",
+        "seconds": 0.118
+      },
+      {
+        "node": "6",
+        "seconds": 3.463
+      },
+      {
+        "node": "21",
+        "seconds": 3.618
+      },
+      {
+        "node": "22",
+        "seconds": 4.002
+      },
+      {
+        "node": "23",
+        "seconds": 4.004
+      },
+      {
+        "node": "8",
+        "seconds": 4.007
+      },
+      {
+        "node": "7",
+        "seconds": 4.009
+      },
+      {
+        "node": null,
+        "seconds": 4.033
+      }
+    ],
+    "api": {
+      "1": {
+        "class_type": "CheckpointLoaderSimple",
+        "inputs": {
+          "ckpt_name": "animagine-xl-4.0-opt.safetensors"
+        },
+        "_meta": {
+          "title": "SDXL Turbo 1.0 fp16"
+        }
+      },
+      "2": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": "masterpiece, best quality, very aesthetic, cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one high-top canvas sneaker with laces, natural three-quarter view. soft red canvas upper, light blue ankle panels and sole. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background.",
+          "clip": [
+            "1",
+            1
+          ]
+        },
+        "_meta": {
+          "title": "Positive product conditioning"
+        }
+      },
+      "3": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": "photograph, photorealistic, semi-realistic, realistic, 3d render, glossy plastic render, sketch, unfinished, rough lineart, black outlines, hatching, messy lines, noise, grunge, intricate texture, text, watermark, logo, person, human, face, mannequin, hands, feet, wearing, holding, collage, grid, multiple views, duplicates, cropped, cut off, missing parts, broken, malformed, deformed, disconnected parts, floating parts, scenery, pedestal",
+          "clip": [
+            "1",
+            1
+          ]
+        },
+        "_meta": {
+          "title": "Negative / exclude people and text"
+        }
+      },
+      "4": {
+        "class_type": "EmptyLatentImage",
+        "inputs": {
+          "width": 640,
+          "height": 640,
+          "batch_size": 1
+        },
+        "_meta": {
+          "title": "512 x 512 internal / batch 1"
+        }
+      },
+      "5": {
+        "class_type": "KSampler",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "positive": [
+            "2",
+            0
+          ],
+          "negative": [
+            "3",
+            0
+          ],
+          "latent_image": [
+            "4",
+            0
+          ],
+          "seed": 1206503,
+          "steps": 16,
+          "cfg": 5.5,
+          "sampler_name": "euler_ancestral",
+          "scheduler": "normal",
+          "denoise": 1.0
+        }
+      },
+      "6": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "5",
+            0
+          ],
+          "vae": [
+            "1",
+            2
+          ]
+        },
+        "_meta": {
+          "title": "Decode final image"
+        }
+      },
+      "7": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "8",
+            0
+          ],
+          "filename_prefix": "Thai02/Style3/anime_plain"
+        },
+        "_meta": {
+          "title": "Final 480 x 480 RGBA PNG"
+        }
+      },
+      "8": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "23",
+            0
+          ],
+          "upscale_method": "area",
+          "width": 480,
+          "height": 480,
+          "crop": "disabled"
+        },
+        "_meta": {
+          "title": "Downsample RGBA to 480 x 480"
+        }
+      },
+      "10": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "simple sporty design"
+        },
+        "_meta": {
+          "title": "INPUT 1 / audience: student"
+        }
+      },
+      "11": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "one high-top canvas sneaker with laces, natural three-quarter view"
+        },
+        "_meta": {
+          "title": "INPUT 2 / product: shoes"
+        }
+      },
+      "12": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "soft red canvas upper"
+        },
+        "_meta": {
+          "title": "INPUT 3 / primary: red",
+          "color_reference": "#EC6868 RGB(236, 104, 104)"
+        }
+      },
+      "13": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "light blue ankle panels and sole"
+        },
+        "_meta": {
+          "title": "INPUT 4 / accent: blue",
+          "color_reference": "#5FB0E3 RGB(95, 176, 227)"
+        }
+      },
+      "14": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "11",
+            0
+          ],
+          "string_b": [
+            "15",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product + colors"
+        }
+      },
+      "15": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "12",
+            0
+          ],
+          "string_b": [
+            "13",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product-specific color parts"
+        }
+      },
+      "16": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "14",
+            0
+          ],
+          "string_b": [
+            "10",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Combine four choices"
+        }
+      },
+      "17": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "16",
+            0
+          ],
+          "string_b": "simple soft shaded illustration",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product first, then illustration style"
+        }
+      },
+      "18": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "17",
+            0
+          ],
+          "string_b": "one isolated item, plain white background, full view, centered with empty margins",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Fixed product composition"
+        }
+      },
+      "20": {
+        "class_type": "LoadBackgroundRemovalModel",
+        "inputs": {
+          "bg_removal_name": "birefnet.safetensors"
+        },
+        "_meta": {
+          "title": "BiRefNet foreground segmentation"
+        }
+      },
+      "21": {
+        "class_type": "RemoveBackground",
+        "inputs": {
+          "bg_removal_model": [
+            "20",
+            0
+          ],
+          "image": [
+            "6",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground mask at native resolution"
+        }
+      },
+      "22": {
+        "class_type": "InvertMask",
+        "inputs": {
+          "mask": [
+            "21",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground to Comfy alpha convention"
+        }
+      },
+      "23": {
+        "class_type": "JoinImageWithAlpha",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "alpha": [
+            "22",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Apply actual alpha (not painted transparency)"
+        }
+      }
+    },
+    "prompt_id": "428e9393-bcf5-4825-a21c-f09e266f0485",
+    "server_image": {
+      "filename": "anime_plain_00001_.png",
+      "subfolder": "Thai02\\Style3",
+      "type": "output",
+      "metadata": {
+        "kind": "image",
+        "width": 480,
+        "height": 480
+      },
+      "id": "7af84c58-c247-4fd7-9e1a-cf3b32b90db2"
+    },
+    "selection": {
+      "group": "student",
+      "product": "shoes",
+      "color1": "red",
+      "color2": "blue",
+      "primary_hex": "#EC6868",
+      "secondary_hex": "#5FB0E3",
+      "profile": "quality",
+      "seed": 1206503,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "shoes",
+      "alpha": true,
+      "positive_prompt": "masterpiece, best quality, very aesthetic, cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one high-top canvas sneaker with laces, natural three-quarter view. soft red canvas upper, light blue ankle panels and sole. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background."
+    }
+  },
+  {
+    "tag": "anime_plain_bags_working_adult",
+    "seconds": 3.303,
+    "stages": [
+      {
+        "node": "2",
+        "seconds": 0.015
+      },
+      {
+        "node": "5",
+        "seconds": 0.128
+      },
+      {
+        "node": "6",
+        "seconds": 2.718
+      },
+      {
+        "node": "21",
+        "seconds": 2.874
+      },
+      {
+        "node": "22",
+        "seconds": 3.256
+      },
+      {
+        "node": "23",
+        "seconds": 3.258
+      },
+      {
+        "node": "8",
+        "seconds": 3.261
+      },
+      {
+        "node": "7",
+        "seconds": 3.262
+      },
+      {
+        "node": null,
+        "seconds": 3.3
+      }
+    ],
+    "api": {
+      "1": {
+        "class_type": "CheckpointLoaderSimple",
+        "inputs": {
+          "ckpt_name": "animagine-xl-4.0-opt.safetensors"
+        },
+        "_meta": {
+          "title": "SDXL Turbo 1.0 fp16"
+        }
+      },
+      "2": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": "masterpiece, best quality, very aesthetic, cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one structured office briefcase with a top handle and rectangular flap. soft red body, light blue handle and flap. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background.",
+          "clip": [
+            "1",
+            1
+          ]
+        },
+        "_meta": {
+          "title": "Positive product conditioning"
+        }
+      },
+      "3": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": "photograph, photorealistic, semi-realistic, realistic, 3d render, glossy plastic render, sketch, unfinished, rough lineart, black outlines, hatching, messy lines, noise, grunge, intricate texture, text, watermark, logo, person, human, face, mannequin, hands, feet, wearing, holding, collage, grid, multiple views, duplicates, cropped, cut off, missing parts, broken, malformed, deformed, disconnected parts, floating parts, scenery, pedestal",
+          "clip": [
+            "1",
+            1
+          ]
+        },
+        "_meta": {
+          "title": "Negative / exclude people and text"
+        }
+      },
+      "4": {
+        "class_type": "EmptyLatentImage",
+        "inputs": {
+          "width": 640,
+          "height": 640,
+          "batch_size": 1
+        },
+        "_meta": {
+          "title": "512 x 512 internal / batch 1"
+        }
+      },
+      "5": {
+        "class_type": "KSampler",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "positive": [
+            "2",
+            0
+          ],
+          "negative": [
+            "3",
+            0
+          ],
+          "latent_image": [
+            "4",
+            0
+          ],
+          "seed": 1206503,
+          "steps": 16,
+          "cfg": 5.5,
+          "sampler_name": "euler_ancestral",
+          "scheduler": "normal",
+          "denoise": 1.0
+        }
+      },
+      "6": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "5",
+            0
+          ],
+          "vae": [
+            "1",
+            2
+          ]
+        },
+        "_meta": {
+          "title": "Decode final image"
+        }
+      },
+      "7": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "8",
+            0
+          ],
+          "filename_prefix": "Thai02/Style3/anime_plain"
+        },
+        "_meta": {
+          "title": "Final 480 x 480 RGBA PNG"
+        }
+      },
+      "8": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "23",
+            0
+          ],
+          "upscale_method": "area",
+          "width": 480,
+          "height": 480,
+          "crop": "disabled"
+        },
+        "_meta": {
+          "title": "Downsample RGBA to 480 x 480"
+        }
+      },
+      "10": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "refined minimal design"
+        },
+        "_meta": {
+          "title": "INPUT 1 / audience: working_adult"
+        }
+      },
+      "11": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "one structured office briefcase with a top handle and rectangular flap"
+        },
+        "_meta": {
+          "title": "INPUT 2 / product: bags"
+        }
+      },
+      "12": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "soft red body"
+        },
+        "_meta": {
+          "title": "INPUT 3 / primary: red",
+          "color_reference": "#EC6868 RGB(236, 104, 104)"
+        }
+      },
+      "13": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "light blue handle and flap"
+        },
+        "_meta": {
+          "title": "INPUT 4 / accent: blue",
+          "color_reference": "#5FB0E3 RGB(95, 176, 227)"
+        }
+      },
+      "14": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "11",
+            0
+          ],
+          "string_b": [
+            "15",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product + colors"
+        }
+      },
+      "15": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "12",
+            0
+          ],
+          "string_b": [
+            "13",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product-specific color parts"
+        }
+      },
+      "16": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "14",
+            0
+          ],
+          "string_b": [
+            "10",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Combine four choices"
+        }
+      },
+      "17": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "16",
+            0
+          ],
+          "string_b": "simple soft shaded illustration",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product first, then illustration style"
+        }
+      },
+      "18": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "17",
+            0
+          ],
+          "string_b": "one isolated item, plain white background, full view, centered with empty margins",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Fixed product composition"
+        }
+      },
+      "20": {
+        "class_type": "LoadBackgroundRemovalModel",
+        "inputs": {
+          "bg_removal_name": "birefnet.safetensors"
+        },
+        "_meta": {
+          "title": "BiRefNet foreground segmentation"
+        }
+      },
+      "21": {
+        "class_type": "RemoveBackground",
+        "inputs": {
+          "bg_removal_model": [
+            "20",
+            0
+          ],
+          "image": [
+            "6",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground mask at native resolution"
+        }
+      },
+      "22": {
+        "class_type": "InvertMask",
+        "inputs": {
+          "mask": [
+            "21",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground to Comfy alpha convention"
+        }
+      },
+      "23": {
+        "class_type": "JoinImageWithAlpha",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "alpha": [
+            "22",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Apply actual alpha (not painted transparency)"
+        }
+      }
+    },
+    "prompt_id": "24ad0b1c-7be3-4446-bdbc-6ca58e102423",
+    "server_image": {
+      "filename": "anime_plain_00002_.png",
+      "subfolder": "Thai02\\Style3",
+      "type": "output",
+      "metadata": {
+        "kind": "image",
+        "width": 480,
+        "height": 480
+      },
+      "id": "153adb19-b60b-49e8-9249-b8bcff778004"
+    },
+    "selection": {
+      "group": "working_adult",
+      "product": "bags",
+      "color1": "red",
+      "color2": "blue",
+      "primary_hex": "#EC6868",
+      "secondary_hex": "#5FB0E3",
+      "profile": "quality",
+      "seed": 1206503,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "bags",
+      "alpha": true,
+      "positive_prompt": "masterpiece, best quality, very aesthetic, cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one structured office briefcase with a top handle and rectangular flap. soft red body, light blue handle and flap. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background."
+    }
+  },
+  {
+    "tag": "klein_text_shoes_student",
+    "seconds": 7.19,
+    "stages": [
+      {
+        "node": "31",
+        "seconds": 0.017
+      },
+      {
+        "node": "4",
+        "seconds": 0.15
+      },
+      {
+        "node": "29",
+        "seconds": 0.151
+      },
+      {
+        "node": "28",
+        "seconds": 0.151
+      },
+      {
+        "node": "30",
+        "seconds": 0.152
+      },
+      {
+        "node": "2",
+        "seconds": 0.372
+      },
+      {
+        "node": "1",
+        "seconds": 3.293
+      },
+      {
+        "node": "37",
+        "seconds": 3.317
+      },
+      {
+        "node": "36",
+        "seconds": 3.317
+      },
+      {
+        "node": "5",
+        "seconds": 3.318
+      },
+      {
+        "node": "6",
+        "seconds": 5.98
+      },
+      {
+        "node": "21",
+        "seconds": 6.243
+      },
+      {
+        "node": "22",
+        "seconds": 6.844
+      },
+      {
+        "node": "23",
+        "seconds": 6.845
+      },
+      {
+        "node": "8",
+        "seconds": 6.848
+      },
+      {
+        "node": "7",
+        "seconds": 6.85
+      },
+      {
+        "node": null,
+        "seconds": 7.161
+      }
+    ],
+    "api": {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "flux-2-klein-4b-fp8.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": "cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one high-top canvas sneaker with laces, natural three-quarter view. soft red canvas upper, light blue ankle panels and sole. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background.",
+          "clip": [
+            "30",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Positive product conditioning"
+        }
+      },
+      "4": {
+        "class_type": "EmptyFlux2LatentImage",
+        "inputs": {
+          "width": 640,
+          "height": 640,
+          "batch_size": 1
+        }
+      },
+      "5": {
+        "class_type": "SamplerCustomAdvanced",
+        "inputs": {
+          "noise": [
+            "36",
+            0
+          ],
+          "guider": [
+            "37",
+            0
+          ],
+          "sampler": [
+            "28",
+            0
+          ],
+          "sigmas": [
+            "29",
+            0
+          ],
+          "latent_image": [
+            "4",
+            0
+          ]
+        }
+      },
+      "6": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "5",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Decode final image"
+        }
+      },
+      "7": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "8",
+            0
+          ],
+          "filename_prefix": "Thai02/Style3/klein_text"
+        },
+        "_meta": {
+          "title": "Final 480 x 480 RGBA PNG"
+        }
+      },
+      "8": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "23",
+            0
+          ],
+          "upscale_method": "area",
+          "width": 480,
+          "height": 480,
+          "crop": "disabled"
+        },
+        "_meta": {
+          "title": "Downsample RGBA to 480 x 480"
+        }
+      },
+      "10": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "simple sporty design"
+        },
+        "_meta": {
+          "title": "INPUT 1 / audience: student"
+        }
+      },
+      "11": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "one high-top canvas sneaker with laces, natural three-quarter view"
+        },
+        "_meta": {
+          "title": "INPUT 2 / product: shoes"
+        }
+      },
+      "12": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "soft red canvas upper"
+        },
+        "_meta": {
+          "title": "INPUT 3 / primary: red",
+          "color_reference": "#EC6868 RGB(236, 104, 104)"
+        }
+      },
+      "13": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "light blue ankle panels and sole"
+        },
+        "_meta": {
+          "title": "INPUT 4 / accent: blue",
+          "color_reference": "#5FB0E3 RGB(95, 176, 227)"
+        }
+      },
+      "14": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "11",
+            0
+          ],
+          "string_b": [
+            "15",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product + colors"
+        }
+      },
+      "15": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "12",
+            0
+          ],
+          "string_b": [
+            "13",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product-specific color parts"
+        }
+      },
+      "16": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "14",
+            0
+          ],
+          "string_b": [
+            "10",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Combine four choices"
+        }
+      },
+      "17": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "16",
+            0
+          ],
+          "string_b": "simple soft shaded illustration",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product first, then illustration style"
+        }
+      },
+      "18": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "17",
+            0
+          ],
+          "string_b": "one isolated item, plain white background, full view, centered with empty margins",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Fixed product composition"
+        }
+      },
+      "20": {
+        "class_type": "LoadBackgroundRemovalModel",
+        "inputs": {
+          "bg_removal_name": "birefnet.safetensors"
+        },
+        "_meta": {
+          "title": "BiRefNet foreground segmentation"
+        }
+      },
+      "21": {
+        "class_type": "RemoveBackground",
+        "inputs": {
+          "bg_removal_model": [
+            "20",
+            0
+          ],
+          "image": [
+            "6",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground mask at native resolution"
+        }
+      },
+      "22": {
+        "class_type": "InvertMask",
+        "inputs": {
+          "mask": [
+            "21",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground to Comfy alpha convention"
+        }
+      },
+      "23": {
+        "class_type": "JoinImageWithAlpha",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "alpha": [
+            "22",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Apply actual alpha (not painted transparency)"
+        }
+      },
+      "28": {
+        "class_type": "KSamplerSelect",
+        "inputs": {
+          "sampler_name": "euler"
+        }
+      },
+      "29": {
+        "class_type": "Flux2Scheduler",
+        "inputs": {
+          "steps": 4,
+          "width": 640,
+          "height": 640
+        }
+      },
+      "30": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen_3_4b.safetensors",
+          "type": "flux2",
+          "device": "default"
+        }
+      },
+      "31": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "flux2-vae.safetensors"
+        }
+      },
+      "36": {
+        "class_type": "RandomNoise",
+        "inputs": {
+          "noise_seed": 1206503
+        }
+      },
+      "37": {
+        "class_type": "BasicGuider",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "conditioning": [
+            "2",
+            0
+          ]
+        }
+      }
+    },
+    "prompt_id": "62bf7235-f484-47d8-ab1e-62d195661e14",
+    "server_image": {
+      "filename": "klein_text_00001_.png",
+      "subfolder": "Thai02\\Style3",
+      "type": "output",
+      "metadata": {
+        "kind": "image",
+        "width": 480,
+        "height": 480
+      },
+      "id": "21e33799-ff96-454a-b651-d832417eac97"
+    },
+    "selection": {
+      "group": "student",
+      "product": "shoes",
+      "color1": "red",
+      "color2": "blue",
+      "primary_hex": "#EC6868",
+      "secondary_hex": "#5FB0E3",
+      "profile": "quality",
+      "seed": 1206503,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "shoes",
+      "alpha": true,
+      "positive_prompt": "cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one high-top canvas sneaker with laces, natural three-quarter view. soft red canvas upper, light blue ankle panels and sole. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background."
+    }
+  },
+  {
+    "tag": "klein_text_bags_working_adult",
+    "seconds": 2.542,
+    "stages": [
+      {
+        "node": "2",
+        "seconds": 0.034
+      },
+      {
+        "node": "37",
+        "seconds": 0.758
+      },
+      {
+        "node": "5",
+        "seconds": 0.759
+      },
+      {
+        "node": "6",
+        "seconds": 1.818
+      },
+      {
+        "node": "21",
+        "seconds": 2.026
+      },
+      {
+        "node": "22",
+        "seconds": 2.496
+      },
+      {
+        "node": "23",
+        "seconds": 2.497
+      },
+      {
+        "node": "8",
+        "seconds": 2.501
+      },
+      {
+        "node": "7",
+        "seconds": 2.502
+      },
+      {
+        "node": null,
+        "seconds": 2.527
+      }
+    ],
+    "api": {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "flux-2-klein-4b-fp8.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": "cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one structured office briefcase with a top handle and rectangular flap. soft red body, light blue handle and flap. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background.",
+          "clip": [
+            "30",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Positive product conditioning"
+        }
+      },
+      "4": {
+        "class_type": "EmptyFlux2LatentImage",
+        "inputs": {
+          "width": 640,
+          "height": 640,
+          "batch_size": 1
+        }
+      },
+      "5": {
+        "class_type": "SamplerCustomAdvanced",
+        "inputs": {
+          "noise": [
+            "36",
+            0
+          ],
+          "guider": [
+            "37",
+            0
+          ],
+          "sampler": [
+            "28",
+            0
+          ],
+          "sigmas": [
+            "29",
+            0
+          ],
+          "latent_image": [
+            "4",
+            0
+          ]
+        }
+      },
+      "6": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "5",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Decode final image"
+        }
+      },
+      "7": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "8",
+            0
+          ],
+          "filename_prefix": "Thai02/Style3/klein_text"
+        },
+        "_meta": {
+          "title": "Final 480 x 480 RGBA PNG"
+        }
+      },
+      "8": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "23",
+            0
+          ],
+          "upscale_method": "area",
+          "width": 480,
+          "height": 480,
+          "crop": "disabled"
+        },
+        "_meta": {
+          "title": "Downsample RGBA to 480 x 480"
+        }
+      },
+      "10": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "refined minimal design"
+        },
+        "_meta": {
+          "title": "INPUT 1 / audience: working_adult"
+        }
+      },
+      "11": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "one structured office briefcase with a top handle and rectangular flap"
+        },
+        "_meta": {
+          "title": "INPUT 2 / product: bags"
+        }
+      },
+      "12": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "soft red body"
+        },
+        "_meta": {
+          "title": "INPUT 3 / primary: red",
+          "color_reference": "#EC6868 RGB(236, 104, 104)"
+        }
+      },
+      "13": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "light blue handle and flap"
+        },
+        "_meta": {
+          "title": "INPUT 4 / accent: blue",
+          "color_reference": "#5FB0E3 RGB(95, 176, 227)"
+        }
+      },
+      "14": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "11",
+            0
+          ],
+          "string_b": [
+            "15",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product + colors"
+        }
+      },
+      "15": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "12",
+            0
+          ],
+          "string_b": [
+            "13",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product-specific color parts"
+        }
+      },
+      "16": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "14",
+            0
+          ],
+          "string_b": [
+            "10",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Combine four choices"
+        }
+      },
+      "17": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "16",
+            0
+          ],
+          "string_b": "simple soft shaded illustration",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product first, then illustration style"
+        }
+      },
+      "18": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "17",
+            0
+          ],
+          "string_b": "one isolated item, plain white background, full view, centered with empty margins",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Fixed product composition"
+        }
+      },
+      "20": {
+        "class_type": "LoadBackgroundRemovalModel",
+        "inputs": {
+          "bg_removal_name": "birefnet.safetensors"
+        },
+        "_meta": {
+          "title": "BiRefNet foreground segmentation"
+        }
+      },
+      "21": {
+        "class_type": "RemoveBackground",
+        "inputs": {
+          "bg_removal_model": [
+            "20",
+            0
+          ],
+          "image": [
+            "6",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground mask at native resolution"
+        }
+      },
+      "22": {
+        "class_type": "InvertMask",
+        "inputs": {
+          "mask": [
+            "21",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground to Comfy alpha convention"
+        }
+      },
+      "23": {
+        "class_type": "JoinImageWithAlpha",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "alpha": [
+            "22",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Apply actual alpha (not painted transparency)"
+        }
+      },
+      "28": {
+        "class_type": "KSamplerSelect",
+        "inputs": {
+          "sampler_name": "euler"
+        }
+      },
+      "29": {
+        "class_type": "Flux2Scheduler",
+        "inputs": {
+          "steps": 4,
+          "width": 640,
+          "height": 640
+        }
+      },
+      "30": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen_3_4b.safetensors",
+          "type": "flux2",
+          "device": "default"
+        }
+      },
+      "31": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "flux2-vae.safetensors"
+        }
+      },
+      "36": {
+        "class_type": "RandomNoise",
+        "inputs": {
+          "noise_seed": 1206503
+        }
+      },
+      "37": {
+        "class_type": "BasicGuider",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "conditioning": [
+            "2",
+            0
+          ]
+        }
+      }
+    },
+    "prompt_id": "648317bc-fc5c-418b-bac4-ed365eedb900",
+    "server_image": {
+      "filename": "klein_text_00002_.png",
+      "subfolder": "Thai02\\Style3",
+      "type": "output",
+      "metadata": {
+        "kind": "image",
+        "width": 480,
+        "height": 480
+      },
+      "id": "b500d334-28f7-492b-8ccb-9f3fa58ba166"
+    },
+    "selection": {
+      "group": "working_adult",
+      "product": "bags",
+      "color1": "red",
+      "color2": "blue",
+      "primary_hex": "#EC6868",
+      "secondary_hex": "#5FB0E3",
+      "profile": "quality",
+      "seed": 1206503,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "bags",
+      "alpha": true,
+      "positive_prompt": "cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one structured office briefcase with a top handle and rectangular flap. soft red body, light blue handle and flap. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background."
+    }
+  },
+  {
+    "tag": "klein_ref_shoes_student",
+    "seconds": 3.524,
+    "stages": [
+      {
+        "node": "32",
+        "seconds": 0.131
+      },
+      {
+        "node": "33",
+        "seconds": 0.165
+      },
+      {
+        "node": "34",
+        "seconds": 0.169
+      },
+      {
+        "node": "2",
+        "seconds": 0.327
+      },
+      {
+        "node": "35",
+        "seconds": 1.124
+      },
+      {
+        "node": "37",
+        "seconds": 1.125
+      },
+      {
+        "node": "5",
+        "seconds": 1.125
+      },
+      {
+        "node": "6",
+        "seconds": 2.844
+      },
+      {
+        "node": "21",
+        "seconds": 3.036
+      },
+      {
+        "node": "22",
+        "seconds": 3.492
+      },
+      {
+        "node": "23",
+        "seconds": 3.493
+      },
+      {
+        "node": "8",
+        "seconds": 3.497
+      },
+      {
+        "node": "7",
+        "seconds": 3.499
+      },
+      {
+        "node": null,
+        "seconds": 3.521
+      }
+    ],
+    "api": {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "flux-2-klein-4b-fp8.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": "Use only the cute flat 2D drawing style, simplified rounded shapes and soft color-block shading from the reference picture. Draw a NEW different object: cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one high-top canvas sneaker with laces, natural three-quarter view. soft red canvas upper, light blue ankle panels and sole. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background. Do not copy the shoe, pink card, hearts, text or background from the reference. The new object fills about 70 percent of a square white canvas.",
+          "clip": [
+            "30",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Positive product conditioning"
+        }
+      },
+      "4": {
+        "class_type": "EmptyFlux2LatentImage",
+        "inputs": {
+          "width": 640,
+          "height": 640,
+          "batch_size": 1
+        }
+      },
+      "5": {
+        "class_type": "SamplerCustomAdvanced",
+        "inputs": {
+          "noise": [
+            "36",
+            0
+          ],
+          "guider": [
+            "37",
+            0
+          ],
+          "sampler": [
+            "28",
+            0
+          ],
+          "sigmas": [
+            "29",
+            0
+          ],
+          "latent_image": [
+            "4",
+            0
+          ]
+        }
+      },
+      "6": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "5",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Decode final image"
+        }
+      },
+      "7": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "8",
+            0
+          ],
+          "filename_prefix": "Thai02/Style3/klein_ref"
+        },
+        "_meta": {
+          "title": "Final 480 x 480 RGBA PNG"
+        }
+      },
+      "8": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "23",
+            0
+          ],
+          "upscale_method": "area",
+          "width": 480,
+          "height": 480,
+          "crop": "disabled"
+        },
+        "_meta": {
+          "title": "Downsample RGBA to 480 x 480"
+        }
+      },
+      "10": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "simple sporty design"
+        },
+        "_meta": {
+          "title": "INPUT 1 / audience: student"
+        }
+      },
+      "11": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "one high-top canvas sneaker with laces, natural three-quarter view"
+        },
+        "_meta": {
+          "title": "INPUT 2 / product: shoes"
+        }
+      },
+      "12": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "soft red canvas upper"
+        },
+        "_meta": {
+          "title": "INPUT 3 / primary: red",
+          "color_reference": "#EC6868 RGB(236, 104, 104)"
+        }
+      },
+      "13": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "light blue ankle panels and sole"
+        },
+        "_meta": {
+          "title": "INPUT 4 / accent: blue",
+          "color_reference": "#5FB0E3 RGB(95, 176, 227)"
+        }
+      },
+      "14": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "11",
+            0
+          ],
+          "string_b": [
+            "15",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product + colors"
+        }
+      },
+      "15": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "12",
+            0
+          ],
+          "string_b": [
+            "13",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product-specific color parts"
+        }
+      },
+      "16": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "14",
+            0
+          ],
+          "string_b": [
+            "10",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Combine four choices"
+        }
+      },
+      "17": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "16",
+            0
+          ],
+          "string_b": "simple soft shaded illustration",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product first, then illustration style"
+        }
+      },
+      "18": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "17",
+            0
+          ],
+          "string_b": "one isolated item, plain white background, full view, centered with empty margins",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Fixed product composition"
+        }
+      },
+      "20": {
+        "class_type": "LoadBackgroundRemovalModel",
+        "inputs": {
+          "bg_removal_name": "birefnet.safetensors"
+        },
+        "_meta": {
+          "title": "BiRefNet foreground segmentation"
+        }
+      },
+      "21": {
+        "class_type": "RemoveBackground",
+        "inputs": {
+          "bg_removal_model": [
+            "20",
+            0
+          ],
+          "image": [
+            "6",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground mask at native resolution"
+        }
+      },
+      "22": {
+        "class_type": "InvertMask",
+        "inputs": {
+          "mask": [
+            "21",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground to Comfy alpha convention"
+        }
+      },
+      "23": {
+        "class_type": "JoinImageWithAlpha",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "alpha": [
+            "22",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Apply actual alpha (not painted transparency)"
+        }
+      },
+      "28": {
+        "class_type": "KSamplerSelect",
+        "inputs": {
+          "sampler_name": "euler"
+        }
+      },
+      "29": {
+        "class_type": "Flux2Scheduler",
+        "inputs": {
+          "steps": 4,
+          "width": 640,
+          "height": 640
+        }
+      },
+      "30": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen_3_4b.safetensors",
+          "type": "flux2",
+          "device": "default"
+        }
+      },
+      "31": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "flux2-vae.safetensors"
+        }
+      },
+      "32": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "Thai02Style3/style_user_fa1ec41434dabe24.png"
+        }
+      },
+      "33": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "32",
+            0
+          ],
+          "upscale_method": "lanczos",
+          "width": 384,
+          "height": 304,
+          "crop": "disabled"
+        }
+      },
+      "34": {
+        "class_type": "VAEEncode",
+        "inputs": {
+          "pixels": [
+            "33",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        }
+      },
+      "35": {
+        "class_type": "ReferenceLatent",
+        "inputs": {
+          "conditioning": [
+            "2",
+            0
+          ],
+          "latent": [
+            "34",
+            0
+          ]
+        }
+      },
+      "36": {
+        "class_type": "RandomNoise",
+        "inputs": {
+          "noise_seed": 1206503
+        }
+      },
+      "37": {
+        "class_type": "BasicGuider",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "conditioning": [
+            "35",
+            0
+          ]
+        }
+      }
+    },
+    "prompt_id": "743676f8-9062-4fb4-b261-40072871a0e5",
+    "server_image": {
+      "filename": "klein_ref_00001_.png",
+      "subfolder": "Thai02\\Style3",
+      "type": "output",
+      "metadata": {
+        "kind": "image",
+        "width": 480,
+        "height": 480
+      },
+      "id": "d2c77114-689f-466d-89d4-42eaeca3981c"
+    },
+    "selection": {
+      "group": "student",
+      "product": "shoes",
+      "color1": "red",
+      "color2": "blue",
+      "primary_hex": "#EC6868",
+      "secondary_hex": "#5FB0E3",
+      "profile": "quality",
+      "seed": 1206503,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "shoes",
+      "alpha": true,
+      "positive_prompt": "Use only the cute flat 2D drawing style, simplified rounded shapes and soft color-block shading from the reference picture. Draw a NEW different object: cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one high-top canvas sneaker with laces, natural three-quarter view. soft red canvas upper, light blue ankle panels and sole. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background. Do not copy the shoe, pink card, hearts, text or background from the reference. The new object fills about 70 percent of a square white canvas."
+    }
+  },
+  {
+    "tag": "klein_ref_bags_working_adult",
+    "seconds": 2.773,
+    "stages": [
+      {
+        "node": "2",
+        "seconds": 0.079
+      },
+      {
+        "node": "35",
+        "seconds": 0.816
+      },
+      {
+        "node": "37",
+        "seconds": 0.817
+      },
+      {
+        "node": "5",
+        "seconds": 0.817
+      },
+      {
+        "node": "6",
+        "seconds": 2.106
+      },
+      {
+        "node": "21",
+        "seconds": 2.293
+      },
+      {
+        "node": "22",
+        "seconds": 2.737
+      },
+      {
+        "node": "23",
+        "seconds": 2.739
+      },
+      {
+        "node": "8",
+        "seconds": 2.741
+      },
+      {
+        "node": "7",
+        "seconds": 2.743
+      },
+      {
+        "node": null,
+        "seconds": 2.769
+      }
+    ],
+    "api": {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "flux-2-klein-4b-fp8.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": "Use only the cute flat 2D drawing style, simplified rounded shapes and soft color-block shading from the reference picture. Draw a NEW different object: cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one structured office briefcase with a top handle and rectangular flap. soft red body, light blue handle and flap. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background. Do not copy the shoe, pink card, hearts, text or background from the reference. The new object fills about 70 percent of a square white canvas.",
+          "clip": [
+            "30",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Positive product conditioning"
+        }
+      },
+      "4": {
+        "class_type": "EmptyFlux2LatentImage",
+        "inputs": {
+          "width": 640,
+          "height": 640,
+          "batch_size": 1
+        }
+      },
+      "5": {
+        "class_type": "SamplerCustomAdvanced",
+        "inputs": {
+          "noise": [
+            "36",
+            0
+          ],
+          "guider": [
+            "37",
+            0
+          ],
+          "sampler": [
+            "28",
+            0
+          ],
+          "sigmas": [
+            "29",
+            0
+          ],
+          "latent_image": [
+            "4",
+            0
+          ]
+        }
+      },
+      "6": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "5",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Decode final image"
+        }
+      },
+      "7": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "8",
+            0
+          ],
+          "filename_prefix": "Thai02/Style3/klein_ref"
+        },
+        "_meta": {
+          "title": "Final 480 x 480 RGBA PNG"
+        }
+      },
+      "8": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "23",
+            0
+          ],
+          "upscale_method": "area",
+          "width": 480,
+          "height": 480,
+          "crop": "disabled"
+        },
+        "_meta": {
+          "title": "Downsample RGBA to 480 x 480"
+        }
+      },
+      "10": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "refined minimal design"
+        },
+        "_meta": {
+          "title": "INPUT 1 / audience: working_adult"
+        }
+      },
+      "11": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "one structured office briefcase with a top handle and rectangular flap"
+        },
+        "_meta": {
+          "title": "INPUT 2 / product: bags"
+        }
+      },
+      "12": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "soft red body"
+        },
+        "_meta": {
+          "title": "INPUT 3 / primary: red",
+          "color_reference": "#EC6868 RGB(236, 104, 104)"
+        }
+      },
+      "13": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "light blue handle and flap"
+        },
+        "_meta": {
+          "title": "INPUT 4 / accent: blue",
+          "color_reference": "#5FB0E3 RGB(95, 176, 227)"
+        }
+      },
+      "14": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "11",
+            0
+          ],
+          "string_b": [
+            "15",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product + colors"
+        }
+      },
+      "15": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "12",
+            0
+          ],
+          "string_b": [
+            "13",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product-specific color parts"
+        }
+      },
+      "16": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "14",
+            0
+          ],
+          "string_b": [
+            "10",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Combine four choices"
+        }
+      },
+      "17": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "16",
+            0
+          ],
+          "string_b": "simple soft shaded illustration",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product first, then illustration style"
+        }
+      },
+      "18": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "17",
+            0
+          ],
+          "string_b": "one isolated item, plain white background, full view, centered with empty margins",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Fixed product composition"
+        }
+      },
+      "20": {
+        "class_type": "LoadBackgroundRemovalModel",
+        "inputs": {
+          "bg_removal_name": "birefnet.safetensors"
+        },
+        "_meta": {
+          "title": "BiRefNet foreground segmentation"
+        }
+      },
+      "21": {
+        "class_type": "RemoveBackground",
+        "inputs": {
+          "bg_removal_model": [
+            "20",
+            0
+          ],
+          "image": [
+            "6",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground mask at native resolution"
+        }
+      },
+      "22": {
+        "class_type": "InvertMask",
+        "inputs": {
+          "mask": [
+            "21",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground to Comfy alpha convention"
+        }
+      },
+      "23": {
+        "class_type": "JoinImageWithAlpha",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "alpha": [
+            "22",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Apply actual alpha (not painted transparency)"
+        }
+      },
+      "28": {
+        "class_type": "KSamplerSelect",
+        "inputs": {
+          "sampler_name": "euler"
+        }
+      },
+      "29": {
+        "class_type": "Flux2Scheduler",
+        "inputs": {
+          "steps": 4,
+          "width": 640,
+          "height": 640
+        }
+      },
+      "30": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen_3_4b.safetensors",
+          "type": "flux2",
+          "device": "default"
+        }
+      },
+      "31": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "flux2-vae.safetensors"
+        }
+      },
+      "32": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "Thai02Style3/style_user_fa1ec41434dabe24.png"
+        }
+      },
+      "33": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "32",
+            0
+          ],
+          "upscale_method": "lanczos",
+          "width": 384,
+          "height": 304,
+          "crop": "disabled"
+        }
+      },
+      "34": {
+        "class_type": "VAEEncode",
+        "inputs": {
+          "pixels": [
+            "33",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        }
+      },
+      "35": {
+        "class_type": "ReferenceLatent",
+        "inputs": {
+          "conditioning": [
+            "2",
+            0
+          ],
+          "latent": [
+            "34",
+            0
+          ]
+        }
+      },
+      "36": {
+        "class_type": "RandomNoise",
+        "inputs": {
+          "noise_seed": 1206503
+        }
+      },
+      "37": {
+        "class_type": "BasicGuider",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "conditioning": [
+            "35",
+            0
+          ]
+        }
+      }
+    },
+    "prompt_id": "d9cfc42f-d274-43ca-a2de-a2585a789bf6",
+    "server_image": {
+      "filename": "klein_ref_00002_.png",
+      "subfolder": "Thai02\\Style3",
+      "type": "output",
+      "metadata": {
+        "kind": "image",
+        "width": 480,
+        "height": 480
+      },
+      "id": "d9a5a20c-9904-4ac6-acf5-1c63059b3f80"
+    },
+    "selection": {
+      "group": "working_adult",
+      "product": "bags",
+      "color1": "red",
+      "color2": "blue",
+      "primary_hex": "#EC6868",
+      "secondary_hex": "#5FB0E3",
+      "profile": "quality",
+      "seed": 1206503,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "bags",
+      "alpha": true,
+      "positive_prompt": "Use only the cute flat 2D drawing style, simplified rounded shapes and soft color-block shading from the reference picture. Draw a NEW different object: cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one structured office briefcase with a top handle and rectangular flap. soft red body, light blue handle and flap. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background. Do not copy the shoe, pink card, hearts, text or background from the reference. The new object fills about 70 percent of a square white canvas."
+    }
+  }
+]

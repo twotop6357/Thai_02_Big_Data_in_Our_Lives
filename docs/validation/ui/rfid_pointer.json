@@ -1,0 +1,14 @@
+{
+  "task": "RFID-BLOCKS-001-pointer",
+  "checks": [
+    "Mouse-down picks up a pictured block",
+    "Palette-to-reader drag places the block through GUI input",
+    "Mouse-down picks up a pictured block",
+    "The next reader is recognized independently",
+    "Mouse-down picks up a pictured block",
+    "Reader-to-reader GUI drag moves only the intended block",
+    "Mouse-down picks up a pictured block",
+    "Dragging outside removes only the source reader"
+  ],
+  "passed": true
+}

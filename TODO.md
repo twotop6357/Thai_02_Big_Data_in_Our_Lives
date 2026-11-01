@@ -6,9 +6,31 @@
 
 ## 진행 중
 
+- [ ] RTX3060 12GB 새 Klein640/4 경로의 예열1+20회15초 이내 실측 및 Windows Player/실물입력·장시간 검수 — STYLE-QUALITY-003 후속. 현PC80이미지/앱37검사 완료, API 중앙3.3805초·앱3.78~4.04초. 과거 Turbo5~12초 추정을 새 모델의3060 실측처럼 재사용하지 않는다. docs/validation/comfy_style3/README.md.
+
+- [ ] RFID-BLOCKS-001 최종 직접 마우스/F9·광고→영상0.5초 암전 후보 실제 조작, Windows Player 빌드/실행, 문서 최신화 — Codex 인계 대기 / 사용자 Escape로 Computer Use 중단. 구현/기존33·83·8 검증 상세와 현재 한계는 HANDOFF.
 ## 할 일
 
+- [ ] 설치PC에서 추가 입력 표본과 Windows Player 실장비 품질 검수 — COMFY-QUALITY-002 / 담당 미정 / STYLE-QUALITY-003의10종×4연령×2조건(6색)80개 직접 검수·원본 구조/알파/중앙 검사 완료. 다른 랜덤시드/새 설정에 무결점 보장을 확장하지 않는다.
+- [ ] 안내 PNG의 고정 언어 표기 갱신 필요 여부 검토 — UI-LANG-002 / 담당 미정 / 실제20개 블록 표시·10물건 연결은 RFID 구현/COMFY-RESTORE-001에서 확인. 전체 TH·EN 장비/디자인 확인은 별도.
+- [ ] Windows Player/설치 PC에서 물리버튼·RFID, 두 영상 전체 길이·음량, 포커스 복구와 장시간 자원 검증 — DEPLOY-UI-001 / 담당 미정 / 에디터 검증과 구분한 실제 장비 기록.
+
 ## 완료
+
+- [x] 레퍼런스 기반 귀여운2D 생성·다색/연령80개 직접검수·원본 불완전 출력 차단 — STYLE-QUALITY-003 / Codex 단독 /2026-11-01 Edit66/Python8/실제앱27+실패·취소 fixture10 PASS·실제 Unity1440 프롬프트 일치.3060/Player/설치PC 후속은 별도. docs/validation/comfy_style3/README.md.
+
+- [x] 단순 일러스트/인식 두 색/빠른 단일 생성 적용 — COMFY-FAST-002 / Codex 단독 /2026-10-30 Turbo4/512,최종61/7/앱16 PASS·10종2시드/대표4연령 검토.3060 실측은 별도 후속.
+
+- [x] 최종480×480 제품 알파경계 정중앙 보정·비율/투명여백·측면고정해제/자연스러운사선 시점 — COMFY-FRAMING-001 / Codex 단독 구현·검증 / 2026-10-30 Edit58/58·Python7/7·실생성Play8/8 PASS·중심(240,239.5), 이전PNG2개(240,240). 미커밋·Player/장비/전 조합품질 후속. docs/validation/comfy_framing/README.md.
+- [x] ComfyUI 새 투명 일러스트 복원·가이드/ControlNet 제거·첨부 스타일 반영·현재10물건/원에서추출한6색·전선택패널 생성입력잠금/취소·실패재시도 — COMFY-RESTORE-001 / Codex 단독 구현·검증 / 2026-10-30 최종 Edit49/49·Python7/7·Play31·종료/시간초과9 PASS·실생성17.58초/알파검사·396파일동일. 미커밋, Player/실장비/전체품질 후속. docs/validation/comfy_restore/README.md.
+- [x] 2_new의 언어별 가이드/요소 적용·기존 이름/GUID 유지·가이드/중복원본 정리, 영상 이후/기능/연출 보존 — UI-REFRESH-002(UI-REFRESH-001 대체완료) / Codex 단독 구현·검증 / 2026-10-29 PNG24개 교체·8화면 확인·실행52항목/정적24슬롯 PASS·291파일 해시 동일·정리 후 세 씬 누락참조0. 미커밋·Player/실장비 후속. docs/validation/ui_refresh2/README.md.
+- [x] 원형 파동 시작 축소·광고 박스 내부 최대 크기 제한 — AD-FX-003 / Codex 단독 구현·검증 / 2026-10-29 시작120/최대480, Play28 PASS·실제정점620개가 광고 박스16px 안쪽 유지. 기존 연출/입력/영상 회귀·199파일 및 미저장 Idle 보존. 미커밋·Player/실장비 후속.
+- [x] 광고 물건 최전면·느린 반복 아우라·큰 버스트·ConfettiFullscreen 자연 종료 및 단발 완료 후 입력 복구 — AD-FX-002 / Codex 단독 구현·검증 / 2026-10-29 최종Play26 PASS, 컨페티 관측5.855초, 일시정지/아우라 다회 반복·물건4지점 픽셀 불변·영상 암전/첫프레임0·취소/재진입 정리. 원본195파일·미저장 Idle 보존, 미커밋·Player/장비 후속. 이전 AD-FX-001의 전체1.8초 종료 요구를 대체.
+- [x] 광고에 Item의 두 ParticleImage 묶음 적용, Demo/Prefabs19개 검토,2초 이내 종료·종료 전 버튼 입력 차단 — AD-FX-001 / Codex 단독 구현·검증 / 2026-10-29 최종 Play21항목 PASS, 실시간1.814초, 화면 캡처 확인. 취소/비활성/재진입·일시정지·영상암전/첫프레임0 확인. 원본195파일 해시 동일·미저장 Item 디자인 보존. 미커밋, Player/장비 검증 후속.
+- [x] 실제0번 프레임 렌더까지 광고 유지·불투명 영상 인계·즉시 연속재생, 실패/취소/최종프레임 해제 시 광고 복원 — VIDEO-FIRST-001 / Codex 단독 구현·검증 / 2026-10-29 최종 첫프레임/미디어41·기존UI/영상58 PASS. TH/EN3회 첫표시0·미덮임0, 실제 첫화면 캡처 확인. 미커밋·설치PC/Player 후속. 상세 HANDOFF.
+- [x] 그룹→배치의 네 기존 칸 동시 이동/도착 인계·암전 없는 교차페이드, 이동 중/후 인식 해제 시 배치 화면 유지·빈칸/계속차단 — UI-SLOTS-001 / Codex 단독 구현·검증 / 2026-10-29 이동·연출·입력53·기존UI/영상58 PASS, 화면캡처 직접 확인. 미커밋·실장비/Player 후속. 상세 HANDOFF.
+- [x] 공통 UI 연출·입력 잠금/역전·취소 정리, 네 칸 동시페이드·신규배치만OutBack·우측/광고이미지 페이드, 필수블록 완료 시 계속안내/짧은 진행 허용 — UI-MOTION-001 / UI-GATE-001 / Codex 단독 구현·검증 / 2026-10-29 EditMode27/27·연출/입력39·UI회귀58·색칠회귀18 PASS.5초홈 유지, 미커밋·실장비/Player 후속. 상세 HANDOFF.
+- [x] Figma 좌표의 이미지 UI, 언어 JSON/페이드, 타이틀2초 언어토글·짧은 현재언어 시작·전역5초홈, 두 언어 영상과 무색칠 일반 블록칸 — UI-LANG-001 / Codex 단독 구현·검증 / 2026-10-29 컴파일오류0·EditMode27/27·UI실행58·색칠회귀18 PASS. 미커밋, 실장비/Player 검증 후속. 상세 HANDOFF.
 
 - [x] HuliacDev Template 패키지 26.10.12-1 → 26.10.16-1 업데이트(packages-lock.json 고정 커밋 1c5e127 → a036657, 창을 항상 위로 두는 `alwaysOnTop` 옵션 추가 — 기본 꺼짐이라 기존 동작과 같음), Settings.json에 `"alwaysOnTop": false` 추가, Player Settings Version 26.10.16, CHANGELOG에 빠져 있던 26.10.12-1의 운영자 영향 변경도 함께 기록 — 담당: Claude / 검증: Antigravity (완료: 2026-10-16)
 - [x] README 사용 방법을 "템플릿 폴더를 하나 clone해 두고 Assets·Packages·ProjectSettings·.gitignore·.gitattributes·CLAUDE.md만 새 폴더로 복사 → Unity Hub로 열기 → Player Settings의 Product Name 변경" 방식으로 바꿈(clone→upstream·fork 안내는 뺌). 복사한 6개로 파일 1,080개가 템플릿과 같게 들어가고 LFS 파일 없이 push되는 것을 임시 폴더에서 확인함 — 담당: Claude / 검증: Antigravity (완료: 2026-10-13)

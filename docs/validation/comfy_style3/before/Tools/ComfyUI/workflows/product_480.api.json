@@ -1,0 +1,324 @@
+{
+  "1": {
+    "class_type": "CheckpointLoaderSimple",
+    "inputs": {
+      "ckpt_name": "sd_xl_turbo_1.0_fp16.safetensors"
+    },
+    "_meta": {
+      "title": "SDXL Turbo 1.0 fp16"
+    }
+  },
+  "2": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": [
+        "18",
+        0
+      ],
+      "clip": [
+        "1",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Positive product conditioning"
+    }
+  },
+  "3": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": "text, logo, rough sketch, complex details, people, background",
+      "clip": [
+        "1",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Negative / exclude people and text"
+    }
+  },
+  "4": {
+    "class_type": "EmptyLatentImage",
+    "inputs": {
+      "width": 512,
+      "height": 512,
+      "batch_size": 1
+    },
+    "_meta": {
+      "title": "512 x 512 internal / batch 1"
+    }
+  },
+  "5": {
+    "class_type": "SamplerCustom",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "add_noise": true,
+      "noise_seed": 7042026,
+      "cfg": 1.0,
+      "positive": [
+        "2",
+        0
+      ],
+      "negative": [
+        "2",
+        0
+      ],
+      "sampler": [
+        "28",
+        0
+      ],
+      "sigmas": [
+        "29",
+        0
+      ],
+      "latent_image": [
+        "4",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Turbo / 4 steps"
+    }
+  },
+  "6": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "5",
+        0
+      ],
+      "vae": [
+        "1",
+        2
+      ]
+    },
+    "_meta": {
+      "title": "Decode final image"
+    }
+  },
+  "7": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "8",
+        0
+      ],
+      "filename_prefix": "Thai02/product"
+    },
+    "_meta": {
+      "title": "Final 480 x 480 RGBA PNG"
+    }
+  },
+  "8": {
+    "class_type": "ImageScale",
+    "inputs": {
+      "image": [
+        "23",
+        0
+      ],
+      "upscale_method": "area",
+      "width": 480,
+      "height": 480,
+      "crop": "disabled"
+    },
+    "_meta": {
+      "title": "Downsample RGBA to 480 x 480"
+    }
+  },
+  "10": {
+    "class_type": "PrimitiveString",
+    "inputs": {
+      "value": "simple sporty design"
+    },
+    "_meta": {
+      "title": "INPUT 1 / audience: student"
+    }
+  },
+  "11": {
+    "class_type": "PrimitiveString",
+    "inputs": {
+      "value": "one school backpack with a large front zipper pocket and two shoulder straps"
+    },
+    "_meta": {
+      "title": "INPUT 2 / product: bags"
+    }
+  },
+  "12": {
+    "class_type": "PrimitiveString",
+    "inputs": {
+      "value": "light blue body"
+    },
+    "_meta": {
+      "title": "INPUT 3 / primary: blue",
+      "color_reference": "#5FB0E3 RGB(95, 176, 227)"
+    }
+  },
+  "13": {
+    "class_type": "PrimitiveString",
+    "inputs": {
+      "value": "white front pocket and straps"
+    },
+    "_meta": {
+      "title": "INPUT 4 / accent: white",
+      "color_reference": "#FFFFFF RGB(255, 255, 255)"
+    }
+  },
+  "14": {
+    "class_type": "StringConcatenate",
+    "inputs": {
+      "string_a": [
+        "11",
+        0
+      ],
+      "string_b": [
+        "15",
+        0
+      ],
+      "delimiter": ", "
+    },
+    "_meta": {
+      "title": "Product + colors"
+    }
+  },
+  "15": {
+    "class_type": "StringConcatenate",
+    "inputs": {
+      "string_a": [
+        "12",
+        0
+      ],
+      "string_b": [
+        "13",
+        0
+      ],
+      "delimiter": ", "
+    },
+    "_meta": {
+      "title": "Product-specific color parts"
+    }
+  },
+  "16": {
+    "class_type": "StringConcatenate",
+    "inputs": {
+      "string_a": [
+        "14",
+        0
+      ],
+      "string_b": [
+        "10",
+        0
+      ],
+      "delimiter": ", "
+    },
+    "_meta": {
+      "title": "Combine four choices"
+    }
+  },
+  "17": {
+    "class_type": "StringConcatenate",
+    "inputs": {
+      "string_a": [
+        "16",
+        0
+      ],
+      "string_b": "simple soft shaded illustration",
+      "delimiter": ", "
+    },
+    "_meta": {
+      "title": "Product first, then illustration style"
+    }
+  },
+  "18": {
+    "class_type": "StringConcatenate",
+    "inputs": {
+      "string_a": [
+        "17",
+        0
+      ],
+      "string_b": "one isolated item, plain white background, full view, centered with empty margins",
+      "delimiter": ", "
+    },
+    "_meta": {
+      "title": "Fixed product composition"
+    }
+  },
+  "20": {
+    "class_type": "LoadBackgroundRemovalModel",
+    "inputs": {
+      "bg_removal_name": "birefnet.safetensors"
+    },
+    "_meta": {
+      "title": "BiRefNet foreground segmentation"
+    }
+  },
+  "21": {
+    "class_type": "RemoveBackground",
+    "inputs": {
+      "bg_removal_model": [
+        "20",
+        0
+      ],
+      "image": [
+        "6",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Foreground mask at native resolution"
+    }
+  },
+  "22": {
+    "class_type": "InvertMask",
+    "inputs": {
+      "mask": [
+        "21",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Foreground to Comfy alpha convention"
+    }
+  },
+  "23": {
+    "class_type": "JoinImageWithAlpha",
+    "inputs": {
+      "image": [
+        "6",
+        0
+      ],
+      "alpha": [
+        "22",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Apply actual alpha (not painted transparency)"
+    }
+  },
+  "28": {
+    "class_type": "KSamplerSelect",
+    "inputs": {
+      "sampler_name": "euler_ancestral"
+    },
+    "_meta": {
+      "title": "Turbo sampler"
+    }
+  },
+  "29": {
+    "class_type": "SDTurboScheduler",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "steps": 4,
+      "denoise": 1.0
+    },
+    "_meta": {
+      "title": "Native Turbo timestep schedule"
+    }
+  }
+}

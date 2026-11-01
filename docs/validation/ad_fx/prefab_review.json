@@ -1,0 +1,934 @@
+[
+  {
+    "path": "Assets/AssetKits/ParticleImage/Demo/Prefabs\\_Primitives\\AttractorBurst.prefab",
+    "particles": [
+      {
+        "name": "AttractorBurst",
+        "parent": null,
+        "shape": "Circle",
+        "loop": true,
+        "duration": 2.0,
+        "startDelay": 0.0,
+        "rate": 0.0,
+        "lifetime": 2.0,
+        "startSize": 40.0,
+        "sprite": null,
+        "size": "(100.00, 100.00)",
+        "isMain": true,
+        "fitRect": false
+      }
+    ],
+    "otherScripts": []
+  },
+  {
+    "path": "Assets/AssetKits/ParticleImage/Demo/Prefabs\\_Primitives\\AttractorContinuous.prefab",
+    "particles": [
+      {
+        "name": "AttractorContinuous",
+        "parent": null,
+        "shape": "Circle",
+        "loop": true,
+        "duration": 5.0,
+        "startDelay": 0.0,
+        "rate": 50.0,
+        "lifetime": 1.0,
+        "startSize": 40.0,
+        "sprite": null,
+        "size": "(100.00, 100.00)",
+        "isMain": true,
+        "fitRect": false
+      }
+    ],
+    "otherScripts": []
+  },
+  {
+    "path": "Assets/AssetKits/ParticleImage/Demo/Prefabs\\_Primitives\\AttractorLine.prefab",
+    "particles": [
+      {
+        "name": "AttractorLine",
+        "parent": null,
+        "shape": "Directional",
+        "loop": true,
+        "duration": 2.0,
+        "startDelay": 0.0,
+        "rate": 10.0,
+        "lifetime": 2.0,
+        "startSize": 40.0,
+        "sprite": null,
+        "size": "(100.00, 100.00)",
+        "isMain": true,
+        "fitRect": false
+      }
+    ],
+    "otherScripts": []
+  },
+  {
+    "path": "Assets/AssetKits/ParticleImage/Demo/Prefabs\\_Primitives\\BackgroundRays.prefab",
+    "particles": [
+      {
+        "name": "BackgroundRays",
+        "parent": null,
+        "shape": "Point",
+        "loop": true,
+        "duration": 5.0,
+        "startDelay": 0.0,
+        "rate": 8.0,
+        "lifetime": 2.0,
+        "startSize": 40.0,
+        "sprite": null,
+        "size": "(100.00, 100.00)",
+        "isMain": true,
+        "fitRect": false
+      }
+    ],
+    "otherScripts": []
+  },
+  {
+    "path": "Assets/AssetKits/ParticleImage/Demo/Prefabs\\_Primitives\\BackgroundScale.prefab",
+    "particles": [
+      {
+        "name": "BackgroundScale",
+        "parent": null,
+        "shape": "Point",
+        "loop": true,
+        "duration": 5.0,
+        "startDelay": 0.0,
+        "rate": 1.0,
+        "lifetime": 3.0,
+        "startSize": 600.0,
+        "sprite": null,
+        "size": "(100.00, 100.00)",
+        "isMain": true,
+        "fitRect": false
+      }
+    ],
+    "otherScripts": []
+  },
+  {
+    "path": "Assets/AssetKits/ParticleImage/Demo/Prefabs\\_Primitives\\BurstDirectionalWithNoise.prefab",
+    "particles": [
+      {
+        "name": "BurstDirectionalWithNoise",
+        "parent": null,
+        "shape": "Directional",
+        "loop": true,
+        "duration": 1.0,
+        "startDelay": 0.0,
+        "rate": 0.0,
+        "lifetime": 2.0,
+        "startSize": 40.0,
+        "sprite": null,
+        "size": "(100.00, 100.00)",
+        "isMain": true,
+        "fitRect": false
+      }
+    ],
+    "otherScripts": []
+  },
+  {
+    "path": "Assets/AssetKits/ParticleImage/Demo/Prefabs\\_Primitives\\BurstWithNoise.prefab",
+    "particles": [
+      {
+        "name": "BurstWithNoise",
+        "parent": null,
+        "shape": "Point",
+        "loop": true,
+        "duration": 1.0,
+        "startDelay": 0.0,
+        "rate": 0.0,
+        "lifetime": 1.0,
+        "startSize": 40.0,
+        "sprite": null,
+        "size": "(100.00, 100.00)",
+        "isMain": true,
+        "fitRect": false
+      }
+    ],
+    "otherScripts": []
+  },
+  {
+    "path": "Assets/AssetKits/ParticleImage/Demo/Prefabs\\AlignToDirection.prefab",
+    "particles": [
+      {
+        "name": "AlignToDirection",
+        "parent": null,
+        "shape": "Circle",
+        "loop": true,
+        "duration": 5.0,
+        "startDelay": 0.0,
+        "rate": 50.0,
+        "lifetime": 4.0,
+        "startSize": 40.0,
+        "sprite": "Arrow",
+        "size": "(100.00, 100.00)",
+        "isMain": true,
+        "fitRect": false
+      }
+    ],
+    "otherScripts": [
+      "Image"
+    ]
+  },
+  {
+    "path": "Assets/AssetKits/ParticleImage/Demo/Prefabs\\CoinAttraction.prefab",
+    "particles": [
+      {
+        "name": "Particle Image",
+        "parent": "CoinAttraction",
+        "shape": "Circle",
+        "loop": false,
+        "duration": 0.3,
+        "startDelay": 0.0,
+        "rate": 75.0,
+        "lifetime": 2.0,
+        "startSize": 60.0,
+        "sprite": "Coin_Rotation",
+        "size": "(100.00, 100.00)",
+        "isMain": true,
+        "fitRect": false
+      }
+    ],
+    "otherScripts": [
+      "Image",
+      "Text",
+      "ParticleTrailRenderer"
+    ]
+  },
+  {
+    "path": "Assets/AssetKits/ParticleImage/Demo/Prefabs\\ConfettiBurst.prefab",
+    "particles": [
+      {
+        "name": "ConfettiBurst",
+        "parent": null,
+        "shape": "Point",
+        "loop": true,
+        "duration": 1.0,
+        "startDelay": 0.0,
+        "rate": 0.0,
+        "lifetime": 1.0,
+        "startSize": 65.0,
+        "sprite": "Confetti",
+        "size": "(100.00, 100.00)",
+        "isMain": true,
+        "fitRect": false
+      },
+      {
+        "name": "TrailParticle",
+        "parent": "ConfettiBurst",
+        "shape": "Point",
+        "loop": true,
+        "duration": 1.0,
+        "startDelay": 0.0,
+        "rate": 0.0,
+        "lifetime": 2.0,
+        "startSize": 10.0,
+        "sprite": null,
+        "size": "(100.00, 100.00)",
+        "isMain": false,
+        "fitRect": false
+      }
+    ],
+    "otherScripts": [
+      "ParticleTrailRenderer"
+    ]
+  },
+  {
+    "path": "Assets/AssetKits/ParticleImage/Demo/Prefabs\\ConfettiFullscreen.prefab",
+    "particles": [
+      {
+        "name": "ConfettiFullscreen",
+        "parent": null,
+        "shape": "Line",
+        "loop": false,
+        "duration": 1.0,
+        "startDelay": 1.0,
+        "rate": 300.0,
+        "lifetime": 4.0,
+        "startSize": 10.0,
+        "sprite": null,
+        "size": "(0.00, 49.53)",
+        "isMain": true,
+        "fitRect": true
+      },
+      {
+        "name": "Left",
+        "parent": "ConfettiFullscreen",
+        "shape": "Directional",
+        "loop": false,
+        "duration": 0.3,
+        "startDelay": 0.0,
+        "rate": 0.0,
+        "lifetime": 3.0,
+        "startSize": 10.0,
+        "sprite": null,
+        "size": "(104.05, 82.14)",
+        "isMain": false,
+        "fitRect": true
+      },
+      {
+        "name": "Right",
+        "parent": "ConfettiFullscreen",
+        "shape": "Directional",
+        "loop": false,
+        "duration": 0.3,
+        "startDelay": 0.0,
+        "rate": 0.0,
+        "lifetime": 3.0,
+        "startSize": 10.0,
+        "sprite": null,
+        "size": "(104.05, 82.14)",
+        "isMain": false,
+        "fitRect": true
+      }
+    ],
+    "otherScripts": [
+      "ParticleTrailRenderer"
+    ]
+  },
+  {
+    "path": "Assets/AssetKits/ParticleImage/Demo/Prefabs\\EnergySpread.prefab",
+    "particles": [
+      {
+        "name": "EnergySpread",
+        "parent": null,
+        "shape": "Point",
+        "loop": true,
+        "duration": 5.0,
+        "startDelay": 0.0,
+        "rate": 8.0,
+        "lifetime": 2.0,
+        "startSize": 40.0,
+        "sprite": "Ray2",
+        "size": "(100.00, 100.00)",
+        "isMain": true,
+        "fitRect": false
+      },
+      {
+        "name": "Rings",
+        "parent": "EnergySpread",
+        "shape": "Point",
+        "loop": true,
+        "duration": 5.0,
+        "startDelay": 0.0,
+        "rate": 1.0,
+        "lifetime": 4.0,
+        "startSize": 1500.0,
+        "sprite": "Ring",
+        "size": "(100.00, 100.00)",
+        "isMain": false,
+        "fitRect": false
+      },
+      {
+        "name": "Stars",
+        "parent": "EnergySpread",
+        "shape": "Point",
+        "loop": true,
+        "duration": 5.0,
+        "startDelay": 0.0,
+        "rate": 50.0,
+        "lifetime": 3.0,
+        "startSize": 30.0,
+        "sprite": "Star",
+        "size": "(100.00, 100.00)",
+        "isMain": false,
+        "fitRect": false
+      },
+      {
+        "name": "Glow",
+        "parent": "EnergySpread",
+        "shape": "Point",
+        "loop": true,
+        "duration": 5.0,
+        "startDelay": 0.0,
+        "rate": 1.0,
+        "lifetime": 4.0,
+        "startSize": 300.0,
+        "sprite": "Glow",
+        "size": "(100.00, 100.00)",
+        "isMain": false,
+        "fitRect": false
+      }
+    ],
+    "otherScripts": []
+  },
+  {
+    "path": "Assets/AssetKits/ParticleImage/Demo/Prefabs\\Highlight.prefab",
+    "particles": [
+      {
+        "name": "Highlight",
+        "parent": null,
+        "shape": "Circle",
+        "loop": false,
+        "duration": 1.0,
+        "startDelay": 0.0,
+        "rate": 0.0,
+        "lifetime": 0.3,
+        "startSize": 10.0,
+        "sprite": null,
+        "size": "(100.00, 100.00)",
+        "isMain": true,
+        "fitRect": false
+      },
+      {
+        "name": "MiniHighlight",
+        "parent": "Highlight",
+        "shape": "Circle",
+        "loop": false,
+        "duration": 1.0,
+        "startDelay": 0.1,
+        "rate": 0.0,
+        "lifetime": 0.3,
+        "startSize": 10.0,
+        "sprite": null,
+        "size": "(100.00, 100.00)",
+        "isMain": false,
+        "fitRect": false
+      },
+      {
+        "name": "MiniHighlight1",
+        "parent": "Highlight",
+        "shape": "Circle",
+        "loop": false,
+        "duration": 1.0,
+        "startDelay": 0.2,
+        "rate": 0.0,
+        "lifetime": 0.3,
+        "startSize": 10.0,
+        "sprite": null,
+        "size": "(100.00, 100.00)",
+        "isMain": false,
+        "fitRect": false
+      },
+      {
+        "name": "MiniHighlight2",
+        "parent": "Highlight",
+        "shape": "Circle",
+        "loop": false,
+        "duration": 1.0,
+        "startDelay": 0.3,
+        "rate": 0.0,
+        "lifetime": 0.3,
+        "startSize": 10.0,
+        "sprite": null,
+        "size": "(100.00, 100.00)",
+        "isMain": false,
+        "fitRect": false
+      }
+    ],
+    "otherScripts": []
+  },
+  {
+    "path": "Assets/AssetKits/ParticleImage/Demo/Prefabs\\Masking.prefab",
+    "particles": [
+      {
+        "name": "Masking",
+        "parent": null,
+        "shape": "Circle",
+        "loop": true,
+        "duration": 5.0,
+        "startDelay": 0.0,
+        "rate": 100.0,
+        "lifetime": 1.0,
+        "startSize": 100.0,
+        "sprite": "Knob",
+        "size": "(100.00, 100.00)",
+        "isMain": true,
+        "fitRect": false
+      }
+    ],
+    "otherScripts": [
+      "Mask",
+      "Image"
+    ]
+  },
+  {
+    "path": "Assets/AssetKits/ParticleImage/Demo/Prefabs\\Puff.prefab",
+    "particles": [
+      {
+        "name": "Puff",
+        "parent": null,
+        "shape": "Point",
+        "loop": false,
+        "duration": 1.0,
+        "startDelay": 0.0,
+        "rate": 0.0,
+        "lifetime": 0.4,
+        "startSize": 240.0,
+        "sprite": "PuffCloud",
+        "size": "(100.00, 100.00)",
+        "isMain": true,
+        "fitRect": false
+      },
+      {
+        "name": "Rays",
+        "parent": "Puff",
+        "shape": "Point",
+        "loop": false,
+        "duration": 1.0,
+        "startDelay": 0.0,
+        "rate": 0.0,
+        "lifetime": 0.2,
+        "startSize": 120.0,
+        "sprite": "Ray1",
+        "size": "(100.00, 100.00)",
+        "isMain": false,
+        "fitRect": false
+      },
+      {
+        "name": "Text",
+        "parent": "Puff",
+        "shape": "Point",
+        "loop": false,
+        "duration": 1.0,
+        "startDelay": 0.0,
+        "rate": 0.0,
+        "lifetime": 1.0,
+        "startSize": 130.0,
+        "sprite": "Puff",
+        "size": "(100.00, 100.00)",
+        "isMain": false,
+        "fitRect": false
+      }
+    ],
+    "otherScripts": []
+  },
+  {
+    "path": "Assets/AssetKits/ParticleImage/Demo/Prefabs\\Scroll.prefab",
+    "particles": [
+      {
+        "name": "Particle Image",
+        "parent": "Item",
+        "shape": "Point",
+        "loop": true,
+        "duration": 99.0,
+        "startDelay": 0.0,
+        "rate": 0.0,
+        "lifetime": 99.0,
+        "startSize": 400.0,
+        "sprite": "GlowRays",
+        "size": "(173.08, 241.08)",
+        "isMain": true,
+        "fitRect": true
+      },
+      {
+        "name": "Particle Image",
+        "parent": "Particle Image",
+        "shape": "Point",
+        "loop": true,
+        "duration": 5.0,
+        "startDelay": 0.0,
+        "rate": 2.0,
+        "lifetime": 2.0,
+        "startSize": 300.0,
+        "sprite": "Ring2",
+        "size": "(100.00, 100.00)",
+        "isMain": false,
+        "fitRect": false
+      },
+      {
+        "name": "Particle Image",
+        "parent": "Item",
+        "shape": "Circle",
+        "loop": true,
+        "duration": 5.0,
+        "startDelay": 0.0,
+        "rate": 2.0,
+        "lifetime": 2.0,
+        "startSize": 40.0,
+        "sprite": "4Star",
+        "size": "(133.59, 151.12)",
+        "isMain": true,
+        "fitRect": true
+      },
+      {
+        "name": "Particle Image",
+        "parent": "Item (1)",
+        "shape": "Point",
+        "loop": true,
+        "duration": 99.0,
+        "startDelay": 0.0,
+        "rate": 0.0,
+        "lifetime": 99.0,
+        "startSize": 400.0,
+        "sprite": "GlowRays",
+        "size": "(173.08, 241.08)",
+        "isMain": true,
+        "fitRect": true
+      },
+      {
+        "name": "Particle Image",
+        "parent": "Particle Image",
+        "shape": "Point",
+        "loop": true,
+        "duration": 5.0,
+        "startDelay": 0.0,
+        "rate": 2.0,
+        "lifetime": 2.0,
+        "startSize": 300.0,
+        "sprite": "Ring2",
+        "size": "(100.00, 100.00)",
+        "isMain": false,
+        "fitRect": false
+      },
+      {
+        "name": "Particle Image",
+        "parent": "Item (1)",
+        "shape": "Circle",
+        "loop": true,
+        "duration": 5.0,
+        "startDelay": 0.0,
+        "rate": 2.0,
+        "lifetime": 2.0,
+        "startSize": 40.0,
+        "sprite": "4Star",
+        "size": "(133.59, 151.12)",
+        "isMain": true,
+        "fitRect": true
+      },
+      {
+        "name": "Particle Image",
+        "parent": "Item (2)",
+        "shape": "Point",
+        "loop": true,
+        "duration": 99.0,
+        "startDelay": 0.0,
+        "rate": 0.0,
+        "lifetime": 99.0,
+        "startSize": 400.0,
+        "sprite": "GlowRays",
+        "size": "(173.08, 241.08)",
+        "isMain": true,
+        "fitRect": true
+      },
+      {
+        "name": "Particle Image",
+        "parent": "Particle Image",
+        "shape": "Point",
+        "loop": true,
+        "duration": 5.0,
+        "startDelay": 0.0,
+        "rate": 10.0,
+        "lifetime": 2.0,
+        "startSize": 300.0,
+        "sprite": "Ray3",
+        "size": "(100.00, 100.00)",
+        "isMain": false,
+        "fitRect": false
+      },
+      {
+        "name": "Particle Image",
+        "parent": "Item (2)",
+        "shape": "Circle",
+        "loop": true,
+        "duration": 5.0,
+        "startDelay": 0.0,
+        "rate": 2.0,
+        "lifetime": 2.0,
+        "startSize": 40.0,
+        "sprite": "4Star",
+        "size": "(133.59, 151.12)",
+        "isMain": true,
+        "fitRect": true
+      },
+      {
+        "name": "Particle Image",
+        "parent": "Item (3)",
+        "shape": "Point",
+        "loop": true,
+        "duration": 99.0,
+        "startDelay": 0.0,
+        "rate": 0.0,
+        "lifetime": 99.0,
+        "startSize": 400.0,
+        "sprite": "GlowRays",
+        "size": "(173.08, 241.08)",
+        "isMain": true,
+        "fitRect": true
+      },
+      {
+        "name": "Particle Image",
+        "parent": "Particle Image",
+        "shape": "Circle",
+        "loop": true,
+        "duration": 5.0,
+        "startDelay": 0.0,
+        "rate": 20.0,
+        "lifetime": 3.0,
+        "startSize": 40.0,
+        "sprite": "Heart2",
+        "size": "(100.00, 100.00)",
+        "isMain": false,
+        "fitRect": false
+      },
+      {
+        "name": "Particle Image",
+        "parent": "Item (3)",
+        "shape": "Circle",
+        "loop": true,
+        "duration": 5.0,
+        "startDelay": 0.0,
+        "rate": 2.0,
+        "lifetime": 2.0,
+        "startSize": 40.0,
+        "sprite": "4Star",
+        "size": "(133.59, 151.12)",
+        "isMain": true,
+        "fitRect": true
+      },
+      {
+        "name": "Particle Image",
+        "parent": "Item (4)",
+        "shape": "Point",
+        "loop": true,
+        "duration": 99.0,
+        "startDelay": 0.0,
+        "rate": 0.0,
+        "lifetime": 99.0,
+        "startSize": 400.0,
+        "sprite": "GlowRays",
+        "size": "(173.08, 241.08)",
+        "isMain": true,
+        "fitRect": true
+      },
+      {
+        "name": "Particle Image",
+        "parent": "Particle Image",
+        "shape": "Point",
+        "loop": true,
+        "duration": 5.0,
+        "startDelay": 0.0,
+        "rate": 2.0,
+        "lifetime": 2.0,
+        "startSize": 300.0,
+        "sprite": "Ring2",
+        "size": "(100.00, 100.00)",
+        "isMain": false,
+        "fitRect": false
+      },
+      {
+        "name": "Particle Image",
+        "parent": "Item (4)",
+        "shape": "Circle",
+        "loop": true,
+        "duration": 5.0,
+        "startDelay": 0.0,
+        "rate": 2.0,
+        "lifetime": 2.0,
+        "startSize": 40.0,
+        "sprite": "4Star",
+        "size": "(133.59, 151.12)",
+        "isMain": true,
+        "fitRect": true
+      },
+      {
+        "name": "Particle Image",
+        "parent": "Item (5)",
+        "shape": "Point",
+        "loop": true,
+        "duration": 99.0,
+        "startDelay": 0.0,
+        "rate": 0.0,
+        "lifetime": 99.0,
+        "startSize": 400.0,
+        "sprite": "GlowRays",
+        "size": "(173.08, 241.08)",
+        "isMain": true,
+        "fitRect": true
+      },
+      {
+        "name": "Particle Image",
+        "parent": "Particle Image",
+        "shape": "Point",
+        "loop": true,
+        "duration": 5.0,
+        "startDelay": 0.0,
+        "rate": 2.0,
+        "lifetime": 2.0,
+        "startSize": 300.0,
+        "sprite": "Ring2",
+        "size": "(100.00, 100.00)",
+        "isMain": false,
+        "fitRect": false
+      },
+      {
+        "name": "Particle Image",
+        "parent": "Item (5)",
+        "shape": "Circle",
+        "loop": true,
+        "duration": 5.0,
+        "startDelay": 0.0,
+        "rate": 2.0,
+        "lifetime": 2.0,
+        "startSize": 40.0,
+        "sprite": "4Star",
+        "size": "(133.59, 151.12)",
+        "isMain": true,
+        "fitRect": true
+      },
+      {
+        "name": "Particle Image",
+        "parent": "Item (6)",
+        "shape": "Point",
+        "loop": true,
+        "duration": 99.0,
+        "startDelay": 0.0,
+        "rate": 0.0,
+        "lifetime": 99.0,
+        "startSize": 400.0,
+        "sprite": "GlowRays",
+        "size": "(173.08, 241.08)",
+        "isMain": true,
+        "fitRect": true
+      },
+      {
+        "name": "Particle Image",
+        "parent": "Particle Image",
+        "shape": "Point",
+        "loop": true,
+        "duration": 5.0,
+        "startDelay": 0.0,
+        "rate": 10.0,
+        "lifetime": 2.0,
+        "startSize": 300.0,
+        "sprite": "Ray3",
+        "size": "(100.00, 100.00)",
+        "isMain": false,
+        "fitRect": false
+      },
+      {
+        "name": "Particle Image",
+        "parent": "Item (6)",
+        "shape": "Circle",
+        "loop": true,
+        "duration": 5.0,
+        "startDelay": 0.0,
+        "rate": 2.0,
+        "lifetime": 2.0,
+        "startSize": 40.0,
+        "sprite": "4Star",
+        "size": "(133.59, 151.12)",
+        "isMain": true,
+        "fitRect": true
+      },
+      {
+        "name": "Particle Image",
+        "parent": "Item (7)",
+        "shape": "Point",
+        "loop": true,
+        "duration": 99.0,
+        "startDelay": 0.0,
+        "rate": 0.0,
+        "lifetime": 99.0,
+        "startSize": 400.0,
+        "sprite": "GlowRays",
+        "size": "(173.08, 241.08)",
+        "isMain": true,
+        "fitRect": true
+      },
+      {
+        "name": "Particle Image",
+        "parent": "Particle Image",
+        "shape": "Circle",
+        "loop": true,
+        "duration": 5.0,
+        "startDelay": 0.0,
+        "rate": 20.0,
+        "lifetime": 3.0,
+        "startSize": 40.0,
+        "sprite": "Heart2",
+        "size": "(100.00, 100.00)",
+        "isMain": false,
+        "fitRect": false
+      },
+      {
+        "name": "Particle Image",
+        "parent": "Item (7)",
+        "shape": "Circle",
+        "loop": true,
+        "duration": 5.0,
+        "startDelay": 0.0,
+        "rate": 2.0,
+        "lifetime": 2.0,
+        "startSize": 40.0,
+        "sprite": "4Star",
+        "size": "(133.59, 151.12)",
+        "isMain": true,
+        "fitRect": true
+      }
+    ],
+    "otherScripts": [
+      "ScrollRect",
+      "RectMask2D",
+      "Image",
+      "HorizontalLayoutGroup",
+      "ContentSizeFitter"
+    ]
+  },
+  {
+    "path": "Assets/AssetKits/ParticleImage/Demo/Prefabs\\Slider.prefab",
+    "particles": [
+      {
+        "name": "Particle Image",
+        "parent": "Handle",
+        "shape": "Rectangle",
+        "loop": true,
+        "duration": 5.0,
+        "startDelay": 0.0,
+        "rate": 100.0,
+        "lifetime": 1.5,
+        "startSize": 30.0,
+        "sprite": "Fire",
+        "size": "(24.10, 44.67)",
+        "isMain": true,
+        "fitRect": true
+      }
+    ],
+    "otherScripts": [
+      "Slider",
+      "Image",
+      "RectMask2D"
+    ]
+  },
+  {
+    "path": "Assets/AssetKits/ParticleImage/Demo/Prefabs\\UniformEmitter.prefab",
+    "particles": [
+      {
+        "name": "UniformEmitter",
+        "parent": null,
+        "shape": "Point",
+        "loop": true,
+        "duration": 1.0,
+        "startDelay": 0.0,
+        "rate": 200.0,
+        "lifetime": 2.0,
+        "startSize": 40.0,
+        "sprite": "Star",
+        "size": "(100.00, 100.00)",
+        "isMain": true,
+        "fitRect": false
+      }
+    ],
+    "otherScripts": []
+  },
+  {
+    "path": "Assets/AssetKits/ParticleImage/Demo/Prefabs\\WorldSpaceConstraintAttractor.prefab",
+    "particles": [
+      {
+        "name": "WorldSpaceConstraintAttractor",
+        "parent": null,
+        "shape": "Circle",
+        "loop": true,
+        "duration": 5.0,
+        "startDelay": 0.0,
+        "rate": 50.0,
+        "lifetime": 1.0,
+        "startSize": 40.0,
+        "sprite": "Coin",
+        "size": "(100.00, 100.00)",
+        "isMain": true,
+        "fitRect": false
+      }
+    ],
+    "otherScripts": []
+  }
+]

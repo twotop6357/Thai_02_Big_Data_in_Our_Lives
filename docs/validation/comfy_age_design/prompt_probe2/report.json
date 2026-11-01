@@ -1,0 +1,50 @@
+[
+  {
+    "name": "furled",
+    "positive": "a furled rain parasol, narrow red fabric wrapped around a straight shaft, blue handle, plain white backdrop",
+    "prompt_id": "6deb80cf-9c3b-40ce-84c1-136ca85c6dda",
+    "seconds": 1.666
+  },
+  {
+    "name": "sleeve",
+    "positive": "a compact red umbrella packed inside a blue carrying sleeve, isolated product illustration on white",
+    "prompt_id": "28ea5afa-a1d6-4e51-8a35-a02ec9314e39",
+    "seconds": 1.622
+  },
+  {
+    "name": "closedweighted",
+    "positive": "(closed folded umbrella:1.8), red, blue handle, product icon on white",
+    "prompt_id": "c52cad6f-c32c-49f4-a790-c7fb6745a7ab",
+    "seconds": 1.582
+  },
+  {
+    "name": "closedphoto",
+    "positive": "a product photo of a single closed folded umbrella, red fabric, blue handle, plain white background",
+    "prompt_id": "16620846-e044-49b1-a726-da7d7f19186c",
+    "seconds": 1.556
+  },
+  {
+    "name": "hoodicon",
+    "positive": "a single hoodie icon, red sweatshirt with blue sleeves, isolated clip art on white",
+    "prompt_id": "781e3d63-260d-4b77-9d0f-8d49d722795e",
+    "seconds": 1.594
+  },
+  {
+    "name": "shirtdrawing",
+    "positive": "technical flat drawing of a single red button-up shirt with blue sleeves, front view, white background",
+    "prompt_id": "fdd41ef1-6662-46f9-9ab1-874563dd53e3",
+    "seconds": 1.689
+  },
+  {
+    "name": "cardiganicon",
+    "positive": "a single cardigan icon, red knitted sweater with blue sleeves, isolated clip art on white",
+    "prompt_id": "9e0106d6-a593-491a-857f-94974ed3fde1",
+    "seconds": 1.579
+  },
+  {
+    "name": "watchicon",
+    "positive": "a single wristwatch icon, small red round clock face with short blue straps, isolated clip art on white",
+    "prompt_id": "d571aabe-e5a5-49aa-962d-83c3bcef9c7e",
+    "seconds": 2.213
+  }
+]

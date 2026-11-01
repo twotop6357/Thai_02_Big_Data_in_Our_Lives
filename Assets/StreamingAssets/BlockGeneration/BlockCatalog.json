@@ -1,149 +1,438 @@
 {
   "schemaVersion": 1,
-  "stylePrefix": "no humans, still life, object focus, (full shot:1.3), (entire object:1.3), (wide shot:1.15), isolated object",
-  "styleSuffix": "detailed Japanese game item illustration, precise clean linework, soft painted shading, carefully rendered material texture, crisp edges, complete object fully in frame, centered composition, generous empty margin, plain white background, masterpiece, high score, great score, absurdres, rating:general",
-  "negativePrompt": "worst quality, bad quality, low quality, lowres, blurry, unfinished, rough sketch, noisy, jpeg artifacts, text, logo, watermark, signature, human, person, 1girl, 1boy, woman, man, child, human face, human head, human hands, human arms, human legs, human feet, fingers, skin, portrait, wearing, holding, mannequin, model wearing product, multiple objects, duplicate, duplicates, collection, collage, grid, contact sheet, multiple views, comparison, exploded view, spare parts, extra accessories, cropped, cut off, out of frame, distorted geometry, malformed, flat vector art, thick black outlines, photograph, photorealistic, close-up, extreme close-up, macro, zoomed in, cropped object, partial object, object extending beyond the frame",
+  "stylePrefix": "Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors",
+  "styleSuffix": "One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render",
+  "negativePrompt": "text, logo, rough sketch, complex details, people, background",
   "groups": [
     {
       "id": "child",
       "label": "Child",
-      "prompt": "playful rounded proportions and friendly simple shapes"
+      "prompt": "playful rounded design"
     },
     {
       "id": "student",
       "label": "Student",
-      "prompt": "practical casual design with sporty details"
+      "prompt": "simple sporty design"
     },
     {
       "id": "working_adult",
       "label": "Working Adult",
-      "prompt": "refined minimal design and premium finish"
+      "prompt": "refined minimal design"
     },
     {
       "id": "senior",
       "label": "Senior",
-      "prompt": "ergonomic design with clear simple controls"
+      "prompt": "simple ergonomic design"
     }
   ],
   "products": [
     {
       "id": "bags",
       "label": "Bags",
-      "prompt": "a single backpack, one bag only, closed main compartment, structured front pocket, two attached padded shoulder straps, woven canvas texture, reinforced stitching, metal zipper teeth, small fastened buckles",
-      "primaryPart": "fabric body",
-      "secondaryPart": "straps and zipper trim"
+      "prompt": "one backpack with a front pocket",
+      "primaryPart": "body",
+      "secondaryPart": "straps",
+      "ageVariants": [
+        {
+          "groupId": "child",
+          "label": "곰 모양 유치원 배낭",
+          "prompt": "one small bear-shaped kindergarten backpack with rounded bear ears and a front pocket",
+          "primaryPart": "backpack body",
+          "secondaryPart": "bear ears and front pocket"
+        },
+        {
+          "groupId": "student",
+          "label": "학생용 책가방",
+          "prompt": "one school backpack with a large front zipper pocket and two shoulder straps",
+          "primaryPart": "body",
+          "secondaryPart": "front pocket and straps"
+        },
+        {
+          "groupId": "working_adult",
+          "label": "서류가방",
+          "prompt": "one structured office briefcase with a top handle and rectangular flap",
+          "primaryPart": "body",
+          "secondaryPart": "handle and flap"
+        },
+        {
+          "groupId": "senior",
+          "label": "크로스백",
+          "prompt": "one soft crossbody satchel with a long shoulder strap and flap",
+          "primaryPart": "body",
+          "secondaryPart": "flap and shoulder strap"
+        }
+      ]
     },
     {
       "id": "shoes",
       "label": "Shoes",
-      "prompt": "a single sneaker, one shoe only, unworn shoe, detailed layered panels, woven textile upper, carefully tied shoelaces, stitched seams, molded rubber sole with tread",
-      "primaryPart": "uppers",
-      "secondaryPart": "soles and laces"
+      "prompt": "one low-top sneaker, natural three-quarter view",
+      "primaryPart": "upper panels",
+      "secondaryPart": "accent panels",
+      "ageVariants": [
+        {
+          "groupId": "child",
+          "label": "아동용 장화",
+          "prompt": "one smooth rubber pull-on rain boot, rounded toe and simple open shaft, small heel, without shoelaces or a separate tongue",
+          "primaryPart": "boot upper",
+          "secondaryPart": "sole and cuff"
+        },
+        {
+          "groupId": "student",
+          "label": "하이탑 운동화",
+          "prompt": "one high-top canvas sneaker with laces, natural three-quarter view",
+          "primaryPart": "canvas upper",
+          "secondaryPart": "ankle panels and sole"
+        },
+        {
+          "groupId": "working_adult",
+          "label": "로퍼",
+          "prompt": "one classic laceless penny loafer, a slip-on dress shoe with a wide strap across the vamp, smooth moccasin toe and low flat heel, no shoelaces or sneaker panels",
+          "primaryPart": "leather upper",
+          "secondaryPart": "sole and instep band"
+        },
+        {
+          "groupId": "senior",
+          "label": "편안한 워킹화",
+          "prompt": "one comfortable slip-on walking shoe, wide rounded toe and elastic instep, no shoelaces",
+          "primaryPart": "fabric upper",
+          "secondaryPart": "sole and heel panel"
+        }
+      ]
     },
     {
       "id": "hats",
       "label": "Hats",
-      "prompt": "a single baseball cap, one empty cap only, structured six-panel crown, curved visor, fine woven fabric, stitched panel seams, small embroidered eyelets",
+      "prompt": "one bucket hat with a short brim",
       "primaryPart": "crown",
-      "secondaryPart": "brim"
+      "secondaryPart": "brim",
+      "ageVariants": [
+        {
+          "groupId": "child",
+          "label": "유치원 모자",
+          "prompt": "one kindergarten sun hat with a rounded crown, wide brim and chin strap",
+          "primaryPart": "crown",
+          "secondaryPart": "brim and chin strap"
+        },
+        {
+          "groupId": "student",
+          "label": "비니",
+          "prompt": "one ribbed knitted beanie with a folded cuff",
+          "primaryPart": "knitted crown",
+          "secondaryPart": "folded cuff"
+        },
+        {
+          "groupId": "working_adult",
+          "label": "볼캡",
+          "prompt": "one baseball cap with a curved visor and button on top",
+          "primaryPart": "crown",
+          "secondaryPart": "visor"
+        },
+        {
+          "groupId": "senior",
+          "label": "중절모",
+          "prompt": "one classic fedora hat with a pinched crown, ribbon band and brim",
+          "primaryPart": "crown and brim",
+          "secondaryPart": "ribbon band"
+        }
+      ]
     },
     {
       "id": "sunglasses",
       "label": "Sunglasses",
-      "prompt": "a single pair of sunglasses, one complete eyewear frame only, two lenses connected by one bridge, two attached temples, neatly machined hinges, smooth polished frame, subtle lens reflections",
+      "prompt": "one eyewear product with solid tinted lenses, folded closed",
       "primaryPart": "frame",
-      "secondaryPart": "tinted lenses"
+      "secondaryPart": "opaque lenses",
+      "ageVariants": [
+        {
+          "groupId": "child",
+          "label": "하트 모양 선글라스",
+          "prompt": "heart-shaped sunglasses, one pair of heart-shaped frames",
+          "primaryPart": "heart-shaped frame",
+          "secondaryPart": "solid tinted lenses"
+        },
+        {
+          "groupId": "student",
+          "label": "스포츠 선글라스",
+          "prompt": "one wraparound sports sunglasses with a curved shield lens and solid tint",
+          "primaryPart": "frame",
+          "secondaryPart": "opaque shield lens"
+        },
+        {
+          "groupId": "working_adult",
+          "label": "사각 선글라스",
+          "prompt": "one rectangular browline sunglasses with solid tinted lenses",
+          "primaryPart": "frame",
+          "secondaryPart": "opaque lenses"
+        },
+        {
+          "groupId": "senior",
+          "label": "원형 선글라스",
+          "prompt": "one round vintage sunglasses with thick circular frames and solid tinted lenses",
+          "primaryPart": "circular frame",
+          "secondaryPart": "opaque lenses"
+        }
+      ]
     },
     {
       "id": "headphones",
       "label": "Headphones",
-      "prompt": "(headphones:1.4), over-ear headphones, one complete connected pair of headphones, tall U-shaped padded headband, two oval earcups hanging from either end of the headband, both left and right ear cushions visible, sliding metal adjustment arms",
-      "primaryPart": "ear cups",
+      "prompt": "one standalone headset",
+      "primaryPart": "earcups",
       "secondaryPart": "headband",
-      "negativePrompt": "wheel, tire, circular shield, circular disc, single earcup, earbuds, earplugs, earphones"
+      "ageVariants": [
+        {
+          "groupId": "child",
+          "label": "고양이 귀 헤드폰",
+          "prompt": "one small over-ear headphones with cat ears on the headband",
+          "primaryPart": "earcups and cat ears",
+          "secondaryPart": "headband"
+        },
+        {
+          "groupId": "student",
+          "label": "게이밍 헤드셋",
+          "prompt": "one gaming headset with large earcups and a short boom microphone",
+          "primaryPart": "earcups",
+          "secondaryPart": "headband and microphone"
+        },
+        {
+          "groupId": "working_adult",
+          "label": "노이즈 캔슬링 헤드폰",
+          "prompt": "one sleek noise-cancelling over-ear headphones with smooth oval earcups",
+          "primaryPart": "earcups",
+          "secondaryPart": "padded headband"
+        },
+        {
+          "groupId": "senior",
+          "label": "가벼운 온이어 헤드폰",
+          "prompt": "one lightweight retro on-ear headphones, two small round foam earpads connected by a thin curved headband, no microphone",
+          "primaryPart": "round foam earpads",
+          "secondaryPart": "thin headband"
+        }
+      ]
     },
     {
       "id": "tops",
       "label": "Tops",
-      "prompt": "a single unworn short sleeve shirt laid flat, one shirt only, empty garment, visible collar and sleeves, fine cotton weave, neat stitched hems, detailed fabric folds",
-      "primaryPart": "main fabric",
-      "secondaryPart": "collar and sleeve trim"
+      "prompt": "one plain T-shirt laid flat",
+      "primaryPart": "body",
+      "secondaryPart": "sleeves",
+      "ageVariants": [
+        {
+          "groupId": "child",
+          "label": "아동용 티셔츠",
+          "prompt": "one child's short-sleeved T-shirt with a small star patch, laid flat",
+          "primaryPart": "body",
+          "secondaryPart": "sleeves and collar"
+        },
+        {
+          "groupId": "student",
+          "label": "후드티",
+          "prompt": "one pullover hoodie with a front pocket, complete hood and sleeves, centered",
+          "primaryPart": "body",
+          "secondaryPart": "hood and sleeves"
+        },
+        {
+          "groupId": "working_adult",
+          "label": "셔츠",
+          "prompt": "one button-up shirt with a collar and long sleeves, complete garment, centered",
+          "primaryPart": "body",
+          "secondaryPart": "collar and cuffs"
+        },
+        {
+          "groupId": "senior",
+          "label": "카디건",
+          "prompt": "one V-neck cardigan with buttons and pockets, complete garment, centered",
+          "primaryPart": "body",
+          "secondaryPart": "sleeves and ribbed edges"
+        }
+      ]
     },
     {
       "id": "bicycles",
       "label": "Bicycles",
-      "prompt": "a single complete bicycle, one bicycle only, side three-quarter view, two attached wheels, coherent metal frame, detailed spokes, chain drive, pedals and handlebars",
+      "prompt": "one tiny miniature bicycle, full side view, both complete wheels surrounded by ample white space",
       "primaryPart": "frame",
-      "secondaryPart": "wheel rims and handlebar grips"
+      "secondaryPart": "wheel rims",
+      "ageVariants": [
+        {
+          "groupId": "child",
+          "label": "보조바퀴 자전거",
+          "prompt": "one tiny child's bicycle with training wheels and a low frame, full side view, complete wheels with ample white space",
+          "primaryPart": "frame",
+          "secondaryPart": "wheel rims and training wheels"
+        },
+        {
+          "groupId": "student",
+          "label": "로드 자전거",
+          "prompt": "one road bicycle with drop handlebars and thin tires, both wheels visible, centered",
+          "primaryPart": "frame",
+          "secondaryPart": "wheel rims and handlebars"
+        },
+        {
+          "groupId": "working_adult",
+          "label": "접이식 자전거",
+          "prompt": "one tiny folding commuter bicycle with a hinged frame and small wheels, full side view, complete wheels with ample white space",
+          "primaryPart": "frame",
+          "secondaryPart": "wheel rims and hinge"
+        },
+        {
+          "groupId": "senior",
+          "label": "바구니 생활 자전거",
+          "prompt": "one tiny step-through city bicycle with a front basket and upright handlebars, full side view, complete wheels with ample white space",
+          "primaryPart": "frame",
+          "secondaryPart": "basket and wheel rims"
+        }
+      ]
     },
     {
       "id": "tumblers",
       "label": "Tumblers",
-      "prompt": "(travel mug:1.4), a single reusable vacuum-insulated travel cup, one closed screw-on drinking lid, cylindrical stainless steel body, narrow silicone grip band, substantial rounded base, powder coated metal, visible plastic lid seam, hinged sip opening",
+      "prompt": "one closed travel cup",
       "primaryPart": "body",
       "secondaryPart": "lid",
-      "negativePrompt": "soda can, beverage can, aluminum can, beer can, open rim, uncovered cup, open container"
+      "ageVariants": [
+        {
+          "groupId": "child",
+          "label": "양손잡이 유아 컵",
+          "prompt": "one child's sippy cup with two side handles and a short spout lid",
+          "primaryPart": "cup body",
+          "secondaryPart": "handles and lid"
+        },
+        {
+          "groupId": "student",
+          "label": "빨대 텀블러",
+          "prompt": "one tall tumbler with a straw and flat lid",
+          "primaryPart": "body",
+          "secondaryPart": "straw and lid"
+        },
+        {
+          "groupId": "working_adult",
+          "label": "커피 여행 머그",
+          "prompt": "one tapered travel coffee mug with a handle and flip-top lid",
+          "primaryPart": "body",
+          "secondaryPart": "handle and lid"
+        },
+        {
+          "groupId": "senior",
+          "label": "컵뚜껑 보온병",
+          "prompt": "one insulated vacuum flask with a screw-on cup cap",
+          "primaryPart": "flask body",
+          "secondaryPart": "cup cap"
+        }
+      ]
     },
     {
       "id": "wristwatches",
       "label": "Wristwatches",
-      "prompt": "(wristwatch:1.3), a single compact wristwatch, one watch face only, plain round watch case attached to one smooth leather strap, clasp closed in one loop, small crown knob, flat hour markers, two clock hands, carefully machined bezel",
+      "prompt": "one tiny wristwatch with a complete curved strap loop, distant full view with ample white space",
       "primaryPart": "strap",
-      "secondaryPart": "case and dial",
-      "negativePrompt": "second watch, extra watch face, multiple watch dials, wall clock, watch collection"
-    },
-    {
-      "id": "phone_cases",
-      "label": "Phone Cases",
-      "prompt": "a single empty smartphone case, one case only, rear view, detailed camera cutouts, precise molded buttons and rounded protective rim, fine surface texture",
-      "primaryPart": "body",
-      "secondaryPart": "edge trim"
+      "secondaryPart": "case",
+      "ageVariants": [
+        {
+          "groupId": "child",
+          "label": "아동용 시계",
+          "prompt": "one child's round wristwatch with a star dial and short rubber band, complete short wristband, centered",
+          "primaryPart": "rubber strap",
+          "secondaryPart": "round case and dial"
+        },
+        {
+          "groupId": "student",
+          "label": "스포츠 시계",
+          "prompt": "one rectangular sports wristwatch with a chunky rubber band, a simple analog dial with two clear hands and four round hour markers, complete watch with both band ends",
+          "primaryPart": "plastic strap",
+          "secondaryPart": "rectangular case and dial"
+        },
+        {
+          "groupId": "working_adult",
+          "label": "스마트워치",
+          "prompt": "one rounded square smartwatch with a complete silicone wristband, simple clock face and three small colorful app dots on the screen",
+          "primaryPart": "silicone strap",
+          "secondaryPart": "square case"
+        },
+        {
+          "groupId": "senior",
+          "label": "아날로그 시계",
+          "prompt": "one round analog wristwatch with large clear hands and a metal link band, complete short wristband, centered",
+          "primaryPart": "metal bracelet",
+          "secondaryPart": "round case"
+        }
+      ]
     },
     {
       "id": "umbrellas",
       "label": "Umbrellas",
-      "prompt": "a single open umbrella, one umbrella only, complete canopy and attached curved handle, coherent fabric panels, fine radial ribs, stitched canopy seams",
+      "prompt": "one compact umbrella, single canopy and curved handle",
       "primaryPart": "canopy",
-      "secondaryPart": "handle and edge trim"
-    },
-    {
-      "id": "equipment",
-      "label": "Equipment",
-      "prompt": "a single small toy robot, one robot only, coherent mechanical chassis, precise panels and joints, small machined screws, clean manufactured surfaces",
-      "primaryPart": "body",
-      "secondaryPart": "detail accents"
+      "secondaryPart": "trim",
+      "ageVariants": [
+        {
+          "groupId": "child",
+          "label": "돔형 아동 우산",
+          "prompt": "one small open dome umbrella with a scalloped edge and short curved handle",
+          "primaryPart": "dome canopy",
+          "secondaryPart": "scalloped trim and handle"
+        },
+        {
+          "groupId": "student",
+          "label": "접이식 우산",
+          "prompt": "one compact folding umbrella with a short telescopic shaft and a straight handle",
+          "primaryPart": "canopy",
+          "secondaryPart": "handle and rim"
+        },
+        {
+          "groupId": "working_adult",
+          "label": "장우산",
+          "prompt": "one open classic umbrella with an angular canopy, long shaft and hooked handle",
+          "primaryPart": "canopy",
+          "secondaryPart": "trim and hooked handle"
+        },
+        {
+          "groupId": "senior",
+          "label": "전통 양산",
+          "prompt": "one traditional paper parasol with a flat circular canopy and a straight bamboo handle",
+          "primaryPart": "paper canopy",
+          "secondaryPart": "ribs and handle"
+        }
+      ]
     }
   ],
   "colors": [
     {
       "id": "black",
       "label": "Black",
-      "prompt": "black"
+      "prompt": "near-black",
+      "hex": "#171619"
     },
     {
       "id": "white",
       "label": "White",
-      "prompt": "white"
+      "prompt": "white",
+      "hex": "#FFFFFF"
     },
     {
       "id": "blue",
       "label": "Blue",
-      "prompt": "blue"
+      "prompt": "light blue",
+      "hex": "#5FB0E3"
     },
     {
       "id": "red",
       "label": "Red",
-      "prompt": "red"
+      "prompt": "soft red",
+      "hex": "#EC6868"
     },
     {
       "id": "green",
       "label": "Green",
-      "prompt": "green"
+      "prompt": "light pastel green",
+      "hex": "#B7DBA9"
     },
     {
       "id": "yellow",
       "label": "Yellow",
-      "prompt": "yellow"
+      "prompt": "pale pastel yellow",
+      "hex": "#F6EEA2"
     }
   ],
   "equipmentVariants": [
@@ -162,5 +451,7 @@
       "label": "Laptops",
       "prompt": "a single open laptop computer, one laptop only, connected screen and keyboard, coherent hinge, precise keyboard grid, brushed metal chassis, detailed ventilation slots"
     }
-  ]
+  ],
+  "promptSeparator": ". ",
+  "numericColorPrompt": true
 }

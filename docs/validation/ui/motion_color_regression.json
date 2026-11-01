@@ -1,0 +1,27 @@
+{
+  "task": "COLOR-001",
+  "environment": "2022.3.62f3",
+  "checks": [
+    "Thai session entry",
+    "Automatic local coloring and result handoff",
+    "Repeated recognition reuses existing result",
+    "Latest selection wins 0",
+    "Latest selection wins 1",
+    "Latest selection wins 2",
+    "Superseded texture destroyed",
+    "Explicit cancellation releases pending result",
+    "Retry after cancellation",
+    "Missing asset failure has no stale image",
+    "Retry after asset restoration",
+    "Screen disable cancels and clears selection",
+    "Age-dependent Equipment template",
+    "Result scene displays same colored texture",
+    "Idle releases image and language selection",
+    "Inactivity timer remains active",
+    "English repeated session entry",
+    "Return during coloring cancels session without late result"
+  ],
+  "artwork": "48 replaceable geometric sample templates",
+  "result": "PASS",
+  "expected_error": "Two diagnostic entries for deliberate missing-file failure (message + original exception)."
+}

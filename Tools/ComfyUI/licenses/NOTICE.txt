@@ -1,0 +1,10 @@
+Active STYLE-QUALITY-003: FLUX.2 Klein 4B FP8 by Black Forest Labs; Apache License 2.0.
+Klein VAE is taken from the Apache-licensed black-forest-labs/FLUX.2-klein-4B repository, not the noncommercial Flux2-Dev weight bundle.
+Qwen3 4B language encoder: Qwen/Comfy-Org, Apache License 2.0.
+All source revisions/SHA256 values are pinned in model.json, text_encoder.json and vae.json. Model weights are external and are not included in this repository.
+The packaged style reference is a user-supplied illustration, retained for this project's authorized style-conditioning task.
+
+Historical SDXL-Turbo notice (weights retained externally, no longer the active default):
+This Stability AI Model is licensed under the Stability AI Community License, Copyright (c) Stability AI Ltd. All Rights Reserved.
+Powered by Stability AI
+SDXL-Turbo model weights are not included in this repository.

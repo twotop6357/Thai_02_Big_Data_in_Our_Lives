@@ -1,0 +1,282 @@
+[
+  {
+    "file": "headphones_student_1206501.png",
+    "center": [
+      240.0,
+      239.5
+    ],
+    "bounds": [
+      51,
+      45,
+      429,
+      434
+    ],
+    "transparent_pixels": 144711
+  },
+  {
+    "file": "tops_student_1206501.png",
+    "center": [
+      239.5,
+      240.0
+    ],
+    "bounds": [
+      56,
+      63,
+      423,
+      417
+    ],
+    "transparent_pixels": 144024
+  },
+  {
+    "file": "hats_student_1206501.png",
+    "center": [
+      239.5,
+      240.0
+    ],
+    "bounds": [
+      74,
+      24,
+      405,
+      456
+    ],
+    "transparent_pixels": 135062
+  },
+  {
+    "file": "tumblers_student_1206501.png",
+    "center": [
+      240.0,
+      240.0
+    ],
+    "bounds": [
+      104,
+      56,
+      376,
+      424
+    ],
+    "transparent_pixels": 156100
+  },
+  {
+    "file": "bags_student_1206501.png",
+    "center": [
+      239.5,
+      239.5
+    ],
+    "bounds": [
+      45,
+      34,
+      434,
+      445
+    ],
+    "transparent_pixels": 123134
+  },
+  {
+    "file": "shoes_student_1206501.png",
+    "center": [
+      239.5,
+      239.5
+    ],
+    "bounds": [
+      50,
+      97,
+      429,
+      382
+    ],
+    "transparent_pixels": 163854
+  },
+  {
+    "file": "sunglasses_student_1206501.png",
+    "center": [
+      240.0,
+      239.5
+    ],
+    "bounds": [
+      24,
+      28,
+      456,
+      451
+    ],
+    "transparent_pixels": 89775
+  },
+  {
+    "file": "bicycles_student_1206501.png",
+    "center": [
+      239.5,
+      240.0
+    ],
+    "bounds": [
+      56,
+      120,
+      423,
+      360
+    ],
+    "transparent_pixels": 181884
+  },
+  {
+    "file": "wristwatches_student_1206501.png",
+    "center": [
+      240.0,
+      239.5
+    ],
+    "bounds": [
+      25,
+      46,
+      455,
+      433
+    ],
+    "transparent_pixels": 128886
+  },
+  {
+    "file": "umbrellas_student_1206501.png",
+    "center": [
+      239.5,
+      240.0
+    ],
+    "bounds": [
+      31,
+      55,
+      448,
+      425
+    ],
+    "transparent_pixels": 145527
+  },
+  {
+    "file": "headphones_student_1206502.png",
+    "center": [
+      239.5,
+      239.5
+    ],
+    "bounds": [
+      56,
+      34,
+      423,
+      445
+    ],
+    "transparent_pixels": 160369
+  },
+  {
+    "file": "tops_student_1206502.png",
+    "center": [
+      239.5,
+      240.0
+    ],
+    "bounds": [
+      56,
+      67,
+      423,
+      413
+    ],
+    "transparent_pixels": 145247
+  },
+  {
+    "file": "hats_student_1206502.png",
+    "center": [
+      239.5,
+      240.0
+    ],
+    "bounds": [
+      58,
+      24,
+      421,
+      456
+    ],
+    "transparent_pixels": 120075
+  },
+  {
+    "file": "tumblers_student_1206502.png",
+    "center": [
+      240.0,
+      239.5
+    ],
+    "bounds": [
+      114,
+      55,
+      366,
+      424
+    ],
+    "transparent_pixels": 156654
+  },
+  {
+    "file": "bags_student_1206502.png",
+    "center": [
+      240.0,
+      239.5
+    ],
+    "bounds": [
+      24,
+      61,
+      456,
+      418
+    ],
+    "transparent_pixels": 141367
+  },
+  {
+    "file": "shoes_student_1206502.png",
+    "center": [
+      240.0,
+      239.5
+    ],
+    "bounds": [
+      50,
+      97,
+      430,
+      382
+    ],
+    "transparent_pixels": 165568
+  },
+  {
+    "file": "sunglasses_student_1206502.png",
+    "center": [
+      240.0,
+      240.0
+    ],
+    "bounds": [
+      24,
+      97,
+      456,
+      383
+    ],
+    "transparent_pixels": 134124
+  },
+  {
+    "file": "bicycles_student_1206502.png",
+    "center": [
+      239.5,
+      240.0
+    ],
+    "bounds": [
+      56,
+      120,
+      423,
+      360
+    ],
+    "transparent_pixels": 184454
+  },
+  {
+    "file": "wristwatches_student_1206502.png",
+    "center": [
+      239.5,
+      240.0
+    ],
+    "bounds": [
+      58,
+      24,
+      421,
+      456
+    ],
+    "transparent_pixels": 121617
+  },
+  {
+    "file": "umbrellas_student_1206502.png",
+    "center": [
+      240.0,
+      240.0
+    ],
+    "bounds": [
+      24,
+      24,
+      456,
+      456
+    ],
+    "transparent_pixels": 118749
+  }
+]

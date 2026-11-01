@@ -1,0 +1,8 @@
+[
+  {
+    "particle": 0,
+    "path": "MonoBehaviour._bursts[0].used",
+    "before": true,
+    "after": false
+  }
+]

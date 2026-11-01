@@ -1,0 +1,38 @@
+{
+  "task": "STYLE-QUALITY-003",
+  "active_mode": "reference_illustration",
+  "config_sha256": "968989df4a3f96aec95862f855ddae7345d78fad61b34fb9bd11027b906cb1dc",
+  "actual_api_images": 80,
+  "current_images_reused_only_if_exact_graph_identical": 76,
+  "direct_visual_review_passed": 80,
+  "strict_original_png_and_framing_passed": 80,
+  "unity_prompt_parity": 1440,
+  "editmode_passed": 66,
+  "editmode_job_id": "ebd56d9f91be4944872e8693c788d2f1",
+  "python_contract_tests_passed": 8,
+  "runtime_success_checks": 27,
+  "runtime_fixture_checks": 10,
+  "runtime_new_images": 4,
+  "actual_gpu": "RTX5070 Ti Laptop 12GB",
+  "api_median_seconds": 3.3805,
+  "api_max_seconds": 3.936,
+  "actual_app_seconds": [
+    3.8063463999999385,
+    3.8081747000001087,
+    4.039314699999977,
+    3.782581000000164
+  ],
+  "rtx3060_measured": false,
+  "windows_player_built": false,
+  "physical_input_and_long_duration_tested": false,
+  "preserved_files": {
+    "Assets/Scenes/0_Idle.unity": true,
+    "Assets/Scenes/1_Game.unity": true,
+    "Assets/Scenes/2_Result.unity": true,
+    "Packages/manifest.json": true,
+    "Packages/packages-lock.json": true,
+    "ProjectSettings/ProjectSettings.asset": true
+  },
+  "random_all_seed_perfection_guaranteed": false,
+  "limits": "Exact decoration/clock markings and pixel RGB may vary. No global aesthetic or semantic detector is claimed. Strict structural failure returns to retry rather than showing a known broken image."
+}

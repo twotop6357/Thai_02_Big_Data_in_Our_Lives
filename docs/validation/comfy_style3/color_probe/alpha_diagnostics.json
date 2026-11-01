@@ -1,0 +1,100 @@
+[
+  {
+    "product": "bags",
+    "age": "child",
+    "file": "bags_child_green_white.png",
+    "opaque_fraction": 0.3350607638888889,
+    "empty": false,
+    "bounds": [
+      100,
+      76,
+      381,
+      400
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "shoes",
+    "age": "working_adult",
+    "file": "shoes_working_adult_black_white.png",
+    "opaque_fraction": 0.25005642361111113,
+    "empty": false,
+    "bounds": [
+      33,
+      156,
+      433,
+      365
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "hats",
+    "age": "child",
+    "file": "hats_child_yellow_black.png",
+    "opaque_fraction": 0.23504340277777777,
+    "empty": false,
+    "bounds": [
+      24,
+      87,
+      456,
+      371
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "hats",
+    "age": "senior",
+    "file": "hats_senior_green_white.png",
+    "opaque_fraction": 0.32083333333333336,
+    "empty": false,
+    "bounds": [
+      35,
+      111,
+      447,
+      375
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "headphones",
+    "age": "senior",
+    "file": "headphones_senior_yellow_black.png",
+    "opaque_fraction": 0.11264322916666666,
+    "empty": false,
+    "bounds": [
+      117,
+      71,
+      364,
+      396
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "tops",
+    "age": "student",
+    "file": "tops_student_white_black.png",
+    "opaque_fraction": 0.5271137152777777,
+    "empty": false,
+    "bounds": [
+      23,
+      17,
+      460,
+      455
+    ],
+    "touches_edge": false
+  },
+  {
+    "product": "wristwatches",
+    "age": "student",
+    "file": "wristwatches_student_blue_white.png",
+    "opaque_fraction": 0.29768229166666665,
+    "empty": false,
+    "bounds": [
+      129,
+      43,
+      359,
+      436
+    ],
+    "touches_edge": false
+  }
+]

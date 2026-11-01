@@ -1,0 +1,6 @@
+{
+  "source": "Assets\\Scripts\\Blocks\\Data\\GeneratedImageFraming.cs",
+  "source_sha256": "0573905506afb55e15c22c8169da7d9c6da1ea5c08a74f33c47b937f4e392ad2",
+  "execution": "Exact C# array helper compiled by PowerShell Add-Type; four-byte Color32 data shim, matching Unity row order.",
+  "reason": "Unity MCP transport unavailable; no Editor or scene mutation."
+}

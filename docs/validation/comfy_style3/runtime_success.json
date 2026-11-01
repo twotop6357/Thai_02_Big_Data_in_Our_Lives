@@ -1,0 +1,67 @@
+{
+  "task": "STYLE-QUALITY-003 actual app",
+  "checks": [
+    "Actual request locks input/pause: shoes",
+    "Both panel navigation and held input spanning completion are ignored: shoes",
+    "Actual current reference graph returns a valid image: shoes",
+    "Success restores input/timer: shoes",
+    "Actual texture preserves alpha, center and safe margins: shoes",
+    "Actual texture has transparent corners: shoes",
+    "Fresh input advances from group to product panel after completion",
+    "Actual request locks input/pause: hats",
+    "Both panel navigation and held input spanning completion are ignored: hats",
+    "Actual current reference graph returns a valid image: hats",
+    "Success restores input/timer: hats",
+    "Actual texture preserves alpha, center and safe margins: hats",
+    "Actual texture has transparent corners: hats",
+    "Actual request locks input/pause: bags",
+    "Both panel navigation and held input spanning completion are ignored: bags",
+    "Actual current reference graph returns a valid image: bags",
+    "Success restores input/timer: bags",
+    "Actual texture preserves alpha, center and safe margins: bags",
+    "Actual texture has transparent corners: bags",
+    "Actual request locks input/pause: wristwatches",
+    "Both panel navigation and held input spanning completion are ignored: wristwatches",
+    "Actual current reference graph returns a valid image: wristwatches",
+    "Success restores input/timer: wristwatches",
+    "Actual texture preserves alpha, center and safe margins: wristwatches",
+    "Actual texture has transparent corners: wristwatches",
+    "Result receives the same validated texture",
+    "Home releases the result and restores inactivity"
+  ],
+  "cases": [
+    {
+      "age": "student",
+      "product": "shoes",
+      "first": "blue",
+      "second": "white",
+      "seconds": 3.8063463999999385,
+      "image": "runtime_0_shoes.png"
+    },
+    {
+      "age": "child",
+      "product": "hats",
+      "first": "yellow",
+      "second": "black",
+      "seconds": 3.8081747000001087,
+      "image": "runtime_1_hats.png"
+    },
+    {
+      "age": "working_adult",
+      "product": "bags",
+      "first": "green",
+      "second": "white",
+      "seconds": 4.0393146999999772,
+      "image": "runtime_2_bags.png"
+    },
+    {
+      "age": "senior",
+      "product": "wristwatches",
+      "first": "red",
+      "second": "green",
+      "seconds": 3.7825810000001638,
+      "image": "runtime_3_wristwatches.png"
+    }
+  ],
+  "passed": true
+}

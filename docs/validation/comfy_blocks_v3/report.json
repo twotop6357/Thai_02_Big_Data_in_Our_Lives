@@ -1,0 +1,991 @@
+{
+  "config_sha256": "b1b6f67c85df45b59d4a9328ebe928c09e7a00bcf77d062ad79c38604be6c9c0",
+  "suite": "all",
+  "results": [
+    {
+      "prompt_id": "44340a43-226b-4175-a7e1-41cfb1c08be3",
+      "selection": {
+        "group": "student",
+        "product": "headphones",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "headphones",
+        "alpha": true,
+        "positive_prompt": "(over-ear headphones:1.5), one complete headset with one curved headband connecting two softly padded earcups, simple rounded design, (soft coral red ear cups:1.25), (light sky blue headband:1.25), practical casual design with sporty details, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, soft color separation with subtle edge shading, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+      },
+      "seconds_request_to_png": 27.04,
+      "width": 480,
+      "height": 480,
+      "local_image": "headphones_student_1206501.png",
+      "server_image": {
+        "filename": "product_00098_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "5df22a42-e30e-4497-a649-b6959f08be96"
+      },
+      "suite": "products",
+      "api_sha256": "9034904885bdf16e0786fe38d2983a921cb5a5c9017d2860234d246dc4c32cea"
+    },
+    {
+      "prompt_id": "d5705ecd-e23e-4297-83b2-284f020f989e",
+      "selection": {
+        "group": "student",
+        "product": "tops",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tops",
+        "alpha": true,
+        "positive_prompt": "(T-shirt:1.5), one unworn short-sleeved raglan T-shirt, complete collar, two sleeves and hem, simple rounded cloth shape, (soft coral red main fabric:1.25), (light sky blue collar and sleeve trim:1.25), practical casual design with sporty details, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, soft color separation with subtle edge shading, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+      },
+      "seconds_request_to_png": 28.393,
+      "width": 480,
+      "height": 480,
+      "local_image": "tops_student_1206501.png",
+      "server_image": {
+        "filename": "product_00099_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "70da5b7a-b517-42fc-81ec-2fddecf49484"
+      },
+      "suite": "products",
+      "api_sha256": "39ac370033ea94bd3a2a7dad490fd631999ea39af825234646a7b8acffbab79a"
+    },
+    {
+      "prompt_id": "828454d8-e78f-4461-8105-034f2423d1d0",
+      "selection": {
+        "group": "student",
+        "product": "hats",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "hats",
+        "alpha": true,
+        "positive_prompt": "(bucket hat:1.4), one soft rounded bucket hat with a short brim all around and one simple contrasting hatband, upright natural view, (soft coral red crown:1.25), (light sky blue brim:1.25), practical casual design with sporty details, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, soft color separation with subtle edge shading, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+      },
+      "seconds_request_to_png": 27.63,
+      "width": 480,
+      "height": 480,
+      "local_image": "hats_student_1206501.png",
+      "server_image": {
+        "filename": "product_00100_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "febaf5c2-964c-40fd-afbe-c6a2627f3918"
+      },
+      "suite": "products",
+      "api_sha256": "e7f82e2f91376a005af935016feba023b47fbbdbe7f2e131a5d5ac1d9fc2fe25"
+    },
+    {
+      "prompt_id": "1d9c3609-e038-4316-aac2-d865967ff098",
+      "selection": {
+        "group": "student",
+        "product": "tumblers",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tumblers",
+        "alpha": true,
+        "positive_prompt": "(travel tumbler:1.5), one opaque reusable travel cup with a closed drinking lid and smooth slightly tapered body, (soft coral red body:1.25), (light sky blue lid:1.25), practical casual design with sporty details, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, soft color separation with subtle edge shading, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+      },
+      "seconds_request_to_png": 34.373,
+      "width": 480,
+      "height": 480,
+      "local_image": "tumblers_student_1206501.png",
+      "server_image": {
+        "filename": "product_00101_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "17521987-6523-49d8-818c-51bb53911740"
+      },
+      "suite": "products",
+      "api_sha256": "1429e8c070a26d9a7ab4f1fb66c87003b34c5940b37dffc8fdcbba10907d2259"
+    },
+    {
+      "prompt_id": "a55a9c4a-7a64-4c2b-a112-5f4cbfb4cbda",
+      "selection": {
+        "group": "student",
+        "product": "bags",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "one stylish backpack, a single complete bag with a rounded body, front pocket, zipper and two attached shoulder straps, tasteful color-block panels, (soft coral red fabric body:1.25), (light sky blue straps and zipper trim:1.25), practical casual design with sporty details, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, soft color separation with subtle edge shading, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+      },
+      "seconds_request_to_png": 36.719,
+      "width": 480,
+      "height": 480,
+      "local_image": "bags_student_1206501.png",
+      "server_image": {
+        "filename": "product_00102_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "2b8f4dee-555f-444b-a06d-bc94da3154c9"
+      },
+      "suite": "products",
+      "api_sha256": "f3cde719eb74629158156abe40146ab7464fe532ce9430cf10fd4426f446932d"
+    },
+    {
+      "prompt_id": "7b1bbc7b-576b-4145-9738-e512b53ea961",
+      "selection": {
+        "group": "student",
+        "product": "shoes",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "(sneaker:1.5), one low-top sneaker in a natural upright three-quarter view, softly rounded toe, simple curved upper panels, white base panels, neat simple laces and smooth white midsole, (soft coral red upper body panels:1.25), (light sky blue accent trim and laces:1.25), practical casual design with sporty details, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, soft color separation with subtle edge shading, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+      },
+      "seconds_request_to_png": 43.626,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_student_1206501.png",
+      "server_image": {
+        "filename": "product_00103_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "53cf3469-0547-457c-a791-cc5990c55c01"
+      },
+      "suite": "products",
+      "api_sha256": "966ce738cbc2cfcc16314fe65e48c8107b33003f28a56726552dca1744641037"
+    },
+    {
+      "prompt_id": "54f5f1d3-40ef-4bb3-8431-5df586cb7d56",
+      "selection": {
+        "group": "student",
+        "product": "sunglasses",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "sunglasses",
+        "alpha": true,
+        "positive_prompt": "a single pair of sunglasses, one complete connected eyewear frame, two tinted lenses and two attached temples, smooth rounded frame, soft reflective highlights, (soft coral red frame:1.25), (light sky blue tinted lenses:1.25), practical casual design with sporty details, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, soft color separation with subtle edge shading, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+      },
+      "seconds_request_to_png": 28.452,
+      "width": 480,
+      "height": 480,
+      "local_image": "sunglasses_student_1206501.png",
+      "server_image": {
+        "filename": "product_00104_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "54eaade9-6f78-4a3e-b9fa-170a54ee15b0"
+      },
+      "suite": "products",
+      "api_sha256": "814f9d9c66395502d0eb68b571f5c2b490a3ed1f8e8d7f9cd84ab8bcd72ba432"
+    },
+    {
+      "prompt_id": "5bc67739-dfc2-4d1b-ae72-ee0cdb722968",
+      "selection": {
+        "group": "student",
+        "product": "bicycles",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bicycles",
+        "alpha": true,
+        "positive_prompt": "a single complete bicycle, natural three-quarter perspective, two connected wheels with simple spokes, coherent curved frame, chain drive, pedals, saddle and handlebars, (soft coral red frame:1.25), (light sky blue wheel rims and handlebar grips:1.25), practical casual design with sporty details, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, soft color separation with subtle edge shading, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+      },
+      "seconds_request_to_png": 28.204,
+      "width": 480,
+      "height": 480,
+      "local_image": "bicycles_student_1206501.png",
+      "server_image": {
+        "filename": "product_00105_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "bcce8f6d-d814-4ec8-be6d-1b47144d8129"
+      },
+      "suite": "products",
+      "api_sha256": "05dcfd7e143029837d0aa8eab2e1ce9970a56a894e7f3bf0f2548c807317f92a"
+    },
+    {
+      "prompt_id": "1bb0606c-1fe2-4c2a-8930-6e510b9b8f0b",
+      "selection": {
+        "group": "student",
+        "product": "wristwatches",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "wristwatches",
+        "alpha": true,
+        "positive_prompt": "a single wristwatch, one round watch face, smooth strap closed in one loop, simple hour markers and two clock hands, rounded bezel and subtle highlights, (soft coral red strap:1.25), (light sky blue case and dial:1.25), practical casual design with sporty details, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, soft color separation with subtle edge shading, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+      },
+      "seconds_request_to_png": 41.77,
+      "width": 480,
+      "height": 480,
+      "local_image": "wristwatches_student_1206501.png",
+      "server_image": {
+        "filename": "product_00106_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "f00d1693-30bd-48ce-80aa-5627055f3bef"
+      },
+      "suite": "products",
+      "api_sha256": "b9b20ee3847dca0ee6f9e46d0d2ac54b394fc7d470d886413ded182980addb02"
+    },
+    {
+      "prompt_id": "99ece014-aead-4563-83e0-93e388456ed8",
+      "selection": {
+        "group": "student",
+        "product": "umbrellas",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "umbrellas",
+        "alpha": true,
+        "positive_prompt": "a single open umbrella, one umbrella only, complete rounded fabric canopy, simple radial panel seams and one attached curved handle, (soft coral red canopy:1.25), (light sky blue handle and edge trim:1.25), practical casual design with sporty details, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, soft color separation with subtle edge shading, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+      },
+      "seconds_request_to_png": 33.73,
+      "width": 480,
+      "height": 480,
+      "local_image": "umbrellas_student_1206501.png",
+      "server_image": {
+        "filename": "product_00107_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "b647a15a-77bc-43e7-82ae-ef6ed1630b76"
+      },
+      "suite": "products",
+      "api_sha256": "9e1e07695ea8886ed4a4b1fb639e188734d08b5f228293db41475f765141f105"
+    },
+    {
+      "prompt_id": "2e2d9680-0bdf-42e1-8bfb-e8702e0092a8",
+      "selection": {
+        "group": "student",
+        "product": "headphones",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206502,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "headphones",
+        "alpha": true,
+        "positive_prompt": "(over-ear headphones:1.5), one complete headset with one curved headband connecting two softly padded earcups, simple rounded design, (soft coral red ear cups:1.25), (light sky blue headband:1.25), practical casual design with sporty details, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, soft color separation with subtle edge shading, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+      },
+      "seconds_request_to_png": 31.393,
+      "width": 480,
+      "height": 480,
+      "local_image": "headphones_student_1206502.png",
+      "server_image": {
+        "filename": "product_00108_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "d94482a8-66cb-4f12-a8b8-402725a8ac83"
+      },
+      "suite": "products",
+      "api_sha256": "0cbf067f222cab6b6b405d5ca2183b396ab6f22ab2ae80d56e085811c9e079d1"
+    },
+    {
+      "prompt_id": "51bf1c26-c208-44c1-b14d-205f80791bd3",
+      "selection": {
+        "group": "student",
+        "product": "tops",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206502,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tops",
+        "alpha": true,
+        "positive_prompt": "(T-shirt:1.5), one unworn short-sleeved raglan T-shirt, complete collar, two sleeves and hem, simple rounded cloth shape, (soft coral red main fabric:1.25), (light sky blue collar and sleeve trim:1.25), practical casual design with sporty details, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, soft color separation with subtle edge shading, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+      },
+      "seconds_request_to_png": 37.944,
+      "width": 480,
+      "height": 480,
+      "local_image": "tops_student_1206502.png",
+      "server_image": {
+        "filename": "product_00109_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "10893dda-053d-4f6b-b535-36be00225e9e"
+      },
+      "suite": "products",
+      "api_sha256": "17bebe0def6f9eae2dd27274ce5ca6cb77895d4081aa4ff3930c8d414b1d639f"
+    },
+    {
+      "prompt_id": "b82a5bcc-02a8-4da4-8d1b-3b47792d4a3a",
+      "selection": {
+        "group": "student",
+        "product": "hats",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206502,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "hats",
+        "alpha": true,
+        "positive_prompt": "(bucket hat:1.4), one soft rounded bucket hat with a short brim all around and one simple contrasting hatband, upright natural view, (soft coral red crown:1.25), (light sky blue brim:1.25), practical casual design with sporty details, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, soft color separation with subtle edge shading, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+      },
+      "seconds_request_to_png": 37.952,
+      "width": 480,
+      "height": 480,
+      "local_image": "hats_student_1206502.png",
+      "server_image": {
+        "filename": "product_00110_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "28b194f6-b9c4-428b-bf26-35dac9972456"
+      },
+      "suite": "products",
+      "api_sha256": "25468c7791cdbdad97686bde638beac889f53a4302a0a437e7eb6c12401bb12f"
+    },
+    {
+      "prompt_id": "7f7b30cc-fb59-42a5-9087-99b0787df931",
+      "selection": {
+        "group": "student",
+        "product": "tumblers",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206502,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tumblers",
+        "alpha": true,
+        "positive_prompt": "(travel tumbler:1.5), one opaque reusable travel cup with a closed drinking lid and smooth slightly tapered body, (soft coral red body:1.25), (light sky blue lid:1.25), practical casual design with sporty details, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, soft color separation with subtle edge shading, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+      },
+      "seconds_request_to_png": 38.359,
+      "width": 480,
+      "height": 480,
+      "local_image": "tumblers_student_1206502.png",
+      "server_image": {
+        "filename": "product_00111_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "df11afc1-1130-4b5a-ac1d-c38b1f4f250f"
+      },
+      "suite": "products",
+      "api_sha256": "5049b13c655bbd1305339f9e7c837dd1702445eb7d8c54dc7cc0967943b8c03a"
+    },
+    {
+      "prompt_id": "185dca09-176d-4362-9151-813333596908",
+      "selection": {
+        "group": "student",
+        "product": "bags",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206502,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "one stylish backpack, a single complete bag with a rounded body, front pocket, zipper and two attached shoulder straps, tasteful color-block panels, (soft coral red fabric body:1.25), (light sky blue straps and zipper trim:1.25), practical casual design with sporty details, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, soft color separation with subtle edge shading, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+      },
+      "seconds_request_to_png": 40.99,
+      "width": 480,
+      "height": 480,
+      "local_image": "bags_student_1206502.png",
+      "server_image": {
+        "filename": "product_00112_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "0fc151c7-4fe2-4d4e-8e2d-309e63e6ee95"
+      },
+      "suite": "products",
+      "api_sha256": "96a063d6ee6c8d8a518744d05a6ca656dee43f4830b82fc4efa813341fe51834"
+    },
+    {
+      "prompt_id": "c812fcec-3e77-4177-93c5-7aaad0b28e02",
+      "selection": {
+        "group": "student",
+        "product": "shoes",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206502,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "(sneaker:1.5), one low-top sneaker in a natural upright three-quarter view, softly rounded toe, simple curved upper panels, white base panels, neat simple laces and smooth white midsole, (soft coral red upper body panels:1.25), (light sky blue accent trim and laces:1.25), practical casual design with sporty details, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, soft color separation with subtle edge shading, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+      },
+      "seconds_request_to_png": 39.454,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_student_1206502.png",
+      "server_image": {
+        "filename": "product_00113_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "3058f39c-7aa7-4f43-8c8c-5a419be11a53"
+      },
+      "suite": "products",
+      "api_sha256": "c6346c6ca8a699873299da8aa1a8c58f6b7beae49ee7854f60ae14182f74df86"
+    },
+    {
+      "prompt_id": "69a715aa-01ac-4cbb-9baf-d87952b18b5a",
+      "selection": {
+        "group": "student",
+        "product": "sunglasses",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206502,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "sunglasses",
+        "alpha": true,
+        "positive_prompt": "a single pair of sunglasses, one complete connected eyewear frame, two tinted lenses and two attached temples, smooth rounded frame, soft reflective highlights, (soft coral red frame:1.25), (light sky blue tinted lenses:1.25), practical casual design with sporty details, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, soft color separation with subtle edge shading, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+      },
+      "seconds_request_to_png": 25.943,
+      "width": 480,
+      "height": 480,
+      "local_image": "sunglasses_student_1206502.png",
+      "server_image": {
+        "filename": "product_00114_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "5fca0789-891b-499c-b42c-5d82cd95f908"
+      },
+      "suite": "products",
+      "api_sha256": "5a3941e226fe803de3890a7f1cb01dea8c40372c2b3d8f5df760a82551f861cc"
+    },
+    {
+      "prompt_id": "d6acdb42-40df-4307-b82a-50089b1faaeb",
+      "selection": {
+        "group": "student",
+        "product": "bicycles",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206502,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bicycles",
+        "alpha": true,
+        "positive_prompt": "a single complete bicycle, natural three-quarter perspective, two connected wheels with simple spokes, coherent curved frame, chain drive, pedals, saddle and handlebars, (soft coral red frame:1.25), (light sky blue wheel rims and handlebar grips:1.25), practical casual design with sporty details, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, soft color separation with subtle edge shading, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+      },
+      "seconds_request_to_png": 33.346,
+      "width": 480,
+      "height": 480,
+      "local_image": "bicycles_student_1206502.png",
+      "server_image": {
+        "filename": "product_00115_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "b2573ecc-adb0-464e-9264-893cfc8c4a4f"
+      },
+      "suite": "products",
+      "api_sha256": "4237b520d7c0b9e40f6d3a874f8b88e98264acaf4f9d2e9c410d05162ae712fb"
+    },
+    {
+      "prompt_id": "b3883e41-ffcd-4029-888a-94d218b3d58e",
+      "selection": {
+        "group": "student",
+        "product": "wristwatches",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206502,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "wristwatches",
+        "alpha": true,
+        "positive_prompt": "a single wristwatch, one round watch face, smooth strap closed in one loop, simple hour markers and two clock hands, rounded bezel and subtle highlights, (soft coral red strap:1.25), (light sky blue case and dial:1.25), practical casual design with sporty details, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, soft color separation with subtle edge shading, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+      },
+      "seconds_request_to_png": 36.975,
+      "width": 480,
+      "height": 480,
+      "local_image": "wristwatches_student_1206502.png",
+      "server_image": {
+        "filename": "product_00116_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "646a4a98-4e73-41ab-a2b6-dfd8659f0e32"
+      },
+      "suite": "products",
+      "api_sha256": "bb6a58db89fdce915a2a5c58903121a6c28fc3a3e4770f6b456a3edb4a3b1eb6"
+    },
+    {
+      "prompt_id": "ad2053f2-2590-417b-9955-360a978109a0",
+      "selection": {
+        "group": "student",
+        "product": "umbrellas",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206502,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "umbrellas",
+        "alpha": true,
+        "positive_prompt": "a single open umbrella, one umbrella only, complete rounded fabric canopy, simple radial panel seams and one attached curved handle, (soft coral red canopy:1.25), (light sky blue handle and edge trim:1.25), practical casual design with sporty details, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, soft color separation with subtle edge shading, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+      },
+      "seconds_request_to_png": 35.908,
+      "width": 480,
+      "height": 480,
+      "local_image": "umbrellas_student_1206502.png",
+      "server_image": {
+        "filename": "product_00117_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "2c7ed475-ff96-4571-99bf-42e81505938d"
+      },
+      "suite": "products",
+      "api_sha256": "b61137630444a57ced0eb231bd65b3bc3fc4f02b0104afedb5baf8778f1b1339"
+    },
+    {
+      "prompt_id": "82315fb1-0fb9-4118-bed5-7229ac21584e",
+      "selection": {
+        "group": "child",
+        "product": "bags",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "one stylish backpack, a single complete bag with a rounded body, front pocket, zipper and two attached shoulder straps, tasteful color-block panels, (soft coral red fabric body:1.25), (light sky blue straps and zipper trim:1.25), playful rounded proportions and friendly simple shapes, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, soft color separation with subtle edge shading, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+      },
+      "seconds_request_to_png": 35.133,
+      "width": 480,
+      "height": 480,
+      "local_image": "bags_child_1206501.png",
+      "server_image": {
+        "filename": "product_00118_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "0d46c2c0-28b4-4b45-be24-e54138cbed06"
+      },
+      "suite": "ages",
+      "api_sha256": "97c907745a22cf39581b02ffc0ca990e64249f11977b8781abd5929694d5fe7b"
+    },
+    {
+      "prompt_id": "a55a9c4a-7a64-4c2b-a112-5f4cbfb4cbda",
+      "selection": {
+        "group": "student",
+        "product": "bags",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "one stylish backpack, a single complete bag with a rounded body, front pocket, zipper and two attached shoulder straps, tasteful color-block panels, (soft coral red fabric body:1.25), (light sky blue straps and zipper trim:1.25), practical casual design with sporty details, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, soft color separation with subtle edge shading, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+      },
+      "seconds_request_to_png": 36.719,
+      "width": 480,
+      "height": 480,
+      "local_image": "bags_student_1206501.png",
+      "server_image": {
+        "filename": "product_00102_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "2b8f4dee-555f-444b-a06d-bc94da3154c9"
+      },
+      "suite": "ages",
+      "reused": true,
+      "api_sha256": "f3cde719eb74629158156abe40146ab7464fe532ce9430cf10fd4426f446932d"
+    },
+    {
+      "prompt_id": "5951a8e5-61c1-4199-9d37-22291d0f82c2",
+      "selection": {
+        "group": "working_adult",
+        "product": "bags",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "one stylish backpack, a single complete bag with a rounded body, front pocket, zipper and two attached shoulder straps, tasteful color-block panels, (soft coral red fabric body:1.25), (light sky blue straps and zipper trim:1.25), refined minimal design and premium finish, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, soft color separation with subtle edge shading, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+      },
+      "seconds_request_to_png": 34.865,
+      "width": 480,
+      "height": 480,
+      "local_image": "bags_working_adult_1206501.png",
+      "server_image": {
+        "filename": "product_00119_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "7c7aebc5-5054-4a05-9a65-595e20dd31a2"
+      },
+      "suite": "ages",
+      "api_sha256": "ffac92c75a4599993a0a3f1652755b7a8c28116a82d88354a12f4b4fcc6b1f3e"
+    },
+    {
+      "prompt_id": "b5587bbe-6ac7-45e3-a86f-a4408699d6de",
+      "selection": {
+        "group": "senior",
+        "product": "bags",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "one stylish backpack, a single complete bag with a rounded body, front pocket, zipper and two attached shoulder straps, tasteful color-block panels, (soft coral red fabric body:1.25), (light sky blue straps and zipper trim:1.25), ergonomic design with clear simple controls, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, soft color separation with subtle edge shading, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+      },
+      "seconds_request_to_png": 34.48,
+      "width": 480,
+      "height": 480,
+      "local_image": "bags_senior_1206501.png",
+      "server_image": {
+        "filename": "product_00120_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "f7cbaba4-340b-4fdd-bc9b-65eda29114c0"
+      },
+      "suite": "ages",
+      "api_sha256": "b80d4eb6ea563556965e4090d6721ee5f81dddddba11787160e546ea7a6fd91b"
+    },
+    {
+      "prompt_id": "f8ce060e-a3bb-44d9-b2fa-cc88055c5a70",
+      "selection": {
+        "group": "child",
+        "product": "shoes",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "(sneaker:1.5), one low-top sneaker in a natural upright three-quarter view, softly rounded toe, simple curved upper panels, white base panels, neat simple laces and smooth white midsole, (soft coral red upper body panels:1.25), (light sky blue accent trim and laces:1.25), playful rounded proportions and friendly simple shapes, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, soft color separation with subtle edge shading, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+      },
+      "seconds_request_to_png": 37.459,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_child_1206501.png",
+      "server_image": {
+        "filename": "product_00121_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "981be454-d285-4603-bf82-664ee5d18d86"
+      },
+      "suite": "ages",
+      "api_sha256": "cbae7e7271a9abe927d3e7a4dd40a6be9c04c97b6e6dc54234892fdbb0fa930d"
+    },
+    {
+      "prompt_id": "7b1bbc7b-576b-4145-9738-e512b53ea961",
+      "selection": {
+        "group": "student",
+        "product": "shoes",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "(sneaker:1.5), one low-top sneaker in a natural upright three-quarter view, softly rounded toe, simple curved upper panels, white base panels, neat simple laces and smooth white midsole, (soft coral red upper body panels:1.25), (light sky blue accent trim and laces:1.25), practical casual design with sporty details, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, soft color separation with subtle edge shading, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+      },
+      "seconds_request_to_png": 43.626,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_student_1206501.png",
+      "server_image": {
+        "filename": "product_00103_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "53cf3469-0547-457c-a791-cc5990c55c01"
+      },
+      "suite": "ages",
+      "reused": true,
+      "api_sha256": "966ce738cbc2cfcc16314fe65e48c8107b33003f28a56726552dca1744641037"
+    },
+    {
+      "prompt_id": "f8c2ffca-c7d6-4f60-81c3-b9bee4857505",
+      "selection": {
+        "group": "working_adult",
+        "product": "shoes",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "(sneaker:1.5), one low-top sneaker in a natural upright three-quarter view, softly rounded toe, simple curved upper panels, white base panels, neat simple laces and smooth white midsole, (soft coral red upper body panels:1.25), (light sky blue accent trim and laces:1.25), refined minimal design and premium finish, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, soft color separation with subtle edge shading, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+      },
+      "seconds_request_to_png": 36.848,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_working_adult_1206501.png",
+      "server_image": {
+        "filename": "product_00122_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "3aba20d1-d03f-4767-b9f8-724565bf355f"
+      },
+      "suite": "ages",
+      "api_sha256": "b0746884c3e1d5a7b8ce21528aa8749bad50ea2cd30a8746cacfb14933632da0"
+    },
+    {
+      "prompt_id": "bbd49ed7-fe22-426b-9c23-29d9b1a03038",
+      "selection": {
+        "group": "senior",
+        "product": "shoes",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "(sneaker:1.5), one low-top sneaker in a natural upright three-quarter view, softly rounded toe, simple curved upper panels, white base panels, neat simple laces and smooth white midsole, (soft coral red upper body panels:1.25), (light sky blue accent trim and laces:1.25), ergonomic design with clear simple controls, (clean finished 2D illustration:1.4), (single product:1.2), isolated complete object, no people, soft pastel color palette, friendly rounded shapes, smooth curved color-block panels, clean white accent areas, soft color separation with subtle edge shading, gentle soft cel shading, a few smooth highlights, crisp polished edges, minimal small details, cute modern game item illustration, product centered with balanced empty margins, one natural camera angle, plain white background"
+      },
+      "seconds_request_to_png": 35.845,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_senior_1206501.png",
+      "server_image": {
+        "filename": "product_00123_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "cb095f2f-07c0-4285-9172-5eaaa12f77fc"
+      },
+      "suite": "ages",
+      "api_sha256": "b0c8dddfc58472c6d38e3bf7dd5dccb22f39b8decaeaedd0219f7beb7bf9b618"
+    }
+  ],
+  "failed": [],
+  "total_cases": 28,
+  "completed": true
+}

@@ -1,0 +1,15 @@
+{
+  "task": "COMFY-RESTORE-001 exits",
+  "checks": [
+    "Request starts with input locked and inactivity paused",
+    "Generation deadline cancels a stalled queue read",
+    "Timeout releases input, resumes timer and leaves no image",
+    "A hold spanning timeout and its release cannot trigger a retry",
+    "A fresh tap retries after timeout",
+    "Cancelled request cleanup cannot unlock or resume a replacement request",
+    "Explicit cancellation resumes inactivity",
+    "Successful empty queue-delete response is accepted without a JSON warning",
+    "Home during a stalled request releases all lifetimes"
+  ],
+  "passed": true
+}

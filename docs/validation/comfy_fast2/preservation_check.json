@@ -1,0 +1,11 @@
+{
+  "count": 31,
+  "unchanged": 30,
+  "changed": [
+    "Assets/Scripts/Blocks/Data/GeneratedImageFraming.cs"
+  ],
+  "expected_changed": [
+    "Assets/Scripts/Blocks/Data/GeneratedImageFraming.cs"
+  ],
+  "only_expected_changes": true
+}

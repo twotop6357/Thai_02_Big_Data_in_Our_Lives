@@ -1,0 +1,8 @@
+{
+  "Assets/Scenes/0_Idle.unity": true,
+  "Assets/Scenes/1_Game.unity": true,
+  "Assets/Scenes/2_Result.unity": true,
+  "Packages/manifest.json": true,
+  "Packages/packages-lock.json": true,
+  "ProjectSettings/ProjectSettings.asset": true
+}

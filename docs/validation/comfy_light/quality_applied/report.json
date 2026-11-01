@@ -1,0 +1,991 @@
+{
+  "config_sha256": "e74c6ca066abc7a8938b6b0df80ea8f0d7ba98dc79274227991445deed1ff132",
+  "suite": "all",
+  "results": [
+    {
+      "prompt_id": "9d9b6af7-2f4e-4ca4-94e6-0297875630f9",
+      "selection": {
+        "group": "student",
+        "product": "headphones",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "headphones",
+        "alpha": true,
+        "positive_prompt": "masterpiece, best quality, pastel 2D illustration, one complete headset, U-shaped headband and two attached padded earcups, warm pink red earcups, light blue headband, simple sporty design, rounded white accent panels, gentle cel shading, smooth clean color blocks, delicate colored edges, polished game item, centered isolated on white background"
+      },
+      "seconds_request_to_png": 5.663,
+      "width": 480,
+      "height": 480,
+      "local_image": "headphones_student_1206501.png",
+      "server_image": {
+        "filename": "product_00318_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "05a0f44b-f0bf-4bff-a816-9c52ebb41b85"
+      },
+      "suite": "products",
+      "api_sha256": "298e59247b53abcb1e33a0238eb8ef13880e681310e00a6aa7b0f86d693b4249"
+    },
+    {
+      "prompt_id": "d41110dd-2064-464c-9168-249d691ba51a",
+      "selection": {
+        "group": "student",
+        "product": "tops",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tops",
+        "alpha": true,
+        "positive_prompt": "masterpiece, best quality, pastel 2D illustration, one empty unworn short-sleeved T-shirt laid flat, complete collar and two sleeves, warm pink red main fabric, light blue sleeves and collar, simple sporty design, rounded white accent panels, gentle cel shading, smooth clean color blocks, delicate colored edges, polished game item, centered isolated on white background"
+      },
+      "seconds_request_to_png": 4.082,
+      "width": 480,
+      "height": 480,
+      "local_image": "tops_student_1206501.png",
+      "server_image": {
+        "filename": "product_00319_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "704e7da3-9648-4ed9-be77-2d2c7a564d2b"
+      },
+      "suite": "products",
+      "api_sha256": "7599e2213cdb69febd285f7af8d926aa1537c58b12050ec9f404111e3b372b61"
+    },
+    {
+      "prompt_id": "4d4cf46e-1330-402e-97dc-7a86b0a2f7df",
+      "selection": {
+        "group": "student",
+        "product": "hats",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "hats",
+        "alpha": true,
+        "positive_prompt": "masterpiece, best quality, pastel 2D illustration, one soft bucket hat with short brim and simple hatband, warm pink red crown, light blue brim, simple sporty design, rounded white accent panels, gentle cel shading, smooth clean color blocks, delicate colored edges, polished game item, centered isolated on white background"
+      },
+      "seconds_request_to_png": 5.988,
+      "width": 480,
+      "height": 480,
+      "local_image": "hats_student_1206501.png",
+      "server_image": {
+        "filename": "product_00320_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "93b380cf-2013-4af4-86c2-f1f28f674c28"
+      },
+      "suite": "products",
+      "api_sha256": "0de16b37c313240975a9387da431e17137ae93aee119ecf788f5895226159fe2"
+    },
+    {
+      "prompt_id": "b0d0d784-bb71-466d-aa86-e16fdba0af63",
+      "selection": {
+        "group": "student",
+        "product": "tumblers",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tumblers",
+        "alpha": true,
+        "positive_prompt": "masterpiece, best quality, pastel 2D illustration, one opaque travel tumbler with closed drinking lid and smooth body, warm pink red body, light blue lid, simple sporty design, rounded white accent panels, gentle cel shading, smooth clean color blocks, delicate colored edges, polished game item, centered isolated on white background"
+      },
+      "seconds_request_to_png": 3.77,
+      "width": 480,
+      "height": 480,
+      "local_image": "tumblers_student_1206501.png",
+      "server_image": {
+        "filename": "product_00321_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "3ad90b9b-2fda-46a3-b11f-58808a42cd63"
+      },
+      "suite": "products",
+      "api_sha256": "ad5e5d572d874e7d7aecfd5e752a42bba3847db5754b7d11266a4742d9516d83"
+    },
+    {
+      "prompt_id": "b75307a8-9488-411f-ba96-56243aa04a20",
+      "selection": {
+        "group": "student",
+        "product": "bags",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "masterpiece, best quality, pastel 2D illustration, one complete backpack with front pocket and attached straps, warm pink red fabric body, light blue strap trim, simple sporty design, rounded white accent panels, gentle cel shading, smooth clean color blocks, delicate colored edges, polished game item, centered isolated on white background"
+      },
+      "seconds_request_to_png": 4.528,
+      "width": 480,
+      "height": 480,
+      "local_image": "bags_student_1206501.png",
+      "server_image": {
+        "filename": "product_00322_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "385df680-0639-4ee2-91ad-663641b729d0"
+      },
+      "suite": "products",
+      "api_sha256": "91f3450e020faeb81f8e3bb679b61403be6863a18a15b325dbd50a3fb6ecbde8"
+    },
+    {
+      "prompt_id": "47a45d12-18e2-417d-98ba-eb066d67d9df",
+      "selection": {
+        "group": "student",
+        "product": "shoes",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "masterpiece, best quality, pastel 2D illustration, one low-top sneaker, natural upright three-quarter view, neat laces and white midsole, warm pink red upper panels, light blue accent trim, simple sporty design, rounded white accent panels, gentle cel shading, smooth clean color blocks, delicate colored edges, polished game item, centered isolated on white background"
+      },
+      "seconds_request_to_png": 6.028,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_student_1206501.png",
+      "server_image": {
+        "filename": "product_00323_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "ae6deb67-df2f-41be-99d2-0df2099efb63"
+      },
+      "suite": "products",
+      "api_sha256": "82f37f50c506ddf6441395784d80c8740224f5aefc0c84f1df431d862699c213"
+    },
+    {
+      "prompt_id": "671112a4-f192-4dad-9ca0-2f2fbbab6a09",
+      "selection": {
+        "group": "student",
+        "product": "sunglasses",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "sunglasses",
+        "alpha": true,
+        "positive_prompt": "masterpiece, best quality, pastel 2D illustration, standalone eyewear product, one empty pair of sunglasses with attached temples, warm pink red frame, light blue lenses, simple sporty design, rounded white accent panels, gentle cel shading, smooth clean color blocks, delicate colored edges, polished game item, centered isolated on white background"
+      },
+      "seconds_request_to_png": 4.159,
+      "width": 480,
+      "height": 480,
+      "local_image": "sunglasses_student_1206501.png",
+      "server_image": {
+        "filename": "product_00324_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "c3269e23-19b5-4153-8a1b-2cab5ecb3061"
+      },
+      "suite": "products",
+      "api_sha256": "ec811882bf98530363e9d1412a9c1aa9011675d82bcf8c7756650431338b48d1"
+    },
+    {
+      "prompt_id": "2495ba56-047a-4761-a3c3-3652d3d2abda",
+      "selection": {
+        "group": "student",
+        "product": "bicycles",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bicycles",
+        "alpha": true,
+        "positive_prompt": "masterpiece, best quality, pastel 2D illustration, one complete bicycle with two connected wheels, handlebars, pedals and saddle, warm pink red frame, light blue rim accents, simple sporty design, rounded white accent panels, gentle cel shading, smooth clean color blocks, delicate colored edges, polished game item, centered isolated on white background"
+      },
+      "seconds_request_to_png": 3.783,
+      "width": 480,
+      "height": 480,
+      "local_image": "bicycles_student_1206501.png",
+      "server_image": {
+        "filename": "product_00325_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "244c72ee-3315-4928-976a-742e9cfc3ac2"
+      },
+      "suite": "products",
+      "api_sha256": "54436942f1b6c882a25a23c1c33b855e5bdb851f241958346bbd13f0f47e1214"
+    },
+    {
+      "prompt_id": "6a4534ec-774d-4295-9049-dd681d435de9",
+      "selection": {
+        "group": "student",
+        "product": "wristwatches",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "wristwatches",
+        "alpha": true,
+        "positive_prompt": "masterpiece, best quality, pastel 2D illustration, one wristwatch, round dial, simple hands and attached strap loop, warm pink red strap, light blue case, simple sporty design, rounded white accent panels, gentle cel shading, smooth clean color blocks, delicate colored edges, polished game item, centered isolated on white background"
+      },
+      "seconds_request_to_png": 4.461,
+      "width": 480,
+      "height": 480,
+      "local_image": "wristwatches_student_1206501.png",
+      "server_image": {
+        "filename": "product_00326_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "50794fe9-4683-4489-a9e5-845c15210e03"
+      },
+      "suite": "products",
+      "api_sha256": "2c1bab59d724e5071592b77184444fd3f3ecaba2aa1fde8704ffc9e08a6b839d"
+    },
+    {
+      "prompt_id": "d6080c48-46db-48f4-90da-6949f57551d7",
+      "selection": {
+        "group": "student",
+        "product": "umbrellas",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "umbrellas",
+        "alpha": true,
+        "positive_prompt": "masterpiece, best quality, pastel 2D illustration, one open umbrella with rounded canopy and one curved handle, warm pink red canopy, light blue handle and edge trim, simple sporty design, rounded white accent panels, gentle cel shading, smooth clean color blocks, delicate colored edges, polished game item, centered isolated on white background"
+      },
+      "seconds_request_to_png": 4.917,
+      "width": 480,
+      "height": 480,
+      "local_image": "umbrellas_student_1206501.png",
+      "server_image": {
+        "filename": "product_00327_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "1fcfe98c-c245-4de2-a146-ff697a5ccf36"
+      },
+      "suite": "products",
+      "api_sha256": "e96877f5bc25144ecc245dc01a2e757eafc79e599237fd11a83eac044ce959ad"
+    },
+    {
+      "prompt_id": "42d72b54-3222-4ba0-9b67-b3f52adc17b9",
+      "selection": {
+        "group": "student",
+        "product": "headphones",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206502,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "headphones",
+        "alpha": true,
+        "positive_prompt": "masterpiece, best quality, pastel 2D illustration, one complete headset, U-shaped headband and two attached padded earcups, warm pink red earcups, light blue headband, simple sporty design, rounded white accent panels, gentle cel shading, smooth clean color blocks, delicate colored edges, polished game item, centered isolated on white background"
+      },
+      "seconds_request_to_png": 5.598,
+      "width": 480,
+      "height": 480,
+      "local_image": "headphones_student_1206502.png",
+      "server_image": {
+        "filename": "product_00328_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "66792e70-99dc-485e-95e1-07c1a1a693b0"
+      },
+      "suite": "products",
+      "api_sha256": "322dc6ae4af6699f290fe0549bd452a9050e24fb85d3674c00390ec5dc8e0b73"
+    },
+    {
+      "prompt_id": "f64cfa38-6d18-4957-9989-cb31ff22e23f",
+      "selection": {
+        "group": "student",
+        "product": "tops",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206502,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tops",
+        "alpha": true,
+        "positive_prompt": "masterpiece, best quality, pastel 2D illustration, one empty unworn short-sleeved T-shirt laid flat, complete collar and two sleeves, warm pink red main fabric, light blue sleeves and collar, simple sporty design, rounded white accent panels, gentle cel shading, smooth clean color blocks, delicate colored edges, polished game item, centered isolated on white background"
+      },
+      "seconds_request_to_png": 5.414,
+      "width": 480,
+      "height": 480,
+      "local_image": "tops_student_1206502.png",
+      "server_image": {
+        "filename": "product_00329_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "f5bbb67c-c42d-47b0-98d7-cc36fc71da4b"
+      },
+      "suite": "products",
+      "api_sha256": "152bc0b2d57c63fc2fef6afc614b7b7e975908a91e1602fc79dd4cf77024eba0"
+    },
+    {
+      "prompt_id": "a1f9ea3a-91d5-47d5-84a3-62d61f735635",
+      "selection": {
+        "group": "student",
+        "product": "hats",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206502,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "hats",
+        "alpha": true,
+        "positive_prompt": "masterpiece, best quality, pastel 2D illustration, one soft bucket hat with short brim and simple hatband, warm pink red crown, light blue brim, simple sporty design, rounded white accent panels, gentle cel shading, smooth clean color blocks, delicate colored edges, polished game item, centered isolated on white background"
+      },
+      "seconds_request_to_png": 5.786,
+      "width": 480,
+      "height": 480,
+      "local_image": "hats_student_1206502.png",
+      "server_image": {
+        "filename": "product_00330_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "517d7d99-d627-4550-8109-4aca0281cc7a"
+      },
+      "suite": "products",
+      "api_sha256": "d6b359b0de364bae76b45237330e72d8a2d10384f3ac7d41b4f7c8faea195c53"
+    },
+    {
+      "prompt_id": "afcc123b-429e-4fa5-b61f-c616347a23aa",
+      "selection": {
+        "group": "student",
+        "product": "tumblers",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206502,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "tumblers",
+        "alpha": true,
+        "positive_prompt": "masterpiece, best quality, pastel 2D illustration, one opaque travel tumbler with closed drinking lid and smooth body, warm pink red body, light blue lid, simple sporty design, rounded white accent panels, gentle cel shading, smooth clean color blocks, delicate colored edges, polished game item, centered isolated on white background"
+      },
+      "seconds_request_to_png": 5.374,
+      "width": 480,
+      "height": 480,
+      "local_image": "tumblers_student_1206502.png",
+      "server_image": {
+        "filename": "product_00331_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "e3af0c99-0c80-456d-9422-b878f506d1de"
+      },
+      "suite": "products",
+      "api_sha256": "a04ec51062cb3167b8b02b1ed98ce223e690f65b8a3320c1f9256516b4ab9369"
+    },
+    {
+      "prompt_id": "607ebf05-606b-4b0e-87a9-004439a89066",
+      "selection": {
+        "group": "student",
+        "product": "bags",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206502,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "masterpiece, best quality, pastel 2D illustration, one complete backpack with front pocket and attached straps, warm pink red fabric body, light blue strap trim, simple sporty design, rounded white accent panels, gentle cel shading, smooth clean color blocks, delicate colored edges, polished game item, centered isolated on white background"
+      },
+      "seconds_request_to_png": 5.727,
+      "width": 480,
+      "height": 480,
+      "local_image": "bags_student_1206502.png",
+      "server_image": {
+        "filename": "product_00332_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "04de4314-a850-4996-99ae-70a5bf6a3a5e"
+      },
+      "suite": "products",
+      "api_sha256": "aa38a35864ba346544fd353d116f27bcc27632c989616bc1e4bab5bc109aefe6"
+    },
+    {
+      "prompt_id": "2c49c8e0-eca0-4b84-abe8-869e6aa49f96",
+      "selection": {
+        "group": "student",
+        "product": "shoes",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206502,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "masterpiece, best quality, pastel 2D illustration, one low-top sneaker, natural upright three-quarter view, neat laces and white midsole, warm pink red upper panels, light blue accent trim, simple sporty design, rounded white accent panels, gentle cel shading, smooth clean color blocks, delicate colored edges, polished game item, centered isolated on white background"
+      },
+      "seconds_request_to_png": 5.212,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_student_1206502.png",
+      "server_image": {
+        "filename": "product_00333_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "2ce5d96c-db6a-4185-abdf-72aecbcab8d0"
+      },
+      "suite": "products",
+      "api_sha256": "9e7370aa5deaf00c3154c9d3d0a7f29b4cdd80c2cd46352f97f00794de3a76e8"
+    },
+    {
+      "prompt_id": "6326105b-f972-41ce-92f0-fcc282b13b94",
+      "selection": {
+        "group": "student",
+        "product": "sunglasses",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206502,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "sunglasses",
+        "alpha": true,
+        "positive_prompt": "masterpiece, best quality, pastel 2D illustration, standalone eyewear product, one empty pair of sunglasses with attached temples, warm pink red frame, light blue lenses, simple sporty design, rounded white accent panels, gentle cel shading, smooth clean color blocks, delicate colored edges, polished game item, centered isolated on white background"
+      },
+      "seconds_request_to_png": 5.667,
+      "width": 480,
+      "height": 480,
+      "local_image": "sunglasses_student_1206502.png",
+      "server_image": {
+        "filename": "product_00334_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "40964bb0-3fd6-4fef-ba63-e114fc07e198"
+      },
+      "suite": "products",
+      "api_sha256": "35400c8d72a569c0d8c3e2e01f16c476d678e9fdac960718f40856a017069e27"
+    },
+    {
+      "prompt_id": "8c16d4dc-ec6e-4001-a0fe-0a4ad11c1f58",
+      "selection": {
+        "group": "student",
+        "product": "bicycles",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206502,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bicycles",
+        "alpha": true,
+        "positive_prompt": "masterpiece, best quality, pastel 2D illustration, one complete bicycle with two connected wheels, handlebars, pedals and saddle, warm pink red frame, light blue rim accents, simple sporty design, rounded white accent panels, gentle cel shading, smooth clean color blocks, delicate colored edges, polished game item, centered isolated on white background"
+      },
+      "seconds_request_to_png": 5.462,
+      "width": 480,
+      "height": 480,
+      "local_image": "bicycles_student_1206502.png",
+      "server_image": {
+        "filename": "product_00335_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "7718a4a6-5d08-4850-826d-837e7f2d5e3a"
+      },
+      "suite": "products",
+      "api_sha256": "d771803f695e86bbfa4cf90fb72ff05308c5458687c037988354b0ea3fdc652d"
+    },
+    {
+      "prompt_id": "595a79f7-d3a5-4a01-b51e-33deb637e0e2",
+      "selection": {
+        "group": "student",
+        "product": "wristwatches",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206502,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "wristwatches",
+        "alpha": true,
+        "positive_prompt": "masterpiece, best quality, pastel 2D illustration, one wristwatch, round dial, simple hands and attached strap loop, warm pink red strap, light blue case, simple sporty design, rounded white accent panels, gentle cel shading, smooth clean color blocks, delicate colored edges, polished game item, centered isolated on white background"
+      },
+      "seconds_request_to_png": 5.688,
+      "width": 480,
+      "height": 480,
+      "local_image": "wristwatches_student_1206502.png",
+      "server_image": {
+        "filename": "product_00336_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "383ad8f6-6c1c-467d-8045-ffaf4fc254da"
+      },
+      "suite": "products",
+      "api_sha256": "ed44ec50df318d2f20e8241e5ecc70d3033e763bc45bcd0b1198dcd3e36ff2d3"
+    },
+    {
+      "prompt_id": "7c90d68d-97dc-4847-86a5-6a8f869e0cb0",
+      "selection": {
+        "group": "student",
+        "product": "umbrellas",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206502,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "umbrellas",
+        "alpha": true,
+        "positive_prompt": "masterpiece, best quality, pastel 2D illustration, one open umbrella with rounded canopy and one curved handle, warm pink red canopy, light blue handle and edge trim, simple sporty design, rounded white accent panels, gentle cel shading, smooth clean color blocks, delicate colored edges, polished game item, centered isolated on white background"
+      },
+      "seconds_request_to_png": 5.219,
+      "width": 480,
+      "height": 480,
+      "local_image": "umbrellas_student_1206502.png",
+      "server_image": {
+        "filename": "product_00337_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "e63fc73b-46f0-47bb-b39a-1cbf04ee9f80"
+      },
+      "suite": "products",
+      "api_sha256": "1eef6be91f7650f6474144e2cd02e85a73d1cf81e2ae4da0046ef3b7e4ec3b07"
+    },
+    {
+      "prompt_id": "2bd09600-c9d4-4727-9777-e75746e6bfd4",
+      "selection": {
+        "group": "child",
+        "product": "bags",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "masterpiece, best quality, pastel 2D illustration, one complete backpack with front pocket and attached straps, warm pink red fabric body, light blue strap trim, playful rounded design, rounded white accent panels, gentle cel shading, smooth clean color blocks, delicate colored edges, polished game item, centered isolated on white background"
+      },
+      "seconds_request_to_png": 5.803,
+      "width": 480,
+      "height": 480,
+      "local_image": "bags_child_1206501.png",
+      "server_image": {
+        "filename": "product_00338_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "e713df0c-13a8-48f1-a675-ad5298df568d"
+      },
+      "suite": "ages",
+      "api_sha256": "cca864478140c6d30330da1003889b4a574cbbe1cc0cb2639f9d9f5bb05dc001"
+    },
+    {
+      "prompt_id": "b75307a8-9488-411f-ba96-56243aa04a20",
+      "selection": {
+        "group": "student",
+        "product": "bags",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "masterpiece, best quality, pastel 2D illustration, one complete backpack with front pocket and attached straps, warm pink red fabric body, light blue strap trim, simple sporty design, rounded white accent panels, gentle cel shading, smooth clean color blocks, delicate colored edges, polished game item, centered isolated on white background"
+      },
+      "seconds_request_to_png": 4.528,
+      "width": 480,
+      "height": 480,
+      "local_image": "bags_student_1206501.png",
+      "server_image": {
+        "filename": "product_00322_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "385df680-0639-4ee2-91ad-663641b729d0"
+      },
+      "suite": "ages",
+      "api_sha256": "91f3450e020faeb81f8e3bb679b61403be6863a18a15b325dbd50a3fb6ecbde8",
+      "reused": true
+    },
+    {
+      "prompt_id": "c320d1d1-129f-4bc2-be97-3d1872a2a3e6",
+      "selection": {
+        "group": "working_adult",
+        "product": "bags",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "masterpiece, best quality, pastel 2D illustration, one complete backpack with front pocket and attached straps, warm pink red fabric body, light blue strap trim, refined minimal design, rounded white accent panels, gentle cel shading, smooth clean color blocks, delicate colored edges, polished game item, centered isolated on white background"
+      },
+      "seconds_request_to_png": 5.065,
+      "width": 480,
+      "height": 480,
+      "local_image": "bags_working_adult_1206501.png",
+      "server_image": {
+        "filename": "product_00339_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "80962a36-40ab-4e9d-8dd8-9dadbda02675"
+      },
+      "suite": "ages",
+      "api_sha256": "e3e75b88e3615518d39da430708cb57ad8f9b8afee81964f0abac97875ffac6c"
+    },
+    {
+      "prompt_id": "11fd4e95-4637-40ea-ae8f-55ae9960a7eb",
+      "selection": {
+        "group": "senior",
+        "product": "bags",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "masterpiece, best quality, pastel 2D illustration, one complete backpack with front pocket and attached straps, warm pink red fabric body, light blue strap trim, simple ergonomic design, rounded white accent panels, gentle cel shading, smooth clean color blocks, delicate colored edges, polished game item, centered isolated on white background"
+      },
+      "seconds_request_to_png": 5.409,
+      "width": 480,
+      "height": 480,
+      "local_image": "bags_senior_1206501.png",
+      "server_image": {
+        "filename": "product_00340_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "de0cf09f-e382-4098-9a9c-598b8babeb34"
+      },
+      "suite": "ages",
+      "api_sha256": "f5ad7c48899eef17ec5d30c55889f1276bc2e83764ff94f420fb87f450d281ff"
+    },
+    {
+      "prompt_id": "6b0467d7-c54f-4b20-9ec5-f0abadc30969",
+      "selection": {
+        "group": "child",
+        "product": "shoes",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "masterpiece, best quality, pastel 2D illustration, one low-top sneaker, natural upright three-quarter view, neat laces and white midsole, warm pink red upper panels, light blue accent trim, playful rounded design, rounded white accent panels, gentle cel shading, smooth clean color blocks, delicate colored edges, polished game item, centered isolated on white background"
+      },
+      "seconds_request_to_png": 5.381,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_child_1206501.png",
+      "server_image": {
+        "filename": "product_00341_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "60d4e9be-76cf-431a-a1ff-dda8cb94c6eb"
+      },
+      "suite": "ages",
+      "api_sha256": "b53bc2c7da2f2a3ef68c9de22c9b9f5549a59aaf4c85b9028d16e8e1524775ea"
+    },
+    {
+      "prompt_id": "47a45d12-18e2-417d-98ba-eb066d67d9df",
+      "selection": {
+        "group": "student",
+        "product": "shoes",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "masterpiece, best quality, pastel 2D illustration, one low-top sneaker, natural upright three-quarter view, neat laces and white midsole, warm pink red upper panels, light blue accent trim, simple sporty design, rounded white accent panels, gentle cel shading, smooth clean color blocks, delicate colored edges, polished game item, centered isolated on white background"
+      },
+      "seconds_request_to_png": 6.028,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_student_1206501.png",
+      "server_image": {
+        "filename": "product_00323_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "ae6deb67-df2f-41be-99d2-0df2099efb63"
+      },
+      "suite": "ages",
+      "api_sha256": "82f37f50c506ddf6441395784d80c8740224f5aefc0c84f1df431d862699c213",
+      "reused": true
+    },
+    {
+      "prompt_id": "34dbda0b-26d4-4776-8ce7-59571155e942",
+      "selection": {
+        "group": "working_adult",
+        "product": "shoes",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "masterpiece, best quality, pastel 2D illustration, one low-top sneaker, natural upright three-quarter view, neat laces and white midsole, warm pink red upper panels, light blue accent trim, refined minimal design, rounded white accent panels, gentle cel shading, smooth clean color blocks, delicate colored edges, polished game item, centered isolated on white background"
+      },
+      "seconds_request_to_png": 5.453,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_working_adult_1206501.png",
+      "server_image": {
+        "filename": "product_00342_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "e56415c5-f12e-4998-882d-73a6062e6135"
+      },
+      "suite": "ages",
+      "api_sha256": "c5f785ad51cf4a881654162444493a538337f6db548305f086cceb3c2ba8939e"
+    },
+    {
+      "prompt_id": "455ef246-1b92-45e0-9d0f-41fb134a4ec4",
+      "selection": {
+        "group": "senior",
+        "product": "shoes",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 1206501,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "masterpiece, best quality, pastel 2D illustration, one low-top sneaker, natural upright three-quarter view, neat laces and white midsole, warm pink red upper panels, light blue accent trim, simple ergonomic design, rounded white accent panels, gentle cel shading, smooth clean color blocks, delicate colored edges, polished game item, centered isolated on white background"
+      },
+      "seconds_request_to_png": 4.939,
+      "width": 480,
+      "height": 480,
+      "local_image": "shoes_senior_1206501.png",
+      "server_image": {
+        "filename": "product_00343_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        },
+        "id": "b1021060-018a-40b7-9e75-1771c792f715"
+      },
+      "suite": "ages",
+      "api_sha256": "954924c60adffc7a31416b1e9c7071586ebdee8e9295fdf5ed78f2f1170d1991"
+    }
+  ],
+  "failed": [],
+  "total_cases": 28,
+  "completed": true
+}

@@ -1,0 +1,2097 @@
+[
+  {
+    "mode": "clipped",
+    "prompt": {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "flux-2-klein-4b-fp8.safetensors",
+          "weight_dtype": "default"
+        },
+        "_meta": {
+          "title": "FLUX.2 Klein 4B FP8 / reference illustration"
+        }
+      },
+      "2": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": [
+            "18",
+            0
+          ],
+          "clip": [
+            "30",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Positive product conditioning"
+        }
+      },
+      "3": {
+        "class_type": "ConditioningZeroOut",
+        "inputs": {
+          "conditioning": [
+            "2",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Unused negative conditioning at CFG1"
+        }
+      },
+      "4": {
+        "class_type": "EmptyFlux2LatentImage",
+        "inputs": {
+          "width": 640,
+          "height": 640,
+          "batch_size": 1
+        },
+        "_meta": {
+          "title": "640 x 640 canvas"
+        }
+      },
+      "5": {
+        "class_type": "SamplerCustomAdvanced",
+        "inputs": {
+          "noise": [
+            "36",
+            0
+          ],
+          "guider": [
+            "37",
+            0
+          ],
+          "sampler": [
+            "28",
+            0
+          ],
+          "sigmas": [
+            "29",
+            0
+          ],
+          "latent_image": [
+            "4",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Single illustration generation / 4 steps"
+        }
+      },
+      "6": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "5",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Decode final image"
+        }
+      },
+      "7": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "8",
+            0
+          ],
+          "filename_prefix": "Thai02/blocks_c527b0cb25524803b076687c933fbd56"
+        },
+        "_meta": {
+          "title": "Final 480 x 480 RGBA PNG"
+        }
+      },
+      "8": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "23",
+            0
+          ],
+          "upscale_method": "area",
+          "width": 480,
+          "height": 480,
+          "crop": "disabled"
+        },
+        "_meta": {
+          "title": "Downsample RGBA to 480 x 480"
+        }
+      },
+      "10": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "playful rounded design"
+        },
+        "_meta": {
+          "title": "INPUT 1 / audience: student"
+        }
+      },
+      "11": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "one kindergarten sun hat with a rounded crown, wide brim and chin strap"
+        },
+        "_meta": {
+          "title": "INPUT 2 / product: bags"
+        }
+      },
+      "12": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "Main color #F6EEA2 (pale pastel yellow) on crown"
+        },
+        "_meta": {
+          "title": "INPUT 3 / primary: blue",
+          "color_reference": "#F6EEA2 RGB(246, 238, 162)"
+        }
+      },
+      "13": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "Accent color #B7DBA9 (light pastel green) on brim and chin strap"
+        },
+        "_meta": {
+          "title": "INPUT 4 / accent: white",
+          "color_reference": "#B7DBA9 RGB(183, 219, 169)"
+        }
+      },
+      "14": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "11",
+            0
+          ],
+          "string_b": [
+            "15",
+            0
+          ],
+          "delimiter": ". "
+        },
+        "_meta": {
+          "title": "Product + colors"
+        }
+      },
+      "15": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "12",
+            0
+          ],
+          "string_b": [
+            "13",
+            0
+          ],
+          "delimiter": ". "
+        },
+        "_meta": {
+          "title": "Product-specific color parts"
+        }
+      },
+      "16": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "14",
+            0
+          ],
+          "string_b": [
+            "10",
+            0
+          ],
+          "delimiter": ". "
+        },
+        "_meta": {
+          "title": "Combine four choices"
+        }
+      },
+      "17": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "16",
+            0
+          ],
+          "string_b": "Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors",
+          "delimiter": ". "
+        },
+        "_meta": {
+          "title": "Product first, then illustration style"
+        }
+      },
+      "18": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "17",
+            0
+          ],
+          "string_b": "One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render",
+          "delimiter": ". "
+        },
+        "_meta": {
+          "title": "Fixed product composition"
+        }
+      },
+      "20": {
+        "class_type": "LoadBackgroundRemovalModel",
+        "inputs": {
+          "bg_removal_name": "birefnet.safetensors"
+        },
+        "_meta": {
+          "title": "BiRefNet foreground segmentation"
+        }
+      },
+      "21": {
+        "class_type": "RemoveBackground",
+        "inputs": {
+          "bg_removal_model": [
+            "20",
+            0
+          ],
+          "image": [
+            "6",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground mask at native resolution"
+        }
+      },
+      "22": {
+        "class_type": "InvertMask",
+        "inputs": {
+          "mask": [
+            "21",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground to Comfy alpha convention"
+        }
+      },
+      "23": {
+        "class_type": "JoinImageWithAlpha",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "alpha": [
+            "22",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Apply actual alpha (not painted transparency)"
+        }
+      },
+      "28": {
+        "class_type": "KSamplerSelect",
+        "inputs": {
+          "sampler_name": "euler"
+        },
+        "_meta": {
+          "title": "Turbo sampler"
+        }
+      },
+      "29": {
+        "class_type": "Flux2Scheduler",
+        "inputs": {
+          "steps": 4,
+          "width": 640,
+          "height": 640
+        },
+        "_meta": {
+          "title": "Distilled Klein / 4 steps"
+        }
+      },
+      "30": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen_3_4b.safetensors",
+          "type": "flux2",
+          "device": "default"
+        },
+        "_meta": {
+          "title": "Qwen3 4B language encoder"
+        }
+      },
+      "31": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "flux2-klein-vae-bf16.safetensors"
+        },
+        "_meta": {
+          "title": "Klein VAE"
+        }
+      },
+      "32": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "Thai02Style3/style_user_fa1ec41434dabe24.png"
+        },
+        "_meta": {
+          "title": "Original user art style only"
+        }
+      },
+      "33": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "32",
+            0
+          ],
+          "upscale_method": "lanczos",
+          "width": 384,
+          "height": 304,
+          "crop": "disabled"
+        },
+        "_meta": {
+          "title": "Small art style reference"
+        }
+      },
+      "34": {
+        "class_type": "VAEEncode",
+        "inputs": {
+          "pixels": [
+            "33",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Encode art style reference"
+        }
+      },
+      "35": {
+        "class_type": "ReferenceLatent",
+        "inputs": {
+          "conditioning": [
+            "2",
+            0
+          ],
+          "latent": [
+            "34",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Reference illustration conditioning"
+        }
+      },
+      "36": {
+        "class_type": "RandomNoise",
+        "inputs": {
+          "noise_seed": 639291061651926818
+        },
+        "_meta": {
+          "title": "Session seed"
+        }
+      },
+      "37": {
+        "class_type": "BasicGuider",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "conditioning": [
+            "35",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Reference art guidance"
+        }
+      }
+    }
+  },
+  {
+    "mode": "valid",
+    "prompt": {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "flux-2-klein-4b-fp8.safetensors",
+          "weight_dtype": "default"
+        },
+        "_meta": {
+          "title": "FLUX.2 Klein 4B FP8 / reference illustration"
+        }
+      },
+      "2": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": [
+            "18",
+            0
+          ],
+          "clip": [
+            "30",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Positive product conditioning"
+        }
+      },
+      "3": {
+        "class_type": "ConditioningZeroOut",
+        "inputs": {
+          "conditioning": [
+            "2",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Unused negative conditioning at CFG1"
+        }
+      },
+      "4": {
+        "class_type": "EmptyFlux2LatentImage",
+        "inputs": {
+          "width": 640,
+          "height": 640,
+          "batch_size": 1
+        },
+        "_meta": {
+          "title": "640 x 640 canvas"
+        }
+      },
+      "5": {
+        "class_type": "SamplerCustomAdvanced",
+        "inputs": {
+          "noise": [
+            "36",
+            0
+          ],
+          "guider": [
+            "37",
+            0
+          ],
+          "sampler": [
+            "28",
+            0
+          ],
+          "sigmas": [
+            "29",
+            0
+          ],
+          "latent_image": [
+            "4",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Single illustration generation / 4 steps"
+        }
+      },
+      "6": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "5",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Decode final image"
+        }
+      },
+      "7": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "8",
+            0
+          ],
+          "filename_prefix": "Thai02/blocks_f68a973116eb412993f6d72049cbe164"
+        },
+        "_meta": {
+          "title": "Final 480 x 480 RGBA PNG"
+        }
+      },
+      "8": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "23",
+            0
+          ],
+          "upscale_method": "area",
+          "width": 480,
+          "height": 480,
+          "crop": "disabled"
+        },
+        "_meta": {
+          "title": "Downsample RGBA to 480 x 480"
+        }
+      },
+      "10": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "playful rounded design"
+        },
+        "_meta": {
+          "title": "INPUT 1 / audience: student"
+        }
+      },
+      "11": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "one kindergarten sun hat with a rounded crown, wide brim and chin strap"
+        },
+        "_meta": {
+          "title": "INPUT 2 / product: bags"
+        }
+      },
+      "12": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "Main color #F6EEA2 (pale pastel yellow) on crown"
+        },
+        "_meta": {
+          "title": "INPUT 3 / primary: blue",
+          "color_reference": "#F6EEA2 RGB(246, 238, 162)"
+        }
+      },
+      "13": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "Accent color #B7DBA9 (light pastel green) on brim and chin strap"
+        },
+        "_meta": {
+          "title": "INPUT 4 / accent: white",
+          "color_reference": "#B7DBA9 RGB(183, 219, 169)"
+        }
+      },
+      "14": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "11",
+            0
+          ],
+          "string_b": [
+            "15",
+            0
+          ],
+          "delimiter": ". "
+        },
+        "_meta": {
+          "title": "Product + colors"
+        }
+      },
+      "15": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "12",
+            0
+          ],
+          "string_b": [
+            "13",
+            0
+          ],
+          "delimiter": ". "
+        },
+        "_meta": {
+          "title": "Product-specific color parts"
+        }
+      },
+      "16": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "14",
+            0
+          ],
+          "string_b": [
+            "10",
+            0
+          ],
+          "delimiter": ". "
+        },
+        "_meta": {
+          "title": "Combine four choices"
+        }
+      },
+      "17": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "16",
+            0
+          ],
+          "string_b": "Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors",
+          "delimiter": ". "
+        },
+        "_meta": {
+          "title": "Product first, then illustration style"
+        }
+      },
+      "18": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "17",
+            0
+          ],
+          "string_b": "One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render",
+          "delimiter": ". "
+        },
+        "_meta": {
+          "title": "Fixed product composition"
+        }
+      },
+      "20": {
+        "class_type": "LoadBackgroundRemovalModel",
+        "inputs": {
+          "bg_removal_name": "birefnet.safetensors"
+        },
+        "_meta": {
+          "title": "BiRefNet foreground segmentation"
+        }
+      },
+      "21": {
+        "class_type": "RemoveBackground",
+        "inputs": {
+          "bg_removal_model": [
+            "20",
+            0
+          ],
+          "image": [
+            "6",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground mask at native resolution"
+        }
+      },
+      "22": {
+        "class_type": "InvertMask",
+        "inputs": {
+          "mask": [
+            "21",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground to Comfy alpha convention"
+        }
+      },
+      "23": {
+        "class_type": "JoinImageWithAlpha",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "alpha": [
+            "22",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Apply actual alpha (not painted transparency)"
+        }
+      },
+      "28": {
+        "class_type": "KSamplerSelect",
+        "inputs": {
+          "sampler_name": "euler"
+        },
+        "_meta": {
+          "title": "Turbo sampler"
+        }
+      },
+      "29": {
+        "class_type": "Flux2Scheduler",
+        "inputs": {
+          "steps": 4,
+          "width": 640,
+          "height": 640
+        },
+        "_meta": {
+          "title": "Distilled Klein / 4 steps"
+        }
+      },
+      "30": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen_3_4b.safetensors",
+          "type": "flux2",
+          "device": "default"
+        },
+        "_meta": {
+          "title": "Qwen3 4B language encoder"
+        }
+      },
+      "31": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "flux2-klein-vae-bf16.safetensors"
+        },
+        "_meta": {
+          "title": "Klein VAE"
+        }
+      },
+      "32": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "Thai02Style3/style_user_fa1ec41434dabe24.png"
+        },
+        "_meta": {
+          "title": "Original user art style only"
+        }
+      },
+      "33": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "32",
+            0
+          ],
+          "upscale_method": "lanczos",
+          "width": 384,
+          "height": 304,
+          "crop": "disabled"
+        },
+        "_meta": {
+          "title": "Small art style reference"
+        }
+      },
+      "34": {
+        "class_type": "VAEEncode",
+        "inputs": {
+          "pixels": [
+            "33",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Encode art style reference"
+        }
+      },
+      "35": {
+        "class_type": "ReferenceLatent",
+        "inputs": {
+          "conditioning": [
+            "2",
+            0
+          ],
+          "latent": [
+            "34",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Reference illustration conditioning"
+        }
+      },
+      "36": {
+        "class_type": "RandomNoise",
+        "inputs": {
+          "noise_seed": 639291061668870492
+        },
+        "_meta": {
+          "title": "Session seed"
+        }
+      },
+      "37": {
+        "class_type": "BasicGuider",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "conditioning": [
+            "35",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Reference art guidance"
+        }
+      }
+    }
+  },
+  {
+    "mode": "delay",
+    "prompt": {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "flux-2-klein-4b-fp8.safetensors",
+          "weight_dtype": "default"
+        },
+        "_meta": {
+          "title": "FLUX.2 Klein 4B FP8 / reference illustration"
+        }
+      },
+      "2": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": [
+            "18",
+            0
+          ],
+          "clip": [
+            "30",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Positive product conditioning"
+        }
+      },
+      "3": {
+        "class_type": "ConditioningZeroOut",
+        "inputs": {
+          "conditioning": [
+            "2",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Unused negative conditioning at CFG1"
+        }
+      },
+      "4": {
+        "class_type": "EmptyFlux2LatentImage",
+        "inputs": {
+          "width": 640,
+          "height": 640,
+          "batch_size": 1
+        },
+        "_meta": {
+          "title": "640 x 640 canvas"
+        }
+      },
+      "5": {
+        "class_type": "SamplerCustomAdvanced",
+        "inputs": {
+          "noise": [
+            "36",
+            0
+          ],
+          "guider": [
+            "37",
+            0
+          ],
+          "sampler": [
+            "28",
+            0
+          ],
+          "sigmas": [
+            "29",
+            0
+          ],
+          "latent_image": [
+            "4",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Single illustration generation / 4 steps"
+        }
+      },
+      "6": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "5",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Decode final image"
+        }
+      },
+      "7": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "8",
+            0
+          ],
+          "filename_prefix": "Thai02/blocks_da28b4ddfb1d4f4398c20c5cb31b3374"
+        },
+        "_meta": {
+          "title": "Final 480 x 480 RGBA PNG"
+        }
+      },
+      "8": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "23",
+            0
+          ],
+          "upscale_method": "area",
+          "width": 480,
+          "height": 480,
+          "crop": "disabled"
+        },
+        "_meta": {
+          "title": "Downsample RGBA to 480 x 480"
+        }
+      },
+      "10": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "playful rounded design"
+        },
+        "_meta": {
+          "title": "INPUT 1 / audience: student"
+        }
+      },
+      "11": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "one kindergarten sun hat with a rounded crown, wide brim and chin strap"
+        },
+        "_meta": {
+          "title": "INPUT 2 / product: bags"
+        }
+      },
+      "12": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "Main color #F6EEA2 (pale pastel yellow) on crown"
+        },
+        "_meta": {
+          "title": "INPUT 3 / primary: blue",
+          "color_reference": "#F6EEA2 RGB(246, 238, 162)"
+        }
+      },
+      "13": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "Accent color #B7DBA9 (light pastel green) on brim and chin strap"
+        },
+        "_meta": {
+          "title": "INPUT 4 / accent: white",
+          "color_reference": "#B7DBA9 RGB(183, 219, 169)"
+        }
+      },
+      "14": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "11",
+            0
+          ],
+          "string_b": [
+            "15",
+            0
+          ],
+          "delimiter": ". "
+        },
+        "_meta": {
+          "title": "Product + colors"
+        }
+      },
+      "15": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "12",
+            0
+          ],
+          "string_b": [
+            "13",
+            0
+          ],
+          "delimiter": ". "
+        },
+        "_meta": {
+          "title": "Product-specific color parts"
+        }
+      },
+      "16": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "14",
+            0
+          ],
+          "string_b": [
+            "10",
+            0
+          ],
+          "delimiter": ". "
+        },
+        "_meta": {
+          "title": "Combine four choices"
+        }
+      },
+      "17": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "16",
+            0
+          ],
+          "string_b": "Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors",
+          "delimiter": ". "
+        },
+        "_meta": {
+          "title": "Product first, then illustration style"
+        }
+      },
+      "18": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "17",
+            0
+          ],
+          "string_b": "One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render",
+          "delimiter": ". "
+        },
+        "_meta": {
+          "title": "Fixed product composition"
+        }
+      },
+      "20": {
+        "class_type": "LoadBackgroundRemovalModel",
+        "inputs": {
+          "bg_removal_name": "birefnet.safetensors"
+        },
+        "_meta": {
+          "title": "BiRefNet foreground segmentation"
+        }
+      },
+      "21": {
+        "class_type": "RemoveBackground",
+        "inputs": {
+          "bg_removal_model": [
+            "20",
+            0
+          ],
+          "image": [
+            "6",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground mask at native resolution"
+        }
+      },
+      "22": {
+        "class_type": "InvertMask",
+        "inputs": {
+          "mask": [
+            "21",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground to Comfy alpha convention"
+        }
+      },
+      "23": {
+        "class_type": "JoinImageWithAlpha",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "alpha": [
+            "22",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Apply actual alpha (not painted transparency)"
+        }
+      },
+      "28": {
+        "class_type": "KSamplerSelect",
+        "inputs": {
+          "sampler_name": "euler"
+        },
+        "_meta": {
+          "title": "Turbo sampler"
+        }
+      },
+      "29": {
+        "class_type": "Flux2Scheduler",
+        "inputs": {
+          "steps": 4,
+          "width": 640,
+          "height": 640
+        },
+        "_meta": {
+          "title": "Distilled Klein / 4 steps"
+        }
+      },
+      "30": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen_3_4b.safetensors",
+          "type": "flux2",
+          "device": "default"
+        },
+        "_meta": {
+          "title": "Qwen3 4B language encoder"
+        }
+      },
+      "31": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "flux2-klein-vae-bf16.safetensors"
+        },
+        "_meta": {
+          "title": "Klein VAE"
+        }
+      },
+      "32": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "Thai02Style3/style_user_fa1ec41434dabe24.png"
+        },
+        "_meta": {
+          "title": "Original user art style only"
+        }
+      },
+      "33": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "32",
+            0
+          ],
+          "upscale_method": "lanczos",
+          "width": 384,
+          "height": 304,
+          "crop": "disabled"
+        },
+        "_meta": {
+          "title": "Small art style reference"
+        }
+      },
+      "34": {
+        "class_type": "VAEEncode",
+        "inputs": {
+          "pixels": [
+            "33",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Encode art style reference"
+        }
+      },
+      "35": {
+        "class_type": "ReferenceLatent",
+        "inputs": {
+          "conditioning": [
+            "2",
+            0
+          ],
+          "latent": [
+            "34",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Reference illustration conditioning"
+        }
+      },
+      "36": {
+        "class_type": "RandomNoise",
+        "inputs": {
+          "noise_seed": 639291061687381022
+        },
+        "_meta": {
+          "title": "Session seed"
+        }
+      },
+      "37": {
+        "class_type": "BasicGuider",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "conditioning": [
+            "35",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Reference art guidance"
+        }
+      }
+    }
+  },
+  {
+    "mode": "error",
+    "prompt": {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "flux-2-klein-4b-fp8.safetensors",
+          "weight_dtype": "default"
+        },
+        "_meta": {
+          "title": "FLUX.2 Klein 4B FP8 / reference illustration"
+        }
+      },
+      "2": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": [
+            "18",
+            0
+          ],
+          "clip": [
+            "30",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Positive product conditioning"
+        }
+      },
+      "3": {
+        "class_type": "ConditioningZeroOut",
+        "inputs": {
+          "conditioning": [
+            "2",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Unused negative conditioning at CFG1"
+        }
+      },
+      "4": {
+        "class_type": "EmptyFlux2LatentImage",
+        "inputs": {
+          "width": 640,
+          "height": 640,
+          "batch_size": 1
+        },
+        "_meta": {
+          "title": "640 x 640 canvas"
+        }
+      },
+      "5": {
+        "class_type": "SamplerCustomAdvanced",
+        "inputs": {
+          "noise": [
+            "36",
+            0
+          ],
+          "guider": [
+            "37",
+            0
+          ],
+          "sampler": [
+            "28",
+            0
+          ],
+          "sigmas": [
+            "29",
+            0
+          ],
+          "latent_image": [
+            "4",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Single illustration generation / 4 steps"
+        }
+      },
+      "6": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "5",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Decode final image"
+        }
+      },
+      "7": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "8",
+            0
+          ],
+          "filename_prefix": "Thai02/blocks_575f9fc347b3478cb3341caeec756016"
+        },
+        "_meta": {
+          "title": "Final 480 x 480 RGBA PNG"
+        }
+      },
+      "8": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "23",
+            0
+          ],
+          "upscale_method": "area",
+          "width": 480,
+          "height": 480,
+          "crop": "disabled"
+        },
+        "_meta": {
+          "title": "Downsample RGBA to 480 x 480"
+        }
+      },
+      "10": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "playful rounded design"
+        },
+        "_meta": {
+          "title": "INPUT 1 / audience: student"
+        }
+      },
+      "11": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "one kindergarten sun hat with a rounded crown, wide brim and chin strap"
+        },
+        "_meta": {
+          "title": "INPUT 2 / product: bags"
+        }
+      },
+      "12": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "Main color #F6EEA2 (pale pastel yellow) on crown"
+        },
+        "_meta": {
+          "title": "INPUT 3 / primary: blue",
+          "color_reference": "#F6EEA2 RGB(246, 238, 162)"
+        }
+      },
+      "13": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "Accent color #B7DBA9 (light pastel green) on brim and chin strap"
+        },
+        "_meta": {
+          "title": "INPUT 4 / accent: white",
+          "color_reference": "#B7DBA9 RGB(183, 219, 169)"
+        }
+      },
+      "14": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "11",
+            0
+          ],
+          "string_b": [
+            "15",
+            0
+          ],
+          "delimiter": ". "
+        },
+        "_meta": {
+          "title": "Product + colors"
+        }
+      },
+      "15": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "12",
+            0
+          ],
+          "string_b": [
+            "13",
+            0
+          ],
+          "delimiter": ". "
+        },
+        "_meta": {
+          "title": "Product-specific color parts"
+        }
+      },
+      "16": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "14",
+            0
+          ],
+          "string_b": [
+            "10",
+            0
+          ],
+          "delimiter": ". "
+        },
+        "_meta": {
+          "title": "Combine four choices"
+        }
+      },
+      "17": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "16",
+            0
+          ],
+          "string_b": "Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors",
+          "delimiter": ". "
+        },
+        "_meta": {
+          "title": "Product first, then illustration style"
+        }
+      },
+      "18": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "17",
+            0
+          ],
+          "string_b": "One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render",
+          "delimiter": ". "
+        },
+        "_meta": {
+          "title": "Fixed product composition"
+        }
+      },
+      "20": {
+        "class_type": "LoadBackgroundRemovalModel",
+        "inputs": {
+          "bg_removal_name": "birefnet.safetensors"
+        },
+        "_meta": {
+          "title": "BiRefNet foreground segmentation"
+        }
+      },
+      "21": {
+        "class_type": "RemoveBackground",
+        "inputs": {
+          "bg_removal_model": [
+            "20",
+            0
+          ],
+          "image": [
+            "6",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground mask at native resolution"
+        }
+      },
+      "22": {
+        "class_type": "InvertMask",
+        "inputs": {
+          "mask": [
+            "21",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground to Comfy alpha convention"
+        }
+      },
+      "23": {
+        "class_type": "JoinImageWithAlpha",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "alpha": [
+            "22",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Apply actual alpha (not painted transparency)"
+        }
+      },
+      "28": {
+        "class_type": "KSamplerSelect",
+        "inputs": {
+          "sampler_name": "euler"
+        },
+        "_meta": {
+          "title": "Turbo sampler"
+        }
+      },
+      "29": {
+        "class_type": "Flux2Scheduler",
+        "inputs": {
+          "steps": 4,
+          "width": 640,
+          "height": 640
+        },
+        "_meta": {
+          "title": "Distilled Klein / 4 steps"
+        }
+      },
+      "30": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen_3_4b.safetensors",
+          "type": "flux2",
+          "device": "default"
+        },
+        "_meta": {
+          "title": "Qwen3 4B language encoder"
+        }
+      },
+      "31": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "flux2-klein-vae-bf16.safetensors"
+        },
+        "_meta": {
+          "title": "Klein VAE"
+        }
+      },
+      "32": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "Thai02Style3/style_user_fa1ec41434dabe24.png"
+        },
+        "_meta": {
+          "title": "Original user art style only"
+        }
+      },
+      "33": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "32",
+            0
+          ],
+          "upscale_method": "lanczos",
+          "width": 384,
+          "height": 304,
+          "crop": "disabled"
+        },
+        "_meta": {
+          "title": "Small art style reference"
+        }
+      },
+      "34": {
+        "class_type": "VAEEncode",
+        "inputs": {
+          "pixels": [
+            "33",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Encode art style reference"
+        }
+      },
+      "35": {
+        "class_type": "ReferenceLatent",
+        "inputs": {
+          "conditioning": [
+            "2",
+            0
+          ],
+          "latent": [
+            "34",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Reference illustration conditioning"
+        }
+      },
+      "36": {
+        "class_type": "RandomNoise",
+        "inputs": {
+          "noise_seed": 639291061701191020
+        },
+        "_meta": {
+          "title": "Session seed"
+        }
+      },
+      "37": {
+        "class_type": "BasicGuider",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "conditioning": [
+            "35",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Reference art guidance"
+        }
+      }
+    }
+  },
+  {
+    "mode": "delay",
+    "prompt": {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "flux-2-klein-4b-fp8.safetensors",
+          "weight_dtype": "default"
+        },
+        "_meta": {
+          "title": "FLUX.2 Klein 4B FP8 / reference illustration"
+        }
+      },
+      "2": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": [
+            "18",
+            0
+          ],
+          "clip": [
+            "30",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Positive product conditioning"
+        }
+      },
+      "3": {
+        "class_type": "ConditioningZeroOut",
+        "inputs": {
+          "conditioning": [
+            "2",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Unused negative conditioning at CFG1"
+        }
+      },
+      "4": {
+        "class_type": "EmptyFlux2LatentImage",
+        "inputs": {
+          "width": 640,
+          "height": 640,
+          "batch_size": 1
+        },
+        "_meta": {
+          "title": "640 x 640 canvas"
+        }
+      },
+      "5": {
+        "class_type": "SamplerCustomAdvanced",
+        "inputs": {
+          "noise": [
+            "36",
+            0
+          ],
+          "guider": [
+            "37",
+            0
+          ],
+          "sampler": [
+            "28",
+            0
+          ],
+          "sigmas": [
+            "29",
+            0
+          ],
+          "latent_image": [
+            "4",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Single illustration generation / 4 steps"
+        }
+      },
+      "6": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "5",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Decode final image"
+        }
+      },
+      "7": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "8",
+            0
+          ],
+          "filename_prefix": "Thai02/blocks_7e677ea5e1914468b06aea1f8080ea76"
+        },
+        "_meta": {
+          "title": "Final 480 x 480 RGBA PNG"
+        }
+      },
+      "8": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "23",
+            0
+          ],
+          "upscale_method": "area",
+          "width": 480,
+          "height": 480,
+          "crop": "disabled"
+        },
+        "_meta": {
+          "title": "Downsample RGBA to 480 x 480"
+        }
+      },
+      "10": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "playful rounded design"
+        },
+        "_meta": {
+          "title": "INPUT 1 / audience: student"
+        }
+      },
+      "11": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "one kindergarten sun hat with a rounded crown, wide brim and chin strap"
+        },
+        "_meta": {
+          "title": "INPUT 2 / product: bags"
+        }
+      },
+      "12": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "Main color #F6EEA2 (pale pastel yellow) on crown"
+        },
+        "_meta": {
+          "title": "INPUT 3 / primary: blue",
+          "color_reference": "#F6EEA2 RGB(246, 238, 162)"
+        }
+      },
+      "13": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "Accent color #B7DBA9 (light pastel green) on brim and chin strap"
+        },
+        "_meta": {
+          "title": "INPUT 4 / accent: white",
+          "color_reference": "#B7DBA9 RGB(183, 219, 169)"
+        }
+      },
+      "14": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "11",
+            0
+          ],
+          "string_b": [
+            "15",
+            0
+          ],
+          "delimiter": ". "
+        },
+        "_meta": {
+          "title": "Product + colors"
+        }
+      },
+      "15": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "12",
+            0
+          ],
+          "string_b": [
+            "13",
+            0
+          ],
+          "delimiter": ". "
+        },
+        "_meta": {
+          "title": "Product-specific color parts"
+        }
+      },
+      "16": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "14",
+            0
+          ],
+          "string_b": [
+            "10",
+            0
+          ],
+          "delimiter": ". "
+        },
+        "_meta": {
+          "title": "Combine four choices"
+        }
+      },
+      "17": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "16",
+            0
+          ],
+          "string_b": "Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors",
+          "delimiter": ". "
+        },
+        "_meta": {
+          "title": "Product first, then illustration style"
+        }
+      },
+      "18": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "17",
+            0
+          ],
+          "string_b": "One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render",
+          "delimiter": ". "
+        },
+        "_meta": {
+          "title": "Fixed product composition"
+        }
+      },
+      "20": {
+        "class_type": "LoadBackgroundRemovalModel",
+        "inputs": {
+          "bg_removal_name": "birefnet.safetensors"
+        },
+        "_meta": {
+          "title": "BiRefNet foreground segmentation"
+        }
+      },
+      "21": {
+        "class_type": "RemoveBackground",
+        "inputs": {
+          "bg_removal_model": [
+            "20",
+            0
+          ],
+          "image": [
+            "6",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground mask at native resolution"
+        }
+      },
+      "22": {
+        "class_type": "InvertMask",
+        "inputs": {
+          "mask": [
+            "21",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground to Comfy alpha convention"
+        }
+      },
+      "23": {
+        "class_type": "JoinImageWithAlpha",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "alpha": [
+            "22",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Apply actual alpha (not painted transparency)"
+        }
+      },
+      "28": {
+        "class_type": "KSamplerSelect",
+        "inputs": {
+          "sampler_name": "euler"
+        },
+        "_meta": {
+          "title": "Turbo sampler"
+        }
+      },
+      "29": {
+        "class_type": "Flux2Scheduler",
+        "inputs": {
+          "steps": 4,
+          "width": 640,
+          "height": 640
+        },
+        "_meta": {
+          "title": "Distilled Klein / 4 steps"
+        }
+      },
+      "30": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen_3_4b.safetensors",
+          "type": "flux2",
+          "device": "default"
+        },
+        "_meta": {
+          "title": "Qwen3 4B language encoder"
+        }
+      },
+      "31": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "flux2-klein-vae-bf16.safetensors"
+        },
+        "_meta": {
+          "title": "Klein VAE"
+        }
+      },
+      "32": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "Thai02Style3/style_user_fa1ec41434dabe24.png"
+        },
+        "_meta": {
+          "title": "Original user art style only"
+        }
+      },
+      "33": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "32",
+            0
+          ],
+          "upscale_method": "lanczos",
+          "width": 384,
+          "height": 304,
+          "crop": "disabled"
+        },
+        "_meta": {
+          "title": "Small art style reference"
+        }
+      },
+      "34": {
+        "class_type": "VAEEncode",
+        "inputs": {
+          "pixels": [
+            "33",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Encode art style reference"
+        }
+      },
+      "35": {
+        "class_type": "ReferenceLatent",
+        "inputs": {
+          "conditioning": [
+            "2",
+            0
+          ],
+          "latent": [
+            "34",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Reference illustration conditioning"
+        }
+      },
+      "36": {
+        "class_type": "RandomNoise",
+        "inputs": {
+          "noise_seed": 639291061705700883
+        },
+        "_meta": {
+          "title": "Session seed"
+        }
+      },
+      "37": {
+        "class_type": "BasicGuider",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "conditioning": [
+            "35",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Reference art guidance"
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,3514 @@
+[
+  {
+    "tag": "klein_ref_hats_student",
+    "seconds": 3.305,
+    "stages": [
+      {
+        "node": "2",
+        "seconds": 0.122
+      },
+      {
+        "node": "35",
+        "seconds": 1.038
+      },
+      {
+        "node": "37",
+        "seconds": 1.038
+      },
+      {
+        "node": "5",
+        "seconds": 1.039
+      },
+      {
+        "node": "6",
+        "seconds": 2.286
+      },
+      {
+        "node": "21",
+        "seconds": 2.483
+      },
+      {
+        "node": "22",
+        "seconds": 2.942
+      },
+      {
+        "node": "23",
+        "seconds": 2.944
+      },
+      {
+        "node": "8",
+        "seconds": 2.946
+      },
+      {
+        "node": "7",
+        "seconds": 2.948
+      },
+      {
+        "node": null,
+        "seconds": 3.27
+      }
+    ],
+    "api": {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "flux-2-klein-4b-fp8.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": "Use only the cute flat 2D drawing style, simplified rounded shapes and soft color-block shading from the reference picture. Draw a NEW different object: cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one ribbed knitted beanie with a folded cuff. soft red knitted crown, light blue folded cuff. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background. Do not copy the shoe, pink card, hearts, text or background from the reference. The new object fills about 70 percent of a square white canvas.",
+          "clip": [
+            "30",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Positive product conditioning"
+        }
+      },
+      "4": {
+        "class_type": "EmptyFlux2LatentImage",
+        "inputs": {
+          "width": 640,
+          "height": 640,
+          "batch_size": 1
+        }
+      },
+      "5": {
+        "class_type": "SamplerCustomAdvanced",
+        "inputs": {
+          "noise": [
+            "36",
+            0
+          ],
+          "guider": [
+            "37",
+            0
+          ],
+          "sampler": [
+            "28",
+            0
+          ],
+          "sigmas": [
+            "29",
+            0
+          ],
+          "latent_image": [
+            "4",
+            0
+          ]
+        }
+      },
+      "6": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "5",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Decode final image"
+        }
+      },
+      "7": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "8",
+            0
+          ],
+          "filename_prefix": "Thai02/Style3/klein_ref"
+        },
+        "_meta": {
+          "title": "Final 480 x 480 RGBA PNG"
+        }
+      },
+      "8": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "23",
+            0
+          ],
+          "upscale_method": "area",
+          "width": 480,
+          "height": 480,
+          "crop": "disabled"
+        },
+        "_meta": {
+          "title": "Downsample RGBA to 480 x 480"
+        }
+      },
+      "10": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "simple sporty design"
+        },
+        "_meta": {
+          "title": "INPUT 1 / audience: student"
+        }
+      },
+      "11": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "one ribbed knitted beanie with a folded cuff"
+        },
+        "_meta": {
+          "title": "INPUT 2 / product: hats"
+        }
+      },
+      "12": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "soft red knitted crown"
+        },
+        "_meta": {
+          "title": "INPUT 3 / primary: red",
+          "color_reference": "#EC6868 RGB(236, 104, 104)"
+        }
+      },
+      "13": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "light blue folded cuff"
+        },
+        "_meta": {
+          "title": "INPUT 4 / accent: blue",
+          "color_reference": "#5FB0E3 RGB(95, 176, 227)"
+        }
+      },
+      "14": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "11",
+            0
+          ],
+          "string_b": [
+            "15",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product + colors"
+        }
+      },
+      "15": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "12",
+            0
+          ],
+          "string_b": [
+            "13",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product-specific color parts"
+        }
+      },
+      "16": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "14",
+            0
+          ],
+          "string_b": [
+            "10",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Combine four choices"
+        }
+      },
+      "17": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "16",
+            0
+          ],
+          "string_b": "simple soft shaded illustration",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product first, then illustration style"
+        }
+      },
+      "18": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "17",
+            0
+          ],
+          "string_b": "one isolated item, plain white background, full view, centered with empty margins",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Fixed product composition"
+        }
+      },
+      "20": {
+        "class_type": "LoadBackgroundRemovalModel",
+        "inputs": {
+          "bg_removal_name": "birefnet.safetensors"
+        },
+        "_meta": {
+          "title": "BiRefNet foreground segmentation"
+        }
+      },
+      "21": {
+        "class_type": "RemoveBackground",
+        "inputs": {
+          "bg_removal_model": [
+            "20",
+            0
+          ],
+          "image": [
+            "6",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground mask at native resolution"
+        }
+      },
+      "22": {
+        "class_type": "InvertMask",
+        "inputs": {
+          "mask": [
+            "21",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground to Comfy alpha convention"
+        }
+      },
+      "23": {
+        "class_type": "JoinImageWithAlpha",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "alpha": [
+            "22",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Apply actual alpha (not painted transparency)"
+        }
+      },
+      "28": {
+        "class_type": "KSamplerSelect",
+        "inputs": {
+          "sampler_name": "euler"
+        }
+      },
+      "29": {
+        "class_type": "Flux2Scheduler",
+        "inputs": {
+          "steps": 4,
+          "width": 640,
+          "height": 640
+        }
+      },
+      "30": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen_3_4b.safetensors",
+          "type": "flux2",
+          "device": "default"
+        }
+      },
+      "31": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "flux2-vae.safetensors"
+        }
+      },
+      "32": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "Thai02Style3/style_user_fa1ec41434dabe24.png"
+        }
+      },
+      "33": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "32",
+            0
+          ],
+          "upscale_method": "lanczos",
+          "width": 384,
+          "height": 304,
+          "crop": "disabled"
+        }
+      },
+      "34": {
+        "class_type": "VAEEncode",
+        "inputs": {
+          "pixels": [
+            "33",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        }
+      },
+      "35": {
+        "class_type": "ReferenceLatent",
+        "inputs": {
+          "conditioning": [
+            "2",
+            0
+          ],
+          "latent": [
+            "34",
+            0
+          ]
+        }
+      },
+      "36": {
+        "class_type": "RandomNoise",
+        "inputs": {
+          "noise_seed": 1206503
+        }
+      },
+      "37": {
+        "class_type": "BasicGuider",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "conditioning": [
+            "35",
+            0
+          ]
+        }
+      }
+    },
+    "prompt_id": "b33c01bb-99d3-4802-b909-a4ecd6369023",
+    "server_image": {
+      "filename": "klein_ref_00003_.png",
+      "subfolder": "Thai02\\Style3",
+      "type": "output",
+      "metadata": {
+        "kind": "image",
+        "width": 480,
+        "height": 480
+      },
+      "id": "ac0a274e-20f1-4da1-858f-745c0236483e"
+    },
+    "selection": {
+      "group": "student",
+      "product": "hats",
+      "color1": "red",
+      "color2": "blue",
+      "primary_hex": "#EC6868",
+      "secondary_hex": "#5FB0E3",
+      "profile": "quality",
+      "seed": 1206503,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "hats",
+      "alpha": true,
+      "positive_prompt": "Use only the cute flat 2D drawing style, simplified rounded shapes and soft color-block shading from the reference picture. Draw a NEW different object: cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one ribbed knitted beanie with a folded cuff. soft red knitted crown, light blue folded cuff. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background. Do not copy the shoe, pink card, hearts, text or background from the reference. The new object fills about 70 percent of a square white canvas."
+    }
+  },
+  {
+    "tag": "klein_ref_sunglasses_student",
+    "seconds": 2.751,
+    "stages": [
+      {
+        "node": "2",
+        "seconds": 0.101
+      },
+      {
+        "node": "35",
+        "seconds": 0.801
+      },
+      {
+        "node": "37",
+        "seconds": 0.801
+      },
+      {
+        "node": "5",
+        "seconds": 0.802
+      },
+      {
+        "node": "6",
+        "seconds": 2.068
+      },
+      {
+        "node": "21",
+        "seconds": 2.258
+      },
+      {
+        "node": "22",
+        "seconds": 2.709
+      },
+      {
+        "node": "23",
+        "seconds": 2.711
+      },
+      {
+        "node": "8",
+        "seconds": 2.714
+      },
+      {
+        "node": "7",
+        "seconds": 2.716
+      },
+      {
+        "node": null,
+        "seconds": 2.745
+      }
+    ],
+    "api": {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "flux-2-klein-4b-fp8.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": "Use only the cute flat 2D drawing style, simplified rounded shapes and soft color-block shading from the reference picture. Draw a NEW different object: cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one wraparound sports sunglasses with a curved shield lens and solid tint. soft red frame, light blue opaque shield lens. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background. Do not copy the shoe, pink card, hearts, text or background from the reference. The new object fills about 70 percent of a square white canvas.",
+          "clip": [
+            "30",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Positive product conditioning"
+        }
+      },
+      "4": {
+        "class_type": "EmptyFlux2LatentImage",
+        "inputs": {
+          "width": 640,
+          "height": 640,
+          "batch_size": 1
+        }
+      },
+      "5": {
+        "class_type": "SamplerCustomAdvanced",
+        "inputs": {
+          "noise": [
+            "36",
+            0
+          ],
+          "guider": [
+            "37",
+            0
+          ],
+          "sampler": [
+            "28",
+            0
+          ],
+          "sigmas": [
+            "29",
+            0
+          ],
+          "latent_image": [
+            "4",
+            0
+          ]
+        }
+      },
+      "6": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "5",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Decode final image"
+        }
+      },
+      "7": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "8",
+            0
+          ],
+          "filename_prefix": "Thai02/Style3/klein_ref"
+        },
+        "_meta": {
+          "title": "Final 480 x 480 RGBA PNG"
+        }
+      },
+      "8": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "23",
+            0
+          ],
+          "upscale_method": "area",
+          "width": 480,
+          "height": 480,
+          "crop": "disabled"
+        },
+        "_meta": {
+          "title": "Downsample RGBA to 480 x 480"
+        }
+      },
+      "10": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "simple sporty design"
+        },
+        "_meta": {
+          "title": "INPUT 1 / audience: student"
+        }
+      },
+      "11": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "one wraparound sports sunglasses with a curved shield lens and solid tint"
+        },
+        "_meta": {
+          "title": "INPUT 2 / product: sunglasses"
+        }
+      },
+      "12": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "soft red frame"
+        },
+        "_meta": {
+          "title": "INPUT 3 / primary: red",
+          "color_reference": "#EC6868 RGB(236, 104, 104)"
+        }
+      },
+      "13": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "light blue opaque shield lens"
+        },
+        "_meta": {
+          "title": "INPUT 4 / accent: blue",
+          "color_reference": "#5FB0E3 RGB(95, 176, 227)"
+        }
+      },
+      "14": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "11",
+            0
+          ],
+          "string_b": [
+            "15",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product + colors"
+        }
+      },
+      "15": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "12",
+            0
+          ],
+          "string_b": [
+            "13",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product-specific color parts"
+        }
+      },
+      "16": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "14",
+            0
+          ],
+          "string_b": [
+            "10",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Combine four choices"
+        }
+      },
+      "17": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "16",
+            0
+          ],
+          "string_b": "simple soft shaded illustration",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product first, then illustration style"
+        }
+      },
+      "18": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "17",
+            0
+          ],
+          "string_b": "one isolated item, plain white background, full view, centered with empty margins",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Fixed product composition"
+        }
+      },
+      "20": {
+        "class_type": "LoadBackgroundRemovalModel",
+        "inputs": {
+          "bg_removal_name": "birefnet.safetensors"
+        },
+        "_meta": {
+          "title": "BiRefNet foreground segmentation"
+        }
+      },
+      "21": {
+        "class_type": "RemoveBackground",
+        "inputs": {
+          "bg_removal_model": [
+            "20",
+            0
+          ],
+          "image": [
+            "6",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground mask at native resolution"
+        }
+      },
+      "22": {
+        "class_type": "InvertMask",
+        "inputs": {
+          "mask": [
+            "21",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground to Comfy alpha convention"
+        }
+      },
+      "23": {
+        "class_type": "JoinImageWithAlpha",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "alpha": [
+            "22",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Apply actual alpha (not painted transparency)"
+        }
+      },
+      "28": {
+        "class_type": "KSamplerSelect",
+        "inputs": {
+          "sampler_name": "euler"
+        }
+      },
+      "29": {
+        "class_type": "Flux2Scheduler",
+        "inputs": {
+          "steps": 4,
+          "width": 640,
+          "height": 640
+        }
+      },
+      "30": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen_3_4b.safetensors",
+          "type": "flux2",
+          "device": "default"
+        }
+      },
+      "31": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "flux2-vae.safetensors"
+        }
+      },
+      "32": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "Thai02Style3/style_user_fa1ec41434dabe24.png"
+        }
+      },
+      "33": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "32",
+            0
+          ],
+          "upscale_method": "lanczos",
+          "width": 384,
+          "height": 304,
+          "crop": "disabled"
+        }
+      },
+      "34": {
+        "class_type": "VAEEncode",
+        "inputs": {
+          "pixels": [
+            "33",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        }
+      },
+      "35": {
+        "class_type": "ReferenceLatent",
+        "inputs": {
+          "conditioning": [
+            "2",
+            0
+          ],
+          "latent": [
+            "34",
+            0
+          ]
+        }
+      },
+      "36": {
+        "class_type": "RandomNoise",
+        "inputs": {
+          "noise_seed": 1206503
+        }
+      },
+      "37": {
+        "class_type": "BasicGuider",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "conditioning": [
+            "35",
+            0
+          ]
+        }
+      }
+    },
+    "prompt_id": "d8279364-4f7b-4dd9-bb56-896d7b89d01e",
+    "server_image": {
+      "filename": "klein_ref_00004_.png",
+      "subfolder": "Thai02\\Style3",
+      "type": "output",
+      "metadata": {
+        "kind": "image",
+        "width": 480,
+        "height": 480
+      },
+      "id": "f35d5e19-88a4-47f8-8f4e-264a6ead851f"
+    },
+    "selection": {
+      "group": "student",
+      "product": "sunglasses",
+      "color1": "red",
+      "color2": "blue",
+      "primary_hex": "#EC6868",
+      "secondary_hex": "#5FB0E3",
+      "profile": "quality",
+      "seed": 1206503,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "sunglasses",
+      "alpha": true,
+      "positive_prompt": "Use only the cute flat 2D drawing style, simplified rounded shapes and soft color-block shading from the reference picture. Draw a NEW different object: cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one wraparound sports sunglasses with a curved shield lens and solid tint. soft red frame, light blue opaque shield lens. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background. Do not copy the shoe, pink card, hearts, text or background from the reference. The new object fills about 70 percent of a square white canvas."
+    }
+  },
+  {
+    "tag": "klein_ref_headphones_student",
+    "seconds": 2.74,
+    "stages": [
+      {
+        "node": "2",
+        "seconds": 0.084
+      },
+      {
+        "node": "35",
+        "seconds": 0.801
+      },
+      {
+        "node": "37",
+        "seconds": 0.801
+      },
+      {
+        "node": "5",
+        "seconds": 0.802
+      },
+      {
+        "node": "6",
+        "seconds": 2.067
+      },
+      {
+        "node": "21",
+        "seconds": 2.252
+      },
+      {
+        "node": "22",
+        "seconds": 2.7
+      },
+      {
+        "node": "23",
+        "seconds": 2.701
+      },
+      {
+        "node": "8",
+        "seconds": 2.704
+      },
+      {
+        "node": "7",
+        "seconds": 2.705
+      },
+      {
+        "node": null,
+        "seconds": 2.737
+      }
+    ],
+    "api": {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "flux-2-klein-4b-fp8.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": "Use only the cute flat 2D drawing style, simplified rounded shapes and soft color-block shading from the reference picture. Draw a NEW different object: cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one gaming headset with large earcups and a short boom microphone. soft red earcups, light blue headband and microphone. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background. Do not copy the shoe, pink card, hearts, text or background from the reference. The new object fills about 70 percent of a square white canvas.",
+          "clip": [
+            "30",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Positive product conditioning"
+        }
+      },
+      "4": {
+        "class_type": "EmptyFlux2LatentImage",
+        "inputs": {
+          "width": 640,
+          "height": 640,
+          "batch_size": 1
+        }
+      },
+      "5": {
+        "class_type": "SamplerCustomAdvanced",
+        "inputs": {
+          "noise": [
+            "36",
+            0
+          ],
+          "guider": [
+            "37",
+            0
+          ],
+          "sampler": [
+            "28",
+            0
+          ],
+          "sigmas": [
+            "29",
+            0
+          ],
+          "latent_image": [
+            "4",
+            0
+          ]
+        }
+      },
+      "6": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "5",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Decode final image"
+        }
+      },
+      "7": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "8",
+            0
+          ],
+          "filename_prefix": "Thai02/Style3/klein_ref"
+        },
+        "_meta": {
+          "title": "Final 480 x 480 RGBA PNG"
+        }
+      },
+      "8": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "23",
+            0
+          ],
+          "upscale_method": "area",
+          "width": 480,
+          "height": 480,
+          "crop": "disabled"
+        },
+        "_meta": {
+          "title": "Downsample RGBA to 480 x 480"
+        }
+      },
+      "10": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "simple sporty design"
+        },
+        "_meta": {
+          "title": "INPUT 1 / audience: student"
+        }
+      },
+      "11": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "one gaming headset with large earcups and a short boom microphone"
+        },
+        "_meta": {
+          "title": "INPUT 2 / product: headphones"
+        }
+      },
+      "12": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "soft red earcups"
+        },
+        "_meta": {
+          "title": "INPUT 3 / primary: red",
+          "color_reference": "#EC6868 RGB(236, 104, 104)"
+        }
+      },
+      "13": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "light blue headband and microphone"
+        },
+        "_meta": {
+          "title": "INPUT 4 / accent: blue",
+          "color_reference": "#5FB0E3 RGB(95, 176, 227)"
+        }
+      },
+      "14": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "11",
+            0
+          ],
+          "string_b": [
+            "15",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product + colors"
+        }
+      },
+      "15": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "12",
+            0
+          ],
+          "string_b": [
+            "13",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product-specific color parts"
+        }
+      },
+      "16": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "14",
+            0
+          ],
+          "string_b": [
+            "10",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Combine four choices"
+        }
+      },
+      "17": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "16",
+            0
+          ],
+          "string_b": "simple soft shaded illustration",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product first, then illustration style"
+        }
+      },
+      "18": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "17",
+            0
+          ],
+          "string_b": "one isolated item, plain white background, full view, centered with empty margins",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Fixed product composition"
+        }
+      },
+      "20": {
+        "class_type": "LoadBackgroundRemovalModel",
+        "inputs": {
+          "bg_removal_name": "birefnet.safetensors"
+        },
+        "_meta": {
+          "title": "BiRefNet foreground segmentation"
+        }
+      },
+      "21": {
+        "class_type": "RemoveBackground",
+        "inputs": {
+          "bg_removal_model": [
+            "20",
+            0
+          ],
+          "image": [
+            "6",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground mask at native resolution"
+        }
+      },
+      "22": {
+        "class_type": "InvertMask",
+        "inputs": {
+          "mask": [
+            "21",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground to Comfy alpha convention"
+        }
+      },
+      "23": {
+        "class_type": "JoinImageWithAlpha",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "alpha": [
+            "22",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Apply actual alpha (not painted transparency)"
+        }
+      },
+      "28": {
+        "class_type": "KSamplerSelect",
+        "inputs": {
+          "sampler_name": "euler"
+        }
+      },
+      "29": {
+        "class_type": "Flux2Scheduler",
+        "inputs": {
+          "steps": 4,
+          "width": 640,
+          "height": 640
+        }
+      },
+      "30": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen_3_4b.safetensors",
+          "type": "flux2",
+          "device": "default"
+        }
+      },
+      "31": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "flux2-vae.safetensors"
+        }
+      },
+      "32": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "Thai02Style3/style_user_fa1ec41434dabe24.png"
+        }
+      },
+      "33": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "32",
+            0
+          ],
+          "upscale_method": "lanczos",
+          "width": 384,
+          "height": 304,
+          "crop": "disabled"
+        }
+      },
+      "34": {
+        "class_type": "VAEEncode",
+        "inputs": {
+          "pixels": [
+            "33",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        }
+      },
+      "35": {
+        "class_type": "ReferenceLatent",
+        "inputs": {
+          "conditioning": [
+            "2",
+            0
+          ],
+          "latent": [
+            "34",
+            0
+          ]
+        }
+      },
+      "36": {
+        "class_type": "RandomNoise",
+        "inputs": {
+          "noise_seed": 1206503
+        }
+      },
+      "37": {
+        "class_type": "BasicGuider",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "conditioning": [
+            "35",
+            0
+          ]
+        }
+      }
+    },
+    "prompt_id": "011dda66-f8d5-4fed-9341-3ee3c409fe3f",
+    "server_image": {
+      "filename": "klein_ref_00005_.png",
+      "subfolder": "Thai02\\Style3",
+      "type": "output",
+      "metadata": {
+        "kind": "image",
+        "width": 480,
+        "height": 480
+      },
+      "id": "51e8caba-8ce3-4e09-a26e-d55aa6de583f"
+    },
+    "selection": {
+      "group": "student",
+      "product": "headphones",
+      "color1": "red",
+      "color2": "blue",
+      "primary_hex": "#EC6868",
+      "secondary_hex": "#5FB0E3",
+      "profile": "quality",
+      "seed": 1206503,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "headphones",
+      "alpha": true,
+      "positive_prompt": "Use only the cute flat 2D drawing style, simplified rounded shapes and soft color-block shading from the reference picture. Draw a NEW different object: cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one gaming headset with large earcups and a short boom microphone. soft red earcups, light blue headband and microphone. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background. Do not copy the shoe, pink card, hearts, text or background from the reference. The new object fills about 70 percent of a square white canvas."
+    }
+  },
+  {
+    "tag": "klein_ref_tops_student",
+    "seconds": 2.792,
+    "stages": [
+      {
+        "node": "2",
+        "seconds": 0.084
+      },
+      {
+        "node": "35",
+        "seconds": 0.807
+      },
+      {
+        "node": "37",
+        "seconds": 0.808
+      },
+      {
+        "node": "5",
+        "seconds": 0.809
+      },
+      {
+        "node": "6",
+        "seconds": 2.093
+      },
+      {
+        "node": "21",
+        "seconds": 2.285
+      },
+      {
+        "node": "22",
+        "seconds": 2.761
+      },
+      {
+        "node": "23",
+        "seconds": 2.762
+      },
+      {
+        "node": "8",
+        "seconds": 2.765
+      },
+      {
+        "node": "7",
+        "seconds": 2.766
+      },
+      {
+        "node": null,
+        "seconds": 2.789
+      }
+    ],
+    "api": {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "flux-2-klein-4b-fp8.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": "Use only the cute flat 2D drawing style, simplified rounded shapes and soft color-block shading from the reference picture. Draw a NEW different object: cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one pullover hoodie with a front pocket, complete hood and sleeves, centered. soft red body, light blue hood and sleeves. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background. Do not copy the shoe, pink card, hearts, text or background from the reference. The new object fills about 70 percent of a square white canvas.",
+          "clip": [
+            "30",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Positive product conditioning"
+        }
+      },
+      "4": {
+        "class_type": "EmptyFlux2LatentImage",
+        "inputs": {
+          "width": 640,
+          "height": 640,
+          "batch_size": 1
+        }
+      },
+      "5": {
+        "class_type": "SamplerCustomAdvanced",
+        "inputs": {
+          "noise": [
+            "36",
+            0
+          ],
+          "guider": [
+            "37",
+            0
+          ],
+          "sampler": [
+            "28",
+            0
+          ],
+          "sigmas": [
+            "29",
+            0
+          ],
+          "latent_image": [
+            "4",
+            0
+          ]
+        }
+      },
+      "6": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "5",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Decode final image"
+        }
+      },
+      "7": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "8",
+            0
+          ],
+          "filename_prefix": "Thai02/Style3/klein_ref"
+        },
+        "_meta": {
+          "title": "Final 480 x 480 RGBA PNG"
+        }
+      },
+      "8": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "23",
+            0
+          ],
+          "upscale_method": "area",
+          "width": 480,
+          "height": 480,
+          "crop": "disabled"
+        },
+        "_meta": {
+          "title": "Downsample RGBA to 480 x 480"
+        }
+      },
+      "10": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "simple sporty design"
+        },
+        "_meta": {
+          "title": "INPUT 1 / audience: student"
+        }
+      },
+      "11": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "simple flat illustration of one pullover hoodie with a front pocket, complete hood and sleeves, centered"
+        },
+        "_meta": {
+          "title": "INPUT 2 / product: tops"
+        }
+      },
+      "12": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "soft red body"
+        },
+        "_meta": {
+          "title": "INPUT 3 / primary: red",
+          "color_reference": "#EC6868 RGB(236, 104, 104)"
+        }
+      },
+      "13": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "light blue hood and sleeves"
+        },
+        "_meta": {
+          "title": "INPUT 4 / accent: blue",
+          "color_reference": "#5FB0E3 RGB(95, 176, 227)"
+        }
+      },
+      "14": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "11",
+            0
+          ],
+          "string_b": [
+            "15",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product + colors"
+        }
+      },
+      "15": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "12",
+            0
+          ],
+          "string_b": [
+            "13",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product-specific color parts"
+        }
+      },
+      "16": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "14",
+            0
+          ],
+          "string_b": [
+            "10",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Combine four choices"
+        }
+      },
+      "17": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "16",
+            0
+          ],
+          "string_b": "simple soft shaded illustration",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product first, then illustration style"
+        }
+      },
+      "18": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "17",
+            0
+          ],
+          "string_b": "one isolated item, plain white background, full view, centered with empty margins",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Fixed product composition"
+        }
+      },
+      "20": {
+        "class_type": "LoadBackgroundRemovalModel",
+        "inputs": {
+          "bg_removal_name": "birefnet.safetensors"
+        },
+        "_meta": {
+          "title": "BiRefNet foreground segmentation"
+        }
+      },
+      "21": {
+        "class_type": "RemoveBackground",
+        "inputs": {
+          "bg_removal_model": [
+            "20",
+            0
+          ],
+          "image": [
+            "6",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground mask at native resolution"
+        }
+      },
+      "22": {
+        "class_type": "InvertMask",
+        "inputs": {
+          "mask": [
+            "21",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground to Comfy alpha convention"
+        }
+      },
+      "23": {
+        "class_type": "JoinImageWithAlpha",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "alpha": [
+            "22",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Apply actual alpha (not painted transparency)"
+        }
+      },
+      "28": {
+        "class_type": "KSamplerSelect",
+        "inputs": {
+          "sampler_name": "euler"
+        }
+      },
+      "29": {
+        "class_type": "Flux2Scheduler",
+        "inputs": {
+          "steps": 4,
+          "width": 640,
+          "height": 640
+        }
+      },
+      "30": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen_3_4b.safetensors",
+          "type": "flux2",
+          "device": "default"
+        }
+      },
+      "31": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "flux2-vae.safetensors"
+        }
+      },
+      "32": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "Thai02Style3/style_user_fa1ec41434dabe24.png"
+        }
+      },
+      "33": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "32",
+            0
+          ],
+          "upscale_method": "lanczos",
+          "width": 384,
+          "height": 304,
+          "crop": "disabled"
+        }
+      },
+      "34": {
+        "class_type": "VAEEncode",
+        "inputs": {
+          "pixels": [
+            "33",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        }
+      },
+      "35": {
+        "class_type": "ReferenceLatent",
+        "inputs": {
+          "conditioning": [
+            "2",
+            0
+          ],
+          "latent": [
+            "34",
+            0
+          ]
+        }
+      },
+      "36": {
+        "class_type": "RandomNoise",
+        "inputs": {
+          "noise_seed": 1206503
+        }
+      },
+      "37": {
+        "class_type": "BasicGuider",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "conditioning": [
+            "35",
+            0
+          ]
+        }
+      }
+    },
+    "prompt_id": "785a2095-85a0-475c-b6a6-b3dae2587c8c",
+    "server_image": {
+      "filename": "klein_ref_00006_.png",
+      "subfolder": "Thai02\\Style3",
+      "type": "output",
+      "metadata": {
+        "kind": "image",
+        "width": 480,
+        "height": 480
+      },
+      "id": "ad15a16d-f001-4252-9675-d2f0764c299c"
+    },
+    "selection": {
+      "group": "student",
+      "product": "tops",
+      "color1": "red",
+      "color2": "blue",
+      "primary_hex": "#EC6868",
+      "secondary_hex": "#5FB0E3",
+      "profile": "quality",
+      "seed": 1206503,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "tops",
+      "alpha": true,
+      "positive_prompt": "Use only the cute flat 2D drawing style, simplified rounded shapes and soft color-block shading from the reference picture. Draw a NEW different object: cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one pullover hoodie with a front pocket, complete hood and sleeves, centered. soft red body, light blue hood and sleeves. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background. Do not copy the shoe, pink card, hearts, text or background from the reference. The new object fills about 70 percent of a square white canvas."
+    }
+  },
+  {
+    "tag": "klein_ref_bicycles_student",
+    "seconds": 3.111,
+    "stages": [
+      {
+        "node": "2",
+        "seconds": 0.098
+      },
+      {
+        "node": "35",
+        "seconds": 0.823
+      },
+      {
+        "node": "37",
+        "seconds": 0.823
+      },
+      {
+        "node": "5",
+        "seconds": 0.824
+      },
+      {
+        "node": "6",
+        "seconds": 2.094
+      },
+      {
+        "node": "21",
+        "seconds": 2.279
+      },
+      {
+        "node": "22",
+        "seconds": 2.752
+      },
+      {
+        "node": "23",
+        "seconds": 2.754
+      },
+      {
+        "node": "8",
+        "seconds": 2.757
+      },
+      {
+        "node": "7",
+        "seconds": 2.758
+      },
+      {
+        "node": null,
+        "seconds": 3.075
+      }
+    ],
+    "api": {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "flux-2-klein-4b-fp8.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": "Use only the cute flat 2D drawing style, simplified rounded shapes and soft color-block shading from the reference picture. Draw a NEW different object: cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one road bicycle with drop handlebars and thin tires, both wheels visible, centered. soft red frame, light blue wheel rims and handlebars. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background. Do not copy the shoe, pink card, hearts, text or background from the reference. The new object fills about 70 percent of a square white canvas.",
+          "clip": [
+            "30",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Positive product conditioning"
+        }
+      },
+      "4": {
+        "class_type": "EmptyFlux2LatentImage",
+        "inputs": {
+          "width": 640,
+          "height": 640,
+          "batch_size": 1
+        }
+      },
+      "5": {
+        "class_type": "SamplerCustomAdvanced",
+        "inputs": {
+          "noise": [
+            "36",
+            0
+          ],
+          "guider": [
+            "37",
+            0
+          ],
+          "sampler": [
+            "28",
+            0
+          ],
+          "sigmas": [
+            "29",
+            0
+          ],
+          "latent_image": [
+            "4",
+            0
+          ]
+        }
+      },
+      "6": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "5",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Decode final image"
+        }
+      },
+      "7": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "8",
+            0
+          ],
+          "filename_prefix": "Thai02/Style3/klein_ref"
+        },
+        "_meta": {
+          "title": "Final 480 x 480 RGBA PNG"
+        }
+      },
+      "8": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "23",
+            0
+          ],
+          "upscale_method": "area",
+          "width": 480,
+          "height": 480,
+          "crop": "disabled"
+        },
+        "_meta": {
+          "title": "Downsample RGBA to 480 x 480"
+        }
+      },
+      "10": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "simple sporty design"
+        },
+        "_meta": {
+          "title": "INPUT 1 / audience: student"
+        }
+      },
+      "11": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "simple flat illustration of one road bicycle with drop handlebars and thin tires, both wheels visible, centered"
+        },
+        "_meta": {
+          "title": "INPUT 2 / product: bicycles"
+        }
+      },
+      "12": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "soft red frame"
+        },
+        "_meta": {
+          "title": "INPUT 3 / primary: red",
+          "color_reference": "#EC6868 RGB(236, 104, 104)"
+        }
+      },
+      "13": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "light blue wheel rims and handlebars"
+        },
+        "_meta": {
+          "title": "INPUT 4 / accent: blue",
+          "color_reference": "#5FB0E3 RGB(95, 176, 227)"
+        }
+      },
+      "14": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "11",
+            0
+          ],
+          "string_b": [
+            "15",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product + colors"
+        }
+      },
+      "15": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "12",
+            0
+          ],
+          "string_b": [
+            "13",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product-specific color parts"
+        }
+      },
+      "16": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "14",
+            0
+          ],
+          "string_b": [
+            "10",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Combine four choices"
+        }
+      },
+      "17": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "16",
+            0
+          ],
+          "string_b": "simple soft shaded illustration",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product first, then illustration style"
+        }
+      },
+      "18": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "17",
+            0
+          ],
+          "string_b": "one isolated item, plain white background, full view, centered with empty margins",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Fixed product composition"
+        }
+      },
+      "20": {
+        "class_type": "LoadBackgroundRemovalModel",
+        "inputs": {
+          "bg_removal_name": "birefnet.safetensors"
+        },
+        "_meta": {
+          "title": "BiRefNet foreground segmentation"
+        }
+      },
+      "21": {
+        "class_type": "RemoveBackground",
+        "inputs": {
+          "bg_removal_model": [
+            "20",
+            0
+          ],
+          "image": [
+            "6",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground mask at native resolution"
+        }
+      },
+      "22": {
+        "class_type": "InvertMask",
+        "inputs": {
+          "mask": [
+            "21",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground to Comfy alpha convention"
+        }
+      },
+      "23": {
+        "class_type": "JoinImageWithAlpha",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "alpha": [
+            "22",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Apply actual alpha (not painted transparency)"
+        }
+      },
+      "28": {
+        "class_type": "KSamplerSelect",
+        "inputs": {
+          "sampler_name": "euler"
+        }
+      },
+      "29": {
+        "class_type": "Flux2Scheduler",
+        "inputs": {
+          "steps": 4,
+          "width": 640,
+          "height": 640
+        }
+      },
+      "30": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen_3_4b.safetensors",
+          "type": "flux2",
+          "device": "default"
+        }
+      },
+      "31": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "flux2-vae.safetensors"
+        }
+      },
+      "32": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "Thai02Style3/style_user_fa1ec41434dabe24.png"
+        }
+      },
+      "33": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "32",
+            0
+          ],
+          "upscale_method": "lanczos",
+          "width": 384,
+          "height": 304,
+          "crop": "disabled"
+        }
+      },
+      "34": {
+        "class_type": "VAEEncode",
+        "inputs": {
+          "pixels": [
+            "33",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        }
+      },
+      "35": {
+        "class_type": "ReferenceLatent",
+        "inputs": {
+          "conditioning": [
+            "2",
+            0
+          ],
+          "latent": [
+            "34",
+            0
+          ]
+        }
+      },
+      "36": {
+        "class_type": "RandomNoise",
+        "inputs": {
+          "noise_seed": 1206503
+        }
+      },
+      "37": {
+        "class_type": "BasicGuider",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "conditioning": [
+            "35",
+            0
+          ]
+        }
+      }
+    },
+    "prompt_id": "398f9cca-1c2c-4ade-8124-00295048c085",
+    "server_image": {
+      "filename": "klein_ref_00007_.png",
+      "subfolder": "Thai02\\Style3",
+      "type": "output",
+      "metadata": {
+        "kind": "image",
+        "width": 480,
+        "height": 480
+      },
+      "id": "f103888e-8569-4ab1-a438-43911e8b7c1b"
+    },
+    "selection": {
+      "group": "student",
+      "product": "bicycles",
+      "color1": "red",
+      "color2": "blue",
+      "primary_hex": "#EC6868",
+      "secondary_hex": "#5FB0E3",
+      "profile": "quality",
+      "seed": 1206503,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "bicycles",
+      "alpha": true,
+      "positive_prompt": "Use only the cute flat 2D drawing style, simplified rounded shapes and soft color-block shading from the reference picture. Draw a NEW different object: cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one road bicycle with drop handlebars and thin tires, both wheels visible, centered. soft red frame, light blue wheel rims and handlebars. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background. Do not copy the shoe, pink card, hearts, text or background from the reference. The new object fills about 70 percent of a square white canvas."
+    }
+  },
+  {
+    "tag": "klein_ref_tumblers_student",
+    "seconds": 2.801,
+    "stages": [
+      {
+        "node": "2",
+        "seconds": 0.105
+      },
+      {
+        "node": "35",
+        "seconds": 0.83
+      },
+      {
+        "node": "37",
+        "seconds": 0.83
+      },
+      {
+        "node": "5",
+        "seconds": 0.831
+      },
+      {
+        "node": "6",
+        "seconds": 2.115
+      },
+      {
+        "node": "21",
+        "seconds": 2.308
+      },
+      {
+        "node": "22",
+        "seconds": 2.772
+      },
+      {
+        "node": "23",
+        "seconds": 2.773
+      },
+      {
+        "node": "8",
+        "seconds": 2.776
+      },
+      {
+        "node": "7",
+        "seconds": 2.777
+      },
+      {
+        "node": null,
+        "seconds": 2.797
+      }
+    ],
+    "api": {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "flux-2-klein-4b-fp8.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": "Use only the cute flat 2D drawing style, simplified rounded shapes and soft color-block shading from the reference picture. Draw a NEW different object: cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one tall tumbler with a straw and flat lid. soft red body, light blue straw and lid. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background. Do not copy the shoe, pink card, hearts, text or background from the reference. The new object fills about 70 percent of a square white canvas.",
+          "clip": [
+            "30",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Positive product conditioning"
+        }
+      },
+      "4": {
+        "class_type": "EmptyFlux2LatentImage",
+        "inputs": {
+          "width": 640,
+          "height": 640,
+          "batch_size": 1
+        }
+      },
+      "5": {
+        "class_type": "SamplerCustomAdvanced",
+        "inputs": {
+          "noise": [
+            "36",
+            0
+          ],
+          "guider": [
+            "37",
+            0
+          ],
+          "sampler": [
+            "28",
+            0
+          ],
+          "sigmas": [
+            "29",
+            0
+          ],
+          "latent_image": [
+            "4",
+            0
+          ]
+        }
+      },
+      "6": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "5",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Decode final image"
+        }
+      },
+      "7": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "8",
+            0
+          ],
+          "filename_prefix": "Thai02/Style3/klein_ref"
+        },
+        "_meta": {
+          "title": "Final 480 x 480 RGBA PNG"
+        }
+      },
+      "8": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "23",
+            0
+          ],
+          "upscale_method": "area",
+          "width": 480,
+          "height": 480,
+          "crop": "disabled"
+        },
+        "_meta": {
+          "title": "Downsample RGBA to 480 x 480"
+        }
+      },
+      "10": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "simple sporty design"
+        },
+        "_meta": {
+          "title": "INPUT 1 / audience: student"
+        }
+      },
+      "11": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "one tall tumbler with a straw and flat lid"
+        },
+        "_meta": {
+          "title": "INPUT 2 / product: tumblers"
+        }
+      },
+      "12": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "soft red body"
+        },
+        "_meta": {
+          "title": "INPUT 3 / primary: red",
+          "color_reference": "#EC6868 RGB(236, 104, 104)"
+        }
+      },
+      "13": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "light blue straw and lid"
+        },
+        "_meta": {
+          "title": "INPUT 4 / accent: blue",
+          "color_reference": "#5FB0E3 RGB(95, 176, 227)"
+        }
+      },
+      "14": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "11",
+            0
+          ],
+          "string_b": [
+            "15",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product + colors"
+        }
+      },
+      "15": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "12",
+            0
+          ],
+          "string_b": [
+            "13",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product-specific color parts"
+        }
+      },
+      "16": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "14",
+            0
+          ],
+          "string_b": [
+            "10",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Combine four choices"
+        }
+      },
+      "17": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "16",
+            0
+          ],
+          "string_b": "simple soft shaded illustration",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product first, then illustration style"
+        }
+      },
+      "18": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "17",
+            0
+          ],
+          "string_b": "one isolated item, plain white background, full view, centered with empty margins",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Fixed product composition"
+        }
+      },
+      "20": {
+        "class_type": "LoadBackgroundRemovalModel",
+        "inputs": {
+          "bg_removal_name": "birefnet.safetensors"
+        },
+        "_meta": {
+          "title": "BiRefNet foreground segmentation"
+        }
+      },
+      "21": {
+        "class_type": "RemoveBackground",
+        "inputs": {
+          "bg_removal_model": [
+            "20",
+            0
+          ],
+          "image": [
+            "6",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground mask at native resolution"
+        }
+      },
+      "22": {
+        "class_type": "InvertMask",
+        "inputs": {
+          "mask": [
+            "21",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground to Comfy alpha convention"
+        }
+      },
+      "23": {
+        "class_type": "JoinImageWithAlpha",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "alpha": [
+            "22",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Apply actual alpha (not painted transparency)"
+        }
+      },
+      "28": {
+        "class_type": "KSamplerSelect",
+        "inputs": {
+          "sampler_name": "euler"
+        }
+      },
+      "29": {
+        "class_type": "Flux2Scheduler",
+        "inputs": {
+          "steps": 4,
+          "width": 640,
+          "height": 640
+        }
+      },
+      "30": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen_3_4b.safetensors",
+          "type": "flux2",
+          "device": "default"
+        }
+      },
+      "31": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "flux2-vae.safetensors"
+        }
+      },
+      "32": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "Thai02Style3/style_user_fa1ec41434dabe24.png"
+        }
+      },
+      "33": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "32",
+            0
+          ],
+          "upscale_method": "lanczos",
+          "width": 384,
+          "height": 304,
+          "crop": "disabled"
+        }
+      },
+      "34": {
+        "class_type": "VAEEncode",
+        "inputs": {
+          "pixels": [
+            "33",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        }
+      },
+      "35": {
+        "class_type": "ReferenceLatent",
+        "inputs": {
+          "conditioning": [
+            "2",
+            0
+          ],
+          "latent": [
+            "34",
+            0
+          ]
+        }
+      },
+      "36": {
+        "class_type": "RandomNoise",
+        "inputs": {
+          "noise_seed": 1206503
+        }
+      },
+      "37": {
+        "class_type": "BasicGuider",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "conditioning": [
+            "35",
+            0
+          ]
+        }
+      }
+    },
+    "prompt_id": "36e6c204-b0d3-49a9-9f08-e7fe1f6cb102",
+    "server_image": {
+      "filename": "klein_ref_00008_.png",
+      "subfolder": "Thai02\\Style3",
+      "type": "output",
+      "metadata": {
+        "kind": "image",
+        "width": 480,
+        "height": 480
+      },
+      "id": "2fe57190-072a-4f89-bc3f-a3a4a5aaa94d"
+    },
+    "selection": {
+      "group": "student",
+      "product": "tumblers",
+      "color1": "red",
+      "color2": "blue",
+      "primary_hex": "#EC6868",
+      "secondary_hex": "#5FB0E3",
+      "profile": "quality",
+      "seed": 1206503,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "tumblers",
+      "alpha": true,
+      "positive_prompt": "Use only the cute flat 2D drawing style, simplified rounded shapes and soft color-block shading from the reference picture. Draw a NEW different object: cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one tall tumbler with a straw and flat lid. soft red body, light blue straw and lid. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background. Do not copy the shoe, pink card, hearts, text or background from the reference. The new object fills about 70 percent of a square white canvas."
+    }
+  },
+  {
+    "tag": "klein_ref_wristwatches_student",
+    "seconds": 2.771,
+    "stages": [
+      {
+        "node": "2",
+        "seconds": 0.087
+      },
+      {
+        "node": "35",
+        "seconds": 0.821
+      },
+      {
+        "node": "37",
+        "seconds": 0.822
+      },
+      {
+        "node": "5",
+        "seconds": 0.822
+      },
+      {
+        "node": "6",
+        "seconds": 2.092
+      },
+      {
+        "node": "21",
+        "seconds": 2.278
+      },
+      {
+        "node": "22",
+        "seconds": 2.722
+      },
+      {
+        "node": "23",
+        "seconds": 2.724
+      },
+      {
+        "node": "8",
+        "seconds": 2.727
+      },
+      {
+        "node": "7",
+        "seconds": 2.729
+      },
+      {
+        "node": null,
+        "seconds": 2.751
+      }
+    ],
+    "api": {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "flux-2-klein-4b-fp8.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": "Use only the cute flat 2D drawing style, simplified rounded shapes and soft color-block shading from the reference picture. Draw a NEW different object: cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one rectangular digital sports wristwatch with a short plastic band, complete short wristband, centered. soft red plastic strap, light blue digital case. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background. Do not copy the shoe, pink card, hearts, text or background from the reference. The new object fills about 70 percent of a square white canvas.",
+          "clip": [
+            "30",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Positive product conditioning"
+        }
+      },
+      "4": {
+        "class_type": "EmptyFlux2LatentImage",
+        "inputs": {
+          "width": 640,
+          "height": 640,
+          "batch_size": 1
+        }
+      },
+      "5": {
+        "class_type": "SamplerCustomAdvanced",
+        "inputs": {
+          "noise": [
+            "36",
+            0
+          ],
+          "guider": [
+            "37",
+            0
+          ],
+          "sampler": [
+            "28",
+            0
+          ],
+          "sigmas": [
+            "29",
+            0
+          ],
+          "latent_image": [
+            "4",
+            0
+          ]
+        }
+      },
+      "6": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "5",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Decode final image"
+        }
+      },
+      "7": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "8",
+            0
+          ],
+          "filename_prefix": "Thai02/Style3/klein_ref"
+        },
+        "_meta": {
+          "title": "Final 480 x 480 RGBA PNG"
+        }
+      },
+      "8": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "23",
+            0
+          ],
+          "upscale_method": "area",
+          "width": 480,
+          "height": 480,
+          "crop": "disabled"
+        },
+        "_meta": {
+          "title": "Downsample RGBA to 480 x 480"
+        }
+      },
+      "10": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "simple sporty design"
+        },
+        "_meta": {
+          "title": "INPUT 1 / audience: student"
+        }
+      },
+      "11": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "simple flat illustration of one rectangular digital sports wristwatch with a short plastic band, complete short wristband, centered"
+        },
+        "_meta": {
+          "title": "INPUT 2 / product: wristwatches"
+        }
+      },
+      "12": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "soft red plastic strap"
+        },
+        "_meta": {
+          "title": "INPUT 3 / primary: red",
+          "color_reference": "#EC6868 RGB(236, 104, 104)"
+        }
+      },
+      "13": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "light blue digital case"
+        },
+        "_meta": {
+          "title": "INPUT 4 / accent: blue",
+          "color_reference": "#5FB0E3 RGB(95, 176, 227)"
+        }
+      },
+      "14": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "11",
+            0
+          ],
+          "string_b": [
+            "15",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product + colors"
+        }
+      },
+      "15": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "12",
+            0
+          ],
+          "string_b": [
+            "13",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product-specific color parts"
+        }
+      },
+      "16": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "14",
+            0
+          ],
+          "string_b": [
+            "10",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Combine four choices"
+        }
+      },
+      "17": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "16",
+            0
+          ],
+          "string_b": "simple soft shaded illustration",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product first, then illustration style"
+        }
+      },
+      "18": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "17",
+            0
+          ],
+          "string_b": "one isolated item, plain white background, full view, centered with empty margins",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Fixed product composition"
+        }
+      },
+      "20": {
+        "class_type": "LoadBackgroundRemovalModel",
+        "inputs": {
+          "bg_removal_name": "birefnet.safetensors"
+        },
+        "_meta": {
+          "title": "BiRefNet foreground segmentation"
+        }
+      },
+      "21": {
+        "class_type": "RemoveBackground",
+        "inputs": {
+          "bg_removal_model": [
+            "20",
+            0
+          ],
+          "image": [
+            "6",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground mask at native resolution"
+        }
+      },
+      "22": {
+        "class_type": "InvertMask",
+        "inputs": {
+          "mask": [
+            "21",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground to Comfy alpha convention"
+        }
+      },
+      "23": {
+        "class_type": "JoinImageWithAlpha",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "alpha": [
+            "22",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Apply actual alpha (not painted transparency)"
+        }
+      },
+      "28": {
+        "class_type": "KSamplerSelect",
+        "inputs": {
+          "sampler_name": "euler"
+        }
+      },
+      "29": {
+        "class_type": "Flux2Scheduler",
+        "inputs": {
+          "steps": 4,
+          "width": 640,
+          "height": 640
+        }
+      },
+      "30": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen_3_4b.safetensors",
+          "type": "flux2",
+          "device": "default"
+        }
+      },
+      "31": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "flux2-vae.safetensors"
+        }
+      },
+      "32": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "Thai02Style3/style_user_fa1ec41434dabe24.png"
+        }
+      },
+      "33": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "32",
+            0
+          ],
+          "upscale_method": "lanczos",
+          "width": 384,
+          "height": 304,
+          "crop": "disabled"
+        }
+      },
+      "34": {
+        "class_type": "VAEEncode",
+        "inputs": {
+          "pixels": [
+            "33",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        }
+      },
+      "35": {
+        "class_type": "ReferenceLatent",
+        "inputs": {
+          "conditioning": [
+            "2",
+            0
+          ],
+          "latent": [
+            "34",
+            0
+          ]
+        }
+      },
+      "36": {
+        "class_type": "RandomNoise",
+        "inputs": {
+          "noise_seed": 1206503
+        }
+      },
+      "37": {
+        "class_type": "BasicGuider",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "conditioning": [
+            "35",
+            0
+          ]
+        }
+      }
+    },
+    "prompt_id": "c47d77a6-4229-42db-97ad-42d529484bb7",
+    "server_image": {
+      "filename": "klein_ref_00009_.png",
+      "subfolder": "Thai02\\Style3",
+      "type": "output",
+      "metadata": {
+        "kind": "image",
+        "width": 480,
+        "height": 480
+      },
+      "id": "90cb118d-438f-400b-9d39-ce635248fdc1"
+    },
+    "selection": {
+      "group": "student",
+      "product": "wristwatches",
+      "color1": "red",
+      "color2": "blue",
+      "primary_hex": "#EC6868",
+      "secondary_hex": "#5FB0E3",
+      "profile": "quality",
+      "seed": 1206503,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "wristwatches",
+      "alpha": true,
+      "positive_prompt": "Use only the cute flat 2D drawing style, simplified rounded shapes and soft color-block shading from the reference picture. Draw a NEW different object: cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one rectangular digital sports wristwatch with a short plastic band, complete short wristband, centered. soft red plastic strap, light blue digital case. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background. Do not copy the shoe, pink card, hearts, text or background from the reference. The new object fills about 70 percent of a square white canvas."
+    }
+  },
+  {
+    "tag": "klein_ref_umbrellas_student",
+    "seconds": 2.777,
+    "stages": [
+      {
+        "node": "2",
+        "seconds": 0.089
+      },
+      {
+        "node": "35",
+        "seconds": 0.809
+      },
+      {
+        "node": "37",
+        "seconds": 0.81
+      },
+      {
+        "node": "5",
+        "seconds": 0.811
+      },
+      {
+        "node": "6",
+        "seconds": 2.095
+      },
+      {
+        "node": "21",
+        "seconds": 2.283
+      },
+      {
+        "node": "22",
+        "seconds": 2.738
+      },
+      {
+        "node": "23",
+        "seconds": 2.74
+      },
+      {
+        "node": "8",
+        "seconds": 2.743
+      },
+      {
+        "node": "7",
+        "seconds": 2.745
+      },
+      {
+        "node": null,
+        "seconds": 2.774
+      }
+    ],
+    "api": {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "flux-2-klein-4b-fp8.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPTextEncode",
+        "inputs": {
+          "text": "Use only the cute flat 2D drawing style, simplified rounded shapes and soft color-block shading from the reference picture. Draw a NEW different object: cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one compact folding umbrella with a short telescopic shaft and a straight handle. soft red canopy, light blue handle and rim. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background. Do not copy the shoe, pink card, hearts, text or background from the reference. The new object fills about 70 percent of a square white canvas.",
+          "clip": [
+            "30",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Positive product conditioning"
+        }
+      },
+      "4": {
+        "class_type": "EmptyFlux2LatentImage",
+        "inputs": {
+          "width": 640,
+          "height": 640,
+          "batch_size": 1
+        }
+      },
+      "5": {
+        "class_type": "SamplerCustomAdvanced",
+        "inputs": {
+          "noise": [
+            "36",
+            0
+          ],
+          "guider": [
+            "37",
+            0
+          ],
+          "sampler": [
+            "28",
+            0
+          ],
+          "sigmas": [
+            "29",
+            0
+          ],
+          "latent_image": [
+            "4",
+            0
+          ]
+        }
+      },
+      "6": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "5",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Decode final image"
+        }
+      },
+      "7": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "8",
+            0
+          ],
+          "filename_prefix": "Thai02/Style3/klein_ref"
+        },
+        "_meta": {
+          "title": "Final 480 x 480 RGBA PNG"
+        }
+      },
+      "8": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "23",
+            0
+          ],
+          "upscale_method": "area",
+          "width": 480,
+          "height": 480,
+          "crop": "disabled"
+        },
+        "_meta": {
+          "title": "Downsample RGBA to 480 x 480"
+        }
+      },
+      "10": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "simple sporty design"
+        },
+        "_meta": {
+          "title": "INPUT 1 / audience: student"
+        }
+      },
+      "11": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "one compact folding umbrella with a short telescopic shaft and a straight handle"
+        },
+        "_meta": {
+          "title": "INPUT 2 / product: umbrellas"
+        }
+      },
+      "12": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "soft red canopy"
+        },
+        "_meta": {
+          "title": "INPUT 3 / primary: red",
+          "color_reference": "#EC6868 RGB(236, 104, 104)"
+        }
+      },
+      "13": {
+        "class_type": "PrimitiveString",
+        "inputs": {
+          "value": "light blue handle and rim"
+        },
+        "_meta": {
+          "title": "INPUT 4 / accent: blue",
+          "color_reference": "#5FB0E3 RGB(95, 176, 227)"
+        }
+      },
+      "14": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "11",
+            0
+          ],
+          "string_b": [
+            "15",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product + colors"
+        }
+      },
+      "15": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "12",
+            0
+          ],
+          "string_b": [
+            "13",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product-specific color parts"
+        }
+      },
+      "16": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "14",
+            0
+          ],
+          "string_b": [
+            "10",
+            0
+          ],
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Combine four choices"
+        }
+      },
+      "17": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "16",
+            0
+          ],
+          "string_b": "simple soft shaded illustration",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Product first, then illustration style"
+        }
+      },
+      "18": {
+        "class_type": "StringConcatenate",
+        "inputs": {
+          "string_a": [
+            "17",
+            0
+          ],
+          "string_b": "one isolated item, plain white background, full view, centered with empty margins",
+          "delimiter": ", "
+        },
+        "_meta": {
+          "title": "Fixed product composition"
+        }
+      },
+      "20": {
+        "class_type": "LoadBackgroundRemovalModel",
+        "inputs": {
+          "bg_removal_name": "birefnet.safetensors"
+        },
+        "_meta": {
+          "title": "BiRefNet foreground segmentation"
+        }
+      },
+      "21": {
+        "class_type": "RemoveBackground",
+        "inputs": {
+          "bg_removal_model": [
+            "20",
+            0
+          ],
+          "image": [
+            "6",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground mask at native resolution"
+        }
+      },
+      "22": {
+        "class_type": "InvertMask",
+        "inputs": {
+          "mask": [
+            "21",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Foreground to Comfy alpha convention"
+        }
+      },
+      "23": {
+        "class_type": "JoinImageWithAlpha",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "alpha": [
+            "22",
+            0
+          ]
+        },
+        "_meta": {
+          "title": "Apply actual alpha (not painted transparency)"
+        }
+      },
+      "28": {
+        "class_type": "KSamplerSelect",
+        "inputs": {
+          "sampler_name": "euler"
+        }
+      },
+      "29": {
+        "class_type": "Flux2Scheduler",
+        "inputs": {
+          "steps": 4,
+          "width": 640,
+          "height": 640
+        }
+      },
+      "30": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen_3_4b.safetensors",
+          "type": "flux2",
+          "device": "default"
+        }
+      },
+      "31": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "flux2-vae.safetensors"
+        }
+      },
+      "32": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "Thai02Style3/style_user_fa1ec41434dabe24.png"
+        }
+      },
+      "33": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "32",
+            0
+          ],
+          "upscale_method": "lanczos",
+          "width": 384,
+          "height": 304,
+          "crop": "disabled"
+        }
+      },
+      "34": {
+        "class_type": "VAEEncode",
+        "inputs": {
+          "pixels": [
+            "33",
+            0
+          ],
+          "vae": [
+            "31",
+            0
+          ]
+        }
+      },
+      "35": {
+        "class_type": "ReferenceLatent",
+        "inputs": {
+          "conditioning": [
+            "2",
+            0
+          ],
+          "latent": [
+            "34",
+            0
+          ]
+        }
+      },
+      "36": {
+        "class_type": "RandomNoise",
+        "inputs": {
+          "noise_seed": 1206503
+        }
+      },
+      "37": {
+        "class_type": "BasicGuider",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "conditioning": [
+            "35",
+            0
+          ]
+        }
+      }
+    },
+    "prompt_id": "a0e64580-5794-4bd1-9b5f-0e336eb5eafe",
+    "server_image": {
+      "filename": "klein_ref_00010_.png",
+      "subfolder": "Thai02\\Style3",
+      "type": "output",
+      "metadata": {
+        "kind": "image",
+        "width": 480,
+        "height": 480
+      },
+      "id": "e3127b44-71ae-484b-b38d-524dcd098bf8"
+    },
+    "selection": {
+      "group": "student",
+      "product": "umbrellas",
+      "color1": "red",
+      "color2": "blue",
+      "primary_hex": "#EC6868",
+      "secondary_hex": "#5FB0E3",
+      "profile": "quality",
+      "seed": 1206503,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "umbrellas",
+      "alpha": true,
+      "positive_prompt": "Use only the cute flat 2D drawing style, simplified rounded shapes and soft color-block shading from the reference picture. Draw a NEW different object: cute polished 2D mobile game item illustration, softly rounded proportions, broad clean color shapes, gentle pastel cel shading, subtle colored edges, smooth finished highlights. one compact folding umbrella with a short telescopic shaft and a straight handle. soft red canopy, light blue handle and rim. One complete standalone object, fully visible, modest size in the middle with wide white margins, plain white background. Do not copy the shoe, pink card, hearts, text or background from the reference. The new object fills about 70 percent of a square white canvas."
+    }
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "Assets/Scripts/UI/BlockExperienceView.cs": "7885128c902bed1be50572ba36ee2d1dba539c4495963f8e347e273dfb0c9b24",
+  "Assets/Scripts/Blocks/BlockExperienceController.cs": "8775fddf3755c355ccb6c15ec2250ef20896a39fd5619bc1d40a2122c06fb30d",
+  "Assets/Scripts/Core/GameManager.cs": "a592e78ea23de2ec55de29f18f57ff561ed847c33d7e6df612da1bd56a20b4ae",
+  "Assets/Scenes/0_Idle.unity": "4f676441e562af04b5f17af3e882a45797fe993ca53f5ab3c9c052ef05f1ec54",
+  "Assets/Scenes/1_Game.unity": "2324395a9ae62f3396dcd16281f0727b0f50b6422527776bef8d2f871e30b973",
+  "Assets/Scenes/2_Result.unity": "65c47b0a62500cd5f37a78b1130c87f475cc3eb8de5178dd15e5927249bcae85",
+  "Packages/manifest.json": "11b34c9c62182caaab314c1878892a5cc536ef0b1846a334e58d7a2025ac67d7",
+  "Packages/packages-lock.json": "993f6725ad34ef0f2ffa6f2cc2355b72755ebc74aa2b4cfe803104195e5c62ee"
+}

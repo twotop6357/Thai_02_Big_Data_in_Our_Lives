@@ -26,6 +26,8 @@ def run(server, group, product, color1, color2, profile, seed, timeout, image_pa
     if queue.get("queue_running") or queue.get("queue_pending"):
         raise RuntimeError("ComfyUI is busy. No benchmark job was submitted.")
     api, ui, selection = build(group, product, color1, color2, profile, seed)
+    from prepare_style_reference import ensure
+    ensure(server)
     started = time.perf_counter()
     queued = http(server, "/prompt", {"prompt": api, "client_id": str(uuid.uuid4()),
                                      "extra_data": {"extra_pnginfo": {"workflow": ui}}})
@@ -72,9 +74,10 @@ def main():
     parser.add_argument("--warmup", type=int, default=1)
     parser.add_argument("--profile", choices=["balanced", "fast", "quality"], default="quality")
     parser.add_argument("--timeout", type=float, default=180)
+    parser.add_argument("--target-seconds", type=float, default=15)
     parser.add_argument("--output-dir", type=Path, default=Path(__file__).parent / "results")
     args = parser.parse_args()
-    if args.runs < 1 or args.warmup < 0 or args.timeout <= 0:
+    if args.runs < 1 or args.warmup < 0 or args.timeout <= 0 or args.target_seconds <= 0:
         parser.error("runs >= 1, warmup >= 0 and timeout > 0 are required.")
     stats = http(args.server, "/system_stats")
     devices = [device.get("name", "unknown") for device in stats.get("devices", [])]
@@ -86,11 +89,14 @@ def main():
               "comfyui_version": stats.get("system", {}).get("comfyui_version"),
               "pytorch_version": stats.get("system", {}).get("pytorch_version"),
               "checkpoint": read_json("model.json")["filename"],
+              "control": None,
               "sampling": read_json("presets.json")["profiles"][args.profile],
               "internal_resolution": read_json("model.json")["internal_resolution"], "output_resolution": [480, 480],
-              "profile": args.profile, "target_seconds": 20, "warmup": [], "runs": []}
-    cases = [("student", "bag", "blue", "white"), ("child", "sunglasses", "red", "yellow"),
-             ("working_adult", "bag", "black", "blue"), ("senior", "sunglasses", "white", "green")]
+              "profile": args.profile, "target_seconds": args.target_seconds, "warmup": [], "runs": []}
+    products = list(read_json("presets.json")["products"])
+    groups = list(read_json("presets.json")["groups"])
+    pairs = [("red", "blue"), ("green", "white"), ("yellow", "black"), ("blue", "white")]
+    cases = [(groups[i % len(groups)], product, *pairs[i % len(pairs)]) for i, product in enumerate(products)]
     args.output_dir.mkdir(parents=True, exist_ok=True)
     for i in range(args.warmup + args.runs):
         is_warmup = i < args.warmup
@@ -103,8 +109,8 @@ def main():
     values = sorted(item["seconds_request_to_png"] for item in report["runs"])
     report["summary"] = {"count": len(values), "median_seconds": statistics.median(values),
                          "p95_seconds": values[max(0, math.ceil(0.95 * len(values)) - 1)],
-                         "max_seconds": max(values), "meets_20s_on_measured_device": max(values) <= 20,
-                         "target_gpu_acceptance_verified": report["target_device_match"] and len(values) >= 20 and max(values) <= 20}
+                         "max_seconds": max(values), "meets_target_on_measured_device": max(values) <= args.target_seconds,
+                         "target_gpu_acceptance_verified": report["target_device_match"] and args.warmup > 0 and len(values) >= 20 and max(values) <= args.target_seconds}
     (args.output_dir / "benchmark.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report["summary"], indent=2), flush=True)
 

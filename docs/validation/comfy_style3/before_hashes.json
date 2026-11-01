@@ -1,0 +1,17 @@
+{
+  "Assets/Scripts/Blocks/Data/BlockSelection.cs": "c8b7eb62f92738a10bd6353881ead881269a51eb2e3d7d456874931475186f11",
+  "Assets/Scripts/Blocks/BlockExperienceController.cs": "a47c1f4e8ccd23f9d40c89d171007b5bc531bf5df30412169b8d6d7c8c8d0ebb",
+  "Assets/Scripts/Blocks/Data/GeneratedImageFraming.cs": "0573905506afb55e15c22c8169da7d9c6da1ea5c08a74f33c47b937f4e392ad2",
+  "Assets/StreamingAssets/BlockGeneration/BlockCatalog.json": "ce717b587425fb8f22e251627e918a396770595c0e94b94f89365aaf0e67c1ee",
+  "Assets/StreamingAssets/BlockGeneration/product_480.api.json": "5719ee64b5f31f32e74afb0cca6b3a50ccb7de7ce1f6507c407bcf0e7c697329",
+  "Tools/ComfyUI/model.json": "c39f6cfec38b4df8bd964f6605e2bd63a968897024f54e4dd7f7d73d909eac9a",
+  "Tools/ComfyUI/presets.json": "11521e9b70c063d0f8f2a313c4a44945347ba650288d861bd34a0d20d4fa597f",
+  "Tools/ComfyUI/build_workflow.py": "d5470e4c08b0fb38faea40ba5f4a19d9e3bdd48f0a885b0d0a1d6aeef8cb2383",
+  "Tools/ComfyUI/workflows/product_480.api.json": "5719ee64b5f31f32e74afb0cca6b3a50ccb7de7ce1f6507c407bcf0e7c697329",
+  "Assets/Scenes/0_Idle.unity": "4f676441e562af04b5f17af3e882a45797fe993ca53f5ab3c9c052ef05f1ec54",
+  "Assets/Scenes/1_Game.unity": "2324395a9ae62f3396dcd16281f0727b0f50b6422527776bef8d2f871e30b973",
+  "Assets/Scenes/2_Result.unity": "65c47b0a62500cd5f37a78b1130c87f475cc3eb8de5178dd15e5927249bcae85",
+  "Packages/manifest.json": "11b34c9c62182caaab314c1878892a5cc536ef0b1846a334e58d7a2025ac67d7",
+  "Packages/packages-lock.json": "993f6725ad34ef0f2ffa6f2cc2355b72755ebc74aa2b4cfe803104195e5c62ee",
+  "ProjectSettings/ProjectSettings.asset": "40e01a419194abf7e1caffa8ce5e181046074e040bb42dfabdd1cad3c4180a67"
+}

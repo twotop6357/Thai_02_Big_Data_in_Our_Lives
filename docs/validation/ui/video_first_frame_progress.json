@@ -1,0 +1,864 @@
+{
+  "task": "VIDEO-FIRST-001",
+  "unity": "2022.3.62f3",
+  "checks": [
+    "Before any decoder work, the existing ad remains visible and the uninitialized RawImage is disabled",
+    "Home returns to Idle with unlocked input",
+    "Home during prepare leaves no late playback",
+    "th decoded opening contains real image detail, not a black or white placeholder",
+    "th decoded opening is opaque and cannot expose the Skybox through alpha",
+    "th first Canvas presentation is exactly decoded frame zero",
+    "th native frameReady supplies frame zero before reveal",
+    "th every rendered preparation/handoff frame is covered by the ad or a valid opaque video",
+    "th opening immediately advances instead of remaining frozen",
+    "th handoff is fully opaque without a fade exposing the camera",
+    "th actual playback releases the visual lock and keeps inactivity paused",
+    "th startup restores audio/drop settings and stops per-frame callbacks",
+    "Home returns to Idle with unlocked input",
+    "Thai home releases the decoder render target",
+    "English title language selection is preserved",
+    "Missing-video failure keeps the opaque ad under its popup instead of exposing an empty video surface",
+    "Failed prepare resumes inactivity and permits retry",
+    "en_retry decoded opening contains real image detail, not a black or white placeholder",
+    "en_retry decoded opening is opaque and cannot expose the Skybox through alpha",
+    "en_retry first Canvas presentation is exactly decoded frame zero",
+    "en_retry native frameReady supplies frame zero before reveal",
+    "en_retry every rendered preparation/handoff frame is covered by the ad or a valid opaque video",
+    "en_retry opening immediately advances instead of remaining frozen",
+    "en_retry handoff is fully opaque without a fade exposing the camera",
+    "en_retry actual playback releases the visual lock and keeps inactivity paused",
+    "en_retry startup restores audio/drop settings and stops per-frame callbacks",
+    "Video completion retains its final decoded frame behind the existing popup and resumes inactivity",
+    "All four removal signals still return home after video completion",
+    "en_repeat decoded opening contains real image detail, not a black or white placeholder",
+    "en_repeat decoded opening is opaque and cannot expose the Skybox through alpha",
+    "en_repeat first Canvas presentation is exactly decoded frame zero",
+    "en_repeat native frameReady supplies frame zero before reveal",
+    "en_repeat every rendered preparation/handoff frame is covered by the ad or a valid opaque video",
+    "en_repeat opening immediately advances instead of remaining frozen",
+    "en_repeat handoff is fully opaque without a fade exposing the camera",
+    "en_repeat actual playback releases the visual lock and keeps inactivity paused",
+    "en_repeat startup restores audio/drop settings and stops per-frame callbacks",
+    "Disabling the finished-video controller restores the opaque ad before releasing the final frame",
+    "Re-enabling after final-frame cleanup restores a usable advertisement without exposing the camera",
+    "Home returns to Idle with unlocked input",
+    "Repeated playback/home releases all owned render targets and result images"
+  ],
+  "playbacks": [
+    {
+      "name": "th",
+      "firstPresentedFrame": 0,
+      "progressFrame": 8,
+      "uncoveredRenderCallbacks": 0,
+      "timeline": [
+        {
+          "state": "Advertisement",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Advertisement",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Advertisement",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Advertisement",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Advertisement",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 0.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 0.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 0.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 0.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 0.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 0.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 0.0
+        },
+        {
+          "state": "Preparing",
+          "frame": 0,
+          "ad": true,
+          "video": false,
+          "alpha": 0.0
+        },
+        {
+          "state": "Preparing",
+          "frame": 0,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 2,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 2,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 3,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 3,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 4,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 4,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 5,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 5,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 6,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 6,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 7,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 7,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 8,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        }
+      ]
+    },
+    {
+      "name": "en_retry",
+      "firstPresentedFrame": 0,
+      "progressFrame": 8,
+      "uncoveredRenderCallbacks": 0,
+      "timeline": [
+        {
+          "state": "Failed",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Failed",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Failed",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Failed",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Failed",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 0.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 0.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 0.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 0.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 0.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 0.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 0.0
+        },
+        {
+          "state": "Preparing",
+          "frame": 0,
+          "ad": true,
+          "video": false,
+          "alpha": 0.0
+        },
+        {
+          "state": "Preparing",
+          "frame": 0,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 2,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 2,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 3,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 3,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 4,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 4,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 5,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 5,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 6,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 6,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 7,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 7,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 8,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        }
+      ]
+    },
+    {
+      "name": "en_repeat",
+      "firstPresentedFrame": 0,
+      "progressFrame": 8,
+      "uncoveredRenderCallbacks": 0,
+      "timeline": [
+        {
+          "state": "Advertisement",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Advertisement",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Advertisement",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Advertisement",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Advertisement",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 1.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 0.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 0.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 0.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 0.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 0.0
+        },
+        {
+          "state": "Preparing",
+          "frame": -1,
+          "ad": true,
+          "video": false,
+          "alpha": 0.0
+        },
+        {
+          "state": "Preparing",
+          "frame": 0,
+          "ad": true,
+          "video": false,
+          "alpha": 0.0
+        },
+        {
+          "state": "Preparing",
+          "frame": 0,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 2,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 2,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 3,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 3,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 4,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 4,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 5,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 5,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 6,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 6,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 7,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 7,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        },
+        {
+          "state": "Playing",
+          "frame": 8,
+          "ad": false,
+          "video": true,
+          "alpha": 1.0
+        }
+      ]
+    }
+  ]
+}
