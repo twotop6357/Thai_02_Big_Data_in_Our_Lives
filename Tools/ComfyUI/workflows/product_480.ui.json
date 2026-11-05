@@ -1,6 +1,6 @@
 {
-  "last_node_id": 39,
-  "last_link_id": 34,
+  "last_node_id": 63,
+  "last_link_id": 73,
   "nodes": [
     {
       "id": 1,
@@ -23,7 +23,7 @@
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            33
+            72
           ]
         }
       ],
@@ -71,7 +71,7 @@
           "type": "CONDITIONING",
           "links": [
             3,
-            31
+            70
           ]
         }
       ],
@@ -244,7 +244,10 @@
           "type": "IMAGE",
           "links": [
             22,
-            24
+            24,
+            26,
+            27,
+            28
           ]
         }
       ],
@@ -383,7 +386,8 @@
           "name": "STRING",
           "type": "STRING",
           "links": [
-            13
+            13,
+            57
           ]
         }
       ],
@@ -693,7 +697,7 @@
       },
       "widgets_values": [
         "",
-        "One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render",
+        "One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Flat uniform medium-gray background (#808080), opaque object surfaces, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render",
         ". "
       ]
     },
@@ -761,7 +765,9 @@
           "name": "mask",
           "type": "MASK",
           "links": [
-            23
+            55,
+            60,
+            63
           ]
         }
       ],
@@ -809,7 +815,7 @@
     {
       "id": 23,
       "type": "JoinImageWithAlpha",
-      "title": "Apply actual alpha (not painted transparency)",
+      "title": "Apply repaired alpha to unchanged decoded RGB",
       "pos": [
         2830,
         0
@@ -848,6 +854,1030 @@
       "widgets_values": []
     },
     {
+      "id": 40,
+      "type": "ImageToMask",
+      "title": "Original red channel for opacity protection",
+      "pos": [
+        1690,
+        970
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 26
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            29,
+            34,
+            37,
+            38,
+            41
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageToMask"
+      },
+      "widgets_values": [
+        "red"
+      ]
+    },
+    {
+      "id": 41,
+      "type": "ImageToMask",
+      "title": "Original green channel for opacity protection",
+      "pos": [
+        2070,
+        970
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 27
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            30,
+            35,
+            36
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageToMask"
+      },
+      "widgets_values": [
+        "green"
+      ]
+    },
+    {
+      "id": 42,
+      "type": "ImageToMask",
+      "title": "Original blue channel for opacity protection",
+      "pos": [
+        2450,
+        970
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 28
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            32,
+            39,
+            40
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageToMask"
+      },
+      "widgets_values": [
+        "blue"
+      ]
+    },
+    {
+      "id": 43,
+      "type": "MaskComposite",
+      "title": "White surface support R x G",
+      "pos": [
+        2830,
+        970
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "destination",
+          "type": "MASK",
+          "link": 29
+        },
+        {
+          "name": "source",
+          "type": "MASK",
+          "link": 30
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            31
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MaskComposite"
+      },
+      "widgets_values": [
+        0,
+        0,
+        "multiply"
+      ]
+    },
+    {
+      "id": 44,
+      "type": "MaskComposite",
+      "title": "White surface support R x G x B",
+      "pos": [
+        1690,
+        1210
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "destination",
+          "type": "MASK",
+          "link": 31
+        },
+        {
+          "name": "source",
+          "type": "MASK",
+          "link": 32
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            33,
+            51
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MaskComposite"
+      },
+      "widgets_values": [
+        0,
+        0,
+        "multiply"
+      ]
+    },
+    {
+      "id": 45,
+      "type": "ThresholdMask",
+      "title": "Protect white and pale white shading, retain neutral-gray background",
+      "pos": [
+        2070,
+        1210
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 33
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            49
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ThresholdMask"
+      },
+      "widgets_values": [
+        0.65
+      ]
+    },
+    {
+      "id": 46,
+      "type": "MaskComposite",
+      "title": "Positive red-green chroma",
+      "pos": [
+        2450,
+        1210
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "destination",
+          "type": "MASK",
+          "link": 34
+        },
+        {
+          "name": "source",
+          "type": "MASK",
+          "link": 35
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            42
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MaskComposite"
+      },
+      "widgets_values": [
+        0,
+        0,
+        "subtract"
+      ]
+    },
+    {
+      "id": 47,
+      "type": "MaskComposite",
+      "title": "Positive green-red chroma",
+      "pos": [
+        2830,
+        1210
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "destination",
+          "type": "MASK",
+          "link": 36
+        },
+        {
+          "name": "source",
+          "type": "MASK",
+          "link": 37
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            43
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MaskComposite"
+      },
+      "widgets_values": [
+        0,
+        0,
+        "subtract"
+      ]
+    },
+    {
+      "id": 48,
+      "type": "MaskComposite",
+      "title": "Positive red-blue chroma",
+      "pos": [
+        1690,
+        1450
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "destination",
+          "type": "MASK",
+          "link": 38
+        },
+        {
+          "name": "source",
+          "type": "MASK",
+          "link": 39
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            44
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MaskComposite"
+      },
+      "widgets_values": [
+        0,
+        0,
+        "subtract"
+      ]
+    },
+    {
+      "id": 49,
+      "type": "MaskComposite",
+      "title": "Positive blue-red chroma",
+      "pos": [
+        2070,
+        1450
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 30,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "destination",
+          "type": "MASK",
+          "link": 40
+        },
+        {
+          "name": "source",
+          "type": "MASK",
+          "link": 41
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            45
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MaskComposite"
+      },
+      "widgets_values": [
+        0,
+        0,
+        "subtract"
+      ]
+    },
+    {
+      "id": 50,
+      "type": "MaskComposite",
+      "title": "Absolute red-green chroma",
+      "pos": [
+        2450,
+        1450
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "destination",
+          "type": "MASK",
+          "link": 42
+        },
+        {
+          "name": "source",
+          "type": "MASK",
+          "link": 43
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            46
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MaskComposite"
+      },
+      "widgets_values": [
+        0,
+        0,
+        "add"
+      ]
+    },
+    {
+      "id": 51,
+      "type": "MaskComposite",
+      "title": "Absolute red-blue chroma",
+      "pos": [
+        2830,
+        1450
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 32,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "destination",
+          "type": "MASK",
+          "link": 44
+        },
+        {
+          "name": "source",
+          "type": "MASK",
+          "link": 45
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            47
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MaskComposite"
+      },
+      "widgets_values": [
+        0,
+        0,
+        "add"
+      ]
+    },
+    {
+      "id": 52,
+      "type": "MaskComposite",
+      "title": "Color surface support, independent of chosen hue",
+      "pos": [
+        1690,
+        1690
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 33,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "destination",
+          "type": "MASK",
+          "link": 46
+        },
+        {
+          "name": "source",
+          "type": "MASK",
+          "link": 47
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            48
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MaskComposite"
+      },
+      "widgets_values": [
+        0,
+        0,
+        "add"
+      ]
+    },
+    {
+      "id": 53,
+      "type": "ThresholdMask",
+      "title": "Protect colored lenses, pads and accents",
+      "pos": [
+        2070,
+        1690
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 34,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 48
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            50
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ThresholdMask"
+      },
+      "widgets_values": [
+        0.12
+      ]
+    },
+    {
+      "id": 54,
+      "type": "MaskComposite",
+      "title": "Painted white or colored material",
+      "pos": [
+        2450,
+        1690
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 35,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "destination",
+          "type": "MASK",
+          "link": 49
+        },
+        {
+          "name": "source",
+          "type": "MASK",
+          "link": 50
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            53
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MaskComposite"
+      },
+      "widgets_values": [
+        0,
+        0,
+        "add"
+      ]
+    },
+    {
+      "id": 61,
+      "type": "ThresholdMask",
+      "title": "Exclude neutral-gray backdrop from dark material",
+      "pos": [
+        2070,
+        2170
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 36,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 51
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            52
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ThresholdMask"
+      },
+      "widgets_values": [
+        0.015
+      ]
+    },
+    {
+      "id": 62,
+      "type": "InvertMask",
+      "title": "Protect opaque black and dark shaded material",
+      "pos": [
+        2450,
+        2170
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 37,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 52
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            54
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "InvertMask"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 63,
+      "type": "MaskComposite",
+      "title": "White, colored or dark material, excluding neutral backdrop",
+      "pos": [
+        2830,
+        2170
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 38,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "destination",
+          "type": "MASK",
+          "link": 53
+        },
+        {
+          "name": "source",
+          "type": "MASK",
+          "link": 54
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            56
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MaskComposite"
+      },
+      "widgets_values": [
+        0,
+        0,
+        "add"
+      ]
+    },
+    {
+      "id": 55,
+      "type": "MaskComposite",
+      "title": "Restore material incorrectly removed by segmentation",
+      "pos": [
+        2830,
+        1690
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 39,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "destination",
+          "type": "MASK",
+          "link": 55
+        },
+        {
+          "name": "source",
+          "type": "MASK",
+          "link": 56
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            59
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MaskComposite"
+      },
+      "widgets_values": [
+        0,
+        0,
+        "add"
+      ]
+    },
+    {
+      "id": 56,
+      "type": "StringContains",
+      "title": "Bicycle wheel and frame openings stay transparent",
+      "pos": [
+        1690,
+        1930
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 40,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "link": 57,
+          "widget": {
+            "name": "string"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "BOOLEAN",
+          "type": "BOOLEAN",
+          "links": [
+            58
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "StringContains"
+      },
+      "widgets_values": [
+        "",
+        "bicycle",
+        false
+      ]
+    },
+    {
+      "id": 57,
+      "type": "ComfySwitchNode",
+      "title": "Keep bicycle topology; protect solid surfaces for other items",
+      "pos": [
+        2070,
+        1930
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 41,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "switch",
+          "type": "BOOLEAN",
+          "link": 58
+        },
+        {
+          "name": "on_false",
+          "type": "MASK",
+          "link": 59
+        },
+        {
+          "name": "on_true",
+          "type": "MASK",
+          "link": 60
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "MASK",
+          "links": [
+            61
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ComfySwitchNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 58,
+      "type": "ThresholdMask",
+      "title": "Reliable foreground, excluding faint cast-shadow probabilities",
+      "pos": [
+        2450,
+        1930
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 42,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 61
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            62
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ThresholdMask"
+      },
+      "widgets_values": [
+        0.5
+      ]
+    },
+    {
+      "id": 59,
+      "type": "GrowMask",
+      "title": "Solid interior with one-pixel original edge",
+      "pos": [
+        2830,
+        1930
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 43,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 62
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            64
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GrowMask"
+      },
+      "widgets_values": [
+        -1,
+        true
+      ]
+    },
+    {
+      "id": 60,
+      "type": "MaskComposite",
+      "title": "Opaque material interior with unchanged original edge alpha",
+      "pos": [
+        1690,
+        2170
+      ],
+      "size": [
+        340,
+        135
+      ],
+      "flags": {},
+      "order": 44,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "destination",
+          "type": "MASK",
+          "link": 63
+        },
+        {
+          "name": "source",
+          "type": "MASK",
+          "link": 64
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            23
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MaskComposite"
+      },
+      "widgets_values": [
+        0,
+        0,
+        "add"
+      ]
+    },
+    {
       "id": 28,
       "type": "KSamplerSelect",
       "title": "Turbo sampler",
@@ -860,7 +1890,7 @@
         135
       ],
       "flags": {},
-      "order": 21,
+      "order": 45,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -892,7 +1922,7 @@
         135
       ],
       "flags": {},
-      "order": 22,
+      "order": 46,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -926,7 +1956,7 @@
         135
       ],
       "flags": {},
-      "order": 23,
+      "order": 47,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -960,7 +1990,7 @@
         135
       ],
       "flags": {},
-      "order": 24,
+      "order": 48,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -969,7 +1999,7 @@
           "type": "VAE",
           "links": [
             10,
-            30
+            69
           ]
         }
       ],
@@ -993,7 +2023,7 @@
         135
       ],
       "flags": {},
-      "order": 25,
+      "order": 49,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1001,7 +2031,7 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            27
+            66
           ]
         },
         {
@@ -1030,13 +2060,13 @@
         220
       ],
       "flags": {},
-      "order": 26,
+      "order": 50,
       "mode": 0,
       "inputs": [
         {
           "name": "image",
           "type": "IMAGE",
-          "link": 26
+          "link": 65
         }
       ],
       "outputs": [
@@ -1044,7 +2074,7 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            29
+            68
           ]
         }
       ],
@@ -1071,13 +2101,13 @@
         135
       ],
       "flags": {},
-      "order": 27,
+      "order": 51,
       "mode": 0,
       "inputs": [
         {
           "name": "image",
           "type": "IMAGE",
-          "link": 27
+          "link": 66
         }
       ],
       "outputs": [
@@ -1085,7 +2115,7 @@
           "name": "MASK",
           "type": "MASK",
           "links": [
-            28
+            67
           ]
         }
       ],
@@ -1109,13 +2139,13 @@
         135
       ],
       "flags": {},
-      "order": 28,
+      "order": 52,
       "mode": 0,
       "inputs": [
         {
           "name": "mask",
           "type": "MASK",
-          "link": 28
+          "link": 67
         }
       ],
       "outputs": [
@@ -1123,7 +2153,7 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            26
+            65
           ]
         }
       ],
@@ -1145,18 +2175,18 @@
         135
       ],
       "flags": {},
-      "order": 29,
+      "order": 53,
       "mode": 0,
       "inputs": [
         {
           "name": "pixels",
           "type": "IMAGE",
-          "link": 29
+          "link": 68
         },
         {
           "name": "vae",
           "type": "VAE",
-          "link": 30
+          "link": 69
         }
       ],
       "outputs": [
@@ -1164,7 +2194,7 @@
           "name": "LATENT",
           "type": "LATENT",
           "links": [
-            32
+            71
           ]
         }
       ],
@@ -1186,18 +2216,18 @@
         135
       ],
       "flags": {},
-      "order": 30,
+      "order": 54,
       "mode": 0,
       "inputs": [
         {
           "name": "conditioning",
           "type": "CONDITIONING",
-          "link": 31
+          "link": 70
         },
         {
           "name": "latent",
           "type": "LATENT",
-          "link": 32
+          "link": 71
         }
       ],
       "outputs": [
@@ -1205,7 +2235,7 @@
           "name": "CONDITIONING",
           "type": "CONDITIONING",
           "links": [
-            34
+            73
           ]
         }
       ],
@@ -1227,7 +2257,7 @@
         135
       ],
       "flags": {},
-      "order": 31,
+      "order": 55,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1260,18 +2290,18 @@
         135
       ],
       "flags": {},
-      "order": 32,
+      "order": 56,
       "mode": 0,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
-          "link": 33
+          "link": 72
         },
         {
           "name": "conditioning",
           "type": "CONDITIONING",
-          "link": 34
+          "link": 73
         }
       ],
       "outputs": [
@@ -1468,7 +2498,7 @@
     ],
     [
       23,
-      21,
+      60,
       0,
       22,
       0,
@@ -1492,6 +2522,318 @@
     ],
     [
       26,
+      6,
+      0,
+      40,
+      0,
+      "IMAGE"
+    ],
+    [
+      27,
+      6,
+      0,
+      41,
+      0,
+      "IMAGE"
+    ],
+    [
+      28,
+      6,
+      0,
+      42,
+      0,
+      "IMAGE"
+    ],
+    [
+      29,
+      40,
+      0,
+      43,
+      0,
+      "MASK"
+    ],
+    [
+      30,
+      41,
+      0,
+      43,
+      1,
+      "MASK"
+    ],
+    [
+      31,
+      43,
+      0,
+      44,
+      0,
+      "MASK"
+    ],
+    [
+      32,
+      42,
+      0,
+      44,
+      1,
+      "MASK"
+    ],
+    [
+      33,
+      44,
+      0,
+      45,
+      0,
+      "MASK"
+    ],
+    [
+      34,
+      40,
+      0,
+      46,
+      0,
+      "MASK"
+    ],
+    [
+      35,
+      41,
+      0,
+      46,
+      1,
+      "MASK"
+    ],
+    [
+      36,
+      41,
+      0,
+      47,
+      0,
+      "MASK"
+    ],
+    [
+      37,
+      40,
+      0,
+      47,
+      1,
+      "MASK"
+    ],
+    [
+      38,
+      40,
+      0,
+      48,
+      0,
+      "MASK"
+    ],
+    [
+      39,
+      42,
+      0,
+      48,
+      1,
+      "MASK"
+    ],
+    [
+      40,
+      42,
+      0,
+      49,
+      0,
+      "MASK"
+    ],
+    [
+      41,
+      40,
+      0,
+      49,
+      1,
+      "MASK"
+    ],
+    [
+      42,
+      46,
+      0,
+      50,
+      0,
+      "MASK"
+    ],
+    [
+      43,
+      47,
+      0,
+      50,
+      1,
+      "MASK"
+    ],
+    [
+      44,
+      48,
+      0,
+      51,
+      0,
+      "MASK"
+    ],
+    [
+      45,
+      49,
+      0,
+      51,
+      1,
+      "MASK"
+    ],
+    [
+      46,
+      50,
+      0,
+      52,
+      0,
+      "MASK"
+    ],
+    [
+      47,
+      51,
+      0,
+      52,
+      1,
+      "MASK"
+    ],
+    [
+      48,
+      52,
+      0,
+      53,
+      0,
+      "MASK"
+    ],
+    [
+      49,
+      45,
+      0,
+      54,
+      0,
+      "MASK"
+    ],
+    [
+      50,
+      53,
+      0,
+      54,
+      1,
+      "MASK"
+    ],
+    [
+      51,
+      44,
+      0,
+      61,
+      0,
+      "MASK"
+    ],
+    [
+      52,
+      61,
+      0,
+      62,
+      0,
+      "MASK"
+    ],
+    [
+      53,
+      54,
+      0,
+      63,
+      0,
+      "MASK"
+    ],
+    [
+      54,
+      62,
+      0,
+      63,
+      1,
+      "MASK"
+    ],
+    [
+      55,
+      21,
+      0,
+      55,
+      0,
+      "MASK"
+    ],
+    [
+      56,
+      63,
+      0,
+      55,
+      1,
+      "MASK"
+    ],
+    [
+      57,
+      11,
+      0,
+      56,
+      0,
+      "STRING"
+    ],
+    [
+      58,
+      56,
+      0,
+      57,
+      0,
+      "BOOLEAN"
+    ],
+    [
+      59,
+      55,
+      0,
+      57,
+      1,
+      "MASK"
+    ],
+    [
+      60,
+      21,
+      0,
+      57,
+      2,
+      "MASK"
+    ],
+    [
+      61,
+      57,
+      0,
+      58,
+      0,
+      "MASK"
+    ],
+    [
+      62,
+      58,
+      0,
+      59,
+      0,
+      "MASK"
+    ],
+    [
+      63,
+      21,
+      0,
+      60,
+      0,
+      "MASK"
+    ],
+    [
+      64,
+      59,
+      0,
+      60,
+      1,
+      "MASK"
+    ],
+    [
+      65,
       39,
       0,
       33,
@@ -1499,7 +2841,7 @@
       "IMAGE"
     ],
     [
-      27,
+      66,
       32,
       0,
       38,
@@ -1507,7 +2849,7 @@
       "IMAGE"
     ],
     [
-      28,
+      67,
       38,
       0,
       39,
@@ -1515,7 +2857,7 @@
       "MASK"
     ],
     [
-      29,
+      68,
       33,
       0,
       34,
@@ -1523,7 +2865,7 @@
       "IMAGE"
     ],
     [
-      30,
+      69,
       31,
       0,
       34,
@@ -1531,7 +2873,7 @@
       "VAE"
     ],
     [
-      31,
+      70,
       2,
       0,
       35,
@@ -1539,7 +2881,7 @@
       "CONDITIONING"
     ],
     [
-      32,
+      71,
       34,
       0,
       35,
@@ -1547,7 +2889,7 @@
       "LATENT"
     ],
     [
-      33,
+      72,
       1,
       0,
       37,
@@ -1555,7 +2897,7 @@
       "MODEL"
     ],
     [
-      34,
+      73,
       35,
       0,
       37,
@@ -1580,7 +2922,7 @@
       "height": 480,
       "resolved_product": "bags",
       "alpha": true,
-      "positive_prompt": "one school backpack with a large front zipper pocket and two shoulder straps. Main color #5FB0E3 (light blue) on body. Accent color #FFFFFF (white) on front pocket and straps. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      "positive_prompt": "one school backpack with a large front zipper pocket and two shoulder straps. Main color #5FB0E3 (light blue) on body. Accent color #FFFFFF (white) on front pocket and straps. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Flat uniform medium-gray background (#808080), opaque object surfaces, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
     }
   },
   "version": 0.4

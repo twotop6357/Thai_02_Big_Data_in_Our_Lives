@@ -1,0 +1,218 @@
+[
+  {
+    "tag": "bags_child_black_white_2026110200",
+    "seconds": 1.399,
+    "files": {
+      "90": "bags_child_black_white_2026110200_90.png",
+      "91": "bags_child_black_white_2026110200_91.png",
+      "106": "bags_child_black_white_2026110200_106.png",
+      "116": "bags_child_black_white_2026110200_116.png",
+      "126": "bags_child_black_white_2026110200_126.png"
+    },
+    "prompt_id": "0a58ff30-ac2a-4ffe-853a-597ca77d8cc8",
+    "selection": {
+      "group": "child",
+      "product": "bags",
+      "color1": "black",
+      "color2": "white",
+      "primary_hex": "#171619",
+      "secondary_hex": "#FFFFFF",
+      "profile": "quality",
+      "seed": 2026110200,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "bags",
+      "alpha": true,
+      "positive_prompt": "one small bear-shaped kindergarten backpack with rounded bear ears and a front pocket. Main color #171619 (near-black) on backpack body. Accent color #FFFFFF (white) on bear ears and front pocket. playful rounded design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Flat uniform medium-gray background (#808080), opaque object surfaces, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+    }
+  },
+  {
+    "tag": "shoes_working_adult_yellow_white_2026110211",
+    "seconds": 1.015,
+    "files": {
+      "90": "shoes_working_adult_yellow_white_2026110211_90.png",
+      "91": "shoes_working_adult_yellow_white_2026110211_91.png",
+      "106": "shoes_working_adult_yellow_white_2026110211_106.png",
+      "116": "shoes_working_adult_yellow_white_2026110211_116.png",
+      "126": "shoes_working_adult_yellow_white_2026110211_126.png"
+    },
+    "prompt_id": "58c6eb4f-c8c3-4e8b-88f6-d4a3ba30acec",
+    "selection": {
+      "group": "working_adult",
+      "product": "shoes",
+      "color1": "yellow",
+      "color2": "white",
+      "primary_hex": "#F6EEA2",
+      "secondary_hex": "#FFFFFF",
+      "profile": "quality",
+      "seed": 2026110211,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "shoes",
+      "alpha": true,
+      "positive_prompt": "one classic laceless penny loafer, a slip-on dress shoe with a wide strap across the vamp, smooth moccasin toe and low flat heel, no shoelaces or sneaker panels. Main color #F6EEA2 (pale pastel yellow) on leather upper. Accent color #FFFFFF (white) on sole and instep band. refined minimal design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Flat uniform medium-gray background (#808080), opaque object surfaces, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+    }
+  },
+  {
+    "tag": "headphones_student_yellow_white_2026110229",
+    "seconds": 0.902,
+    "files": {
+      "90": "headphones_student_yellow_white_2026110229_90.png",
+      "91": "headphones_student_yellow_white_2026110229_91.png",
+      "106": "headphones_student_yellow_white_2026110229_106.png",
+      "116": "headphones_student_yellow_white_2026110229_116.png",
+      "126": "headphones_student_yellow_white_2026110229_126.png"
+    },
+    "prompt_id": "ddb73649-2577-4209-9306-c36592f90524",
+    "selection": {
+      "group": "student",
+      "product": "headphones",
+      "color1": "yellow",
+      "color2": "white",
+      "primary_hex": "#F6EEA2",
+      "secondary_hex": "#FFFFFF",
+      "profile": "quality",
+      "seed": 2026110229,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "headphones",
+      "alpha": true,
+      "positive_prompt": "one gaming headset with large earcups and a short boom microphone. Main color #F6EEA2 (pale pastel yellow) on earcups. Accent color #FFFFFF (white) on headband and microphone. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Flat uniform medium-gray background (#808080), opaque object surfaces, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+    }
+  },
+  {
+    "tag": "bicycles_working_adult_black_white_2026110236",
+    "seconds": 0.897,
+    "files": {
+      "90": "bicycles_working_adult_black_white_2026110236_90.png",
+      "91": "bicycles_working_adult_black_white_2026110236_91.png",
+      "106": "bicycles_working_adult_black_white_2026110236_106.png",
+      "116": "bicycles_working_adult_black_white_2026110236_116.png",
+      "126": "bicycles_working_adult_black_white_2026110236_126.png"
+    },
+    "prompt_id": "d234bb81-70cc-4c18-892e-000ec18b7b7b",
+    "selection": {
+      "group": "working_adult",
+      "product": "bicycles",
+      "color1": "black",
+      "color2": "white",
+      "primary_hex": "#171619",
+      "secondary_hex": "#FFFFFF",
+      "profile": "quality",
+      "seed": 2026110236,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "bicycles",
+      "alpha": true,
+      "positive_prompt": "one tiny folding commuter bicycle with a hinged frame and small wheels, full side view, complete wheels with ample white space. Main color #171619 (near-black) on frame. Accent color #FFFFFF (white) on wheel rims and hinge. refined minimal design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Flat uniform medium-gray background (#808080), opaque object surfaces, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+    }
+  },
+  {
+    "tag": "bicycles_senior_yellow_white_2026110241",
+    "seconds": 0.919,
+    "files": {
+      "90": "bicycles_senior_yellow_white_2026110241_90.png",
+      "91": "bicycles_senior_yellow_white_2026110241_91.png",
+      "106": "bicycles_senior_yellow_white_2026110241_106.png",
+      "116": "bicycles_senior_yellow_white_2026110241_116.png",
+      "126": "bicycles_senior_yellow_white_2026110241_126.png"
+    },
+    "prompt_id": "74ccfebe-297d-41bd-a8a7-fefcb72410c3",
+    "selection": {
+      "group": "senior",
+      "product": "bicycles",
+      "color1": "yellow",
+      "color2": "white",
+      "primary_hex": "#F6EEA2",
+      "secondary_hex": "#FFFFFF",
+      "profile": "quality",
+      "seed": 2026110241,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "bicycles",
+      "alpha": true,
+      "positive_prompt": "one tiny step-through city bicycle with a front basket and upright handlebars, full side view, complete wheels with ample white space. Main color #F6EEA2 (pale pastel yellow) on frame. Accent color #FFFFFF (white) on basket and wheel rims. simple ergonomic design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Flat uniform medium-gray background (#808080), opaque object surfaces, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+    }
+  },
+  {
+    "tag": "sunglasses_senior_red_blue_2026112203",
+    "seconds": 0.958,
+    "files": {
+      "90": "sunglasses_senior_red_blue_2026112203_90.png",
+      "91": "sunglasses_senior_red_blue_2026112203_91.png",
+      "106": "sunglasses_senior_red_blue_2026112203_106.png",
+      "116": "sunglasses_senior_red_blue_2026112203_116.png",
+      "126": "sunglasses_senior_red_blue_2026112203_126.png"
+    },
+    "prompt_id": "0ecf133a-14b6-44be-ae65-fc4d6e9e7ebe",
+    "selection": {
+      "group": "senior",
+      "product": "sunglasses",
+      "color1": "red",
+      "color2": "blue",
+      "primary_hex": "#EC6868",
+      "secondary_hex": "#5FB0E3",
+      "profile": "quality",
+      "seed": 2026112203,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "sunglasses",
+      "alpha": true,
+      "positive_prompt": "one round vintage sunglasses with thick circular frames and solid tinted lenses. Main color #EC6868 (soft red) on circular frame. Accent color #5FB0E3 (light blue) on opaque lenses. simple ergonomic design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Flat uniform medium-gray background (#808080), opaque object surfaces, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+    }
+  },
+  {
+    "tag": "bicycles_working_adult_red_blue_2026112206",
+    "seconds": 0.95,
+    "files": {
+      "90": "bicycles_working_adult_red_blue_2026112206_90.png",
+      "91": "bicycles_working_adult_red_blue_2026112206_91.png",
+      "106": "bicycles_working_adult_red_blue_2026112206_106.png",
+      "116": "bicycles_working_adult_red_blue_2026112206_116.png",
+      "126": "bicycles_working_adult_red_blue_2026112206_126.png"
+    },
+    "prompt_id": "81f9cebb-d220-4201-9c25-d8010300144e",
+    "selection": {
+      "group": "working_adult",
+      "product": "bicycles",
+      "color1": "red",
+      "color2": "blue",
+      "primary_hex": "#EC6868",
+      "secondary_hex": "#5FB0E3",
+      "profile": "quality",
+      "seed": 2026112206,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "bicycles",
+      "alpha": true,
+      "positive_prompt": "one tiny folding commuter bicycle with a hinged frame and small wheels, full side view, complete wheels with ample white space. Main color #EC6868 (soft red) on frame. Accent color #5FB0E3 (light blue) on wheel rims and hinge. refined minimal design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Flat uniform medium-gray background (#808080), opaque object surfaces, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+    }
+  },
+  {
+    "tag": "wristwatches_working_adult_white_black_2026111217",
+    "seconds": 1.174,
+    "files": {
+      "90": "wristwatches_working_adult_white_black_2026111217_90.png",
+      "91": "wristwatches_working_adult_white_black_2026111217_91.png",
+      "106": "wristwatches_working_adult_white_black_2026111217_106.png",
+      "116": "wristwatches_working_adult_white_black_2026111217_116.png",
+      "126": "wristwatches_working_adult_white_black_2026111217_126.png"
+    },
+    "prompt_id": "33b7ba25-65da-410e-93f9-8bb399aad562",
+    "selection": {
+      "group": "working_adult",
+      "product": "wristwatches",
+      "color1": "white",
+      "color2": "black",
+      "primary_hex": "#FFFFFF",
+      "secondary_hex": "#171619",
+      "profile": "quality",
+      "seed": 2026111217,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "wristwatches",
+      "alpha": true,
+      "positive_prompt": "one rounded square smartwatch with a complete silicone wristband, simple clock face and three small colorful app dots on the screen. Main color #FFFFFF (white) on silicone strap. Accent color #171619 (near-black) on square case. refined minimal design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Flat uniform medium-gray background (#808080), opaque object surfaces, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+    }
+  }
+]

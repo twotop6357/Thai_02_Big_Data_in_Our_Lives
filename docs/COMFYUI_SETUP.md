@@ -1,8 +1,12 @@
 # 현재: 레퍼런스 기반 귀여운 2D 일러스트 / STYLE-QUALITY-003 (2026-11-01)
 
+2026-11-02 COMFY-PORTABLE-001: 사용자가 만든 `C:/Users/김성훈/Desktop/Thai_02`에 약20.3GB 독립 ComfyRuntime·현재4모델·NVIDIA/VC++ 설치 파일·Run_Thai02.cmd를 동봉했다. 새PC에서는 전체복사 → Installers설치/재부팅 → Run_Thai02.cmd로 현재경로를 맞춰 실행한다. Python/Comfy Desktop/CUDA Toolkit 별도 설치는 필요 없다. 기존 EXE/DLL·일반/RFID설정은 보존하며 배포본 Comfy설정만 백업 후 보정한다. [검증/제한](validation/comfy_portable/README.md), 현장안내는 배포폴더 README_먼저읽기.txt를 따른다. 아래 설치명령은 개발/수동설치 절차다.
+
 현재 기본값은 **FLUX.2 Klein 4B FP8 · 640×640 · 4단계 · Euler/Flux2Scheduler · 단일 생성**이다. 이전 범용 SDXL-Turbo의 제품 사진/거친 선 혼입을 줄이기 위해 사용자가 제공한 작은 신발 일러스트의 그림체를 직접 참고한다. [실제 비교/검수](validation/comfy_style3/README.md)를 기준으로 한다. 모델을 교체했으므로 과거 Turbo의3060 5~12초 추정은 새 경로의 실측 근거가 아니다.
 
 ## 생성과 색·연령
+
+- 2026-11-02 ALPHA-OPAQUE-001: 흰배경에서 흰 물체가 함께 지워지는 문제를 피하도록 제거용 배경만 중간회색으로 바꿨다. 최종은 계속480RGBA 투명배경이다. BiRefNet에 원본RGB의 흰색/유색/검은 재질 보호 마스크를 보완하고, 바퀴/프레임 빈 공간이 많은 자전거는 기존 분리를 유지한다. 신뢰도0.5 내부를1px 침식해 불투명화하고 그 밖의 원래 가장자리 알파는 그대로 둔다. RGB·모델·4단계·스타일/연령/HEX는 유지, 추가AI추론/커스텀노드 없음. [104개 검증/전후](validation/alpha_opaque/README.md). 배포에는 BlockCatalog.json과 product_480.api.json **둘 다** 적용하고 프로그램을 완전히 재시작한다. 바탕화면 Thai_02는 적용 완료, 이미USB로 옮긴 빌드는 Builds/Alpha_Workflow_Update.zip(7647바이트)을 덮어쓴다.
 
 - 블록에서 인식한 4연령/10물건/6색을 사용한다. 제품별 ageVariants로 종류·형태와 색 부위를 선택한다. 유치원모자/비니/볼캡/중절모 등 기존 연령 구분은 유지하며 로퍼에 끈이 그려지는 혼동과 잘못된 이어폰 형태는 명시적인 설명으로 수정했다.
 - 언어 인코더에 실제 색 블록 원의 HEX와 대응 색 이름·부위를 함께 전달한다. 원 RGB/두 선택은 저널에도 보존한다. 모델이 명암/악센트를 그리므로 모든 픽셀을 지정 RGB로 고정한다는 뜻은 아니다.
@@ -118,10 +122,14 @@ python Tools/ComfyUI/benchmark.py --warmup 1 --runs 20 --target-seconds 15 --out
 
 Unity 앱은 시작 시 1회 `serverUrl`의 `/system_stats`를 검사한다. 응답이 없으면 `ComfyUISettings.json`의 실행 값으로 서버를 **창 없이** 실행하고, 응답할 때까지 2초 간격으로 확인한다. 앱이 직접 실행한 서버도 앱 종료 시 끄지 않는다(모델을 메모리에 유지). 이미 실행 중인 ComfyUI(Comfy Desktop 포함)는 건드리지 않는다.
 
+2026-11-02 COMFY-AUTOSTART-002: **Comfy Desktop GUI를 실행할 필요가 없다.** 설치된 Python으로 `ComfyUI/main.py`만 직접 실행한다. Python 환경·ComfyUI·모델은 PC에 설치되어 있어야 하며 모델을 빌드에 포함하거나 자동 다운로드하지 않는다. 이 PC의 `.venv/Scripts/python.exe`는 유효한 가상환경 진입점이다. 내부적으로 standalone-env 자식 프로세스를 실행하므로 자식의 경로만 보고 실행 파일을 바꾸지 않는다(standalone-env를 직접 호출하면 torch를 찾지 못한다).
+
+서버가 `Checking`·`Starting`·`Unavailable`이면 RedButton/숫자1/숫자패드1 및 직접 버튼 어댑터 입력을 버린다. 타이틀 `idle.help`의 Image를 실제 비활성화해 언어 페이드/등장 연출 중에도 보이지 않게 한다. 설정과 서버가 모두 준비되면 입력과 안내를 복구한다. 준비 전부터 누르고 있던 버튼은 놓은 뒤 새로 눌러야 하며, 준비 전 누름으로 언어 전환/체험 시작을 예약하지 않는다.
+
 | 필드 | 기본값 | 의미 |
 |---|---|---|
 | `autoLaunchServer` | true | 꺼져 있을 때 자동 실행 |
-| `launchServerInEditor` | false | 에디터 Play에서도 실행할지 여부. 기본은 빌드본에서만 실행 |
+| `launchServerInEditor` | true | 에디터 Play에서도 동일하게 서버 직접 실행. false로 바꾸면 Editor 자동 실행만 생략 |
 | `serverExecutable` | `%LOCALAPPDATA%\Comfy-Desktop\ComfyUI-Installs\ComfyUI\ComfyUI\.venv\Scripts\python.exe` | 실행 파일 |
 | `serverArguments` | `-s ComfyUI\main.py --listen 127.0.0.1 --port 8188 --disable-auto-launch --models-directory/--input-directory/--output-directory <ComfyUI-Shared>` | 인자. 포트는 `serverUrl`과 같아야 함 |
 | `serverWorkingDirectory` | `%LOCALAPPDATA%\Comfy-Desktop\ComfyUI-Installs\ComfyUI` | 작업 폴더 |
@@ -129,8 +137,10 @@ Unity 앱은 시작 시 1회 `serverUrl`의 `/system_stats`를 검사한다. 응
 
 - 경로·인자의 `%ENV%`는 실행 PC 계정 기준으로 확장한다. 다른 설치 방식(포터블 등)은 세 값을 그 PC에 맞게 바꾼다. 자동 실행은 loopback `serverUrl`에서만 동작한다.
 - 모델·입출력 폴더는 Comfy Desktop 공유 폴더를 직접 지정하므로 Desktop의 진단 프로필 yaml에 의존하지 않는다. Desktop 관리자/텔레메트리 플래그는 넘기지 않는다.
-- Idle의 `ComfyUIStatusText`(부모 IdlePanel의 `ComfyStatusPresenter`)는 실행 후 준비 전(Starting)과 실행 불가(설정 오류·프로세스 조기 종료·시간 초과·에디터에서 실행 생략) 때만 표시하고 준비되면 숨긴다. 실행 불가 후에도 10초마다 확인해 운영자가 수동으로 켜면 숨긴다. 재실행은 하지 않는다. 문구는 컴포넌트에서 변경한다.
+- 실행 실패/시간 초과는 영문 로그에 원인을 기록하고 입력/타이틀 버튼 안내는 계속 차단한다. 이후10초마다 서버를 확인해 정상 응답하면 안내와 입력을 복구한다. 실패 프로세스를 무한 재실행하지 않는다. 과거 문서의 ComfyStatusPresenter/ComfyUIStatusText는 현재 Assets에 없으므로 상태 텍스트가 표시된다고 가정하지 않는다.
 - 실행 중 서버가 나중에 꺼지는 경우는 감시하지 않는다(앱 시작 시 1회).
+- 기본 바인딩은 `127.0.0.1:8188`이며 외부 PC 접속은 필요 없다. 배포 빌드는 Development/Autoconnect Profiler를 끈다. 개발 Player의 디버그 검색/연결은 Windows 네트워크 허용 알림을 유발할 수 있다. OS 알림을 앱이 무조건 허용하거나 방화벽 전체를 해제하지 않는다. 이 세션에서 뜬 알림은 사용자가 직접 허용했으며 방화벽 설정은 변경하지 않았다. 다른 PC·다른 실행 경로의 첫 실행에서 OS가 별도 승인을 요구할 수 있다.
+- 실제 검증/재현 도구: [comfy_autostart](validation/comfy_autostart/README.md). Windows 빌드·서버 직접 실행/재사용/실패를 검증하며 모델 성능·실물 버튼 검수와 구분한다.
 
 ## 다른 PC 설치·재생성
 

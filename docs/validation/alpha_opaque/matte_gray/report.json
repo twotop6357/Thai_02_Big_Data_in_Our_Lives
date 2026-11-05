@@ -1,0 +1,86 @@
+[
+  {
+    "tag": "bags_child_black_white_2026110200",
+    "seconds": 2.294,
+    "files": {
+      "90": "bags_child_black_white_2026110200_90.png",
+      "91": "bags_child_black_white_2026110200_91.png",
+      "106": "bags_child_black_white_2026110200_106.png",
+      "116": "bags_child_black_white_2026110200_116.png",
+      "126": "bags_child_black_white_2026110200_126.png"
+    },
+    "prompt_id": "24e894a0-4ecb-4a3b-83d7-cff2cdfab510"
+  },
+  {
+    "tag": "shoes_working_adult_yellow_white_2026110211",
+    "seconds": 1.554,
+    "files": {
+      "90": "shoes_working_adult_yellow_white_2026110211_90.png",
+      "91": "shoes_working_adult_yellow_white_2026110211_91.png",
+      "106": "shoes_working_adult_yellow_white_2026110211_106.png",
+      "116": "shoes_working_adult_yellow_white_2026110211_116.png",
+      "126": "shoes_working_adult_yellow_white_2026110211_126.png"
+    },
+    "prompt_id": "54e0ca03-603e-45c1-a992-0f081d9df19d"
+  },
+  {
+    "tag": "umbrellas_white_black",
+    "seconds": 1.812,
+    "files": {
+      "90": "umbrellas_white_black_90.png",
+      "91": "umbrellas_white_black_91.png",
+      "106": "umbrellas_white_black_106.png",
+      "116": "umbrellas_white_black_116.png",
+      "126": "umbrellas_white_black_126.png"
+    },
+    "prompt_id": "e7826065-f91b-4004-be81-b60852fe33fa"
+  },
+  {
+    "tag": "shoes_white_white",
+    "seconds": 1.829,
+    "files": {
+      "90": "shoes_white_white_90.png",
+      "91": "shoes_white_white_91.png",
+      "106": "shoes_white_white_106.png",
+      "116": "shoes_white_white_116.png",
+      "126": "shoes_white_white_126.png"
+    },
+    "prompt_id": "1490aa4e-9357-4b5c-a55c-0f46cce5df9d"
+  },
+  {
+    "tag": "bags_white_blue",
+    "seconds": 1.767,
+    "files": {
+      "90": "bags_white_blue_90.png",
+      "91": "bags_white_blue_91.png",
+      "106": "bags_white_blue_106.png",
+      "116": "bags_white_blue_116.png",
+      "126": "bags_white_blue_126.png"
+    },
+    "prompt_id": "592af235-aa6d-4904-8cce-33fd0bc97a36"
+  },
+  {
+    "tag": "sunglasses_white_black",
+    "seconds": 1.976,
+    "files": {
+      "90": "sunglasses_white_black_90.png",
+      "91": "sunglasses_white_black_91.png",
+      "106": "sunglasses_white_black_106.png",
+      "116": "sunglasses_white_black_116.png",
+      "126": "sunglasses_white_black_126.png"
+    },
+    "prompt_id": "f52ec1ad-7e5a-4027-ba2e-20151ef70414"
+  },
+  {
+    "tag": "bicycles_red_blue",
+    "seconds": 2.086,
+    "files": {
+      "90": "bicycles_red_blue_90.png",
+      "91": "bicycles_red_blue_91.png",
+      "106": "bicycles_red_blue_106.png",
+      "116": "bicycles_red_blue_116.png",
+      "126": "bicycles_red_blue_126.png"
+    },
+    "prompt_id": "bf6eb723-e516-4d1e-aafe-00a66de4e575"
+  }
+]

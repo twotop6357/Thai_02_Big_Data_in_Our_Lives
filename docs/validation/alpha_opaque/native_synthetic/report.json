@@ -1,0 +1,90 @@
+{
+  "task": "ALPHA-OPAQUE-001",
+  "checks": [
+    {
+      "color": "black",
+      "bicycle": false,
+      "missing_alpha_repaired_or_intentionally_preserved": true,
+      "real_opening_preserved": true,
+      "edge_alpha_128_preserved": true
+    },
+    {
+      "color": "white",
+      "bicycle": false,
+      "missing_alpha_repaired_or_intentionally_preserved": true,
+      "real_opening_preserved": true,
+      "edge_alpha_128_preserved": true
+    },
+    {
+      "color": "blue",
+      "bicycle": false,
+      "missing_alpha_repaired_or_intentionally_preserved": true,
+      "real_opening_preserved": true,
+      "edge_alpha_128_preserved": true
+    },
+    {
+      "color": "red",
+      "bicycle": false,
+      "missing_alpha_repaired_or_intentionally_preserved": true,
+      "real_opening_preserved": true,
+      "edge_alpha_128_preserved": true
+    },
+    {
+      "color": "green",
+      "bicycle": false,
+      "missing_alpha_repaired_or_intentionally_preserved": true,
+      "real_opening_preserved": true,
+      "edge_alpha_128_preserved": true
+    },
+    {
+      "color": "yellow",
+      "bicycle": false,
+      "missing_alpha_repaired_or_intentionally_preserved": true,
+      "real_opening_preserved": true,
+      "edge_alpha_128_preserved": true
+    },
+    {
+      "color": "black",
+      "bicycle": true,
+      "missing_alpha_repaired_or_intentionally_preserved": true,
+      "real_opening_preserved": true,
+      "edge_alpha_128_preserved": true
+    },
+    {
+      "color": "white",
+      "bicycle": true,
+      "missing_alpha_repaired_or_intentionally_preserved": true,
+      "real_opening_preserved": true,
+      "edge_alpha_128_preserved": true
+    },
+    {
+      "color": "blue",
+      "bicycle": true,
+      "missing_alpha_repaired_or_intentionally_preserved": true,
+      "real_opening_preserved": true,
+      "edge_alpha_128_preserved": true
+    },
+    {
+      "color": "red",
+      "bicycle": true,
+      "missing_alpha_repaired_or_intentionally_preserved": true,
+      "real_opening_preserved": true,
+      "edge_alpha_128_preserved": true
+    },
+    {
+      "color": "green",
+      "bicycle": true,
+      "missing_alpha_repaired_or_intentionally_preserved": true,
+      "real_opening_preserved": true,
+      "edge_alpha_128_preserved": true
+    },
+    {
+      "color": "yellow",
+      "bicycle": true,
+      "missing_alpha_repaired_or_intentionally_preserved": true,
+      "real_opening_preserved": true,
+      "edge_alpha_128_preserved": true
+    }
+  ],
+  "passed": true
+}

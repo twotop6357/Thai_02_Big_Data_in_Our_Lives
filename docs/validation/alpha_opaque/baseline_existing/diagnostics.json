@@ -1,0 +1,680 @@
+[
+  {
+    "file": "bicycles_student_red_blue_1211217.png",
+    "interior_below_192": 40142,
+    "interior_soft_32_191": 7317,
+    "holes_over_8": 10,
+    "largest_regions": [
+      14840,
+      12191,
+      8342,
+      2619,
+      1107,
+      640
+    ]
+  },
+  {
+    "file": "bicycles_student_yellow_black_1211317.png",
+    "interior_below_192": 43972,
+    "interior_soft_32_191": 6942,
+    "holes_over_8": 16,
+    "largest_regions": [
+      17241,
+      12071,
+      9090,
+      2209,
+      1083,
+      823
+    ]
+  },
+  {
+    "file": "bicycles_senior_black_yellow_1211337.png",
+    "interior_below_192": 24438,
+    "interior_soft_32_191": 6042,
+    "holes_over_8": 16,
+    "largest_regions": [
+      9171,
+      8519,
+      1551,
+      1087,
+      1062,
+      903
+    ]
+  },
+  {
+    "file": "bicycles_senior_red_blue_1211237.png",
+    "interior_below_192": 23914,
+    "interior_soft_32_191": 5534,
+    "holes_over_8": 15,
+    "largest_regions": [
+      9082,
+      7571,
+      2565,
+      1282,
+      805,
+      775
+    ]
+  },
+  {
+    "file": "bicycles_child_green_white_1211307.png",
+    "interior_below_192": 26750,
+    "interior_soft_32_191": 5440,
+    "holes_over_8": 11,
+    "largest_regions": [
+      7387,
+      7317,
+      3865,
+      2555,
+      1809,
+      1804
+    ]
+  },
+  {
+    "file": "bicycles_working_adult_red_blue_1211227.png",
+    "interior_below_192": 23612,
+    "interior_soft_32_191": 5192,
+    "holes_over_8": 13,
+    "largest_regions": [
+      8436,
+      7840,
+      2752,
+      1349,
+      1304,
+      879
+    ]
+  },
+  {
+    "file": "bicycles_working_adult_blue_white_1211327.png",
+    "interior_below_192": 20990,
+    "interior_soft_32_191": 4237,
+    "holes_over_8": 9,
+    "largest_regions": [
+      10603,
+      8106,
+      581,
+      566,
+      527,
+      266
+    ]
+  },
+  {
+    "file": "bicycles_child_red_blue_1211207.png",
+    "interior_below_192": 22953,
+    "interior_soft_32_191": 3979,
+    "holes_over_8": 8,
+    "largest_regions": [
+      8606,
+      7431,
+      5408,
+      700,
+      364,
+      155
+    ]
+  },
+  {
+    "file": "hats_child_blue_white_1211303.png",
+    "interior_below_192": 14291,
+    "interior_soft_32_191": 1218,
+    "holes_over_8": 2,
+    "largest_regions": [
+      9521,
+      4770
+    ]
+  },
+  {
+    "file": "sunglasses_senior_green_white_1211334.png",
+    "interior_below_192": 30234,
+    "interior_soft_32_191": 774,
+    "holes_over_8": 2,
+    "largest_regions": [
+      15156,
+      15078
+    ]
+  },
+  {
+    "file": "bags_senior_red_blue_1211231.png",
+    "interior_below_192": 19243,
+    "interior_soft_32_191": 701,
+    "holes_over_8": 1,
+    "largest_regions": [
+      19243
+    ]
+  },
+  {
+    "file": "bags_senior_black_yellow_1211331.png",
+    "interior_below_192": 23181,
+    "interior_soft_32_191": 598,
+    "holes_over_8": 2,
+    "largest_regions": [
+      23167,
+      14
+    ]
+  },
+  {
+    "file": "headphones_working_adult_green_white_1211325.png",
+    "interior_below_192": 21095,
+    "interior_soft_32_191": 521,
+    "holes_over_8": 1,
+    "largest_regions": [
+      21095
+    ]
+  },
+  {
+    "file": "tumblers_child_red_blue_1211208.png",
+    "interior_below_192": 8233,
+    "interior_soft_32_191": 427,
+    "holes_over_8": 2,
+    "largest_regions": [
+      4224,
+      4009
+    ]
+  },
+  {
+    "file": "headphones_senior_yellow_black_1211335.png",
+    "interior_below_192": 1508,
+    "interior_soft_32_191": 420,
+    "holes_over_8": 2,
+    "largest_regions": [
+      770,
+      738
+    ]
+  },
+  {
+    "file": "bags_working_adult_blue_white_1211321.png",
+    "interior_below_192": 4479,
+    "interior_soft_32_191": 404,
+    "holes_over_8": 2,
+    "largest_regions": [
+      2617,
+      1862
+    ]
+  },
+  {
+    "file": "tumblers_child_yellow_black_1211308.png",
+    "interior_below_192": 5827,
+    "interior_soft_32_191": 383,
+    "holes_over_8": 2,
+    "largest_regions": [
+      3039,
+      2788
+    ]
+  },
+  {
+    "file": "bags_child_green_white_1211301.png",
+    "interior_below_192": 4160,
+    "interior_soft_32_191": 358,
+    "holes_over_8": 3,
+    "largest_regions": [
+      1785,
+      1762,
+      613
+    ]
+  },
+  {
+    "file": "tumblers_working_adult_red_blue_1211228.png",
+    "interior_below_192": 5439,
+    "interior_soft_32_191": 312,
+    "holes_over_8": 1,
+    "largest_regions": [
+      5439
+    ]
+  },
+  {
+    "file": "tumblers_working_adult_black_yellow_1211328.png",
+    "interior_below_192": 5914,
+    "interior_soft_32_191": 294,
+    "holes_over_8": 1,
+    "largest_regions": [
+      5914
+    ]
+  },
+  {
+    "file": "hats_child_red_blue_1211203.png",
+    "interior_below_192": 4151,
+    "interior_soft_32_191": 255,
+    "holes_over_8": 1,
+    "largest_regions": [
+      4151
+    ]
+  },
+  {
+    "file": "bags_working_adult_red_blue_1211221.png",
+    "interior_below_192": 2672,
+    "interior_soft_32_191": 195,
+    "holes_over_8": 1,
+    "largest_regions": [
+      2672
+    ]
+  },
+  {
+    "file": "wristwatches_senior_red_green_1211339.png",
+    "interior_below_192": 255,
+    "interior_soft_32_191": 126,
+    "holes_over_8": 4,
+    "largest_regions": [
+      95,
+      86,
+      44,
+      30
+    ]
+  },
+  {
+    "file": "bags_student_yellow_black_1211311.png",
+    "interior_below_192": 978,
+    "interior_soft_32_191": 114,
+    "holes_over_8": 1,
+    "largest_regions": [
+      978
+    ]
+  },
+  {
+    "file": "wristwatches_child_red_blue_1211209.png",
+    "interior_below_192": 270,
+    "interior_soft_32_191": 108,
+    "holes_over_8": 4,
+    "largest_regions": [
+      79,
+      75,
+      59,
+      57
+    ]
+  },
+  {
+    "file": "bags_student_red_blue_1211211.png",
+    "interior_below_192": 951,
+    "interior_soft_32_191": 107,
+    "holes_over_8": 1,
+    "largest_regions": [
+      951
+    ]
+  },
+  {
+    "file": "umbrellas_student_white_black_1211320.png",
+    "interior_below_192": 391,
+    "interior_soft_32_191": 105,
+    "holes_over_8": 1,
+    "largest_regions": [
+      391
+    ]
+  },
+  {
+    "file": "bags_child_red_blue_1211201.png",
+    "interior_below_192": 407,
+    "interior_soft_32_191": 75,
+    "holes_over_8": 1,
+    "largest_regions": [
+      407
+    ]
+  },
+  {
+    "file": "sunglasses_working_adult_red_blue_1211224.png",
+    "interior_below_192": 160,
+    "interior_soft_32_191": 69,
+    "holes_over_8": 2,
+    "largest_regions": [
+      82,
+      78
+    ]
+  },
+  {
+    "file": "shoes_child_red_blue_1211202.png",
+    "interior_below_192": 186,
+    "interior_soft_32_191": 62,
+    "holes_over_8": 1,
+    "largest_regions": [
+      186
+    ]
+  },
+  {
+    "file": "tops_working_adult_yellow_black_1211326.png",
+    "interior_below_192": 179,
+    "interior_soft_32_191": 42,
+    "holes_over_8": 1,
+    "largest_regions": [
+      179
+    ]
+  },
+  {
+    "file": "hats_senior_red_blue_1211233.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "hats_senior_red_green_1211333.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "hats_student_black_yellow_1211313.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "hats_student_red_blue_1211213.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "hats_working_adult_red_blue_1211223.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "hats_working_adult_white_black_1211323.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "headphones_child_red_blue_1211205.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "headphones_child_white_black_1211305.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "headphones_senior_red_blue_1211235.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "headphones_student_red_blue_1211215.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "headphones_student_red_green_1211315.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "headphones_working_adult_red_blue_1211225.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "shoes_child_yellow_black_1211302.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "shoes_senior_red_blue_1211232.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "shoes_senior_white_black_1211332.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "shoes_student_blue_white_1211312.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "shoes_student_red_blue_1211212.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "shoes_working_adult_black_yellow_1211322.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "shoes_working_adult_red_blue_1211222.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "sunglasses_child_black_yellow_1211304.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "sunglasses_child_red_blue_1211204.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "sunglasses_senior_red_blue_1211234.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "sunglasses_student_red_blue_1211214.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "sunglasses_student_white_black_1211314.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "sunglasses_working_adult_red_green_1211324.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "tops_child_red_blue_1211206.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "tops_child_red_green_1211306.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "tops_senior_blue_white_1211336.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "tops_senior_red_blue_1211236.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "tops_student_green_white_1211316.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "tops_student_red_blue_1211216.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "tops_working_adult_red_blue_1211226.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "tumblers_senior_red_blue_1211238.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "tumblers_senior_white_black_1211338.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "tumblers_student_blue_white_1211318.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "tumblers_student_red_blue_1211218.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "umbrellas_child_black_yellow_1211310.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "umbrellas_child_red_blue_1211210.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "umbrellas_senior_green_white_1211340.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "umbrellas_senior_red_blue_1211240.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "umbrellas_student_red_blue_1211220.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "umbrellas_working_adult_red_blue_1211230.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "umbrellas_working_adult_red_green_1211330.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "wristwatches_child_blue_white_1211309.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "wristwatches_senior_red_blue_1211239.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "wristwatches_student_black_yellow_1211319.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "wristwatches_student_red_blue_1211219.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "wristwatches_working_adult_red_blue_1211229.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  },
+  {
+    "file": "wristwatches_working_adult_white_black_1211329.png",
+    "interior_below_192": 0,
+    "interior_soft_32_191": 0,
+    "holes_over_8": 0,
+    "largest_regions": []
+  }
+]

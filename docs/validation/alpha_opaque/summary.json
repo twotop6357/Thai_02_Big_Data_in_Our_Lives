@@ -1,0 +1,22 @@
+{
+  "task": "ALPHA-OPAQUE-001",
+  "generated_images": 104,
+  "final_mask_replays": 100,
+  "final_full_pipeline_generations": 4,
+  "native_invariants_passed": true,
+  "synthetic_palette_cases": 12,
+  "workflow_unit_tests_passed": 9,
+  "source_sha256": {
+    "Assets/StreamingAssets/BlockGeneration/BlockCatalog.json": "1cedd0932d57d28ccc3e1d8ee5cb962b719cced990efd7234f7d1af28f795fa2",
+    "Assets/StreamingAssets/BlockGeneration/product_480.api.json": "96c6e1a769c3fecd2907d91adce02ccec747442a7625ab483e187d46889c4e3f",
+    "Tools/ComfyUI/alpha_mask_nodes.py": "fa38a9f0c8a436b5aeb8605e14a7020350e3ea3e4398f1c09a91d431f38829a0"
+  },
+  "intentional_bicycle_opening_flags": [
+    "bicycles_working_adult_black_white_2026110236",
+    "bicycles_senior_yellow_white_2026110241",
+    "bicycles_working_adult_red_blue_2026112206"
+  ],
+  "unintended_interior_white_color_flags": [],
+  "fresh_generation_white_color_flags": [],
+  "all_rgb_unchanged_during_alpha_repair": true
+}

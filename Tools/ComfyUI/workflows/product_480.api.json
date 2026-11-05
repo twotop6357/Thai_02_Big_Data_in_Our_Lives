@@ -231,7 +231,7 @@
         "17",
         0
       ],
-      "string_b": "One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render",
+      "string_b": "One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Flat uniform medium-gray background (#808080), opaque object surfaces, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render",
       "delimiter": ". "
     },
     "_meta": {
@@ -267,7 +267,7 @@
     "class_type": "InvertMask",
     "inputs": {
       "mask": [
-        "21",
+        "60",
         0
       ]
     },
@@ -288,7 +288,405 @@
       ]
     },
     "_meta": {
-      "title": "Apply actual alpha (not painted transparency)"
+      "title": "Apply repaired alpha to unchanged decoded RGB"
+    }
+  },
+  "40": {
+    "class_type": "ImageToMask",
+    "inputs": {
+      "image": [
+        "6",
+        0
+      ],
+      "channel": "red"
+    },
+    "_meta": {
+      "title": "Original red channel for opacity protection"
+    }
+  },
+  "41": {
+    "class_type": "ImageToMask",
+    "inputs": {
+      "image": [
+        "6",
+        0
+      ],
+      "channel": "green"
+    },
+    "_meta": {
+      "title": "Original green channel for opacity protection"
+    }
+  },
+  "42": {
+    "class_type": "ImageToMask",
+    "inputs": {
+      "image": [
+        "6",
+        0
+      ],
+      "channel": "blue"
+    },
+    "_meta": {
+      "title": "Original blue channel for opacity protection"
+    }
+  },
+  "43": {
+    "class_type": "MaskComposite",
+    "inputs": {
+      "destination": [
+        "40",
+        0
+      ],
+      "source": [
+        "41",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "operation": "multiply"
+    },
+    "_meta": {
+      "title": "White surface support R x G"
+    }
+  },
+  "44": {
+    "class_type": "MaskComposite",
+    "inputs": {
+      "destination": [
+        "43",
+        0
+      ],
+      "source": [
+        "42",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "operation": "multiply"
+    },
+    "_meta": {
+      "title": "White surface support R x G x B"
+    }
+  },
+  "45": {
+    "class_type": "ThresholdMask",
+    "inputs": {
+      "mask": [
+        "44",
+        0
+      ],
+      "value": 0.65
+    },
+    "_meta": {
+      "title": "Protect white and pale white shading, retain neutral-gray background"
+    }
+  },
+  "46": {
+    "class_type": "MaskComposite",
+    "inputs": {
+      "destination": [
+        "40",
+        0
+      ],
+      "source": [
+        "41",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "operation": "subtract"
+    },
+    "_meta": {
+      "title": "Positive red-green chroma"
+    }
+  },
+  "47": {
+    "class_type": "MaskComposite",
+    "inputs": {
+      "destination": [
+        "41",
+        0
+      ],
+      "source": [
+        "40",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "operation": "subtract"
+    },
+    "_meta": {
+      "title": "Positive green-red chroma"
+    }
+  },
+  "48": {
+    "class_type": "MaskComposite",
+    "inputs": {
+      "destination": [
+        "40",
+        0
+      ],
+      "source": [
+        "42",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "operation": "subtract"
+    },
+    "_meta": {
+      "title": "Positive red-blue chroma"
+    }
+  },
+  "49": {
+    "class_type": "MaskComposite",
+    "inputs": {
+      "destination": [
+        "42",
+        0
+      ],
+      "source": [
+        "40",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "operation": "subtract"
+    },
+    "_meta": {
+      "title": "Positive blue-red chroma"
+    }
+  },
+  "50": {
+    "class_type": "MaskComposite",
+    "inputs": {
+      "destination": [
+        "46",
+        0
+      ],
+      "source": [
+        "47",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "operation": "add"
+    },
+    "_meta": {
+      "title": "Absolute red-green chroma"
+    }
+  },
+  "51": {
+    "class_type": "MaskComposite",
+    "inputs": {
+      "destination": [
+        "48",
+        0
+      ],
+      "source": [
+        "49",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "operation": "add"
+    },
+    "_meta": {
+      "title": "Absolute red-blue chroma"
+    }
+  },
+  "52": {
+    "class_type": "MaskComposite",
+    "inputs": {
+      "destination": [
+        "50",
+        0
+      ],
+      "source": [
+        "51",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "operation": "add"
+    },
+    "_meta": {
+      "title": "Color surface support, independent of chosen hue"
+    }
+  },
+  "53": {
+    "class_type": "ThresholdMask",
+    "inputs": {
+      "mask": [
+        "52",
+        0
+      ],
+      "value": 0.12
+    },
+    "_meta": {
+      "title": "Protect colored lenses, pads and accents"
+    }
+  },
+  "54": {
+    "class_type": "MaskComposite",
+    "inputs": {
+      "destination": [
+        "45",
+        0
+      ],
+      "source": [
+        "53",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "operation": "add"
+    },
+    "_meta": {
+      "title": "Painted white or colored material"
+    }
+  },
+  "61": {
+    "class_type": "ThresholdMask",
+    "inputs": {
+      "mask": [
+        "44",
+        0
+      ],
+      "value": 0.015
+    },
+    "_meta": {
+      "title": "Exclude neutral-gray backdrop from dark material"
+    }
+  },
+  "62": {
+    "class_type": "InvertMask",
+    "inputs": {
+      "mask": [
+        "61",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Protect opaque black and dark shaded material"
+    }
+  },
+  "63": {
+    "class_type": "MaskComposite",
+    "inputs": {
+      "destination": [
+        "54",
+        0
+      ],
+      "source": [
+        "62",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "operation": "add"
+    },
+    "_meta": {
+      "title": "White, colored or dark material, excluding neutral backdrop"
+    }
+  },
+  "55": {
+    "class_type": "MaskComposite",
+    "inputs": {
+      "destination": [
+        "21",
+        0
+      ],
+      "source": [
+        "63",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "operation": "add"
+    },
+    "_meta": {
+      "title": "Restore material incorrectly removed by segmentation"
+    }
+  },
+  "56": {
+    "class_type": "StringContains",
+    "inputs": {
+      "string": [
+        "11",
+        0
+      ],
+      "substring": "bicycle",
+      "case_sensitive": false
+    },
+    "_meta": {
+      "title": "Bicycle wheel and frame openings stay transparent"
+    }
+  },
+  "57": {
+    "class_type": "ComfySwitchNode",
+    "inputs": {
+      "switch": [
+        "56",
+        0
+      ],
+      "on_false": [
+        "55",
+        0
+      ],
+      "on_true": [
+        "21",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Keep bicycle topology; protect solid surfaces for other items"
+    }
+  },
+  "58": {
+    "class_type": "ThresholdMask",
+    "inputs": {
+      "mask": [
+        "57",
+        0
+      ],
+      "value": 0.5
+    },
+    "_meta": {
+      "title": "Reliable foreground, excluding faint cast-shadow probabilities"
+    }
+  },
+  "59": {
+    "class_type": "GrowMask",
+    "inputs": {
+      "mask": [
+        "58",
+        0
+      ],
+      "expand": -1,
+      "tapered_corners": true
+    },
+    "_meta": {
+      "title": "Solid interior with one-pixel original edge"
+    }
+  },
+  "60": {
+    "class_type": "MaskComposite",
+    "inputs": {
+      "destination": [
+        "21",
+        0
+      ],
+      "source": [
+        "59",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "operation": "add"
+    },
+    "_meta": {
+      "title": "Opaque material interior with unchanged original edge alpha"
     }
   },
   "28": {

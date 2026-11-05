@@ -1,0 +1,194 @@
+{
+  "task": "ALPHA-OPAQUE-001",
+  "device": [
+    {
+      "name": "cuda:0 NVIDIA GeForce RTX 5070 Ti Laptop GPU : cudaMallocAsync",
+      "type": "cuda",
+      "index": 0,
+      "vram_total": 12820480000,
+      "vram_free": 11405230080,
+      "torch_vram_total": 100663296,
+      "torch_vram_free": 91095040
+    }
+  ],
+  "results": [
+    {
+      "tag": "bags_working_adult_white_blue_2026114200",
+      "selection": {
+        "group": "working_adult",
+        "product": "bags",
+        "color1": "white",
+        "color2": "blue",
+        "primary_hex": "#FFFFFF",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 2026114200,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "one structured office briefcase with a top handle and rectangular flap. Main color #FFFFFF (white) on body. Accent color #5FB0E3 (light blue) on handle and flap. refined minimal design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Flat uniform medium-gray background (#808080), opaque object surfaces, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "files": {
+        "7": "bags_working_adult_white_blue_2026114200_7.png",
+        "93": "bags_working_adult_white_blue_2026114200_93.png",
+        "94": "bags_working_adult_white_blue_2026114200_94.png",
+        "95": "bags_working_adult_white_blue_2026114200_95.png",
+        "98": "bags_working_adult_white_blue_2026114200_98.png",
+        "99": "bags_working_adult_white_blue_2026114200_99.png"
+      },
+      "seconds": 8.168,
+      "prompt_id": "3e6a44b5-c407-488a-bb18-b7db0947d71a",
+      "checks": {
+        "rgb_unchanged_480": true,
+        "rgb_unchanged_native": true,
+        "native_background_zero_preserved": true,
+        "native_material_all_opaque": true,
+        "native_outside_core_unchanged": true,
+        "native_alpha_never_reduced": true,
+        "native_core_all_opaque": true,
+        "native_core_pixels": 152464,
+        "white_core_pixels": 66444,
+        "lost_white_core_pixels": 0,
+        "largest_lost_white_region": 0,
+        "lost_colored_core_pixels": 0,
+        "largest_lost_color_region": 0,
+        "corners_transparent": true
+      }
+    },
+    {
+      "tag": "wristwatches_working_adult_white_black_2026114201",
+      "selection": {
+        "group": "working_adult",
+        "product": "wristwatches",
+        "color1": "white",
+        "color2": "black",
+        "primary_hex": "#FFFFFF",
+        "secondary_hex": "#171619",
+        "profile": "quality",
+        "seed": 2026114201,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "wristwatches",
+        "alpha": true,
+        "positive_prompt": "one rounded square smartwatch with a complete silicone wristband, simple clock face and three small colorful app dots on the screen. Main color #FFFFFF (white) on silicone strap. Accent color #171619 (near-black) on square case. refined minimal design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Flat uniform medium-gray background (#808080), opaque object surfaces, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "files": {
+        "7": "wristwatches_working_adult_white_black_2026114201_7.png",
+        "93": "wristwatches_working_adult_white_black_2026114201_93.png",
+        "94": "wristwatches_working_adult_white_black_2026114201_94.png",
+        "95": "wristwatches_working_adult_white_black_2026114201_95.png",
+        "98": "wristwatches_working_adult_white_black_2026114201_98.png",
+        "99": "wristwatches_working_adult_white_black_2026114201_99.png"
+      },
+      "seconds": 5.32,
+      "prompt_id": "15e2716c-a9c6-4326-9685-5a1e57523511",
+      "checks": {
+        "rgb_unchanged_480": true,
+        "rgb_unchanged_native": true,
+        "native_background_zero_preserved": true,
+        "native_material_all_opaque": true,
+        "native_outside_core_unchanged": true,
+        "native_alpha_never_reduced": true,
+        "native_core_all_opaque": true,
+        "native_core_pixels": 121156,
+        "white_core_pixels": 44644,
+        "lost_white_core_pixels": 0,
+        "largest_lost_white_region": 0,
+        "lost_colored_core_pixels": 0,
+        "largest_lost_color_region": 0,
+        "corners_transparent": true
+      }
+    },
+    {
+      "tag": "sunglasses_senior_red_blue_2026114202",
+      "selection": {
+        "group": "senior",
+        "product": "sunglasses",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 2026114202,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "sunglasses",
+        "alpha": true,
+        "positive_prompt": "one round vintage sunglasses with thick circular frames and solid tinted lenses. Main color #EC6868 (soft red) on circular frame. Accent color #5FB0E3 (light blue) on opaque lenses. simple ergonomic design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Flat uniform medium-gray background (#808080), opaque object surfaces, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "files": {
+        "7": "sunglasses_senior_red_blue_2026114202_7.png",
+        "93": "sunglasses_senior_red_blue_2026114202_93.png",
+        "94": "sunglasses_senior_red_blue_2026114202_94.png",
+        "95": "sunglasses_senior_red_blue_2026114202_95.png",
+        "98": "sunglasses_senior_red_blue_2026114202_98.png",
+        "99": "sunglasses_senior_red_blue_2026114202_99.png"
+      },
+      "seconds": 4.58,
+      "prompt_id": "f2426551-8b1c-4a86-a354-d82507321c3b",
+      "checks": {
+        "rgb_unchanged_480": true,
+        "rgb_unchanged_native": true,
+        "native_background_zero_preserved": true,
+        "native_material_all_opaque": true,
+        "native_outside_core_unchanged": true,
+        "native_alpha_never_reduced": true,
+        "native_core_all_opaque": true,
+        "native_core_pixels": 80890,
+        "white_core_pixels": 21,
+        "lost_white_core_pixels": 0,
+        "largest_lost_white_region": 0,
+        "lost_colored_core_pixels": 0,
+        "largest_lost_color_region": 0,
+        "corners_transparent": true
+      }
+    },
+    {
+      "tag": "umbrellas_student_white_white_2026114203",
+      "selection": {
+        "group": "student",
+        "product": "umbrellas",
+        "color1": "white",
+        "color2": "white",
+        "primary_hex": "#FFFFFF",
+        "secondary_hex": "#FFFFFF",
+        "profile": "quality",
+        "seed": 2026114203,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "umbrellas",
+        "alpha": true,
+        "positive_prompt": "one compact folding umbrella with a short telescopic shaft and a straight handle. Main color #FFFFFF (white) on canopy. Accent color #FFFFFF (white) on handle and rim. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Flat uniform medium-gray background (#808080), opaque object surfaces, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "files": {
+        "7": "umbrellas_student_white_white_2026114203_7.png",
+        "93": "umbrellas_student_white_white_2026114203_93.png",
+        "94": "umbrellas_student_white_white_2026114203_94.png",
+        "95": "umbrellas_student_white_white_2026114203_95.png",
+        "98": "umbrellas_student_white_white_2026114203_98.png",
+        "99": "umbrellas_student_white_white_2026114203_99.png"
+      },
+      "seconds": 4.371,
+      "prompt_id": "7581f4e0-899c-4955-8c22-caa71eec66c8",
+      "checks": {
+        "rgb_unchanged_480": true,
+        "rgb_unchanged_native": true,
+        "native_background_zero_preserved": true,
+        "native_material_all_opaque": true,
+        "native_outside_core_unchanged": true,
+        "native_alpha_never_reduced": true,
+        "native_core_all_opaque": true,
+        "native_core_pixels": 73451,
+        "white_core_pixels": 30593,
+        "lost_white_core_pixels": 0,
+        "largest_lost_white_region": 0,
+        "lost_colored_core_pixels": 0,
+        "largest_lost_color_region": 0,
+        "corners_transparent": true
+      }
+    }
+  ],
+  "invariants_passed": true,
+  "review_flags": []
+}

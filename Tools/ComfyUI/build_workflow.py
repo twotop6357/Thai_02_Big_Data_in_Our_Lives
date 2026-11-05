@@ -2,6 +2,7 @@
 import argparse
 import json
 from pathlib import Path
+from alpha_mask_nodes import alpha_nodes
 
 ROOT = Path(__file__).resolve().parent
 
@@ -84,9 +85,10 @@ def build(group="student", product="bags", color1="blue", color2="white", profil
         "18": node("StringConcatenate", "Fixed product composition", string_a=["17", 0], string_b=presets["style"], delimiter=", "),
         "20": node("LoadBackgroundRemovalModel", "BiRefNet foreground segmentation", bg_removal_name=read_json("background_model.json")["filename"]),
         "21": node("RemoveBackground", "Foreground mask at native resolution", bg_removal_model=["20", 0], image=["6", 0]),
-        "22": node("InvertMask", "Foreground to Comfy alpha convention", mask=["21", 0]),
-        "23": node("JoinImageWithAlpha", "Apply actual alpha (not painted transparency)", image=["6", 0], alpha=["22", 0])
+        "22": node("InvertMask", "Foreground to Comfy alpha convention", mask=["60", 0]),
+        "23": node("JoinImageWithAlpha", "Apply repaired alpha to unchanged decoded RGB", image=["6", 0], alpha=["22", 0])
     }
+    api.update(alpha_nodes())
     api["12"]["_meta"]["color_reference"] = reference(color1)
     api["13"]["_meta"]["color_reference"] = reference(color2)
     api["28"] = node("KSamplerSelect", "Turbo sampler", sampler_name=sampling["sampler"])
@@ -146,6 +148,8 @@ def to_ui(api, selection):
                "PrimitiveString": [("STRING", "STRING")], "StringConcatenate": [("STRING", "STRING")],
                "LoadBackgroundRemovalModel": [("bg_model", "BACKGROUND_REMOVAL")],
                "RemoveBackground": [("mask", "MASK")], "InvertMask": [("MASK", "MASK")], "JoinImageWithAlpha": [("IMAGE", "IMAGE")],
+               "ThresholdMask": [("MASK", "MASK")], "GrowMask": [("MASK", "MASK")], "MaskComposite": [("MASK", "MASK")],
+               "StringContains": [("BOOLEAN", "BOOLEAN")], "ComfySwitchNode": [("output", "MASK")],
                "LoadImage": [("IMAGE", "IMAGE"), ("MASK", "MASK")], "ControlNetLoader": [("CONTROL_NET", "CONTROL_NET")],
                "ControlNetApplyAdvanced": [("positive", "CONDITIONING"), ("negative", "CONDITIONING")], "Canny": [("IMAGE", "IMAGE")]}
     widgets = {"CheckpointLoaderSimple": ["ckpt_name"], "CLIPTextEncode": ["text"],
@@ -160,6 +164,8 @@ def to_ui(api, selection):
                "VAEDecode": [], "SaveImage": ["filename_prefix"], "ImageScale": ["upscale_method", "width", "height", "crop"], "PrimitiveString": ["value"],
                "StringConcatenate": ["string_a", "string_b", "delimiter"], "LoadBackgroundRemovalModel": ["bg_removal_name"],
                "RemoveBackground": [], "InvertMask": [], "JoinImageWithAlpha": [], "LoadImage": ["image"],
+               "ThresholdMask": ["value"], "GrowMask": ["expand", "tapered_corners"], "MaskComposite": ["x", "y", "operation"],
+               "StringContains": ["string", "substring", "case_sensitive"], "ComfySwitchNode": [],
                "ControlNetLoader": ["control_net_name"], "ControlNetApplyAdvanced": ["strength", "start_percent", "end_percent"], "Canny": ["low_threshold", "high_threshold"]}
     positions = {"10": [-900, 0], "11": [-900, 170], "12": [-900, 340], "13": [-900, 510],
                  "14": [-500, 0], "15": [-500, 340], "16": [-80, 0], "17": [330, 0], "18": [330, 300],
@@ -171,6 +177,7 @@ def to_ui(api, selection):
     positions.update({"30": [750, 1180], "31": [1120, 1180], "32": [-900, 800], "33": [-500, 800],
                       "34": [-80, 800], "35": [330, 800], "36": [1120, 1420], "37": [750, 1420]})
     positions.update({"38": [-900, 1090], "39": [-500, 1090]})
+    positions.update({str(key): [1690+(key-40)%4*380, 970+(key-40)//4*240] for key in range(40, 64)})
     ui_nodes, by_id, links = [], {}, []
     for order, (key, value) in enumerate(api.items()):
         kind, data = value["class_type"], value["inputs"]

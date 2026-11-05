@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "stylePrefix": "Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors",
-  "styleSuffix": "One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render",
+  "styleSuffix": "One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Flat uniform medium-gray background (#808080), opaque object surfaces, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render",
   "negativePrompt": "text, logo, rough sketch, complex details, people, background",
   "groups": [
     {

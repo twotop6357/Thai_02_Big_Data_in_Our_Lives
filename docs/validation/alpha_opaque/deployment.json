@@ -1,0 +1,15 @@
+{
+  "build": "C:\\Users\\\uae40\uc131\ud6c8\\Desktop\\Thai_02",
+  "protected_files_unchanged": {
+    "Unity-Startup-Template.exe": "f5f73d8616a2500e0fb0223d83774e2d7f6a74c1bbdad772f4fefc9bf5812036",
+    "UnityPlayer.dll": "dc005461655b67912029eea6bcc303fe244c3a336e2046107f934b901ab9ce2b",
+    "Unity-Startup-Template_Data\\Managed\\Assembly-CSharp.dll": "bf2bb02800d93e497f9fb4e11775afbbc22675c8fad6535ba7aa1ec10783b751",
+    "Unity-Startup-Template_Data\\StreamingAssets\\Settings.json": "01f1daf112da77120779dfb2aeb00a5b645cac3a3ff4775edae82915326a2dcd",
+    "Unity-Startup-Template_Data\\StreamingAssets\\RFID\\RfidSettings.json": "cd6d82cf97a1b256b090d8b79296782a3920ef1c05abfc246076c8df9027e7a3"
+  },
+  "catalog_only_style_suffix_changed": true,
+  "updated_files": {
+    "BlockCatalog.json": "bd619bf5989d4a249dc95efc0259e63e1514343d128e9551685485c09acc4206",
+    "product_480.api.json": "6e4cbcb4a6ce8eb9c783e42a5d62b2e64b7f78810229f7d4e23e457455337c94"
+  }
+}

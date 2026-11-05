@@ -1,0 +1,137 @@
+[
+  {
+    "tag": "umbrellas_white_black",
+    "seconds": 9.502,
+    "files": {
+      "90": "umbrellas_white_black_90.png",
+      "91": "umbrellas_white_black_91.png",
+      "106": "umbrellas_white_black_106.png",
+      "116": "umbrellas_white_black_116.png",
+      "126": "umbrellas_white_black_126.png"
+    },
+    "prompt_id": "58a6110a-3b6c-461b-9ca7-3805057eef73",
+    "selection": {
+      "group": "student",
+      "product": "umbrellas",
+      "color1": "white",
+      "color2": "black",
+      "primary_hex": "#FFFFFF",
+      "secondary_hex": "#171619",
+      "profile": "quality",
+      "seed": 1211320,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "umbrellas",
+      "alpha": true,
+      "positive_prompt": "one compact folding umbrella with a short telescopic shaft and a straight handle. Main color #FFFFFF (white) on canopy. Accent color #171619 (near-black) on handle and rim. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+    }
+  },
+  {
+    "tag": "shoes_white_white",
+    "seconds": 6.435,
+    "files": {
+      "90": "shoes_white_white_90.png",
+      "91": "shoes_white_white_91.png",
+      "106": "shoes_white_white_106.png",
+      "116": "shoes_white_white_116.png",
+      "126": "shoes_white_white_126.png"
+    },
+    "prompt_id": "951dd8dd-f183-44e6-9e88-6f78aa24b35a",
+    "selection": {
+      "group": "student",
+      "product": "shoes",
+      "color1": "white",
+      "color2": "white",
+      "primary_hex": "#FFFFFF",
+      "secondary_hex": "#FFFFFF",
+      "profile": "quality",
+      "seed": 7042026,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "shoes",
+      "alpha": true,
+      "positive_prompt": "one high-top canvas sneaker with laces, natural three-quarter view. Main color #FFFFFF (white) on canvas upper. Accent color #FFFFFF (white) on ankle panels and sole. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+    }
+  },
+  {
+    "tag": "bags_white_blue",
+    "seconds": 6.978,
+    "files": {
+      "90": "bags_white_blue_90.png",
+      "91": "bags_white_blue_91.png",
+      "106": "bags_white_blue_106.png",
+      "116": "bags_white_blue_116.png",
+      "126": "bags_white_blue_126.png"
+    },
+    "prompt_id": "c23f5f35-ccdc-41cf-b096-ed1be3a51a77",
+    "selection": {
+      "group": "working_adult",
+      "product": "bags",
+      "color1": "white",
+      "color2": "blue",
+      "primary_hex": "#FFFFFF",
+      "secondary_hex": "#5FB0E3",
+      "profile": "quality",
+      "seed": 7042027,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "bags",
+      "alpha": true,
+      "positive_prompt": "one structured office briefcase with a top handle and rectangular flap. Main color #FFFFFF (white) on body. Accent color #5FB0E3 (light blue) on handle and flap. refined minimal design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+    }
+  },
+  {
+    "tag": "sunglasses_white_black",
+    "seconds": 6.584,
+    "files": {
+      "90": "sunglasses_white_black_90.png",
+      "91": "sunglasses_white_black_91.png",
+      "106": "sunglasses_white_black_106.png",
+      "116": "sunglasses_white_black_116.png",
+      "126": "sunglasses_white_black_126.png"
+    },
+    "prompt_id": "6d8fa1b8-45fa-4685-ac20-ceaf1e777cba",
+    "selection": {
+      "group": "student",
+      "product": "sunglasses",
+      "color1": "white",
+      "color2": "black",
+      "primary_hex": "#FFFFFF",
+      "secondary_hex": "#171619",
+      "profile": "quality",
+      "seed": 1211314,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "sunglasses",
+      "alpha": true,
+      "positive_prompt": "one wraparound sports sunglasses with a curved shield lens and solid tint. Main color #FFFFFF (white) on frame. Accent color #171619 (near-black) on opaque shield lens. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+    }
+  },
+  {
+    "tag": "bicycles_red_blue",
+    "seconds": 6.841,
+    "files": {
+      "90": "bicycles_red_blue_90.png",
+      "91": "bicycles_red_blue_91.png",
+      "106": "bicycles_red_blue_106.png",
+      "116": "bicycles_red_blue_116.png",
+      "126": "bicycles_red_blue_126.png"
+    },
+    "prompt_id": "009830eb-f219-448a-aca7-74ddd1c07257",
+    "selection": {
+      "group": "student",
+      "product": "bicycles",
+      "color1": "red",
+      "color2": "blue",
+      "primary_hex": "#EC6868",
+      "secondary_hex": "#5FB0E3",
+      "profile": "quality",
+      "seed": 1211217,
+      "width": 480,
+      "height": 480,
+      "resolved_product": "bicycles",
+      "alpha": true,
+      "positive_prompt": "one road bicycle with drop handlebars and thin tires, both wheels visible, centered. Main color #EC6868 (soft red) on frame. Accent color #5FB0E3 (light blue) on wheel rims and handlebars. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+    }
+  }
+]

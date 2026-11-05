@@ -111,11 +111,26 @@ class WorkflowTests(unittest.TestCase):
             self.assertFalse(any(n["class_type"] in ("ControlNetLoader","Canny","ControlNetApplyAdvanced","CheckpointLoaderSimple") for n in api.values()))
             self.assertIn("Entirely hand-drawn flat illustration", selection["positive_prompt"])
             self.assertEqual(api["21"]["inputs"]["image"], ["6", 0])
-            self.assertEqual(api["22"]["inputs"]["mask"], ["21", 0])
+            self.assertEqual(api["22"]["inputs"]["mask"], ["60", 0])
             self.assertEqual(api["23"]["inputs"]["alpha"], ["22", 0])
             self.assertEqual(api["8"]["inputs"]["image"], ["23", 0])
 
 
+
+    def test_alpha_repair_changes_only_mask_and_hidden_backdrop_without_filling_openings(self):
+        api, _, _ = build("student", "bags", "white", "white")
+        self.assertIn("medium-gray background (#808080)", api["18"]["inputs"]["string_b"])
+        self.assertEqual(api["45"]["inputs"], {"mask": ["44", 0], "value": 0.65})
+        self.assertEqual(api["53"]["inputs"], {"mask": ["52", 0], "value": 0.12})
+        self.assertEqual(api["62"]["inputs"], {"mask": ["61", 0]})
+        self.assertEqual(api["57"]["inputs"], {"switch": ["56", 0], "on_false": ["55", 0], "on_true": ["21", 0]})
+        self.assertEqual(api["56"]["inputs"], {"string": ["11", 0], "substring": "bicycle", "case_sensitive": False})
+        self.assertEqual(api["59"]["inputs"], {"mask": ["58", 0], "expand": -1, "tapered_corners": True})
+        self.assertEqual(api["58"]["inputs"], {"mask": ["57", 0], "value": 0.5})
+        self.assertEqual(api["60"]["inputs"], {"destination": ["21", 0], "source": ["59", 0], "x": 0, "y": 0, "operation": "add"})
+        self.assertEqual(api["23"]["inputs"]["image"], ["6", 0])
+        self.assertFalse(any(node["class_type"] == "ImageInvert" for node in api.values()))
+        self.assertEqual(sum(node["class_type"] == "RemoveBackground" for node in api.values()), 1)
 
 if __name__ == "__main__":
     unittest.main()
