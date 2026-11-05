@@ -1,0 +1,18 @@
+{
+  "task": "RED-BUTTON-001",
+  "hardware_tested": false,
+  "checks": [
+    "Idle adapter is active",
+    "Configured legacy RedButton can be read at rest without an exception",
+    "Top-row 1 starts Game through the actual adapter",
+    "Releasing one overlapping input does not release the combined button",
+    "Releasing all inputs produces exactly one short press",
+    "Focus loss cancels a pending press without advancing",
+    "Numpad 1 five-second hold returns home",
+    "Top-row 1 two-second hold changes title language without starting",
+    "Repeated language hold restores original language",
+    "Numpad 1 also starts Game through the adapter",
+    "Verification returns to Idle"
+  ],
+  "passed": true
+}

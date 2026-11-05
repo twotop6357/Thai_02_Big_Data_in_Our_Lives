@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 namespace Core
 {
-    /// <summary>Idle opt-in keyboard adapter. Persists for the return button in later scenes.</summary>
+    /// <summary>RedButton input with keyboard fallback. Persists for the return button in later scenes.</summary>
     [DefaultExecutionOrder(-50)]
     [DisallowMultipleComponent]
     public sealed class KeyboardButtonSimulator : MonoBehaviour
@@ -31,7 +31,7 @@ namespace Core
             }
             _registered = true;
             DontDestroyOnLoad(gameObject);
-            Debug.Log("[KeyboardButtonSimulator] Registered. Key 1 simulates the exhibition button.", this);
+            Debug.Log("[KeyboardButtonSimulator] Registered. Input Manager RedButton and key 1 control the exhibition button.", this);
         }
 
         private void OnEnable() => _waitForRelease = true;
@@ -41,6 +41,10 @@ namespace Core
             if (!_registered || !_manager || !_hasFocus) return;
             Keyboard keyboard = Keyboard.current;
             bool pressed = keyboard != null && (keyboard.digit1Key.isPressed || keyboard.numpad1Key.isPressed);
+#if ENABLE_LEGACY_INPUT_MANAGER
+            // Merge held states before gesture detection so overlapping sources count as one press.
+            pressed |= UnityEngine.Input.GetButton("RedButton");
+#endif
             if (_waitForRelease)
             {
                 if (!pressed) _waitForRelease = false;
