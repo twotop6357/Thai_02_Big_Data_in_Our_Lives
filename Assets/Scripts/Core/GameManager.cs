@@ -2,6 +2,7 @@ using System;
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using Exhibition.Input;
+using Exhibition.Blocks;
 using Exhibition.UI;
 using MessagePipe;
 using UnityEngine;
@@ -39,6 +40,7 @@ namespace Core
         private bool _buttonPressed;
         private bool _isIdle;
         private bool _inputReady;
+        private ComfyServerLauncher _comfyServer;
         private bool _isGame;
         private Texture2D _resultTexture;
         private LocalizedImageSet _localizedUI;
@@ -46,6 +48,15 @@ namespace Core
         public UIPresentationTransitions Presentation => _presentation ? _presentation :
             (_presentation = GetComponent<UIPresentationTransitions>() ?? gameObject.AddComponent<UIPresentationTransitions>());
         public bool IsPresentationLocked => _presentation && _presentation.IsInputLocked;
+        private AudioManager _audio;
+        public AudioManager Audio
+        {
+            get
+            {
+                if (!_audio && !TryGetComponent(out _audio)) _audio = gameObject.AddComponent<AudioManager>();
+                return _audio;
+            }
+        }
 
         public event Action ShortButtonPressed;
         public bool IsLanguageChanging { get; private set; }
@@ -55,10 +66,19 @@ namespace Core
         public string LanguageCode => currentLanguage == SessionLanguage.Thai ? "th" : "en";
         public bool HasLanguageSelection { get; private set; }
         public bool IsTransitioning { get; private set; }
-        public bool IsInputReady => _inputReady;
+        public bool IsInputReady => _inputReady && _comfyServer && _comfyServer.IsReady;
+
+        public void ConfigureComfyServer(ComfyServerLauncher server)
+        {
+            _comfyServer = server;
+            ResetButtonInput();
+        }
 
         /// <summary>Generated image owned by this manager until the session returns to Idle.</summary>
         public Texture2D ResultTexture => _resultTexture;
+        public bool HasResultPalette { get; private set; }
+        public Color ResultPrimaryColor { get; private set; }
+        public Color ResultSecondaryColor { get; private set; }
 
         // Future API/video tasks must use this plus their own screen lifetime token.
         public CancellationToken SessionCancellationToken =>
@@ -91,6 +111,7 @@ namespace Core
             _isIdle = SceneManager.GetActiveScene().path == idleScenePath;
             _isGame = SceneManager.GetActiveScene().path == gameScenePath;
             _localizedUI = FindFirstObjectByType<LocalizedImageSet>();
+            if (_localizedUI) _localizedUI.BindInputManager(this);
             ResetButtonInput();
         }
 
@@ -130,12 +151,18 @@ namespace Core
             base.OnSettingsLoaded(loadedSettings);
             _gesture.Reset();
             _inputReady = true;
-            Debug.Log("[GameManager] Button input ready. Title language hold: 2 seconds; home hold: 5 seconds.", this);
+            Debug.Log("[GameManager] Button settings loaded. Input also requires a ready ComfyUI server.", this);
         }
 
         private void Update()
         {
-            if (!_inputReady || IsTransitioning || IsPresentationLocked) return;
+            if (!IsInputReady)
+            {
+                // Discard pending gestures. A held button must be released after the server is ready.
+                _gesture.Reset();
+                return;
+            }
+            if (IsTransitioning || IsPresentationLocked) return;
             ButtonGesture gesture = _gesture.Tick(_buttonPressed, _isIdle, Time.realtimeSinceStartupAsDouble);
             switch (gesture)
             {
@@ -182,18 +209,21 @@ namespace Core
         public void SetButtonPressed(bool pressed)
         {
             _buttonPressed = pressed;
-            if (pressed) _inactivityTimer?.ResetTimer();
+            if (pressed && IsInputReady) _inactivityTimer?.ResetTimer();
         }
 
         /// <summary>
         /// Takes ownership of a generated image for the Result scene. The previous image is destroyed.
         /// Ignored outside an active Game session so a late result cannot leak into Idle.
         /// </summary>
-        public bool SetResultTexture(Texture2D texture)
+        public bool SetResultTexture(Texture2D texture, Color? primaryColor = null, Color? secondaryColor = null)
         {
             if (!texture || !HasLanguageSelection || !_isGame || IsTransitioning) return false;
             if (_resultTexture && _resultTexture != texture) Destroy(_resultTexture);
             _resultTexture = texture;
+            HasResultPalette = primaryColor.HasValue && secondaryColor.HasValue;
+            ResultPrimaryColor = primaryColor ?? Color.white;
+            ResultSecondaryColor = secondaryColor ?? Color.white;
             return true;
         }
 
@@ -201,6 +231,8 @@ namespace Core
         {
             if (_resultTexture) Destroy(_resultTexture);
             _resultTexture = null;
+            HasResultPalette = false;
+            ResultPrimaryColor = ResultSecondaryColor = Color.white;
         }
 
         public void ResetButtonInput()
@@ -241,6 +273,8 @@ namespace Core
             IsTransitioning = true;
             _gesture.Reset();
             Debug.Log($"[GameManager] Scene transition started: {scenePath}", this);
+            if (scenePath == idleScenePath) Audio.PlayHome();
+            else Audio.PlayConfirm();
             TransitionAsync(scenePath, manualReturn, language).Forget();
         }
 
@@ -317,6 +351,7 @@ namespace Core
             _isIdle = next.path == idleScenePath;
             _isGame = next.path == gameScenePath;
             _localizedUI = FindFirstObjectByType<LocalizedImageSet>();
+            if (_localizedUI) _localizedUI.BindInputManager(this);
             _gesture.Reset();
             if (_isIdle)
             {
@@ -350,7 +385,7 @@ namespace Core
             foreach (VideoPlayer video in FindObjectsByType<VideoPlayer>(FindObjectsInactive.Include, FindObjectsSortMode.None))
                 video.Stop();
             foreach (AudioSource audio in FindObjectsByType<AudioSource>(FindObjectsInactive.Include, FindObjectsSortMode.None))
-                audio.Stop();
+                if (!Audio.Owns(audio)) audio.Stop();
         }
     }
 }
