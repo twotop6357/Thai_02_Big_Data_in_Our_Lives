@@ -1,0 +1,9 @@
+{
+  "task": "LOG-003",
+  "build": "Release",
+  "passed": true,
+  "messages": [
+    "start",
+    "end_kill"
+  ]
+}

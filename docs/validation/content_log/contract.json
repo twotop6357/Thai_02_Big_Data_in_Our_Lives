@@ -1,0 +1,22 @@
+{
+  "task": "LOG-003",
+  "receiver": "loopback fixture",
+  "checks": [
+    "Startup is exactly start without restart/reason suffix",
+    "Actual Game session starts for return tests",
+    "Manual home sends one move_idle through existing event",
+    "Timeout sends one dedicated message without duplicate move_idle",
+    "Already-Idle timeout does not invent a screen move",
+    "External success logs exact Call API URL and Return OK",
+    "External failure logs exact Return fail and preserves original exception",
+    "Comfy and logging requests bypass both Call and Return messages",
+    "Configured remote Comfy origin is excluded without relying on its host name",
+    "Actual wire logs keep public parameters and redact credential values",
+    "Legacy paired events also exclude local Comfy returns",
+    "Legacy events preserve the exact failure vocabulary",
+    "Actual Comfy API request produces no content telemetry",
+    "Normal exit sends exactly end without a quit-reason suffix",
+    "Logging failure is bounded and does not fail the content action"
+  ],
+  "passed": true
+}

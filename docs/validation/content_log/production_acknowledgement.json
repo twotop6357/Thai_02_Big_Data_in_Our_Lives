@@ -1,0 +1,10 @@
+{
+  "request_message": "end",
+  "http_status": 200,
+  "response_observed_subset": {
+    "message": "logged",
+    "ok": true,
+    "message_text": "end"
+  },
+  "note": "Direct transport check with the user-authorized endpoint; not a Player lifecycle test. Earlier start and end HTTP statuses are in production_transport.json."
+}

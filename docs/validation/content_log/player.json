@@ -1,0 +1,21 @@
+{
+    "task":  "LOG-003",
+    "realWindowsPlayer":  true,
+    "receiver":  "loopback fixture",
+    "checks":  [
+                   "Normal Application.Quit finishes without a stuck exit barrier",
+                   "Normal Player sends exactly start,end and no end_kill",
+                   "Forced-exit test targets only the test Player executable",
+                   "Independent watcher sends exactly end_kill after a killed Player",
+                   "Comfy startup/probes do not produce external API telemetry"
+               ],
+    "passed":  true,
+    "normalMessages":  [
+                           "start",
+                           "end"
+                       ],
+    "killedMessages":  [
+                           "start",
+                           "end_kill"
+                       ]
+}

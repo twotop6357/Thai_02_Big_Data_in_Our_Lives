@@ -2,11 +2,11 @@
   "useInactivityTimer": true,
   "resetTime": 30,
   "buttonDoublePressIntervalSeconds": 0.4,
-  "targetFrameRate": 60,
+  "targetFrameRate": 0,
   "focusRestoreDelay": 3,
   "focusRestoreRetryInterval": 3,
   "alwaysOnTop": true,
-  "apiUrl": "",
+  "apiUrl": "https://www.huliac.com/api/content_log.cfm?idx_content_device=79&uid=CE9B147DF8D7&message=",
   "closeSetting": {
     "position": { "x": 1.0, "y": 1.0 },
     "numToClose": 10,
