@@ -1,0 +1,22 @@
+{
+ "group_th": {
+  "whole_above_help": 2.463,
+  "board_and_slot": 3.27,
+  "header": 4.392
+ },
+ "selection_th": {
+  "above_help_excl_group_card": 3.668,
+  "slots": 1.62,
+  "header": 5.493
+ },
+ "group_en": {
+  "whole_above_help": 3.335,
+  "board_and_slot": 3.274,
+  "header": 6.452
+ },
+ "selection_en": {
+  "above_help_excl_group_card": 3.49,
+  "slots": 1.62,
+  "header": 5.245
+ }
+}

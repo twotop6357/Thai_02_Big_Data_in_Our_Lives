@@ -1,0 +1,100 @@
+{
+  "task": "UI-ATTN-001",
+  "checks": [
+    "Label follows the language: th",
+    "First bounce waits about 3s: th",
+    "Empty group bounce th: 3 starts, got 3",
+    "Empty group bounce th: 3s spacing, got 3.01",
+    "Empty group bounce th: 3s spacing, got 3.003",
+    "Frame stays still during the bounce: th",
+    "Placed block hides the label at rest scale: th",
+    "One group never shakes: th",
+    "Extra group shakes at once: th",
+    "Extra group shake th: 3 starts, got 3",
+    "Extra group shake th: 3s spacing, got 3.01",
+    "Extra group shake th: 3s spacing, got 3.003",
+    "The existing block is the one shown and continue stays blocked: th",
+    "Shake settles at rest: th",
+    "Resolving the extra stops the shake: th",
+    "Transfer stops the shake: th",
+    "Selection labels match occupancy: th",
+    "Random cue repeats every 3s: th got 5",
+    "The cue moves between empty slots: th got 2",
+    "A placed block restarts the wait: th",
+    "Bounce follows a fresh 3s: th",
+    "Extra product shakes the existing one: th",
+    "The existing product stays displayed: th",
+    "Complete composition is ready: th",
+    "Complete composition is quiet: th",
+    "Group is on reader 3: th",
+    "Third color shakes both existing colors: th",
+    "Removed group's label returns at 252 and bounces: th",
+    "Group extra shakes on the selection page: th",
+    "Disable restores the block position: th",
+    "Home clears after the cues: th",
+    "Title language switch: English",
+    "Label follows the language: en",
+    "First bounce waits about 3s: en",
+    "Empty group bounce en: 3 starts, got 3",
+    "Empty group bounce en: 3s spacing, got 3.011",
+    "Empty group bounce en: 3s spacing, got 2.999",
+    "Frame stays still during the bounce: en",
+    "Placed block hides the label at rest scale: en",
+    "One group never shakes: en",
+    "Extra group shakes at once: en",
+    "Extra group shake en: 3 starts, got 3",
+    "Extra group shake en: 3s spacing, got 3.011",
+    "Extra group shake en: 3s spacing, got 3.017",
+    "The existing block is the one shown and continue stays blocked: en",
+    "Shake settles at rest: en",
+    "Resolving the extra stops the shake: en",
+    "Transfer stops the shake: en",
+    "Selection labels match occupancy: en",
+    "Random cue repeats every 3s: en got 5",
+    "The cue moves between empty slots: en got 2",
+    "A placed block restarts the wait: en",
+    "Bounce follows a fresh 3s: en",
+    "Extra product shakes the existing one: en",
+    "The existing product stays displayed: en",
+    "Complete composition is ready: en",
+    "Complete composition is quiet: en",
+    "Group is on reader 3: en",
+    "Third color shakes both existing colors: en",
+    "Removed group's label returns at 252 and bounces: en",
+    "Group extra shakes on the selection page: en",
+    "Disable restores the block position: en",
+    "Home clears after the cues: en",
+    "Title language switch: Thai"
+  ],
+  "timing": {
+    "group_empty_th": [
+      2.685,
+      5.695,
+      8.698
+    ],
+    "group_extra_th": [
+      0.266,
+      3.276,
+      6.279
+    ],
+    "group_empty_en": [
+      2.701,
+      5.712,
+      8.711
+    ],
+    "group_extra_en": [
+      0.284,
+      3.295,
+      6.312
+    ]
+  },
+  "picks_th": [
+    "ProductAndColors/SelectionFrame2",
+    "ProductAndColors/SelectionFrame3"
+  ],
+  "picks_en": [
+    "ProductAndColors/SelectionFrame2",
+    "ProductAndColors/SelectionFrame1"
+  ],
+  "passed": true
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "slot": "UIs_En/GroupSelect/GroupSlot_en",
+    "size": 424,
+    "text": [
+      163.0,
+      220.0,
+      244.0
+    ],
+    "max_channel_error": 0.94,
+    "covered_outside_label": 4042
+  },
+  {
+    "slot": "UIs_Th/GroupSelect/GroupSlot_th",
+    "size": 424,
+    "text": [
+      163.0,
+      220.0,
+      244.0
+    ],
+    "max_channel_error": 0.94,
+    "covered_outside_label": 2521
+  },
+  {
+    "slot": "UIs_En/SelectAll/ProductSlot_en",
+    "size": 252,
+    "text": [
+      163.0,
+      220.0,
+      244.0
+    ],
+    "max_channel_error": 0.86,
+    "covered_outside_label": 1712
+  },
+  {
+    "slot": "UIs_Th/SelectAll/ProductSlot_th",
+    "size": 252,
+    "text": [
+      163.0,
+      220.0,
+      244.0
+    ],
+    "max_channel_error": 0.94,
+    "covered_outside_label": 2105
+  },
+  {
+    "slot": "UIs_En/SelectAll/ColorSlot_en",
+    "size": 252,
+    "text": [
+      163.0,
+      220.0,
+      244.0
+    ],
+    "max_channel_error": 0.94,
+    "covered_outside_label": 1226
+  },
+  {
+    "slot": "UIs_Th/SelectAll/ColorSlot_th",
+    "size": 252,
+    "text": [
+      163.0,
+      220.0,
+      244.0
+    ],
+    "max_channel_error": 0.79,
+    "covered_outside_label": 404
+  }
+]

@@ -30,7 +30,13 @@ namespace Exhibition.UI
     public sealed class LocalizedImageSet : MonoBehaviour
     {
         [Serializable]
-        public struct Binding { public string id; public Image image; }
+        public struct Binding
+        {
+            public string id;
+            public Image image;
+            // Block slots keep their object names; only their sprite and rect follow the language.
+            public bool keepObjectName;
+        }
         [SerializeField] private ExhibitionUIAssets assets;
         [SerializeField] private Binding[] bindings;
         [SerializeField] private CanvasGroup[] localizedGroups;
@@ -39,6 +45,8 @@ namespace Exhibition.UI
         private Sprite[] _thaiSprites, _englishSprites;
         private CancellationTokenSource _screenCts;
         private bool _applying;
+        private GameManager _manager;
+        private Image _titleButtonHelp;
         private int _screenVersion;
         public bool IsReady { get; private set; }
         public bool IsInitializationComplete { get; private set; }
@@ -46,8 +54,15 @@ namespace Exhibition.UI
         public bool UsingFallback { get; private set; }
         public string VideoResource => AppliedLanguage == SessionLanguage.Thai ? _thai?.video : _english?.video;
 
+        public void BindInputManager(GameManager manager) => _manager = manager;
+
         private void OnEnable()
         {
+            // Disable the actual Image so localization fades and entrance tweens cannot reveal it early.
+            if (bindings != null)
+                foreach (var binding in bindings)
+                    if (binding.id == "idle.help") { _titleButtonHelp = binding.image; break; }
+            if (_titleButtonHelp) _titleButtonHelp.enabled = false;
             _screenVersion++;
             IsInitializationComplete = false;
             _screenCts = new CancellationTokenSource();
@@ -82,8 +97,8 @@ namespace Exhibition.UI
                     _englishSprites = Resolve(_english);
                     UsingFallback = true;
                 }
-                var manager = FindFirstObjectByType<GameManager>();
-                AppliedLanguage = manager ? manager.CurrentLanguage : SessionLanguage.Thai;
+                if (!_manager) _manager = FindFirstObjectByType<GameManager>();
+                AppliedLanguage = _manager ? _manager.CurrentLanguage : SessionLanguage.Thai;
                 Apply(AppliedLanguage);
                 SetAlpha(1);
                 IsReady = true;
@@ -208,12 +223,16 @@ namespace Exhibition.UI
             {
                 if (!bindings[i].image) continue;
                 bindings[i].image.sprite = sprites[i];
-                bindings[i].image.gameObject.name = sprites[i].name;
+                if (!bindings[i].keepObjectName) bindings[i].image.gameObject.name = sprites[i].name;
                 foreach (var entry in document.images)
                     if (entry.id == bindings[i].id)
                     {
                         var rect = bindings[i].image.rectTransform;
-                        rect.anchoredPosition = new Vector2(entry.x, -entry.y);
+                        // A stretched background keeps filling its panel; only its sprite follows the language.
+                        if (rect.anchorMin != rect.anchorMax) break;
+                        // JSON stores the top-left corner; slots use a centered pivot for their placement pop.
+                        rect.anchoredPosition = new Vector2(entry.x + entry.width * rect.pivot.x,
+                            -(entry.y + entry.height * (1 - rect.pivot.y)));
                         rect.sizeDelta = new Vector2(entry.width, entry.height);
                         break;
                     }
@@ -226,6 +245,12 @@ namespace Exhibition.UI
             foreach (var group in localizedGroups) if (group) group.alpha = alpha;
         }
 
+        private void LateUpdate()
+        {
+            if (_titleButtonHelp)
+                _titleButtonHelp.enabled = IsReady && _manager && _manager.IsInputReady;
+        }
+
         private void OnDisable()
         {
             _screenVersion++;
@@ -235,6 +260,7 @@ namespace Exhibition.UI
             _screenCts?.Dispose();
             _screenCts = null;
             SetAlpha(1);
+            if (_titleButtonHelp) _titleButtonHelp.enabled = true;
         }
     }
 }

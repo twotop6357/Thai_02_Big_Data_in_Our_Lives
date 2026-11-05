@@ -91,6 +91,7 @@ public static class ExhibitionUIBuilder
             var entry = bindings.GetArrayElementAtIndex(i);
             entry.FindPropertyRelative("id").stringValue = _bindings[i].id;
             entry.FindPropertyRelative("image").objectReferenceValue = _bindings[i].image;
+            entry.FindPropertyRelative("keepObjectName").boolValue = _bindings[i].keepObjectName;
         }
         var groups = serialized.FindProperty("localizedGroups");
         groups.arraySize = _groups.Count;
@@ -121,14 +122,11 @@ public static class ExhibitionUIBuilder
         var group = Rect("GroupSelection", root, new Rect(0, 0, 1920, 1080));
         Stretch(group);
         Background(group, "SelectGroupPanel_bg");
-        var board = Image(group, "GroupBoard", "BoardImage", new Rect(636, 274, 648, 615));
-        var groupFrames = new Image[4];
-        for (int i = 0; i < 4; i++)
-        {
-            groupFrames[i] = Image(board.transform, "GroupFrame" + i, "FrameImage",
-                new Rect(54 + i % 2 * 278, 42 + i / 2 * 280.5f, 262, 262));
-            AddBlockContent(groupFrames[i]);
-        }
+        BindSlot("group.board", Image(group, "GroupBoard", "BoardImage", new Rect(708, 354, 504, 504)));
+        var groupFrame = Image(group, "GroupFrame0", "GroupSlot_th", new Rect(748, 394, 424, 424));
+        BindSlot("group.slot", groupFrame);
+        AddSlotLabel(groupFrame, "group.slotLabel", "GroupSlotLabel_th");
+        AddBlockContent(groupFrame);
         var groupText = LocalizedLayer(group);
         Localized(groupText, "group.title");
         Localized(groupText, "group.subtitle");
@@ -137,12 +135,18 @@ public static class ExhibitionUIBuilder
         var selection = Rect("ProductAndColors", root, new Rect(0, 0, 1920, 1080));
         Stretch(selection);
         Background(selection, "SelectAllPanel_bg");
+        // The title glow behind this page differs by language.
+        BindSlot("selection.background", selection.Find("SelectAllPanel_bg").GetComponent<Image>());
         Image(selection, "CenterBoard", "CenterBoard_selectallPanel", new Rect(207, 281, 1507, 597));
-        var frames = new Image[4];
-        for (int i = 0; i < 4; i++)
+        // Purpose order: group, product, first color, second color. The group slot reuses the group panel's frame.
+        string[] slotSprites = { "GroupSlot_th", "ProductSlot_th", "ColorSlot_th", "ColorSlot_th" };
+        string[] slotIds = { "selection.groupSlot", "selection.productSlot", "selection.colorSlot1", "selection.colorSlot2" };
+        for (int i = 0; i < slotSprites.Length; i++)
         {
-            frames[i] = Image(selection, "SelectionFrame" + i, "FrameImage", new Rect(268 + i % 2 * 268, 320 + i / 2 * 268, 252, 252));
-            AddBlockContent(frames[i]);
+            var frame = Image(selection, "SelectionFrame" + i, slotSprites[i], new Rect(268 + i % 2 * 268, 320 + i / 2 * 268, 252, 252));
+            BindSlot(slotIds[i], frame);
+            AddSlotLabel(frame, slotIds[i] + "Label", slotSprites[i].Replace("Slot_", "SlotLabel_"));
+            AddBlockContent(frame);
         }
         var selectionText = LocalizedLayer(selection);
         Localized(selectionText, "selection.title");
@@ -181,7 +185,7 @@ public static class ExhibitionUIBuilder
         var text = LocalizedLayer(ad);
         Localized(text, "result.title");
         Localized(text, "result.subtitle");
-        Localized(text, "result.help");
+        var advertisementHint = Localized(text, "result.help");
 
         var video = Rect("ExplanationVideo", root, new Rect(0, 0, 1920, 1080));
         Stretch(video);
@@ -191,6 +195,9 @@ public static class ExhibitionUIBuilder
         var player = root.gameObject.AddComponent<VideoPlayer>();
         player.playOnAwake = false;
         player.aspectRatio = VideoAspectRatio.FitInside;
+        var playbackText = LocalizedLayer(video);
+        var playbackHint = Localized(playbackText, "video.home");
+        playbackHint.gameObject.SetActive(false);
         var popup = Rect("VideoEndOverlay", video, new Rect(0, 0, 1920, 1080));
         Stretch(popup);
         var dim = popup.gameObject.AddComponent<Image>();
@@ -205,6 +212,9 @@ public static class ExhibitionUIBuilder
         Set(controller, "advertisement", ad.gameObject);
         Set(controller, "videoPanel", video.gameObject);
         Set(controller, "endPopup", popup.gameObject);
+        Set(controller, "playbackHint", playbackHint.gameObject);
+        // The advertisement hint fades in once input is available; UIMotionAuthoring reuses this element.
+        Set(controller, "advertisementHint", advertisementHint.gameObject.AddComponent<UIAnimatedElement>());
         Set(controller, "videoImage", raw);
         Set(controller, "player", player);
         Set(controller, "localization", localization);
@@ -263,11 +273,35 @@ public static class ExhibitionUIBuilder
         return image;
     }
 
+    private static void BindSlot(string id, Image image)
+    {
+        image.preserveAspect = false;
+        _bindings.Add(new LocalizedImageSet.Binding { id = id, image = image, keepObjectName = true });
+    }
+
     private static void Set(UnityEngine.Object target, string field, UnityEngine.Object value)
     {
         var serialized = new SerializedObject(target);
         serialized.FindProperty(field).objectReferenceValue = value;
         serialized.ApplyModifiedPropertiesWithoutUndo();
+    }
+
+    // The frame PNG bakes its label into a flat fill. A cover hides those words so a separate label can bounce.
+    private static void AddSlotLabel(Image frame, string id, string sprite)
+    {
+        const float inset = .12f;
+        var cover = Image(frame.transform, "SlotLabelCover", "SlotLabelCover", new Rect(0, 0, 1, 1));
+        cover.rectTransform.anchorMin = Vector2.one * inset;
+        cover.rectTransform.anchorMax = Vector2.one * (1 - inset);
+        cover.rectTransform.offsetMin = cover.rectTransform.offsetMax = Vector2.zero;
+        var label = Image(cover.transform, "SlotLabel", sprite, new Rect(0, 0, 1, 1));
+        // Anchors outside the cover make the label exactly as large as the frame.
+        float beyond = inset / (1 - 2 * inset);
+        label.rectTransform.pivot = Vector2.one * .5f;
+        label.rectTransform.anchorMin = Vector2.one * -beyond;
+        label.rectTransform.anchorMax = Vector2.one * (1 + beyond);
+        label.rectTransform.offsetMin = label.rectTransform.offsetMax = Vector2.zero;
+        BindSlot(id, label);
     }
 
     private static void AddBlockContent(Image frame)

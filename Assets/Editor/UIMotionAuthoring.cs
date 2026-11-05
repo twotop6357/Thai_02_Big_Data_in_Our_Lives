@@ -40,7 +40,7 @@ public static class UIMotionAuthoring
             var binding = bindings.GetArrayElementAtIndex(i);
             string id = binding.FindPropertyRelative("id").stringValue;
             // The video end text belongs to the single shared popup content animation.
-            if (id == "video.end" || id == "selection.productBoard") continue;
+            if (id == "video.end" || id == "selection.productBoard" || id.EndsWith("Label", StringComparison.Ordinal)) continue;
             var image = (UnityEngine.UI.Image)binding.FindPropertyRelative("image").objectReferenceValue;
             elements.Add(Element(image.gameObject, UIAnimatedElement.Motion.Hint));
         }
@@ -81,18 +81,14 @@ public static class UIMotionAuthoring
             if (selectionHint) selectionHint.SetActive(false);
             var groupHint = (GameObject)new SerializedObject(blockView).FindProperty("groupContinue").objectReferenceValue;
             groupHint.SetActive(false);
-            foreach (string field in new[] { "groupSlots", "selectionSlots" })
-            {
-                bool group = field == "groupSlots";
-                var slotObject = new SerializedObject(blockView);
-                var slots = slotObject.FindProperty(field); slots.arraySize = 4;
-                for (int i = 0; i < 4; i++)
-                {
-                    string path = group ? "GroupSelection/GroupBoard/GroupFrame" + i : "ProductAndColors/SelectionFrame" + i;
-                    slots.GetArrayElementAtIndex(i).objectReferenceValue = root.transform.Find(path).GetComponent<UIAnimatedElement>();
-                }
-                slotObject.ApplyModifiedPropertiesWithoutUndo();
-            }
+            var slotObject = new SerializedObject(blockView);
+            slotObject.FindProperty("groupSlot").objectReferenceValue =
+                root.transform.Find("GroupSelection/GroupFrame0").GetComponent<UIAnimatedElement>();
+            var slots = slotObject.FindProperty("selectionSlots"); slots.arraySize = 4;
+            for (int i = 0; i < 4; i++)
+                slots.GetArrayElementAtIndex(i).objectReferenceValue =
+                    root.transform.Find("ProductAndColors/SelectionFrame" + i).GetComponent<UIAnimatedElement>();
+            slotObject.ApplyModifiedPropertiesWithoutUndo();
         }
 
         var overlay = root.transform.Find("ExplanationVideo/VideoEndOverlay");

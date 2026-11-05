@@ -1,0 +1,466 @@
+{
+  "task": "UI-SLOTS-002 regression for UI-ATTN-001",
+  "checks": [
+    "Group panel has a single slot: th",
+    "Web geometry GroupSelection/GroupBoard: th got 708,354,504,504",
+    "Web geometry GroupSelection/GroupFrame0: th got 748,394,424,424",
+    "Empty slot shows GroupSlot: th / GroupSelection/GroupFrame0",
+    "Block student fills its purpose slot: th / GroupSelection/GroupFrame0",
+    "Only the group frame moves: th",
+    "Only the group frame moves: th",
+    "Only the group frame moves: th",
+    "Only the group frame moves: th",
+    "Only the group frame moves: th",
+    "Only the group frame moves: th",
+    "Only the group frame moves: th",
+    "Only the group frame moves: th",
+    "Only the group frame moves: th",
+    "Only the group frame moves: th",
+    "Only the group frame moves: th",
+    "Only the group frame moves: th",
+    "Only the group frame moves: th",
+    "Only the group frame moves: th",
+    "Only the group frame moves: th",
+    "Only the group frame moves: th",
+    "Only the group frame moves: th",
+    "Only the group frame moves: th",
+    "Only the group frame moves: th",
+    "Only the group frame moves: th",
+    "Only the group frame moves: th",
+    "Only the group frame moves: th",
+    "Only the group frame moves: th",
+    "Only the group frame moves: th",
+    "Only the group frame moves: th",
+    "Only the group frame moves: th",
+    "Only the group frame moves: th",
+    "Only the group frame moves: th",
+    "Only the group frame moves: th",
+    "Only the group frame moves: th",
+    "Group frame shrinks continuously: th",
+    "Destination stays hidden until handoff: th",
+    "Other selection slots crossfade with the panel: th",
+    "Transfer keeps the 0.5s motion: th",
+    "Selection panel reached: th",
+    "Web geometry ProductAndColors/SelectionFrame0: th got 268,320,252,252",
+    "Web geometry ProductAndColors/SelectionFrame1: th got 536,320,252,252",
+    "Web geometry ProductAndColors/SelectionFrame2: th got 268,588,252,252",
+    "Web geometry ProductAndColors/SelectionFrame3: th got 536,588,252,252",
+    "Block student fills its purpose slot: th / ProductAndColors/SelectionFrame0",
+    "Empty slot shows ProductSlot: th / ProductAndColors/SelectionFrame1",
+    "Empty slot shows ColorSlot: th / ProductAndColors/SelectionFrame2",
+    "Empty slot shows ColorSlot: th / ProductAndColors/SelectionFrame3",
+    "Block red fills its purpose slot: th / ProductAndColors/SelectionFrame2",
+    "Empty slot shows ColorSlot: th / ProductAndColors/SelectionFrame3",
+    "Block shoes fills its purpose slot: th / ProductAndColors/SelectionFrame1",
+    "Block blue fills its purpose slot: th / ProductAndColors/SelectionFrame3",
+    "Any reader arrangement completes the composition: th",
+    "Generation colors match the visible slots: th",
+    "Controller selection follows the slots: th",
+    "Empty slot shows GroupSlot: th / ProductAndColors/SelectionFrame0",
+    "Web geometry ProductAndColors/SelectionFrame0: th got 268,320,252,252",
+    "Group removal keeps the page and blocks continue: th",
+    "Short input ignored without a group: th",
+    "Block senior fills its purpose slot: th / ProductAndColors/SelectionFrame0",
+    "Group can be re-recognized: th",
+    "Empty slot shows ColorSlot: th / ProductAndColors/SelectionFrame2",
+    "Block blue fills its purpose slot: th / ProductAndColors/SelectionFrame3",
+    "Block green fills its purpose slot: th / ProductAndColors/SelectionFrame2",
+    "Block blue fills its purpose slot: th / ProductAndColors/SelectionFrame3",
+    "Block shoes fills its purpose slot: th / ProductAndColors/SelectionFrame1",
+    "Two products never complete the composition: th",
+    "Block bags fills its purpose slot: th / ProductAndColors/SelectionFrame1",
+    "Five-second home clears readers: th",
+    "Block child fills its purpose slot: th / GroupSelection/GroupFrame0",
+    "Block child fills its purpose slot: th / ProductAndColors/SelectionFrame0",
+    "Block hats fills its purpose slot: th / ProductAndColors/SelectionFrame1",
+    "Cancelled transfer removes its layer: th",
+    "Cancelled transfer restores the group frame: th",
+    "Return to title after cancellation: th",
+    "Title language switch: English",
+    "Group panel has a single slot: en",
+    "Web geometry GroupSelection/GroupBoard: en got 708,355,504,504",
+    "Web geometry GroupSelection/GroupFrame0: en got 748,395,424,424",
+    "Empty slot shows GroupSlot: en / GroupSelection/GroupFrame0",
+    "Block student fills its purpose slot: en / GroupSelection/GroupFrame0",
+    "Only the group frame moves: en",
+    "Only the group frame moves: en",
+    "Only the group frame moves: en",
+    "Only the group frame moves: en",
+    "Only the group frame moves: en",
+    "Only the group frame moves: en",
+    "Only the group frame moves: en",
+    "Only the group frame moves: en",
+    "Only the group frame moves: en",
+    "Only the group frame moves: en",
+    "Only the group frame moves: en",
+    "Only the group frame moves: en",
+    "Only the group frame moves: en",
+    "Only the group frame moves: en",
+    "Only the group frame moves: en",
+    "Only the group frame moves: en",
+    "Only the group frame moves: en",
+    "Only the group frame moves: en",
+    "Only the group frame moves: en",
+    "Only the group frame moves: en",
+    "Only the group frame moves: en",
+    "Only the group frame moves: en",
+    "Only the group frame moves: en",
+    "Only the group frame moves: en",
+    "Only the group frame moves: en",
+    "Only the group frame moves: en",
+    "Only the group frame moves: en",
+    "Only the group frame moves: en",
+    "Only the group frame moves: en",
+    "Only the group frame moves: en",
+    "Group frame shrinks continuously: en",
+    "Destination stays hidden until handoff: en",
+    "Other selection slots crossfade with the panel: en",
+    "Transfer keeps the 0.5s motion: en",
+    "Selection panel reached: en",
+    "Web geometry ProductAndColors/SelectionFrame0: en got 268,320,252,252",
+    "Web geometry ProductAndColors/SelectionFrame1: en got 536,320,252,252",
+    "Web geometry ProductAndColors/SelectionFrame2: en got 268,588,252,252",
+    "Web geometry ProductAndColors/SelectionFrame3: en got 536,588,252,252",
+    "Block student fills its purpose slot: en / ProductAndColors/SelectionFrame0",
+    "Empty slot shows ProductSlot: en / ProductAndColors/SelectionFrame1",
+    "Empty slot shows ColorSlot: en / ProductAndColors/SelectionFrame2",
+    "Empty slot shows ColorSlot: en / ProductAndColors/SelectionFrame3",
+    "Block red fills its purpose slot: en / ProductAndColors/SelectionFrame2",
+    "Empty slot shows ColorSlot: en / ProductAndColors/SelectionFrame3",
+    "Block shoes fills its purpose slot: en / ProductAndColors/SelectionFrame1",
+    "Block blue fills its purpose slot: en / ProductAndColors/SelectionFrame3",
+    "Any reader arrangement completes the composition: en",
+    "Generation colors match the visible slots: en",
+    "Controller selection follows the slots: en",
+    "Empty slot shows GroupSlot: en / ProductAndColors/SelectionFrame0",
+    "Web geometry ProductAndColors/SelectionFrame0: en got 268,320,252,252",
+    "Group removal keeps the page and blocks continue: en",
+    "Short input ignored without a group: en",
+    "Block senior fills its purpose slot: en / ProductAndColors/SelectionFrame0",
+    "Group can be re-recognized: en",
+    "Empty slot shows ColorSlot: en / ProductAndColors/SelectionFrame2",
+    "Block blue fills its purpose slot: en / ProductAndColors/SelectionFrame3",
+    "Block green fills its purpose slot: en / ProductAndColors/SelectionFrame2",
+    "Block blue fills its purpose slot: en / ProductAndColors/SelectionFrame3",
+    "Block shoes fills its purpose slot: en / ProductAndColors/SelectionFrame1",
+    "Two products never complete the composition: en",
+    "Block bags fills its purpose slot: en / ProductAndColors/SelectionFrame1",
+    "Five-second home clears readers: en",
+    "Block child fills its purpose slot: en / GroupSelection/GroupFrame0",
+    "Block child fills its purpose slot: en / ProductAndColors/SelectionFrame0",
+    "Block hats fills its purpose slot: en / ProductAndColors/SelectionFrame1",
+    "Cancelled transfer removes its layer: en",
+    "Cancelled transfer restores the group frame: en",
+    "Return to title after cancellation: en",
+    "Title language switch: Thai"
+  ],
+  "motion": {
+    "sizes_th": [
+      [
+        422.9,
+        -3.8,
+        -64.9
+      ],
+      [
+        422.7,
+        -4.4,
+        -64.8
+      ],
+      [
+        420.1,
+        -12.8,
+        -62.4
+      ],
+      [
+        417.0,
+        -23.2,
+        -59.5
+      ],
+      [
+        413.0,
+        -36.4,
+        -55.7
+      ],
+      [
+        408.3,
+        -51.8,
+        -51.4
+      ],
+      [
+        402.6,
+        -70.3,
+        -46.1
+      ],
+      [
+        396.5,
+        -90.6,
+        -40.4
+      ],
+      [
+        389.5,
+        -113.5,
+        -33.9
+      ],
+      [
+        382.1,
+        -138.0,
+        -27.0
+      ],
+      [
+        374.0,
+        -164.5,
+        -19.5
+      ],
+      [
+        365.7,
+        -191.8,
+        -11.8
+      ],
+      [
+        357.3,
+        -219.4,
+        -4.0
+      ],
+      [
+        348.3,
+        -249.0,
+        4.4
+      ],
+      [
+        339.4,
+        -278.4,
+        12.7
+      ],
+      [
+        330.6,
+        -307.3,
+        20.9
+      ],
+      [
+        321.6,
+        -337.0,
+        29.3
+      ],
+      [
+        313.0,
+        -365.1,
+        37.2
+      ],
+      [
+        304.3,
+        -394.0,
+        45.4
+      ],
+      [
+        296.4,
+        -420.0,
+        52.7
+      ],
+      [
+        288.9,
+        -444.7,
+        59.7
+      ],
+      [
+        281.9,
+        -467.8,
+        66.2
+      ],
+      [
+        275.4,
+        -489.1,
+        72.3
+      ],
+      [
+        269.5,
+        -508.3,
+        77.7
+      ],
+      [
+        264.5,
+        -524.8,
+        82.3
+      ],
+      [
+        260.2,
+        -538.9,
+        86.3
+      ],
+      [
+        256.9,
+        -550.0,
+        89.5
+      ],
+      [
+        254.3,
+        -558.3,
+        91.8
+      ],
+      [
+        252.7,
+        -563.7,
+        93.4
+      ],
+      [
+        252.0,
+        -565.9,
+        94.0
+      ]
+    ],
+    "seconds_th": 0.503,
+    "sizes_en": [
+      [
+        423.5,
+        -1.7,
+        -66.5
+      ],
+      [
+        422.1,
+        -6.2,
+        -65.2
+      ],
+      [
+        419.8,
+        -14.0,
+        -63.0
+      ],
+      [
+        416.6,
+        -24.2,
+        -60.1
+      ],
+      [
+        412.5,
+        -37.8,
+        -56.3
+      ],
+      [
+        407.7,
+        -53.6,
+        -51.7
+      ],
+      [
+        402.1,
+        -72.1,
+        -46.5
+      ],
+      [
+        395.7,
+        -93.1,
+        -40.5
+      ],
+      [
+        388.8,
+        -115.8,
+        -34.1
+      ],
+      [
+        381.3,
+        -140.5,
+        -27.0
+      ],
+      [
+        373.3,
+        -166.9,
+        -19.5
+      ],
+      [
+        364.9,
+        -194.6,
+        -11.7
+      ],
+      [
+        356.3,
+        -222.8,
+        -3.6
+      ],
+      [
+        347.5,
+        -251.8,
+        4.6
+      ],
+      [
+        338.5,
+        -281.3,
+        13.0
+      ],
+      [
+        329.6,
+        -310.6,
+        21.4
+      ],
+      [
+        320.6,
+        -340.2,
+        29.8
+      ],
+      [
+        311.8,
+        -369.1,
+        38.0
+      ],
+      [
+        303.5,
+        -396.6,
+        45.8
+      ],
+      [
+        295.6,
+        -422.5,
+        53.2
+      ],
+      [
+        287.9,
+        -447.9,
+        60.4
+      ],
+      [
+        280.9,
+        -470.9,
+        66.9
+      ],
+      [
+        274.5,
+        -491.8,
+        72.9
+      ],
+      [
+        268.9,
+        -510.3,
+        78.2
+      ],
+      [
+        264.0,
+        -526.6,
+        82.8
+      ],
+      [
+        259.8,
+        -540.4,
+        86.7
+      ],
+      [
+        256.5,
+        -551.3,
+        89.8
+      ],
+      [
+        254.1,
+        -559.2,
+        92.1
+      ],
+      [
+        252.6,
+        -564.1,
+        93.5
+      ],
+      [
+        252.0,
+        -566.0,
+        94.0
+      ]
+    ],
+    "seconds_en": 0.5
+  },
+  "passed": true
+}

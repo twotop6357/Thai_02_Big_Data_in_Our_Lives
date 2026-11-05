@@ -2,6 +2,7 @@ using System;
 using System.IO;
 using System.Threading;
 using Core;
+using Exhibition.UI;
 using Cysharp.Threading.Tasks;
 using HuliacDev.Core;
 using Newtonsoft.Json.Linq;
@@ -32,6 +33,7 @@ namespace Exhibition.Blocks
         private ComfyImageClient _client;
         private GeneratedImageRetention _retention;
         private IDisposable _generationLock;
+        private IDisposable _readerInputLock;
         private bool _pausedTimer;
         private BlockJournal _journal;
         private RfidReaderHub _readerHub;
@@ -41,6 +43,7 @@ namespace Exhibition.Blocks
         private Sprite _originalSprite, _generatedSprite;
         private Texture2D _generatedTexture, _handedOffTexture;
         private bool _ready;
+        private GenerationLoadingIndicator _loadingIndicator;
         private int _popup = -1;
         private Vector2 _scroll;
         public string Status { get; private set; } = "Loading block configuration...";
@@ -87,6 +90,8 @@ namespace Exhibition.Blocks
                 if (!_readerHub) throw new InvalidOperationException("RFID reader hub is missing. Start from Idle.");
                 if (!resultImage || !resultTextGroup || !pressButtonText)
                     throw new InvalidOperationException("Assign ResultImage, TextGroup and PressButtonText.");
+                if (!_loadingIndicator) _loadingIndicator = GenerationLoadingIndicator.Create(resultImage.rectTransform);
+                await UniTask.WaitUntil(() => _readerHub.IsArtworkReady, cancellationToken: token);
                 _catalog = JsonUtility.FromJson<BlockCatalog>(await LoadConfigurationTextAsync("BlockCatalog.json", token));
                 _catalog.Validate();
                 _settings = JsonUtility.FromJson<ComfyBlockSettings>(await LoadConfigurationTextAsync("ComfyUISettings.json", token));
@@ -156,8 +161,7 @@ namespace Exhibition.Blocks
             SetSelection(BlockSlot.Color1, readers.Color1Id);
             SetSelection(BlockSlot.Color2, readers.Color2Id);
             _timer?.ResetTimer();
-            Status = "Waiting for 1 group, 1 product and 2 color blocks.";
-            if (HasRequiredComposition) GenerateImage();
+            Status = HasRequiredComposition ? "Blocks ready. Press the button to generate an image." : "Waiting for 1 group, 1 product and 2 color blocks.";
             RefreshLabels();
         }
 
@@ -175,10 +179,9 @@ namespace Exhibition.Blocks
 
         private void RecordReader(string kind, int reader, RfidBlock block)
         {
-            int colorsBefore = 0;
-            for (int i = 0; i < reader; i++) if (_readerHub.Readers[i]?.Kind == BlockKind.Color) colorsBefore++;
+            bool secondColor = Nullable.Equals(_readerHub.Readers.DisplayBlock(RfidReaderSelection.SecondColorSlot), block);
             var slot = block.Kind == BlockKind.Group ? BlockSlot.Group : block.Kind == BlockKind.Product ? BlockSlot.Product :
-                colorsBefore == 0 ? BlockSlot.Color1 : BlockSlot.Color2;
+                secondColor ? BlockSlot.Color2 : BlockSlot.Color1;
             Debug.Log("[RFID] " + kind + ". Reader: " + (reader + 1) + "; kind: " + block.Kind + "; ID: " + block.Id + ".", this);
             WriteEventAsync(kind, new JObject { ["slot"] = slot.ToString(), ["reader_index"] = reader,
                 ["block_kind"] = block.Kind.ToString(), ["block_id"] = block.Id, ["revision"] = _selection.Revision,
@@ -226,10 +229,13 @@ namespace Exhibition.Blocks
             Texture2D pending = null;
             try
             {
+                _readerInputLock = _readerHub.Readers.FreezeInput();
                 _generationLock = _manager ? _manager.Presentation.LockInput() : null;
                 _timer?.Pause();
                 _pausedTimer = true;
                 ClearImage();
+                resultTextGroup.SetActive(false);
+                if (_loadingIndicator) _loadingIndicator.SetLoading(true);
                 Status = "Preparing image generation...";
                 PresentationChanged?.Invoke();
                 var prompt = _selection.CreatePrompt(_catalog, 0);
@@ -356,6 +362,10 @@ namespace Exhibition.Blocks
 
         private void ReleaseGenerationInput()
         {
+            _readerInputLock?.Dispose();
+            _readerInputLock = null;
+            if (_loadingIndicator) _loadingIndicator.SetLoading(false);
+            if (!HasGeneratedImage && resultTextGroup) resultTextGroup.SetActive(true);
             _generationLock?.Dispose();
             _generationLock = null;
             if (_pausedTimer) { _timer?.Resume(); _timer?.ResetTimer(); _pausedTimer = false; }
@@ -379,7 +389,10 @@ namespace Exhibition.Blocks
             resultImage.preserveAspect = true;
             resultImage.gameObject.SetActive(true);
             resultTextGroup.SetActive(false);
-            if (_manager && _manager.SetResultTexture(texture))
+            // The checked revision still matches the immutable request selection and its catalog HEX values.
+            ColorUtility.TryParseHtmlString(_catalog.Find(BlockSlot.Color1, _selection[BlockSlot.Color1]).hex, out var primaryColor);
+            ColorUtility.TryParseHtmlString(_catalog.Find(BlockSlot.Color2, _selection[BlockSlot.Color2]).hex, out var secondaryColor);
+            if (_manager && _manager.SetResultTexture(texture, primaryColor, secondaryColor))
             {
                 _handedOffTexture = texture;
                 _generatedTexture = null;

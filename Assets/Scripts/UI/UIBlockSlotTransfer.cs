@@ -6,63 +6,49 @@ using UnityEngine;
 
 namespace Exhibition.UI
 {
-    /// <summary>Moves the existing four frames above both panels, then hands off at identical corners.</summary>
+    /// <summary>Moves the group frame above both panels and shrinks it onto its selection slot, then hands off at identical corners.</summary>
     internal sealed class UIBlockSlotTransfer : IDisposable
     {
-        private sealed class Slot
-        {
-            public UIAnimatedElement Source, Target;
-            public RectTransform Rect;
-            public Transform Parent;
-            public int Sibling;
-            public Vector2 AnchorMin, AnchorMax, Pivot, Size;
-            public Vector3 Position, Scale;
-            public Quaternion Rotation;
-            public Vector2 FromCenter, FromSize, ToCenter, ToSize;
-            public bool TargetActive;
-        }
-
-        private readonly Slot[] _slots = new Slot[4];
+        private readonly UIAnimatedElement _source, _target;
+        private readonly RectTransform _rect;
+        private readonly Transform _parent;
+        private readonly int _sibling;
+        private readonly Vector2 _anchorMin, _anchorMax, _pivot, _size;
+        private readonly Vector3 _position, _scale;
+        private readonly Quaternion _rotation;
+        private readonly Vector2 _toCenter, _toSize;
+        private readonly bool _targetActive;
         private RectTransform _layer;
         private bool _completed;
 
-        public UIBlockSlotTransfer(RectTransform root, UIAnimatedElement[] from, UIAnimatedElement[] to)
+        public UIBlockSlotTransfer(RectTransform root, UIAnimatedElement from, UIAnimatedElement to)
         {
-            if (from == null || to == null || from.Length != 4 || to.Length != 4)
-                throw new InvalidOperationException("Assign all four source and destination block frames.");
-            for (int i = 0; i < 4; i++)
-                if (!from[i] || !to[i]) throw new InvalidOperationException("A block transfer frame is missing.");
-
+            if (!from || !to) throw new InvalidOperationException("Assign the source and destination block frames.");
+            _source = from; _target = to;
             _layer = new GameObject("BlockSlotTransfer", typeof(RectTransform)).GetComponent<RectTransform>();
             _layer.SetParent(root, false);
             _layer.anchorMin = Vector2.zero; _layer.anchorMax = Vector2.one;
             _layer.offsetMin = _layer.offsetMax = Vector2.zero;
             Canvas.ForceUpdateCanvases();
-            // Capture every sibling index before removing any frame from its original board.
-            for (int i = 0; i < 4; i++)
-            {
-                var rect = (RectTransform)from[i].transform;
-                var slot = new Slot { Source = from[i], Target = to[i], Rect = rect, Parent = rect.parent,
-                    Sibling = rect.GetSiblingIndex(), AnchorMin = rect.anchorMin, AnchorMax = rect.anchorMax,
-                    Pivot = rect.pivot, Size = rect.sizeDelta, Position = rect.anchoredPosition3D,
-                    Scale = rect.localScale, Rotation = rect.localRotation, TargetActive = to[i].gameObject.activeSelf };
-                Measure(rect, out slot.FromCenter, out slot.FromSize);
-                Measure((RectTransform)to[i].transform, out slot.ToCenter, out slot.ToSize);
-                _slots[i] = slot;
-            }
-            foreach (var slot in _slots)
-            {
-                slot.Target.PrepareHidden();
-                slot.Target.gameObject.SetActive(false);
-                slot.Source.SnapVisible();
-                slot.Rect.SetParent(_layer, false);
-                slot.Rect.anchorMin = slot.Rect.anchorMax = new Vector2(.5f, .5f);
-                slot.Rect.pivot = new Vector2(.5f, .5f);
-                slot.Rect.localRotation = Quaternion.identity;
-                slot.Rect.localScale = Vector3.one;
-                slot.Rect.anchoredPosition3D = slot.FromCenter;
-                slot.Rect.sizeDelta = slot.FromSize;
-            }
+
+            _rect = (RectTransform)from.transform;
+            _parent = _rect.parent; _sibling = _rect.GetSiblingIndex();
+            _anchorMin = _rect.anchorMin; _anchorMax = _rect.anchorMax; _pivot = _rect.pivot; _size = _rect.sizeDelta;
+            _position = _rect.anchoredPosition3D; _scale = _rect.localScale; _rotation = _rect.localRotation;
+            _targetActive = to.gameObject.activeSelf;
+            Measure(_rect, out var fromCenter, out var fromSize);
+            Measure((RectTransform)to.transform, out _toCenter, out _toSize);
+
+            to.PrepareHidden();
+            to.gameObject.SetActive(false);
+            from.SnapVisible();
+            _rect.SetParent(_layer, false);
+            _rect.anchorMin = _rect.anchorMax = new Vector2(.5f, .5f);
+            _rect.pivot = new Vector2(.5f, .5f);
+            _rect.localRotation = Quaternion.identity;
+            _rect.localScale = Vector3.one;
+            _rect.anchoredPosition3D = fromCenter;
+            _rect.sizeDelta = fromSize;
         }
 
         private void Measure(RectTransform rect, out Vector2 center, out Vector2 size)
@@ -78,13 +64,8 @@ namespace Exhibition.UI
         {
             token.ThrowIfCancellationRequested();
             var sequence = DOTween.Sequence().SetUpdate(true);
-            foreach (var slot in _slots)
-            {
-                sequence.Join(slot.Rect.DOAnchorPos(slot.ToCenter, UIMotion.PanelSeconds)
-                    .SetEase(Ease.InOutSine));
-                sequence.Join(slot.Rect.DOSizeDelta(slot.ToSize, UIMotion.PanelSeconds)
-                    .SetEase(Ease.InOutSine));
-            }
+            sequence.Join(_rect.DOAnchorPos(_toCenter, UIMotion.PanelSeconds).SetEase(Ease.InOutSine));
+            sequence.Join(_rect.DOSizeDelta(_toSize, UIMotion.PanelSeconds).SetEase(Ease.InOutSine));
             await sequence.ToUniTask(TweenCancelBehaviour.KillAndCancelAwait, token);
         }
 
@@ -93,26 +74,24 @@ namespace Exhibition.UI
         public void Dispose()
         {
             if (!_layer) return;
-            foreach (var slot in _slots)
+            if (_source && _parent)
             {
-                if (slot == null) continue;
-                if (slot.Source && slot.Parent)
-                {
-                    slot.Rect.SetParent(slot.Parent, false);
-                    slot.Rect.SetSiblingIndex(slot.Sibling);
-                    slot.Rect.anchorMin = slot.AnchorMin; slot.Rect.anchorMax = slot.AnchorMax;
-                    slot.Rect.pivot = slot.Pivot; slot.Rect.sizeDelta = slot.Size;
-                    slot.Rect.anchoredPosition3D = slot.Position;
-                    slot.Rect.localRotation = slot.Rotation; slot.Rect.localScale = slot.Scale;
-                    if (slot.Source.gameObject.activeInHierarchy) slot.Source.SnapVisible();
-                    else slot.Source.PrepareHidden();
-                }
-                if (!slot.Target) continue;
-                if (_completed) slot.Target.SnapVisible();
+                _rect.SetParent(_parent, false);
+                _rect.SetSiblingIndex(_sibling);
+                _rect.anchorMin = _anchorMin; _rect.anchorMax = _anchorMax;
+                _rect.pivot = _pivot; _rect.sizeDelta = _size;
+                _rect.anchoredPosition3D = _position;
+                _rect.localRotation = _rotation; _rect.localScale = _scale;
+                if (_source.gameObject.activeInHierarchy) _source.SnapVisible();
+                else _source.PrepareHidden();
+            }
+            if (_target)
+            {
+                if (_completed) _target.SnapVisible();
                 else
                 {
-                    slot.Target.PrepareHidden();
-                    slot.Target.gameObject.SetActive(slot.TargetActive);
+                    _target.PrepareHidden();
+                    _target.gameObject.SetActive(_targetActive);
                 }
             }
             UnityEngine.Object.Destroy(_layer.gameObject);
