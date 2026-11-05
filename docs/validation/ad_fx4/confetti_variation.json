@@ -1,0 +1,20 @@
+{
+  "task": "AD-FX-004",
+  "checks": [
+    "Case starts on Idle: bags",
+    "Generated result carries exact block HEX pair: red/blue",
+    "Confetti emitters have independent entrance delays",
+    "All inner emitters sample both generation colors: bags",
+    "Sparkles vary their placement, size and lifetime: bags",
+    "Image remains above effect layers: bags",
+    "Later RFID signals cannot recolor the generated result: bags",
+    "Entrance blocks input while paused: bags",
+    "Sparkle quads stay inside the advertisement board: bags",
+    "Irregular multicolor waves stay inside board at timeScale zero: bags",
+    "Finite confetti ends and releases input; ambient remains: bags",
+    "Stop clears only owned effects: bags",
+    "Resume preserves palette and does not replay confetti: bags",
+    "Home clears image and palette together: bags"
+  ],
+  "passed": true
+}

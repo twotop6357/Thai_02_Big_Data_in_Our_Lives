@@ -1,0 +1,15 @@
+{
+  "task": "AD-FX-004-lifecycle",
+  "prior_png_fixture": true,
+  "checks": [
+    "Prepared result bridge carries palette",
+    "Disable during entrance cancels particles and input lease",
+    "Explicit cancellation releases only the owning entrance",
+    "Advertisement restoration resumes only palette-bound ambient effects",
+    "Duplicate entrance does not replay confetti or lock input",
+    "Video transition covers the screen and clears ambient effects",
+    "Video still displays decoded frame zero first",
+    "Home clears result palette, video and blackout"
+  ],
+  "passed": true
+}

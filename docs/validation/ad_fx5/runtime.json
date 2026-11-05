@@ -1,0 +1,101 @@
+{
+  "task": "AD-FX-005",
+  "prior_png_fixture": true,
+  "checks": [
+    "Case starts on Idle: red_blue",
+    "Result and palette bridge succeeds: red_blue",
+    "Advertisement entrance starts successfully: red_blue",
+    "Hidden rounded mask follows the actual board sprite: red_blue",
+    "Every inner particle/trail participates in masking: red_blue",
+    "Confetti has a separate foreground canvas outside the inner mask: red_blue",
+    "Ambient minimum sizes are enlarged: red_blue",
+    "Rendered confetti remains above an opaque last-sibling screen cover",
+    "Scene transition blackout still covers foreground confetti",
+    "Entrance completes while ambient remains: red_blue",
+    "Ambient color remains visibly present outside the product rectangle: red_blue",
+    "Oversized probe is clipped outside the box; disabling mask proves the probe would escape: red_blue",
+    "Mask still renders valid content inside the box: red_blue",
+    "Rounded corner remains clipped: red_blue",
+    "Stopping hides mask and foreground canvas: red_blue",
+    "Resume restores the masked ambient only: red_blue",
+    "Home clears scene-owned layers and palette: red_blue",
+    "Case starts on Idle: black_white",
+    "Result and palette bridge succeeds: black_white",
+    "Advertisement entrance starts successfully: black_white",
+    "Hidden rounded mask follows the actual board sprite: black_white",
+    "Every inner particle/trail participates in masking: black_white",
+    "Confetti has a separate foreground canvas outside the inner mask: black_white",
+    "Ambient minimum sizes are enlarged: black_white",
+    "Entrance completes while ambient remains: black_white",
+    "Ambient color remains visibly present outside the product rectangle: black_white",
+    "Oversized probe is clipped outside the box; disabling mask proves the probe would escape: black_white",
+    "Mask still renders valid content inside the box: black_white",
+    "Rounded corner remains clipped: black_white",
+    "Stopping hides mask and foreground canvas: black_white",
+    "Resume restores the masked ambient only: black_white",
+    "Home clears scene-owned layers and palette: black_white",
+    "Case starts on Idle: white_white",
+    "Result and palette bridge succeeds: white_white",
+    "Advertisement entrance starts successfully: white_white",
+    "Hidden rounded mask follows the actual board sprite: white_white",
+    "Every inner particle/trail participates in masking: white_white",
+    "Confetti has a separate foreground canvas outside the inner mask: white_white",
+    "Ambient minimum sizes are enlarged: white_white",
+    "Entrance completes while ambient remains: white_white",
+    "Ambient color remains visibly present outside the product rectangle: white_white",
+    "Oversized probe is clipped outside the box; disabling mask proves the probe would escape: white_white",
+    "Mask still renders valid content inside the box: white_white",
+    "Rounded corner remains clipped: white_white",
+    "Stopping hides mask and foreground canvas: white_white",
+    "Resume restores the masked ambient only: white_white",
+    "Home clears scene-owned layers and palette: white_white"
+  ],
+  "measurements": [
+    {
+      "canvasFound": true,
+      "overrideSorting": true,
+      "order": 32766,
+      "insideMask": false,
+      "canvasCount": 1,
+      "componentId": -78500,
+      "fieldId": -78500,
+      "fieldOrder": 32766
+    },
+    {
+      "foregroundProbePixels": 13843
+    },
+    {
+      "palette": "red_blue",
+      "visibleAmbientProbePixels": 2143
+    },
+    {
+      "canvasFound": true,
+      "overrideSorting": true,
+      "order": 32766,
+      "insideMask": false,
+      "canvasCount": 1,
+      "componentId": -78852,
+      "fieldId": -78852,
+      "fieldOrder": 32766
+    },
+    {
+      "palette": "black_white",
+      "visibleAmbientProbePixels": 2621
+    },
+    {
+      "canvasFound": true,
+      "overrideSorting": true,
+      "order": 32766,
+      "insideMask": false,
+      "canvasCount": 1,
+      "componentId": -79188,
+      "fieldId": -79188,
+      "fieldOrder": 32766
+    },
+    {
+      "palette": "white_white",
+      "visibleAmbientProbePixels": 1583
+    }
+  ],
+  "passed": true
+}

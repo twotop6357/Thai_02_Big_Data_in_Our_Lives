@@ -16,6 +16,9 @@ namespace Exhibition.UI
     {
         public enum ScreenState { Advertisement, Preparing, Playing, Finished, Failed }
         [SerializeField] private GameObject advertisement, videoPanel, endPopup;
+        [SerializeField] private GameObject playbackHint;
+        [Tooltip("Advertisement button hint. Stays hidden until the button actually works.")]
+        [SerializeField] private UIAnimatedElement advertisementHint;
         [SerializeField] private RawImage videoImage;
         [SerializeField] private VideoPlayer player;
         [SerializeField] private LocalizedImageSet localization;
@@ -34,6 +37,7 @@ namespace Exhibition.UI
         private bool[] _audioMutes;
         private string _videoError;
         private int _remainingBlocks = 15;
+        private bool _advertisementHintRequested;
         public ScreenState State { get; private set; }
 
         private void OnEnable()
@@ -58,9 +62,28 @@ namespace Exhibition.UI
             advertisement.SetActive(true);
             _advertisementMotion?.SnapVisible();
             videoImage.enabled = false;
+            if (playbackHint) playbackHint.SetActive(false);
             videoPanel.SetActive(false);
             if (_popupMotion) _popupMotion.ResetHidden();
             else endPopup.SetActive(false);
+            // Inactive here also keeps the scene entrance from revealing it with the other cards.
+            _advertisementHintRequested = false;
+            if (advertisementHint)
+            {
+                advertisementHint.PrepareHidden();
+                advertisementHint.gameObject.SetActive(false);
+            }
+        }
+
+        // No input lock here: the hint appears because input just became available.
+        private void LateUpdate()
+        {
+            if (!advertisementHint) return;
+            bool available = (State == ScreenState.Advertisement || State == ScreenState.Failed) && _manager &&
+                !_manager.IsTransitioning && !_manager.IsPresentationLocked && (!productHighlight || !productHighlight.IsPlaying);
+            if (available == _advertisementHintRequested) return;
+            _advertisementHintRequested = available;
+            advertisementHint.SetVisibleAsync(available, _screenCts.Token).Forget();
         }
 
         private void Continue()
@@ -74,6 +97,7 @@ namespace Exhibition.UI
         private async UniTask PlayAsync()
         {
             if (_playbackCts != null || !_manager || _manager.IsTransitioning) return;
+            _manager.Audio.PlayConfirm();
             var source = CancellationTokenSource.CreateLinkedTokenSource(_screenCts.Token, _manager.SessionCancellationToken);
             _playbackCts = source;
             var token = source.Token;
@@ -136,6 +160,7 @@ namespace Exhibition.UI
                 token.ThrowIfCancellationRequested();
                 videoImage.color = Color.white;
                 videoImage.enabled = true;
+                if (playbackHint) playbackHint.SetActive(true);
                 if (_videoMotion) _videoMotion.SnapVisible();
                 else videoPanel.SetActive(true);
                 _advertisementMotion?.PrepareHidden();
@@ -154,6 +179,7 @@ namespace Exhibition.UI
                     .Timeout(TimeSpan.FromSeconds(Math.Max(30, _clip.length + 20)), DelayType.UnscaledDeltaTime, taskCancellationTokenSource: source);
                 ThrowVideoError();
                 State = ScreenState.Finished;
+                if (playbackHint) playbackHint.SetActive(false);
                 if (_popupMotion) await _popupMotion.SetVisibleAsync(true, _screenCts.Token);
                 else endPopup.SetActive(true);
                 Debug.Log("[ResultVideo] Playback completed.", this);
@@ -224,6 +250,7 @@ namespace Exhibition.UI
 
         private void RestoreAdvertisement()
         {
+            if (playbackHint) playbackHint.SetActive(false);
             _advertisementMotion?.SnapVisible();
             advertisement.SetActive(true);
             videoImage.enabled = false;
@@ -259,6 +286,7 @@ namespace Exhibition.UI
 
         private void ReleaseMedia()
         {
+            if (playbackHint) playbackHint.SetActive(false);
             videoImage.enabled = false;
             _awaitingFirstFrame = false;
             player.sendFrameReadyEvents = false;
