@@ -1,0 +1,340 @@
+[
+  {
+    "language": "en",
+    "id": "idle.title",
+    "target": "Assets/UI/UIs_En/Idle/Title_en.png",
+    "replaced": true,
+    "appliedRect": {
+      "x": 63,
+      "y": 23,
+      "width": 873,
+      "height": 435
+    },
+    "retainedGroupHeaderY": false
+  },
+  {
+    "language": "en",
+    "id": "idle.subtitle",
+    "target": "Assets/UI/UIs_En/Idle/Subtitle_en.png",
+    "replaced": false,
+    "appliedRect": {
+      "x": 99,
+      "y": 467,
+      "width": 678,
+      "height": 89
+    },
+    "retainedGroupHeaderY": false
+  },
+  {
+    "language": "en",
+    "id": "idle.help",
+    "target": "Assets/UI/UIs_En/Idle/ButtonHelpBox_en.png",
+    "replaced": true,
+    "appliedRect": {
+      "x": 307,
+      "y": 879,
+      "width": 1315,
+      "height": 173
+    },
+    "retainedGroupHeaderY": false
+  },
+  {
+    "language": "en",
+    "id": "group.title",
+    "target": "Assets/UI/UIs_En/GroupSelect/Title_groupselectPanel_en.png",
+    "replaced": true,
+    "appliedRect": {
+      "x": 187,
+      "y": 76,
+      "width": 1555,
+      "height": 111
+    },
+    "retainedGroupHeaderY": true
+  },
+  {
+    "language": "en",
+    "id": "group.subtitle",
+    "target": "Assets/UI/UIs_En/GroupSelect/Subtitle_groupselectPanel_en.png",
+    "replaced": false,
+    "appliedRect": {
+      "x": 428,
+      "y": 208,
+      "width": 1063,
+      "height": 39
+    },
+    "retainedGroupHeaderY": true
+  },
+  {
+    "language": "en",
+    "id": "group.help",
+    "target": "Assets/UI/UIs_En/GroupSelect/ButtonHelpBox_groupselectPanel_en.png",
+    "replaced": true,
+    "appliedRect": {
+      "x": 515,
+      "y": 899,
+      "width": 902,
+      "height": 153
+    },
+    "retainedGroupHeaderY": false
+  },
+  {
+    "language": "en",
+    "id": "selection.title",
+    "target": "Assets/UI/UIs_En/SelectAll/Title_selectallPanel_en.png",
+    "replaced": false,
+    "appliedRect": {
+      "x": 254,
+      "y": 74,
+      "width": 1418,
+      "height": 97
+    },
+    "retainedGroupHeaderY": false
+  },
+  {
+    "language": "en",
+    "id": "selection.subtitle",
+    "target": "Assets/UI/UIs_En/SelectAll/Subtitle_selectallPanel_en.png",
+    "replaced": true,
+    "appliedRect": {
+      "x": 387,
+      "y": 208,
+      "width": 1146,
+      "height": 40
+    },
+    "retainedGroupHeaderY": false
+  },
+  {
+    "language": "en",
+    "id": "selection.help",
+    "target": "Assets/UI/UIs_En/SelectAll/ButtonHelpBox_selectallPanel_en.png",
+    "replaced": true,
+    "appliedRect": {
+      "x": 515,
+      "y": 899,
+      "width": 902,
+      "height": 153
+    },
+    "retainedGroupHeaderY": false
+  },
+  {
+    "language": "en",
+    "id": "result.title",
+    "target": "Assets/UI/UIs_En/RecommendedAd/Title_RecommendedAd_en.png",
+    "replaced": false,
+    "appliedRect": {
+      "x": 360,
+      "y": 97,
+      "width": 1200,
+      "height": 106
+    },
+    "retainedGroupHeaderY": false
+  },
+  {
+    "language": "en",
+    "id": "result.subtitle",
+    "target": "Assets/UI/UIs_En/RecommendedAd/Subtitle_RecommendedAd_en.png",
+    "replaced": false,
+    "appliedRect": {
+      "x": 550,
+      "y": 236,
+      "width": 822,
+      "height": 47
+    },
+    "retainedGroupHeaderY": false
+  },
+  {
+    "language": "en",
+    "id": "result.help",
+    "target": "Assets/UI/UIs_En/RecommendedAd/ButtonHelpBox_RecommendedAd_en.png",
+    "replaced": true,
+    "appliedRect": {
+      "x": 441,
+      "y": 899,
+      "width": 1051,
+      "height": 153
+    },
+    "retainedGroupHeaderY": false
+  },
+  {
+    "language": "en",
+    "id": "video.end",
+    "target": "Assets/UI/UIs_En/Video/VideoEndPopupText_en.png",
+    "replaced": false,
+    "appliedRect": {
+      "x": 350,
+      "y": 463,
+      "width": 1219,
+      "height": 158
+    },
+    "retainedGroupHeaderY": false
+  },
+  {
+    "language": "th",
+    "id": "idle.title",
+    "target": "Assets/UI/UIs_Th/Idle/Title_th.png",
+    "replaced": true,
+    "appliedRect": {
+      "x": 64,
+      "y": 39,
+      "width": 869,
+      "height": 429
+    },
+    "retainedGroupHeaderY": false
+  },
+  {
+    "language": "th",
+    "id": "idle.subtitle",
+    "target": "Assets/UI/UIs_Th/Idle/Subtitle_th.png",
+    "replaced": false,
+    "appliedRect": {
+      "x": 67,
+      "y": 486,
+      "width": 486,
+      "height": 105
+    },
+    "retainedGroupHeaderY": false
+  },
+  {
+    "language": "th",
+    "id": "idle.help",
+    "target": "Assets/UI/UIs_Th/Idle/ButtonHelpBox_th.png",
+    "replaced": true,
+    "appliedRect": {
+      "x": 307,
+      "y": 879,
+      "width": 1315,
+      "height": 173
+    },
+    "retainedGroupHeaderY": false
+  },
+  {
+    "language": "th",
+    "id": "group.title",
+    "target": "Assets/UI/UIs_Th/GroupSelect/Title_groupselect_th.png",
+    "replaced": true,
+    "appliedRect": {
+      "x": 422,
+      "y": 52,
+      "width": 1088,
+      "height": 150
+    },
+    "retainedGroupHeaderY": true
+  },
+  {
+    "language": "th",
+    "id": "group.subtitle",
+    "target": "Assets/UI/UIs_Th/GroupSelect/Subtitle_groupselect_th.png",
+    "replaced": false,
+    "appliedRect": {
+      "x": 586,
+      "y": 207,
+      "width": 753,
+      "height": 41
+    },
+    "retainedGroupHeaderY": true
+  },
+  {
+    "language": "th",
+    "id": "group.help",
+    "target": "Assets/UI/UIs_Th/GroupSelect/ButtonHelpBox_groupselect_th.png",
+    "replaced": true,
+    "appliedRect": {
+      "x": 609,
+      "y": 899,
+      "width": 715,
+      "height": 153
+    },
+    "retainedGroupHeaderY": false
+  },
+  {
+    "language": "th",
+    "id": "selection.title",
+    "target": "Assets/UI/UIs_Th/SelectAll/Title_selectall_th.png",
+    "replaced": false,
+    "appliedRect": {
+      "x": 426,
+      "y": 34,
+      "width": 1074,
+      "height": 161
+    },
+    "retainedGroupHeaderY": false
+  },
+  {
+    "language": "th",
+    "id": "selection.subtitle",
+    "target": "Assets/UI/UIs_Th/SelectAll/Subtitle_selectall_th.png",
+    "replaced": true,
+    "appliedRect": {
+      "x": 587,
+      "y": 198,
+      "width": 748,
+      "height": 39
+    },
+    "retainedGroupHeaderY": false
+  },
+  {
+    "language": "th",
+    "id": "selection.help",
+    "target": "Assets/UI/UIs_Th/SelectAll/ButtonHelpBox_selectall_th.png",
+    "replaced": true,
+    "appliedRect": {
+      "x": 609,
+      "y": 899,
+      "width": 715,
+      "height": 153
+    },
+    "retainedGroupHeaderY": false
+  },
+  {
+    "language": "th",
+    "id": "result.title",
+    "target": "Assets/UI/UIs_Th/RecommendedAd/Title_recommendedAd_th.png",
+    "replaced": false,
+    "appliedRect": {
+      "x": 322,
+      "y": 58,
+      "width": 1277,
+      "height": 151
+    },
+    "retainedGroupHeaderY": false
+  },
+  {
+    "language": "th",
+    "id": "result.subtitle",
+    "target": "Assets/UI/UIs_Th/RecommendedAd/Subtitle_recommendedAd_th.png",
+    "replaced": false,
+    "appliedRect": {
+      "x": 541,
+      "y": 221,
+      "width": 839,
+      "height": 62
+    },
+    "retainedGroupHeaderY": false
+  },
+  {
+    "language": "th",
+    "id": "result.help",
+    "target": "Assets/UI/UIs_Th/RecommendedAd/ButtonHelpBox_recommendedAd_th.png",
+    "replaced": true,
+    "appliedRect": {
+      "x": 570,
+      "y": 899,
+      "width": 794,
+      "height": 153
+    },
+    "retainedGroupHeaderY": false
+  },
+  {
+    "language": "th",
+    "id": "video.end",
+    "target": "Assets/UI/UIs_Th/Video/VideoEndPopupText_th.png",
+    "replaced": true,
+    "appliedRect": {
+      "x": 434,
+      "y": 436,
+      "width": 1050,
+      "height": 191
+    },
+    "retainedGroupHeaderY": false
+  }
+]

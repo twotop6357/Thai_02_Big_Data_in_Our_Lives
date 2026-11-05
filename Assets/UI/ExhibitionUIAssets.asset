@@ -95,30 +95,64 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 2e8725a8ed410fb429dbc8a640c07c29, type: 3}
   - id: WorkingAdult_BlockImage
     sprite: {fileID: 21300000, guid: 3d23037cb6522ed49b0b9b75c856cc17, type: 3}
+  - id: VideoHomeHint_en
+    sprite: {fileID: 21300000, guid: 65577394825c35247bfbc554cffe75a1, type: 3}
+  - id: VideoHomeHint_th
+    sprite: {fileID: 21300000, guid: 6855a59c066187d4dba9923bd12bc6f0, type: 3}
+  - id: GroupSlot_en
+    sprite: {fileID: 21300000, guid: ae05038ac02f7094ab13dca6a4dc7f07, type: 3}
+  - id: GroupSlot_th
+    sprite: {fileID: 21300000, guid: 5b0a82a725a5c8f49b9d30165d673fb1, type: 3}
+  - id: ProductSlot_en
+    sprite: {fileID: 21300000, guid: fd3462da5b8d3734c9d1b937d7fc07a2, type: 3}
+  - id: ProductSlot_th
+    sprite: {fileID: 21300000, guid: 8edbfd3e35bee2147bacde5e52947656, type: 3}
+  - id: ColorSlot_en
+    sprite: {fileID: 21300000, guid: c656f8f9447313f48b03cb06212f8b4c, type: 3}
+  - id: ColorSlot_th
+    sprite: {fileID: 21300000, guid: f7fc8024dfb354c409b4bde57d7351d0, type: 3}
+  - id: SelectionBackground_en
+    sprite: {fileID: 21300000, guid: 9dc0f06958a792b4aadd0eee286e98d2, type: 3}
+  - id: SelectionBackground_th
+    sprite: {fileID: 21300000, guid: d8ff997cba035f24785969246d21c0ac, type: 3}
+  - id: GroupSlotLabel_en
+    sprite: {fileID: 21300000, guid: 3a45243ca882ff6459c3bed973cd0fd1, type: 3}
+  - id: GroupSlotLabel_th
+    sprite: {fileID: 21300000, guid: 160bcbcabbaa66244882e67de486abcc, type: 3}
+  - id: ProductSlotLabel_en
+    sprite: {fileID: 21300000, guid: 83858c3ac40ddf84fbcbb5e7b0d98453, type: 3}
+  - id: ProductSlotLabel_th
+    sprite: {fileID: 21300000, guid: 27e922c244e258c41b872e5fcb62f83a, type: 3}
+  - id: ColorSlotLabel_en
+    sprite: {fileID: 21300000, guid: 8b55b954991e6d34db0de49dc6260a21, type: 3}
+  - id: ColorSlotLabel_th
+    sprite: {fileID: 21300000, guid: 2479275aad1395d45b82637738ca0d8a, type: 3}
+  - id: SlotLabelCover
+    sprite: {fileID: 21300000, guid: 102d2cb2a1b41914fae1a9855367f98a, type: 3}
   defaultThai: "{\r\n  \"schemaVersion\": 1,\r\n  \"language\": \"th\",\r\n  \"video\":
     \"Videos/Video_th\",\r\n  \"images\": [\r\n    {\r\n      \"id\": \"idle.title\",\r\n     
-    \"sprite\": \"Title_th\",\r\n      \"x\": 63,\r\n      \"y\": 23,\r\n      \"width\":
-    935,\r\n      \"height\": 454,\r\n      \"figmaNode\": \"27:525\"\r\n    },\r\n   
+    \"sprite\": \"Title_th\",\r\n      \"x\": 64,\r\n      \"y\": 39,\r\n      \"width\":
+    869,\r\n      \"height\": 429,\r\n      \"figmaNode\": \"27:525\"\r\n    },\r\n   
     {\r\n      \"id\": \"idle.subtitle\",\r\n      \"sprite\": \"Subtitle_th\",\r\n     
-    \"x\": 99,\r\n      \"y\": 478,\r\n      \"width\": 486,\r\n      \"height\":
+    \"x\": 67,\r\n      \"y\": 486,\r\n      \"width\": 486,\r\n      \"height\":
     105,\r\n      \"figmaNode\": \"27:525\"\r\n    },\r\n    {\r\n      \"id\": \"idle.help\",\r\n     
     \"sprite\": \"ButtonHelpBox_th\",\r\n      \"x\": 307,\r\n      \"y\": 879,\r\n     
     \"width\": 1315,\r\n      \"height\": 173,\r\n      \"figmaNode\": \"27:525\"\r\n   
     },\r\n    {\r\n      \"id\": \"group.title\",\r\n      \"sprite\": \"Title_groupselect_th\",\r\n     
-    \"x\": 533,\r\n      \"y\": 52,\r\n      \"width\": 864,\r\n      \"height\":
-    149,\r\n      \"figmaNode\": \"27:538\"\r\n    },\r\n    {\r\n      \"id\": \"group.subtitle\",\r\n     
-    \"sprite\": \"Subtitle_groupselect_th\",\r\n      \"x\": 565,\r\n      \"y\":
-    207,\r\n      \"width\": 753,\r\n      \"height\": 41,\r\n      \"figmaNode\":
+    \"x\": 422,\r\n      \"y\": 109,\r\n      \"width\": 1088,\r\n      \"height\":
+    150,\r\n      \"figmaNode\": \"27:538\"\r\n    },\r\n    {\r\n      \"id\": \"group.subtitle\",\r\n     
+    \"sprite\": \"Subtitle_groupselect_th\",\r\n      \"x\": 586,\r\n      \"y\":
+    264,\r\n      \"width\": 753,\r\n      \"height\": 41,\r\n      \"figmaNode\":
     \"27:538\"\r\n    },\r\n    {\r\n      \"id\": \"group.help\",\r\n      \"sprite\":
-    \"ButtonHelpBox_groupselect_th\",\r\n      \"x\": 622,\r\n      \"y\": 899,\r\n     
-    \"width\": 688,\r\n      \"height\": 153,\r\n      \"figmaNode\": \"27:538\"\r\n   
+    \"ButtonHelpBox_groupselect_th\",\r\n      \"x\": 609,\r\n      \"y\": 899,\r\n     
+    \"width\": 715,\r\n      \"height\": 153,\r\n      \"figmaNode\": \"27:538\"\r\n   
     },\r\n    {\r\n      \"id\": \"selection.title\",\r\n      \"sprite\": \"Title_selectall_th\",\r\n     
     \"x\": 426,\r\n      \"y\": 34,\r\n      \"width\": 1074,\r\n      \"height\":
     161,\r\n      \"figmaNode\": \"27:558\"\r\n    },\r\n    {\r\n      \"id\": \"selection.subtitle\",\r\n     
     \"sprite\": \"Subtitle_selectall_th\",\r\n      \"x\": 587,\r\n      \"y\": 198,\r\n     
     \"width\": 748,\r\n      \"height\": 39,\r\n      \"figmaNode\": \"27:558\"\r\n   
     },\r\n    {\r\n      \"id\": \"selection.help\",\r\n      \"sprite\": \"ButtonHelpBox_selectall_th\",\r\n     
-    \"x\": 622,\r\n      \"y\": 899,\r\n      \"width\": 688,\r\n      \"height\":
+    \"x\": 609,\r\n      \"y\": 899,\r\n      \"width\": 715,\r\n      \"height\":
     153,\r\n      \"figmaNode\": \"27:558\"\r\n    },\r\n    {\r\n      \"id\": \"result.title\",\r\n     
     \"sprite\": \"Title_recommendedAd_th\",\r\n      \"x\": 322,\r\n      \"y\":
     58,\r\n      \"width\": 1277,\r\n      \"height\": 151,\r\n      \"figmaNode\":
@@ -126,15 +160,49 @@ MonoBehaviour:
     \"sprite\": \"Subtitle_recommendedAd_th\",\r\n      \"x\": 541,\r\n      \"y\":
     221,\r\n      \"width\": 839,\r\n      \"height\": 62,\r\n      \"figmaNode\":
     \"27:579\"\r\n    },\r\n    {\r\n      \"id\": \"result.help\",\r\n      \"sprite\":
-    \"ButtonHelpBox_recommendedAd_th\",\r\n      \"x\": 584,\r\n      \"y\": 899,\r\n     
-    \"width\": 766,\r\n      \"height\": 153,\r\n      \"figmaNode\": \"27:579\"\r\n   
+    \"ButtonHelpBox_recommendedAd_th\",\r\n      \"x\": 570,\r\n      \"y\": 899,\r\n     
+    \"width\": 794,\r\n      \"height\": 153,\r\n      \"figmaNode\": \"27:579\"\r\n   
     },\r\n    {\r\n      \"id\": \"selection.productBoard\",\r\n      \"sprite\":
     \"RecommendedProductImageBox_selectall_th\",\r\n      \"x\": 816,\r\n      \"y\":
     331,\r\n      \"width\": 838,\r\n      \"height\": 493,\r\n      \"figmaNode\":
     \"20:263\"\r\n    },\r\n    {\r\n      \"id\": \"video.end\",\r\n      \"sprite\":
-    \"VideoEndPopupText_th\",\r\n      \"x\": 433.58008,\r\n      \"y\": 445.96777,\r\n     
-    \"width\": 1049.34326,\r\n      \"height\": 170.91211,\r\n      \"figmaNode\":
-    \"20:291\"\r\n    }\r\n  ]\r\n}\r\n"
+    \"VideoEndPopupText_th\",\r\n      \"x\": 434,\r\n      \"y\": 436,\r\n     
+    \"width\": 1050,\r\n      \"height\": 191,\r\n      \"figmaNode\": \"20:291\"\r\n   
+    },\r\n    {\r\n      \"id\": \"video.home\",\r\n      \"sprite\": \"VideoHomeHint_th\",\r\n     
+    \"x\": 40,\r\n      \"y\": 40,\r\n      \"width\": 452,\r\n      \"height\":
+    94,\r\n      \"figmaNode\": \"\"\r\n    },\r\n    {\r\n      \"id\": \"group.board\",\r\n     
+    \"sprite\": \"BoardImage\",\r\n      \"x\": 708,\r\n      \"y\": 354,\r\n     
+    \"width\": 504,\r\n      \"height\": 504,\r\n      \"figmaNode\": \"web\"\r\n   
+    },\r\n    {\r\n      \"id\": \"group.slot\",\r\n      \"sprite\": \"GroupSlot_th\",\r\n     
+    \"x\": 748,\r\n      \"y\": 394,\r\n      \"width\": 424,\r\n      \"height\":
+    424,\r\n      \"figmaNode\": \"web\"\r\n    },\r\n    {\r\n      \"id\": \"selection.groupSlot\",\r\n     
+    \"sprite\": \"GroupSlot_th\",\r\n      \"x\": 268,\r\n      \"y\": 320,\r\n     
+    \"width\": 252,\r\n      \"height\": 252,\r\n      \"figmaNode\": \"web\"\r\n   
+    },\r\n    {\r\n      \"id\": \"selection.productSlot\",\r\n      \"sprite\":
+    \"ProductSlot_th\",\r\n      \"x\": 536,\r\n      \"y\": 320,\r\n      \"width\":
+    252,\r\n      \"height\": 252,\r\n      \"figmaNode\": \"web\"\r\n    },\r\n   
+    {\r\n      \"id\": \"selection.colorSlot1\",\r\n      \"sprite\": \"ColorSlot_th\",\r\n     
+    \"x\": 268,\r\n      \"y\": 588,\r\n      \"width\": 252,\r\n      \"height\":
+    252,\r\n      \"figmaNode\": \"web\"\r\n    },\r\n    {\r\n      \"id\": \"selection.colorSlot2\",\r\n     
+    \"sprite\": \"ColorSlot_th\",\r\n      \"x\": 536,\r\n      \"y\": 588,\r\n     
+    \"width\": 252,\r\n      \"height\": 252,\r\n      \"figmaNode\": \"web\"\r\n   
+    },\r\n    {\r\n      \"id\": \"selection.background\",\r\n      \"sprite\": \"SelectionBackground_th\",\r\n     
+    \"x\": 0,\r\n      \"y\": 0,\r\n      \"width\": 1920,\r\n      \"height\": 1080,\r\n     
+    \"figmaNode\": \"web\"\r\n    },\r\n    {\r\n      \"id\": \"group.slotLabel\",\r\n     
+    \"sprite\": \"GroupSlotLabel_th\",\r\n      \"x\": 0,\r\n      \"y\": 0,\r\n     
+    \"width\": 424,\r\n      \"height\": 424,\r\n      \"figmaNode\": \"derived\"\r\n   
+    },\r\n    {\r\n      \"id\": \"selection.groupSlotLabel\",\r\n      \"sprite\":
+    \"GroupSlotLabel_th\",\r\n      \"x\": 0,\r\n      \"y\": 0,\r\n      \"width\":
+    252,\r\n      \"height\": 252,\r\n      \"figmaNode\": \"derived\"\r\n    },\r\n   
+    {\r\n      \"id\": \"selection.productSlotLabel\",\r\n      \"sprite\": \"ProductSlotLabel_th\",\r\n     
+    \"x\": 0,\r\n      \"y\": 0,\r\n      \"width\": 252,\r\n      \"height\": 252,\r\n     
+    \"figmaNode\": \"derived\"\r\n    },\r\n    {\r\n      \"id\": \"selection.colorSlot1Label\",\r\n     
+    \"sprite\": \"ColorSlotLabel_th\",\r\n      \"x\": 0,\r\n      \"y\": 0,\r\n     
+    \"width\": 252,\r\n      \"height\": 252,\r\n      \"figmaNode\": \"derived\"\r\n   
+    },\r\n    {\r\n      \"id\": \"selection.colorSlot2Label\",\r\n      \"sprite\":
+    \"ColorSlotLabel_th\",\r\n      \"x\": 0,\r\n      \"y\": 0,\r\n      \"width\":
+    252,\r\n      \"height\": 252,\r\n      \"figmaNode\": \"derived\"\r\n    }\r\n 
+    ]\r\n}\r\n"
   defaultEnglish: "{\r\n  \"schemaVersion\": 1,\r\n  \"language\": \"en\",\r\n  \"video\":
     \"Videos/Video_en\",\r\n  \"images\": [\r\n    {\r\n      \"id\": \"idle.title\",\r\n     
     \"sprite\": \"Title_en\",\r\n      \"x\": 63,\r\n      \"y\": 23,\r\n      \"width\":
@@ -145,32 +213,66 @@ MonoBehaviour:
     \"sprite\": \"ButtonHelpBox_en\",\r\n      \"x\": 307,\r\n      \"y\": 879,\r\n     
     \"width\": 1315,\r\n      \"height\": 173,\r\n      \"figmaNode\": \"27:644\"\r\n   
     },\r\n    {\r\n      \"id\": \"group.title\",\r\n      \"sprite\": \"Title_groupselectPanel_en\",\r\n     
-    \"x\": 306,\r\n      \"y\": 76,\r\n      \"width\": 1317,\r\n      \"height\":
+    \"x\": 187,\r\n      \"y\": 145,\r\n      \"width\": 1555,\r\n      \"height\":
     111,\r\n      \"figmaNode\": \"27:656\"\r\n    },\r\n    {\r\n      \"id\": \"group.subtitle\",\r\n     
     \"sprite\": \"Subtitle_groupselectPanel_en\",\r\n      \"x\": 428,\r\n      \"y\":
-    208,\r\n      \"width\": 1063,\r\n      \"height\": 39,\r\n      \"figmaNode\":
+    277,\r\n      \"width\": 1063,\r\n      \"height\": 39,\r\n      \"figmaNode\":
     \"27:656\"\r\n    },\r\n    {\r\n      \"id\": \"group.help\",\r\n      \"sprite\":
-    \"ButtonHelpBox_groupselectPanel_en\",\r\n      \"x\": 549,\r\n      \"y\": 899,\r\n     
-    \"width\": 835,\r\n      \"height\": 153,\r\n      \"figmaNode\": \"27:656\"\r\n   
+    \"ButtonHelpBox_groupselectPanel_en\",\r\n      \"x\": 515,\r\n      \"y\": 899,\r\n     
+    \"width\": 902,\r\n      \"height\": 153,\r\n      \"figmaNode\": \"27:656\"\r\n   
     },\r\n    {\r\n      \"id\": \"selection.title\",\r\n      \"sprite\": \"Title_selectallPanel_en\",\r\n     
     \"x\": 254,\r\n      \"y\": 74,\r\n      \"width\": 1418,\r\n      \"height\":
     97,\r\n      \"figmaNode\": \"27:676\"\r\n    },\r\n    {\r\n      \"id\": \"selection.subtitle\",\r\n     
     \"sprite\": \"Subtitle_selectallPanel_en\",\r\n      \"x\": 387,\r\n      \"y\":
     208,\r\n      \"width\": 1146,\r\n      \"height\": 40,\r\n      \"figmaNode\":
     \"27:676\"\r\n    },\r\n    {\r\n      \"id\": \"selection.help\",\r\n      \"sprite\":
-    \"ButtonHelpBox_selectallPanel_en\",\r\n      \"x\": 549,\r\n      \"y\": 899,\r\n     
-    \"width\": 835,\r\n      \"height\": 153,\r\n      \"figmaNode\": \"27:676\"\r\n   
+    \"ButtonHelpBox_selectallPanel_en\",\r\n      \"x\": 515,\r\n      \"y\": 899,\r\n     
+    \"width\": 902,\r\n      \"height\": 153,\r\n      \"figmaNode\": \"27:676\"\r\n   
     },\r\n    {\r\n      \"id\": \"result.title\",\r\n      \"sprite\": \"Title_RecommendedAd_en\",\r\n     
     \"x\": 360,\r\n      \"y\": 97,\r\n      \"width\": 1200,\r\n      \"height\":
     106,\r\n      \"figmaNode\": \"27:697\"\r\n    },\r\n    {\r\n      \"id\": \"result.subtitle\",\r\n     
     \"sprite\": \"Subtitle_RecommendedAd_en\",\r\n      \"x\": 550,\r\n      \"y\":
     236,\r\n      \"width\": 822,\r\n      \"height\": 47,\r\n      \"figmaNode\":
     \"27:697\"\r\n    },\r\n    {\r\n      \"id\": \"result.help\",\r\n      \"sprite\":
-    \"ButtonHelpBox_RecommendedAd_en\",\r\n      \"x\": 474,\r\n      \"y\": 899,\r\n     
-    \"width\": 984,\r\n      \"height\": 153,\r\n      \"figmaNode\": \"27:697\"\r\n   
+    \"ButtonHelpBox_RecommendedAd_en\",\r\n      \"x\": 441,\r\n      \"y\": 899,\r\n     
+    \"width\": 1051,\r\n      \"height\": 153,\r\n      \"figmaNode\": \"27:697\"\r\n   
     },\r\n    {\r\n      \"id\": \"selection.productBoard\",\r\n      \"sprite\":
     \"RecommendedProductImageBoard_en\",\r\n      \"x\": 816,\r\n      \"y\": 331,\r\n     
     \"width\": 838,\r\n      \"height\": 493,\r\n      \"figmaNode\": \"20:390\"\r\n   
     },\r\n    {\r\n      \"id\": \"video.end\",\r\n      \"sprite\": \"VideoEndPopupText_en\",\r\n     
-    \"x\": 350.375,\r\n      \"y\": 463.21094,\r\n      \"width\": 1218.96094,\r\n     
-    \"height\": 157.37891,\r\n      \"figmaNode\": \"20:440\"\r\n    }\r\n  ]\r\n}\r\n"
+    \"x\": 350,\r\n      \"y\": 463,\r\n      \"width\": 1219,\r\n      \"height\":
+    158,\r\n      \"figmaNode\": \"20:440\"\r\n    },\r\n    {\r\n      \"id\": \"video.home\",\r\n     
+    \"sprite\": \"VideoHomeHint_en\",\r\n      \"x\": 40,\r\n      \"y\": 40,\r\n     
+    \"width\": 488,\r\n      \"height\": 94,\r\n      \"figmaNode\": \"1271:4369\"\r\n   
+    },\r\n    {\r\n      \"id\": \"group.board\",\r\n      \"sprite\": \"BoardImage\",\r\n     
+    \"x\": 708,\r\n      \"y\": 355,\r\n      \"width\": 504,\r\n      \"height\":
+    504,\r\n      \"figmaNode\": \"web\"\r\n    },\r\n    {\r\n      \"id\": \"group.slot\",\r\n     
+    \"sprite\": \"GroupSlot_en\",\r\n      \"x\": 748,\r\n      \"y\": 395,\r\n     
+    \"width\": 424,\r\n      \"height\": 424,\r\n      \"figmaNode\": \"web\"\r\n   
+    },\r\n    {\r\n      \"id\": \"selection.groupSlot\",\r\n      \"sprite\": \"GroupSlot_en\",\r\n     
+    \"x\": 268,\r\n      \"y\": 320,\r\n      \"width\": 252,\r\n      \"height\":
+    252,\r\n      \"figmaNode\": \"web\"\r\n    },\r\n    {\r\n      \"id\": \"selection.productSlot\",\r\n     
+    \"sprite\": \"ProductSlot_en\",\r\n      \"x\": 536,\r\n      \"y\": 320,\r\n     
+    \"width\": 252,\r\n      \"height\": 252,\r\n      \"figmaNode\": \"web\"\r\n   
+    },\r\n    {\r\n      \"id\": \"selection.colorSlot1\",\r\n      \"sprite\": \"ColorSlot_en\",\r\n     
+    \"x\": 268,\r\n      \"y\": 588,\r\n      \"width\": 252,\r\n      \"height\":
+    252,\r\n      \"figmaNode\": \"web\"\r\n    },\r\n    {\r\n      \"id\": \"selection.colorSlot2\",\r\n     
+    \"sprite\": \"ColorSlot_en\",\r\n      \"x\": 536,\r\n      \"y\": 588,\r\n     
+    \"width\": 252,\r\n      \"height\": 252,\r\n      \"figmaNode\": \"web\"\r\n   
+    },\r\n    {\r\n      \"id\": \"selection.background\",\r\n      \"sprite\": \"SelectionBackground_en\",\r\n     
+    \"x\": 0,\r\n      \"y\": 0,\r\n      \"width\": 1920,\r\n      \"height\": 1080,\r\n     
+    \"figmaNode\": \"web\"\r\n    },\r\n    {\r\n      \"id\": \"group.slotLabel\",\r\n     
+    \"sprite\": \"GroupSlotLabel_en\",\r\n      \"x\": 0,\r\n      \"y\": 0,\r\n     
+    \"width\": 424,\r\n      \"height\": 424,\r\n      \"figmaNode\": \"derived\"\r\n   
+    },\r\n    {\r\n      \"id\": \"selection.groupSlotLabel\",\r\n      \"sprite\":
+    \"GroupSlotLabel_en\",\r\n      \"x\": 0,\r\n      \"y\": 0,\r\n      \"width\":
+    252,\r\n      \"height\": 252,\r\n      \"figmaNode\": \"derived\"\r\n    },\r\n   
+    {\r\n      \"id\": \"selection.productSlotLabel\",\r\n      \"sprite\": \"ProductSlotLabel_en\",\r\n     
+    \"x\": 0,\r\n      \"y\": 0,\r\n      \"width\": 252,\r\n      \"height\": 252,\r\n     
+    \"figmaNode\": \"derived\"\r\n    },\r\n    {\r\n      \"id\": \"selection.colorSlot1Label\",\r\n     
+    \"sprite\": \"ColorSlotLabel_en\",\r\n      \"x\": 0,\r\n      \"y\": 0,\r\n     
+    \"width\": 252,\r\n      \"height\": 252,\r\n      \"figmaNode\": \"derived\"\r\n   
+    },\r\n    {\r\n      \"id\": \"selection.colorSlot2Label\",\r\n      \"sprite\":
+    \"ColorSlotLabel_en\",\r\n      \"x\": 0,\r\n      \"y\": 0,\r\n      \"width\":
+    252,\r\n      \"height\": 252,\r\n      \"figmaNode\": \"derived\"\r\n    }\r\n 
+    ]\r\n}\r\n"

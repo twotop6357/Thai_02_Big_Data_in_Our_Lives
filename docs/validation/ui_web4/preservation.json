@@ -1,0 +1,29 @@
+{
+  "baselineCount": 688,
+  "unchangedCount": 666,
+  "changedPaths": [
+    "Assets/Scripts/UI/ResultVideoController.cs",
+    "Assets/Editor/ExhibitionUIBuilder.cs",
+    "Assets/Scenes/2_Result.unity",
+    "Assets/UI/ExhibitionUIAssets.asset",
+    "Assets/UI/UIs_En/GroupSelect/ButtonHelpBox_groupselectPanel_en.png",
+    "Assets/UI/UIs_En/GroupSelect/Title_groupselectPanel_en.png",
+    "Assets/UI/UIs_En/Idle/ButtonHelpBox_en.png",
+    "Assets/UI/UIs_En/Idle/Title_en.png",
+    "Assets/UI/UIs_En/RecommendedAd/ButtonHelpBox_RecommendedAd_en.png",
+    "Assets/UI/UIs_En/SelectAll/ButtonHelpBox_selectallPanel_en.png",
+    "Assets/UI/UIs_En/SelectAll/Subtitle_selectallPanel_en.png",
+    "Assets/UI/UIs_Th/GroupSelect/ButtonHelpBox_groupselect_th.png",
+    "Assets/UI/UIs_Th/GroupSelect/Title_groupselect_th.png",
+    "Assets/UI/UIs_Th/Idle/ButtonHelpBox_th.png",
+    "Assets/UI/UIs_Th/Idle/Title_th.png",
+    "Assets/UI/UIs_Th/RecommendedAd/ButtonHelpBox_recommendedAd_th.png",
+    "Assets/UI/UIs_Th/SelectAll/ButtonHelpBox_selectall_th.png",
+    "Assets/UI/UIs_Th/SelectAll/Subtitle_selectall_th.png",
+    "Assets/UI/UIs_Th/Video/VideoEndPopupText_th.png",
+    "Assets/StreamingAssets/build_info",
+    "Assets/StreamingAssets/Lang_En.json",
+    "Assets/StreamingAssets/Lang_Th.json"
+  ],
+  "removedPaths": []
+}

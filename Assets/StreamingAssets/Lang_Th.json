@@ -6,17 +6,17 @@
     {
       "id": "idle.title",
       "sprite": "Title_th",
-      "x": 63,
-      "y": 23,
-      "width": 935,
-      "height": 454,
+      "x": 64,
+      "y": 39,
+      "width": 869,
+      "height": 429,
       "figmaNode": "27:525"
     },
     {
       "id": "idle.subtitle",
       "sprite": "Subtitle_th",
-      "x": 99,
-      "y": 478,
+      "x": 67,
+      "y": 486,
       "width": 486,
       "height": 105,
       "figmaNode": "27:525"
@@ -33,17 +33,17 @@
     {
       "id": "group.title",
       "sprite": "Title_groupselect_th",
-      "x": 533,
-      "y": 52,
-      "width": 864,
-      "height": 149,
+      "x": 422,
+      "y": 109,
+      "width": 1088,
+      "height": 150,
       "figmaNode": "27:538"
     },
     {
       "id": "group.subtitle",
       "sprite": "Subtitle_groupselect_th",
-      "x": 565,
-      "y": 207,
+      "x": 586,
+      "y": 264,
       "width": 753,
       "height": 41,
       "figmaNode": "27:538"
@@ -51,9 +51,9 @@
     {
       "id": "group.help",
       "sprite": "ButtonHelpBox_groupselect_th",
-      "x": 622,
+      "x": 609,
       "y": 899,
-      "width": 688,
+      "width": 715,
       "height": 153,
       "figmaNode": "27:538"
     },
@@ -78,9 +78,9 @@
     {
       "id": "selection.help",
       "sprite": "ButtonHelpBox_selectall_th",
-      "x": 622,
+      "x": 609,
       "y": 899,
-      "width": 688,
+      "width": 715,
       "height": 153,
       "figmaNode": "27:558"
     },
@@ -105,9 +105,9 @@
     {
       "id": "result.help",
       "sprite": "ButtonHelpBox_recommendedAd_th",
-      "x": 584,
+      "x": 570,
       "y": 899,
-      "width": 766,
+      "width": 794,
       "height": 153,
       "figmaNode": "27:579"
     },
@@ -123,11 +123,128 @@
     {
       "id": "video.end",
       "sprite": "VideoEndPopupText_th",
-      "x": 433.58008,
-      "y": 445.96777,
-      "width": 1049.34326,
-      "height": 170.91211,
+      "x": 434,
+      "y": 436,
+      "width": 1050,
+      "height": 191,
       "figmaNode": "20:291"
+    },
+    {
+      "id": "video.home",
+      "sprite": "VideoHomeHint_th",
+      "x": 40,
+      "y": 40,
+      "width": 452,
+      "height": 94,
+      "figmaNode": ""
+    },
+    {
+      "id": "group.board",
+      "sprite": "BoardImage",
+      "x": 708,
+      "y": 354,
+      "width": 504,
+      "height": 504,
+      "figmaNode": "web"
+    },
+    {
+      "id": "group.slot",
+      "sprite": "GroupSlot_th",
+      "x": 748,
+      "y": 394,
+      "width": 424,
+      "height": 424,
+      "figmaNode": "web"
+    },
+    {
+      "id": "selection.groupSlot",
+      "sprite": "GroupSlot_th",
+      "x": 268,
+      "y": 320,
+      "width": 252,
+      "height": 252,
+      "figmaNode": "web"
+    },
+    {
+      "id": "selection.productSlot",
+      "sprite": "ProductSlot_th",
+      "x": 536,
+      "y": 320,
+      "width": 252,
+      "height": 252,
+      "figmaNode": "web"
+    },
+    {
+      "id": "selection.colorSlot1",
+      "sprite": "ColorSlot_th",
+      "x": 268,
+      "y": 588,
+      "width": 252,
+      "height": 252,
+      "figmaNode": "web"
+    },
+    {
+      "id": "selection.colorSlot2",
+      "sprite": "ColorSlot_th",
+      "x": 536,
+      "y": 588,
+      "width": 252,
+      "height": 252,
+      "figmaNode": "web"
+    },
+    {
+      "id": "selection.background",
+      "sprite": "SelectionBackground_th",
+      "x": 0,
+      "y": 0,
+      "width": 1920,
+      "height": 1080,
+      "figmaNode": "web"
+    },
+    {
+      "id": "group.slotLabel",
+      "sprite": "GroupSlotLabel_th",
+      "x": 0,
+      "y": 0,
+      "width": 424,
+      "height": 424,
+      "figmaNode": "derived"
+    },
+    {
+      "id": "selection.groupSlotLabel",
+      "sprite": "GroupSlotLabel_th",
+      "x": 0,
+      "y": 0,
+      "width": 252,
+      "height": 252,
+      "figmaNode": "derived"
+    },
+    {
+      "id": "selection.productSlotLabel",
+      "sprite": "ProductSlotLabel_th",
+      "x": 0,
+      "y": 0,
+      "width": 252,
+      "height": 252,
+      "figmaNode": "derived"
+    },
+    {
+      "id": "selection.colorSlot1Label",
+      "sprite": "ColorSlotLabel_th",
+      "x": 0,
+      "y": 0,
+      "width": 252,
+      "height": 252,
+      "figmaNode": "derived"
+    },
+    {
+      "id": "selection.colorSlot2Label",
+      "sprite": "ColorSlotLabel_th",
+      "x": 0,
+      "y": 0,
+      "width": 252,
+      "height": 252,
+      "figmaNode": "derived"
     }
   ]
 }

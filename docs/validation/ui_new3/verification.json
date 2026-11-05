@@ -1,0 +1,12 @@
+{
+  "replacements": 9,
+  "original_filenames_and_metas_preserved": true,
+  "new_folder_removed": true,
+  "protected_files_unchanged": 452,
+  "generated_file_excluded": {
+    "path": "Assets/StreamingAssets/build_info",
+    "reason": "Ignored ReporterEditor.cs generated timestamp metadata; left as generated."
+  },
+  "runtime_checks": 18,
+  "runtime_screens": 8
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "source": "Assets/UI/NEW/E02-S01. 인트로 및 체험 시작.png",
+    "target": "Assets/UI/Backgrounds/Intro_bg.png",
+    "source_sha256": "b5111a5b3dde0dad55ac1f98c91f4588b875601b708fb668e2d0b001cac04fc8",
+    "before_sha256": "493f275e5fe818d4efdb17bbdc81dd3a68073c193739f1634cbd3226479244f2",
+    "size": [
+      1920,
+      1080
+    ],
+    "meta_sha256": "d0b48de7d137699cd3d2ecdbf3624c8764641d46c3a0b53c4ab20e67f00f5b45",
+    "guid": "6211a3fce98156945b63be45ebdd545e"
+  },
+  {
+    "source": "Assets/UI/NEW/버튼 안내문구 2.png",
+    "target": "Assets/UI/UIs_En/Idle/ButtonHelpBox_en.png",
+    "source_sha256": "66368babad671ca19d3660cdf3fd230b8e8027cf37e8dd3aff061092aeb03670",
+    "before_sha256": "c3623d0c596c267d4106acdd4f916549cf5548b05168b003705efd788a790e61",
+    "size": [
+      1315,
+      173
+    ],
+    "meta_sha256": "500e858a76bacd827d68647a7357648142b43dbee3dee35d502a512ba13275dd",
+    "guid": "61dc36b6fe1ffbf42b60a04d7817333d"
+  },
+  {
+    "source": "Assets/UI/NEW/버튼 안내문구 2-1.png",
+    "target": "Assets/UI/UIs_Th/Idle/ButtonHelpBox_th.png",
+    "source_sha256": "3997228594133c4c19690610b024d5ce49a3020601ffc5ee366af7412ae4f2eb",
+    "before_sha256": "ca8a71de515ee6a29a21b758c58f0afe598ab45e901740d43dfbb3cd3a97e4bc",
+    "size": [
+      1315,
+      173
+    ],
+    "meta_sha256": "1ffbb43f9de71dd71c6c0def2b509b4b39e57eaba7ce1b7bb4224df6e784c5b7",
+    "guid": "5ba21fb557f1f3d45ba4b70b130701a6"
+  },
+  {
+    "source": "Assets/UI/NEW/버튼 안내문구 3.png",
+    "target": "Assets/UI/UIs_En/GroupSelect/ButtonHelpBox_groupselectPanel_en.png",
+    "source_sha256": "027664bc0b49e33307e22308c9d753339ef356a411c25ecf7051f945bbf198ff",
+    "before_sha256": "388865ad13f2ed8387b511eb44fce99c64da85093d524dc3cd03995276384aff",
+    "size": [
+      835,
+      153
+    ],
+    "meta_sha256": "5691882a4d74b219ac3cc97129ec49121a481ae712efd96804175c1554768650",
+    "guid": "d95f044fbaa2fdf4aa13d4e983aef117"
+  },
+  {
+    "source": "Assets/UI/NEW/버튼 안내문구 3-1.png",
+    "target": "Assets/UI/UIs_En/SelectAll/ButtonHelpBox_selectallPanel_en.png",
+    "source_sha256": "4307d0f842becfbf27d51e8cbd0d53fb1ec28b844374e90d0a52cbebc21a1dae",
+    "before_sha256": "b049f0e35b44d6791d7a80e7b11b9370ebcfdd8ecfae3e3baddb4d298a81c9ac",
+    "size": [
+      835,
+      153
+    ],
+    "meta_sha256": "a6f7f00a8433e282c0a2cd188e9507d4c87f1330664d6f52eb3bb921e735ab7b",
+    "guid": "3473e7e04e244064aaa873ba3fda8434"
+  },
+  {
+    "source": "Assets/UI/NEW/버튼 안내문구 3-2.png",
+    "target": "Assets/UI/UIs_En/RecommendedAd/ButtonHelpBox_RecommendedAd_en.png",
+    "source_sha256": "36edf059ea04d6288ffe61e3a1573fe02d8c94ee3cd95026600eeec884efe37c",
+    "before_sha256": "9500c45c23d04a805efea0bb0aa6a0968935e5951f21acf5f3b082f518adf304",
+    "size": [
+      984,
+      153
+    ],
+    "meta_sha256": "4e5b2c9ba883b3ce246c2fb078301bb831d20a8a230b0defc452181cba5f7b61",
+    "guid": "3253f5ec09cea224ca3ee62639238063"
+  },
+  {
+    "source": "Assets/UI/NEW/버튼 안내문구 3-3.png",
+    "target": "Assets/UI/UIs_Th/GroupSelect/ButtonHelpBox_groupselect_th.png",
+    "source_sha256": "2b44e2adde1018ca4df70e403d38c09bc341c80b676b967cfe55a9bcecb96a55",
+    "before_sha256": "0b5de5f4686cdbb64df6358a94219a41be6d7b606fea0aaa7ae36933bcc03092",
+    "size": [
+      688,
+      153
+    ],
+    "meta_sha256": "b2a7f82e0b3cf20ffe11b055e7abc37a9198226bb7c1193ffe84d45bf72ae482",
+    "guid": "fe6262c2b4e6162409d2ba7159b5d4cd"
+  },
+  {
+    "source": "Assets/UI/NEW/버튼 안내문구 3-4.png",
+    "target": "Assets/UI/UIs_Th/SelectAll/ButtonHelpBox_selectall_th.png",
+    "source_sha256": "98705b24bd8eb7de30222f8ff0875506c8052925074ce9d4332741f4171b3c3e",
+    "before_sha256": "ea351a4959d5d1d9f61bd58e059170bc19273eee93041840b5b5d3e90b9f6c76",
+    "size": [
+      688,
+      153
+    ],
+    "meta_sha256": "d4c17e31a01534e1d97114575c327e6d54af84df619e4433e80f27d00cadca8e",
+    "guid": "20fa35b6b41a1fe42902be0aebde930d"
+  },
+  {
+    "source": "Assets/UI/NEW/버튼 안내문구 3-5.png",
+    "target": "Assets/UI/UIs_Th/RecommendedAd/ButtonHelpBox_recommendedAd_th.png",
+    "source_sha256": "c5b4fb39f618fd57beb472090dfeca505ef329495b996e0b475425b23ae5575c",
+    "before_sha256": "595bd35604dabf2500f9e061af7acbeb131b915f748b3e6affde650ef8341b5e",
+    "size": [
+      766,
+      153
+    ],
+    "meta_sha256": "53b66ef937ada80f7a9767239997d7e1be3728f18b42ad8df8a129afcedac8d6",
+    "guid": "79050d13726e4a94d84b36f5ad1a3da6"
+  }
+]

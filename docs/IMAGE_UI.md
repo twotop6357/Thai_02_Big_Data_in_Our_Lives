@@ -1,4 +1,10 @@
-# 이미지 UI와 언어별 배치
+﻿# 이미지 UI와 언어별 배치
+
+2026-11-05 UI-SLOTS-002(최신): 그룹 화면을 보드 504×504·칸 424×424 하나로 바꾸고, 선택 화면 네 칸을 용도별 빈 칸 이미지로 교체했다. 칸·보드·선택 배경도 언어 JSON 바인딩(`keepObjectName`)으로 관리한다. 아래 UI-WEB-004의 "기존4칸 유지"는 이 작업으로 대체됐다. [원본 ZIP·검증](validation/ui_slots/README.md).
+
+2026-11-05 UI-WEB-004: 열린 Figma 웹의 2번 TH/EN UI를 직접 ZIP으로 받아 일괄 비교하고 PNG15개 교체·영상 좌상단 홈 안내2개를 추가했다. 파란 버튼/연령 제목/태국어 타이틀/선택 강조/종료 줄 간격·언어별 배치를 반영했다. 기존4칸/이동연출·입력/영상 동작은 보존했다. `video.home`는 실제 영상 프레임 표시 때만 나타나고 종료·실패·취소·복귀 때 숨긴다. [원본 ZIP·비교·검증·적용 화면](validation/ui_web4/README.md).
+
+2026-11-02 UI-NEW-003: 사용자가 제공한 NEW의 인트로 배경1개·영어/태국어 버튼 안내8개를 기존 PNG에 덮어썼다. 기존 파일명/meta/GUID/참조를 유지했고 모든 이미지 크기가 같아 씬/JSON/코드·연출은 수정하지 않았다. 교체와 양언어8화면 확인 후 NEW 폴더/meta를 삭제했다. [대응표와 실제 화면](validation/ui_new3/README.md).
 
 2026-10-30 / COMFY-RESTORE-001: 로컬 자동색칠을 ComfyUI 생성으로 복원했다. 현재 물건10종/실제 블록 표시를 유지하고,6색은 블록 PNG 원의 HEX/RGB를 사용한다. 생성 중 두 선택 패널의 계속 안내·모든 버튼을 차단하며 성공/실패/취소 후 복구한다. 아래 과거 색칠 언급은 이 조건으로 대체한다. 배치·이미지·영상 연출은 유지한다. [현재 운영](BLOCK_SIMULATOR.md).
 
@@ -32,7 +38,7 @@ Figma [Big Data in Our Lives](https://www.figma.com/design/Nq9j1gdpFVxXnDlv8wGqn
 
 ## 이미지와 영상 교체
 
-- `Assets/StreamingAssets/Lang_En.json`, `Lang_Th.json`: 같은14개 `images[].id`에 언어별 `sprite`·`x`·`y`·`width`·`height`를 지정한다. `figmaNode`는 출처이며 런타임에서 외부 Figma를 호출하지 않는다. `video`는 Resources 기준 확장자 없는 `Videos/Video_en` / `Videos/Video_th`다.
+- `Assets/StreamingAssets/Lang_En.json`, `Lang_Th.json`: 같은15개 `images[].id`에 언어별 `sprite`·`x`·`y`·`width`·`height`를 지정한다. `figmaNode`는 출처이며 런타임에서 외부 Figma를 호출하지 않는다. `video`는 Resources 기준 확장자 없는 `Videos/Video_en` / `Videos/Video_th`다.
 - `Assets/UI/ExhibitionUIAssets.asset`: Sprite ID와 실제 Sprite 참조 목록. 기존 PNG를 같은 경로에서 교체하면 GUID를 유지한다. 새 PNG를 추가하면 Sprite(2D and UI), Single, mipmap off, NPOT None, alpha transparency, Clamp를 설정하고 라이브러리에 ID와 참조를 등록한다. JSON에서 그 ID를 사용한다. Background는 언어 페이드 대상이 아니다.
 - `LocalizedImageSet.bindings`: 화면의 고정 UI ID와 Image 연결. 같은 JSON에서 다른 언어 이미지와 위치·크기를 함께 바꾼다. 언어 페이드는 공통 UIMotion의0.25초 InOutSine을 사용한다. 실제 언어 모드 변경은 GameManager가 타이틀에서만 허용한다. 화면·팝업·카드·입력 잠금은 [공통 연출 규칙](UI_MOTION.md)을 따른다.
 - `ExhibitionUIAssets.defaultThai/defaultEnglish`: 마지막 에디터 구성 시의 정상 JSON 사본. 외부 JSON 누락·문법/스키마·참조 오류에는 원본 예외를 영문 로그에 남기고 이 사본으로 두 언어를 복구한다. 수정한 JSON을 운영 기본으로 확정하려면 이 사본도 갱신한다.
@@ -52,7 +58,7 @@ Figma [Big Data in Our Lives](https://www.figma.com/design/Nq9j1gdpFVxXnDlv8wGqn
 }
 ```
 
-PNG에 그려진 문구는 원본 그대로다. 초기 안내의 `Press Once → Thai / Hold → English` 표기는 이미지에 포함되어 있지만 실제 버튼 동작은 사용자가 지정한 **현재 언어 시작 / 2초 모드 전환**이다. 안내 문구를 바꾸려면 해당 PNG를 교체한다. TH 물품 선택 부제의 영문도 제공된 원본/Figma에 포함된 내용이다.
+PNG에 그려진 문구는 제공된 원본 그대로다. UI-NEW-003의 초기 안내는 **한 번 눌러 시작 / 2초 유지로 Thai↔English 전환**으로 갱신돼 실제 버튼 동작과 일치한다. 그룹/배치/결과 안내의 홈 유지 문구도 새 이미지를 사용한다. 안내 문구를 바꾸려면 해당 PNG를 같은 이름으로 교체한다.
 
 ## 영상과 종료 책임
 

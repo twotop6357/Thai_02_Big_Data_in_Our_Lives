@@ -1,0 +1,15 @@
+{
+  "checks": [
+    "Reentered advertisement starts with the video hint hidden",
+    "Hint visible during actual playback",
+    "Injected decoder failure hides the hint",
+    "Failure releases the media target",
+    "Retry displays the same hint without duplication",
+    "Five-second home during playback cancels media and destroys the scene hint",
+    "Repeated Result entry resets hint visibility",
+    "Preparing video keeps hint hidden until an actual video frame is displayed",
+    "Cancellation during preparation leaves no hint behind",
+    "Cancellation releases video render textures"
+  ],
+  "passed": true
+}

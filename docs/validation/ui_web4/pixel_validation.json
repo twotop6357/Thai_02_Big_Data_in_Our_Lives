@@ -1,0 +1,158 @@
+[
+  {
+    "language": "en",
+    "id": "idle.title",
+    "opaqueRmse": 0.0251,
+    "passed": true
+  },
+  {
+    "language": "en",
+    "id": "idle.subtitle",
+    "opaqueRmse": 0.0,
+    "passed": true
+  },
+  {
+    "language": "en",
+    "id": "idle.help",
+    "opaqueRmse": 0.0,
+    "passed": true
+  },
+  {
+    "language": "en",
+    "id": "group.title",
+    "opaqueRmse": 0.0935,
+    "passed": true
+  },
+  {
+    "language": "en",
+    "id": "group.subtitle",
+    "opaqueRmse": 0.0,
+    "passed": true
+  },
+  {
+    "language": "en",
+    "id": "group.help",
+    "opaqueRmse": 0.0,
+    "passed": true
+  },
+  {
+    "language": "en",
+    "id": "selection.title",
+    "opaqueRmse": 0.1003,
+    "passed": true
+  },
+  {
+    "language": "en",
+    "id": "selection.subtitle",
+    "opaqueRmse": 0.0,
+    "passed": true
+  },
+  {
+    "language": "en",
+    "id": "selection.help",
+    "opaqueRmse": 0.0,
+    "passed": true
+  },
+  {
+    "language": "en",
+    "id": "result.title",
+    "opaqueRmse": 0.0,
+    "passed": true
+  },
+  {
+    "language": "en",
+    "id": "result.subtitle",
+    "opaqueRmse": 0.0,
+    "passed": true
+  },
+  {
+    "language": "en",
+    "id": "result.help",
+    "opaqueRmse": 0.0,
+    "passed": true
+  },
+  {
+    "language": "en",
+    "id": "video.end",
+    "opaqueRmse": 0.0,
+    "passed": true
+  },
+  {
+    "language": "th",
+    "id": "idle.title",
+    "opaqueRmse": 0.0201,
+    "passed": true
+  },
+  {
+    "language": "th",
+    "id": "idle.subtitle",
+    "opaqueRmse": 0.0,
+    "passed": true
+  },
+  {
+    "language": "th",
+    "id": "idle.help",
+    "opaqueRmse": 0.0,
+    "passed": true
+  },
+  {
+    "language": "th",
+    "id": "group.title",
+    "opaqueRmse": 0.0853,
+    "passed": true
+  },
+  {
+    "language": "th",
+    "id": "group.subtitle",
+    "opaqueRmse": 0.0,
+    "passed": true
+  },
+  {
+    "language": "th",
+    "id": "group.help",
+    "opaqueRmse": 0.0,
+    "passed": true
+  },
+  {
+    "language": "th",
+    "id": "selection.title",
+    "opaqueRmse": 0.0993,
+    "passed": true
+  },
+  {
+    "language": "th",
+    "id": "selection.subtitle",
+    "opaqueRmse": 0.0,
+    "passed": true
+  },
+  {
+    "language": "th",
+    "id": "selection.help",
+    "opaqueRmse": 0.0,
+    "passed": true
+  },
+  {
+    "language": "th",
+    "id": "result.title",
+    "opaqueRmse": 0.0,
+    "passed": true
+  },
+  {
+    "language": "th",
+    "id": "result.subtitle",
+    "opaqueRmse": 0.0,
+    "passed": true
+  },
+  {
+    "language": "th",
+    "id": "result.help",
+    "opaqueRmse": 0.0,
+    "passed": true
+  },
+  {
+    "language": "th",
+    "id": "video.end",
+    "opaqueRmse": 0.0,
+    "passed": true
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "language": "en",
+    "x": 40,
+    "y": 40,
+    "width": 488,
+    "height": 94,
+    "opaqueRmse": 0.0,
+    "passed": true
+  },
+  {
+    "language": "th",
+    "x": 40,
+    "y": 40,
+    "width": 452,
+    "height": 94,
+    "opaqueRmse": 0.0,
+    "passed": true
+  }
+]

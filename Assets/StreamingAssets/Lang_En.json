@@ -33,9 +33,9 @@
     {
       "id": "group.title",
       "sprite": "Title_groupselectPanel_en",
-      "x": 306,
-      "y": 76,
-      "width": 1317,
+      "x": 187,
+      "y": 145,
+      "width": 1555,
       "height": 111,
       "figmaNode": "27:656"
     },
@@ -43,7 +43,7 @@
       "id": "group.subtitle",
       "sprite": "Subtitle_groupselectPanel_en",
       "x": 428,
-      "y": 208,
+      "y": 277,
       "width": 1063,
       "height": 39,
       "figmaNode": "27:656"
@@ -51,9 +51,9 @@
     {
       "id": "group.help",
       "sprite": "ButtonHelpBox_groupselectPanel_en",
-      "x": 549,
+      "x": 515,
       "y": 899,
-      "width": 835,
+      "width": 902,
       "height": 153,
       "figmaNode": "27:656"
     },
@@ -78,9 +78,9 @@
     {
       "id": "selection.help",
       "sprite": "ButtonHelpBox_selectallPanel_en",
-      "x": 549,
+      "x": 515,
       "y": 899,
-      "width": 835,
+      "width": 902,
       "height": 153,
       "figmaNode": "27:676"
     },
@@ -105,9 +105,9 @@
     {
       "id": "result.help",
       "sprite": "ButtonHelpBox_RecommendedAd_en",
-      "x": 474,
+      "x": 441,
       "y": 899,
-      "width": 984,
+      "width": 1051,
       "height": 153,
       "figmaNode": "27:697"
     },
@@ -123,11 +123,128 @@
     {
       "id": "video.end",
       "sprite": "VideoEndPopupText_en",
-      "x": 350.375,
-      "y": 463.21094,
-      "width": 1218.96094,
-      "height": 157.37891,
+      "x": 350,
+      "y": 463,
+      "width": 1219,
+      "height": 158,
       "figmaNode": "20:440"
+    },
+    {
+      "id": "video.home",
+      "sprite": "VideoHomeHint_en",
+      "x": 40,
+      "y": 40,
+      "width": 488,
+      "height": 94,
+      "figmaNode": "1271:4369"
+    },
+    {
+      "id": "group.board",
+      "sprite": "BoardImage",
+      "x": 708,
+      "y": 355,
+      "width": 504,
+      "height": 504,
+      "figmaNode": "web"
+    },
+    {
+      "id": "group.slot",
+      "sprite": "GroupSlot_en",
+      "x": 748,
+      "y": 395,
+      "width": 424,
+      "height": 424,
+      "figmaNode": "web"
+    },
+    {
+      "id": "selection.groupSlot",
+      "sprite": "GroupSlot_en",
+      "x": 268,
+      "y": 320,
+      "width": 252,
+      "height": 252,
+      "figmaNode": "web"
+    },
+    {
+      "id": "selection.productSlot",
+      "sprite": "ProductSlot_en",
+      "x": 536,
+      "y": 320,
+      "width": 252,
+      "height": 252,
+      "figmaNode": "web"
+    },
+    {
+      "id": "selection.colorSlot1",
+      "sprite": "ColorSlot_en",
+      "x": 268,
+      "y": 588,
+      "width": 252,
+      "height": 252,
+      "figmaNode": "web"
+    },
+    {
+      "id": "selection.colorSlot2",
+      "sprite": "ColorSlot_en",
+      "x": 536,
+      "y": 588,
+      "width": 252,
+      "height": 252,
+      "figmaNode": "web"
+    },
+    {
+      "id": "selection.background",
+      "sprite": "SelectionBackground_en",
+      "x": 0,
+      "y": 0,
+      "width": 1920,
+      "height": 1080,
+      "figmaNode": "web"
+    },
+    {
+      "id": "group.slotLabel",
+      "sprite": "GroupSlotLabel_en",
+      "x": 0,
+      "y": 0,
+      "width": 424,
+      "height": 424,
+      "figmaNode": "derived"
+    },
+    {
+      "id": "selection.groupSlotLabel",
+      "sprite": "GroupSlotLabel_en",
+      "x": 0,
+      "y": 0,
+      "width": 252,
+      "height": 252,
+      "figmaNode": "derived"
+    },
+    {
+      "id": "selection.productSlotLabel",
+      "sprite": "ProductSlotLabel_en",
+      "x": 0,
+      "y": 0,
+      "width": 252,
+      "height": 252,
+      "figmaNode": "derived"
+    },
+    {
+      "id": "selection.colorSlot1Label",
+      "sprite": "ColorSlotLabel_en",
+      "x": 0,
+      "y": 0,
+      "width": 252,
+      "height": 252,
+      "figmaNode": "derived"
+    },
+    {
+      "id": "selection.colorSlot2Label",
+      "sprite": "ColorSlotLabel_en",
+      "x": 0,
+      "y": 0,
+      "width": 252,
+      "height": 252,
+      "figmaNode": "derived"
     }
   ]
 }

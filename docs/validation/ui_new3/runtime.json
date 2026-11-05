@@ -1,0 +1,24 @@
+{
+  "task": "UI-NEW-003",
+  "checks": [
+    "Correct visible help: idle.help / ButtonHelpBox_th",
+    "Updated full-size Intro_bg is displayed: th",
+    "Correct visible help: group.help / ButtonHelpBox_groupselect_th",
+    "Resource check does not generate an AI image: th",
+    "Correct visible help: selection.help / ButtonHelpBox_selectall_th",
+    "Normal result transition preserved: th",
+    "Correct visible help: result.help / ButtonHelpBox_recommendedAd_th",
+    "Return to Idle preserved: th",
+    "Title language switch: English",
+    "Correct visible help: idle.help / ButtonHelpBox_en",
+    "Updated full-size Intro_bg is displayed: en",
+    "Correct visible help: group.help / ButtonHelpBox_groupselectPanel_en",
+    "Resource check does not generate an AI image: en",
+    "Correct visible help: selection.help / ButtonHelpBox_selectallPanel_en",
+    "Normal result transition preserved: en",
+    "Correct visible help: result.help / ButtonHelpBox_RecommendedAd_en",
+    "Return to Idle preserved: en",
+    "Title language switch: Thai"
+  ],
+  "passed": true
+}
