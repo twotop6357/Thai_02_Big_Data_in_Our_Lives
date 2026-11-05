@@ -1,0 +1,23 @@
+{
+  "task": "RFID-STABLE-001",
+  "checks": [
+    "F10 monitor remains available with variable UID framing",
+    "A partial TCP receive is visible only as RX and cannot be selected as a UID",
+    "Two seven-byte copies coalesce to exactly one complete seven-byte UID",
+    "Four real TCP clients retain 7/4/10/16-byte UIDs without forced padding or truncation",
+    "Repeated/split/coalesced reports stay identical across at least five one-second checks",
+    "Each reader actually sent more than eight further reports during the stability test",
+    "A different seven-byte UID replaces the card instead of retaining the previous value",
+    "An unmapped repeated UID remains unmapped and never becomes a neighboring block",
+    "Confirmed UID saves to isolated JSON through the actual mapping API",
+    "Only the canonical single UID is saved and applied",
+    "Generation freeze keeps the captured four-block display while the monitor updates",
+    "Mappings remain locked during generation",
+    "Ending generation does not replay ignored readings",
+    "Card removal clears the slot while retaining the TCP connection",
+    "Reconnect discards prior confirmation; one single new report is not a selectable UID",
+    "Two complete reports restore the same UID after reconnect"
+  ],
+  "loopback_tcp": true,
+  "passed": true
+}

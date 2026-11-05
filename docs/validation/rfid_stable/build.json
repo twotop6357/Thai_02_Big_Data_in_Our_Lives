@@ -1,0 +1,16 @@
+{
+  "result": "Succeeded",
+  "errors": 0,
+  "warnings": 5,
+  "durationSeconds": 9.7660257,
+  "bytes": 514835139,
+  "outputPath": "C:/UnityProjects/Thai_02_Big_Data_in_Our_Lives/Builds/RfidStable/Unity-Startup-Template.exe",
+  "buildOptions": "None",
+  "diagnostics": [
+    "Assets\\Scripts\\UI\\UIBlockSlotTransfer.cs(83,17): warning CS4014: Because this call is not awaited, execution of the current method continues before the call is completed. Consider applying the 'await' operator to the result of the call.",
+    "Assets\\Scripts\\UI\\UIBlockSlotTransfer.cs(85,17): warning CS4014: Because this call is not awaited, execution of the current method continues before the call is completed. Consider applying the 'await' operator to the result of the call.",
+    "Assets\\Scripts\\UI\\UIAnimatedElement.cs(126,21): warning CS4014: Because this call is not awaited, execution of the current method continues before the call is completed. Consider applying the 'await' operator to the result of the call.",
+    "Assets\\Scripts\\UI\\UIAnimatedElement.cs(128,21): warning CS4014: Because this call is not awaited, execution of the current method continues before the call is completed. Consider applying the 'await' operator to the result of the call.",
+    "Assets\\Scripts\\Blocks\\BlockExperienceController.cs(25,39): warning CS0414: The field 'BlockExperienceController.enableEditorKeyboard' is assigned but its value is never used"
+  ]
+}

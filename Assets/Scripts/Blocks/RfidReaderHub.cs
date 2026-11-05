@@ -1,4 +1,5 @@
 using System;
+using Cysharp.Threading.Tasks;
 using Exhibition.UI;
 using HuliacDev.Core;
 using UnityEngine;
@@ -12,9 +13,14 @@ namespace Exhibition.Blocks
     {
         [SerializeField] private BlockArtworkCatalog artwork;
         public BlockArtworkCatalog Artwork => artwork;
-        public RfidReaderSelection Readers { get; } = new RfidReaderSelection();
+        public RfidReaderSelection Readers { get; } = new RfidReaderSelection { RequireGroupFirst = true };
         public bool IsPrimary { get; private set; }
         public event Action Changed;
+        public event Action ArtworkChanged;
+        public bool IsArtworkReady { get; private set; }
+        private StreamingBlockArtwork _streamingArtwork;
+        private System.Threading.Tasks.Task _artworkLoad;
+        private bool _loadingArtwork;
         public event Action<int, RfidBlock?, RfidBlock?> ReaderChanged;
         private ResultVideoController _video;
         private InactivityTimer _timer;
@@ -25,6 +31,11 @@ namespace Exhibition.Blocks
             foreach (var hub in FindObjectsByType<RfidReaderHub>(FindObjectsSortMode.None))
                 if (hub != this && hub.IsPrimary) { Destroy(gameObject); return; }
             IsPrimary = true;
+            if (artwork)
+            {
+                _streamingArtwork = new StreamingBlockArtwork(artwork);
+                artwork = Instantiate(artwork);
+            }
             DontDestroyOnLoad(gameObject);
         }
 
@@ -33,11 +44,44 @@ namespace Exhibition.Blocks
             if (IsPrimary) SceneManager.activeSceneChanged += SceneChanged;
         }
 
-        private void Start() => _timer = FindFirstObjectByType<InactivityTimer>();
+        private void Start()
+        {
+            if (!IsPrimary) return;
+            _timer = FindFirstObjectByType<InactivityTimer>();
+            if (!GetComponent<RfidTcpReaders>()) gameObject.AddComponent<RfidTcpReaders>();
+            if (!GetComponent<RfidMappingPanel>()) gameObject.AddComponent<RfidMappingPanel>();
+            ReloadArtworkAsync().Forget();
+        }
+
+        public UniTask ReloadArtworkAsync()
+        {
+            // Start and scene-loaded callbacks may overlap. Task supports concurrent awaiters.
+            if (_loadingArtwork) return _artworkLoad.AsUniTask();
+            _artworkLoad = LoadArtworkAsync().AsTask();
+            return _artworkLoad.AsUniTask();
+        }
+
+        private async UniTask LoadArtworkAsync()
+        {
+            _loadingArtwork = true;
+            IsArtworkReady = false;
+            try
+            {
+                if (_streamingArtwork != null)
+                    await _streamingArtwork.LoadAsync(artwork, this.GetCancellationTokenOnDestroy(), () =>
+                    {
+                        IsArtworkReady = true;
+                        ArtworkChanged?.Invoke();
+                    });
+            }
+            catch (OperationCanceledException) { }
+            catch (Exception ex) { Debug.LogError("[BlockArtwork] Artwork loading failed.", this); Debug.LogException(ex, this); }
+            finally { _loadingArtwork = false; if (this) IsArtworkReady = true; }
+        }
 
         public bool RecognizeReader(int reader, BlockKind kind, string id)
         {
-            if (!IsPrimary) return false;
+            if (!IsPrimary || !IsArtworkReady || Readers.IsInputLocked) return false;
             var old = Readers[reader];
             if (!artwork || artwork.Find(kind, id) == null)
             {
@@ -48,7 +92,13 @@ namespace Exhibition.Blocks
                 return false;
             }
             _rejected[reader] = null;
-            if (!Readers.Set(reader, new RfidBlock(kind, id))) return false;
+            var block = new RfidBlock(kind, id);
+            if (!Readers.CanRecognize(reader, block))
+            {
+                RemoveReader(reader);
+                return false;
+            }
+            if (!Readers.Set(reader, block)) return false;
             Publish(reader, old); return true;
         }
 
@@ -70,11 +120,12 @@ namespace Exhibition.Blocks
             return true;
         }
 
-        public void ClearReaders()
+        public void ClearReaders(bool force = false)
         {
+            if (Readers.IsInputLocked && !force) return;
             var before = new RfidBlock?[4];
             for (int i = 0; i < 4; i++) before[i] = Readers[i];
-            if (!Readers.Clear()) return;
+            if (!Readers.Clear(force)) return;
             Notify();
             for (int i = 0; i < 4; i++) if (before[i].HasValue) ReaderChanged?.Invoke(i, before[i], null);
         }
@@ -96,7 +147,7 @@ namespace Exhibition.Blocks
         private void SceneChanged(Scene previous, Scene next)
         {
             _video = null;
-            if (next.name == "0_Idle") ClearReaders();
+            if (next.name == "0_Idle") { Readers.RequireGroupFirst = true; ClearReaders(true); ReloadArtworkAsync().Forget(); }
             else if (next.name == "2_Result")
             {
                 _video = FindFirstObjectByType<ResultVideoController>();
@@ -105,5 +156,11 @@ namespace Exhibition.Blocks
         }
 
         private void OnDisable() { if (IsPrimary) SceneManager.activeSceneChanged -= SceneChanged; }
+        private void OnDestroy()
+        {
+            if (_streamingArtwork == null) return;
+            _streamingArtwork.Dispose();
+            if (artwork) Destroy(artwork);
+        }
     }
 }

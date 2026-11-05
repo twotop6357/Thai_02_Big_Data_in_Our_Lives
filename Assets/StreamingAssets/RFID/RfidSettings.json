@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "enabled": true,
+  "listenPort": 10123,
+  "readers": [
+    { "slot": 0, "ip": "192.168.0.121" },
+    { "slot": 1, "ip": "192.168.0.122" },
+    { "slot": 2, "ip": "192.168.0.123" },
+    { "slot": 3, "ip": "192.168.0.124" }
+  ],
+  "format": {
+    "framing": "UidBurst",
+    "idleGapMilliseconds": 100,
+    "fixedFrameBytes": 16,
+    "delimiterHex": "0D0A",
+    "asciiHex": false,
+    "uidOffsetBytes": 0,
+    "uidLengthBytes": 0,
+    "removedValues": []
+  },
+  "cards": []
+}

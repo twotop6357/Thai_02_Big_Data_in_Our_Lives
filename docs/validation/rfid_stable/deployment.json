@@ -1,0 +1,29 @@
+{
+  "build": "C:\\Users\\\uae40\uc131\ud6c8\\Desktop\\Thai_02",
+  "protected_before": {
+    "UnityPlayer.dll": "dc005461655b67912029eea6bcc303fe244c3a336e2046107f934b901ab9ce2b",
+    "Unity-Startup-Template.exe": "f5f73d8616a2500e0fb0223d83774e2d7f6a74c1bbdad772f4fefc9bf5812036",
+    "Unity-Startup-Template_Data/StreamingAssets/Settings.json": "01f1daf112da77120779dfb2aeb00a5b645cac3a3ff4775edae82915326a2dcd",
+    "Unity-Startup-Template_Data/StreamingAssets/BlockGeneration/ComfyUISettings.json": "62de46311f11218925bf46cc9e0a122d3ea1fe8752949165107afd9e06cd3bf3",
+    "Unity-Startup-Template_Data/StreamingAssets/BlockGeneration/BlockCatalog.json": "1cedd0932d57d28ccc3e1d8ee5cb962b719cced990efd7234f7d1af28f795fa2",
+    "Unity-Startup-Template_Data/StreamingAssets/BlockGeneration/product_480.api.json": "96c6e1a769c3fecd2907d91adce02ccec747442a7625ab483e187d46889c4e3f",
+    "Unity-Startup-Template_Data/StreamingAssets/RFID/RfidPresenceSettings.json": "613c3704ff5c5121503e3e83fb6c5beb056c4cdca89bda12c18555466ab95b17"
+  },
+  "zip_bytes": 98252,
+  "protected_after": {
+    "UnityPlayer.dll": "dc005461655b67912029eea6bcc303fe244c3a336e2046107f934b901ab9ce2b",
+    "Unity-Startup-Template.exe": "f5f73d8616a2500e0fb0223d83774e2d7f6a74c1bbdad772f4fefc9bf5812036",
+    "Unity-Startup-Template_Data/StreamingAssets/Settings.json": "01f1daf112da77120779dfb2aeb00a5b645cac3a3ff4775edae82915326a2dcd",
+    "Unity-Startup-Template_Data/StreamingAssets/BlockGeneration/ComfyUISettings.json": "62de46311f11218925bf46cc9e0a122d3ea1fe8752949165107afd9e06cd3bf3",
+    "Unity-Startup-Template_Data/StreamingAssets/BlockGeneration/BlockCatalog.json": "1cedd0932d57d28ccc3e1d8ee5cb962b719cced990efd7234f7d1af28f795fa2",
+    "Unity-Startup-Template_Data/StreamingAssets/BlockGeneration/product_480.api.json": "96c6e1a769c3fecd2907d91adce02ccec747442a7625ab483e187d46889c4e3f",
+    "Unity-Startup-Template_Data/StreamingAssets/RFID/RfidPresenceSettings.json": "613c3704ff5c5121503e3e83fb6c5beb056c4cdca89bda12c18555466ab95b17"
+  },
+  "settings_only_framing_changed": true,
+  "registered_cards_preserved": true,
+  "assemblies": {
+    "Assembly-CSharp.dll": "d7716ae2f83219acd21d8ed90e98a2fa63a14990d10539f0514df6cc4ffb58e4",
+    "Exhibition.Blocks.Data.dll": "33f927be05f127ed1b71ce4b28eb9d8ed9c98478cc813ffe0a6d9165c21fbbc7"
+  },
+  "zip_contents_match_build": true
+}

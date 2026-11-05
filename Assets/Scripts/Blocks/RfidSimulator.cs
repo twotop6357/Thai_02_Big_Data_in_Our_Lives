@@ -13,6 +13,7 @@ namespace Exhibition.Blocks
     {
         [SerializeField, Range(0f, 1f)] private float panelOpacity = .55f;
         private RfidReaderHub _hub;
+        private RfidMappingPanel _mappingPanel;
         private GameManager _manager;
         private bool _initialized, _cursorWasVisible, _oldBackground;
         private bool _f9Latched;
@@ -30,12 +31,13 @@ namespace Exhibition.Blocks
         private static readonly Rect ClearRect = new Rect(1565, 965, 245, 55);
         public bool IsVisible { get; private set; }
         public RfidReaderHub Hub => _hub;
-        public bool CanEdit => _initialized && _manager && _manager.IsInputReady &&
+        public bool CanEdit => _initialized && _hub.IsArtworkReady && _manager && _manager.IsInputReady &&
             !_manager.IsTransitioning && !_manager.IsPresentationLocked;
 
         private void Start()
         {
             _hub = GetComponent<RfidReaderHub>();
+            _mappingPanel = GetComponent<RfidMappingPanel>();
             _manager = FindFirstObjectByType<GameManager>();
             if (!_hub.IsPrimary) { enabled = false; return; }
             if (!_manager || !_hub.Artwork)
@@ -56,6 +58,7 @@ namespace Exhibition.Blocks
         private void Update()
         {
             if (!_initialized) return;
+            if (_mappingPanel && _mappingPanel.IsVisible) return;
             var keyboard = Keyboard.current;
             bool toggle = keyboard != null && keyboard.f9Key.wasPressedThisFrame;
             bool held = keyboard != null && keyboard.f9Key.isPressed;
@@ -158,11 +161,14 @@ namespace Exhibition.Blocks
                     bool before = GUI.enabled; GUI.enabled = CanEdit && _hub.Readers[i].HasValue;
                     GUI.Box(new Rect(rect.xMax - 48, rect.y + 5, 42, 35), "X", _button);
                     GUI.enabled = before;
-                    var sprite = _hub.Artwork.Find(_hub.Readers[i]);
+                    var sprite = _hub.Artwork.Find(_hub.Readers[i], _manager.CurrentLanguage);
                     if (sprite) GUI.DrawTexture(new Rect(rect.x + 20, rect.y + 43, 240, 230), sprite.texture, ScaleMode.ScaleToFit, true);
                 }
                 for (int i = 0; i < _cards.Length; i++)
-                    if (_palette[i].sprite) GUI.DrawTexture(_cards[i], _palette[i].sprite.texture, ScaleMode.ScaleToFit, true);
+                {
+                    var sprite = _palette[i].GetSprite(_manager.CurrentLanguage);
+                    if (sprite) GUI.DrawTexture(_cards[i], sprite.texture, ScaleMode.ScaleToFit, true);
+                }
                 GUI.color = _valid ? new Color(.45f, 1, .65f) : new Color(1, .83f, .4f);
                 GUI.Label(new Rect(110, 895, 1610, 42), _counts, _status);
                 GUI.color = Color.white;
@@ -173,7 +179,7 @@ namespace Exhibition.Blocks
                 GUI.enabled = true;
                 if (_drag.HasValue)
                 {
-                    var sprite = _hub.Artwork.Find(_drag);
+                    var sprite = _hub.Artwork.Find(_drag, _manager.CurrentLanguage);
                     if (sprite)
                     {
                         GUI.color = new Color(1, 1, 1, .85f);

@@ -108,13 +108,13 @@ public sealed class RfidPlayerSmoke : MonoBehaviour
             Check(Array.Find(controller.Catalog.products, p => p.id == "equipment" || p.id == "phone_cases") == null,
                 "Products with no image are absent from selection");
             Check(view.AreRequiredBlocksRecognized && !view.IsChoosingProduct, "First group step still accepts one group block in any reader");
-            var groupImage = view.transform.Find("GroupSelection/GroupBoard/GroupFrame2/BlockContent").GetComponent<UnityEngine.UI.Image>();
-            Check(groupImage.enabled && groupImage.sprite.name == "ChildBlock", "Group artwork occupies the same physical reader position");
+            var groupImage = view.transform.Find("GroupSelection/GroupFrame0/BlockContent").GetComponent<UnityEngine.UI.Image>();
+            Check(groupImage.enabled && groupImage.sprite.name == "ChildBlock", "Group artwork fills the group slot from any physical reader");
             await Tap(); await Ready(); Check(view.IsChoosingProduct, "Group-to-placement motion preserves existing progress");
             var selection = view.transform.Find("ProductAndColors");
             var fields = typeof(BlockExperienceView).GetField("selectionContinue", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic);
             var hint = (GameObject)fields.GetValue(view);
-            Check(groupImage.sprite.name == selection.Find("SelectionFrame2/BlockContent").GetComponent<UnityEngine.UI.Image>().sprite.name,
+            Check(groupImage.sprite.name == selection.Find("SelectionFrame0/BlockContent").GetComponent<UnityEngine.UI.Image>().sprite.name,
                 "The moving original frame hands off the same block artwork at its destination");
             hub.ClearReaders(); await Ready();
             await Put(0, BlockKind.Group, "child"); await Put(1, BlockKind.Group, "senior");

@@ -1,0 +1,12 @@
+{
+  "task": "RFID-TCP-MAP-001",
+  "unity": "2022.3.62f3",
+  "mode": "EditMode",
+  "job_id": "441c6db156134733ae37bed5f7892f28",
+  "total": 112,
+  "passed": 112,
+  "failed": 0,
+  "skipped": 0,
+  "durationSeconds": 12.3784146,
+  "resultState": "Passed"
+}
