@@ -1,0 +1,15 @@
+{
+  "task": "BLOCK-ART-LOADING-001 final red arc",
+  "checks": [
+    "Ready blocks wait for the generation button",
+    "Button displays the final spinner",
+    "Only the rotating ring is drawn without a plate or static decoration",
+    "Rotating ring has an active renderer",
+    "Head and tail share one red-pink RGB",
+    "Only opacity changes along the smooth transparent tail",
+    "Unscaled infinite rotation continues",
+    "Cancellation hides the final arc",
+    "Home disposes the final loading UI"
+  ],
+  "passed": true
+}

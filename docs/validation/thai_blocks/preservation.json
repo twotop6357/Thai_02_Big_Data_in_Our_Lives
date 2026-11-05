@@ -1,0 +1,222 @@
+{
+  "count": 36,
+  "all_png_and_guids_preserved": true,
+  "assets": [
+    {
+      "before": "Assets/UI/Blocks/EnglishBlocks/BagBlock.png",
+      "after": "Assets/UI/Blocks/EnglishBlocks/BagBlock.png",
+      "guid": "546624dba6fc8e64490a1fb0e739bf4b",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/EnglishBlocks/BicycleBlock.png",
+      "after": "Assets/UI/Blocks/EnglishBlocks/BicycleBlock.png",
+      "guid": "14e0880f568a9a8469cd4d328af8daa2",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/EnglishBlocks/BlackBlock.png",
+      "after": "Assets/UI/Blocks/EnglishBlocks/BlackBlock.png",
+      "guid": "d7fee15aed8f0a341abe771bb27b30ed",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/EnglishBlocks/BlueBlock.png",
+      "after": "Assets/UI/Blocks/EnglishBlocks/BlueBlock.png",
+      "guid": "9b329f9bc9ec09744bcfd4b1b6212678",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/EnglishBlocks/ChildBlock.png",
+      "after": "Assets/UI/Blocks/EnglishBlocks/ChildBlock.png",
+      "guid": "493032aa0e9d252468d2377feb81df19",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/EnglishBlocks/GreenBlock.png",
+      "after": "Assets/UI/Blocks/EnglishBlocks/GreenBlock.png",
+      "guid": "87501d58bcb796e4daa8275d6aaf8d44",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/EnglishBlocks/HatBlock.png",
+      "after": "Assets/UI/Blocks/EnglishBlocks/HatBlock.png",
+      "guid": "c37b8627686a2734f823ff684275ecf4",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/EnglishBlocks/HeadphonesBlock.png",
+      "after": "Assets/UI/Blocks/EnglishBlocks/HeadphonesBlock.png",
+      "guid": "0cfc3d34a4f49e04fb7fa76ee39712a5",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/EnglishBlocks/RedBlock.png",
+      "after": "Assets/UI/Blocks/EnglishBlocks/RedBlock.png",
+      "guid": "4e48a10dcac47be48b5094029dd7171a",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/EnglishBlocks/SeniorBlock.png",
+      "after": "Assets/UI/Blocks/EnglishBlocks/SeniorBlock.png",
+      "guid": "92c68b5907cb3b548af61c1543024716",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/EnglishBlocks/ShoesBlock.png",
+      "after": "Assets/UI/Blocks/EnglishBlocks/ShoesBlock.png",
+      "guid": "35a906f0e5de0704f94648de6cbed046",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/EnglishBlocks/StudentBlock.png",
+      "after": "Assets/UI/Blocks/EnglishBlocks/StudentBlock.png",
+      "guid": "de6ad774117646646aab5c5013419dac",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/EnglishBlocks/SunglassesBlock.png",
+      "after": "Assets/UI/Blocks/EnglishBlocks/SunglassesBlock.png",
+      "guid": "d138c9801f7cbb147b1407d39828bd4c",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/EnglishBlocks/TopBlock.png",
+      "after": "Assets/UI/Blocks/EnglishBlocks/TopBlock.png",
+      "guid": "050298633eac41440b64452a71f727cb",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/EnglishBlocks/TumblerBlock.png",
+      "after": "Assets/UI/Blocks/EnglishBlocks/TumblerBlock.png",
+      "guid": "d0c7ab61c7ee4544d80ebb80dad49652",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/EnglishBlocks/UmbrellaBlock.png",
+      "after": "Assets/UI/Blocks/EnglishBlocks/UmbrellaBlock.png",
+      "guid": "5b8b01ae8ff795d4782148e69fa2ceb8",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/EnglishBlocks/WhiteBlock.png",
+      "after": "Assets/UI/Blocks/EnglishBlocks/WhiteBlock.png",
+      "guid": "c56730b6e200fad4e97606ef2df7be9a",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/EnglishBlocks/WorkingAdultBlock.png",
+      "after": "Assets/UI/Blocks/EnglishBlocks/WorkingAdultBlock.png",
+      "guid": "d5df35f86db06004ba9b3714923c3432",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/EnglishBlocks/WristWatchBlock.png",
+      "after": "Assets/UI/Blocks/EnglishBlocks/WristWatchBlock.png",
+      "guid": "13849acae290c784c81703985377ea8b",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/EnglishBlocks/YellowBlock.png",
+      "after": "Assets/UI/Blocks/EnglishBlocks/YellowBlock.png",
+      "guid": "0152cd15945a6ca41a1670506f9d8d29",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/ThaiBlocks/태국어가방.png",
+      "after": "Assets/UI/Blocks/ThaiBlocks/BagBlock.png",
+      "guid": "9d2d316deae241e44bcff3edeeed1489",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/ThaiBlocks/태국어검정.png",
+      "after": "Assets/UI/Blocks/ThaiBlocks/BlackBlock.png",
+      "guid": "6438b6bae564ec84c84b90d1cd524c16",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/ThaiBlocks/태국어노랑.png",
+      "after": "Assets/UI/Blocks/ThaiBlocks/YellowBlock.png",
+      "guid": "693b30deb9297704cbc355cf4bf74c6c",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/ThaiBlocks/태국어모자.png",
+      "after": "Assets/UI/Blocks/ThaiBlocks/HatBlock.png",
+      "guid": "f0095cc4dd01f2e468c67e0f71e74a2c",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/ThaiBlocks/태국어빨강.png",
+      "after": "Assets/UI/Blocks/ThaiBlocks/RedBlock.png",
+      "guid": "9879cc3978ccdb24b8228d407e506748",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/ThaiBlocks/태국어시계.png",
+      "after": "Assets/UI/Blocks/ThaiBlocks/WristWatchBlock.png",
+      "guid": "8df221410ce36074eb6e4a1dbbc64c06",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/ThaiBlocks/태국어신발.png",
+      "after": "Assets/UI/Blocks/ThaiBlocks/ShoesBlock.png",
+      "guid": "e7e0b923275b2c54c8ed53bb0d19800e",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/ThaiBlocks/태국어썬글라스.png",
+      "after": "Assets/UI/Blocks/ThaiBlocks/SunglassesBlock.png",
+      "guid": "d2843d03173c2bc449da50dda8667b1d",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/ThaiBlocks/태국어옷.png",
+      "after": "Assets/UI/Blocks/ThaiBlocks/TopBlock.png",
+      "guid": "c981439a3d255204b8794734b15df800",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/ThaiBlocks/태국어우산.png",
+      "after": "Assets/UI/Blocks/ThaiBlocks/UmbrellaBlock.png",
+      "guid": "1260edad555c30a49baf37186d467b96",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/ThaiBlocks/태국어자전거.png",
+      "after": "Assets/UI/Blocks/ThaiBlocks/BicycleBlock.png",
+      "guid": "d3d9cab3856f6a7499292eee942e0435",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/ThaiBlocks/태국어초록.png",
+      "after": "Assets/UI/Blocks/ThaiBlocks/GreenBlock.png",
+      "guid": "e56cbd5c3a4228940b256a0eeade04b4",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/ThaiBlocks/태국어텀블러.png",
+      "after": "Assets/UI/Blocks/ThaiBlocks/TumblerBlock.png",
+      "guid": "0fe2ffa0df158874cab774e8a7a54fe3",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/ThaiBlocks/태국어파랑.png",
+      "after": "Assets/UI/Blocks/ThaiBlocks/BlueBlock.png",
+      "guid": "e3ba83e7330d08a46b101bc4cdc04aee",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/ThaiBlocks/태국어하양.png",
+      "after": "Assets/UI/Blocks/ThaiBlocks/WhiteBlock.png",
+      "guid": "b616eea5404d95048a3f0c07afe72512",
+      "png_unchanged": true
+    },
+    {
+      "before": "Assets/UI/Blocks/ThaiBlocks/태국어헤드셋.png",
+      "after": "Assets/UI/Blocks/ThaiBlocks/HeadphonesBlock.png",
+      "guid": "43dbbf8633485c94a8a5db7ca185842d",
+      "png_unchanged": true
+    }
+  ]
+}

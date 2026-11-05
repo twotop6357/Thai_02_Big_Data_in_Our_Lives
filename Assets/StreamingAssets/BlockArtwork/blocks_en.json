@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "language": "en",
+  "blocks": [
+    {
+      "kind": "group",
+      "id": "child",
+      "image": "Images/en/ChildBlock_Eng.png"
+    },
+    {
+      "kind": "group",
+      "id": "student",
+      "image": "Images/en/StudentBlock_Eng.png"
+    },
+    {
+      "kind": "group",
+      "id": "working_adult",
+      "image": "Images/en/WorkingAdultBlock_Eng.png"
+    },
+    {
+      "kind": "group",
+      "id": "senior",
+      "image": "Images/en/SeniorBlock_Eng.png"
+    },
+    {
+      "kind": "product",
+      "id": "bags",
+      "image": "Images/en/BagBlock_Eng.png"
+    },
+    {
+      "kind": "product",
+      "id": "shoes",
+      "image": "Images/en/ShoesBlock_Eng.png"
+    },
+    {
+      "kind": "product",
+      "id": "hats",
+      "image": "Images/en/HatBlock_Eng.png"
+    },
+    {
+      "kind": "product",
+      "id": "sunglasses",
+      "image": "Images/en/SunglassesBlock_Eng.png"
+    },
+    {
+      "kind": "product",
+      "id": "headphones",
+      "image": "Images/en/HeadphonesBlock_Eng.png"
+    },
+    {
+      "kind": "product",
+      "id": "tops",
+      "image": "Images/en/TopBlock_Eng.png"
+    },
+    {
+      "kind": "product",
+      "id": "bicycles",
+      "image": "Images/en/BicycleBlock_Eng.png"
+    },
+    {
+      "kind": "product",
+      "id": "tumblers",
+      "image": "Images/en/TumblerBlock_Eng.png"
+    },
+    {
+      "kind": "product",
+      "id": "wristwatches",
+      "image": "Images/en/WristWatchBlock_Eng.png"
+    },
+    {
+      "kind": "product",
+      "id": "umbrellas",
+      "image": "Images/en/UmbrellaBlock_Eng.png"
+    },
+    {
+      "kind": "color",
+      "id": "black",
+      "image": "Images/en/BlackBlock_Eng.png"
+    },
+    {
+      "kind": "color",
+      "id": "white",
+      "image": "Images/en/WhiteBlock_Eng.png"
+    },
+    {
+      "kind": "color",
+      "id": "blue",
+      "image": "Images/en/BlueBlock_Eng.png"
+    },
+    {
+      "kind": "color",
+      "id": "red",
+      "image": "Images/en/RedBlock_Eng.png"
+    },
+    {
+      "kind": "color",
+      "id": "green",
+      "image": "Images/en/GreenBlock_Eng.png"
+    },
+    {
+      "kind": "color",
+      "id": "yellow",
+      "image": "Images/en/YellowBlock_Eng.png"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 using System;
+using Core;
 using UnityEngine;
 
 namespace Exhibition.Blocks
@@ -12,6 +13,9 @@ namespace Exhibition.Blocks
             public BlockKind kind;
             public string id;
             public Sprite sprite;
+            public Sprite thaiSprite;
+            public Sprite GetSprite(SessionLanguage language) =>
+                language == SessionLanguage.Thai && thaiSprite ? thaiSprite : sprite;
             public RfidBlock Block => new RfidBlock(kind, id);
         }
         public Entry[] entries;
@@ -24,6 +28,7 @@ namespace Exhibition.Blocks
             return null;
         }
 
-        public Sprite Find(RfidBlock? block) => block.HasValue ? Find(block.Value.Kind, block.Value.Id)?.sprite : null;
+        public Sprite Find(RfidBlock? block, SessionLanguage language = SessionLanguage.English) =>
+            block.HasValue ? Find(block.Value.Kind, block.Value.Id)?.GetSprite(language) : null;
     }
 }

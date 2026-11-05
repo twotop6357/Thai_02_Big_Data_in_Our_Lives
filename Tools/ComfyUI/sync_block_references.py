@@ -19,7 +19,7 @@ def main():
     output = catalog_path.parent / "ControlGuides"
     evidence = {}
     for product in catalog["products"]:
-        source = ROOT / "Assets/UI/Blocks" / (BLOCKS[product["id"]] + "Block.png")
+        source = ROOT / "Assets/UI/Blocks/EnglishBlocks" / (BLOCKS[product["id"]] + "Block_Eng.png")
         image = Image.open(source).convert("RGBA")
         w, h = image.size
         # Existing blocks share this layout: blue frame at the edges, labels below 75% height.

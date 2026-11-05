@@ -1,0 +1,146 @@
+{
+  "Assets/UI/Blocks/EnglishBlocks/BagBlock.png": {
+    "sha256": "c3159448f3368418e0b411d9c17b458025d8019a7519c8d7d678294f865b4680",
+    "guid": "546624dba6fc8e64490a1fb0e739bf4b"
+  },
+  "Assets/UI/Blocks/EnglishBlocks/BicycleBlock.png": {
+    "sha256": "37aa89e4d8bc0669c9ea7813be1d21f0ab951e080a03a23a5d6701c9caf9c88e",
+    "guid": "14e0880f568a9a8469cd4d328af8daa2"
+  },
+  "Assets/UI/Blocks/EnglishBlocks/BlackBlock.png": {
+    "sha256": "bdd446eac9b0ba95579d34819e2800eacbe3e12d20579dadea7e30c8976b55a5",
+    "guid": "d7fee15aed8f0a341abe771bb27b30ed"
+  },
+  "Assets/UI/Blocks/EnglishBlocks/BlueBlock.png": {
+    "sha256": "64b6a78812f548c177911d5b0951e1993bc726eeb8bd59754f9bb5bafdc406f1",
+    "guid": "9b329f9bc9ec09744bcfd4b1b6212678"
+  },
+  "Assets/UI/Blocks/EnglishBlocks/ChildBlock.png": {
+    "sha256": "fcce379552c99de4f40a09d31bcc84813943e4e8a86e6c909234c4ea99cdc7f3",
+    "guid": "493032aa0e9d252468d2377feb81df19"
+  },
+  "Assets/UI/Blocks/EnglishBlocks/GreenBlock.png": {
+    "sha256": "408341bc190e7607a1892a4780a8f4143cd313a89438c00a6a60915630294edb",
+    "guid": "87501d58bcb796e4daa8275d6aaf8d44"
+  },
+  "Assets/UI/Blocks/EnglishBlocks/HatBlock.png": {
+    "sha256": "29d9d4a1fe25b4352fcaa3ca73109a2a607aea62b59adba5e2564baab9cd0eb5",
+    "guid": "c37b8627686a2734f823ff684275ecf4"
+  },
+  "Assets/UI/Blocks/EnglishBlocks/HeadphonesBlock.png": {
+    "sha256": "a785609c77665ba20450baf33d436afd85ba7b405f0c1b4073308cbb0af0eeab",
+    "guid": "0cfc3d34a4f49e04fb7fa76ee39712a5"
+  },
+  "Assets/UI/Blocks/EnglishBlocks/RedBlock.png": {
+    "sha256": "29452f076fc4f4520f0bf5ecfc7148c8ea61f84c5b321d87c3fbf9b696f51737",
+    "guid": "4e48a10dcac47be48b5094029dd7171a"
+  },
+  "Assets/UI/Blocks/EnglishBlocks/SeniorBlock.png": {
+    "sha256": "339a20619c055d37b3588acad24717427be3ecd4da03c5810311bb6c49d433da",
+    "guid": "92c68b5907cb3b548af61c1543024716"
+  },
+  "Assets/UI/Blocks/EnglishBlocks/ShoesBlock.png": {
+    "sha256": "1da48f280af26f8bb4446e79a4ff3797f3e12ce30c09b6fbf245205c6600c52f",
+    "guid": "35a906f0e5de0704f94648de6cbed046"
+  },
+  "Assets/UI/Blocks/EnglishBlocks/StudentBlock.png": {
+    "sha256": "120422586f73039aea603127be217cf346fc74993fc6e7ef5ec465c4b7ee493e",
+    "guid": "de6ad774117646646aab5c5013419dac"
+  },
+  "Assets/UI/Blocks/EnglishBlocks/SunglassesBlock.png": {
+    "sha256": "0f85c8d3ee34adab0395da33117221a086cbd79fe6928e34b0081e4748499171",
+    "guid": "d138c9801f7cbb147b1407d39828bd4c"
+  },
+  "Assets/UI/Blocks/EnglishBlocks/TopBlock.png": {
+    "sha256": "9ebdd74d413a72765077ea8418409b4ffcc42ed94d8371315661f904dd477f3e",
+    "guid": "050298633eac41440b64452a71f727cb"
+  },
+  "Assets/UI/Blocks/EnglishBlocks/TumblerBlock.png": {
+    "sha256": "59a496656c2c7685f12ae851f12f3b56f644c267edff085d19f250fc082a8c72",
+    "guid": "d0c7ab61c7ee4544d80ebb80dad49652"
+  },
+  "Assets/UI/Blocks/EnglishBlocks/UmbrellaBlock.png": {
+    "sha256": "35c2c260c1f615dd096b93b92ce6dba0eb029f88edb32073eff6f9f09d05fe4a",
+    "guid": "5b8b01ae8ff795d4782148e69fa2ceb8"
+  },
+  "Assets/UI/Blocks/EnglishBlocks/WhiteBlock.png": {
+    "sha256": "ecbf94110c985986aa06d5a44570fadee5e7ee291b753c2c8cda49de1598bcb2",
+    "guid": "c56730b6e200fad4e97606ef2df7be9a"
+  },
+  "Assets/UI/Blocks/EnglishBlocks/WorkingAdultBlock.png": {
+    "sha256": "54ed34290ede8795af01bc2ec179becee360148398cf3c7e99412ac50c6b3267",
+    "guid": "d5df35f86db06004ba9b3714923c3432"
+  },
+  "Assets/UI/Blocks/EnglishBlocks/WristWatchBlock.png": {
+    "sha256": "d583e4a0d09634569165aa79039717d3ddaf88f250b539a3f8625bf094680fb3",
+    "guid": "13849acae290c784c81703985377ea8b"
+  },
+  "Assets/UI/Blocks/EnglishBlocks/YellowBlock.png": {
+    "sha256": "14ce2643db995a0c30b1a0f16abb9fb8840e09b570a89ff0e1f7c8e5b529c09a",
+    "guid": "0152cd15945a6ca41a1670506f9d8d29"
+  },
+  "Assets/UI/Blocks/ThaiBlocks/태국어가방.png": {
+    "sha256": "af7c173ca8f2d58785e46ca1248649ad823cc71f283aae4a7e7348031a83d825",
+    "guid": "9d2d316deae241e44bcff3edeeed1489"
+  },
+  "Assets/UI/Blocks/ThaiBlocks/태국어검정.png": {
+    "sha256": "8b1152ba53046688150dad77419652c3a178ce08190016cee53b4a99e19c177e",
+    "guid": "6438b6bae564ec84c84b90d1cd524c16"
+  },
+  "Assets/UI/Blocks/ThaiBlocks/태국어노랑.png": {
+    "sha256": "13d6f7b79743bb478fd5df82cdb856d0db30ec55e0ea592dbfd5f6df5aaaddac",
+    "guid": "693b30deb9297704cbc355cf4bf74c6c"
+  },
+  "Assets/UI/Blocks/ThaiBlocks/태국어모자.png": {
+    "sha256": "e02a1915085bedaf2beebbbdbaed9138a6e2c69a5cec96b8de0a2e89d83432e8",
+    "guid": "f0095cc4dd01f2e468c67e0f71e74a2c"
+  },
+  "Assets/UI/Blocks/ThaiBlocks/태국어빨강.png": {
+    "sha256": "14e26a5e82142498c37465600d31fef9c31fbb7547162391acf9ca341ca8e605",
+    "guid": "9879cc3978ccdb24b8228d407e506748"
+  },
+  "Assets/UI/Blocks/ThaiBlocks/태국어시계.png": {
+    "sha256": "aa5dcbc4e79831ec483142e23a3304ae7180685ffde158a5c0be7c4e96f1d7eb",
+    "guid": "8df221410ce36074eb6e4a1dbbc64c06"
+  },
+  "Assets/UI/Blocks/ThaiBlocks/태국어신발.png": {
+    "sha256": "6b6b1f28da157cfe917bcf4c50b6caaaa53f1118004771918a40b0d71744d944",
+    "guid": "e7e0b923275b2c54c8ed53bb0d19800e"
+  },
+  "Assets/UI/Blocks/ThaiBlocks/태국어썬글라스.png": {
+    "sha256": "470a405f86a5a2ad117918fed064ab3ec3166ca814f8261f1577783a70b4fc4b",
+    "guid": "d2843d03173c2bc449da50dda8667b1d"
+  },
+  "Assets/UI/Blocks/ThaiBlocks/태국어옷.png": {
+    "sha256": "7454d1ff9529c80b6918eda833f66bf0597c1e4b29021377da75cdc7f3105c9e",
+    "guid": "c981439a3d255204b8794734b15df800"
+  },
+  "Assets/UI/Blocks/ThaiBlocks/태국어우산.png": {
+    "sha256": "25d882f99d67f49a82b13871a04d836c0791e09eddd436935f820cf6945efad0",
+    "guid": "1260edad555c30a49baf37186d467b96"
+  },
+  "Assets/UI/Blocks/ThaiBlocks/태국어자전거.png": {
+    "sha256": "a651f249d36d377c63a99021080ce942856c7c220752b29410ab0a0c52346a45",
+    "guid": "d3d9cab3856f6a7499292eee942e0435"
+  },
+  "Assets/UI/Blocks/ThaiBlocks/태국어초록.png": {
+    "sha256": "3dc1e32b42f39cbc0a28e3eaac31067325d79c2156bc3445821198dc7efc7df5",
+    "guid": "e56cbd5c3a4228940b256a0eeade04b4"
+  },
+  "Assets/UI/Blocks/ThaiBlocks/태국어텀블러.png": {
+    "sha256": "449490deadc1f99c47b9d7a6237535ee90ac84d2002e8422bae1519f031e0a7a",
+    "guid": "0fe2ffa0df158874cab774e8a7a54fe3"
+  },
+  "Assets/UI/Blocks/ThaiBlocks/태국어파랑.png": {
+    "sha256": "d08fa038a84ce5b10732d71712ed4cf00ca85774f25f3f7319241c18bd105580",
+    "guid": "e3ba83e7330d08a46b101bc4cdc04aee"
+  },
+  "Assets/UI/Blocks/ThaiBlocks/태국어하양.png": {
+    "sha256": "d9b6f7624f3271020d64e0e905b706d0d9a69bf5400d7bbd04b9868d230fdbd6",
+    "guid": "b616eea5404d95048a3f0c07afe72512"
+  },
+  "Assets/UI/Blocks/ThaiBlocks/태국어헤드셋.png": {
+    "sha256": "adb93fe15e3f5747ba9afd47b177c1a8a8368f73064f7d223ef9a23d530ea638",
+    "guid": "43dbbf8633485c94a8a5db7ca185842d"
+  }
+}

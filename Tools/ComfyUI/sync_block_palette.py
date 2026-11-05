@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[2]
 def sample_palette():
     result = {}
     for name in ("Black", "White", "Blue", "Red", "Green", "Yellow"):
-        path = ROOT / "Assets/UI/Blocks" / f"{name}Block.png"
+        path = ROOT / "Assets/UI/Blocks/EnglishBlocks" / f"{name}Block_Eng.png"
         with Image.open(path) as source:
             image = source.convert("RGBA")
             w, h = image.size
