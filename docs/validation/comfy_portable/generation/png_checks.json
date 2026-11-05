@@ -1,0 +1,41 @@
+[
+  {
+    "file": "run_01.png",
+    "size": [
+      480,
+      480
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "transparent_corners": true
+  },
+  {
+    "file": "run_02.png",
+    "size": [
+      480,
+      480
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "transparent_corners": true
+  },
+  {
+    "file": "warmup_00.png",
+    "size": [
+      480,
+      480
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "transparent_corners": true
+  }
+]

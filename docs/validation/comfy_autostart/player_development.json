@@ -1,0 +1,21 @@
+{
+    "task":  "COMFY-AUTOSTART-002",
+    "realWindowsPlayer":  true,
+    "headlessPlayer":  true,
+    "port":  18194,
+    "checks":  [
+                   "Isolated test port is unused; production server is preserved",
+                   "Player directly starts Python backend without launching Desktop",
+                   "Backend parent chain originates in the actual Unity Player",
+                   "Cold backend responds to the ComfyUI API",
+                   "Server survives Player exit for reuse",
+                   "Second Player run reuses the running server",
+                   "Reuse preserves the existing backend process",
+                   "Missing Python is reported without a server or crash",
+                   "Player remains responsive after launch failure",
+                   "No Desktop GUI process was launched during any test"
+               ],
+    "passed":  true,
+    "coldReadySeconds":  17.6001719,
+    "backendVersion":  "0.42.0"
+}

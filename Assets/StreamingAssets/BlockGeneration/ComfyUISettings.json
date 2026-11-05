@@ -10,7 +10,7 @@
   "imageCleanupIntervalSeconds": 30,
   "imageWriteGraceSeconds": 60,
   "autoLaunchServer": true,
-  "launchServerInEditor": false,
+  "launchServerInEditor": true,
   "serverExecutable": "%LOCALAPPDATA%\\Comfy-Desktop\\ComfyUI-Installs\\ComfyUI\\ComfyUI\\.venv\\Scripts\\python.exe",
   "serverArguments": "-s ComfyUI\\main.py --listen 127.0.0.1 --port 8188 --disable-auto-launch --models-directory \"%LOCALAPPDATA%\\Comfy-Desktop\\ComfyUI-Shared\\models\" --input-directory \"%LOCALAPPDATA%\\Comfy-Desktop\\ComfyUI-Shared\\input\" --output-directory \"%LOCALAPPDATA%\\Comfy-Desktop\\ComfyUI-Shared\\output\"",
   "serverWorkingDirectory": "%LOCALAPPDATA%\\Comfy-Desktop\\ComfyUI-Installs\\ComfyUI",

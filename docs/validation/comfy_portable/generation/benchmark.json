@@ -1,0 +1,135 @@
+{
+  "measured_device": [
+    "cuda:0 NVIDIA GeForce RTX 5070 Ti Laptop GPU : cudaMallocAsync"
+  ],
+  "target_device": "RTX 3060 12GB",
+  "target_device_match": false,
+  "comfyui_version": "0.42.0",
+  "pytorch_version": "2.11.0+cu128",
+  "checkpoint": "flux-2-klein-4b-fp8.safetensors",
+  "control": null,
+  "sampling": {
+    "steps": 4,
+    "cfg": 1,
+    "sampler": "euler",
+    "scheduler": "Flux2Scheduler"
+  },
+  "internal_resolution": [
+    640,
+    640
+  ],
+  "output_resolution": [
+    480,
+    480
+  ],
+  "profile": "quality",
+  "target_seconds": 15,
+  "warmup": [
+    {
+      "prompt_id": "8b6d7ebe-96da-4d2f-8ae5-d5c4d89f020a",
+      "selection": {
+        "group": "child",
+        "product": "bags",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 7042026,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "one small bear-shaped kindergarten backpack with rounded bear ears and a front pocket. Main color #EC6868 (soft red) on backpack body. Accent color #5FB0E3 (light blue) on bear ears and front pocket. playful rounded design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 8.146,
+      "width": 480,
+      "height": 480,
+      "local_image": "warmup_00.png",
+      "server_image": {
+        "filename": "product_00001_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        }
+      }
+    }
+  ],
+  "runs": [
+    {
+      "prompt_id": "3d0206b7-cc29-4127-983d-c622c65d793a",
+      "selection": {
+        "group": "child",
+        "product": "bags",
+        "color1": "red",
+        "color2": "blue",
+        "primary_hex": "#EC6868",
+        "secondary_hex": "#5FB0E3",
+        "profile": "quality",
+        "seed": 7042027,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "bags",
+        "alpha": true,
+        "positive_prompt": "one small bear-shaped kindergarten backpack with rounded bear ears and a front pocket. Main color #EC6868 (soft red) on backpack body. Accent color #5FB0E3 (light blue) on bear ears and front pocket. playful rounded design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 2.429,
+      "width": 480,
+      "height": 480,
+      "local_image": "run_01.png",
+      "server_image": {
+        "filename": "product_00002_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        }
+      }
+    },
+    {
+      "prompt_id": "a658644c-4a54-4f61-99ae-3353a851051e",
+      "selection": {
+        "group": "student",
+        "product": "shoes",
+        "color1": "green",
+        "color2": "white",
+        "primary_hex": "#B7DBA9",
+        "secondary_hex": "#FFFFFF",
+        "profile": "quality",
+        "seed": 7042028,
+        "width": 480,
+        "height": 480,
+        "resolved_product": "shoes",
+        "alpha": true,
+        "positive_prompt": "one high-top canvas sneaker with laces, natural three-quarter view. Main color #B7DBA9 (light pastel green) on canvas upper. Accent color #FFFFFF (white) on ankle panels and sole. simple sporty design. Match ONLY the reference picture art style: cute polished 2D illustration, friendly rounded shapes, broad clean color blocks, gentle pastel cel shading and small smooth highlights, subtle colored edges. Keep the specified object identity, construction and two distinct selected colors. One complete standalone object, about 70 percent of the canvas, entire object visible with wide empty margins. Plain white background, without a card, frame, logos, scenery or surrounding decorations. Entirely hand-drawn flat illustration, not a photo or 3D render"
+      },
+      "seconds_request_to_png": 4.561,
+      "width": 480,
+      "height": 480,
+      "local_image": "run_02.png",
+      "server_image": {
+        "filename": "product_00003_.png",
+        "subfolder": "Thai02",
+        "type": "output",
+        "metadata": {
+          "kind": "image",
+          "width": 480,
+          "height": 480
+        }
+      }
+    }
+  ],
+  "summary": {
+    "count": 2,
+    "median_seconds": 3.495,
+    "p95_seconds": 4.561,
+    "max_seconds": 4.561,
+    "meets_target_on_measured_device": true,
+    "target_gpu_acceptance_verified": false
+  }
+}

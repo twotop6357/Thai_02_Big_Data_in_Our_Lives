@@ -1,0 +1,29 @@
+{
+  "task": "COMFY-AUTOSTART-002",
+  "state_injection": true,
+  "physical_button_tested": false,
+  "checks": [
+    "Ready server enables title hint and input",
+    "Input and title hint blocked: Checking",
+    "Top-row 1 ignored: Checking",
+    "Numpad hold cannot change language or start: Checking",
+    "Direct hardware adapter API ignored: Checking",
+    "Input and title hint blocked: Starting",
+    "Top-row 1 ignored: Starting",
+    "Numpad hold cannot change language or start: Starting",
+    "Direct hardware adapter API ignored: Starting",
+    "Input and title hint blocked: Unavailable",
+    "Top-row 1 ignored: Unavailable",
+    "Numpad hold cannot change language or start: Unavailable",
+    "Direct hardware adapter API ignored: Unavailable",
+    "Button held across readiness is discarded",
+    "Release of pre-ready press does not start",
+    "Disabled launcher fails closed",
+    "Re-enabled launcher reuses server and restores hint",
+    "Language change works after readiness",
+    "Original language restored",
+    "Fresh press starts Game after readiness",
+    "Home reload restores ready title hint"
+  ],
+  "passed": true
+}

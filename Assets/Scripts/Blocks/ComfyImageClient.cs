@@ -25,7 +25,7 @@ namespace Exhibition.Blocks
         public int imageWriteGraceSeconds = 60;
         // Local server auto launch. Paths and arguments expand %ENV% variables.
         public bool autoLaunchServer = true;
-        public bool launchServerInEditor;
+        public bool launchServerInEditor = true;
         public string serverExecutable = "";
         public string serverArguments = "";
         public string serverWorkingDirectory = "";

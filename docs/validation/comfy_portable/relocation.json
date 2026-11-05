@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "method": "Separate directory tree; file contents hard-linked for storage only; no junctions",
+  "unicode_and_spaces": true,
+  "working_directory": "C:\\WINDOWS",
+  "diagnostic": {
+    "python": "3.13.12",
+    "python_executable": "C:\\Users\\\uae40\uc131\ud6c8\\Desktop\\Thai_02\\_RelocationCheck \uc774\ub3d9 \ud14c\uc2a4\ud2b8\\ComfyRuntime\\python\\python.exe",
+    "prefix": "C:\\Users\\\uae40\uc131\ud6c8\\Desktop\\Thai_02\\_RelocationCheck \uc774\ub3d9 \ud14c\uc2a4\ud2b8\\ComfyRuntime\\python",
+    "torch": "2.11.0+cu128",
+    "cuda_runtime": "12.8",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+    "torch_arches": [
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90",
+      "sm_100",
+      "sm_120"
+    ],
+    "frontend": "1.57.1",
+    "cuda_calculation": true
+  },
+  "server_arguments": "-s \"C:\\Users\\\uae40\uc131\ud6c8\\Desktop\\Thai_02\\_RelocationCheck \uc774\ub3d9 \ud14c\uc2a4\ud2b8\\ComfyRuntime\\portable_server.py\" --listen 127.0.0.1 --port 8188 --disable-auto-launch --disable-all-custom-nodes --offline --models-directory \"C:\\Users\\\uae40\uc131\ud6c8\\Desktop\\Thai_02\\_RelocationCheck \uc774\ub3d9 \ud14c\uc2a4\ud2b8\\ComfyRuntime\\models\" --input-directory \"C:\\Users\\\uae40\uc131\ud6c8\\Desktop\\Thai_02\\_RelocationCheck \uc774\ub3d9 \ud14c\uc2a4\ud2b8\\ComfyRuntime\\input\" --output-directory \"C:\\Users\\\uae40\uc131\ud6c8\\Desktop\\Thai_02\\_RelocationCheck \uc774\ub3d9 \ud14c\uc2a4\ud2b8\\ComfyRuntime\\output\" --user-directory \"C:\\Users\\\uae40\uc131\ud6c8\\Desktop\\Thai_02\\_RelocationCheck \uc774\ub3d9 \ud14c\uc2a4\ud2b8\\ComfyRuntime\\user\" --temp-directory \"C:\\Users\\\uae40\uc131\ud6c8\\Desktop\\Thai_02\\_RelocationCheck \uc774\ub3d9 \ud14c\uc2a4\ud2b8\\ComfyRuntime\\temp\""
+}

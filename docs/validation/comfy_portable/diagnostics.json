@@ -1,0 +1,19 @@
+{
+  "python": "3.13.12",
+  "python_executable": "C:\\Users\\\uae40\uc131\ud6c8\\Desktop\\Thai_02\\ComfyRuntime\\python\\python.exe",
+  "prefix": "C:\\Users\\\uae40\uc131\ud6c8\\Desktop\\Thai_02\\ComfyRuntime\\python",
+  "torch": "2.11.0+cu128",
+  "cuda_runtime": "12.8",
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+  "torch_arches": [
+    "sm_75",
+    "sm_80",
+    "sm_86",
+    "sm_90",
+    "sm_100",
+    "sm_120"
+  ],
+  "frontend": "1.57.1",
+  "cuda_calculation": true
+}

@@ -27,6 +27,8 @@ namespace Exhibition.Blocks
         private bool _started;
 
         public ComfyServerState State { get; private set; } = ComfyServerState.Checking;
+        public bool IsReady => isActiveAndEnabled && State == ComfyServerState.Ready;
+        public string ServerUrl => _settings?.serverUrl;
         public string LastError { get; private set; }
         public event Action<ComfyServerState> StateChanged;
 

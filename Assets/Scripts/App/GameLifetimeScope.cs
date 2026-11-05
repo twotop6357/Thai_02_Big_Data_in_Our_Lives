@@ -33,6 +33,7 @@ namespace App
                     manager.gameObject.AddComponent<GeneratedImageRetention>();
                 if (!manager.GetComponent<ComfyServerLauncher>())
                     manager.gameObject.AddComponent<ComfyServerLauncher>();
+                manager.ConfigureComfyServer(manager.GetComponent<ComfyServerLauncher>());
             });
         }
     }
