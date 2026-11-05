@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: MyCompany
-  productName: Unity-Startup-Template
+  productName: NSM_DNA_02
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -144,6 +144,7 @@ PlayerSettings:
   bundleVersion: 26.10.16
   preloadedAssets:
   - {fileID: 11400000, guid: 54d65854c3f73b442b983095e6ef4d3a, type: 2}
+  - {fileID: -944628639613478452, guid: 9f78b7facb922924c8049e2822f2fe70, type: 3}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
