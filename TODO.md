@@ -6,6 +6,10 @@
 
 ## 진행 중
 
+- [ ] 새Windows10/11x64·실제RTX3060에서 동봉Installers 설치/재부팅·Run_Thai02.cmd/Player입력·RFID·생성시간/장시간 현장검수 — COMFY-PORTABLE-001 후속. 동봉환경3실생성/이동경로·설치서명·4모델해시는 현PC검증완료.
+
+- [ ] 실제 LAN-754(KA118) 네 대에서 클라이언트 접속·방화벽·전원 차단/재접속, UidBurst 수신 공백(기본100ms)과 보고 간격·확인 주기(기본1초) 검수 및 기존 잘린값의 F10 재등록 — RFID-STABLE-001·RFID-PRESENCE-001·RFID-LISTEN-001 후속 / 담당 미정. 고정16바이트 기본값 폐기, 루프백83검사/Windows빌드/배포 완료. [RFID_SETUP](docs/RFID_SETUP.md).
+
 - [ ] RTX3060 12GB 새 Klein640/4 경로의 예열1+20회15초 이내 실측 및 Windows Player/실물입력·장시간 검수 — STYLE-QUALITY-003 후속. 현PC80이미지/앱37검사 완료, API 중앙3.3805초·앱3.78~4.04초. 과거 Turbo5~12초 추정을 새 모델의3060 실측처럼 재사용하지 않는다. docs/validation/comfy_style3/README.md.
 
 - [ ] RFID-BLOCKS-001 최종 직접 마우스/F9·광고→영상0.5초 암전 후보 실제 조작, Windows Player 빌드/실행, 문서 최신화 — Codex 인계 대기 / 사용자 Escape로 Computer Use 중단. 구현/기존33·83·8 검증 상세와 현재 한계는 HANDOFF.
@@ -16,6 +20,31 @@
 - [ ] Windows Player/설치 PC에서 물리버튼·RFID, 두 영상 전체 길이·음량, 포커스 복구와 장시간 자원 검증 — DEPLOY-UI-001 / 담당 미정 / 에디터 검증과 구분한 실제 장비 기록.
 
 ## 완료
+
+- [x] 광고 화면 효과 시작 3초 뒤 입력 허용·버튼 안내 페이드 — UI-ADHINT-001 / Claude 단독 /2026-11-05 Play34 PASS. Player 재빌드/실제 버튼 후속. docs/validation/ad_hint/README.md.
+- [x] 전역 오디오 매니저와 화면 전환 confirm·최초 화면 복귀 home — AUDIO-001 / Claude 단독 /2026-11-05 Play32 PASS, 믹서 출력 확인. Player 재빌드/실제 버튼/현장 음량 후속. docs/validation/audio/README.md.
+
+- [x] 블록 인식 화면 안내 연출: 3초마다 빈 칸 중 무작위 글자 튕김·초과 인식 시 기존 블록 진동 반복 — UI-ATTN-001 / Claude 단독 /2026-11-05 Edit139·Play64+칸 회귀152 PASS. Player 재빌드/실물 리더·버튼/장시간 후속. docs/validation/ui_attention/README.md.
+
+- [x] 웹 최신 UI 적용: 그룹 칸 1개·용도별 칸 표시·그룹 칸 축소 이동·빈 칸 안내·그룹/선택 배경 — UI-SLOTS-002 / Claude 단독 /2026-11-05 Edit135·Play131+전체흐름48 PASS. Player 재빌드/실물 리더·버튼/장시간 후속. docs/validation/ui_slots/README.md.
+
+- [x] 동일 카드값 순환의 고정16바이트 오정렬 원인 재현/가변 UID 처리 — RFID-STABLE-001 / Codex 단독 /2026-11-02 전체 Edit130·새 실소켓16/기존67 PASS. 4/7/10/16바이트·분할/반복·교체/제거/재접속·F10저장·생성고정, Windows3씬 오류0/기존경고5. Desktop DLL2/framing 적용 및 USB업데이트, 보호7파일SHA동일. 실제장비 공백/UID계약·Player화면/장시간 후속. docs/validation/rfid_stable/README.md.
+
+- [x] 흰색/다른색 물체 내부의 잘못된 투명화 보완 — ALPHA-OPAQUE-001 / Codex 단독 /2026-11-02 10종·6색·4연령 포함100실생성물 최종마스크/새파이프라인4개·원본RGB/외곽알파/실제구멍 검증 PASS, 기본노드6색 손상주입12케이스/워크플로9테스트 PASS. 바탕화면JSON2개/USB패치 적용, C#·모델·입력/RFID 미수정. 새PC/3060·Player화면 후속. docs/validation/alpha_opaque/README.md.
+
+- [x] 주기(기본 1초, 별도 JSON)마다 최근 인식값으로 블록 유지/교체/제거 판단 — RFID-PRESENCE-001 / Claude 단독 /2026-11-02 Edit118·루프백 소켓 Play67 PASS. 실제 리더 보고 간격/Player 후속. docs/validation/rfid_presence/README.md.
+
+- [x] RFID 연결 방향 반전: 앱이 TCP10123 수신, 리더 출발지 IP로 칸 자동 연결, 미등록 IP 거부, F10 수신 상태 표시 — RFID-LISTEN-001 / Claude 단독 /2026-11-02 Edit114·루프백 소켓 Play55 PASS. 실제 리더/방화벽/Player 후속. docs/validation/rfid_listen/README.md.
+
+- [x] Desktop/Thai_02에 독립Comfy/Python/Torch·현재4모델·공식NVIDIA/VC++설치파일·경로보정실행기 동봉 — COMFY-PORTABLE-001 / Codex 단독 /2026-11-02 약20.3GB, 모델4SHA/설치서명2/기존파일5보존·GPU/경로이동·3실생성480RGBA PASS. 기존빌드/서버보존, 새PC/3060후속. docs/validation/comfy_portable/README.md.
+
+- [x] 실제4리더 IP121/122/123/124 TCP10123·16바이트 전체HEX·F10 조회/20블록 JSON매핑 저장/재로드 — RFID-TCP-MAP-001 / Codex 단독 /2026-11-02 Edit112·루프백TCP4대/Play44 PASS, Windows최종배포 오류0·경고0. 실제장비 제거신호/주기·Player마우스/장시간 후속. docs/validation/rfid_tcp/README.md.
+
+- [x] 광고 내부 효과 확대/가시성 보강·둥근 박스 마스킹·폭죽 광고요소 최상단 — AD-FX-005 / Codex 단독 /2026-11-02 실제 렌더3색조합47·취소/영상수명8 PASS, 실제생성 미리보기/홈 PASS. Windows배포 빌드 오류0·기존경고5. Player 육안/실물/장시간 후속. docs/validation/ad_fx5/README.md.
+
+- [x] 광고 연출의 규칙성 완화·생성 두 HEX 색상 전달/유지 및 지정 운영 로그 메시지/Comfy 제외·Windows 강제 종료 감지 — AD-FX-004 / LOG-003 / Codex 단독 /2026-11-02 Play39+수명8+최종컨페티14, 로컬로그15/Windows종료5/최종Release강제종료 PASS·실제서버HTTP200/ok:true. 최종배포 빌드 오류0·기존경고5, 실물/장시간 후속. docs/validation/ad_fx4/README.md·content_log/README.md.
+
+- [x] Desktop GUI 없이 서버 직접 실행/기존 서버 재사용 검증 및 준비 전 RedButton·숫자1 차단/타이틀 안내 숨김 — COMFY-AUTOSTART-002 / Codex 단독 /2026-11-02 Edit91·Play21·배포 Player11 PASS, 오류/경고0 배포빌드. 추가 GUI 입력검수는 사용자 Escape로 중단, 실물장비/다른PC 후속. docs/validation/comfy_autostart/README.md.
 
 - [x] 레퍼런스 기반 귀여운2D 생성·다색/연령80개 직접검수·원본 불완전 출력 차단 — STYLE-QUALITY-003 / Codex 단독 /2026-11-01 Edit66/Python8/실제앱27+실패·취소 fixture10 PASS·실제 Unity1440 프롬프트 일치.3060/Player/설치PC 후속은 별도. docs/validation/comfy_style3/README.md.
 

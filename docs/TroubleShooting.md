@@ -16,6 +16,15 @@
 
 | ID | 발견일 | 상태 | 문제 | 담당 | 상세 |
 |---|---|---|---|---|---|
+| TS-20261102-01 | 2026-11-02 | 해결 | Portable 복사의 models 이름 제외가 내부 Python코드도 제외 | Codex | [상세](#TS-20261102-01) |
+
+<a id="TS-20261102-01"></a>
+### TS-20261102-01 — Portable Comfy 내부 모델 코드 누락
+- 발견/담당: COMFY-PORTABLE-001 패키징 사전검증, Codex 단독, main/3852ee6+기존변경, Windows. 아직 대상PC 배포 전.
+- 문제: 별도8189 서버 시작 시 ModuleNotFoundError: comfy.ldm.models, 서버 준비 실패.
+- 원인: robocopy /XD의 models basename 제외가 루트 가중치 폴더 외 comfy/ldm/models 코드까지 제외했다.
+- 해결: Tools/ComfyUI/package_portable.py의 제외목록을 루트의 정확한 절대경로로 제한하고 재복사했다. 기존 설치파일/서버설정·프로세스/사용자빌드는 보존했다.
+- 검증: 동봉환경8189서버 재시작·3실생성480RGBA/투명모서리·한글공백경로GPU연산 PASS. docs/validation/comfy_portable 증거 보존, comfy/ldm/models/autoencoder.py 존재확인. 실제새Windows/3060 후속.
 
 상태: `조사 중 / 우회 적용 / 수정 후 검증 대기 / 해결`.
 

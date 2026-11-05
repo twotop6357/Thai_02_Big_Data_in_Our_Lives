@@ -1,0 +1,22 @@
+{
+  "task": "RFID 30s home check",
+  "group_empty": {
+    "seconds_to_home": 104.0,
+    "input_events": 954,
+    "quiet_seconds_before_home": 30.01,
+    "cleared": true
+  },
+  "selection_group_only": {
+    "seconds_to_home": 29.48,
+    "input_events": 0,
+    "quiet_seconds_before_home": 29.48,
+    "cleared": true
+  },
+  "group_placed_no_press": {
+    "seconds_to_home": 54.62,
+    "input_events": 224,
+    "quiet_seconds_before_home": 30.0,
+    "cleared": true
+  },
+  "passed": true
+}

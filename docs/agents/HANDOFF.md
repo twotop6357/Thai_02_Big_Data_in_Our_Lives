@@ -1,8 +1,56 @@
-# HANDOFF — Codex·Claude 공동 인수인계
+﻿# HANDOFF — Codex·Claude 공동 인수인계
 
 **두 에이전트 모두 작업 전 현재 상태·담당 표·최신 기록을 반드시 읽는다.** 작업 재개·인계·컨텍스트 축약 후에도 다시 읽는다. 규칙은 [AGENTS.md](../../AGENTS.md)와 [개발 기준](../DEVELOPMENT_GUIDELINES.md)을 따른다. 외부 `handoff` 스킬은 필요하지 않다.
 
 ## 현재 상태
+
+- COMMIT-005 완료 / Claude 단독 / 2026-11-05 Asia/Seoul / 기준 main/3852ee6. 사용자 지시로 전체 변경을 이 기록을 포함한 작업별 로컬 커밋으로 보존(해시는 git log 확인), push 없음. 여러 작업이 함께 고친 파일은 hunk로 나누지 않고 파일 단위로 한 커밋에 넣었다(예: GameManager는 오디오 커밋, BlockExperienceView는 칸 UI 커밋). 중간 커밋의 개별 컴파일·빌드는 미검증이며 마지막 커밋의 트리만 작업 트리와 같다. 커밋 전후 Unity 재실행 없음. Tools/UI/__pycache__ 1개는 제외. 운영 로그 URL의 uid가 포함된 Settings.json도 지시대로 커밋했다. 아래 미커밋 표기는 당시 상태이며 Player·실장비 후속은 그대로 남는다. 소유권 해제.
+
+- DEPLOY-NSM-001 완료(미커밋) / Claude 단독 / 2026-11-05 Asia/Seoul / main/3852ee6+기존 변경 보존. Desktop/NSM_DNA_02에 StreamingAssets 복구(174 SHA 일치, RFID 카드 비어 있음)와 Run_NSM_DNA_02.cmd·Launcher 추가. 대상 PC는 ComfyRuntime 이동·RfidSettings.json 복사 후 실행. 수동 절차 실패 원인 미확정. 실제 런타임 이동/동봉 서버/대상 PC 미검증. 소유권 해제. docs/validation/deploy_nsm/README.md.
+
+- UI-ADHINT-001 완료(미커밋) / Claude 단독 구현·검증 / 2026-11-05 Asia/Seoul / main/3852ee6+기존 변경 보존. 광고 효과 시작 3초 뒤 입력 허용(폭죽은 자연 종료까지 재생), 그 시점에 버튼 안내 0.25초 페이드. Play34 PASS. 구 verify_ad_highlight*/ad_fx* 미재실행(폭죽 종료까지 잠금 전제). Player재빌드/실제 버튼 미수행. 소유권 해제. docs/validation/ad_hint/README.md.
+
+- AUDIO-001 완료(미커밋) / Claude 단독 구현·검증 / 2026-11-05 Asia/Seoul / main/3852ee6+기존 변경 보존. GameManager.Audio로 접근하는 전역 AudioManager, 화면 전환 confirm·최초 화면 복귀 home(시간 초과 포함). Play32 PASS, 믹서 출력 확인(스피커 청취 안 함). ADHINT 이전에 실행. Player재빌드/실제 버튼/현장 음량 미수행. 소유권 해제. docs/validation/audio/README.md.
+
+- UI-ATTN-001 완료(미커밋) / Claude 단독 구현·검증 / 2026-11-05 Asia/Seoul / main/3852ee6+기존 변경 보존. 그룹·선택 화면 공통: 블록 변화 없이 3초마다 빈 칸 중 무작위 한 칸의 글자만 튕김, 초과 인식(그룹·제품2+/색3+)이면 표시된 해당 블록이 즉시 좌우 진동 후 유지 시 3초마다 반복. 입력 잠금 없음. 글자는 원본 PNG 유지+파생 글자 레이어. Edit139·Play64+칸 회귀152 PASS. Player재빌드/실제 리더·버튼/장시간 미수행. 소유권 해제. docs/validation/ui_attention/README.md.
+
+- UI-SLOTS-002 완료(미커밋) / Claude 단독 구현·검증 / 2026-11-05 Asia/Seoul / main/3852ee6+기존 변경 보존. 블록을 리더 위치와 무관하게 용도별 칸(좌상 그룹·우상 제품·좌하우하 색)에 표시, 주/보조색은 화면 칸 순서. 그룹 화면은 칸 1개(424), 전환 시 그 칸만 0.5초에 252로 줄며 이동. 빈 칸/보드/그룹·선택 배경은 웹 일괄 ZIP 2개 원본. Edit135·Play131+전체흐름48 PASS. Player재빌드/실제 리더·버튼/전체영상/장시간 미수행. 소유권 해제. docs/validation/ui_slots/README.md.
+
+- UI-WEB-004 완료(미커밋) / Codex 단독 구현·검증 / 2026-11-05 Asia/Seoul / main/3852ee6+기존 변경 보존. Figma MCP 없이 웹의 TH/EN2번 UI64개 ZIP+영상안내2개 추가ZIP 직접다운. PNG15교체/meta보존+영상좌상단 홈안내2추가, JSON/기본사본·Result씬/컨트롤러의 안내 표시만·Builder 갱신. 기존4칸/이동·입력/미디어/효과 보존. Unity98·실패/재시도/취소10·정적26/영상안내2픽셀 PASS, 신규바인딩포함30참조 확인. 기존688중666SHA동일, 의도21변경 외 Reporter build_info자동갱신1. Play중지/Idle dirtyfalse, 소유권 해제. Player재빌드/실장비/전체영상/장시간 미수행. docs/validation/ui_web4/README.md.
+
+- RENAME-001 완료(미커밋) / Codex 단독 구현·검증 / 2026-11-04 Asia/Seoul / main/3852ee6 + 기존 미커밋 보존. Product Name NSM_DNA_02, Windows 빌드 스크립트/에디터 저장 경로의 파일명 NSM_DNA_02.exe 적용. Unity 재조회·설정 단일줄 diff·형식 검사 PASS, Play/빌드는 사용자 지시로 미실행. Company/식별자·3씬·패키지·작업 폴더/원격명 보존. 소유권 해제. 기존 배포본은 그대로이며 다음 빌드부터 적용.
+
+- RFID-STABLE-001 수정/자동검증 완료(미커밋) / Codex 단독 /2026-11-02 Asia/Seoul / main/3852ee6+기존변경보존. 사용자 LAN-754(KA118)/7바이트 반복 확인. FixedLength16이7종 잘못된UID로순환하는원인재현 후 UidBurst 기본값(수신공백/정확반복단일화·새값2회확인), F10길이표시. Edit130/실소켓새16+기존67 PASS, Windows3씬 오류0/기존경고5. DesktopDLL2/JSONframing 적용·원본백업·보호7SHA/매핑보존, USB RFID_Update.zip 98252바이트. Play중지/Idle dirtyfalse/최종콘솔오류0, Claude기능·Comfy/패키지/씬보존, 소유권해제. 실제장비의100ms공백조건/보고간격·정확한UID계약·Player화면/장시간은미검증. docs/validation/rfid_stable/README.md.
+
+- RFID-PRESENCE-001 구현/자동검증 완료(미커밋) / Claude 단독 /2026-11-02 Asia/Seoul / main/3852ee6+기존변경보존. 사용자 지시: 리더에 유지 감지가 없으므로 앱이 주기(기본1초, StreamingAssets/RFID/RfidPresenceSettings.json)마다 최근값을 확인해 같으면 유지/다르면 교체/없으면 제거. absentTimeoutMilliseconds 제거, 잘못된 프레임은 즉시 제거하지 않고 값 없음으로 취급. Edit118/루프백 소켓 Play67 PASS(1000ms에서 인식99/교체515/제거1015ms), 콘솔15건은 의도한 실패 주입. ALPHA-OPAQUE-001과 사용자 허용 하에 병행(파일 겹침 없음), Play중지/Idle, 씬 변경 없음, 소유권 해제. 미검증: 실제 리더 보고 간격(주기는 이보다 길어야 깜빡임 없음)·실장비·방화벽·Player 재빌드. 사용자 결정 대기: 생성 중 뺀 블록이 생성 후 화면에 남는 기존 SNAPSHOT 규칙 유지 여부. docs/RFID_SETUP.md·validation/rfid_presence/README.md.
+
+- ALPHA-OPAQUE-001 수정/검증 완료(미커밋) / Codex 단독 /2026-11-02 Asia/Seoul / main/3852ee6+기존변경보존. 흰배경/BiRefNet 오분리 재현 후 제거용 배경문구만 중간회색으로 변경하고 기본노드 RGB재질보호/내부알파 보완. 10물건·6색·4연령 포함100실생성물 최종마스크 재실행+최종전체파이프라인 새4개, 원본RGB/외곽알파/실제구멍 보존 PASS. 기본노드 손상주입12/단위9 PASS. Desktop/Thai_02 JSON2개 원본백업 후 적용·USB패치7647바이트 준비, 기존빌드/Settings/RFID5해시 보존. 기존모델/스타일/색/연령/샘플러 및 C#/씬/RFID변경 보존, 소유권해제. 프로그램 완전종료 후 재시작 필요. 실제3060/새PC·Player화면/장시간 후속. docs/validation/alpha_opaque/README.md.
+
+- RFID-LISTEN-001 구현/자동검증 완료(미커밋) / Claude 단독 /2026-11-02 Asia/Seoul / main/3852ee6+기존 변경 보존. 사용자 지시로 RFID 연결 방향을 반전: Unity가 TCP10123 수신, 리더가 클라이언트로 접속, 출발지 IP121/122/123/124로 좌상/우상/좌하/우하 자동 연결(미등록 IP 거부, IP 자동 칸 배정은 물리 위치 보존을 위해 미적용). JSON version2/listenPort, 이전 version1 거부. 같은 IP 새 접속이 이전 연결을 대체, keepalive 적용. 리더 미접속 칸의 F9 블록은 이제 유지. Edit114/실제 루프백 소켓 Play55 PASS, 콘솔 오류/경고9건은 의도한 실패 주입. Play중지/Idle, 씬 변경 없음, 소유권 해제. 미검증: 실제 리더(클라이언트 모드 설정 필요)·방화벽 인바운드·전원 차단 감지 시간·재접속 후 카드 재보고 여부·Player 재빌드(기존 배포본은 이전 방식). docs/RFID_SETUP.md·validation/rfid_listen/README.md.
+
+- COMFY-PORTABLE-001 패키징/현PC검증 완료(미커밋) / Codex 단독 /2026-11-02 Asia/Seoul / main/3852ee6+기존변경보존. Desktop/Thai_02 약20.3GB 독립Python/Torch/Comfy·현재4모델·공식NVIDIA/VC++설치파일·Run/Check_Runtime/안내동봉. 모델4SHA/설치서명2/기존빌드설정5SHA보존·격리GPU/한글공백이동/3실생성480RGBA PASS. 8189테스트중지/기존17356유지(유휴모델캐시만해제), 임시트리는삭제차단으로workspaceTemp에보존이동/배포본제외. [TS-20261102-01](../TroubleShooting.md#TS-20261102-01) 해결·소유권해제. 실제새Windows/3060·Player조작/현장후속. docs/validation/comfy_portable/README.md.
+
+- RFID-TCP-MAP-001 구현/자동검증 완료(미커밋) / Codex 단독 /2026-11-02 Asia/Seoul / main/3852ee6+기존 변경 보존. 사용자 TCP10123/HEX·16바이트 예시를 전체 카드값으로 매핑, IP121/122/123/124를 좌상/우상/좌하/우하 연결. F10 실시간/JSON매핑·자동재접속·생성고정/그룹우선 보존. Edit112·실제루프백4TCP/Play44 PASS, 최종Windows3씬 배포 오류0·경고0·동봉JSON SHA동일. 씬/원본아트/vendor/패키지 diff0, 빌드추가 preloaded1개만 원복. Play중지/Idle·dirty false, 소유권해제. 실제제거HEX/보고주기·실장비/Player마우스/장시간 후속. docs/RFID_SETUP.md·validation/rfid_tcp/README.md.
+
+- AD-FX-005 완료(미커밋) / Codex 단독 /2026-11-02 Asia/Seoul / main/3852ee6+기존 변경 보존. 내부 빛살/링/별 크기·농도·노출 보강, 실제 박스 Sprite를 따른 둥근 숨김 마스크로 밖을 가림. 전체폭죽 전면Canvas32766으로 광고이미지/제목/안내보다 위, 전환검정32767 유지. 실제렌더3색47·수명/영상8·실제Comfy새가방/홈 PASS, 최종사진직접확인. Windows3씬 배포오류0·기존경고5. 씬/효과프리팹/vendor/패키지 diff0, 사용자입력보존/빌드preloaded추가1개원복. Play중지/Idle·dirty false, 소유권해제. docs/validation/ad_fx5/README.md, Player육안/장비/장시간 후속.
+
+- AD-FX-004 / LOG-003 완료(미커밋) / Codex 단독 /2026-11-02 Asia/Seoul / main/3852ee6+기존 변경 보존. 광고 별/파동/빛살/컨페티의 균일성 완화·생성 HEX2개를 결과와 함께 전달/홈 해제, 이후 RFID로 재색칠 안 함. 실제3색조합 Play39·수명/영상8·최종컨페티14 PASS. 지정운영URL·정확한 로그문구·Comfy 제외·독립 Windows 종료감시 적용, 로컬계약15/Windows종료5/최종Release강제종료 PASS, 실제서버HTTP200/ok:true. 최종3씬 배포BuildOptions.None 오류0·기존경고5, 빌드 동봉설정/스크립트 SHA확인. 씬/효과프리팹/vendor/패키지 미수정, 입력 등 기존변경 보존. 소유권 해제·실물/설치PC/장시간 후속, docs/validation/ad_fx4/README.md·content_log/README.md.
+
+- COMFY-AUTOSTART-002 적용/자동검증 완료(미커밋) / Codex 단독 /2026-11-02 Asia/Seoul / main/3852ee6+기존 변경 보존. Desktop GUI 없이 Python 직접실행·기존서버 재사용 검증, Editor자동실행 true. 설정+서버 준비 전 RedButton/숫자1 차단·타이틀 도움Image 숨김 및 준비전 누름 버리기. Edit91/Play21/배포 Player11 PASS, 실제3씬 Windows BuildOptions.None 오류0·경고0, listen TCP/UDP0. GUI타이틀 표시 확인 후 추가 입력검수는 사용자Escape로 중단, Computer Use 추가 조작 없음. 기존8188 PID17356 보존, 테스트 Python 정리. 상세 docs/validation/comfy_autostart/README.md, 소유권 해제·실물/다른PC/전체Player흐름 후속.
+
+- UI-NEW-003 완료(미커밋) / Codex 단독 /2026-11-02 Asia/Seoul / main/3852ee6+기존 변경 보존. NEW의 Intro_bg1개/TH·EN4화면 안내8개를 기존 파일명에 바이트 덮어쓰기,9개 meta/GUID/라이브러리 연결 유지. 크기 동일해 씬/JSON/기능 미수정. 양언어8화면 직접검토·실행18 PASS·콘솔 오류0. NEW참조0 확인 후 Unity에셋삭제로 폴더/meta 제거,452보호파일SHA동일(Reporter 자동생성build_info1개 별도기록). Play중지/Idle·dirty false, 소유권 해제. docs/validation/ui_new3/README.md.
+
+- RFID-SNAPSHOT-001 완료(미커밋) / Codex 단독 /2026-11-02 Asia/Seoul / main/3852ee6+기존 변경 보존. 생성 시 리더4개 입력 lease 고정, 인식해제/교체/이동/일반clear를 UI·선택·이벤트·요청에 반영하지 않고 버림. 종료 후 재생 없음, 이후 새 신호는 처리. 명시적 취소/오류/시간초과/화면종료 lease해제·홈 강제초기화 보존. Edit91/실제Play45 PASS(실제생성+RFID노이즈/양패널/수명). 기존82파일SHA동일. Play중지/Idle·dirty false, fixture33924종료. 의도한HTTP400로그2건 외 오류 미발견, Player/실장비 미수행. 소유권 해제, docs/validation/rfid_snapshot/README.md.
+
+- BLOCK-ART-LOADING-001 완료(미커밋) / Codex 단독 /2026-11-02 Asia/Seoul / main/3852ee6+기존 변경 보존. StreamingAssets/BlockArtwork 언어별 JSON20항목씩/외부36이미지·시작/홈 재로드·오류별 기본값/자원해제 적용. 완성 배치 후 버튼으로 생성, 배경 없는 붉은 분홍색 회전 링(선두/꼬리 RGB동일·꼬리 알파0→1) 표시/모든 종료 정리. Edit88·자원/생성실행47·최종붉은링9·외부이미지 Thai/English/Thai432(480슬롯) PASS. 원본아트/씬/패키지/입력/생성값82SHA동일. 최종 콘솔 오류0, Play중지/Idle·dirty false, fixture종료. Player/실장비 미수행. 소유권 해제. docs/BLOCK_RESOURCES.md·validation/block_art_loading/README.md.
+
+- GROUP-FIRST-001 완료(미커밋) / Codex 단독 /2026-11-02 Asia/Seoul / main/3852ee6+기존 변경 보존. 최초 그룹 전 물건/색 무시, 정확히1그룹 뒤 새 비그룹 입력은 기존 버튼 Continue/슬롯 이동 연출로 자동 진행. 2그룹/그룹 제거/홈은 대기 요청 취소, 배치 단계 진입 후 그룹 제거·자유 재배치 유지. Edit76/76·실제Play101 PASS(네 연령/물건·색/중복·제거·교체·이동·홈/실제 생성잠금 포함). 최종 생성 Image ready, 콘솔 오류0, 검증 중 불변파일83SHA동일. Play중지/Idle·dirty false, 실장비/Player 미수행. 소유권 해제, docs/validation/group_first/README.md.
+
+- BLOCK-SUFFIX-001 완료(미커밋) / Codex 단독 /2026-11-02 Asia/Seoul / main/3852ee6+기존 변경 보존. EnglishBlocks20개 *_Eng.png, ThaiBlocks16개 *_Thai.png로 변경·PNG/GUID36/36 보존. authoring/동기화·검증 도구 경로 갱신. Unity 컴파일 오류0·카탈로그36참조/언어별 조회·팔레트 --check PASS. 런타임 로직/씬/입력/생성값 미수정, Play중지/Idle·dirty false. Play/Player 재실행 미수행. 소유권 해제, suffix_rename.json 참조.
+
+- THAI-BLOCKS-001 완료(미커밋) / Codex 단독 /2026-11-02 Asia/Seoul / main/3852ee6+사용자/RED-BUTTON 변경 보존. ThaiBlocks16개를 영문 대응 이름으로 정리·Sprite 연결. 두 선택 화면/F9 목록·리더·드래그가 현재 언어를 사용하고 연령4종은 기존 공용 fallback. 원PNG/GUID36/36 보존, 영문20개 PNG/meta는 HEAD 원본과 동일. 실제 Thai→English→Thai20종/480이미지슬롯 확인·426항목 PASS, Edit19/Python8·6색동일 검사 PASS, 양언어 실화면/F9 직접 검토. 씬·패키지·생성/입력 설정 미수정. Play중지/Idle·dirty false. Player/실물장비 미수행, 소유권 해제. docs/validation/thai_blocks/README.md.
+
+- RED-BUTTON-001 완료(미커밋) / Codex 단독 / 2026-11-02 Asia/Seoul / main/3852ee6. KeyboardButtonSimulator에서 Input Manager RedButton + 숫자1/숫자패드1 유지 상태를 병합. 사용자 InputManager 매핑 SHA 보존. Unity 컴파일·제스처13/13 및 실제 어댑터 Play11항목 PASS, 최종 콘솔 오류0·매니저1개/Idle·Play중지. 실물 joystick button 0 누름과 Player 검증은 미수행. docs/validation/red_button/README.md. 소유권 해제.
 
 - COMMIT-004 완료 / Codex 단독 / 2026-11-02 Asia/Seoul / 기준 main/37723c7. 현재 전체 변경 3404경로를 이 기록을 포함한 로컬 커밋으로 보존(해시는 git log 확인). UI·영상·RFID 후보·Klein 생성/검증 및 사용자 에셋 포함. ignored 로컬 캐시·모델·생성물은 그대로 보존, push 없음. 아래 과거 미커밋 표기는 당시 상태이며 RFID 인계 대기/Player·3060·실장비 검수는 미완료 유지. 소유권 해제.
 
@@ -25,7 +73,7 @@
 - COMFY-SHOEPOSE-001의 구도/색/연령 요구는 최신 COMFY-FAST-002에서10종2시드·대표4연령/두 색 전달로 재검증했다. 현재 가이드/ControlNet은 사용하지 않으며 실제 원본블록 PNG/GUID는 보존한다.
 - COMFY-FRAMING-001 완료 (2026-10-30 Asia/Seoul, 미커밋): Comfy 다운로드 후 가시 알파 경계의 중심을480×480의(240,240)에 보정·최소24px 투명여백/비율 유지·필요할 때만 축소. 작업스레드/취소/실패 텍스처 해제, 빈 이미지 실패. 측면 강제를 해제하고 자연스러운 사선 시점 허용. Edit58/58·Python7/7·실생성Play8/8 PASS/17.84초·중심(240,239.5), 이전PNG2개 모두(240,240). 기존 컨트롤러/매니저/입력View·씬/패키지8파일 해시 동일. Codex 단독 담당/검증·소유권 해제. Play종료/Idle·dirty false, Windows Player/실장비/전 조합 품질 후속. 서버 원본은 보존하고 앱 수신 최종 텍스처에 적용.
 - COMFY-RESTORE-001 완료 (2026-10-30 Asia/Seoul, 미커밋): 사용자 추가 참고이미지에 맞춘 새 투명배경 일러스트로 ComfyUI 복원. SDXL Base1.0/1024/28steps·CFG6.5·DPM++2M·Karras + BiRefNet/480RGBA, 가이드 업로드/ControlNet/로컬 색칠 미사용. 현재 물건10종/블록20개 연결 유지,6색 원 내부 HEX/RGB를 요청 메타데이터/저널에 보존하고 대응 색 설명으로 모델 조건 지정. 두 선택 패널의 생성 중 모든 버튼(5초 유지 포함)/계속 안내 차단, 성공·실패·취소·시간 초과·비활성·홈에서 입력/타이머 복구 및 새 입력 재시도. 최종 EditMode49/49·Python7/7·Play31·종료/시간초과9 PASS, 실제생성17.58초/투명픽셀154591·모서리알파0 확인. 397파일 중 승인된 View1개 외396해시 동일. Codex 단독 담당/검증·소유권 해제. Play 종료/0_Idle·dirty false, Player/실장비/전 조합 품질 후속. 기존 RFID 인계대기 유지.
-- 마지막 갱신: 2026-11-02 (Asia/Seoul), Codex, COMMIT-004 전체 변경 로컬 커밋. STYLE-QUALITY-003 적용/표본검수 완료, RFID 인계 대기·3060/Player 장비검수 후속.
+- 마지막 갱신: 2026-11-02 (Asia/Seoul), Codex, UI-NEW-003 완료(미커밋). 기존 RFID/그룹/언어/입력/외부아트·로딩 변경 보존, RFID 인계 대기·3060/Player 장비검수 후속.
 - UI-REFRESH-002 완료: 2_new의 언어별가이드8개/요소24개를 영상 전4화면에 적용. 기존이름/GUID/meta24개 보존, 양언어 타이틀안내x307/y879/1315×173·그룹보드/칸7px 상향·언어JSON/기본사본 동기화. 실제양언어52항목/정적이미지24슬롯 대조 PASS·8화면 직접 확인, 프로그램/연출/효과/영상 포함291파일 해시 동일. 영상/종료 하위 직렬화 전후 동일. 참조0 확인 후 가이드8장/중복원본24개와2_new/meta 삭제, 정리 후3씬누락스크립트/Sprite0. main/37723c7+기존미커밋 보존, Codex 단독 구현/검증·소유권 해제. Play종료/0_Idle. Player/실장비/장시간 후속, RFID 인계대기 범위는 미완료 유지.
 - UI-REFRESH-001 완료(002로 대체): Figma MCP 한도 차단은 사용자의 로컬 가이드/PNG 제공으로 해결됨. 당시 조회자료는 docs/validation/ui_refresh에 보존, 실제 적용/최신검증은 docs/validation/ui_refresh2. 영상 이후 변경 없음이라는 최신 지시로8화면만 갱신했다.
 - AD-FX-003 완료: 원형 파동 시작 지름455→120, 최대805→480으로 제한해 광고 박스 안에 유지. Play28 PASS/반복 한 주기 이상 실제정점620개가 박스16px 안쪽 유지·최대지름 관측477.469. 씬/실행컨트롤러/컨페티/vendor 포함199파일 해시 동일·미저장 Idle 상태 보존, Play종료. 기준main/37723c7+기존미커밋 보존, Codex 단독 구현/검증·소유권 해제. 수정은 ProductRing 프리팹 설정·Editor작성도구·기존검증/자료·문서/CHANGELOG/TODO/HANDOFF. 물건 최전면/느린 반복/입력 유지, Player/실장비 후속.
@@ -56,6 +104,29 @@
 
 | 작업 ID | 담당 | 상태 | 수정 범위 | 다음 담당 / 행동 |
 |---|---|---|---|---|
+| DEPLOY-NSM-001 | Claude 단독 | 완료(미커밋) | Tools/ComfyUI 실행기 신규·Desktop/NSM_DNA_02 StreamingAssets 복구+실행기 배치·validation/deploy_nsm·CHANGELOG/HANDOFF. C#/씬 무수정, 재빌드 없음 | 소유권 해제. 임시 경로 실행 시험 PASS, 대상 PC/실제 런타임 후속 |
+| AUDIO-001 | Claude 단독 | 완료(미커밋) | 신규 Core/AudioManager·GameManager·BlockExperienceView·ResultVideoController·Tools/Audio·validation/audio·BUTTON_INPUT/CHANGELOG/TODO/HANDOFF. Resources/Audios 사용자 WAV는 수정하지 않음 | 소유권 해제. Play32 PASS, Player/실장비/현장 음량 후속 |
+| UI-ADHINT-001 | Claude 단독 | 완료(미커밋) | AdProductHighlight·ResultVideoController·2_Result 참조 1개·Editor Builder·Tools/UI·validation/ad_hint·UI_MOTION/AD_PRODUCT_HIGHLIGHT/CHANGELOG/TODO/HANDOFF | 소유권 해제. Play34 PASS, Player/실장비 후속 |
+| UI-ATTN-001 | Claude 단독 | 완료(미커밋) | RfidReaderSelection·신규 BlockAttentionSchedule·BlockExperienceView·Editor Builder/UIMotionAuthoring·1_Game·언어JSON/ExhibitionUIAssets·칸 글자 PNG 신규·테스트·Tools/UI·validation/ui_attention·UI_MOTION/CHANGELOG/TODO/HANDOFF | 소유권 해제. Edit139/Play64+칸 회귀152 PASS, Player/실장비 후속 |
+| UI-SLOTS-002 | Claude 단독 | 완료(미커밋) | RfidReaderSelection·BlockExperienceController·BlockExperienceView·UIBlockSlotTransfer·LocalizedImageSet·Editor Builder/UIMotionAuthoring·1_Game·언어JSON/ExhibitionUIAssets·칸/배경 PNG·테스트·Tools/UI·validation/ui_slots·문서/CHANGELOG/TODO/HANDOFF | 소유권 해제. Edit135/Play131+48 PASS, Player/실장비 후속 |
+| UI-WEB-004 | Codex 단독 | 완료(미커밋) | UI PNG15교체/2추가·언어JSON/기본사본·영상안내 표시/씬/Builder·전용검증·IMAGE_UI/CHANGELOG/HANDOFF | 소유권 해제. Unity98/수명10·픽셀28 PASS, Player/실장비 후속 |
+| RENAME-001 | Codex 단독 | 완료(미커밋) | Product Name·빌드 스크립트 출력명·Unity 로컬 빌드 경로·CHANGELOG/HANDOFF | 소유권 해제. Unity 재조회/정적 diff PASS. 사용자 지시로 빌드 미실행, 다음 빌드부터 적용 |
+| RFID-STABLE-001 | Codex 단독 | 수정/자동검증 완료(미커밋) | RfidConfiguration/RfidTcpReaders/RfidMappingPanel·RFID JSON·RfidConfigurationTests·Tools/RFID·검증/운영문서/HANDOFF | 소유권해제. Edit130/실소켓83·Windows빌드·Desktop/USB 적용. 실리더 공백/UID계약/Player 후속 |
+| RFID-PRESENCE-001 | Claude 단독 | 구현/자동검증 완료(미커밋) | RfidTcpReaders·RfidConfiguration·RfidMappingPanel·RFID JSON2개·RfidConfigurationTests·verify_tcp_mapping·validation/rfid_presence·RFID_SETUP/CHANGELOG/TODO/HANDOFF | 소유권 해제. Edit118/루프백Play67 PASS, 실제 리더 보고 간격·실장비/Player 후속 |
+| ALPHA-OPAQUE-001 | Codex 단독 | 완료(미커밋) | 워크플로빌더/알파 기본노드·API/UI/inputs·Catalog배경문구·진단/검증/배포도구·validation/alpha_opaque·COMFYUI_SETUP/CHANGELOG/TODO/HANDOFF | 소유권해제. 100최종마스크/새전체4·합성12·단위9 PASS, Desktop JSON2개/USB패치7647바이트 적용. 실제3060/Player 후속 |
+| RFID-LISTEN-001 | Claude 단독 | 구현/자동검증 완료(미커밋) | RfidTcpReaders·RfidConfiguration·RfidMappingPanel·RfidSettings.json·RfidConfigurationTests·Tools/RFID/verify_tcp_mapping.cs·validation/rfid_listen·RFID_SETUP/BUTTON_INPUT/BLOCK_SIMULATOR/CHANGELOG/TODO/HANDOFF | 소유권 해제. Edit114/루프백Play55 PASS, 실제 리더·방화벽·Player 재빌드 후속 |
+| COMFY-PORTABLE-001 | Codex 단독 | 패키징/현PC검증 완료(미커밋) | Desktop/Thai_02 runtime/모델/준비물·실행/검증도구·운영문서 | 소유권 해제.4모델SHA/서명2/이동/GPU/3실생성 PASS, 새Windows/3060·Player후속 |
+| RFID-TCP-MAP-001 | Codex 단독 | 구현/자동검증 완료(미커밋) | TCP/HEX·JSON/F10·Hub/Simulator 연결·테스트/검증/운영문서 | 소유권 해제. Edit112/루프백TCP4대 Play44/배포PASS, 실제제거신호·장비/Player마우스/장시간 후속 |
+| AD-FX-005 | Codex 단독 | 완료(미커밋) | 광고효과 가시성/마스킹/전면폭죽·검증·운영문서 | 소유권 해제. 렌더47/수명8/실제생성·빌드 PASS, Player육안/장비 후속 |
+| AD-FX-004 / LOG-003 | Codex 단독 | 완료(미커밋) | 광고효과/색상결과전달·로그 확장/설정·검증/운영문서 | 소유권 해제. Play39+8+14/로컬로그15/Windows종료5/Release강제종료·운영서버응답 검증, 실물/장시간 후속 |
+| COMFY-AUTOSTART-002 | Codex 단독 | 적용/자동검증 완료(미커밋) | Launcher·Scope·GameManager·LocalizedImageSet·Editor자동실행 설정·검증/운영문서 | 소유권 해제. Edit91/Play21/배포Player11 PASS, 추가GUI입력검수 사용자Escape로 중단 |
+| UI-NEW-003 | Codex 단독 | 완료(미커밋) | Intro_bg·버튼안내8PNG·NEW삭제·검증/IMAGE_UI/CHANGELOG/HANDOFF | 소유권 해제. 9개해시/meta·양언어8화면/실행18 PASS, NEW제거 |
+| RFID-SNAPSHOT-001 | Codex 단독 | 완료(미커밋) | 리더데이터/Hub·Controller·테스트/검증·운영문서 | 소유권 해제. Edit91/실제Play45 PASS, Player/실장비 후속 |
+| BLOCK-ART-LOADING-001 | Codex 단독 | 완료(미커밋) | 전용언어JSON/이미지·로더/Hub/View/Simulator/Controller·원형UI·테스트/운영문서/검증 | 소유권 해제. Edit88/실행47/최종링9/언어432 PASS, Player/실장비 후속 |
+| GROUP-FIRST-001 | Codex 단독 | 완료(미커밋) | RfidReaderSelection/Hub·BlockExperienceView·테스트/검증·운영문서/HANDOFF | 소유권 해제. Edit76/실제Play101 PASS, Player/실장비 후속 |
+| BLOCK-SUFFIX-001 | Codex 단독 | 완료(미커밋) | 영문/태국어36파일명·authoring/도구 경로·검증/문서 | 소유권 해제. PNG/GUID36/36·컴파일/카탈로그36참조·팔레트 PASS |
+| THAI-BLOCKS-001 | Codex 단독 | 완료(미커밋) | ThaiBlocks·ArtworkCatalog/asset·View/Simulator·authoring·경로 동기화 도구·검증/문서 | 소유권 해제. Thai/English/Thai20종·480슬롯/426항목·Edit19/Python8 PASS, Player/실물 후속 |
+| RED-BUTTON-001 | Codex 단독 | 완료(미커밋) | KeyboardButtonSimulator.cs, BUTTON_INPUT/CHANGELOG/HANDOFF, Tools/Input 및 입력 검증 자료 | 소유권 해제. main/3852ee6, 제스처13/Play11 PASS, 실물 RedButton/Player 후속 |
 | COMMIT-004 | Codex 단독 | 완료 | 전체 현재 Git 변경 3404경로 및 HANDOFF | 기준 main/37723c7. 로컬 커밋만 수행, 소유권 해제. Python8/8·JSON/meta/GUID·LFS1597객체 확인. 해시는 git log 확인, 장비/Player 후속 유지 |
 | STYLE-QUALITY-003 | Codex 단독 | 완료(적용/표본검수, 미커밋) | Klein/스타일참조/graph·Catalog/Selection/Controller/Client/Framing·Tests·검증/운영문서 | 소유권 해제. 최종80/실앱37/Edit66/Python8 PASS,3060/Player/실장비 후속 |
 | AGE-DESIGN-002 | Codex 단독 | 완료(구현/실생성, 미커밋) | 연령형태 Catalog/Selection·C#/Python검증·기본API/UI·gallery·검증/문서 | 소유권 해제. 2시드80개 확인, 새 Editor/Play·Player/시드 품질 후속 |
@@ -133,6 +204,195 @@ FLOW-001 시작 시 사용자 변경: `_TempFont.asset`, `0_Idle.unity` UI, `Set
 ```
 
 ## 최신 작업 기록
+
+### [2026-11-05 / Asia/Seoul] DEPLOY-GUIDE-02 · Claude → 사용자 · 안내만(코드·파일 변경 없음)
+
+- 요청: 대상 PC의 기존 Thai_02(Python·모델·배치파일)를 재사용해 Desktop/NSM_DNA_02 빌드로 업데이트하는 방법. 사용자가 StreamingAssets를 빌드에서 일부러 삭제함(대상 PC 것 사용).
+- 확인: 이전 Player는 Unity-Startup-Template.exe. portable_boot는 package_manifest.json의 player로 Data 폴더를 찾으므로 이 값을 NSM_DNA_02.exe로 바꿔야 함(BOM 없이 저장). 대상 PC 사본이 없어 가장 가까운 Builds/RfidStable(11-02)과 비교: 174파일 중 Lang_En/Lang_Th(이미지14→27)·Settings.json(targetFrameRate 60→0)·build_info만 다름. UnityPlayer SHA 동일.
+- 미검증: 대상 PC 실제 파일, 안내 절차 실행, 이 빌드의 Player 구동. 소유권 없음.
+
+### [2026-11-05 / Asia/Seoul] CHECK-RFID-TIMEOUT · Claude → 다음 작업자 · 확인 완료(코드 변경 없음)
+
+- 요청: RFID 인식 창에서 30초간 인식이 없으면 최초 화면으로 복귀하는지 확인.
+- 결과: 구현됨. 전용 RFID 타이머가 아니라 템플릿 InactivityTimer(useInactivityTimer true/resetTime 30) + GameManager 구독. 블록 변화, 버튼, 모든 Input System 이벤트(마우스·키보드 등)가 초기화. 같은 블록 반복 인식은 초기화하지 않고, 생성 중·영상 중에는 멈춤.
+- 검증(Claude, Editor Play): docs/validation/rfid_timeout/runtime.json. 마지막 입력 이벤트 뒤 복귀까지 30.01/29.48/30.00초, 3상황 모두 리더 초기화. 첫 측정은 이벤트 954건으로 104초, 셋째는 224건으로 54.6초 지연되어 AUDIO-001의 56.9초 추정을 뒷받침(이벤트 발생 장치는 미확인). 블록은 Hub에 직접 입력, 실제 TCP 리더·Player 미시험.
+- 미해결/결정 대기: 설치 PC에서 입력 장치 신호가 계속 들어오면 복귀가 지연·차단될 수 있음. RFID·버튼만 세도록 바꿀지 사용자 결정 대기. 소유권 없음.
+
+### [2026-11-05 / Asia/Seoul] UI-ADHINT-001 · Claude → 다음 작업자 · 완료(미커밋)
+
+- 요청: 광고 화면에서 버튼 입력이 가능한 시점에 버튼 안내를 페이드 표시. 후속: 폭죽 재생 중에도 3초 후 입력 가능. 이 기록이 AD-FX-002의 "컨페티 완료까지 입력 잠금" 규칙을 대체한다.
+- 변경: AdProductHighlight에 InputLockSeconds=3, PlayEntranceAsync는 입력 해제까지만 대기하고 RunFiniteEffectsAsync가 자체 CTS로 효과를 끝까지 진행(StopEffects/OnDisable에서 취소). ResultVideoController.advertisementHint + LateUpdate 판정. 2_Result 참조 1개(직전 사본 validation/ad_hint/before), Builder 동기화.
+- 검증(Claude, Unity2022.3.62f3/1920×1080): Play34 PASS(양언어), 입력 해제 3.006/3.000초, 최종 EditMode139/139 PASS. 교차검증 없음. Play 중지/0_Idle dirty false.
+- 미검증/위험: Player 재빌드, 실제 버튼, 장시간. 구 verify_ad_highlight*·verify_ad_fx*는 이전 규칙 전제로 미재실행. verify_slots_flow 미재실행. 3초 시점에 누르고 있던 버튼은 기존 규칙대로 한 번 떼야 인식.
+- 종료: 소유권 해제. 새 치명적 장애 없음. docs/validation/ad_hint/README.md.
+
+### [2026-11-05 / Asia/Seoul] AUDIO-001 · Claude → 다음 작업자 · 완료(미커밋)
+
+- 요청: 전역 오디오 매니저, 버튼으로 화면 전환 시 confirm, 최초 화면 회귀 시 home 재생.
+- 변경: 신규 Core/AudioManager(Resources/Audios 로드, AudioSource 1개). 템플릿 SoundManager는 StreamingAssets+Settings 항목을 요구하고 씬에 없어 쓰지 않음. GameManager.BeginTransition에서 대상 씬으로 분기, StopSessionMedia에서 매니저 소스 제외. BlockExperienceView 그룹→선택, ResultVideoController.PlayAsync 광고→영상. 사용자 WAV 2개와 meta는 미추적 상태 그대로.
+- 사용자 미확정 기본값: 자동 진행도 confirm, 시간 초과·블록 제거도 home, 생성 시작/언어 전환은 무음.
+- 검증(Claude): Play32 PASS, 7개 시점 믹서 peak 0.325~0.330, 매니저 1개 유지. 스피커 청취 안 함. UI-ADHINT-001 이전 실행이며 재실행 안 함. 교차검증 없음.
+- 미검증/위험: Player 재빌드, 실제 버튼, 현장 음량. 시간 초과가 30초 설정에도 56.9초에 발생, InactivityTimer가 모든 입력 이벤트에 초기화되므로 검증 중 PC 입력 때문으로 추정(미확인, 기존 동작). 설치 PC에서 마우스·키보드 신호 노이즈가 있으면 복귀가 늦어질 수 있어 현장 확인 권장.
+- 종료: 소유권 해제. 새 치명적 장애 없음. docs/validation/audio/README.md.
+
+### [2026-11-05 / Asia/Seoul] UI-ATTN-001 · Claude → 다음 작업자 · 완료(미커밋)
+
+- 요청: 블록 인식 화면에서 3초간 블록을 올리지 않으면 놓을 곳의 텍스트가 살짝 커졌다 돌아오는 DOTween 연출, 요구보다 많은 블록이 인식되면 기존 블록이 좌우로 진동하고 유지 시 3초에 1회 반복. 후속 지시: 모든 인식 화면 동일 적용, 텍스트 연출은 필요한 블록 중 랜덤, 텍스트도 3초에 1회 반복.
+- 기준/담당: main/3852ee6 + 기존 미커밋 보존, Claude 단독. 커밋/push/배포 빌드 없음.
+- 변경: RfidReaderSelection.IsSlotOverfilled, 신규 BlockAttentionSchedule(순수 타이밍), BlockExperienceView의 LateUpdate 판정·Tween·정리. 칸 PNG에 글자가 구워져 있어 Tools/UI/extract_slot_labels.py로 글자 PNG6·덮개 PNG1 파생(웹 ZIP 원본 아님, 원본 칸 PNG 무수정), author_slot_labels.cs로 1_Game의 5칸에 SlotLabelCover/SlotLabel 추가·바인딩5개. 언어 JSON/ExhibitionUIAssets, Builder/UIMotionAuthoring 동기화.
+- 사용자 미확정 기본값: 색 초과는 표시된 색 두 칸이 함께 진동, 같은 ID 블록 2개도 초과로 처리, 초과 진동 시작은 조건 발생 즉시, 빈 칸 글자는 직전 칸을 다시 뽑을 수 있음. 튕김 18%/0.55초, 진동 10px/0.45초는 BlockExperienceView 상수.
+- 검증(Claude, Unity2022.3.62f3/1920×1080): EditMode139/139, Play64(runtime.json), 칸 회귀152(slots_regression.json, 스크린샷 생략), 반복 간격 실측3.00~3.02초, 대기 칸 픽셀 RMSE 0.114/0.13. 스크립트 조건 오류로 3회 중단 후 스크립트만 수정(README 기록). 교차검증 없음. Play 중지.
+- 미검증/위험: Player 재빌드·배포, 실제 RFID(이번 Play도 10123 AddressAlreadyInUse로 소켓 미시험, 점유 프로세스 미확인)·물리 버튼, 장시간. verify_slots_flow는 이번에 재실행하지 않음. 그룹 화면 초과 진동은 계속 안내 페이드 뒤 약0.28초에 시작. 실제 리더의 인식 지연은 별도.
+- 종료: 소유권 해제. 다음 Windows 빌드 필요. 새 치명적 장애 없음. docs/validation/ui_attention/README.md.
+
+### [2026-11-05 / Asia/Seoul] UI-SLOTS-002 · Claude → 다음 작업자 · 완료(미커밋)
+
+- 요청: 옆의 Figma 웹과 프로그램을 비교해 남은 변경을 모두 적용(MCP 금지, 일괄 ZIP). 칸 용도가 정해졌으므로 리더 위치가 아닌 용도별 배치로 변경, 그룹→선택 전환은 그룹 칸이 줄어들며 이동. 선택 화면의 그룹 그림은 예시이며, 그룹이 빠지면 그룹 화면 칸 리소스를 재사용.
+- 기준/담당: main/3852ee6 + 기존 미커밋 보존, Claude 단독. 커밋/push/배포 빌드 없음. 이 기록이 UI-WEB-004의 '기존4칸 유지'와 GROUP/리더 순서 색상 규칙(리더 번호 오름차순)을 대체한다.
+- 변경: RfidReaderSelection에 용도 칸 투영(DisplayBlock, 도착 순·유지·재충전), Color1/2가 칸 순서를 따름. BlockExperienceView는 groupSlot 1개+selectionSlots 4개, 칸이 차면 프레임 Image 숨김. UIBlockSlotTransfer는 그룹 칸 1개만 이동. LocalizedImageSet Binding.keepObjectName, 피벗 반영 배치, 스트레치 이미지는 스프라이트만 변경. 1_Game은 GroupFrame1~3 삭제, GroupFrame0을 GroupSelection 직속으로 이동. BoardImage/SelectGroupPanel_bg/SelectAllPanel_bg 바이트 교체(meta 유지), 칸 PNG6·언어별 선택 배경2 신규. 언어 JSON 항목 추가, 그룹 제목/부제 웹 위치. Builder/UIMotionAuthoring/RfidPlayerSmoke 갱신. Tools/UI/apply_slots_assets.py·author_slots.cs·verify_slots_runtime.cs·verify_slots_flow.cs.
+- Figma: 일시적으로 10개 노드에 내보내기 설정을 넣고 제거, 배경용 복제 프레임 8개를 만들어 내보낸 뒤 삭제(원본 프레임 무수정). 다른 공동 작업자에게 잠시 보였을 수 있음.
+- 검증(Claude, Unity2022.3.62f3/1920×1080): EditMode135/135, Play131(언어별 배경 연결 전)·전체흐름48(최종 리소스), 전환 0.484/0.493초·424→252 단조 감소. 웹 대비 칸 RMSE1.62, 보드 3.27(웹의 배경 흐림은 PNG로 재현 불가). 교차검증 없음. Play중지/0_Idle dirty false.
+- 미검증/위험: Player 재빌드·배포, 실제 RFID(이번 Play는 다른 Unity PID7412가 10123 점유로 소켓 미시험)·물리 버튼, 영상 전체 길이, 장시간. 구 도구 verify_motion/runtime/refresh_runtime/web4_runtime은 네 칸 구조 전제로 실패함. 선택 화면 그룹 빈 칸은 424 리소스를 252로 축소한 것(사용자 지시). 칸보다 많은 같은 종류 블록은 먼저 놓인 것만 표시(사용자 미확정 기본값).
+- 종료: 소유권 해제. 다음 Windows 빌드 필요. 새 치명적 장애 없음. Downloads에 임시 ZIP(.tmp) 1개 남음, 사본은 validation/ui_slots에 보존.
+
+### [2026-11-05 / Asia/Seoul] UI-WEB-004 · Codex → 다음 작업자 · 완료(미커밋)
+
+- 요청: 옆의 Figma 웹 2번 콘텐츠 UI를 현재 프로그램과 비교하고 변경점을 일괄 ZIP 다운로드·적용. Figma MCP 금지, 동작/연출 보존. 후속으로 영상 재생 좌상단 안내 확인 요청 포함.
+- 기준/담당: main/3852ee6 + 기존 미커밋 전체 보존, Codex 단독 구현/검증. 타 작업 소유권 해제 확인 후 순차 작업. 커밋/push/배포 빌드 없음.
+- 변경: 브라우저64PNG ZIP과 영상안내2PNG ZIP 보관. 기존 UI15PNG를 원본바이트로 교체(meta/GUID보존), 영상 홈 안내2PNG/meta 신규. 언어JSON/라이브러리 기본사본, ResultVideoController의 안내 오브젝트 표시/숨김6줄, Result씬의 안내/바인딩, Builder4줄 및 전용도구/문서.
+- 경계: 웹의 연령1칸은 현재4리더와 칸 이동 연출에 맞지 않아 기존4칸/위치·헤더y 유지. 영상 안내는 기존5초홈 동작을 보여주는 정적 Image이며 입력/Skip/재생 로직/타이밍은 바꾸지 않음. 기존107씬객체 중3개에 안내 참조/자식/바인딩만 추가·삭제0. 기존688파일 중666SHA동일; 의도21파일 외 Reporter자동생성build_info1개 갱신. 기존 작업/원본영상/효과/입력·RFID·생성/설정·패키지 보존.
+- 검증: Unity2022.3.62f3/1920×1080, 컴파일오류0·바인딩30. 실제양언어6화면/입력/미디어98항목 PASS, 실패주입/재시도/재생중5초홈/반복/준비중취소·RT해제10 PASS. 정적요소26픽셀 RMSE최대0.1003, 영상좌상단2개 원본불투명픽셀 RMSE0. 실제12화면 직접확인. 실패주입의 영문오류2건은 의도한 결과이며 그 외 오류없음. 교차검증 미수행.
+- 증거/미검증: [ZIP·매핑·실제화면·검증](../validation/ui_web4/README.md). 영상은 끝부분seek, 전체길이시청/Windows Player재빌드·배포/실물버튼·RFID/장시간 미수행. 기존배포본은 그대로, 다음빌드 필요.
+- 종료: Play중지/0_Idle dirtyfalse, 소유권 해제. 새 치명적 장애 없음. 기존 현장검수 TODO 유지.
+
+
+### [2026-11-04 / Asia/Seoul] RENAME-001 · Codex → 다음 작업자 · 완료(미커밋)
+
+- 요청/기준: 프로젝트 이름과 빌드 실행 파일명을 NSM_DNA_02로 변경, 빌드 실행 금지. main/3852ee6 및 기존 사용자/에이전트 미커밋 변경 보존. Codex 단독 구현·검증, 교차 검증 없음.
+- 변경: ProjectSettings/ProjectSettings.asset의 productName만 NSM_DNA_02로 변경. Tools/ComfyUI/build_player.cs 출력은 Builds/ComfyAutostart/NSM_DNA_02.exe. 현재 Unity의 Windows64 저장 경로는 기존 Desktop/Thai_02 디렉터리에서 파일명만 NSM_DNA_02.exe로 변경(로컬 에디터 상태). CHANGELOG 갱신. 프로젝트 폴더명/원격 저장소명·Company MyCompany·Standalone 식별자 com.Unity-Technologies.com.unity.template.urp-blank·빌드 3씬·패키지는 보존.
+- 실제 검증: 실행 중 Unity 2022.3.62f3에서 Product Name/Windows64 출력 경로를 다시 조회해 일치 확인, Settings diff는 productName 한 줄만 변경, 빌드 스크립트 출력명 및 git diff --check 확인. Play/build 상태 false, 활성 씬 dirty false, 씬/build_info 추가 변경 없음.
+- 미수행/위험: 사용자 요청에 따라 Play/컴파일/빌드·새 실행 파일 검증 미수행. 기존 배포 실행 파일은 변경하지 않았고 다음 빌드부터 적용. Product Name에 따른 기본 로그/영구 데이터 경로 변경 가능, 기존 데이터 자동 이관 미수행. 기존 RFID 패치/과거 검증 도구의 구 배포 이름은 과거 배포본용으로 보존.
+- 종료/다음: 소유권 해제, 커밋/push 없음. 다음 Windows 빌드 시 NSM_DNA_02.exe 및 NSM_DNA_02_Data 확인. 신규 치명적 장애 없음.
+
+### [2026-11-02 / Asia/Seoul] RFID-STABLE-001 · Codex → 다음 작업자 · 수정/자동검증 완료(미커밋)
+
+- 요청/확정: 같은카드값순환 원인분석/수정. 사용자 LAN-754(KA118)·실제7바이트값2회반복·고정길이원치않음 확인. main/3852ee6+기존변경보존, Claude RFID소유권해제 후 단독구현/검증, 교차검증 없음.
+- 원인: 기존 FixedLength16이7바이트보고를 이어잘라 시작점2바이트씩이동/7종가짜UID로순환. 가상동형UID로 재현해 before_seven.json 저장. 실제장비는35초허용IP수신에서접속0, 현장실측통과로보고안함. 제조사 UID필드/패킷계약확보못해 헤더/CRC 임의제거안함.
+- 변경: RfidConfiguration의기본UidBurst·수신공백까지누적/정확반복단일값·새값2회확인/재접속초기화, TcpReaders연결 및 F10바이트수, RFID JSONframing만변경. 기존TCP서버/IP/1초Presence/그룹우선/생성freeze·매핑목록보존. 테스트/Tools/RFID 및 운영문서/CHANGELOG/TODO/검증/HANDOFF 추가갱신, 씬/프리팹/패키지/Comfy미변경.
+- 검증: 전체Edit130/130(14.1346326초/job efedabf7bafa4fbdb83925096c579d96), 새실소켓4클라이언트16검사(4/7/10/16bytes·중복/분할/선행0·5.5초유지/교체/제거/매핑/재접속/생성잠금) 및 기존67회귀 PASS. 스크린샷직접확인, 임시JSON만저장/설정·입력복원. Windows3씬 None빌드 오류0/기존경고5·9.766초, Builds/RfidStable. Play중지/Idle dirtyfalse, 최종콘솔오류0. 빌드시읽은preloaded목록복원/기존ProjectSettings미커밋보존.
+- 배포: Desktop/Thai_02 DLL2와framing적용, DLL/JSON백업 RFID_Backup_20261102_202135_210. 보호7파일SHA동일·매핑/IP/그외JSON보존. WindowsPowerShell5.1업데이트실행/추가2매핑·별도port/추가필드보존fixture PASS. Builds/Desktop RFID_Update.zip 98252바이트. 적용은앱완전종료→실행파일폴더에압축풀기→Apply_RFID_Update.cmd→재시작. 잘린16바이트로등록한값은F10의새UID로재등록필요. 배포도구중간실패는사전거부/원본복원후수정·최종재적용검증(README).
+- 한계/다음: UidBurst는조각지연보다길고보고묶음간공백보다짧은100ms기본조건 필요. 무공백스트림/묶음내다른카드혼합/내부반복패턴UID는프로토콜경계명시없이는보장불가, Delimiter등실계약필요. 실제KA118공백/보고간격·정확한UID필드·Player직접화면·장시간/설치PC미검증, 고유값의필드구조를확정한것은아님. 운영로그에UID전송없음, 새치명장애발견없음. 커밋/push없음·소유권해제. [상세](../validation/rfid_stable/README.md).
+
+### [2026-11-02 / Asia/Seoul] ALPHA-OPAQUE-001 · Codex → 다음 작업자 · 수정/검증 완료(미커밋)
+
+- 요청/기준: 흰색 물체 내부 투명화와 다른색 동일결함만 수정. main/3852ee6+기존변경 보존, 단독구현/검증·교차검증 없음. Claude RFID-LISTEN/PRESENCE 최신변경 및 에디터 조작을 건드리지 않았다.
+- 원인/구현: 흰배경+흰물체의 BiRefNet 오분리를 재현. Catalog의 배경문구1개만 중간회색/opaque로 변경하고 원본RGB의 흰색·유색·어두운 재질을 기본노드로 보완한다. white RGB곱0.65/chroma0.12/dark0.015, 신뢰도0.5 내부1px침식만 기존알파에 가산해 RGB/원래외곽알파를 보존. 자전거는 원래 마스크로 분기해 바퀴/프레임 틈 유지. 모델/추론횟수/샘플러/4단계/스타일prefix/색HEX/연령 불변, 최종480RGBA.
+- 파일: Tools/ComfyUI/build_workflow.py·alpha_mask_nodes.py·test_workflow.py·API/UI/inputs, Assets/StreamingAssets/BlockGeneration의 Catalog/API, 신규 inspect_alpha/probe_alpha 계열·verify_alpha_workflow/verify_alpha_native·deploy_alpha_workflow, 운영문서/CHANGELOG/TODO/HANDOFF·validation/alpha_opaque. C#/씬/프리팹/패키지/원본그림 미수정.
+- 실제검증: 10물건·6색·4연령 포함100개 실생성물에 최종마스크 재실행(verified100), 최종전체파이프라인 새4개(end_to_end). RGB동일/내부255/배경0/외곽알파 정확보존 등8조건 PASS, 잘못된 흰색/유색내부 후보0. 자전거3자동후보는 실제빈공간으로 직접확인해 유지. 실제기본노드6색 손상주입12케이스·단위9·새도구 py_compile PASS. 대비색체커 시트4장/전후사진 직접검수. 최종기준 sourceSHA/summary.json·README에 기록, 중간실패실험은 진단으로 보존.
+- 배포: Desktop/Thai_02 기존JSON2개 백업 후 좁은필드/노드 패치, 기존EXE/DLL·Settings/RFID5SHA동일. Builds 및 Desktop/Thai_02에 동일 Alpha_Workflow_Update.zip(7647바이트, JSON2개+README). USB복사본에 압축풀어덮어쓰기 후 앱완전재시작; 두JSON 함께적용 필수. 모델재설치/Player재빌드 불필요.
+- 한계/다음: 현5070TiLaptop API검증이며 실제3060/새PC·Unity/Player화면/장시간은 미수행. 향후 모든랜덤시드 무결점 보장으로 확대하지 않는다. 기존8188서버 유지/테스트완료, 재시작·전역interrupt·모델교체 없음. 커밋/push 없음·소유권해제, 새 치명장애발견없음. 상세 [검증](../validation/alpha_opaque/README.md).
+
+### [2026-11-02 / Asia/Seoul] COMFY-PORTABLE-001 · Codex → 다음 작업자 · 패키징/현PC검증 완료(미커밋)
+
+- 지시/기준: Desktop/Thai_02 기존빌드에 새PC Comfy준비물 전부동봉. Win10/11x64·RTX3060 12GB 확인, main/3852ee6+기존변경보존·단독구현검증/교차검증없음. 사용자최신2:04빌드보존, 이번Unity빌드/C#·씬·패키지변경없음.
+- 전달: 약20.3GB/54,463파일, 독립Python3.13.12+정확한venvsitepackages/_pth격리/Torch2.11cu128/Comfy0.42·frontend1.57.1/기본노드·4모델/스타일·라이선스. 공식Studio617.42Desktop(RTX3060/Win10/11지원)/VC++14.51x64 서명Valid. Run_Thai02.cmd/Check_Runtime.cmd/한국어README. 배포Comfy설정만원자갱신/원본백업, EXE/DLL·Settings/RFID5SHA동일. 운영자는필수드라이버/VC++설치·재부팅후Run실행, Python/Desktop/Git/CUDA Toolkit별도설치불필요.
+- 검증: 모델4고정SHA/바이트·설치서명2·GPU연산·한글공백다른경로prefix/설정재작성·다른cwd PowerShell준비·py_compile PASS. 별도8189동봉서버3새생성8.146/2.429/4.561초(현5070TiLaptop/32GB,3060아님),3개480RGBA/alpha0..255/모서리0. package/diagnostics/relocation/installers/generation JSON·PNG증거.
+- 실패/수정: [TS-20261102-01](../TroubleShooting.md#TS-20261102-01) /XD models basename으로내부ldm누락, 루트절대경로제외로수정/재복사후3실생성재검증해해결. 백그라운드기동자동검토차단은좁은foreground기동으로검증. 임시트리삭제자동검토차단은삭제하지않고절대경로확인후Temp/PortableRelocationValidation_20261102로파일보존이동, 배포본에는없음.
+- 정리/한계:8189 Ctrl+C/Stopped server·동봉Python프로세스0. 기존8188 PID17356유지, queue유휴확인후/free로캐시만해제(다음사용coldreload가능). 호스트드라이버설치/방화벽/권한/전역interrupt/Windows종료없음. 실제빈Windows/3060·PlayerGUI입력/RFID/장시간미검증. 기존Player직접실행없어운영API추가전송안함. 커밋/push없음·소유권해제.
+- 파일: 신규Tools/ComfyUI/package_portable.py·portable_boot.py·portable_server.py·portable_start.ps1·Run_Thai02.cmd·Check_Runtime.cmd·PORTABLE_README_KO.txt·verify_portable_relocation.py, 대상폴더추가파일/Comfy설정백업·COMFYUI_SETUP·validation/comfy_portable·TroubleShooting/CHANGELOG/TODO/HANDOFF. 재패키징도구는로컬환경복사를담당하며Installers/추가라이선스다운로드는이번별도절차였다.
+
+### [2026-11-02 / Asia/Seoul] RFID-TCP-MAP-001 · Codex → 다음 작업자 · 구현/자동검증 완료(미커밋)
+
+- 요청/확정: 네 칸IP121/122/123/124·TCP10123·HEX. 후속16바이트 예시는 의미 해석 없이 전체카드값으로 매핑하고 예시자체는 등록하지 않음. main/3852ee6+기존변경보존, 단독구현/검증·교차검증 없음.
+- 구현범위: 신규 Data/RfidConfiguration(HEX검증·고정/구분자/공백프레임)·RfidTcpReaders(4개독립클라이언트/자동재접속/메인스레드제한큐)·RfidMappingPanel(F10실시간/카드선택/20블록/저장교체삭제/재로드) 및meta, StreamingAssets/RFID/RfidSettings.json/meta. Hub.Start가1개씩연결, Simulator는F10중F9차단. 씬/프리팹수정없음. 정상설정만교체·원자저장/백업·오류노출, F10전시입력잠금/생성중조회만. 카드ID운영로그전송안함.
+- 기본값: FixedLength16/asciiHexfalse/UID전체, 실IP순서와10123, cards빈배열. 제거코드/보고주기미제공으로removedValues빈배열/absentTimeout0. 제거신호없이연결만유지되면마지막UID유지하므로 현장확인후설정필요. 선택의생성freeze/그룹우선/색순서기존규칙보존.
+- 실제검증: Edit112/112(job441c6db156134733ae37bed5f7892f28,12.3784146초), 실제Loopback TCP4서버 Play44 PASS(16바이트예시분할수신전체보존·저장/교체/삭제/실패/재로드/단절재접속/F10/F9/버튼잠금/생성lease). 임시경로저장만사용하고원본JSON카드0개유지. 최종창캡처직접확인. 중간Input이름충돌컴파일오류수정후전부재검증, 실패주입6진단보존. 최종실제Windows3씬 BuildOptions.None 오류0·경고0,8.9479544초·동봉JSON SHA동일. 최초미컴파일경고는refresh후재빌드해해소. 상세README참조.
+- 보존/최종상태: 기존미커밋입력/Comfy/광고/언어/자원유지, 씬/vendor/효과/패키지diff0. 빌드preloaded추가1개만원복, 기존VContainer유지. Play중지/0_Idle dirtyfalse. Tools/RFID/verify_tcp_mapping.cs·docs/RFID_SETUP.md·BLOCK_SIMULATOR/BUTTON_INPUT/CHANGELOG/TODO/HANDOFF·검증JSON/PNG추가갱신. 커밋/push없음/소유권해제.
+- 미검증/다음: 실제장비네대·현장망·실제제거HEX/보고주기·WindowsPlayer마우스직접조작·장시간. 장비가조회명령을요구하면제조사계약추가필요. 이번작업은새Comfy생성미수행(동일freezeleaseTCP검증), 기존이미지생성코드/워크플로미변경. 치명장애새발견없음.
+
+### [2026-11-02 / Asia/Seoul] AD-FX-005 · Codex → 다음 작업자 · 완료(미커밋)
+
+- 요청/기준: 내부 이펙트가 작고 흐릿한 경우 보강, 박스 밖에 보이지 않게 마스킹, 폭죽은 모든 광고요소보다 전면. main/3852ee6+기존 변경 보존, Codex 단독 구현/검증·교차검증 없음.
+- 구현: AdProductHighlight만 제품소스 수정. 빛살740~860·링620~780·별54~94/알파/빈도 증가, 순백색 음영으로 구분. AdBoard Sprite를 복사한 showMaskGraphic=false Image+Mask를 board12px 안쪽에 한 번 만들고 내부 effectRoot를 이관, 모든 내부 graphic.maskable=true. 원본효과/씬 미저장. 폭죽 Canvas overrideSorting/32766을 활성화 후 적용하고 광고이미지·제목·안내 전면에 표시한다. 전환검정32767은 유지. Clear에서마스크/전면Canvas숨김, Resume은내부마스크만, 별Stop(false)로남은수명유지.
+- 검증: 실제 Editor렌더47 PASS(빨강파랑·검정흰색·흰색흰색). 거대한2600×1800 probe가 박스밖샘플변화0, mask해제대조군>500변화·박스안보임·둥근코너가림. 불투명전체UI lastSibling 위 폭죽샘플13843, 검정전환의밝은샘플0. 물건Rect밖 가시샘플2143/2621/1583. 취소·비활성/재개·중복/영상암전·첫프레임0/홈8 PASS. 실제 Comfy 새가방 #EC6868/#5FB0E3 버튼흐름/최종PNG직접확인·홈 PASS. 앞47은이전고정PNG fixture로생성품질과분리했으며실제새출력은별도preview.json. UI변경이므로Data NUnit 재실행은하지않음.
+- 중간수정/진단: 추가Canvas의 Unity가짜null을 명시적bool검사로 처리하고 구성중IsPlaying노출/비활성초기화정렬을보정했다. refresh연결실패후 이전DLL을검수한실패는제외하고DLL시각>소스확인후재실행. 해당최종47시콘솔오류0. 실제생성미리보기도구의 NonReadableTexture.EncodeToPNG 오류는도구에서제거하고제품텍스처설정불변으로정상재실행, 중간로그보존. 표준UI/Default인것을확인해셰이더변경없음.
+- 빌드/보존: Windows3씬 BuildOptions.None 성공/오류0·기존경고5,9.868초. Builds/ComfyAutostart/Thai02.exe 갱신. 씬/효과프리팹/vendor/패키지 diff0, 기존 생성팔레트/입력/로그 설정/사용자변경 보존. InputSystem이추가한 preloadedAssets1개만원복, Play중지/0_Idle·dirty false. 소유권해제/미커밋·커밋push없음. Player광고육안·설치PC/실물/장시간은미검수. 치명장애발견없음. docs/AD_PRODUCT_HIGHLIGHT.md·validation/ad_fx5의README/JSON/PNG참조.
+
+### [2026-11-02 / Asia/Seoul] AD-FX-004 / LOG-003 · Codex → 다음 작업자 · 완료(미커밋)
+
+- 요청/기준: 광고 연출 규칙성 완화·박스 내부 효과를 이미지 생성에 사용한 두 색상코드로 다양하게. 이어 지정 HULIAC content_log API의 start/end/end_kill/move_idle/move_idle_timeout/Call API/Return OK/Return fail 사용, Comfy 제외. main/3852ee6+기존 사용자/이전기능 변경 보존, Codex 단독·순차 수행/검증, 교차검증 없음.
+- 광고: Controller의 유효 revision에서 카탈로그HEX2개를 결과Texture와 함께 Manager에 넘겨 이후RFID/언어에 흔들리지않고 홈/결과해제에서 함께 비운다. 런타임AdProductHighlight가 중첩 링 포함3emitter를 캐시하고 두색+옅은변형의 입자혼합, Random별 위치/크기/수명/지연/느린 이동, 링의 가변 rate/크기/수명/작은중심분산, 빛살 회전/주기변화를 적용한다. 좌우컨페티 지연·상단시점/양도 분산. 원본효과프리팹·씬/vendor 미수정. 중간시각검수에서 speed×100/fitRect를 확인해 보정하고 별 정점 검사 추가.
+- 광고검증: 실제새3이미지/빨강파랑·초록노랑·검정흰색 Play39 PASS, RGB전달/후속RFID 무영향/별·파동16px내부/TimeScale0/간격·색변화/입력복구/홈 확인. 기존PNG fixture로 취소/비활성/재개/중복/영상암전·첫프레임0 등8 PASS. 최종전체컨페티 분산후 새가방1개 추가생성14 PASS·최종실화면확인. Edit91/91(job f4d32d1cdc65480f8771599125318926,10.4465917초). 신규14검증은이후컨페티 변경을포함하고 이전수명8은동일정리코드회귀다.
+- 로그: APIManager는 기존Base의Singleton/DI/구독/종료보류 보존. 정확한 start/end/Return fail 문구를 적용하고 restart/종료이유/실패사유 접미사 제거. 기존수동/Timeout이벤트사용·Idle자체timeout무시. ComfyClient는계측하지않고 헬퍼/이벤트에서loopback·설정된Comfy origin·Comfy호스트·logAPI 제외, URL민감정보가림. 별도 WindowsPowerShell감시가PID+시작시각의앱종료를기다리고정상표시없으면end_kill전송. PC종료/방화벽/UAC 변경없음.
+- 로그검증: 로컬실수신15 PASS(실제Scene수동/timeout/외부성공·실패/원본예외/URL인코딩·민감값/Comfy로컬·원격IP·실제system_stats제외/HTTP503제한). WindowsDevelopment 실제정상start,end/강제start,end_kill 등5 PASS, 최종Release도강제종료start,end_kill확인. 실제운영서버 직접연결start/end HTTP200, 본문확인용추가end1건에서logged/ok:true. 대량/실패/종료시험은로컬만사용, 운영관리화면 저장목록은미검수.
+- 빌드/종료: 실제3씬 Windows 배포BuildOptions.None 성공/오류0·기존CS4014 4개+Editor필드CS0414 1개유지. Builds/ComfyAutostart/Thai02.exe 및동봉폴더에최종운영설정·watcher포함/SHA일치. 검증사본임시apiUrl는원본으로복원. InputSystem빌드디스크추가preloadedAssets1개만원복, 기존InputManager변경보존. 로컬fixture51692/소유테스트Player/watcher정리, 기존Comfy8188보존. Play중지/Idle·dirty false, 소유권해제·미커밋/커밋push없음.
+- 참고/남은항목: 다른프로젝트기동으로MCP포트6400/6401이변경돼도구응답대기를중단하고exact Name@hash로재고정후마무리. Console의의도한503실패진단은보존, 새컴파일오류없음. 씬/효과prefab/vendor/패키지git diff0. 물리버튼/RFID·Player광고육안·설치PC/장시간·전원/망단절전달보장은미검증. 치명장애발견없음. docs/AD_PRODUCT_HIGHLIGHT.md·CONTENT_LOG.md·두validationREADME/JSON/PNG참조.
+
+### [2026-11-02 / Asia/Seoul] COMFY-AUTOSTART-002 · Codex → 다음 작업자 · 적용/자동검증 완료(미커밋)
+
+- 요청/기준: Desktop GUI를 따로 켜지 않고 빌드가 Python 서버를 직접 시작하며 기존서버 재사용. 후속으로 서버 준비 전 RedButton/숫자1 차단·타이틀 버튼 안내 숨김, 네트워크 알림 질문(사용자가 직접허용). main/3852ee6+기존변경 보존, Codex 단독 구현/검증·교차검증 없음.
+- 구현: 기존 .venv Python/main.py/모델·입출력 인자는 실제 유효해 유지했다. standalone-env 자식만 보고 Python 경로를 바꾸면 torch누락이 발생함을 읽기시험으로 확인. launchServerInEditor를 C#/JSON에서 true. Scope가 Launcher를 Manager에 연결, IsInputReady는 설정+활성 Launcher.Ready를 요구하며 차단 중 제스처 Reset/타이머 무갱신. UI idle.help Image.enabled를 OnEnable부터 차단하고 LateUpdate에서 준비상태와 동기화해 언어페이드/카드연출로 노출되지 않게 했다. 첫 Play시험에서 초기 UI가 매니저보다 빨리 준비되어 캐시null인 문제를 확인해 Manager OnEnable/SceneChanged의 명시적 BindInputManager로 고친 뒤21 PASS.
+- 검증: Unity2022.3.62f3 Edit91/91(job c4633c284c3749bca0c88330aa33ae8f,14.4441981초). Play21은 주입한3서버상태/실제 키보드어댑터/직접 버튼API·준비 전 유지/해제 무효·새누름/언어왕복/비활성·홈검사. 실제Windows3씬 Mono 배포빌드 오류0·경고0(BuildOptions.None), 실제Player11항목 서버 cold/reuse/실행파일누락 실패·로컬바인딩·부모프로세스·종료후서버생존·Desktop신규0 검증. 준비27.229초는 현PC서버시작 시간. 별도18192 Python에서 실제Klein480이미지1개11.936초 완료. 세부 JSON/스크린샷/도구와한계는 docs/validation/comfy_autostart/README.md.
+- 알림/GUI: 개발빌드 네트워크알림을 사용자가 직접허용했으며 방화벽변경/UAC/보안프롬프트 자동조작 없음. 배포빌드 headless/실제GUI 모두 Player TCP listen0·UDP0, 서버127.0.0.1만 바인딩. 실제GUI 준비후타이틀안내 직접확인. Computer Use 숫자1의 Game진입은 확인되지 않았고 추가 숫자패드 검수에서 사용자가물리Escape로중단해 더이상 UI조작하지않았다. 전체Player입력/실물버튼/RFID·다른PC·장시간/3060은 미검수 유지.
+- 종료/보존: 검증용서버18192(21500/48568)와18194·테스트Player정리, 기존Desktop/8188 PID17356 유지. 최종GUI 종료는 사용자Escape시 Player로그종료흔적/후속조회로기록, 추가조작 없음. InputSystem빌드가추가한 preloadedAssets1개만 텍스트로원복, 기존InputManager사용자변경 유지. 패키지/씬/모델/원본UI 미수정. Play중지/Idle, 소유권 해제. 도구 공유로그읽기/이전로그오인 수정후최종PASS. 이번치명장애 발견없음, 커밋/push 없음.
+
+### [2026-11-02 / Asia/Seoul] UI-NEW-003 · Codex → 다음 작업자 · 완료(미커밋)
+
+- 요청/기준: Assets/UI/NEW의 인트로 배경·각 버튼 안내를 정확히 대응해 기존 파일명으로 덮어쓰고 NEW삭제. main/3852ee6+기존 사용자/기능 변경 보존, Codex 단독 수행/검증·교차 검증 없음. NEW9PNG를 전부 직접 시각확인했고 기존target9개와 해상도 동일함을 확인했다.
+- 대응: E02-S01→Backgrounds/Intro_bg.png. 안내2→ENIdle,2-1→THIdle.3/3-1/3-2→ENGroup/SelectAll/RecommendedAd,3-3/3-4/3-5→THGroup/SelectAll/RecommendedAd. 기존 폴더/파일명에 PNG바이트만 복사했고 meta9개 전체SHA/GUID 및 라이브러리 참조동일. 영어3/3-1은 제공본의 동일 그림, 태국어Group의 Home표기도 제공본 그대로 유지.
+- 검증: 대상9PNG sourceSHA일치·meta전체보존/라이브러리9연결, sourceNEW GUID10개(폴더포함) 참조0. 실제Unity2022.3.62f3 양언어 Idle/Group/Selection/Result8화면 직접비교,18항목 PASS(언어전환/안내바인딩·정상결과전환/홈). 결과화면은 과거 생성PNG를 명시적 테스트로 인계했으며 새 GPU생성/영상재생은 하지 않았다. 콘솔 오류0. 모든이미지크기가같으므로 씬/JSON/코드/연출 재작성이나 별도 NUnit재실행 없음.
+- 정리: 일반PowerShell 재귀삭제 명령은 자동정책에서 차단됐고 실행되지 않았다. 정확한절대경로/일반디렉터리/9PNG+9meta/대상복사완료를 다시 검증한 뒤 Unity manage_asset.delete의 명시적 Assets/UI/NEW경로로 안전하게 삭제성공. 폴더/폴더meta 없음 및9target/meta 해시 재검증. NEW에알수없는파일/참조가있었다면삭제하지않도록 확인했다.
+- 보존/범위:9기존PNG, Tools/UI/verify_ui_new3.cs·검증자료, IMAGE_UI/CHANGELOG/HANDOFF. Scripts/StreamingAssets/3씬/라이브러리/패키지 보호452파일SHA동일. 최초포괄검사에서 ignored StreamingAssets/build_info1개가변경돼 ReporterEditor.cs의자동타임스탬프작성임을확인하고별도기록,해당파일은그대로두었다. PackageCache읽기만/미수정. 기존사용자변경임의커밋/push/리셋없음.
+- 종료/남은항목: Play중지/0_Idle·dirty false,소유권해제. Player/실장비·영상전체검수등기존후속유지. docs/validation/ui_new3/README.md·mapping/verification/runtime JSON·8PNG/preview 참조.
+
+### [2026-11-02 / Asia/Seoul] RFID-SNAPSHOT-001 · Codex → 다음 작업자 · 완료(미커밋)
+
+- 요청/기준: 생성 중 RFID 인식 끊김을 프로그램에 반영하지 않고 생성 시작 시 블록 그대로 표시. 해제/재인식/교체/이동/일반 전체비우기까지 같은 고정 규칙을 적용하며 무시 입력은 큐에 저장하지 않는다. main/3852ee6+기존 변경 보존, Codex 단독 구현/검증·교차 검증 없음.
+- 구현: RfidReaderSelection.FreezeInput()의 idempotent IDisposable/refcount lease가 Set/CanRecognize/Move/Clear를 차단한다. Hub Recognize는 검증/이벤트 전에 거부하고 일반 Clear는 할당 전 반환. Controller는 첫 await 이전 생성 try 진입에서 lease를 얻고 기존 요청 소유권의 ReleaseGenerationInput에서 해제한다. 이전 finally/중복Dispose가 새 generation 잠금을 풀 수 없다. Hub Idle 전환만 Clear(true)로 강제초기화한다. 무시 신호는 revision·선택·Changed/ReaderChanged/블록 이미지/진행 요청을 바꾸지 않는다. 종료 시 밀린 입력을 재생하지 않으며 이후 새 신호는 정상 처리한다.
+- 검증: Unity2022.3.62f3 컴파일 오류0. 신규3사례 포함 Edit91/91(job0a9528588f994fd5b73bd14054e90a33,13.8610984초). 실제 앱45항목 PASS: 실제 Comfy 생성 중4리더 해제·교체/직접Data.Set·이동·clear, revision/선택/event0·양패널8이미지 동일·로딩/타이머잠금/성공 결과 유지. 완료 직후 무시신호 재생 없음 및 새 신호 수용. 취소·이전finally/재요청·타임아웃·HTTP400실패·Controller비활성/재진입·홈·다음 세션 무누수 검증. generating_snapshot.png/success_snapshot.png 직접 확인. HTTP400 fixture의영문 오류/원래예외2로그는 의도한 진단이며 보존, 기타 오류 미발견.
+- 범위/보존: Data/RfidReaderSelection.cs·RfidReaderHub.cs·BlockExperienceController.cs, RfidReaderSelectionTests, 신규 Tools/UI/verify_rfid_snapshot.cs/검증 자료. 기존 verify_block_art_loading의 블록제거 시 취소 기대값을 snapshot유지→명시취소→새입력으로 갱신했으며 도구 전체 재실행은 미수행. BUTTON_INPUT/BLOCK_RESOURCES/BLOCK_SIMULATOR/CHANGELOG/HANDOFF 갱신. 원본아트/meta/3씬/패키지/입력/생성 설정82SHA동일(preservation.json). 씬/모델/외부리소스/색/로딩디자인 미수정.
+- 종료/남은 항목: Play중지/0_Idle·dirty false, 소유한fixture PID33924만 확인 후 종료, 소유권 해제. 커밋/push 없음. 실물RFID/Windows Player·장시간 검수는 미수행이며 기존장비 후속 유지. 이번 실제 생성1건은 전체 모델 품질 재승인이 아니다. docs/validation/rfid_snapshot/README.md·runtime.json 참조.
+
+### [2026-11-02 / Asia/Seoul] BLOCK-ART-LOADING-001 · Codex → 다음 작업자 · 완료(미커밋)
+
+- 요청/기준: 블록 리소스를 전용 JSON/StreamingAssets 이미지로 교체·언어별 설정, 완전한 블록 뒤 버튼으로 생성하며 우측 박스에 UI에 맞는 원형 무한회전 로딩. 후속 지시로 흰 원판/고정 장식 제거, 꼬리는 부드러운 투명 그라데이션, 선두와 꼬리를 같은 붉은 계열로 통일. main/3852ee6+기존 사용자/RED/Thai/suffix/group 변경 보존, Codex 단독 구현/검증·교차 검증 없음.
+- 외부 리소스: BlockArtwork/blocks_en.json·blocks_th.json 각20개 kind/id/image. Images/en20개·th16개는 원PNG 바이트 복사. 태국어 연령4개는 JSON에서 영어 경로 공유. 새 순수 BlockArtworkDocument는 schema/언어/중복/로컬 PNG/JPG 경로 검증. StreamingBlockArtwork는 두 언어를 async 로드·같은 경로 캐시·자산복제 카탈로그에 원자적으로 적용, JSON 오류는 해당 언어/이미지 오류는 해당블록 기본값, 원래 예외 보존. 재로드 후 이전 런타임 Sprite/Texture 해제. Hub가 시작/Idle에서 재로드하고 준비 전 인식/초기화를 기다림. View는 ArtworkChanged만 별도 갱신, F9도 같은 변형 Sprite 사용. 원본 SO/PNG/GUID는 불변.
+- 생성/로딩: Controller의 인식 완료 자동 생성 제거, 기존 Continue의 GenerateImage 버튼 경로로 시작. 블록 변경은 취소/비우고 새 버튼을 기다림. GenerationLoadingIndicator/LoadingRingGraphic을 결과 이미지와 같은 Rect의 형제에 생성해 배경 없이 둥근 붉은 분홍 링만 표시. RGB(.94,.48,.64)는 선두/꼬리 동일, 꼬리 알파는 SmoothStep0→1. CanvasRenderer 명시,96분할 메시 고정·transform unscaled회전. 요청 소유권이 있는 성공/실패/취소/타임아웃/블록변경/홈/비활성에서 로딩·기존 입력잠금/타이머를 정리. 씬 저장/원본UI/모델·생성 팔레트 변경 없음.
+- 검증: Unity2022.3.62f3 컴파일 정상. Edit88/88(job b5c2c2cf799248c2a57e052f48ace2d2,11.9554524초;신규12 포함). 실제 외부 PNG 바이트 교체·언어독립/JSON 경로변경/중복재로드·손상JSON/이미지누락 fallback·반복Texture36개 유지·실제 버튼/Comfy성공·0배속회전·취소/블록변경/타임아웃/HTTP400/이전요청 finally·홈47 PASS(runtime.json). 최종 붉은 RGB/투명도0·중간·255/실제renderer/배경없음/회전·취소/홈9 PASS(visual.json), 최종 loading.png 직접 확인. 외부이미지 Thai→English→Thai 전체20종/두패널480슬롯/F9 등432 PASS(localized/runtime.json), 실제English/Thai 화면 직접 확인. 기존 Thai 검증 기록은 덮어쓰지 않고 별도 폴더에 출력.
+- 검증 중 수정/경계: 초기 UniTask.Preserve는 진행중 동시 대기를 지원하지 않아 시작/scene callback 중복 예외가 났으며 Task bridge로 coalesce 후 실제동시재로드 PASS. 초기 커스텀 Graphic의 CanvasRenderer 누락은 캡처에서 미표시를 확인해 명시 생성/요구속성으로 해결하고 실제renderer 검사 추가. 최종 색상 변경은9항목 집중 재검증,47항목 lifecycle 결과는 직전 동일알파/배경없는 링 구성. malformedJSON/누락PNG/HTTP400의4로그는 의도한 실패 진단이며 숨기지 않았고 최종 정상 실행 콘솔0. fixture결과를 새 모델 품질 검수로 계산하지 않음.
+- 범위/보존: 신규 Data/BlockArtworkDocument(+tests/meta), StreamingBlockArtwork, GenerationLoadingIndicator/LoadingRingGraphic, StreamingAssets/BlockArtwork JSON·36PNG/meta·운영README, Hub/View/Simulator/Controller, Tools/UI fixture/검증 및 기존 group/Thai 검증 절차 갱신, BLOCK_RESOURCES/BLOCK_SIMULATOR/BUTTON_INPUT/CHANGELOG/HANDOFF. 원본블록PNG/meta/3씬/패키지/입력/생성 설정82SHA동일,36외부PNG 원본일치·JSON40경로/meta누락0. runtime 테스트로 임시교체한 JSON/PNG 복원 확인. 임의커밋/push 없음.
+- 종료/남은 항목: Play중지/0_Idle·dirty false, 최종정상콘솔0, 소유한 fixture PID46804만 명령행/실행파일 확인 후 종료. 실제Windows Player·설치PC/RFID/RedButton/장시간 검수는 미수행이며 기존후속 유지. 운영교체 방법 docs/BLOCK_RESOURCES.md 및 StreamingAssets/BlockArtwork/README.md, 검증 docs/validation/block_art_loading/README.md.
+
+### [2026-11-02 / Asia/Seoul] GROUP-FIRST-001 · Codex → 다음 작업자 · 완료(미커밋)
+
+- 요청/기준: GroupSelection은 아동/학생/직장인/시니어 그룹이 먼저다. 이전 물건/색은 무시하고, 정확히1그룹 뒤 새 비그룹 입력은 버튼 없이 같은 연출로 진행. 그룹2개일 때는 진행하지 않는다. main/3852ee6+기존 RED/Thai/suffix·사용자 변경 보존, Codex 단독 구현/검증·교차 검증 없음.
+- 구현: RfidReaderSelection.RequireGroupFirst/CanRecognize로 인식 순서와 교체/이동의 도착 그룹 수를 검사. 최초 무시 입력은 저장/재생하지 않고, 유일 그룹을 물건으로 덮으면 기존 그룹을 지우고 새 물건은 거부. Hub는 장비/F9/기존컨트롤러 공통 진입점에 적용하며 Idle에서 gating 복구. View는 ReaderChanged의 새 비그룹에만 자동 요청을 만들고 LateUpdate에서 준비/정확히1그룹/비그룹 존재/연출·생성 잠금 종료를 확인해 기존 Continue를 호출한다. 그룹 제거/중복·비그룹 모두제거·홈/비활성은 대기를 취소한다. 배치 진입 시 gate를 해제하고 재활성화 시 기존 배치 상태는 보존. 기존 그룹 제거 후 배치화면 유지·5초홈/생성중 입력 버림/세션 취소는 유지했다.
+- 검증: Unity2022.3.62f3 컴파일/최종 콘솔 오류0. 신규10사례 포함 Edit76/76(job90a6e396ba2044309b3092f2217346fa,11.4751019초). 실제 앱101항목 PASS: 선입력16종 무시/무저장·4그룹/4리더·기존 버튼·물건/색 자동진행·정상 슬롯 인계/블랙아웃0/전환레이어 정리·애니메이션 잠금대기·2그룹 수동/자동차단·대기중 중복/그룹제거/동일프레임 복원/교체/이동/홈 및 다음세션 누수 없음. 빠른4블록 입력에서 실제 Comfy 생성 잠금 중 버튼/자동 진행 차단, Image ready 후 배치 화면까지만 진행하고 홈 정리 확인. after_auto.png 직접 확인.
+- 범위/보존: Data/RfidReaderSelection.cs, RfidReaderHub.cs, BlockExperienceView.cs, RfidReaderSelectionTests.cs, 신규 Tools/UI/verify_group_first.cs·검증 자료, 기존 verify_thai_blocks.cs는 그룹+버튼으로 배치에 먼저 들어간 뒤 전체아트 검수하도록 절차 갱신. BUTTON_INPUT/BLOCK_SIMULATOR/CHANGELOG/HANDOFF 갱신. 검증 시작~종료 사이 블록 PNG/meta·3씬/패키지/이전입력/생성 설정83SHA동일(preservation.json). 씬/아트/패키지/생성 워크플로 미수정.
+- 종료/남은 항목: Play중지/0_Idle·dirty false, 임의 커밋/push 없음·소유권 해제. 실물 RFID/RedButton·Windows Player/장시간은 이번 검증에 포함하지 않는다. 기존 배포/3060 후속 유지. 이번 실제 생성1건을 전체 모델 품질 재승인으로 확장하지 않는다. docs/validation/group_first/README.md·runtime.json 참조.
+
+### [2026-11-02 / Asia/Seoul] BLOCK-SUFFIX-001 · Codex → 다음 작업자 · 완료(미커밋)
+
+- 사용자 요청으로 영문20개에 _Eng, 태국어16개에 _Thai 접미사를 추가. 예: EnglishBlocks/BagBlock_Eng.png, ThaiBlocks/BagBlock_Thai.png. main/3852ee6+기존 변경 보존, Codex 단독 구현/검증이며 교차 검증 없음. AssetDatabase.MoveAsset로 meta/GUID를 함께 유지했다.
+- RfidBlockAuthoring, sync_block_palette.py/sync_block_references.py, verify_thai_blocks.cs의 파일명 경로 갱신. 카탈로그의 GUID 기반 참조36개와 양언어 조회/4연령 fallback 확인, 원본 PNG 해시/GUID36/36 동일 및 이전 이름 파일 없음. Unity2022.3.62f3 컴파일·콘솔 오류0, 팔레트 --check PASS. 씬/입력/생성·언어 선택 로직은 변경하지 않았다.
+- docs/BLOCK_SIMULATOR·CHANGELOG·thai_blocks/README/HANDOFF 갱신, suffix_rename.json에 변경 전후 경로·해시·GUID 검증 보존. 앞선 Thai/English/Thai 실행 검증은 THAI-BLOCKS-001 시점이며 이번 접미사 변경에서 Play/Player 재실행은 미수행. Play중지/Idle·dirty false. 커밋/push 없음, 소유권 해제.
+
+### [2026-11-02 / Asia/Seoul] THAI-BLOCKS-001 · Codex → 다음 작업자 · 완료(미커밋)
+
+- 요청/기준: 사용자가 추가한 ThaiBlock의 파일명을 정리하고 태국어 모드에서 사용. 실제 폴더명은 ThaiBlocks이며 물건10종/색6종16개, 연령 이미지는 없다. main/3852ee6 + 기존 RED-BUTTON 및 사용자 InputManager·EnglishBlocks 이동 보존. 담당/검증 Codex 단독, 교차 검증 없음.
+- 구현: AssetDatabase.MoveAsset로 한국어 파일명을 EnglishBlocks의 대응 basename(예 BagBlock.png)으로 변경해 GUID 유지. 태국어16개를 원래252×252 Sprite/NPOT 없음/미압축/밉맵 없음으로 가져와 RfidBlockArtwork 각 항목의 thaiSprite에 연결. 기존 sprite/인식 ID20개 유지. GetSprite/Find 언어별 선택과4연령 공용 fallback, BlockExperienceView 두 패널·RfidSimulator 목록/리더/드래그에 현재 언어 전달. RfidBlockAuthoring.ConfigureArtwork()로 씬 저장 없이 재연결하며 필수 리소스 누락은 영문 오류로 실패. 사용자 이동에 맞춰 팔레트/과거 참조 동기화 도구 경로도 EnglishBlocks로 갱신. 활성 생성 그래프/색상값은 불변.
+- 검증: Unity2022.3.62f3 최종 컴파일 오류0. 실제 Play Thai→English→Thai 왕복에서20종을 각 리더에 순환 배치하고 두 패널 이미지/빈칸/활성 상태480개 확인, 인식 ID/영문·태국어 참조·미등록 빈칸/홈/언어/이미지생성 없음 포함426항목 PASS. F9 양언어20개 목록/4리더와 실제1920×1080 화면 직접 비교, 태국어 전체16장 contact sheet 검토. Edit19/19(job83cc06970cd94c67a9db6bcb4778369c,0.6070731초), Python workflow8/8(0.728초), sync_block_palette --check 및 양언어 원6색 RGB 일치 PASS.
+- 검증 수정 이력: 초기 검증용 NUnit 파일을 기존 Input 전용 asmdef 아래 둬 Assembly-CSharp 타입을 참조하지 못한 컴파일 오류가 발생했다. 해당 신규 파일/meta만 제거하고 Tools/UI/verify_thai_blocks.cs의 실제 앱 검증으로 대체. 삭제 후 force refresh로 재컴파일/오류0 확인. 존재하지 않는 새 NUnit 테스트를19개 결과에 포함하지 않는다.
+- 보존/범위: 원본 PNG36개 SHA/GUID 전부 동일(preservation.json), 기존 영문20개 전체 PNG/meta가 HEAD 원본과 동일(english_preservation.json). 태국어는 PNG/GUID 유지하고 importer만 변경. 3씬/패키지2개/생성Catalog/API git diff 없음(untouched.json). 이전 입력 변경 보존. 문서 BLOCK_SIMULATOR/CHANGELOG/HANDOFF 및 검증 자료 추가. 커밋/push 없음, 소유권 해제.
+- 종료/미검증: Play중지/0_Idle·dirty false, 최종 콘솔 오류0. 연령4종 태국어 아트 미제공으로 공용 이미지 사용. 실제 장비/Windows Player는 기존 후속 유지하며 이번 작업에서 이미지 모델을 다시 검수/생성했다고 보고하지 않는다. 자료 docs/validation/thai_blocks/README.md·runtime.json·실화면/시뮬레이터 PNG.
+
+### [2026-11-02 / Asia/Seoul] RED-BUTTON-001 · Codex → 다음 작업자 · 완료(미커밋)
+
+- 요청/기준: 사용자의 Input Manager RedButton으로 진행하고 숫자1도 대체 입력으로 유지. main/3852ee6, Codex 단독 구현/검증, 교차 검증 없음. 시작 시 유일한 사용자 변경인 InputManager의 Fire1→RedButton/physical keys 설정은 읽기만 하고 보존했다.
+- 변경: 기존 KeyboardButtonSimulator의 숫자1/숫자패드1 유지 상태에 ENABLE_LEGACY_INPUT_MANAGER 조건의 Input.GetButton("RedButton")을 OR 병합. 조이스틱 번호를 코드에 고정하지 않는다. 같은 SetButtonPressed/gesture 경로이므로 입력 잠금/타이머 갱신·2초 언어/5초 홈·포커스/해제 대기·중복 어댑터 방지 유지. 추가 런타임 컴포넌트/씬 변경 없음. BUTTON_INPUT/CHANGELOG와 재현용 Tools/Input/verify_red_button.cs·검증 자료 추가.
+- 검증: Unity2022.3.62f3 컴파일 오류0, 기존 ExhibitionButtonGestureTests13/13 PASS(job c4438b274396448a929e45a3c26ef6f9,0.4864376초). 실제 어댑터+InputSystem 가상 키보드로 상단1/숫자패드1 시작, 겹침 중 한 키 해제 시 진행 없음/모두 해제 시 한 번, 포커스 취소,5초 홈,2초 언어 전환/원래 언어 복원,Idle 복귀 포함11 PASS. RedButton의 실제 legacy 읽기는 휴지 상태에서 예외 없이 false 확인. 최종 콘솔 오류0·매니저1개. Play중지/0_Idle·dirty false 확인.
+- 초기 실행 관찰: 첫 Play 중 비주입 매니저/루트 중복과 준비 대기가 관찰되어 첫 검증을 중지했다(완료 보고서 없음). 컴파일/도메인 재로드도 관찰했으나 중복 원인은 미확정. Play 종료 후 새 실행에서 단일 매니저로 전체 검증 통과했고 오류가 재현되지 않았다. 진단을 숨기거나 DI/씬/패키지를 변경하지 않았다. 재발 시 초기화 수명 후속 조사 필요.
+- 보존/한계: InputManager SHA256 F2A9E886ADB17E81298A722445C1A0E388DCE003B44E07C7C81D610D89366D2A 시작/끝 동일. 씬/패키지/생성 설정·공통 매니저 미수정. 실제 joystick 장비의 누름·연결 해제/Windows Player는 미수행이며 가상키보드를 장비 검증으로 보고하지 않는다. 남은 설치PC 검수에 포함. 커밋/push 없음, 소유권 해제.
 
 ### [2026-11-02 / Asia/Seoul] COMMIT-004 · Codex → 다음 작업자 · 완료
 
