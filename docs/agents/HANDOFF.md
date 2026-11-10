@@ -4,6 +4,16 @@
 
 ## 현재 상태
 
+- IDLE-VIDEO-001 완료(미커밋) / Claude 단독 / 2026-11-10 Asia/Seoul. 타이틀 배경 c02.mp4 무음 무한 반복, 로고·문구·팝업은 위. Play9 PASS. 소유권 해제. docs/validation/idle_video/README.md.
+
+- LOGO-SPLIT-001 완료(미커밋) / Claude 단독 / 2026-11-10 Asia/Seoul. 배경 6개를 로고 없는 웹 원본(복제본 방식)으로 교체, NSMLogo 이미지를 4개 배경 위에 배치. Play12 PASS·로고 밖 화면 동일. Figma 원본 보존 확인(섹션 폭 자동확장 2194로 복구). 디자이너의 태국어 문구 수정 2건은 UI-WEB-006으로 반영. 소유권 해제. docs/validation/logo_split/README.md.
+
+- TIMEOUT-HOLD-001 완료(미커밋) / Claude 단독 / 2026-11-09 Asia/Seoul. 그룹·선택 화면에 블록이 하나라도 있으면 무입력 복귀 보류, 마지막 제거 후 30초. Play12·EditMode139 PASS. 결과·광고 화면 규칙은 그대로. 소유권 해제.
+
+- UI-IDLEPOP-001 완료(미커밋) / Claude 단독 구현·검증 / 2026-11-09 Asia/Seoul / main/60d397e+UI-WEB-005 등 미커밋 보존. 웹 2번 Group 149(영어 단일) 블록 제거 팝업을 타이틀에 추가: 등록 블록이 하나라도 리더 위에 있으면 영상 종료 팝업과 같은 연출로 표시하고 버튼 입력 차단. 허브에 세션과 별개인 실제 존재 기록 추가(홈 복귀 후 남은 카드·그룹 우선으로 무시된 카드 포함). Play25·EditMode139 PASS. Player/실제 리더·버튼 미수행. 소유권 해제. docs/validation/idle_popup/README.md.
+
+- UI-WEB-005 / AUDIO-002 완료(미커밋) / Claude 단독 구현·검증 / 2026-11-06 Asia/Seoul / main/60d397e+기존 변경(ProjectSettings preloaded 1줄·사용자 mp3 2개) 보존. 웹 2번 TH/EN ZIP으로 태국어 폰트 변경(Noto Sans Thai·Futura 100 THA) 감지·원본 교체 31개+태국어 연령 블록4 신규, 영어 안내2("continue"). 블록 화면 새 인식 selected·타이틀 언어 전환 language. 블록 없는 화면 30.0초 복귀 정상(코드 수정 없음). Play60 PASS·콘솔 오류0. Player재빌드/실제 리더·버튼/청취 미수행. 소유권 해제. docs/validation/ui_web5/README.md.
+
 - COMMIT-005 완료 / Claude 단독 / 2026-11-05 Asia/Seoul / 기준 main/3852ee6. 사용자 지시로 전체 변경을 이 기록을 포함한 작업별 로컬 커밋으로 보존(해시는 git log 확인), push 없음. 여러 작업이 함께 고친 파일은 hunk로 나누지 않고 파일 단위로 한 커밋에 넣었다(예: GameManager는 오디오 커밋, BlockExperienceView는 칸 UI 커밋). 중간 커밋의 개별 컴파일·빌드는 미검증이며 마지막 커밋의 트리만 작업 트리와 같다. 커밋 전후 Unity 재실행 없음. Tools/UI/__pycache__ 1개는 제외. 운영 로그 URL의 uid가 포함된 Settings.json도 지시대로 커밋했다. 아래 미커밋 표기는 당시 상태이며 Player·실장비 후속은 그대로 남는다. 소유권 해제.
 
 - DEPLOY-NSM-001 완료(미커밋) / Claude 단독 / 2026-11-05 Asia/Seoul / main/3852ee6+기존 변경 보존. Desktop/NSM_DNA_02에 StreamingAssets 복구(174 SHA 일치, RFID 카드 비어 있음)와 Run_NSM_DNA_02.cmd·Launcher 추가. 대상 PC는 ComfyRuntime 이동·RfidSettings.json 복사 후 실행. 수동 절차 실패 원인 미확정. 실제 런타임 이동/동봉 서버/대상 PC 미검증. 소유권 해제. docs/validation/deploy_nsm/README.md.
@@ -104,6 +114,10 @@
 
 | 작업 ID | 담당 | 상태 | 수정 범위 | 다음 담당 / 행동 |
 |---|---|---|---|---|
+| IDLE-VIDEO-001 | Claude 단독 | 완료(미커밋) | 신규 UI/IdleVideoBackground·Editor/IdleVideoAuthoring·0_Idle 추가만·Builder 1줄·Logo/TitleBlockPopupAuthoring TryGetComponent 수정·validation/idle_video·CHANGELOG/HANDOFF | 소유권 해제. Play9 PASS. Player/장시간 후속 |
+| TIMEOUT-HOLD-001 | Claude 단독 | 완료(미커밋) | BlockExperienceController(LateUpdate 보류·생성 해제·OnDisable 해제)·validation/rfid_timeout/hold_runtime*.json·BUTTON_INPUT/CHANGELOG/HANDOFF | 소유권 해제. Play12·EditMode139 PASS. 실제 리더/Player 후속 |
+| UI-IDLEPOP-001 | Claude 단독 | 완료(미커밋) | 신규 UI/TitleBlockPopup·Editor/TitleBlockPopupAuthoring·UIs_Common/IdlePanel PNG1, RfidReaderHub(존재 기록)·RfidTcpReaders(존재 보고)·ExhibitionUIBuilder 1줄·0_Idle(추가만)·Tools/UI/verify_title_block_popup·validation/idle_popup·BUTTON_INPUT/CHANGELOG/HANDOFF | 소유권 해제. Play25·EditMode139 PASS. Player/실제 리더·버튼 후속 |
+| UI-WEB-005 / AUDIO-002 | Claude 단독 | 완료(미커밋) | 태국어 UI PNG14·그룹 칸+파생 글자·태국어 블록16 교체/연령4 신규(UI·StreamingAssets 양쪽)·영어 안내2·Lang_Th/En·blocks_th.json·RfidBlockArtwork·ExhibitionUIAssets 기본사본·AudioManager/GameManager/BlockExperienceView·Tools/UI apply/verify_web5·validation/ui_web5·BUTTON_INPUT/CHANGELOG/HANDOFF | 소유권 해제. Play60 PASS, 30초 복귀 정상(수정 없음). Player/실장비/청취 후속 |
 | DEPLOY-NSM-001 | Claude 단독 | 완료(미커밋) | Tools/ComfyUI 실행기 신규·Desktop/NSM_DNA_02 StreamingAssets 복구+실행기 배치·validation/deploy_nsm·CHANGELOG/HANDOFF. C#/씬 무수정, 재빌드 없음 | 소유권 해제. 임시 경로 실행 시험 PASS, 대상 PC/실제 런타임 후속 |
 | AUDIO-001 | Claude 단독 | 완료(미커밋) | 신규 Core/AudioManager·GameManager·BlockExperienceView·ResultVideoController·Tools/Audio·validation/audio·BUTTON_INPUT/CHANGELOG/TODO/HANDOFF. Resources/Audios 사용자 WAV는 수정하지 않음 | 소유권 해제. Play32 PASS, Player/실장비/현장 음량 후속 |
 | UI-ADHINT-001 | Claude 단독 | 완료(미커밋) | AdProductHighlight·ResultVideoController·2_Result 참조 1개·Editor Builder·Tools/UI·validation/ad_hint·UI_MOTION/AD_PRODUCT_HIGHLIGHT/CHANGELOG/TODO/HANDOFF | 소유권 해제. Play34 PASS, Player/실장비 후속 |
@@ -204,6 +218,58 @@ FLOW-001 시작 시 사용자 변경: `_TempFont.asset`, `0_Idle.unity` UI, `Set
 ```
 
 ## 최신 작업 기록
+
+### [2026-11-10 / Asia/Seoul] IDLE-VIDEO-001 · Claude → 다음 작업자 · 완료(미커밋)
+
+- 요청: 사용자가 추가한 Resources/Videos/c02.mp4를 타이틀 배경으로, 로고 등은 위에, 무한 반복.
+- 변경: IntroVideo(RawImage+VideoPlayer+IdleVideoBackground)를 Intro_bg 다음에 배치(정지 배경은 첫 프레임 전·오류 시 대체). RT는 진입 생성/이탈 해제, 오디오 None, 첫 프레임 콜백만. 작성기 3개의 `GetComponent() ??` 가짜 null 문제를 TryGetComponent로 수정.
+- 검증: Play9 PASS(반복 3회/13초, 순서, 팝업 아래, RT 해제·재생성), 콘솔 오류0. Player/장시간/실PC 디코딩 미수행. docs/validation/idle_video/README.md.
+
+### [2026-11-10 / Asia/Seoul] UI-WEB-006 · Claude → 다음 작업자 · 완료(미커밋)
+
+- 요청: LOGO-SPLIT-001에서 감지한 Figma 변경 반영.
+- 변경: VideoEndPopupText_th(태국어 오탈자 수정), ButtonHelpBox_selectall_th(문구·배치) 원본 바이트 교체, meta 유지. 위치 동일해 JSON 무변경. 나머지 차이(≤23px)는 렌더 잡음으로 미교체. Figma 무수정.
+- 검증: Play4 PASS(선택 화면 안내, 영상 종료 팝업), 콘솔 오류0. Player/실장비 미수행. docs/validation/ui_web6/README.md.
+
+### [2026-11-10 / Asia/Seoul] LOGO-SPLIT-001 · Claude → 다음 작업자 · 완료(미커밋)
+
+- 요청: 우상단 로고를 배경에서 분리해 별도 이미지로 배치. Figma는 원본 훼손 금지, 필요 시 복제→필요 요소만 남김→내보내기→복제본 삭제.
+- 변경: 배경 6개(Intro/SelectGroupPanel/SelectAllPanel/RecommendedAdPanel_bg, SelectionBackground_th/en) 바이트 교체(meta 유지), 신규 UIs_Common/Logo/NSMLogo.png, Editor/LogoAuthoring.cs(배경 다음 형제 NSMLogo), ExhibitionUIBuilder.Background에서 호출, 씬 3개 추가만, Tools/UI/apply_logo_split.py.
+- Figma: 복제본 5개 작업 후 모두 삭제, 원본 12프레임 확인. 복제 시 TH/En 섹션 폭이 4065로 자동 확장된 것을 2194로 복구. 실수로 섹션 전체 복제 1회→즉시 삭제. 재내보내기 비교 차이는 디자이너의 태국어 문구·이름 수정(영상 종료 문구 오탈자, 선택 화면 버튼 안내)로 판단, 미반영.
+- 검증: Play12 PASS, 이전 스크린샷 대비 로고 상자 밖 RMSE≤0.08. 콘솔 오류0. Player/실장비 미수행.
+- 다음: 디자이너가 고친 태국어 영상 종료 문구·선택 화면 버튼 안내 반영 여부 결정.
+
+### [2026-11-09 / Asia/Seoul] TIMEOUT-HOLD-001 · Claude → 다음 작업자 · 완료(미커밋)
+
+- 요청: 블록을 하나라도 올려 뒀다면 홈으로 돌아가지 않도록.
+- 변경: BlockExperienceController.LateUpdate가 hub.HasPresentBlocks(그룹 우선으로 무시된 카드 포함) 또는 생성 중이면 InactivityTimer.Pause, 아니면 Resume(Resume이 카운트를 0부터 다시 시작). 매 프레임 적용해 전환 finally의 Resume에도 보류 유지. 생성 종료 시 블록이 있으면 재개하지 않음. OnDisable에서 해제. 타이머 이벤트 자체를 막으므로 move_idle_timeout 운영 로그도 보류 중에는 안 남음. 범위는 1_Game(그룹·선택)만.
+- 검증(Claude, Editor Play, 블록은 허브 API): hold_runtime.json 12항목 PASS: 그룹 블록 45초·무시된 제품 35초·선택 4블록 40초 유지, 일부 제거 시 유지, 마지막 제거 후 마지막 활동 기준 30.0초 복귀, 결과 화면에서 해제. EditMode139/139. 첫 실행(hold_runtime_attempt1_failed.json)은 입력 이벤트를 세지 않아 마우스 입력으로 늦어진 97초를 실패로 판정한 스크립트 문제였고, 재실행에서 마우스 468건 확인. 콘솔 오류는 그 스크립트 예외 1건뿐.
+- 미검증/위험: 실제 리더·Player. 보드에 블록을 둔 채 떠나면 그룹·선택 화면에 계속 머문다(요청대로). 실제 이미지 생성 후 보류 유지는 코드 경로로만 확인(AI 요청 안 함). 결과·광고 화면은 블록이 있어도 기존처럼 복귀.
+- 종료: 소유권 해제.
+
+### [2026-11-09 / Asia/Seoul] CHECK-RFID-TIMEOUT-2 · Claude → 다음 작업자 · 확인 완료(코드 변경 없음)
+
+- 요청: UI-IDLEPOP-001 허브 변경 뒤 RFID 화면 30초 무입력 복귀 재확인.
+- 결과(Editor Play): 그룹 화면 블록 없음 30.01초, 그룹 블록만 두고 방치 30.0초, 선택 화면 4블록(생성 안 함) 방치 30.0초에 홈 복귀(마지막 활동 기준). 블록을 남긴 채 복귀하면 타이틀 블록 제거 팝업 표시. docs/validation/rfid_timeout/runtime_20261109*.json.
+- 관찰: 첫 측정 중 마우스 이벤트 3,073건이 타이머를 계속 초기화해 실제 대기가 길어졌고 전체 제한 시간 초과로 셋째 경우가 중단되어 단독 재실행함. 모든 입력 장치 이벤트가 초기화하는 기존 설계 그대로(사용자 결정 대기 유지). 실제 리더·Player 미시험. 소유권 없음.
+
+### [2026-11-09 / Asia/Seoul] UI-IDLEPOP-001 · Claude → 다음 작업자 · 완료(미커밋)
+
+- 요청: 웹 2번 타이틀 쪽 신규 팝업을 영상 종료 팝업과 같은 연출로 타이틀에 표시. 콘텐츠 시작 전 RFID 리더에 블록이 인식되면 띄우고 버튼 입력 차단. 언어 구분 없음.
+- 변경: Group 149의 Rectangle 11은 VideoEndPopup과 픽셀 동일해 재사용, 문구 PNG 1개 추가. TitleBlockPopup(LateUpdate에서 HasPresentBlocks·타이틀·비전환 판단, 표시 요청~닫힘 완료까지 Presentation.LockInput). RfidReaderHub에 _present/ReportPresence/HasPresentBlocks/PresenceChanged, 규칙성 내부 비우기는 ClearReader, 홈 복귀는 ResetSession(존재 유지). RfidTcpReaders.ApplyPending이 규칙 판단 전에 존재 보고. 세션 인식 규칙은 그대로.
+- 이유: TCP는 UID 변화 때만 보고하므로 홈 복귀 후 남은 카드와 타이틀의 그룹 우선 무시 카드는 기존 Readers로 감지 불가.
+- 검증(Claude, Unity Editor): verify_title_block_popup Play25 PASS(양언어, 입력 차단/복구, 무시 카드, 홈 후 남은 카드, 미등록 카드, 빠른 반복), 웹 합성본 대비 RMSE 2.76, EditMode139/139. 첫 실행에서 최초 Play 시 GameManager 미생성으로 컴포넌트가 꺼지는 결함 발견→지연 조회로 수정 후 재실행. 콘솔 오류0.
+- 미검증/위험: 실제 TCP 리더 UID 경로, 물리 버튼, Player 재빌드, verify_slots_flow 전체 흐름 미재실행. 다른 Unity가 TCP 10123 점유 중이었음.
+- 종료: 소유권 해제. 새 치명적 장애 없음.
+
+### [2026-11-06 / Asia/Seoul] UI-WEB-005 / AUDIO-002 · Claude → 다음 작업자 · 완료(미커밋)
+
+- 요청: 웹 Figma 2번 프로젝트와 다른 리소스(특히 태국어 폰트) 감지·ZIP 일괄 적용, 기능 보존. Audios의 selected(RFID 감지 화면에서 카드 인식)·language(언어 변경)를 기존 AudioManager로 재생. 블록 없는 RFID 화면 30초 복귀 확인.
+- 변경: Tools/UI/apply_web5_assets.py로 웹 원본 바이트 복사(meta/GUID 유지, before/ 백업). 태국어 UI14(좌표는 located.json 매칭값)·GroupSlot_th+GroupSlotLabel_th 재분리·ThaiBlocks16 교체, 연령4 Thai PNG 신규→ConfigureArtwork로 thaiSprite 연결·blocks_th.json 경로. 영어 그룹/선택 안내 896폭 x518. ExhibitionUIAssets 기본사본 갱신. AudioManager PlaySelected(프레임당 1회)/PlayLanguage, GameManager 토글 수락 시 language, BlockExperienceView.OnReaderChanged에서 새 카드(이전과 다름, 전환 중 아님) selected.
+- 확인: 태국어 제품/색 칸·추천 상품 상자·배경은 웹과 동일해 미교체. 영어 영상 안내 크기 동일(영어 폰트 미변경). Figma에는 임시 내보내기 설정 추가/삭제만 함.
+- 검증(Claude, Unity2022.3.62f3 Editor): verify_web5_runtime Play60 PASS(runtime.json), 무블록 화면 마지막 활동 뒤 30.0초 복귀·대기 중 입력 이벤트0·home 재생. 스크린샷 직접 확인. 콘솔 오류0, Play 중지/0_Idle. EditMode 테스트 미실행.
+- 미검증/위험: Player 재빌드, 실제 리더·버튼, 스피커 청취. 자동 진행 시 selected+confirm 동시 재생은 미확정 기본값. CHECK-RFID-TIMEOUT의 입력 장치 신호 지연 위험·사용자 결정 대기는 유지.
+- 종료: 소유권 해제. 새 치명적 장애 없음.
 
 ### [2026-11-05 / Asia/Seoul] DEPLOY-GUIDE-02 · Claude → 사용자 · 안내만(코드·파일 변경 없음)
 
