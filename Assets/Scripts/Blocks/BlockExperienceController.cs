@@ -34,7 +34,7 @@ namespace Exhibition.Blocks
         private GeneratedImageRetention _retention;
         private IDisposable _generationLock;
         private IDisposable _readerInputLock;
-        private bool _pausedTimer;
+        private bool _pausedTimer, _blockHold;
         private BlockJournal _journal;
         private RfidReaderHub _readerHub;
         private GameManager _manager;
@@ -368,7 +368,12 @@ namespace Exhibition.Blocks
             if (!HasGeneratedImage && resultTextGroup) resultTextGroup.SetActive(true);
             _generationLock?.Dispose();
             _generationLock = null;
-            if (_pausedTimer) { _timer?.Resume(); _timer?.ResetTimer(); _pausedTimer = false; }
+            if (_pausedTimer)
+            {
+                _pausedTimer = false;
+                // Blocks on the board keep the hold (LateUpdate); otherwise count from now.
+                if (!_readerHub || !_readerHub.HasPresentBlocks) { _timer?.Resume(); _timer?.ResetTimer(); }
+            }
         }
 
         /// <summary>
@@ -443,8 +448,28 @@ namespace Exhibition.Blocks
             _handedOffTexture = null;
         }
 
+        // No inactivity return while any block is on the board, ignored ones included. Removing the last
+        // block restarts the full countdown. Generation and this hold are the only pause owners in this scene,
+        // so the timer is re-applied every frame (a scene transition's Resume cannot drop the hold).
+        private void LateUpdate()
+        {
+            if (!_ready || !_timer || !_readerHub) return;
+            bool present = _readerHub.HasPresentBlocks;
+            if (present != _blockHold)
+            {
+                _blockHold = present;
+                Debug.Log(present ? "[BlockExperience] A block is on the board. Inactivity return is on hold."
+                    : "[BlockExperience] The board is empty. Inactivity countdown restarted.", this);
+            }
+            bool pause = _pausedTimer || present;
+            if (pause == _timer.IsPaused) return;
+            if (pause) _timer.Pause();
+            else _timer.Resume();
+        }
+
         private void OnDisable()
         {
+            bool heldTimer = _blockHold || _pausedTimer;
             if (_readerHub)
             {
                 _readerHub.Changed -= SynchronizeReaders;
@@ -453,6 +478,9 @@ namespace Exhibition.Blocks
             _ready = false;
             _popup = -1;
             CancelGeneration();
+            // Leaving the screen ends both holds; the next screen owns the timer.
+            if (heldTimer && _timer) _timer.Resume();
+            _blockHold = false;
             _screenCts?.Cancel();
             _screenCts?.Dispose();
             _screenCts = null;

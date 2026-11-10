@@ -1,0 +1,13 @@
+{
+  "task": "CHECK-RFID-TIMEOUT-2 selection screen",
+  "checks": [
+    "Selection screen",
+    "Four blocks placed, no generation started",
+    "selection_screen_four_blocks: returned home 30 s after the last activity",
+    "Cards left on the board show the title popup"
+  ],
+  "inputEvents": {},
+  "secondsSinceLastActivity": 30.0,
+  "secondsSinceBlocksPlaced": 29.69,
+  "passed": true
+}

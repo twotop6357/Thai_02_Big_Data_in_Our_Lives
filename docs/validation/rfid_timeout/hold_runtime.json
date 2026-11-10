@@ -1,0 +1,30 @@
+{
+  "task": "TIMEOUT-HOLD-001",
+  "checks": [
+    "Empty group screen counts down",
+    "Group block pauses the countdown",
+    "group_block: stayed 45 s with blocks on the board, countdown paused",
+    "Removing the last block resumes the countdown",
+    "After the last block is removed, home 30 s after the last activity (30 s; since removal 70.67 s)",
+    "Product ignored by group-first still pauses",
+    "ignored_product: stayed 35 s with blocks on the board, countdown paused",
+    "One block left keeps the pause",
+    "Selection screen",
+    "selection_four_blocks: stayed 40 s with blocks on the board, countdown paused",
+    "Result screen",
+    "Result screen: pause released, countdown runs as before"
+  ],
+  "timings": {
+    "group_block_inputEvents": {
+      "Mouse:Mouse": 124
+    },
+    "after_removal_inputEvents": {
+      "Mouse:Mouse": 468
+    },
+    "secondsSinceRemoval": 70.67,
+    "secondsSinceLastActivity": 30.0,
+    "ignored_product_inputEvents": {},
+    "selection_four_blocks_inputEvents": {}
+  },
+  "passed": true
+}
