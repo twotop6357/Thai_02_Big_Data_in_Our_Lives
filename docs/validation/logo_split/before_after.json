@@ -1,0 +1,32 @@
+{
+ "idle_th": {
+  "logo_rmse": 6.61,
+  "logo_max": 62,
+  "outside_rmse": 0.08,
+  "outside_px_gt24": 0
+ },
+ "group_empty_th": {
+  "logo_rmse": 6.62,
+  "logo_max": 62,
+  "outside_rmse": 0.0,
+  "outside_px_gt24": 0
+ },
+ "idle_en": {
+  "logo_rmse": 6.61,
+  "logo_max": 62,
+  "outside_rmse": 0.08,
+  "outside_px_gt24": 0
+ },
+ "group_empty_en": {
+  "logo_rmse": 6.62,
+  "logo_max": 62,
+  "outside_rmse": 0.0,
+  "outside_px_gt24": 0
+ },
+ "selection_group_only_en": {
+  "logo_rmse": 6.74,
+  "logo_max": 62,
+  "outside_rmse": 0.0,
+  "outside_px_gt24": 0
+ }
+}

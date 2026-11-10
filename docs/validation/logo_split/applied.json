@@ -1,0 +1,55 @@
+[
+  {
+    "target": "Assets/UI/Backgrounds/Intro_bg.png",
+    "source": "bg_idle.png",
+    "before": "b5111a5b3dde0dad55ac1f98c91f4588b875601b708fb668e2d0b001cac04fc8",
+    "after": "95070c8068b632ca8fbe1ffe1f7fb5f17ccfcf2d41f2574bebff6631dac3bff9",
+    "outside_logo_rmse": 0.079,
+    "outside_logo_max": 13
+  },
+  {
+    "target": "Assets/UI/Backgrounds/SelectGroupPanel_bg.png",
+    "source": "bg_group.png",
+    "before": "f28696713c16001ca36a0900c3d330a5962a28c5cea52e707ab81c854553abe7",
+    "after": "422c176df20b5d88b411c4e514deaaabc2fdf322f6b09d4c05b5f4b5eacd3526",
+    "outside_logo_rmse": 0.0,
+    "outside_logo_max": 0
+  },
+  {
+    "target": "Assets/UI/Backgrounds/SelectAllPanel_bg.png",
+    "source": "bg_selection_en.png",
+    "before": "d0059d81526f120074cd882dce9793a9e5a3ba6a424fd63aac6440812f3baa81",
+    "after": "70879d30ad2a23f65e127359eee82f0aa36a21b17c6fd6b588033567ce3cdc22",
+    "outside_logo_rmse": 0.0,
+    "outside_logo_max": 0
+  },
+  {
+    "target": "Assets/UI/Backgrounds/RecommendedAdPanel_bg.png",
+    "source": "bg_ad.png",
+    "before": "f57c84ba2642fdf7ab0ede757baee49c82b31848e8941304347ca89a4127a530",
+    "after": "0ace8c47ac155d849150e9aab5073a8f2a172e62b14cd64bd78abece023530f7",
+    "outside_logo_rmse": 0.0,
+    "outside_logo_max": 0
+  },
+  {
+    "target": "Assets/UI/UIs_En/SelectAll/SelectionBackground_en.png",
+    "source": "bg_selection_en.png",
+    "before": "d0059d81526f120074cd882dce9793a9e5a3ba6a424fd63aac6440812f3baa81",
+    "after": "70879d30ad2a23f65e127359eee82f0aa36a21b17c6fd6b588033567ce3cdc22",
+    "outside_logo_rmse": 0.0,
+    "outside_logo_max": 0
+  },
+  {
+    "target": "Assets/UI/UIs_Th/SelectAll/SelectionBackground_th.png",
+    "source": "bg_selection_th.png",
+    "before": "ebc1a8ae18868d288f19c6411a1a04b415a940890ceaf5b28a1c4de9849887e4",
+    "after": "cad82e76c71aa2bc353aa811296c2d6cf4bd6cc08aa584294d8ec78ddff411a2",
+    "outside_logo_rmse": 0.0,
+    "outside_logo_max": 0
+  },
+  {
+    "target": "Assets/UI/UIs_Common/Logo/NSMLogo.png",
+    "after": "6e14f9d143d05321594ca4ed3992533088b45ed6d07d07ef709e5a35c58e25d6",
+    "source": "web Thai_National_Science_Museum_logo_2 1 (135x116 at 1746,40)"
+  }
+]

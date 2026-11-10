@@ -252,6 +252,8 @@ public static class ExhibitionUIBuilder
         var image = Image(parent, sprite, sprite, new Rect(0, 0, 1920, 1080));
         image.preserveAspect = false;
         Stretch(image.rectTransform);
+        // The logo is no longer baked into the backgrounds.
+        LogoAuthoring.AddAbove(image.transform);
     }
 
     private static Transform LocalizedLayer(Transform parent)

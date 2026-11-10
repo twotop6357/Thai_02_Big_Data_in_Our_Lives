@@ -1,0 +1,18 @@
+{
+  "task": "LOGO-SPLIT-001 runtime",
+  "checks": [
+    "Logo image visible: idle_th (1)",
+    "Logo image visible: group_th (1)",
+    "Selection: th",
+    "Logo image visible: selection_th (1)",
+    "Result: th",
+    "Logo image visible: result_th (1)",
+    "Logo image visible: idle_en (1)",
+    "Logo image visible: group_en (1)",
+    "Selection: en",
+    "Logo image visible: selection_en (1)",
+    "Result: en",
+    "Logo image visible: result_en (1)"
+  ],
+  "passed": true
+}
