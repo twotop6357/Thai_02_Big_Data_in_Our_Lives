@@ -1,0 +1,16 @@
+{
+  "task": "IDLE-VIDEO-001 runtime",
+  "checks": [
+    "Video shows, plays, loops, silent",
+    "Order: still bg < video < logo < texts",
+    "Looped 3 times in 13 s",
+    "English: video keeps playing",
+    "Video plays under the block popup",
+    "One video render texture on the title (1)",
+    "Start still works",
+    "Render texture released after leaving the title (0)",
+    "Video restarts after returning home, one render texture"
+  ],
+  "wrapsIn13s": 3,
+  "passed": true
+}

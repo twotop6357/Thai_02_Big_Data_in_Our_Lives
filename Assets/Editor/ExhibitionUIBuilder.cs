@@ -110,6 +110,7 @@ public static class ExhibitionUIBuilder
     private static void BuildTitle(Transform root)
     {
         Background(root, "Intro_bg");
+        IdleVideoAuthoring.Build(root.Find("Intro_bg"));
         var text = LocalizedLayer(root);
         Localized(text, "idle.title");
         Localized(text, "idle.subtitle");
