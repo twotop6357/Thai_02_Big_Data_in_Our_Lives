@@ -114,6 +114,9 @@ namespace Exhibition.UI
 
         private void OnReaderChanged(int reader, RfidBlock? previous, RfidBlock? current)
         {
+            // Hub rejects blocks while the generation snapshot holds input, so only accepted cards reach here.
+            if (current.HasValue && !Nullable.Equals(previous, current) && !_manager.IsTransitioning)
+                _manager.Audio.PlaySelected();
             if (_choosingProduct) return;
             var readers = _readerHub.Readers;
             if (readers.GroupCount != 1 || readers.ProductCount + readers.ColorCount == 0)

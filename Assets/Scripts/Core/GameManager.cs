@@ -187,6 +187,7 @@ namespace Core
         {
             if (!_isIdle || IsTransitioning || IsLanguageChanging || !_localizedUI || !_localizedUI.IsReady) return;
             IsLanguageChanging = true;
+            Audio.PlayLanguage();
             SessionLanguage next = currentLanguage == SessionLanguage.Thai ? SessionLanguage.English : SessionLanguage.Thai;
             try
             {
