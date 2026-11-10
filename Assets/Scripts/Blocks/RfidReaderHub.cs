@@ -25,6 +25,27 @@ namespace Exhibition.Blocks
         private ResultVideoController _video;
         private InactivityTimer _timer;
         private readonly string[] _rejected = new string[4];
+        // Registered cards physically on each reader, including ones the session rules ignore (group-first,
+        // generation lock) and ones kept after a session reset. The title screen uses it to ask for an empty board.
+        private readonly RfidBlock?[] _present = new RfidBlock?[4];
+        public event Action PresenceChanged;
+
+        public bool HasPresentBlocks
+        {
+            get
+            {
+                for (int i = 0; i < _present.Length; i++) if (_present[i].HasValue) return true;
+                return false;
+            }
+        }
+
+        /// <summary>Hardware adapters report every card change here, before session rules accept or ignore it.</summary>
+        public void ReportPresence(int reader, RfidBlock? block)
+        {
+            if (!IsPrimary || Nullable.Equals(_present[reader], block)) return;
+            _present[reader] = block;
+            PresenceChanged?.Invoke();
+        }
 
         private void Awake()
         {
@@ -81,28 +102,39 @@ namespace Exhibition.Blocks
 
         public bool RecognizeReader(int reader, BlockKind kind, string id)
         {
-            if (!IsPrimary || !IsArtworkReady || Readers.IsInputLocked) return false;
+            if (!IsPrimary || !IsArtworkReady) return false;
+            bool registered = artwork && artwork.Find(kind, id) != null;
+            ReportPresence(reader, registered ? new RfidBlock(kind, id) : (RfidBlock?)null);
+            if (Readers.IsInputLocked) return false;
             var old = Readers[reader];
-            if (!artwork || artwork.Find(kind, id) == null)
+            if (!registered)
             {
                 string rejected = kind + "/" + id;
                 if (_rejected[reader] != rejected) Debug.LogWarning("[RFID] Ignored block without registered artwork: " + rejected + ".", this);
                 _rejected[reader] = rejected;
-                RemoveReader(reader);
+                ClearReader(reader);
                 return false;
             }
             _rejected[reader] = null;
             var block = new RfidBlock(kind, id);
             if (!Readers.CanRecognize(reader, block))
             {
-                RemoveReader(reader);
+                ClearReader(reader);
                 return false;
             }
             if (!Readers.Set(reader, block)) return false;
             Publish(reader, old); return true;
         }
 
+        /// <summary>The card left the reader.</summary>
         public bool RemoveReader(int reader)
+        {
+            if (IsPrimary) ReportPresence(reader, null);
+            return ClearReader(reader);
+        }
+
+        // Session state only: an ignored card is still physically present.
+        private bool ClearReader(int reader)
         {
             var old = Readers[reader];
             if (!Readers.Set(reader, null)) return false;
@@ -113,6 +145,13 @@ namespace Exhibition.Blocks
         {
             var source = Readers[from]; var destination = Readers[to];
             if (!Readers.Move(from, to)) return false;
+            // The simulator drag moves the card itself.
+            if (IsPrimary && !Readers.IsInputLocked)
+            {
+                var moved = _present[from];
+                ReportPresence(from, null);
+                ReportPresence(to, moved);
+            }
             // Both changes are already committed before observers derive the semantic selection.
             Notify();
             ReaderChanged?.Invoke(from, source, null);
@@ -120,7 +159,16 @@ namespace Exhibition.Blocks
             return true;
         }
 
+        /// <summary>Removes every card (simulator "clear all").</summary>
         public void ClearReaders(bool force = false)
+        {
+            if (Readers.IsInputLocked && !force) return;
+            for (int i = 0; i < _present.Length; i++) ReportPresence(i, null);
+            ResetSession(force);
+        }
+
+        // A new session forgets accepted cards but cards on the board stay physically present.
+        private void ResetSession(bool force)
         {
             if (Readers.IsInputLocked && !force) return;
             var before = new RfidBlock?[4];
@@ -147,7 +195,7 @@ namespace Exhibition.Blocks
         private void SceneChanged(Scene previous, Scene next)
         {
             _video = null;
-            if (next.name == "0_Idle") { Readers.RequireGroupFirst = true; ClearReaders(true); ReloadArtworkAsync().Forget(); }
+            if (next.name == "0_Idle") { Readers.RequireGroupFirst = true; ResetSession(true); ReloadArtworkAsync().Forget(); }
             else if (next.name == "2_Result")
             {
                 _video = FindFirstObjectByType<ResultVideoController>();

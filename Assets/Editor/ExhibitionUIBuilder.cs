@@ -114,6 +114,7 @@ public static class ExhibitionUIBuilder
         Localized(text, "idle.title");
         Localized(text, "idle.subtitle");
         Localized(text, "idle.help");
+        TitleBlockPopupAuthoring.Build(root);
     }
 
     private static void BuildGame(Transform root, BlockExperienceController controller)

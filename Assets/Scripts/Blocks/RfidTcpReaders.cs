@@ -425,6 +425,9 @@ namespace Exhibition.Blocks
             }
             var mapping = Configuration.Find(uid);
             state.Status = mapping == null ? "Unmapped card" : mapping.kind + "/" + mapping.id;
+            // Presence is reported even when the session ignores the card (title popup asks for an empty board).
+            _hub.ReportPresence(slot, mapping == null ? (RfidBlock?)null :
+                new RfidBlock((BlockKind)Enum.Parse(typeof(BlockKind), mapping.kind), mapping.id));
             // A held card must not replay a non-group card ignored before the first group,
             // nor replay changes discarded during generation.
             if (_hub.Readers.IsInputLocked) return;

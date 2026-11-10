@@ -1,0 +1,43 @@
+{
+  "task": "UI-IDLEPOP-001 runtime",
+  "checks": [
+    "Empty board: no popup",
+    "Thai title",
+    "Popup shown and input blocked: show_group_th",
+    "Short press does not start while popup is shown: th",
+    "Long press does not change language while popup is shown: th",
+    "Popup hidden and input restored: hide_th",
+    "Ignored product still counts as present",
+    "Popup shown and input blocked: show_ignored_product",
+    "One remaining card keeps the popup",
+    "Popup hidden and input restored: hide_after_last_card",
+    "Unregistered card does not show the popup",
+    "Popup shown and input blocked: show_after_flicker",
+    "Popup hidden and input restored: hide_after_flicker",
+    "Short press starts after the board is cleared",
+    "Home resets the session but keeps the card present",
+    "Popup shown and input blocked: show_after_return_home",
+    "Short press does not start while popup is shown: th-return",
+    "Long press does not change language while popup is shown: th-return",
+    "Popup hidden and input restored: hide_after_return_home",
+    "English title",
+    "Popup shown and input blocked: show_en",
+    "Short press does not start while popup is shown: en",
+    "Long press does not change language while popup is shown: en",
+    "Same popup image in English",
+    "Popup hidden and input restored: hide_en"
+  ],
+  "timings": {
+    "show_group_th": 0.563,
+    "hide_th": 0.556,
+    "show_ignored_product": 0.555,
+    "hide_after_last_card": 0.555,
+    "show_after_flicker": 0.555,
+    "hide_after_flicker": 0.555,
+    "show_after_return_home": 1.495,
+    "hide_after_return_home": 0.555,
+    "show_en": 0.555,
+    "hide_en": 0.555
+  },
+  "passed": true
+}
