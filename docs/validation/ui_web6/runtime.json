@@ -1,0 +1,10 @@
+{
+  "task": "UI-WEB-006 runtime",
+  "checks": [
+    "Thai",
+    "Thai selection help box shown",
+    "Result",
+    "Thai video end text shown"
+  ],
+  "passed": true
+}

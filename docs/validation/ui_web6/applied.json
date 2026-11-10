@@ -1,0 +1,14 @@
+[
+ {
+  "source": "download/48.png",
+  "target": "Assets/UI/UIs_Th/SelectAll/ButtonHelpBox_selectall_th.png",
+  "before": "698923e35df55bd6b11a60ac4738c82c371c5cdf623e567bd27ca95dd01fc638",
+  "after": "132d2820b63c3a675f1f4a8a4964af40afa3898c5dcc1d7899f480440728da12"
+ },
+ {
+  "source": "download/59.png",
+  "target": "Assets/UI/UIs_Th/Video/VideoEndPopupText_th.png",
+  "before": "2600045f83ef4c680ea9c64db7e63b03636adf53687e8ed44c6d7ffd0f865882",
+  "after": "d9b659b2d4bfbc7602b8bf14ba166c3df938648d6209bc96512992a8bb6c108e"
+ }
+]

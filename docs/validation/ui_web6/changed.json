@@ -1,0 +1,210 @@
+[
+ {
+  "index": 25,
+  "oldIndex": 25,
+  "name": "버튼 안내문구 2.png",
+  "target": "Assets/UI/UIs_Th/Idle/ButtonHelpBox_th.png",
+  "id": "idle.help",
+  "language": "th",
+  "newSize": [
+   1343,
+   173
+  ],
+  "oldSize": [
+   1343,
+   173
+  ],
+  "px_gt8": 21,
+  "max": 38,
+  "visible_px_gt8": 14,
+  "visible_max": 16,
+  "bbox": [
+   2,
+   15,
+   1312,
+   155
+  ]
+ },
+ {
+  "index": 41,
+  "oldIndex": 41,
+  "name": "버튼 안내문구 3.png",
+  "target": "Assets/UI/UIs_Th/GroupSelect/ButtonHelpBox_groupselect_th.png",
+  "id": "group.help",
+  "language": "th",
+  "newSize": [
+   740,
+   145
+  ],
+  "oldSize": [
+   740,
+   145
+  ],
+  "px_gt8": 7,
+  "max": 19,
+  "visible_px_gt8": 7,
+  "visible_max": 19,
+  "bbox": [
+   25,
+   25,
+   661,
+   50
+  ]
+ },
+ {
+  "index": 48,
+  "oldIndex": 48,
+  "name": "버튼 안내문구 3-1.png",
+  "target": "Assets/UI/UIs_Th/SelectAll/ButtonHelpBox_selectall_th.png",
+  "id": "selection.help",
+  "language": "th",
+  "newSize": [
+   747,
+   153
+  ],
+  "oldSize": [
+   747,
+   153
+  ],
+  "px_gt8": 3005,
+  "max": 115,
+  "visible_px_gt8": 2991,
+  "visible_max": 115,
+  "bbox": [
+   15,
+   11,
+   719,
+   140
+  ]
+ },
+ {
+  "index": 53,
+  "oldIndex": 53,
+  "name": "버튼 안내문구 3-2.png",
+  "target": "Assets/UI/UIs_Th/RecommendedAd/ButtonHelpBox_recommendedAd_th.png",
+  "id": "result.help",
+  "language": "th",
+  "newSize": [
+   832,
+   153
+  ],
+  "oldSize": [
+   832,
+   153
+  ],
+  "px_gt8": 2,
+  "max": 16,
+  "visible_px_gt8": 2,
+  "visible_max": 16,
+  "bbox": [
+   15,
+   17,
+   25,
+   32
+  ]
+ },
+ {
+  "index": 59,
+  "oldIndex": 59,
+  "name": "นำกำร์ดทั ้งหมดออก จำกกระดำนเพื ่อจบกิจกรรม.png",
+  "target": "Assets/UI/UIs_Th/Video/VideoEndPopupText_th.png",
+  "id": "video.end",
+  "language": "th",
+  "newSize": [
+   1026,
+   189
+  ],
+  "oldSize": [
+   1026,
+   189
+  ],
+  "px_gt8": 30238,
+  "max": 255,
+  "visible_px_gt8": 30238,
+  "visible_max": 255,
+  "bbox": [
+   117,
+   0,
+   908,
+   74
+  ]
+ },
+ {
+  "index": 62,
+  "oldIndex": 62,
+  "name": "Group 1-1.png",
+  "target": "Assets/UI/UIs_En/Idle/Title_en.png",
+  "id": "idle.title",
+  "language": "en",
+  "newSize": [
+   873,
+   435
+  ],
+  "oldSize": [
+   873,
+   435
+  ],
+  "px_gt8": 112,
+  "max": 255,
+  "visible_px_gt8": 23,
+  "visible_max": 16,
+  "bbox": [
+   48,
+   83,
+   774,
+   370
+  ]
+ },
+ {
+  "index": 67,
+  "oldIndex": 67,
+  "name": "버튼 안내문구 3-4.png",
+  "target": "Assets/UI/UIs_En/GroupSelect/ButtonHelpBox_groupselectPanel_en.png",
+  "id": "group.help",
+  "language": "en",
+  "newSize": [
+   896,
+   153
+  ],
+  "oldSize": [
+   896,
+   153
+  ],
+  "px_gt8": 4,
+  "max": 10,
+  "visible_px_gt8": 2,
+  "visible_max": 10,
+  "bbox": [
+   449,
+   49,
+   591,
+   50
+  ]
+ },
+ {
+  "index": 72,
+  "oldIndex": 72,
+  "name": "버튼 안내문구 3-5.png",
+  "target": "Assets/UI/UIs_En/SelectAll/ButtonHelpBox_selectallPanel_en.png",
+  "id": "selection.help",
+  "language": "en",
+  "newSize": [
+   896,
+   153
+  ],
+  "oldSize": [
+   896,
+   153
+  ],
+  "px_gt8": 21,
+  "max": 30,
+  "visible_px_gt8": 17,
+  "visible_max": 16,
+  "bbox": [
+   25,
+   11,
+   868,
+   140
+  ]
+ }
+]

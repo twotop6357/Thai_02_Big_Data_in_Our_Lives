@@ -1,0 +1,20 @@
+{
+ "selection.help": {
+  "index": 48,
+  "frame": 46,
+  "x": 593,
+  "y": 899,
+  "width": 747,
+  "height": 153,
+  "opaqueRmse": 1.779
+ },
+ "video.end": {
+  "index": 59,
+  "frame": 58,
+  "x": 447,
+  "y": 438,
+  "width": 1026,
+  "height": 189,
+  "opaqueRmse": 9.065
+ }
+}
