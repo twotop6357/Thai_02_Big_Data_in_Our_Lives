@@ -5,22 +5,22 @@
     {
       "kind": "group",
       "id": "child",
-      "image": "Images/en/ChildBlock_Eng.png"
+      "image": "Images/th/ChildBlock_Thai.png"
     },
     {
       "kind": "group",
       "id": "student",
-      "image": "Images/en/StudentBlock_Eng.png"
+      "image": "Images/th/StudentBlock_Thai.png"
     },
     {
       "kind": "group",
       "id": "working_adult",
-      "image": "Images/en/WorkingAdultBlock_Eng.png"
+      "image": "Images/th/WorkingAdultBlock_Thai.png"
     },
     {
       "kind": "group",
       "id": "senior",
-      "image": "Images/en/SeniorBlock_Eng.png"
+      "image": "Images/th/SeniorBlock_Thai.png"
     },
     {
       "kind": "product",

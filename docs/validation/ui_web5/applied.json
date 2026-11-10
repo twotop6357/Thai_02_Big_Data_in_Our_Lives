@@ -1,0 +1,514 @@
+{
+  "files": [
+    {
+      "source": "download/23.png",
+      "target": "Assets/UI/UIs_Th/Idle/Title_th.png",
+      "before": "6ece72550fa5c2c65faefcc1b7bce700faeb80e7533b800b5c0d9f748087f7e0",
+      "after": "99f10f66600905ea05865c1e015648c7b7fc0c28f04a1ff16e58147e8b42b09d",
+      "new": false
+    },
+    {
+      "source": "download/22.png",
+      "target": "Assets/UI/UIs_Th/Idle/Subtitle_th.png",
+      "before": "6b92c612cd2a4da84760f690fe1b315b59a2dcb9b0f6a5cfa249af3aec947cca",
+      "after": "0a2a8c6679985232f5b628d2d220d37c5bca3f5ecc70861e681d462677d1bf52",
+      "new": false
+    },
+    {
+      "source": "download/25.png",
+      "target": "Assets/UI/UIs_Th/Idle/ButtonHelpBox_th.png",
+      "before": "9a3a637c7b929c2c148229b78fc7f4cbdd05c6d38d905d19e0ed4fb21e3c82a9",
+      "after": "3683da6383ee4545b873ffbd0b7d89fba94652e216d16fab597e3a321d997f84",
+      "new": false
+    },
+    {
+      "source": "download/39.png",
+      "target": "Assets/UI/UIs_Th/GroupSelect/Title_groupselect_th.png",
+      "before": "ab139d338aa806ceadddf5a6cdfcea0fe36fedfab92296be9d88ab3b8ae1f249",
+      "after": "6933a48aa40ecd341268b94542f1f27d9ac9da826e6cc34b6a0d95065dd320dd",
+      "new": false
+    },
+    {
+      "source": "download/40.png",
+      "target": "Assets/UI/UIs_Th/GroupSelect/Subtitle_groupselect_th.png",
+      "before": "be7afaa10e8134a6dbbf868654f0c3db24ceddf1d3f267ee997933a499888a9b",
+      "after": "f43f92158f48f66bd5a1f6c1471b2144c6b09c1c16f37cca5ffd517a0d08fec5",
+      "new": false
+    },
+    {
+      "source": "download/41.png",
+      "target": "Assets/UI/UIs_Th/GroupSelect/ButtonHelpBox_groupselect_th.png",
+      "before": "4d43d61e6f01243c14b3189b36d5622c9311b377d7b071d5791dfd74ab35909e",
+      "after": "9bc5a2d180c0cc27b3c7e407e69615e3581e49c78e76d6a6e701d6755af5acd4",
+      "new": false
+    },
+    {
+      "source": "download/49.png",
+      "target": "Assets/UI/UIs_Th/SelectAll/Title_selectall_th.png",
+      "before": "e5e15c0f5eada14dfd8d1f18c153ea9eba316262d0ac5283a6e6801415e37656",
+      "after": "2b6aa1444e83492966fe61add30e8fa66549b9ae848a715d73dc3c75f8540d41",
+      "new": false
+    },
+    {
+      "source": "download/50.png",
+      "target": "Assets/UI/UIs_Th/SelectAll/Subtitle_selectall_th.png",
+      "before": "f2652a6ecfbbbc46edcf5360f8c9ae9b9eef001fed41fa99e914dce469827223",
+      "after": "6297dfea8b5c200b6fb63b28b38180cb7906cf5de596354f022b677bd19a52bf",
+      "new": false
+    },
+    {
+      "source": "download/48.png",
+      "target": "Assets/UI/UIs_Th/SelectAll/ButtonHelpBox_selectall_th.png",
+      "before": "77c9faf07530715cf69ccd5edec1a13771d43d4e949754dab271ad2e4ed17499",
+      "after": "698923e35df55bd6b11a60ac4738c82c371c5cdf623e567bd27ca95dd01fc638",
+      "new": false
+    },
+    {
+      "source": "download/54.png",
+      "target": "Assets/UI/UIs_Th/RecommendedAd/Title_recommendedAd_th.png",
+      "before": "6a00b6341426e0e82ed15d52c240eb37a01cdae9b4a2bc6228a0881d6e870161",
+      "after": "5fd9fdec68bf477595debc1a7b000bb0b4ea393e69b32146b9e9d135c4b8e99d",
+      "new": false
+    },
+    {
+      "source": "download/55.png",
+      "target": "Assets/UI/UIs_Th/RecommendedAd/Subtitle_recommendedAd_th.png",
+      "before": "5ef59e3239b307c2b2d00b83bf4d58a3acd36cd8934c4172ab1bb861bfdf3371",
+      "after": "ce74f5c503e96884ea1ff777c9490ed1ad58f601ca6ca484e56a3bc7c251d069",
+      "new": false
+    },
+    {
+      "source": "download/53.png",
+      "target": "Assets/UI/UIs_Th/RecommendedAd/ButtonHelpBox_recommendedAd_th.png",
+      "before": "c623b535569f4aeda98282d66cbff6c90024addb29b502107510b68bd0670d8d",
+      "after": "5bea9d7765576297fe2c7ef485734b84ff41d04ecd4bb6387cb7c0dd5755b5d3",
+      "new": false
+    },
+    {
+      "source": "download/59.png",
+      "target": "Assets/UI/UIs_Th/Video/VideoEndPopupText_th.png",
+      "before": "d0d783130d6adc2bc0930a5257f7d1de2997b0d953769b61276a1a827115b56c",
+      "after": "2600045f83ef4c680ea9c64db7e63b03636adf53687e8ed44c6d7ffd0f865882",
+      "new": false
+    },
+    {
+      "source": "download/57.png",
+      "target": "Assets/UI/UIs_Th/Video/VideoHomeHint_th.png",
+      "before": "fd281dffa6eddfb67cc106c39ade6676eb5b6ac1565c5187ad952fb8bc99993b",
+      "after": "1c035da7d6295fe78ed1a0dc372c79b40065355059891f2f861dd74b82c86507",
+      "new": false
+    },
+    {
+      "source": "download/67.png",
+      "target": "Assets/UI/UIs_En/GroupSelect/ButtonHelpBox_groupselectPanel_en.png",
+      "before": "3023140813047a71287148ef85d0754d67a8469da579ae7a5487feb1db18c9f2",
+      "after": "982293ad564cca1e440f2b0cbec5c89f985a3686c27211a31fd23eb0bf70d887",
+      "new": false
+    },
+    {
+      "source": "download/72.png",
+      "target": "Assets/UI/UIs_En/SelectAll/ButtonHelpBox_selectallPanel_en.png",
+      "before": "c4dd21c902114a5a7e1599edb9103ba819bf40cda4bc4b27b332f67a5ec872d7",
+      "after": "1cf5f6141a59996914fe475b9dcfadf9def7b7eeda69f436403d4c65df6adf0a",
+      "new": false
+    },
+    {
+      "source": "extra/group_slot_th_Frame351.png",
+      "target": "Assets/UI/UIs_Th/GroupSelect/GroupSlot_th.png",
+      "before": "201bee385d33217c5f6be78e22edb8223333ac0b9f3236626f4fb3c34e209789",
+      "after": "60ebaa42394ebb3f64950324e541129a603be9a19052d2631fb0a896a833c0b2",
+      "new": false
+    },
+    {
+      "source": "derived from Assets/UI/UIs_Th/GroupSelect/GroupSlot_th.png",
+      "target": "Assets/UI/UIs_Th/GroupSelect/GroupSlotLabel_th.png",
+      "after": "75f2eb64a53ba4a0d716e41901856a6d20ba16a467a9af01df035f1e6086f684",
+      "max_channel_error": 0.94,
+      "text": [
+        163.0,
+        220.0,
+        244.0
+      ]
+    },
+    {
+      "source": "download/00.png",
+      "target": "Assets/UI/Blocks/ThaiBlocks/BagBlock_Thai.png",
+      "before": "af7c173ca8f2d58785e46ca1248649ad823cc71f283aae4a7e7348031a83d825",
+      "after": "8949e58e860b6c3c41b7074a0b0677817369be0efcc8eb073b952ad2b1d6e68e",
+      "new": false
+    },
+    {
+      "source": "download/00.png",
+      "target": "Assets/StreamingAssets/BlockArtwork/Images/th/BagBlock_Thai.png",
+      "before": "af7c173ca8f2d58785e46ca1248649ad823cc71f283aae4a7e7348031a83d825",
+      "after": "8949e58e860b6c3c41b7074a0b0677817369be0efcc8eb073b952ad2b1d6e68e",
+      "new": false
+    },
+    {
+      "source": "download/01.png",
+      "target": "Assets/UI/Blocks/ThaiBlocks/BlackBlock_Thai.png",
+      "before": "8b1152ba53046688150dad77419652c3a178ce08190016cee53b4a99e19c177e",
+      "after": "e8b611fd16d82a864b1c9af7bbc6e734eb014b3899fae8fb700399535fcdced6",
+      "new": false
+    },
+    {
+      "source": "download/01.png",
+      "target": "Assets/StreamingAssets/BlockArtwork/Images/th/BlackBlock_Thai.png",
+      "before": "8b1152ba53046688150dad77419652c3a178ce08190016cee53b4a99e19c177e",
+      "after": "e8b611fd16d82a864b1c9af7bbc6e734eb014b3899fae8fb700399535fcdced6",
+      "new": false
+    },
+    {
+      "source": "download/02.png",
+      "target": "Assets/UI/Blocks/ThaiBlocks/SunglassesBlock_Thai.png",
+      "before": "470a405f86a5a2ad117918fed064ab3ec3166ca814f8261f1577783a70b4fc4b",
+      "after": "ab5315bbb292d8e83c0819ddf7aef1f7cf1f1540500d51482296f9775ebbfa06",
+      "new": false
+    },
+    {
+      "source": "download/02.png",
+      "target": "Assets/StreamingAssets/BlockArtwork/Images/th/SunglassesBlock_Thai.png",
+      "before": "470a405f86a5a2ad117918fed064ab3ec3166ca814f8261f1577783a70b4fc4b",
+      "after": "ab5315bbb292d8e83c0819ddf7aef1f7cf1f1540500d51482296f9775ebbfa06",
+      "new": false
+    },
+    {
+      "source": "download/03.png",
+      "target": "Assets/UI/Blocks/ThaiBlocks/RedBlock_Thai.png",
+      "before": "14e26a5e82142498c37465600d31fef9c31fbb7547162391acf9ca341ca8e605",
+      "after": "b172970b2fabdb5dafa5be10fce4ca02a2291ae137c065a43f29d4eb9c951168",
+      "new": false
+    },
+    {
+      "source": "download/03.png",
+      "target": "Assets/StreamingAssets/BlockArtwork/Images/th/RedBlock_Thai.png",
+      "before": "14e26a5e82142498c37465600d31fef9c31fbb7547162391acf9ca341ca8e605",
+      "after": "b172970b2fabdb5dafa5be10fce4ca02a2291ae137c065a43f29d4eb9c951168",
+      "new": false
+    },
+    {
+      "source": "download/04.png",
+      "target": "Assets/UI/Blocks/ThaiBlocks/GreenBlock_Thai.png",
+      "before": "3dc1e32b42f39cbc0a28e3eaac31067325d79c2156bc3445821198dc7efc7df5",
+      "after": "eeeadd436b3dc1312fb42834a2b3c7a2ea0940d3622b9560f3d5b8b15b96a9ff",
+      "new": false
+    },
+    {
+      "source": "download/04.png",
+      "target": "Assets/StreamingAssets/BlockArtwork/Images/th/GreenBlock_Thai.png",
+      "before": "3dc1e32b42f39cbc0a28e3eaac31067325d79c2156bc3445821198dc7efc7df5",
+      "after": "eeeadd436b3dc1312fb42834a2b3c7a2ea0940d3622b9560f3d5b8b15b96a9ff",
+      "new": false
+    },
+    {
+      "source": "download/05.png",
+      "target": "Assets/UI/Blocks/ThaiBlocks/ShoesBlock_Thai.png",
+      "before": "6b6b1f28da157cfe917bcf4c50b6caaaa53f1118004771918a40b0d71744d944",
+      "after": "781bc3f47ef10e809ad594af6a8dc05de0e33ab3e31fa8437fbc6e0b400fdce7",
+      "new": false
+    },
+    {
+      "source": "download/05.png",
+      "target": "Assets/StreamingAssets/BlockArtwork/Images/th/ShoesBlock_Thai.png",
+      "before": "6b6b1f28da157cfe917bcf4c50b6caaaa53f1118004771918a40b0d71744d944",
+      "after": "781bc3f47ef10e809ad594af6a8dc05de0e33ab3e31fa8437fbc6e0b400fdce7",
+      "new": false
+    },
+    {
+      "source": "download/06.png",
+      "target": "Assets/UI/Blocks/ThaiBlocks/WhiteBlock_Thai.png",
+      "before": "d9b6f7624f3271020d64e0e905b706d0d9a69bf5400d7bbd04b9868d230fdbd6",
+      "after": "12c861c766e6eec4785304a19e030356a43a06bcf75517e0f6bec0e4a5eed20e",
+      "new": false
+    },
+    {
+      "source": "download/06.png",
+      "target": "Assets/StreamingAssets/BlockArtwork/Images/th/WhiteBlock_Thai.png",
+      "before": "d9b6f7624f3271020d64e0e905b706d0d9a69bf5400d7bbd04b9868d230fdbd6",
+      "after": "12c861c766e6eec4785304a19e030356a43a06bcf75517e0f6bec0e4a5eed20e",
+      "new": false
+    },
+    {
+      "source": "download/07.png",
+      "target": "Assets/UI/Blocks/ThaiBlocks/WristWatchBlock_Thai.png",
+      "before": "aa5dcbc4e79831ec483142e23a3304ae7180685ffde158a5c0be7c4e96f1d7eb",
+      "after": "9bdb289f01ef79777cfc91fe0529c08c301d972ad4b453860a998664d4059911",
+      "new": false
+    },
+    {
+      "source": "download/07.png",
+      "target": "Assets/StreamingAssets/BlockArtwork/Images/th/WristWatchBlock_Thai.png",
+      "before": "aa5dcbc4e79831ec483142e23a3304ae7180685ffde158a5c0be7c4e96f1d7eb",
+      "after": "9bdb289f01ef79777cfc91fe0529c08c301d972ad4b453860a998664d4059911",
+      "new": false
+    },
+    {
+      "source": "download/08.png",
+      "target": "Assets/UI/Blocks/ThaiBlocks/HatBlock_Thai.png",
+      "before": "e02a1915085bedaf2beebbbdbaed9138a6e2c69a5cec96b8de0a2e89d83432e8",
+      "after": "aac39f89ba652f963b7b4ba7e2549d50db03f53348209564445ac0380efe1346",
+      "new": false
+    },
+    {
+      "source": "download/08.png",
+      "target": "Assets/StreamingAssets/BlockArtwork/Images/th/HatBlock_Thai.png",
+      "before": "e02a1915085bedaf2beebbbdbaed9138a6e2c69a5cec96b8de0a2e89d83432e8",
+      "after": "aac39f89ba652f963b7b4ba7e2549d50db03f53348209564445ac0380efe1346",
+      "new": false
+    },
+    {
+      "source": "download/09.png",
+      "target": "Assets/UI/Blocks/ThaiBlocks/BlueBlock_Thai.png",
+      "before": "d08fa038a84ce5b10732d71712ed4cf00ca85774f25f3f7319241c18bd105580",
+      "after": "0234cfaa706da63a9e733398d8b98bfd404ad8606ba37ee589c0536d2670d1ad",
+      "new": false
+    },
+    {
+      "source": "download/09.png",
+      "target": "Assets/StreamingAssets/BlockArtwork/Images/th/BlueBlock_Thai.png",
+      "before": "d08fa038a84ce5b10732d71712ed4cf00ca85774f25f3f7319241c18bd105580",
+      "after": "0234cfaa706da63a9e733398d8b98bfd404ad8606ba37ee589c0536d2670d1ad",
+      "new": false
+    },
+    {
+      "source": "download/10.png",
+      "target": "Assets/UI/Blocks/ThaiBlocks/TumblerBlock_Thai.png",
+      "before": "449490deadc1f99c47b9d7a6237535ee90ac84d2002e8422bae1519f031e0a7a",
+      "after": "a3b399dbcce9be7d0a8dbf95dee5b30b5b03cb6663dcc71a421fb75e9de98b79",
+      "new": false
+    },
+    {
+      "source": "download/10.png",
+      "target": "Assets/StreamingAssets/BlockArtwork/Images/th/TumblerBlock_Thai.png",
+      "before": "449490deadc1f99c47b9d7a6237535ee90ac84d2002e8422bae1519f031e0a7a",
+      "after": "a3b399dbcce9be7d0a8dbf95dee5b30b5b03cb6663dcc71a421fb75e9de98b79",
+      "new": false
+    },
+    {
+      "source": "download/11.png",
+      "target": "Assets/UI/Blocks/ThaiBlocks/HeadphonesBlock_Thai.png",
+      "before": "adb93fe15e3f5747ba9afd47b177c1a8a8368f73064f7d223ef9a23d530ea638",
+      "after": "ede8f999b96bf75560d00814a70ef7ed8d1d4ffac89b23aa8b5fb3c3d100bb87",
+      "new": false
+    },
+    {
+      "source": "download/11.png",
+      "target": "Assets/StreamingAssets/BlockArtwork/Images/th/HeadphonesBlock_Thai.png",
+      "before": "adb93fe15e3f5747ba9afd47b177c1a8a8368f73064f7d223ef9a23d530ea638",
+      "after": "ede8f999b96bf75560d00814a70ef7ed8d1d4ffac89b23aa8b5fb3c3d100bb87",
+      "new": false
+    },
+    {
+      "source": "download/13.png",
+      "target": "Assets/UI/Blocks/ThaiBlocks/BicycleBlock_Thai.png",
+      "before": "a651f249d36d377c63a99021080ce942856c7c220752b29410ab0a0c52346a45",
+      "after": "39dd541dede0bcbaf9ea6a2c0a9bf4aa0eb08a5828b9783284f8c4130943da0b",
+      "new": false
+    },
+    {
+      "source": "download/13.png",
+      "target": "Assets/StreamingAssets/BlockArtwork/Images/th/BicycleBlock_Thai.png",
+      "before": "a651f249d36d377c63a99021080ce942856c7c220752b29410ab0a0c52346a45",
+      "after": "39dd541dede0bcbaf9ea6a2c0a9bf4aa0eb08a5828b9783284f8c4130943da0b",
+      "new": false
+    },
+    {
+      "source": "download/14.png",
+      "target": "Assets/UI/Blocks/ThaiBlocks/YellowBlock_Thai.png",
+      "before": "13d6f7b79743bb478fd5df82cdb856d0db30ec55e0ea592dbfd5f6df5aaaddac",
+      "after": "b00e472839d77adba16681c6af43ae34391bcb5e7311f0eafa43274933276b38",
+      "new": false
+    },
+    {
+      "source": "download/14.png",
+      "target": "Assets/StreamingAssets/BlockArtwork/Images/th/YellowBlock_Thai.png",
+      "before": "13d6f7b79743bb478fd5df82cdb856d0db30ec55e0ea592dbfd5f6df5aaaddac",
+      "after": "b00e472839d77adba16681c6af43ae34391bcb5e7311f0eafa43274933276b38",
+      "new": false
+    },
+    {
+      "source": "download/15.png",
+      "target": "Assets/UI/Blocks/ThaiBlocks/UmbrellaBlock_Thai.png",
+      "before": "25d882f99d67f49a82b13871a04d836c0791e09eddd436935f820cf6945efad0",
+      "after": "918139212e87d55f9c03efed42874b5bc7e2e6295df09806ddadc9529c3819c1",
+      "new": false
+    },
+    {
+      "source": "download/15.png",
+      "target": "Assets/StreamingAssets/BlockArtwork/Images/th/UmbrellaBlock_Thai.png",
+      "before": "25d882f99d67f49a82b13871a04d836c0791e09eddd436935f820cf6945efad0",
+      "after": "918139212e87d55f9c03efed42874b5bc7e2e6295df09806ddadc9529c3819c1",
+      "new": false
+    },
+    {
+      "source": "download/16.png",
+      "target": "Assets/UI/Blocks/ThaiBlocks/TopBlock_Thai.png",
+      "before": "7454d1ff9529c80b6918eda833f66bf0597c1e4b29021377da75cdc7f3105c9e",
+      "after": "0d5c1453477f18a7df4e4124ddcd67ef74fa1bbbaceef276ab7fa655b65a5b1d",
+      "new": false
+    },
+    {
+      "source": "download/16.png",
+      "target": "Assets/StreamingAssets/BlockArtwork/Images/th/TopBlock_Thai.png",
+      "before": "7454d1ff9529c80b6918eda833f66bf0597c1e4b29021377da75cdc7f3105c9e",
+      "after": "0d5c1453477f18a7df4e4124ddcd67ef74fa1bbbaceef276ab7fa655b65a5b1d",
+      "new": false
+    },
+    {
+      "source": "download/17.png",
+      "target": "Assets/UI/Blocks/ThaiBlocks/StudentBlock_Thai.png",
+      "before": null,
+      "after": "d763444120e04db295d74489c95c3fe51539e056ccd550a53cb4d7dbd16e1c00",
+      "new": true
+    },
+    {
+      "source": "download/17.png",
+      "target": "Assets/StreamingAssets/BlockArtwork/Images/th/StudentBlock_Thai.png",
+      "before": null,
+      "after": "d763444120e04db295d74489c95c3fe51539e056ccd550a53cb4d7dbd16e1c00",
+      "new": true
+    },
+    {
+      "source": "download/18.png",
+      "target": "Assets/UI/Blocks/ThaiBlocks/ChildBlock_Thai.png",
+      "before": null,
+      "after": "6ea56d00cd0087898fac7c0ca20ef4631610e5d60cad2ceec24145cd39249eb1",
+      "new": true
+    },
+    {
+      "source": "download/18.png",
+      "target": "Assets/StreamingAssets/BlockArtwork/Images/th/ChildBlock_Thai.png",
+      "before": null,
+      "after": "6ea56d00cd0087898fac7c0ca20ef4631610e5d60cad2ceec24145cd39249eb1",
+      "new": true
+    },
+    {
+      "source": "download/19.png",
+      "target": "Assets/UI/Blocks/ThaiBlocks/SeniorBlock_Thai.png",
+      "before": null,
+      "after": "ca8388b6fcb0a608a8a0ee1ed6edcb5b42120a6bb2960ba96ef6a94fce93d47c",
+      "new": true
+    },
+    {
+      "source": "download/19.png",
+      "target": "Assets/StreamingAssets/BlockArtwork/Images/th/SeniorBlock_Thai.png",
+      "before": null,
+      "after": "ca8388b6fcb0a608a8a0ee1ed6edcb5b42120a6bb2960ba96ef6a94fce93d47c",
+      "new": true
+    },
+    {
+      "source": "download/20.png",
+      "target": "Assets/UI/Blocks/ThaiBlocks/WorkingAdultBlock_Thai.png",
+      "before": null,
+      "after": "372f58c91d2000219b7b67c4b79e52a91758dda6e2ce92187ddb267fee6f5c59",
+      "new": true
+    },
+    {
+      "source": "download/20.png",
+      "target": "Assets/StreamingAssets/BlockArtwork/Images/th/WorkingAdultBlock_Thai.png",
+      "before": null,
+      "after": "372f58c91d2000219b7b67c4b79e52a91758dda6e2ce92187ddb267fee6f5c59",
+      "new": true
+    }
+  ],
+  "thai": {
+    "idle.title": {
+      "x": 64,
+      "y": 42,
+      "width": 859,
+      "height": 426
+    },
+    "idle.subtitle": {
+      "x": 70,
+      "y": 488,
+      "width": 521,
+      "height": 105
+    },
+    "idle.help": {
+      "x": 294,
+      "y": 879,
+      "width": 1343,
+      "height": 173
+    },
+    "group.title": {
+      "x": 442,
+      "y": 122,
+      "width": 1047,
+      "height": 136
+    },
+    "group.subtitle": {
+      "x": 553,
+      "y": 263,
+      "width": 816,
+      "height": 42
+    },
+    "group.help": {
+      "x": 596,
+      "y": 907,
+      "width": 740,
+      "height": 145
+    },
+    "selection.title": {
+      "x": 433,
+      "y": 36,
+      "width": 1063,
+      "height": 158
+    },
+    "selection.subtitle": {
+      "x": 558,
+      "y": 200,
+      "width": 805,
+      "height": 38
+    },
+    "selection.help": {
+      "x": 593,
+      "y": 899,
+      "width": 747,
+      "height": 153
+    },
+    "result.title": {
+      "x": 320,
+      "y": 63,
+      "width": 1218,
+      "height": 146
+    },
+    "result.subtitle": {
+      "x": 540,
+      "y": 221,
+      "width": 905,
+      "height": 63
+    },
+    "result.help": {
+      "x": 550,
+      "y": 899,
+      "width": 832,
+      "height": 153
+    },
+    "video.end": {
+      "x": 447,
+      "y": 438,
+      "width": 1026,
+      "height": 189
+    },
+    "video.home": {
+      "x": 40,
+      "y": 40,
+      "width": 469,
+      "height": 94
+    }
+  },
+  "english": {
+    "group.help": {
+      "x": 518,
+      "y": 899,
+      "width": 896,
+      "height": 153
+    },
+    "selection.help": {
+      "x": 518,
+      "y": 899,
+      "width": 896,
+      "height": 153
+    }
+  }
+}

@@ -16,19 +16,19 @@ MonoBehaviour:
   - kind: 0
     id: child
     sprite: {fileID: 21300000, guid: 493032aa0e9d252468d2377feb81df19, type: 3}
-    thaiSprite: {fileID: 0}
+    thaiSprite: {fileID: 21300000, guid: eaa3a9e8670a8314fb06e120e2d80cff, type: 3}
   - kind: 0
     id: student
     sprite: {fileID: 21300000, guid: de6ad774117646646aab5c5013419dac, type: 3}
-    thaiSprite: {fileID: 0}
+    thaiSprite: {fileID: 21300000, guid: 547d8e62d302e614fb6c3840db5cc5d3, type: 3}
   - kind: 0
     id: working_adult
     sprite: {fileID: 21300000, guid: d5df35f86db06004ba9b3714923c3432, type: 3}
-    thaiSprite: {fileID: 0}
+    thaiSprite: {fileID: 21300000, guid: 321ba8807ee3a784e904f2b737a62a0f, type: 3}
   - kind: 0
     id: senior
     sprite: {fileID: 21300000, guid: 92c68b5907cb3b548af61c1543024716, type: 3}
-    thaiSprite: {fileID: 0}
+    thaiSprite: {fileID: 21300000, guid: 402d59bda8af115498aec0254c65eea9, type: 3}
   - kind: 1
     id: bags
     sprite: {fileID: 21300000, guid: 546624dba6fc8e64490a1fb0e739bf4b, type: 3}

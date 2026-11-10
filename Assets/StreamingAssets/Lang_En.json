@@ -51,9 +51,9 @@
     {
       "id": "group.help",
       "sprite": "ButtonHelpBox_groupselectPanel_en",
-      "x": 515,
+      "x": 518,
       "y": 899,
-      "width": 902,
+      "width": 896,
       "height": 153,
       "figmaNode": "27:656"
     },
@@ -78,9 +78,9 @@
     {
       "id": "selection.help",
       "sprite": "ButtonHelpBox_selectallPanel_en",
-      "x": 515,
+      "x": 518,
       "y": 899,
-      "width": 902,
+      "width": 896,
       "height": 153,
       "figmaNode": "27:676"
     },

@@ -131,45 +131,45 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 102d2cb2a1b41914fae1a9855367f98a, type: 3}
   defaultThai: "{\r\n  \"schemaVersion\": 1,\r\n  \"language\": \"th\",\r\n  \"video\":
     \"Videos/Video_th\",\r\n  \"images\": [\r\n    {\r\n      \"id\": \"idle.title\",\r\n     
-    \"sprite\": \"Title_th\",\r\n      \"x\": 64,\r\n      \"y\": 39,\r\n      \"width\":
-    869,\r\n      \"height\": 429,\r\n      \"figmaNode\": \"27:525\"\r\n    },\r\n   
+    \"sprite\": \"Title_th\",\r\n      \"x\": 64,\r\n      \"y\": 42,\r\n      \"width\":
+    859,\r\n      \"height\": 426,\r\n      \"figmaNode\": \"27:525\"\r\n    },\r\n   
     {\r\n      \"id\": \"idle.subtitle\",\r\n      \"sprite\": \"Subtitle_th\",\r\n     
-    \"x\": 67,\r\n      \"y\": 486,\r\n      \"width\": 486,\r\n      \"height\":
+    \"x\": 70,\r\n      \"y\": 488,\r\n      \"width\": 521,\r\n      \"height\":
     105,\r\n      \"figmaNode\": \"27:525\"\r\n    },\r\n    {\r\n      \"id\": \"idle.help\",\r\n     
-    \"sprite\": \"ButtonHelpBox_th\",\r\n      \"x\": 307,\r\n      \"y\": 879,\r\n     
-    \"width\": 1315,\r\n      \"height\": 173,\r\n      \"figmaNode\": \"27:525\"\r\n   
+    \"sprite\": \"ButtonHelpBox_th\",\r\n      \"x\": 294,\r\n      \"y\": 879,\r\n     
+    \"width\": 1343,\r\n      \"height\": 173,\r\n      \"figmaNode\": \"27:525\"\r\n   
     },\r\n    {\r\n      \"id\": \"group.title\",\r\n      \"sprite\": \"Title_groupselect_th\",\r\n     
-    \"x\": 422,\r\n      \"y\": 109,\r\n      \"width\": 1088,\r\n      \"height\":
-    150,\r\n      \"figmaNode\": \"27:538\"\r\n    },\r\n    {\r\n      \"id\": \"group.subtitle\",\r\n     
-    \"sprite\": \"Subtitle_groupselect_th\",\r\n      \"x\": 586,\r\n      \"y\":
-    264,\r\n      \"width\": 753,\r\n      \"height\": 41,\r\n      \"figmaNode\":
+    \"x\": 442,\r\n      \"y\": 122,\r\n      \"width\": 1047,\r\n      \"height\":
+    136,\r\n      \"figmaNode\": \"27:538\"\r\n    },\r\n    {\r\n      \"id\": \"group.subtitle\",\r\n     
+    \"sprite\": \"Subtitle_groupselect_th\",\r\n      \"x\": 553,\r\n      \"y\":
+    263,\r\n      \"width\": 816,\r\n      \"height\": 42,\r\n      \"figmaNode\":
     \"27:538\"\r\n    },\r\n    {\r\n      \"id\": \"group.help\",\r\n      \"sprite\":
-    \"ButtonHelpBox_groupselect_th\",\r\n      \"x\": 609,\r\n      \"y\": 899,\r\n     
-    \"width\": 715,\r\n      \"height\": 153,\r\n      \"figmaNode\": \"27:538\"\r\n   
+    \"ButtonHelpBox_groupselect_th\",\r\n      \"x\": 596,\r\n      \"y\": 907,\r\n     
+    \"width\": 740,\r\n      \"height\": 145,\r\n      \"figmaNode\": \"27:538\"\r\n   
     },\r\n    {\r\n      \"id\": \"selection.title\",\r\n      \"sprite\": \"Title_selectall_th\",\r\n     
-    \"x\": 426,\r\n      \"y\": 34,\r\n      \"width\": 1074,\r\n      \"height\":
-    161,\r\n      \"figmaNode\": \"27:558\"\r\n    },\r\n    {\r\n      \"id\": \"selection.subtitle\",\r\n     
-    \"sprite\": \"Subtitle_selectall_th\",\r\n      \"x\": 587,\r\n      \"y\": 198,\r\n     
-    \"width\": 748,\r\n      \"height\": 39,\r\n      \"figmaNode\": \"27:558\"\r\n   
+    \"x\": 433,\r\n      \"y\": 36,\r\n      \"width\": 1063,\r\n      \"height\":
+    158,\r\n      \"figmaNode\": \"27:558\"\r\n    },\r\n    {\r\n      \"id\": \"selection.subtitle\",\r\n     
+    \"sprite\": \"Subtitle_selectall_th\",\r\n      \"x\": 558,\r\n      \"y\": 200,\r\n     
+    \"width\": 805,\r\n      \"height\": 38,\r\n      \"figmaNode\": \"27:558\"\r\n   
     },\r\n    {\r\n      \"id\": \"selection.help\",\r\n      \"sprite\": \"ButtonHelpBox_selectall_th\",\r\n     
-    \"x\": 609,\r\n      \"y\": 899,\r\n      \"width\": 715,\r\n      \"height\":
+    \"x\": 593,\r\n      \"y\": 899,\r\n      \"width\": 747,\r\n      \"height\":
     153,\r\n      \"figmaNode\": \"27:558\"\r\n    },\r\n    {\r\n      \"id\": \"result.title\",\r\n     
-    \"sprite\": \"Title_recommendedAd_th\",\r\n      \"x\": 322,\r\n      \"y\":
-    58,\r\n      \"width\": 1277,\r\n      \"height\": 151,\r\n      \"figmaNode\":
+    \"sprite\": \"Title_recommendedAd_th\",\r\n      \"x\": 320,\r\n      \"y\":
+    63,\r\n      \"width\": 1218,\r\n      \"height\": 146,\r\n      \"figmaNode\":
     \"27:579\"\r\n    },\r\n    {\r\n      \"id\": \"result.subtitle\",\r\n     
-    \"sprite\": \"Subtitle_recommendedAd_th\",\r\n      \"x\": 541,\r\n      \"y\":
-    221,\r\n      \"width\": 839,\r\n      \"height\": 62,\r\n      \"figmaNode\":
+    \"sprite\": \"Subtitle_recommendedAd_th\",\r\n      \"x\": 540,\r\n      \"y\":
+    221,\r\n      \"width\": 905,\r\n      \"height\": 63,\r\n      \"figmaNode\":
     \"27:579\"\r\n    },\r\n    {\r\n      \"id\": \"result.help\",\r\n      \"sprite\":
-    \"ButtonHelpBox_recommendedAd_th\",\r\n      \"x\": 570,\r\n      \"y\": 899,\r\n     
-    \"width\": 794,\r\n      \"height\": 153,\r\n      \"figmaNode\": \"27:579\"\r\n   
+    \"ButtonHelpBox_recommendedAd_th\",\r\n      \"x\": 550,\r\n      \"y\": 899,\r\n     
+    \"width\": 832,\r\n      \"height\": 153,\r\n      \"figmaNode\": \"27:579\"\r\n   
     },\r\n    {\r\n      \"id\": \"selection.productBoard\",\r\n      \"sprite\":
     \"RecommendedProductImageBox_selectall_th\",\r\n      \"x\": 816,\r\n      \"y\":
     331,\r\n      \"width\": 838,\r\n      \"height\": 493,\r\n      \"figmaNode\":
     \"20:263\"\r\n    },\r\n    {\r\n      \"id\": \"video.end\",\r\n      \"sprite\":
-    \"VideoEndPopupText_th\",\r\n      \"x\": 434,\r\n      \"y\": 436,\r\n     
-    \"width\": 1050,\r\n      \"height\": 191,\r\n      \"figmaNode\": \"20:291\"\r\n   
+    \"VideoEndPopupText_th\",\r\n      \"x\": 447,\r\n      \"y\": 438,\r\n     
+    \"width\": 1026,\r\n      \"height\": 189,\r\n      \"figmaNode\": \"20:291\"\r\n   
     },\r\n    {\r\n      \"id\": \"video.home\",\r\n      \"sprite\": \"VideoHomeHint_th\",\r\n     
-    \"x\": 40,\r\n      \"y\": 40,\r\n      \"width\": 452,\r\n      \"height\":
+    \"x\": 40,\r\n      \"y\": 40,\r\n      \"width\": 469,\r\n      \"height\":
     94,\r\n      \"figmaNode\": \"\"\r\n    },\r\n    {\r\n      \"id\": \"group.board\",\r\n     
     \"sprite\": \"BoardImage\",\r\n      \"x\": 708,\r\n      \"y\": 354,\r\n     
     \"width\": 504,\r\n      \"height\": 504,\r\n      \"figmaNode\": \"web\"\r\n   
@@ -218,16 +218,16 @@ MonoBehaviour:
     \"sprite\": \"Subtitle_groupselectPanel_en\",\r\n      \"x\": 428,\r\n      \"y\":
     277,\r\n      \"width\": 1063,\r\n      \"height\": 39,\r\n      \"figmaNode\":
     \"27:656\"\r\n    },\r\n    {\r\n      \"id\": \"group.help\",\r\n      \"sprite\":
-    \"ButtonHelpBox_groupselectPanel_en\",\r\n      \"x\": 515,\r\n      \"y\": 899,\r\n     
-    \"width\": 902,\r\n      \"height\": 153,\r\n      \"figmaNode\": \"27:656\"\r\n   
+    \"ButtonHelpBox_groupselectPanel_en\",\r\n      \"x\": 518,\r\n      \"y\": 899,\r\n     
+    \"width\": 896,\r\n      \"height\": 153,\r\n      \"figmaNode\": \"27:656\"\r\n   
     },\r\n    {\r\n      \"id\": \"selection.title\",\r\n      \"sprite\": \"Title_selectallPanel_en\",\r\n     
     \"x\": 254,\r\n      \"y\": 74,\r\n      \"width\": 1418,\r\n      \"height\":
     97,\r\n      \"figmaNode\": \"27:676\"\r\n    },\r\n    {\r\n      \"id\": \"selection.subtitle\",\r\n     
     \"sprite\": \"Subtitle_selectallPanel_en\",\r\n      \"x\": 387,\r\n      \"y\":
     208,\r\n      \"width\": 1146,\r\n      \"height\": 40,\r\n      \"figmaNode\":
     \"27:676\"\r\n    },\r\n    {\r\n      \"id\": \"selection.help\",\r\n      \"sprite\":
-    \"ButtonHelpBox_selectallPanel_en\",\r\n      \"x\": 515,\r\n      \"y\": 899,\r\n     
-    \"width\": 902,\r\n      \"height\": 153,\r\n      \"figmaNode\": \"27:676\"\r\n   
+    \"ButtonHelpBox_selectallPanel_en\",\r\n      \"x\": 518,\r\n      \"y\": 899,\r\n     
+    \"width\": 896,\r\n      \"height\": 153,\r\n      \"figmaNode\": \"27:676\"\r\n   
     },\r\n    {\r\n      \"id\": \"result.title\",\r\n      \"sprite\": \"Title_RecommendedAd_en\",\r\n     
     \"x\": 360,\r\n      \"y\": 97,\r\n      \"width\": 1200,\r\n      \"height\":
     106,\r\n      \"figmaNode\": \"27:697\"\r\n    },\r\n    {\r\n      \"id\": \"result.subtitle\",\r\n     

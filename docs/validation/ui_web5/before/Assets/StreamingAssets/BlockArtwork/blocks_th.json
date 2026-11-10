@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "language": "th",
+  "blocks": [
+    {
+      "kind": "group",
+      "id": "child",
+      "image": "Images/en/ChildBlock_Eng.png"
+    },
+    {
+      "kind": "group",
+      "id": "student",
+      "image": "Images/en/StudentBlock_Eng.png"
+    },
+    {
+      "kind": "group",
+      "id": "working_adult",
+      "image": "Images/en/WorkingAdultBlock_Eng.png"
+    },
+    {
+      "kind": "group",
+      "id": "senior",
+      "image": "Images/en/SeniorBlock_Eng.png"
+    },
+    {
+      "kind": "product",
+      "id": "bags",
+      "image": "Images/th/BagBlock_Thai.png"
+    },
+    {
+      "kind": "product",
+      "id": "shoes",
+      "image": "Images/th/ShoesBlock_Thai.png"
+    },
+    {
+      "kind": "product",
+      "id": "hats",
+      "image": "Images/th/HatBlock_Thai.png"
+    },
+    {
+      "kind": "product",
+      "id": "sunglasses",
+      "image": "Images/th/SunglassesBlock_Thai.png"
+    },
+    {
+      "kind": "product",
+      "id": "headphones",
+      "image": "Images/th/HeadphonesBlock_Thai.png"
+    },
+    {
+      "kind": "product",
+      "id": "tops",
+      "image": "Images/th/TopBlock_Thai.png"
+    },
+    {
+      "kind": "product",
+      "id": "bicycles",
+      "image": "Images/th/BicycleBlock_Thai.png"
+    },
+    {
+      "kind": "product",
+      "id": "tumblers",
+      "image": "Images/th/TumblerBlock_Thai.png"
+    },
+    {
+      "kind": "product",
+      "id": "wristwatches",
+      "image": "Images/th/WristWatchBlock_Thai.png"
+    },
+    {
+      "kind": "product",
+      "id": "umbrellas",
+      "image": "Images/th/UmbrellaBlock_Thai.png"
+    },
+    {
+      "kind": "color",
+      "id": "black",
+      "image": "Images/th/BlackBlock_Thai.png"
+    },
+    {
+      "kind": "color",
+      "id": "white",
+      "image": "Images/th/WhiteBlock_Thai.png"
+    },
+    {
+      "kind": "color",
+      "id": "blue",
+      "image": "Images/th/BlueBlock_Thai.png"
+    },
+    {
+      "kind": "color",
+      "id": "red",
+      "image": "Images/th/RedBlock_Thai.png"
+    },
+    {
+      "kind": "color",
+      "id": "green",
+      "image": "Images/th/GreenBlock_Thai.png"
+    },
+    {
+      "kind": "color",
+      "id": "yellow",
+      "image": "Images/th/YellowBlock_Thai.png"
+    }
+  ]
+}

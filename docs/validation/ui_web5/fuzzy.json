@@ -1,0 +1,1629 @@
+[
+ {
+  "index": 0,
+  "name": "Frame 394.png",
+  "size": [
+   252,
+   252
+  ],
+  "exact": [],
+  "best": [
+   [
+    8.596240997314453,
+    555,
+    "Assets/UI/Blocks/ThaiBlocks/BagBlock_Thai.png"
+   ],
+   [
+    8.596240997314453,
+    555,
+    "web4::Frame 394.png"
+   ],
+   [
+    17.238080978393555,
+    1160,
+    "Assets/UI/Blocks/EnglishBlocks/BagBlock_Eng.png"
+   ]
+  ]
+ },
+ {
+  "index": 1,
+  "name": "Frame 395.png",
+  "size": [
+   252,
+   252
+  ],
+  "exact": [],
+  "best": [
+   [
+    9.614466667175293,
+    511,
+    "Assets/UI/Blocks/ThaiBlocks/BlackBlock_Thai.png"
+   ],
+   [
+    9.614466667175293,
+    511,
+    "web4::Frame 395.png"
+   ],
+   [
+    17.98505401611328,
+    1211,
+    "Assets/UI/Blocks/EnglishBlocks/BlackBlock_Eng.png"
+   ]
+  ]
+ },
+ {
+  "index": 2,
+  "name": "Frame 396.png",
+  "size": [
+   252,
+   252
+  ],
+  "exact": [],
+  "best": [
+   [
+    15.267760276794434,
+    1227,
+    "Assets/UI/Blocks/ThaiBlocks/SunglassesBlock_Thai.png"
+   ],
+   [
+    15.267760276794434,
+    1227,
+    "web4::Frame 396.png"
+   ],
+   [
+    23.595693588256836,
+    2163,
+    "Assets/UI/Blocks/EnglishBlocks/SunglassesBlock_Eng.png"
+   ]
+  ]
+ },
+ {
+  "index": 3,
+  "name": "Frame 397.png",
+  "size": [
+   252,
+   252
+  ],
+  "exact": [],
+  "best": [
+   [
+    12.485133171081543,
+    746,
+    "Assets/UI/Blocks/ThaiBlocks/RedBlock_Thai.png"
+   ],
+   [
+    12.485133171081543,
+    746,
+    "web4::Frame 397.png"
+   ],
+   [
+    12.485133171081543,
+    746,
+    "web4::Frame 406.png"
+   ]
+  ]
+ },
+ {
+  "index": 4,
+  "name": "Frame 398.png",
+  "size": [
+   252,
+   252
+  ],
+  "exact": [],
+  "best": [
+   [
+    11.892157554626465,
+    758,
+    "Assets/UI/Blocks/ThaiBlocks/GreenBlock_Thai.png"
+   ],
+   [
+    11.892157554626465,
+    758,
+    "web4::Frame 398.png"
+   ],
+   [
+    15.520687103271484,
+    1060,
+    "Assets/UI/Blocks/EnglishBlocks/GreenBlock_Eng.png"
+   ]
+  ]
+ },
+ {
+  "index": 5,
+  "name": "Frame 399.png",
+  "size": [
+   252,
+   252
+  ],
+  "exact": [],
+  "best": [
+   [
+    12.172076225280762,
+    797,
+    "Assets/UI/Blocks/ThaiBlocks/ShoesBlock_Thai.png"
+   ],
+   [
+    12.172076225280762,
+    797,
+    "web4::Frame 399.png"
+   ],
+   [
+    19.317773818969727,
+    1422,
+    "Assets/UI/Blocks/EnglishBlocks/ShoesBlock_Eng.png"
+   ]
+  ]
+ },
+ {
+  "index": 6,
+  "name": "Frame 400.png",
+  "size": [
+   252,
+   252
+  ],
+  "exact": [],
+  "best": [
+   [
+    9.009544372558594,
+    497,
+    "Assets/UI/Blocks/ThaiBlocks/WhiteBlock_Thai.png"
+   ],
+   [
+    9.009544372558594,
+    497,
+    "web4::Frame 400.png"
+   ],
+   [
+    16.758554458618164,
+    1100,
+    "Assets/UI/Blocks/EnglishBlocks/WhiteBlock_Eng.png"
+   ]
+  ]
+ },
+ {
+  "index": 7,
+  "name": "Frame 401.png",
+  "size": [
+   252,
+   252
+  ],
+  "exact": [],
+  "best": [
+   [
+    13.777406692504883,
+    1123,
+    "Assets/UI/Blocks/ThaiBlocks/WristWatchBlock_Thai.png"
+   ],
+   [
+    13.777406692504883,
+    1123,
+    "web4::Frame 401.png"
+   ],
+   [
+    23.13838768005371,
+    2170,
+    "Assets/UI/Blocks/EnglishBlocks/WristWatchBlock_Eng.png"
+   ]
+  ]
+ },
+ {
+  "index": 8,
+  "name": "Frame 402.png",
+  "size": [
+   252,
+   252
+  ],
+  "exact": [],
+  "best": [
+   [
+    11.268901824951172,
+    631,
+    "Assets/UI/Blocks/ThaiBlocks/HatBlock_Thai.png"
+   ],
+   [
+    11.268901824951172,
+    631,
+    "web4::Frame 402.png"
+   ],
+   [
+    16.181838989257812,
+    969,
+    "Assets/UI/Blocks/EnglishBlocks/HatBlock_Eng.png"
+   ]
+  ]
+ },
+ {
+  "index": 9,
+  "name": "Frame 403.png",
+  "size": [
+   252,
+   252
+  ],
+  "exact": [],
+  "best": [
+   [
+    12.781506538391113,
+    890,
+    "Assets/UI/Blocks/ThaiBlocks/BlueBlock_Thai.png"
+   ],
+   [
+    12.781506538391113,
+    890,
+    "web4::Frame 403.png"
+   ],
+   [
+    19.129610061645508,
+    1408,
+    "Assets/UI/Blocks/EnglishBlocks/BlueBlock_Eng.png"
+   ]
+  ]
+ },
+ {
+  "index": 10,
+  "name": "Frame 404.png",
+  "size": [
+   252,
+   252
+  ],
+  "exact": [],
+  "best": [
+   [
+    17.266103744506836,
+    1682,
+    "Assets/UI/Blocks/ThaiBlocks/TumblerBlock_Thai.png"
+   ],
+   [
+    17.266103744506836,
+    1682,
+    "web4::Frame 404.png"
+   ],
+   [
+    27.23562240600586,
+    2669,
+    "Assets/UI/Blocks/EnglishBlocks/TumblerBlock_Eng.png"
+   ]
+  ]
+ },
+ {
+  "index": 11,
+  "name": "Frame 405.png",
+  "size": [
+   252,
+   252
+  ],
+  "exact": [],
+  "best": [
+   [
+    10.403360366821289,
+    586,
+    "Assets/UI/Blocks/ThaiBlocks/HeadphonesBlock_Thai.png"
+   ],
+   [
+    10.403360366821289,
+    586,
+    "web4::Frame 405.png"
+   ],
+   [
+    25.373249053955078,
+    2345,
+    "Assets/UI/Blocks/EnglishBlocks/HeadphonesBlock_Eng.png"
+   ]
+  ]
+ },
+ {
+  "index": 12,
+  "name": "Frame 406.png",
+  "size": [
+   252,
+   252
+  ],
+  "exact": [],
+  "best": [
+   [
+    12.485133171081543,
+    746,
+    "Assets/UI/Blocks/ThaiBlocks/RedBlock_Thai.png"
+   ],
+   [
+    12.485133171081543,
+    746,
+    "web4::Frame 397.png"
+   ],
+   [
+    12.485133171081543,
+    746,
+    "web4::Frame 406.png"
+   ]
+  ]
+ },
+ {
+  "index": 13,
+  "name": "Frame 407.png",
+  "size": [
+   252,
+   252
+  ],
+  "exact": [],
+  "best": [
+   [
+    12.582671165466309,
+    809,
+    "Assets/UI/Blocks/ThaiBlocks/BicycleBlock_Thai.png"
+   ],
+   [
+    12.582671165466309,
+    809,
+    "web4::Frame 407.png"
+   ],
+   [
+    17.512794494628906,
+    1301,
+    "Assets/UI/Blocks/EnglishBlocks/BicycleBlock_Eng.png"
+   ]
+  ]
+ },
+ {
+  "index": 14,
+  "name": "Frame 408.png",
+  "size": [
+   252,
+   252
+  ],
+  "exact": [],
+  "best": [
+   [
+    14.222426414489746,
+    994,
+    "Assets/UI/Blocks/ThaiBlocks/YellowBlock_Thai.png"
+   ],
+   [
+    14.222426414489746,
+    994,
+    "web4::Frame 408.png"
+   ],
+   [
+    18.321908950805664,
+    1327,
+    "Assets/UI/Blocks/EnglishBlocks/YellowBlock_Eng.png"
+   ]
+  ]
+ },
+ {
+  "index": 15,
+  "name": "Frame 409.png",
+  "size": [
+   252,
+   252
+  ],
+  "exact": [],
+  "best": [
+   [
+    4.374256134033203,
+    197,
+    "Assets/UI/Blocks/ThaiBlocks/UmbrellaBlock_Thai.png"
+   ],
+   [
+    4.374256134033203,
+    197,
+    "web4::Frame 409.png"
+   ],
+   [
+    21.65302848815918,
+    1663,
+    "Assets/UI/Blocks/EnglishBlocks/UmbrellaBlock_Eng.png"
+   ]
+  ]
+ },
+ {
+  "index": 16,
+  "name": "Frame 410.png",
+  "size": [
+   252,
+   252
+  ],
+  "exact": [],
+  "best": [
+   [
+    8.200702667236328,
+    432,
+    "Assets/UI/Blocks/ThaiBlocks/TopBlock_Thai.png"
+   ],
+   [
+    8.200702667236328,
+    432,
+    "web4::Frame 410.png"
+   ],
+   [
+    15.245655059814453,
+    883,
+    "Assets/UI/Blocks/EnglishBlocks/TopBlock_Eng.png"
+   ]
+  ]
+ },
+ {
+  "index": 17,
+  "name": "Frame 519.png",
+  "size": [
+   252,
+   252
+  ],
+  "exact": [],
+  "best": [
+   [
+    81.151611328125,
+    22131,
+    "Assets/UI/Blocks/ThaiBlocks/GreenBlock_Thai.png"
+   ],
+   [
+    81.151611328125,
+    22131,
+    "web4::Frame 398.png"
+   ],
+   [
+    81.42832946777344,
+    22278,
+    "Assets/UI/Blocks/EnglishBlocks/GreenBlock_Eng.png"
+   ]
+  ]
+ },
+ {
+  "index": 18,
+  "name": "Frame 520.png",
+  "size": [
+   252,
+   252
+  ],
+  "exact": [],
+  "best": [
+   [
+    73.01067352294922,
+    20127,
+    "Assets/UI/Blocks/ThaiBlocks/GreenBlock_Thai.png"
+   ],
+   [
+    73.01067352294922,
+    20127,
+    "web4::Frame 398.png"
+   ],
+   [
+    73.32867431640625,
+    20292,
+    "Assets/UI/Blocks/EnglishBlocks/GreenBlock_Eng.png"
+   ]
+  ]
+ },
+ {
+  "index": 19,
+  "name": "Frame 521.png",
+  "size": [
+   252,
+   252
+  ],
+  "exact": [],
+  "best": [
+   [
+    60.62511444091797,
+    20542,
+    "Assets/UI/Blocks/EnglishBlocks/GreenBlock_Eng.png"
+   ],
+   [
+    61.11579513549805,
+    20690,
+    "Assets/UI/Blocks/ThaiBlocks/GreenBlock_Thai.png"
+   ],
+   [
+    61.11579513549805,
+    20690,
+    "web4::Frame 398.png"
+   ]
+  ]
+ },
+ {
+  "index": 20,
+  "name": "Frame 522.png",
+  "size": [
+   252,
+   252
+  ],
+  "exact": [],
+  "best": [
+   [
+    76.48543548583984,
+    20975,
+    "Assets/UI/Blocks/EnglishBlocks/GreenBlock_Eng.png"
+   ],
+   [
+    76.75080108642578,
+    21057,
+    "Assets/UI/Blocks/ThaiBlocks/GreenBlock_Thai.png"
+   ],
+   [
+    76.75080108642578,
+    21057,
+    "web4::Frame 398.png"
+   ]
+  ]
+ },
+ {
+  "index": 21,
+  "name": "E02-S01. 인트로 및 체험 시작.png",
+  "size": [
+   1920,
+   1080
+  ],
+  "exact": [],
+  "best": [
+   [
+    28.680057525634766,
+    97088,
+    "web4::E02-S01. 인트로 및 체험 시작-1.png"
+   ],
+   [
+    39.095115661621094,
+    163845,
+    "web4::E02-S01. 인트로 및 체험 시작.png"
+   ],
+   [
+    40.25660705566406,
+    199537,
+    "Assets/UI/Backgrounds/Intro_bg.png"
+   ]
+  ]
+ },
+ {
+  "index": 22,
+  "name": "ดูว่าบิ๊กดาต้าช่วยแนะนำโฆษณา ตามตัวเลือกของคุณได้อย่างไร!.png",
+  "size": [
+   521,
+   105
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 23,
+  "name": "Group 1.png",
+  "size": [
+   859,
+   426
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 24,
+  "name": "Thai_National_Science_Museum_logo_2 1.png",
+  "size": [
+   135,
+   116
+  ],
+  "exact": [
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-1.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-2.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-3.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-4.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-5.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-6.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-7.png"
+  ],
+  "best": [
+   [
+    0.0,
+    0,
+    "web4::Thai_National_Science_Museum_logo_2 1-1.png"
+   ],
+   [
+    0.0,
+    0,
+    "web4::Thai_National_Science_Museum_logo_2 1-2.png"
+   ],
+   [
+    0.0,
+    0,
+    "web4::Thai_National_Science_Museum_logo_2 1-3.png"
+   ]
+  ]
+ },
+ {
+  "index": 25,
+  "name": "버튼 안내문구 2.png",
+  "size": [
+   1343,
+   173
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 26,
+  "name": "Component 1.png",
+  "size": [
+   122,
+   122
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 27,
+  "name": "Frame 4.png",
+  "size": [
+   1118,
+   104
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 28,
+  "name": "Press the circular button to select your language and start!.png",
+  "size": [
+   544,
+   42
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 29,
+  "name": "Frame 48.png",
+  "size": [
+   294,
+   38
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 30,
+  "name": "Press Once / กดหนึ่งครั้ง.png",
+  "size": [
+   268,
+   27
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 31,
+  "name": "→ เริ่ม / Start.png",
+  "size": [
+   141,
+   27
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 32,
+  "name": "Frame 48-1.png",
+  "size": [
+   440,
+   38
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 33,
+  "name": "Hold for 2 seconds / กดค้างไว้ 2 วินาที.png",
+  "size": [
+   414,
+   22
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 34,
+  "name": "→ ไทย / English.png",
+  "size": [
+   166,
+   24
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 35,
+  "name": "Group 28.png",
+  "size": [
+   66,
+   72
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 36,
+  "name": "E02-S02. 사용자 유형 선택 및 정보 입력 .png",
+  "size": [
+   1920,
+   1080
+  ],
+  "exact": [],
+  "best": [
+   [
+    25.55089569091797,
+    81530,
+    "web4::E02-S02. 사용자 유형 선택 및 정보 입력 -1.png"
+   ],
+   [
+    35.2446174621582,
+    160277,
+    "web4::E02-S02. 사용자 유형 선택 및 정보 입력 .png"
+   ],
+   [
+    48.69146728515625,
+    339438,
+    "Assets/UI/Backgrounds/SelectGroupPanel_bg.png"
+   ]
+  ]
+ },
+ {
+  "index": 37,
+  "name": "Thai_National_Science_Museum_logo_2 1-1.png",
+  "size": [
+   135,
+   116
+  ],
+  "exact": [
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-1.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-2.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-3.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-4.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-5.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-6.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-7.png"
+  ],
+  "best": [
+   [
+    0.0,
+    0,
+    "web4::Thai_National_Science_Museum_logo_2 1-1.png"
+   ],
+   [
+    0.0,
+    0,
+    "web4::Thai_National_Science_Museum_logo_2 1-2.png"
+   ],
+   [
+    0.0,
+    0,
+    "web4::Thai_National_Science_Museum_logo_2 1-3.png"
+   ]
+  ]
+ },
+ {
+  "index": 38,
+  "name": "Rectangle 35.png",
+  "size": [
+   1628,
+   324
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 39,
+  "name": "คุณอยู่ในู่ช่วงอายุใด_.png",
+  "size": [
+   1047,
+   136
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 40,
+  "name": "เลือก1บล็อกแล้วน ำไปวำงในช่องค ำตอบด้ำนล่ำง.png",
+  "size": [
+   816,
+   42
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 41,
+  "name": "버튼 안내문구 3.png",
+  "size": [
+   740,
+   145
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 42,
+  "name": "Press the circular button below to Continue..png",
+  "size": [
+   549,
+   42
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 43,
+  "name": "Frame 48-2.png",
+  "size": [
+   204,
+   38
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 44,
+  "name": "Hold for 5 seconds.png",
+  "size": [
+   177,
+   20
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 45,
+  "name": "→ Home.png",
+  "size": [
+   110,
+   19
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 46,
+  "name": "E02-S03. 제품 및 색상 선택.png",
+  "size": [
+   1920,
+   1080
+  ],
+  "exact": [],
+  "best": [
+   [
+    23.476999282836914,
+    70570,
+    "web4::E02-S03. 제품 및 색상 선택-1.png"
+   ],
+   [
+    34.44258499145508,
+    164105,
+    "web4::E02-S03. 제품 및 색상 선택.png"
+   ],
+   [
+    63.19613265991211,
+    812406,
+    "web4::E02-S04. 맞춤형 추천 광고 결과-1.png"
+   ]
+  ]
+ },
+ {
+  "index": 47,
+  "name": "Thai_National_Science_Museum_logo_2 1-2.png",
+  "size": [
+   135,
+   116
+  ],
+  "exact": [
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-1.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-2.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-3.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-4.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-5.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-6.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-7.png"
+  ],
+  "best": [
+   [
+    0.0,
+    0,
+    "web4::Thai_National_Science_Museum_logo_2 1-1.png"
+   ],
+   [
+    0.0,
+    0,
+    "web4::Thai_National_Science_Museum_logo_2 1-2.png"
+   ],
+   [
+    0.0,
+    0,
+    "web4::Thai_National_Science_Museum_logo_2 1-3.png"
+   ]
+  ]
+ },
+ {
+  "index": 48,
+  "name": "버튼 안내문구 3-1.png",
+  "size": [
+   747,
+   153
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 49,
+  "name": "สร้ำงคู่ที ่ใช่ส ำหรับคุณ!.png",
+  "size": [
+   1063,
+   158
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 50,
+  "name": "เลือกสินค้า 1 ชิ้น และสี 2 สี โดยใช้บล็อกด้านล่าง.png",
+  "size": [
+   805,
+   38
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 51,
+  "name": "E02-S04. 맞춤형 추천 광고 결과.png",
+  "size": [
+   1920,
+   1080
+  ],
+  "exact": [],
+  "best": [
+   [
+    25.73737335205078,
+    85241,
+    "web4::E02-S04. 맞춤형 추천 광고 결과-1.png"
+   ],
+   [
+    30.08662223815918,
+    114611,
+    "web4::E02-S04. 맞춤형 추천 광고 결과.png"
+   ],
+   [
+    57.27809143066406,
+    589006,
+    "Assets/UI/Backgrounds/RecommendedAdPanel_bg.png"
+   ]
+  ]
+ },
+ {
+  "index": 52,
+  "name": "Thai_National_Science_Museum_logo_2 1-3.png",
+  "size": [
+   135,
+   116
+  ],
+  "exact": [
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-1.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-2.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-3.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-4.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-5.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-6.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-7.png"
+  ],
+  "best": [
+   [
+    0.0,
+    0,
+    "web4::Thai_National_Science_Museum_logo_2 1-1.png"
+   ],
+   [
+    0.0,
+    0,
+    "web4::Thai_National_Science_Museum_logo_2 1-2.png"
+   ],
+   [
+    0.0,
+    0,
+    "web4::Thai_National_Science_Museum_logo_2 1-3.png"
+   ]
+  ]
+ },
+ {
+  "index": 53,
+  "name": "버튼 안내문구 3-2.png",
+  "size": [
+   832,
+   153
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 54,
+  "name": "มำดูกันว่ำอะไรเหมำะกับคุณ!.png",
+  "size": [
+   1218,
+   146
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 55,
+  "name": "นี ่คือโฆษณำที ่สร้ำงขึ ้นจำกตัวเลือกของคุณ!.png",
+  "size": [
+   905,
+   63
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 56,
+  "name": "E02-S05. 빅데이터 기반 광고 추천 원리 영상.png",
+  "size": [
+   1920,
+   1080
+  ],
+  "exact": [],
+  "best": [
+   [
+    18.30654525756836,
+    22122,
+    "web4::E02-S05. 빅데이터 기반 광고 추천 원리 영상-1.png"
+   ],
+   [
+    18.47939109802246,
+    22826,
+    "web4::E02-S05. 빅데이터 기반 광고 추천 원리 영상.png"
+   ],
+   [
+    71.8195571899414,
+    2038978,
+    "web4::E02-S03. 제품 및 색상 선택.png"
+   ]
+  ]
+ },
+ {
+  "index": 57,
+  "name": "버튼 안내문구 3-3.png",
+  "size": [
+   469,
+   94
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 58,
+  "name": "E02-S05. 빅데이터 기반 광고 추천 원리 영상_팝업창.png",
+  "size": [
+   1920,
+   1080
+  ],
+  "exact": [],
+  "best": [
+   [
+    24.417560577392578,
+    37572,
+    "web4::E02-S05. 빅데이터 기반 광고 추천 원리 영상_팝업창-1.png"
+   ],
+   [
+    36.47772979736328,
+    75434,
+    "web4::E02-S05. 빅데이터 기반 광고 추천 원리 영상_팝업창.png"
+   ],
+   [
+    119.2593994140625,
+    2071309,
+    "web4::E02-S05. 빅데이터 기반 광고 추천 원리 영상-1.png"
+   ]
+  ]
+ },
+ {
+  "index": 59,
+  "name": "น ำกำร์ดทั ้งหมดออก จำกกระดำนเพื ่อจบกิจกรรม.png",
+  "size": [
+   1026,
+   189
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 60,
+  "name": "E02-S01. 인트로 및 체험 시작-1.png",
+  "size": [
+   1920,
+   1080
+  ],
+  "exact": [],
+  "best": [
+   [
+    0.0020833334419876337,
+    0,
+    "web4::E02-S01. 인트로 및 체험 시작.png"
+   ],
+   [
+    37.46568298339844,
+    143040,
+    "web4::E02-S01. 인트로 및 체험 시작-1.png"
+   ],
+   [
+    41.29853820800781,
+    205787,
+    "Assets/UI/Backgrounds/Intro_bg.png"
+   ]
+  ]
+ },
+ {
+  "index": 61,
+  "name": "See how big data helps recommend ads based on your choices!.png",
+  "size": [
+   678,
+   89
+  ],
+  "exact": [
+   "docs/validation\\ui_web4\\browser_export.zip::See how big data helps recommend ads based on your choices!.png",
+   "Assets/UI/UIs_En/Idle/Subtitle_en.png"
+  ],
+  "best": [
+   [
+    0.0,
+    0,
+    "Assets/UI/UIs_En/Idle/Subtitle_en.png"
+   ],
+   [
+    0.0,
+    0,
+    "web4::See how big data helps recommend ads based on your choices!.png"
+   ]
+  ]
+ },
+ {
+  "index": 62,
+  "name": "Group 1-1.png",
+  "size": [
+   873,
+   435
+  ],
+  "exact": [],
+  "best": [
+   [
+    0.10761649906635284,
+    0,
+    "Assets/UI/UIs_En/Idle/Title_en.png"
+   ],
+   [
+    0.10761649906635284,
+    0,
+    "web4::Group 1.png"
+   ]
+  ]
+ },
+ {
+  "index": 63,
+  "name": "Thai_National_Science_Museum_logo_2 1-4.png",
+  "size": [
+   135,
+   116
+  ],
+  "exact": [
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-1.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-2.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-3.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-4.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-5.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-6.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-7.png"
+  ],
+  "best": [
+   [
+    0.0,
+    0,
+    "web4::Thai_National_Science_Museum_logo_2 1-1.png"
+   ],
+   [
+    0.0,
+    0,
+    "web4::Thai_National_Science_Museum_logo_2 1-2.png"
+   ],
+   [
+    0.0,
+    0,
+    "web4::Thai_National_Science_Museum_logo_2 1-3.png"
+   ]
+  ]
+ },
+ {
+  "index": 64,
+  "name": "버튼 안내문구 2-1.png",
+  "size": [
+   1315,
+   173
+  ],
+  "exact": [],
+  "best": [
+   [
+    0.1846020519733429,
+    0,
+    "Assets/UI/UIs_En/Idle/ButtonHelpBox_en.png"
+   ],
+   [
+    0.1846020519733429,
+    0,
+    "web4::버튼 안내문구 2.png"
+   ],
+   [
+    28.984827041625977,
+    11329,
+    "Assets/UI/UIs_Th/Idle/ButtonHelpBox_th.png"
+   ]
+  ]
+ },
+ {
+  "index": 65,
+  "name": "E02-S02. 사용자 유형 선택 및 정보 입력 .pdf",
+  "kind": "pdf"
+ },
+ {
+  "index": 66,
+  "name": "Thai_National_Science_Museum_logo_2 1-5.png",
+  "size": [
+   135,
+   116
+  ],
+  "exact": [
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-1.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-2.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-3.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-4.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-5.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-6.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-7.png"
+  ],
+  "best": [
+   [
+    0.0,
+    0,
+    "web4::Thai_National_Science_Museum_logo_2 1-1.png"
+   ],
+   [
+    0.0,
+    0,
+    "web4::Thai_National_Science_Museum_logo_2 1-2.png"
+   ],
+   [
+    0.0,
+    0,
+    "web4::Thai_National_Science_Museum_logo_2 1-3.png"
+   ]
+  ]
+ },
+ {
+  "index": 67,
+  "name": "버튼 안내문구 3-4.png",
+  "size": [
+   896,
+   153
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 68,
+  "name": "Which Age Group Are You In_.png",
+  "size": [
+   1555,
+   111
+  ],
+  "exact": [
+   "docs/validation\\ui_web4\\browser_export.zip::Which Age Group Are You In_.png",
+   "Assets/UI/UIs_En/GroupSelect/Title_groupselectPanel_en.png"
+  ],
+  "best": [
+   [
+    0.0,
+    0,
+    "Assets/UI/UIs_En/GroupSelect/Title_groupselectPanel_en.png"
+   ],
+   [
+    0.0,
+    0,
+    "web4::Which Age Group Are You In_.png"
+   ]
+  ]
+ },
+ {
+  "index": 69,
+  "name": "Choose one block and place it in the answer slot below..png",
+  "size": [
+   1063,
+   39
+  ],
+  "exact": [
+   "docs/validation\\ui_web4\\browser_export.zip::Choose one block and place it in the answer slot below..png",
+   "Assets/UI/UIs_En/GroupSelect/Subtitle_groupselectPanel_en.png"
+  ],
+  "best": [
+   [
+    0.0,
+    0,
+    "Assets/UI/UIs_En/GroupSelect/Subtitle_groupselectPanel_en.png"
+   ],
+   [
+    0.0,
+    0,
+    "web4::Choose one block and place it in the answer slot below..png"
+   ]
+  ]
+ },
+ {
+  "index": 70,
+  "name": "E02-S03. 제품 및 색상 선택.pdf",
+  "kind": "pdf"
+ },
+ {
+  "index": 71,
+  "name": "Thai_National_Science_Museum_logo_2 1-6.png",
+  "size": [
+   135,
+   116
+  ],
+  "exact": [
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-1.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-2.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-3.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-4.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-5.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-6.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-7.png"
+  ],
+  "best": [
+   [
+    0.0,
+    0,
+    "web4::Thai_National_Science_Museum_logo_2 1-1.png"
+   ],
+   [
+    0.0,
+    0,
+    "web4::Thai_National_Science_Museum_logo_2 1-2.png"
+   ],
+   [
+    0.0,
+    0,
+    "web4::Thai_National_Science_Museum_logo_2 1-3.png"
+   ]
+  ]
+ },
+ {
+  "index": 72,
+  "name": "버튼 안내문구 3-5.png",
+  "size": [
+   896,
+   153
+  ],
+  "exact": [],
+  "best": []
+ },
+ {
+  "index": 73,
+  "name": "Create Your Perfect Match!.png",
+  "size": [
+   1418,
+   97
+  ],
+  "exact": [
+   "docs/validation\\ui_web4\\browser_export.zip::Create Your Perfect Match!.png",
+   "Assets/UI/UIs_En/SelectAll/Title_selectallPanel_en.png"
+  ],
+  "best": [
+   [
+    0.0,
+    0,
+    "Assets/UI/UIs_En/SelectAll/Title_selectallPanel_en.png"
+   ],
+   [
+    0.0,
+    0,
+    "web4::Create Your Perfect Match!.png"
+   ]
+  ]
+ },
+ {
+  "index": 74,
+  "name": "Choose one product and two colors using the blocks below..png",
+  "size": [
+   1146,
+   40
+  ],
+  "exact": [
+   "docs/validation\\ui_web4\\browser_export.zip::Choose one product and two colors using the blocks below..png",
+   "Assets/UI/UIs_En/SelectAll/Subtitle_selectallPanel_en.png"
+  ],
+  "best": [
+   [
+    0.0,
+    0,
+    "Assets/UI/UIs_En/SelectAll/Subtitle_selectallPanel_en.png"
+   ],
+   [
+    0.0,
+    0,
+    "web4::Choose one product and two colors using the blocks below..png"
+   ]
+  ]
+ },
+ {
+  "index": 75,
+  "name": "E02-S04. 맞춤형 추천 광고 결과.pdf",
+  "kind": "pdf"
+ },
+ {
+  "index": 76,
+  "name": "Thai_National_Science_Museum_logo_2 1-7.png",
+  "size": [
+   135,
+   116
+  ],
+  "exact": [
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-1.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-2.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-3.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-4.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-5.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-6.png",
+   "docs/validation\\ui_web4\\browser_export.zip::Thai_National_Science_Museum_logo_2 1-7.png"
+  ],
+  "best": [
+   [
+    0.0,
+    0,
+    "web4::Thai_National_Science_Museum_logo_2 1-1.png"
+   ],
+   [
+    0.0,
+    0,
+    "web4::Thai_National_Science_Museum_logo_2 1-2.png"
+   ],
+   [
+    0.0,
+    0,
+    "web4::Thai_National_Science_Museum_logo_2 1-3.png"
+   ]
+  ]
+ },
+ {
+  "index": 77,
+  "name": "버튼 안내문구 3-6.png",
+  "size": [
+   1051,
+   153
+  ],
+  "exact": [],
+  "best": [
+   [
+    0.04987500235438347,
+    0,
+    "Assets/UI/UIs_En/RecommendedAd/ButtonHelpBox_RecommendedAd_en.png"
+   ],
+   [
+    0.04987500235438347,
+    0,
+    "web4::버튼 안내문구 3-2.png"
+   ]
+  ]
+ },
+ {
+  "index": 78,
+  "name": "Recommended for you!.png",
+  "size": [
+   1200,
+   106
+  ],
+  "exact": [
+   "docs/validation\\ui_web4\\browser_export.zip::Recommended for you!.png",
+   "Assets/UI/UIs_En/RecommendedAd/Title_RecommendedAd_en.png"
+  ],
+  "best": [
+   [
+    0.0,
+    0,
+    "Assets/UI/UIs_En/RecommendedAd/Title_RecommendedAd_en.png"
+   ],
+   [
+    0.0,
+    0,
+    "web4::Recommended for you!.png"
+   ]
+  ]
+ },
+ {
+  "index": 79,
+  "name": "Here's an ad based on your choices!.png",
+  "size": [
+   822,
+   47
+  ],
+  "exact": [
+   "docs/validation\\ui_web4\\browser_export.zip::Here's an ad based on your choices!.png",
+   "Assets/UI/UIs_En/RecommendedAd/Subtitle_RecommendedAd_en.png"
+  ],
+  "best": [
+   [
+    0.0,
+    0,
+    "Assets/UI/UIs_En/RecommendedAd/Subtitle_RecommendedAd_en.png"
+   ],
+   [
+    0.0,
+    0,
+    "web4::Here's an ad based on your choices!.png"
+   ]
+  ]
+ },
+ {
+  "index": 80,
+  "name": "E02-S05. 빅데이터 기반 광고 추천 원리 영상.pdf",
+  "kind": "pdf"
+ },
+ {
+  "index": 81,
+  "name": "E02-S05. 빅데이터 기반 광고 추천 원리 영상_팝업창.pdf",
+  "kind": "pdf"
+ },
+ {
+  "index": 82,
+  "name": "Rectangle 11.png",
+  "size": [
+   1394,
+   674
+  ],
+  "exact": [
+   "docs/validation\\ui_web4\\browser_export.zip::Rectangle 11.png",
+   "Assets/UI/UIs_Common/VideoPanel/VideoEndPopup.png"
+  ],
+  "best": [
+   [
+    0.0,
+    0,
+    "Assets/UI/UIs_Common/VideoPanel/VideoEndPopup.png"
+   ],
+   [
+    0.0,
+    0,
+    "web4::Rectangle 11.png"
+   ]
+  ]
+ },
+ {
+  "index": 83,
+  "name": "Please remove all the cube from the Center board to finish..png",
+  "size": [
+   1219,
+   158
+  ],
+  "exact": [
+   "docs/validation\\ui_web4\\browser_export.zip::Please remove all the cube from the Center board to finish..png",
+   "Assets/UI/UIs_En/Video/VideoEndPopupText_en.png"
+  ],
+  "best": [
+   [
+    0.0,
+    0,
+    "Assets/UI/UIs_En/Video/VideoEndPopupText_en.png"
+   ],
+   [
+    0.0,
+    0,
+    "web4::Please remove all the cube from the Center board to finish..png"
+   ]
+  ]
+ }
+]
