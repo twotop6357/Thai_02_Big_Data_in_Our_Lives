@@ -127,3 +127,6 @@ InitTestScene*.unity*
 
 # Unity directory monitor sync temp files
 ~UnityDirMonSyncFile~*
+
+# Python bytecode cache from Tools scripts
+__pycache__/
