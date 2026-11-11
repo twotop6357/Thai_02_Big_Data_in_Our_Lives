@@ -4,6 +4,8 @@
 
 ## 현재 상태
 
+- UI-WEB-007 완료 / Claude 단독 / 2026-11-11 Asia/Seoul / 기준 main/f65c232. 웹 2번 TH/EN 일괄 ZIP(86개)으로 태국어 폰트 변경에 따른 문구 6개(그룹 제목·부제, 선택 제목, 결과 제목·부제, 영상 종료) 원본 교체와 Lang_Th.json·defaultThai 좌표 갱신. 그 밖의 요소·영어는 변경 없음. Play23 PASS·콘솔 오류0. 새 영상 종료 문구의 "น ำ" 띄어 보임은 웹 원본 그대로라 디자이너 확인 필요. Player 재빌드/실장비 미수행. 기능·문서 커밋 완료, 사용자 변경(ProjectSettings·AdConfetti 프리팹)은 미커밋 유지. 소유권 해제. docs/validation/ui_web7/README.md.
+
 - IDLE-VIDEO-001 완료(미커밋) / Claude 단독 / 2026-11-10 Asia/Seoul. 타이틀 배경 c02.mp4 무음 무한 반복, 로고·문구·팝업은 위. Play9 PASS. 소유권 해제. docs/validation/idle_video/README.md.
 
 - LOGO-SPLIT-001 완료(미커밋) / Claude 단독 / 2026-11-10 Asia/Seoul. 배경 6개를 로고 없는 웹 원본(복제본 방식)으로 교체, NSMLogo 이미지를 4개 배경 위에 배치. Play12 PASS·로고 밖 화면 동일. Figma 원본 보존 확인(섹션 폭 자동확장 2194로 복구). 디자이너의 태국어 문구 수정 2건은 UI-WEB-006으로 반영. 소유권 해제. docs/validation/logo_split/README.md.
@@ -114,6 +116,7 @@
 
 | 작업 ID | 담당 | 상태 | 수정 범위 | 다음 담당 / 행동 |
 |---|---|---|---|---|
+| UI-WEB-007 | Claude 단독 | 완료 | 태국어 UI PNG6(그룹 제목·부제, 선택 제목, 결과 제목·부제, 영상 종료 문구)·Lang_Th.json·ExhibitionUIAssets 기본사본·Tools/UI apply/verify_web7·validation/ui_web7·.gitignore(__pycache__)·CHANGELOG/HANDOFF | 소유권 해제. Play23 PASS. 영상 종료 문구 "น ำ" 디자이너 확인·Player 재빌드 후속 |
 | IDLE-VIDEO-001 | Claude 단독 | 완료(미커밋) | 신규 UI/IdleVideoBackground·Editor/IdleVideoAuthoring·0_Idle 추가만·Builder 1줄·Logo/TitleBlockPopupAuthoring TryGetComponent 수정·validation/idle_video·CHANGELOG/HANDOFF | 소유권 해제. Play9 PASS. Player/장시간 후속 |
 | TIMEOUT-HOLD-001 | Claude 단독 | 완료(미커밋) | BlockExperienceController(LateUpdate 보류·생성 해제·OnDisable 해제)·validation/rfid_timeout/hold_runtime*.json·BUTTON_INPUT/CHANGELOG/HANDOFF | 소유권 해제. Play12·EditMode139 PASS. 실제 리더/Player 후속 |
 | UI-IDLEPOP-001 | Claude 단독 | 완료(미커밋) | 신규 UI/TitleBlockPopup·Editor/TitleBlockPopupAuthoring·UIs_Common/IdlePanel PNG1, RfidReaderHub(존재 기록)·RfidTcpReaders(존재 보고)·ExhibitionUIBuilder 1줄·0_Idle(추가만)·Tools/UI/verify_title_block_popup·validation/idle_popup·BUTTON_INPUT/CHANGELOG/HANDOFF | 소유권 해제. Play25·EditMode139 PASS. Player/실제 리더·버튼 후속 |
