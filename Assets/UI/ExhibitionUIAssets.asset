@@ -139,26 +139,26 @@ MonoBehaviour:
     \"sprite\": \"ButtonHelpBox_th\",\r\n      \"x\": 294,\r\n      \"y\": 879,\r\n     
     \"width\": 1343,\r\n      \"height\": 173,\r\n      \"figmaNode\": \"27:525\"\r\n   
     },\r\n    {\r\n      \"id\": \"group.title\",\r\n      \"sprite\": \"Title_groupselect_th\",\r\n     
-    \"x\": 442,\r\n      \"y\": 122,\r\n      \"width\": 1047,\r\n      \"height\":
-    136,\r\n      \"figmaNode\": \"27:538\"\r\n    },\r\n    {\r\n      \"id\": \"group.subtitle\",\r\n     
-    \"sprite\": \"Subtitle_groupselect_th\",\r\n      \"x\": 553,\r\n      \"y\":
-    263,\r\n      \"width\": 816,\r\n      \"height\": 42,\r\n      \"figmaNode\":
+    \"x\": 471,\r\n      \"y\": 116,\r\n      \"width\": 995,\r\n      \"height\":
+    142,\r\n      \"figmaNode\": \"27:538\"\r\n    },\r\n    {\r\n      \"id\": \"group.subtitle\",\r\n     
+    \"sprite\": \"Subtitle_groupselect_th\",\r\n      \"x\": 546,\r\n      \"y\":
+    270,\r\n      \"width\": 830,\r\n      \"height\": 35,\r\n      \"figmaNode\":
     \"27:538\"\r\n    },\r\n    {\r\n      \"id\": \"group.help\",\r\n      \"sprite\":
     \"ButtonHelpBox_groupselect_th\",\r\n      \"x\": 596,\r\n      \"y\": 907,\r\n     
     \"width\": 740,\r\n      \"height\": 145,\r\n      \"figmaNode\": \"27:538\"\r\n   
     },\r\n    {\r\n      \"id\": \"selection.title\",\r\n      \"sprite\": \"Title_selectall_th\",\r\n     
-    \"x\": 433,\r\n      \"y\": 36,\r\n      \"width\": 1063,\r\n      \"height\":
-    158,\r\n      \"figmaNode\": \"27:558\"\r\n    },\r\n    {\r\n      \"id\": \"selection.subtitle\",\r\n     
+    \"x\": 453,\r\n      \"y\": 43,\r\n      \"width\": 1023,\r\n      \"height\":
+    151,\r\n      \"figmaNode\": \"27:558\"\r\n    },\r\n    {\r\n      \"id\": \"selection.subtitle\",\r\n     
     \"sprite\": \"Subtitle_selectall_th\",\r\n      \"x\": 558,\r\n      \"y\": 200,\r\n     
     \"width\": 805,\r\n      \"height\": 38,\r\n      \"figmaNode\": \"27:558\"\r\n   
     },\r\n    {\r\n      \"id\": \"selection.help\",\r\n      \"sprite\": \"ButtonHelpBox_selectall_th\",\r\n     
     \"x\": 593,\r\n      \"y\": 899,\r\n      \"width\": 747,\r\n      \"height\":
     153,\r\n      \"figmaNode\": \"27:558\"\r\n    },\r\n    {\r\n      \"id\": \"result.title\",\r\n     
-    \"sprite\": \"Title_recommendedAd_th\",\r\n      \"x\": 320,\r\n      \"y\":
-    63,\r\n      \"width\": 1218,\r\n      \"height\": 146,\r\n      \"figmaNode\":
+    \"sprite\": \"Title_recommendedAd_th\",\r\n      \"x\": 324,\r\n      \"y\":
+    86,\r\n      \"width\": 1199,\r\n      \"height\": 123,\r\n      \"figmaNode\":
     \"27:579\"\r\n    },\r\n    {\r\n      \"id\": \"result.subtitle\",\r\n     
     \"sprite\": \"Subtitle_recommendedAd_th\",\r\n      \"x\": 540,\r\n      \"y\":
-    221,\r\n      \"width\": 905,\r\n      \"height\": 63,\r\n      \"figmaNode\":
+    221,\r\n      \"width\": 853,\r\n      \"height\": 63,\r\n      \"figmaNode\":
     \"27:579\"\r\n    },\r\n    {\r\n      \"id\": \"result.help\",\r\n      \"sprite\":
     \"ButtonHelpBox_recommendedAd_th\",\r\n      \"x\": 550,\r\n      \"y\": 899,\r\n     
     \"width\": 832,\r\n      \"height\": 153,\r\n      \"figmaNode\": \"27:579\"\r\n   
@@ -166,8 +166,8 @@ MonoBehaviour:
     \"RecommendedProductImageBox_selectall_th\",\r\n      \"x\": 816,\r\n      \"y\":
     331,\r\n      \"width\": 838,\r\n      \"height\": 493,\r\n      \"figmaNode\":
     \"20:263\"\r\n    },\r\n    {\r\n      \"id\": \"video.end\",\r\n      \"sprite\":
-    \"VideoEndPopupText_th\",\r\n      \"x\": 447,\r\n      \"y\": 438,\r\n     
-    \"width\": 1026,\r\n      \"height\": 189,\r\n      \"figmaNode\": \"20:291\"\r\n   
+    \"VideoEndPopupText_th\",\r\n      \"x\": 579,\r\n      \"y\": 423,\r\n     
+    \"width\": 763,\r\n      \"height\": 205,\r\n      \"figmaNode\": \"20:291\"\r\n   
     },\r\n    {\r\n      \"id\": \"video.home\",\r\n      \"sprite\": \"VideoHomeHint_th\",\r\n     
     \"x\": 40,\r\n      \"y\": 40,\r\n      \"width\": 469,\r\n      \"height\":
     94,\r\n      \"figmaNode\": \"\"\r\n    },\r\n    {\r\n      \"id\": \"group.board\",\r\n     

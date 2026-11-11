@@ -1,0 +1,70 @@
+[
+ {
+  "shot": "group_empty_th",
+  "screenshotSize": [
+   1920,
+   1080
+  ],
+  "frame": 36,
+  "region": [
+   429,
+   104,
+   1069,
+   213
+  ],
+  "meanAbs": 1.01,
+  "over40": 3477,
+  "pixels": 227697
+ },
+ {
+  "shot": "selection_full_th",
+  "screenshotSize": [
+   1920,
+   1080
+  ],
+  "frame": 46,
+  "region": [
+   421,
+   23,
+   1084,
+   179
+  ],
+  "meanAbs": 0.82,
+  "over40": 1775,
+  "pixels": 194036
+ },
+ {
+  "shot": "result_th",
+  "screenshotSize": [
+   1920,
+   1080
+  ],
+  "frame": 51,
+  "region": [
+   308,
+   50,
+   1241,
+   246
+  ],
+  "meanAbs": 0.86,
+  "over40": 5168,
+  "pixels": 305286
+ },
+ {
+  "shot": "video_end_th",
+  "screenshotSize": [
+   1920,
+   1080
+  ],
+  "frame": 58,
+  "region": [
+   434,
+   411,
+   1050,
+   229
+  ],
+  "meanAbs": 19.04,
+  "over40": 4341,
+  "pixels": 240450
+ }
+]

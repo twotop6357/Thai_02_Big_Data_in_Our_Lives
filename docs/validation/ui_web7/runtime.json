@@ -1,0 +1,29 @@
+{
+  "task": "UI-WEB-007 runtime",
+  "checks": [
+    "Thai",
+    "Shown: group.title",
+    "Sprite size matches web export: group.title (995.00, 142.00)",
+    "Rect matches Lang_Th: group.title pos=(471.00, -116.00) size=(995.00, 142.00)",
+    "Shown: group.subtitle",
+    "Sprite size matches web export: group.subtitle (830.00, 35.00)",
+    "Rect matches Lang_Th: group.subtitle pos=(546.00, -270.00) size=(830.00, 35.00)",
+    "Shown: selection.title",
+    "Sprite size matches web export: selection.title (1023.00, 151.00)",
+    "Rect matches Lang_Th: selection.title pos=(453.00, -43.00) size=(1023.00, 151.00)",
+    "Shown: selection.subtitle",
+    "Sprite size matches web export: selection.subtitle (805.00, 38.00)",
+    "Rect matches Lang_Th: selection.subtitle pos=(558.00, -200.00) size=(805.00, 38.00)",
+    "Result",
+    "Shown: result.title",
+    "Sprite size matches web export: result.title (1199.00, 123.00)",
+    "Rect matches Lang_Th: result.title pos=(324.00, -86.00) size=(1199.00, 123.00)",
+    "Shown: result.subtitle",
+    "Sprite size matches web export: result.subtitle (853.00, 63.00)",
+    "Rect matches Lang_Th: result.subtitle pos=(540.00, -221.00) size=(853.00, 63.00)",
+    "Shown: video.end",
+    "Sprite size matches web export: video.end (763.00, 205.00)",
+    "Rect matches Lang_Th: video.end pos=(579.00, -423.00) size=(763.00, 205.00)"
+  ],
+  "passed": true
+}

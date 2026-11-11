@@ -33,19 +33,19 @@
     {
       "id": "group.title",
       "sprite": "Title_groupselect_th",
-      "x": 442,
-      "y": 122,
-      "width": 1047,
-      "height": 136,
+      "x": 471,
+      "y": 116,
+      "width": 995,
+      "height": 142,
       "figmaNode": "27:538"
     },
     {
       "id": "group.subtitle",
       "sprite": "Subtitle_groupselect_th",
-      "x": 553,
-      "y": 263,
-      "width": 816,
-      "height": 42,
+      "x": 546,
+      "y": 270,
+      "width": 830,
+      "height": 35,
       "figmaNode": "27:538"
     },
     {
@@ -60,10 +60,10 @@
     {
       "id": "selection.title",
       "sprite": "Title_selectall_th",
-      "x": 433,
-      "y": 36,
-      "width": 1063,
-      "height": 158,
+      "x": 453,
+      "y": 43,
+      "width": 1023,
+      "height": 151,
       "figmaNode": "27:558"
     },
     {
@@ -87,10 +87,10 @@
     {
       "id": "result.title",
       "sprite": "Title_recommendedAd_th",
-      "x": 320,
-      "y": 63,
-      "width": 1218,
-      "height": 146,
+      "x": 324,
+      "y": 86,
+      "width": 1199,
+      "height": 123,
       "figmaNode": "27:579"
     },
     {
@@ -98,7 +98,7 @@
       "sprite": "Subtitle_recommendedAd_th",
       "x": 540,
       "y": 221,
-      "width": 905,
+      "width": 853,
       "height": 63,
       "figmaNode": "27:579"
     },
@@ -123,10 +123,10 @@
     {
       "id": "video.end",
       "sprite": "VideoEndPopupText_th",
-      "x": 447,
-      "y": 438,
-      "width": 1026,
-      "height": 189,
+      "x": 579,
+      "y": 423,
+      "width": 763,
+      "height": 205,
       "figmaNode": "20:291"
     },
     {

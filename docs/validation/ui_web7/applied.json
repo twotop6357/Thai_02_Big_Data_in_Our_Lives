@@ -1,0 +1,128 @@
+[
+  {
+    "index": 39,
+    "frame": 36,
+    "id": "group.title",
+    "target": "Assets/UI/UIs_Th/GroupSelect/Title_groupselect_th.png",
+    "before": "6933a48aa40ecd341268b94542f1f27d9ac9da826e6cc34b6a0d95065dd320dd",
+    "after": "440bd5c739965541e582d3eab92b170fbe785d2c0f3bd50e773590be8e8f3312",
+    "previousRect": {
+      "x": 442,
+      "y": 122,
+      "width": 1047,
+      "height": 136
+    },
+    "rect": {
+      "x": 471,
+      "y": 116,
+      "width": 995,
+      "height": 142
+    },
+    "opaqueRmse": 5.928
+  },
+  {
+    "index": 40,
+    "frame": 36,
+    "id": "group.subtitle",
+    "target": "Assets/UI/UIs_Th/GroupSelect/Subtitle_groupselect_th.png",
+    "before": "f43f92158f48f66bd5a1f6c1471b2144c6b09c1c16f37cca5ffd517a0d08fec5",
+    "after": "bc12ddae8195d2bfbe374df586cb8beb2683e8ff98b4ef6aff40aed6d11ac4e9",
+    "previousRect": {
+      "x": 553,
+      "y": 263,
+      "width": 816,
+      "height": 42
+    },
+    "rect": {
+      "x": 546,
+      "y": 270,
+      "width": 830,
+      "height": 35
+    },
+    "opaqueRmse": 6.844
+  },
+  {
+    "index": 49,
+    "frame": 46,
+    "id": "selection.title",
+    "target": "Assets/UI/UIs_Th/SelectAll/Title_selectall_th.png",
+    "before": "2b6aa1444e83492966fe61add30e8fa66549b9ae848a715d73dc3c75f8540d41",
+    "after": "d25963dd6c6ecd7cd6ef5eb33292d295dab9a45432e7b4f24049946c48eba2ad",
+    "previousRect": {
+      "x": 433,
+      "y": 36,
+      "width": 1063,
+      "height": 158
+    },
+    "rect": {
+      "x": 453,
+      "y": 43,
+      "width": 1023,
+      "height": 151
+    },
+    "opaqueRmse": 5.734
+  },
+  {
+    "index": 54,
+    "frame": 51,
+    "id": "result.title",
+    "target": "Assets/UI/UIs_Th/RecommendedAd/Title_recommendedAd_th.png",
+    "before": "5fd9fdec68bf477595debc1a7b000bb0b4ea393e69b32146b9e9d135c4b8e99d",
+    "after": "9e7630bc7678488be11e2e61e62a83907a8dff40f8d4e209a3e8bffd5257d0d8",
+    "previousRect": {
+      "x": 320,
+      "y": 63,
+      "width": 1218,
+      "height": 146
+    },
+    "rect": {
+      "x": 324,
+      "y": 86,
+      "width": 1199,
+      "height": 123
+    },
+    "opaqueRmse": 3.951
+  },
+  {
+    "index": 55,
+    "frame": 51,
+    "id": "result.subtitle",
+    "target": "Assets/UI/UIs_Th/RecommendedAd/Subtitle_recommendedAd_th.png",
+    "before": "ce74f5c503e96884ea1ff777c9490ed1ad58f601ca6ca484e56a3bc7c251d069",
+    "after": "4d9ff4b0e3602a42e70789e95c4ef9d0b560b3c516bc2e2f021f8f57116d25e3",
+    "previousRect": {
+      "x": 540,
+      "y": 221,
+      "width": 905,
+      "height": 63
+    },
+    "rect": {
+      "x": 540,
+      "y": 221,
+      "width": 853,
+      "height": 63
+    },
+    "opaqueRmse": 5.356
+  },
+  {
+    "index": 59,
+    "frame": 58,
+    "id": "video.end",
+    "target": "Assets/UI/UIs_Th/Video/VideoEndPopupText_th.png",
+    "before": "d9b659b2d4bfbc7602b8bf14ba166c3df938648d6209bc96512992a8bb6c108e",
+    "after": "e37912c5d17e5e50d25af3b4b2f027da3fff75ef6ed10a68630605f85d63e99b",
+    "previousRect": {
+      "x": 447,
+      "y": 438,
+      "width": 1026,
+      "height": 189
+    },
+    "rect": {
+      "x": 579,
+      "y": 423,
+      "width": 763,
+      "height": 205
+    },
+    "opaqueRmse": 7.421
+  }
+]
