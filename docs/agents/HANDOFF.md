@@ -4,7 +4,7 @@
 
 ## 현재 상태
 
-- UI-WEB-007 완료 / Claude 단독 / 2026-11-11 Asia/Seoul / 기준 main/f65c232. 웹 2번 TH/EN 일괄 ZIP(86개)으로 태국어 폰트 변경에 따른 문구 6개(그룹 제목·부제, 선택 제목, 결과 제목·부제, 영상 종료) 원본 교체와 Lang_Th.json·defaultThai 좌표 갱신. 그 밖의 요소·영어는 변경 없음. Play23 PASS·콘솔 오류0. 새 영상 종료 문구의 "น ำ" 띄어 보임은 웹 원본 그대로라 디자이너 확인 필요. Player 재빌드/실장비 미수행. 기능·문서 커밋 완료, 사용자 변경(ProjectSettings·AdConfetti 프리팹)은 미커밋 유지. 소유권 해제. docs/validation/ui_web7/README.md.
+- UI-WEB-007 완료 / Claude 단독 / 2026-11-11 Asia/Seoul / 기준 main/f65c232. 웹 2번 TH/EN 일괄 ZIP(86개)으로 태국어 폰트 변경에 따른 문구 6개(그룹 제목·부제, 선택 제목, 결과 제목·부제, 영상 종료) 원본 교체와 Lang_Th.json·defaultThai 좌표 갱신. 그 밖의 요소·영어는 변경 없음. Play23 PASS·콘솔 오류0. 새 영상 종료 문구의 "น ำ" 띄어 보임은 웹 원본 그대로라 디자이너 확인 필요. 16:26 재내보내기 결과 PNG81개 동일(PDF5만 다름, 미사용)로 추가 변경 없음. Player 재빌드/실장비 미수행. 기능·문서 커밋 완료, 사용자 변경(ProjectSettings·AdConfetti 프리팹)은 미커밋 유지. 소유권 해제. docs/validation/ui_web7/README.md.
 
 - IDLE-VIDEO-001 완료(미커밋) / Claude 단독 / 2026-11-10 Asia/Seoul. 타이틀 배경 c02.mp4 무음 무한 반복, 로고·문구·팝업은 위. Play9 PASS. 소유권 해제. docs/validation/idle_video/README.md.
 
