@@ -4,6 +4,8 @@
 
 ## 현재 상태
 
+- VIDEO-NARR-001 완료 / Claude 단독 / 2026-11-17 Asia/Seoul / 기준 main/d8fe0a0. 사용자가 넣은 나레이션 추가 영상 2개(태국_콘텐츠02_영어/태국어_나레이션추가.mp4)를 Video_en/Video_th.mp4에 바이트 덮어쓰기(SHA 일치), meta·GUID 유지, 원래 이름 파일은 Unity에서 삭제. 경로 참조(Lang_*.json "Videos/Video_*")라 코드·JSON 무변경. EN 79.4초(이전 77.3초)·TH 77.3초, 둘 다 1920×1080/30fps/스테레오 48kHz. 결과 영상 시간 초과는 clip.length+20초라 자동 반영. Play에서 두 클립 Prepare·끝 2초 전 재생·loopPointReached 확인, 오류0. "Color primaries 0" 가져오기 경고는 이전 영상도 색 태그가 없어 동일(재인코딩하지 않음). 실제 결과 화면 흐름 시청·청취·Player 재빌드 미수행.
+
 - IDLE-LOOP-001 완료 / Claude 단독 / 2026-11-11 Asia/Seoul / 기준 main/024885b. 타이틀 c02 루프 튐 수정(Thai_04 c04와 같은 원인·방식). 수정 전 측정: 마지막 프레임 50ms 멈춤, 15회 중 1회 8프레임 전 화면, 배경 이음매 변화 평소의 23배. 재인코딩(ffmpeg 9.0.2 임시 실행 파일, Y PSNR 50.0dB, 15.9→7.3MB), Intro_bg를 Unity 디코딩 첫 프레임으로 재생성(차이 10.5→0.0), 플레이어 2개 교대+전환 프레임만 1.5배속(프레임 간격 흔들림 22%→2.6%). 최종 84초(사용자 지시로 200초 전 종료)·이전 교대 기록 포함 누적 344초/루프86에서 순서 어긋남0·빈 텍스처0, 마지막 프레임 중앙값34ms. 콘솔 오류0, 임시 프로브·Temp 측정 파일 삭제. Player 재빌드/대상 PC 육안/장시간 미수행. 영상·코드·문서 커밋. docs/TITLE_VIDEO.md.
 
 - UI-WEB-007 완료 / Claude 단독 / 2026-11-11 Asia/Seoul / 기준 main/f65c232. 웹 2번 TH/EN 일괄 ZIP(86개)으로 태국어 폰트 변경에 따른 문구 6개(그룹 제목·부제, 선택 제목, 결과 제목·부제, 영상 종료) 원본 교체와 Lang_Th.json·defaultThai 좌표 갱신. 그 밖의 요소·영어는 변경 없음. Play23 PASS·콘솔 오류0. 새 영상 종료 문구의 "น ำ" 띄어 보임은 웹 원본 그대로라 디자이너 확인 필요. 16:26 재내보내기 결과 PNG81개 동일(PDF5만 다름, 미사용)로 추가 변경 없음. Player 재빌드/실장비 미수행. 기능·문서 커밋 완료, 사용자 변경(ProjectSettings·AdConfetti 프리팹)은 미커밋 유지. 소유권 해제. docs/validation/ui_web7/README.md.
@@ -118,6 +120,7 @@
 
 | 작업 ID | 담당 | 상태 | 수정 범위 | 다음 담당 / 행동 |
 |---|---|---|---|---|
+| VIDEO-NARR-001 | Claude 단독 | 완료 | Resources/Videos/Video_en·Video_th.mp4 바이트 교체(meta·GUID 유지)·사용자 신규 영상 2개+meta 삭제·CHANGELOG/HANDOFF | 소유권 해제. 에디터 준비·끝 이벤트 PASS. 실제 결과 화면 흐름 시청·청취·Player 재빌드 후속 |
 | IDLE-LOOP-001 | Claude 단독 | 완료 | c02.mp4 재인코딩·Intro_bg 재생성(영상 첫 프레임)·UI/IdleVideoBackground(플레이어 2개 교대+시작 위상 보정)·docs/TITLE_VIDEO.md·validation/idle_loop·idle_video README·CHANGELOG/HANDOFF. 임시 Assets/__TempCheck·Temp 측정 파일 삭제 | 소유권 해제. 순서 어긋남0·빈 텍스처0(누적 344초/루프86). Player 재빌드·대상 PC 육안 후속 |
 | UI-WEB-007 | Claude 단독 | 완료 | 태국어 UI PNG6(그룹 제목·부제, 선택 제목, 결과 제목·부제, 영상 종료 문구)·Lang_Th.json·ExhibitionUIAssets 기본사본·Tools/UI apply/verify_web7·validation/ui_web7·.gitignore(__pycache__)·CHANGELOG/HANDOFF | 소유권 해제. Play23 PASS. 영상 종료 문구 "น ำ" 디자이너 확인·Player 재빌드 후속 |
 | IDLE-VIDEO-001 | Claude 단독 | 완료(미커밋) | 신규 UI/IdleVideoBackground·Editor/IdleVideoAuthoring·0_Idle 추가만·Builder 1줄·Logo/TitleBlockPopupAuthoring TryGetComponent 수정·validation/idle_video·CHANGELOG/HANDOFF | 소유권 해제. Play9 PASS. Player/장시간 후속 |
@@ -224,6 +227,16 @@ FLOW-001 시작 시 사용자 변경: `_TempFont.asset`, `0_Idle.unity` UI, `Set
 ```
 
 ## 최신 작업 기록
+
+### [2026-11-17 / Asia/Seoul] VIDEO-NARR-001 · Claude → 다음 작업자 · 완료
+
+- 요청: Resources/Videos에 사용자가 넣은 새 영상 2개를 기존 영상과 맞게 교체하고 이름 변경.
+- 기준: main/d8fe0a0. 영상·문서 커밋.
+- 변경: 영어_나레이션추가 → Video_en.mp4, 태국어_나레이션추가 → Video_th.mp4 바이트 덮어쓰기(meta·GUID ef74…/ceb2… 유지, 가져오기 설정은 원래 동일). 원래 이름 파일 2개와 meta는 Unity 에셋 삭제로 제거. 코드·JSON·씬 무변경.
+- 검증: Claude, Unity 2022.3.62f3 에디터. Resources.Load로 두 클립 로드(EN 2382프레임/79.400초, TH 2320프레임/77.333초), Play 모드에서 VideoPlayer Prepare(1920×1080 텍스처)·끝 2초 전부터 재생해 loopPointReached 발생 확인, 콘솔 오류0. 임시 검증 오브젝트는 Play 종료로 제거.
+- 미검증/위험: 실제 결과 화면 전체 시청·나레이션 청취·Player 재빌드 미수행. "Color primaries 0" 경고는 이전 영상과 같은 상태(색 태그 없음).
+- 다음 행동: 소유권 해제. 배포 시 Player 재빌드 필요.
+- 장애: 발견 없음.
 
 ### [2026-11-10 / Asia/Seoul] IDLE-VIDEO-001 · Claude → 다음 작업자 · 완료(미커밋)
 
