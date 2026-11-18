@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Thai_02_Big_Data_in_Our_Lives.slnx"
+    "dotnet.defaultSolution": "NSM_DNA_02.slnx"
 }

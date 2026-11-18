@@ -16,7 +16,7 @@
 
 ## 2. 저장소 경계
 
-- 개발 저장소: `https://github.com/twotop6357/Thai_02_Big_Data_in_Our_Lives.git`.
+- 개발 저장소: `https://github.com/twotop6357/NSM_DNA_02.git`.
 - 개인 템플릿: `https://github.com/twotop6357/Unity-Startup-Template` — 현재 프로젝트와 별개다.
 - 원본 `https://github.com/wonjeong97/0_Startup` 및 의존성 `https://github.com/wonjeong97/Template.git`에는 push·PR·설정 변경 등 어떤 수정도 보내지 않는다. 의존성 다운로드는 가능하다.
 - 기능은 우선 `Assets`의 파생 클래스와 확장 지점에 구현한다. `Library/PackageCache`를 직접 수정하지 않는다.
