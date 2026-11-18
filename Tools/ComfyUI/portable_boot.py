@@ -67,7 +67,9 @@ if __name__ == "__main__":
     parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parent.parent)
     parser.add_argument("--diagnose", action="store_true")
     args = parser.parse_args()
-    player = prepare(args.root.resolve())
     if args.diagnose:
+        # Diagnostics only: the Player resolves the runtime itself, so no settings are rewritten.
+        (args.root.resolve() / "ComfyRuntime/logs").mkdir(exist_ok=True)
         raise SystemExit(0 if diagnose(args.root.resolve()) else 2)
+    player = prepare(args.root.resolve())
     print(f"Prepared portable runtime for {player.name}")

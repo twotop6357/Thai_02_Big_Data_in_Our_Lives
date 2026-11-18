@@ -70,7 +70,7 @@ def package(destination):
     for name in ["flux2-klein-LICENSE.md", "NOTICE.txt"]:
         shutil.copy2(ROOT / "Tools/ComfyUI/licenses" / name, licenses / name)
     shutil.copy2(source / "ComfyUI/LICENSE", licenses / "ComfyUI-GPL-3.0.txt")
-    provenance = {"task": "COMFY-PORTABLE-001", "player": player.name,
+    provenance = {"task": "DEPLOY-SELF-001", "player": player.name,
                   "python": "3.13.12", "torch": "2.11.0+cu128", "comfy": "0.42.0",
                   "models": [], "preserved_player_files": baseline}
     for manifest_name, category in [("model.json", "diffusion_models"), ("text_encoder.json", "text_encoders"),
@@ -93,9 +93,9 @@ def package(destination):
     shutil.copy2(ROOT / "Tools/ComfyUI/portable_boot.py", runtime / "portable_boot.py")
     shutil.copy2(ROOT / "Tools/ComfyUI/portable_start.ps1", runtime / "portable_start.ps1")
     shutil.copy2(ROOT / "Tools/ComfyUI/portable_server.py", runtime / "portable_server.py")
-    for name in ["Run_Thai02.cmd", "Check_Runtime.cmd"]:
-        shutil.copy2(ROOT / "Tools/ComfyUI" / name, destination / name)
-    shutil.copy2(ROOT / "Tools/ComfyUI/PORTABLE_README_KO.txt", destination / "README_먼저읽기.txt")
+    # The Player finds ComfyRuntime beside its own exe, so no launcher script is shipped.
+    shutil.copy2(ROOT / "Tools/ComfyUI/Check_Runtime.cmd", destination / "Check_Runtime.cmd")
+    shutil.copy2(ROOT / "Tools/ComfyUI/NSM_README_KO.txt", destination / "README_먼저읽기.txt")
     for file, expected in baseline.items():
         if sha(destination / file) != expected:
             raise RuntimeError(f"Existing Player file changed unexpectedly: {file}")
