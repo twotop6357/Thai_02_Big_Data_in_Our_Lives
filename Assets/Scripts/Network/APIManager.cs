@@ -19,7 +19,7 @@ namespace Network
         private readonly Queue<bool> _externalCalls = new Queue<bool>();
         private GameManager _manager;
         private ComfyServerLauncher _generationServer;
-        private Process _watcher;
+        private DetachedProcess _watcher;
         private string _normalExitMarker;
         private bool _watcherStarted;
 
@@ -173,14 +173,12 @@ namespace Network
                 string script = Path.Combine(Application.streamingAssetsPath, "ContentLog", "WatchProcess.ps1");
                 if (!File.Exists(script)) throw new FileNotFoundException("The content log process watcher is missing.", script);
                 using var current = Process.GetCurrentProcess();
-                var info = new ProcessStartInfo(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.System), "WindowsPowerShell", "v1.0", "powershell.exe"))
-                {
-                    UseShellExecute = false, CreateNoWindow = true,
-                    Arguments = "-NoProfile -NonInteractive -ExecutionPolicy Bypass -File \"" + script +
-                        "\" -TargetProcessId " + current.Id + " -StartTimeUtcTicks " + current.StartTime.ToUniversalTime().Ticks +
-                        " -Endpoint \"" + endpoint + "\" -NormalExitMarker \"" + _normalExitMarker + "\""
-                };
-                _watcher = Process.Start(info) ?? throw new InvalidOperationException("The content log watcher did not start.");
+                // 감시기는 앱보다 오래 살아야 하므로 RFID 수신 소켓 등 이 앱의 핸들을 물려주지 않는다.
+                _watcher = DetachedProcess.Start(
+                    Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.System), "WindowsPowerShell", "v1.0", "powershell.exe"),
+                    "-NoProfile -NonInteractive -ExecutionPolicy Bypass -File \"" + script +
+                    "\" -TargetProcessId " + current.Id + " -StartTimeUtcTicks " + current.StartTime.ToUniversalTime().Ticks +
+                    " -Endpoint \"" + endpoint + "\" -NormalExitMarker \"" + _normalExitMarker + "\"");
                 _watcherStarted = true;
                 Debug.Log("[ContentLog] Forced-exit watcher started for this application process.", this);
             }

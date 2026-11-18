@@ -221,12 +221,16 @@ namespace Exhibition.Blocks
                     var listener = new TcpListener(IPAddress.Any, settings.listenPort);
                     try
                     {
+                        // An inherited copy of this socket in a child process (ComfyUI outlives the app)
+                        // keeps the port bound after the app exits, so the next run cannot listen.
+                        Core.DetachedProcess.PreventInheritance(listener.Server.Handle);
                         listener.Start();
                         using var stop = token.Register(listener.Stop);
                         Enqueue(new Message { Epoch = epoch, Listener = "Listening on TCP port " + settings.listenPort });
                         while (!token.IsCancellationRequested)
                         {
                             var client = listener.AcceptTcpClient();
+                            Core.DetachedProcess.PreventInheritance(client.Client.Handle);
                             // A reader that vanishes during setup only loses this attempt; it connects again itself.
                             try { Attach(client, settings, epoch, token, sessions, tasks, rejected, ref nextSession); }
                             catch (SocketException) { client.Close(); }
