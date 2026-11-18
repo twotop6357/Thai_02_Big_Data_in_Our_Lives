@@ -31,6 +31,35 @@ namespace Exhibition.Blocks
         public string serverWorkingDirectory = "";
         public int serverStartupTimeoutSeconds = 180;
 
+        /// <summary>실행 파일 옆의 동봉 런타임. 없으면 null이며 위 server* 값으로 실행한다.</summary>
+        [NonSerialized] public ComfyBundledRuntime bundledRuntime;
+
+        /// <summary>
+        /// 설정 JSON을 읽어 검증하고, 실행 파일 옆에 ComfyRuntime 폴더가 있으면 그 경로로 실행 값을 바꾼다.
+        /// </summary>
+        /// <param name="applicationRoot">실행 파일이 있는 폴더.</param>
+        public static ComfyBlockSettings Parse(string json, string applicationRoot)
+        {
+            var settings = JsonUtility.FromJson<ComfyBlockSettings>(json);
+            if (settings == null) throw new InvalidOperationException("ComfyUI settings are missing.");
+            settings.Validate();
+            var uri = new Uri(settings.serverUrl);
+            // 원격 서버를 쓰는 설정이면 동봉 런타임이 있어도 건드리지 않는다.
+            if (!uri.IsLoopback) return settings;
+            settings.bundledRuntime = ComfyBundledRuntime.Find(applicationRoot, uri.Port);
+            if (settings.bundledRuntime == null) return settings;
+            settings.serverExecutable = settings.bundledRuntime.Executable;
+            settings.serverArguments = settings.bundledRuntime.Arguments;
+            settings.serverWorkingDirectory = settings.bundledRuntime.Root;
+            settings.comfyOutputDirectory = settings.bundledRuntime.OutputDirectory;
+            settings.serverStartupTimeoutSeconds =
+                Math.Max(settings.serverStartupTimeoutSeconds, ComfyBundledRuntime.MinimumStartupTimeoutSeconds);
+            return settings;
+        }
+
+        /// <summary>실행 파일이 있는 폴더(에디터에서는 프로젝트 폴더).</summary>
+        public static string ApplicationRoot => System.IO.Path.GetDirectoryName(Application.dataPath);
+
         public void ValidateLaunch()
         {
             if (string.IsNullOrWhiteSpace(serverExecutable) ||

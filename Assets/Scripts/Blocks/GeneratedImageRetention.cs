@@ -41,8 +41,8 @@ namespace Exhibition.Blocks
         {
             try
             {
-                _settings = JsonUtility.FromJson<ComfyBlockSettings>(await ComfyImageClient.LoadText("ComfyUISettings.json", token));
-                _settings.Validate();
+                _settings = ComfyBlockSettings.Parse(await ComfyImageClient.LoadText("ComfyUISettings.json", token),
+                    ComfyBlockSettings.ApplicationRoot);
                 _configured = true;
                 Debug.Log("[ImageRetention] Started. Limits: " + _settings.maxGeneratedImages + " image(s), " +
                     _settings.maxGeneratedImageMegabytes + " MiB.", this);

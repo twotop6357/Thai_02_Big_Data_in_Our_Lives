@@ -94,9 +94,8 @@ namespace Exhibition.Blocks
                 await UniTask.WaitUntil(() => _readerHub.IsArtworkReady, cancellationToken: token);
                 _catalog = JsonUtility.FromJson<BlockCatalog>(await LoadConfigurationTextAsync("BlockCatalog.json", token));
                 _catalog.Validate();
-                _settings = JsonUtility.FromJson<ComfyBlockSettings>(await LoadConfigurationTextAsync("ComfyUISettings.json", token));
-                if (_settings == null) throw new InvalidOperationException("ComfyUI settings are missing.");
-                _settings.Validate();
+                _settings = ComfyBlockSettings.Parse(await LoadConfigurationTextAsync("ComfyUISettings.json", token),
+                    ComfyBlockSettings.ApplicationRoot);
                 _client = new ComfyImageClient(_settings);
                 _journal = new BlockJournal(Path.Combine(Application.persistentDataPath, "BlockData"),
                     _settings.maxJournalFiles, _settings.maxJournalMegabytes);

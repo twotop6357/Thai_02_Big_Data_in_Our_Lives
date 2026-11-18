@@ -1,6 +1,6 @@
 using System;
-using System.Diagnostics;
 using System.Threading;
+using Core;
 using Cysharp.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 using UnityEngine;
@@ -23,7 +23,8 @@ namespace Exhibition.Blocks
 
         private CancellationTokenSource _lifetime;
         private ComfyBlockSettings _settings;
-        private Process _process;
+        // 이 앱이 시작한 서버 프로세스. 핸들을 물려주지 않아 RFID 수신 포트를 붙잡지 않는다.
+        private DetachedProcess _process;
         private bool _started;
 
         public ComfyServerState State { get; private set; } = ComfyServerState.Checking;
@@ -58,8 +59,10 @@ namespace Exhibition.Blocks
             {
                 if (_settings == null)
                 {
-                    _settings = JsonUtility.FromJson<ComfyBlockSettings>(await ComfyImageClient.LoadText("ComfyUISettings.json", token));
-                    _settings.Validate();
+                    _settings = ComfyBlockSettings.Parse(await ComfyImageClient.LoadText("ComfyUISettings.json", token),
+                        ComfyBlockSettings.ApplicationRoot);
+                    if (_settings.bundledRuntime != null)
+                        Debug.Log("[ComfyServerLauncher] Using the bundled ComfyRuntime at " + _settings.bundledRuntime.Root + ".", this);
                 }
                 if (State != ComfyServerState.Starting)
                 {
@@ -92,18 +95,18 @@ namespace Exhibition.Blocks
             try
             {
                 _settings.ValidateLaunch();
-                var info = new ProcessStartInfo(Expand(_settings.serverExecutable), Expand(_settings.serverArguments))
-                {
-                    UseShellExecute = false,
-                    CreateNoWindow = true,
-                };
-                if (!string.IsNullOrWhiteSpace(_settings.serverWorkingDirectory))
-                    info.WorkingDirectory = Expand(_settings.serverWorkingDirectory);
-                _process = Process.Start(info) ?? throw new InvalidOperationException("Process.Start returned no process.");
+                // 동봉 런타임은 복사가 덜 된 상태로 실행하지 않도록 파일·모델을 먼저 확인한다.
+                _settings.bundledRuntime?.EnsureReady();
+                _process = DetachedProcess.Start(Expand(_settings.serverExecutable), Expand(_settings.serverArguments),
+                    string.IsNullOrWhiteSpace(_settings.serverWorkingDirectory) ? null : Expand(_settings.serverWorkingDirectory));
                 Debug.Log("[ComfyServerLauncher] ComfyUI was not running. Started server process " + _process.Id + ".", this);
                 SetState(ComfyServerState.Starting, null);
             }
-            catch (Exception ex) { SetState(ComfyServerState.Unavailable, "Failed to start ComfyUI: " + ex.Message); }
+            catch (Exception ex)
+            {
+                Debug.LogException(ex, this);
+                SetState(ComfyServerState.Unavailable, "Failed to start ComfyUI: " + ex.Message);
+            }
         }
 
         private async UniTask WaitForStartAsync(CancellationToken token)
