@@ -120,6 +120,8 @@ python Tools/ComfyUI/benchmark.py --warmup 1 --runs 20 --target-seconds 15 --out
 
 ## 자동 실행(Unity 앱)
 
+2026-11-18 DEPLOY-SELF-001: **실행 파일 옆에 `ComfyRuntime` 폴더가 있으면 앱이 그 런타임으로 서버를 직접 실행한다.** `Run_*.cmd`로 `ComfyUISettings.json`의 경로를 고쳐 쓰던 단계는 없어졌다. 이때 `serverExecutable`·`serverArguments`·`serverWorkingDirectory`·`comfyOutputDirectory`는 JSON 값 대신 동봉 경로를 쓰고, 포트는 `serverUrl`의 포트, 준비 대기는 최소 300초다. 실행 전에 `python/python.exe`·`portable_server.py`·`ComfyUI/main.py`·`package_manifest.json`의 모델 크기를 확인하며, 빠진 파일이 있으면 `Bundled ComfyRuntime ... missing` 로그를 남기고 실행하지 않는다. 폴더가 없으면(개발 PC 등) 아래 표의 JSON 값으로 실행한다. 배포 폴더는 빌드 후 `python Tools/ComfyUI/package_portable.py "<배포 폴더>"`로 만든다. [검증](validation/deploy_self/README.md).
+
 Unity 앱은 시작 시 1회 `serverUrl`의 `/system_stats`를 검사한다. 응답이 없으면 `ComfyUISettings.json`의 실행 값으로 서버를 **창 없이** 실행하고, 응답할 때까지 2초 간격으로 확인한다. 앱이 직접 실행한 서버도 앱 종료 시 끄지 않는다(모델을 메모리에 유지). 이미 실행 중인 ComfyUI(Comfy Desktop 포함)는 건드리지 않는다.
 
 2026-11-02 COMFY-AUTOSTART-002: **Comfy Desktop GUI를 실행할 필요가 없다.** 설치된 Python으로 `ComfyUI/main.py`만 직접 실행한다. Python 환경·ComfyUI·모델은 PC에 설치되어 있어야 하며 모델을 빌드에 포함하거나 자동 다운로드하지 않는다. 이 PC의 `.venv/Scripts/python.exe`는 유효한 가상환경 진입점이다. 내부적으로 standalone-env 자식 프로세스를 실행하므로 자식의 경로만 보고 실행 파일을 바꾸지 않는다(standalone-env를 직접 호출하면 torch를 찾지 못한다).

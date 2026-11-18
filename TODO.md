@@ -6,6 +6,8 @@
 
 ## 진행 중
 
+- [ ] 대상 PC에 Desktop/NSM_DNA_02 복사 후 NSM_DNA_02.exe 직접 실행·재실행 시 RFID 연결·이미지 생성·방화벽 허용 확인, 이전 설치의 RfidSettings.json 복사 — DEPLOY-SELF-001 후속 / 담당 미정. 이 PC Player 3회 실행으로 자동 구동과 포트 재수신은 확인. docs/validation/deploy_self/README.md.
+
 - [ ] 새Windows10/11x64·실제RTX3060에서 동봉Installers 설치/재부팅·Run_Thai02.cmd/Player입력·RFID·생성시간/장시간 현장검수 — COMFY-PORTABLE-001 후속. 동봉환경3실생성/이동경로·설치서명·4모델해시는 현PC검증완료.
 
 - [ ] 실제 LAN-754(KA118) 네 대에서 클라이언트 접속·방화벽·전원 차단/재접속, UidBurst 수신 공백(기본100ms)과 보고 간격·확인 주기(기본1초) 검수 및 기존 잘린값의 F10 재등록 — RFID-STABLE-001·RFID-PRESENCE-001·RFID-LISTEN-001 후속 / 담당 미정. 고정16바이트 기본값 폐기, 루프백83검사/Windows빌드/배포 완료. [RFID_SETUP](docs/RFID_SETUP.md).

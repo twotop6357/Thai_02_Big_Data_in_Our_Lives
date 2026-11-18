@@ -1,0 +1,13 @@
+{
+  "result": "Succeeded",
+  "errors": 0,
+  "warnings": 5,
+  "durationSeconds": 13.4997749,
+  "bytes": 540821772,
+  "scenes": [
+    "Assets/Scenes/0_Idle.unity",
+    "Assets/Scenes/1_Game.unity",
+    "Assets/Scenes/2_Result.unity"
+  ],
+  "buildOptions": "None"
+}

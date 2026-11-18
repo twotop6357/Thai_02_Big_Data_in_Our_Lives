@@ -17,6 +17,16 @@
 | ID | 발견일 | 상태 | 문제 | 담당 | 상세 |
 |---|---|---|---|---|---|
 | TS-20261102-01 | 2026-11-02 | 해결 | Portable 복사의 models 이름 제외가 내부 Python코드도 제외 | Codex | [상세](#TS-20261102-01) |
+| TS-20261118-01 | 2026-11-18 | 해결 | 재실행 시 RFID 수신 포트 10123 점유로 리더 미연결 | Claude | [상세](#TS-20261118-01) |
+
+<a id="TS-20261118-01"></a>
+### TS-20261118-01 — 재실행 시 RFID 수신 포트 점유
+- 발견/담당: 2026-11-18 Asia/Seoul 사용자 보고, Claude 단독, main/3d1a892, Windows Player.
+- 문제: 프로그램을 껐다 다시 켜면 TCP 10123 수신이 `Listen failed ... AddressAlreadyInUse`로 실패해 리더가 연결되지 않는다. PC를 재부팅하거나 남아 있는 ComfyUI Python을 끝내야 풀린다.
+- 원인: `Process.Start(UseShellExecute=false)`는 상속 가능한 핸들을 모두 자식에게 넘긴다. 앱이 띄운 ComfyUI 서버는 앱 종료 후에도 남도록 설계되어 있어, 물려받은 RFID 수신 소켓이 포트를 계속 붙잡았다. 에디터에서 수신 소켓을 연 뒤 자식 프로세스를 띄우면 수신을 닫아도 자식이 끝날 때까지 재수신이 실패하는 것으로 재현했다.
+- 해결: 자식 프로세스를 핸들 상속 없이 실행하는 `Core.DetachedProcess`로 ComfyUI 서버와 운영 로그 감시기를 실행하고, RFID 수신·접속 소켓에 상속 금지 표시를 추가했다(`RfidTcpReaders`). 커밋 e210f10, b188d54.
+- 검증: 에디터에서 두 방어를 각각 재현 조건으로 확인(자식이 살아 있어도 재수신 성공). Player 재실행 결과는 [deploy_self](validation/deploy_self/README.md).
+- 재발 방지: 앱보다 오래 사는 자식 프로세스는 `DetachedProcess`로만 실행한다. 이전 버전이 띄운 서버가 남아 있는 PC는 교체 시 한 번 재부팅한다.
 
 <a id="TS-20261102-01"></a>
 ### TS-20261102-01 — Portable Comfy 내부 모델 코드 누락

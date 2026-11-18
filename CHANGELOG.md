@@ -2,6 +2,14 @@
 
 관람객·운영자 경험에 영향을 주는 변경 사항을 기록합니다. 형식은 [Keep a Changelog](https://keepachangelog.com/ko/1.1.0/)를 따릅니다.
 
+## [2026-11-18]
+
+### Changed
+- DEPLOY-SELF-001: `NSM_DNA_02.exe`만 실행하면 프로그램이 같은 폴더의 `ComfyRuntime`을 찾아 ComfyUI 서버를 직접 실행한다. `Run_NSM_DNA_02.cmd`·`Launcher` 폴더는 없어졌고 폴더를 옮겨도 설정 파일을 고칠 필요가 없다. `ComfyRuntime`이 없는 PC에서는 기존처럼 `ComfyUISettings.json`의 실행 값을 쓴다.
+
+### Fixed
+- DEPLOY-SELF-001: 프로그램을 껐다 켜면 RFID 수신 포트(TCP 10123)가 점유되어 리더가 연결되지 않던 문제를 고쳤다. 이전 버전에서 교체할 때만 PC를 한 번 재부팅한다([TS-20261118-01](docs/TroubleShooting.md#TS-20261118-01)).
+
 ## [2026-11-17]
 
 - VIDEO-NARR-001: 결과 영상(태국어·영어)을 나레이션이 추가된 새 영상으로 교체했다. 영어 영상은 77.3초에서 79.4초로 길어졌고 태국어 영상은 77.3초 그대로다. 에디터 검증 완료, Player 배포본은 재빌드 전 상태.

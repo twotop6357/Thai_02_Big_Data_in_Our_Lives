@@ -25,6 +25,8 @@ RFID-STABLE-001 / 2026-11-02. `0_Idle`에서 시작하면 영속 RFID Hub에 TCP
 New-NetFirewallRule -DisplayName "Thai02 RFID" -Direction Inbound -Protocol TCP -LocalPort 10123 -RemoteAddress 192.168.0.121-192.168.0.124 -Action Allow
 ```
 
+2026-11-18 DEPLOY-SELF-001: 프로그램을 껐다 켰을 때 이전 실행이 띄운 ComfyUI 서버가 수신 포트를 붙잡아 `Listen failed`가 계속되던 문제를 고쳤다([TS-20261118-01](TroubleShooting.md#TS-20261118-01)). 카드 매핑은 `StreamingAssets/RFID/RfidSettings.json`의 `cards`에 저장되며 배포본에서는 `NSM_DNA_02_Data/StreamingAssets/RFID/RfidSettings.json`이다. 새 배포본으로 바꿀 때 이 파일 하나를 옮기면 등록한 카드가 유지된다.
+
 F10 맨 위 줄에 수신 상태가 표시된다. `Listening on TCP port 10123`이면 정상이다. `Listen failed`는 다른 프로그램이 포트를 쓰는 경우 등이며 2초마다 다시 시도한다. `Rejected IP`는 JSON에 없는 IP의 접속을 거부했다는 뜻이므로 리더 IP 설정을 확인한다.
 
 ## 카드 등록
